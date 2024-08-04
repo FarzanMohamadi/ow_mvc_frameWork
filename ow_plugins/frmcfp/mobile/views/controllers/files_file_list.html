@@ -1,0 +1,66 @@
+{style}
+{literal}
+.fileEventImage img,
+.delete_file img {
+max-width: 20px;
+}
+{/literal}
+{/style}
+
+<div class="owm_list_item_view_title  clearfix owm_nav_cap owm_nav_cap_left_cont owm_nav_cap_right_cont owm_bg_color_3">
+    <div class="owm_float_left">
+        <a class="owm_nav_cap_left" href="{$backUrl}"></a>
+    </div>
+    <div class="owm_box_heading_btns">
+        {if isset($showAdd) && $showAdd==true}
+        <div class="group_invite">
+            <a href="javascript:showUploadFileIntoCFPForm({$eventId})">
+                {text key="frmcfp+add_file"}
+            </a>
+        </div>
+        {/if}
+    </div>
+    <h4>
+        {text key="base+back"}
+    </h4>
+</div>
+<div class="ow_lp_avatars">
+    <table class="owm_table_1 ow_form ow_stdmargin event_files" style="border: 1px solid #ccc;font-size: 80%;margin: 8px;">
+        <tr>
+            <th>{text key="frmcfp+name"}</th>
+            <th>{text key="frmcfp+by"}</th>
+            <th>{text key="frmcfp+created_date"}</th>
+            <th></th>
+        </tr>
+        {foreach from=$fileList item='file' name='file'}
+        <tr class="ow_alt2 ow_tr_first">
+            <td class="file_name">
+                <a class="fileEventImage" href="{$file.fileUrl}" target="_blank">
+                    <img src="{$file.iconUrl}" alt="{$file.fileName|escape}" title="{$file.fileName}" />
+                </a>
+                <a href="{$file.fileUrl}" target="_blank">{$file.truncatedFileName}  </a>
+            </td>
+            <td>
+                <a href="{$file.userUrl}">{$file.userName}</a>
+            </td>
+            <td>
+                {format_date timestamp=$file.createdDate}
+            </td>
+            {if isset($deleteUrls[$file.name])}
+            <td class="delete_file">
+                <a href="{$deleteUrls[$file.name]}" onclick="return confirm('{text key="frmcfp+are_you_sure_delete_file"}');"><img src="{$deleteIconUrl}"/></a>
+            </td>
+            {else}
+            <td></td>
+            {/if}
+        </tr>
+        {foreachelse}
+        <tr class="ow_alt2 ow_tr_first">
+            <td colspan="5">
+                <div class="ow_nocontent">{text key='frmcfp+file_list_widget_empty'}</div>
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    {$paging}
+</div>

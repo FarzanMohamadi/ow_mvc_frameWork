@@ -1,0 +1,110 @@
+{style}
+{literal}
+span, p, div, a, label, input{
+    font-size: 12px;
+}
+{/literal}
+{/style}
+<div id="login_frame" class="mobile_account {$type_class}">
+    <div class="owm_content_menu_wrap owm_padding">
+        <ul class="owm_content_menu clearfix">
+            <li class="active">
+                <a href="#" id="loginBySMSTab">
+                    <span>{text key='frmmobileaccount+login_with_sms'}</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="loginByPasswordTab">
+                    <span>{text key='frmmobileaccount+login_with_username_password'}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="loginBySmsDIV">
+        <p>{text key='frmmobileaccount+base_sign_in_txt'}</p>
+        {form name='login_mobile_account_verification_code' class='account_form_box'}
+        <div class="account_status_box">
+            <span class="ow_preloader"></span>
+            <div id="account_status"></div>
+        </div>
+        <div class="account_field account_name OWM">
+            {input name='mobile_number'}
+            {error name="mobile_number"}
+        </div>
+        <p class="ow_remember_me">{input name='remember'}{label name='remember'}</p>
+        <div class="network_submit">
+            <div class="owm_btn_wide owm_btn_positive owm_std_margin_top" style="padding: unset">
+                <span class="ow_button ow_positive">
+                    <span>{submit name='submit' class='ow_button ow_ic_save'}</span>
+                </span>
+            </div>
+        </div>
+        {/form}
+    </div>
+    <div id="loginByPasswordDIV" style ="display: none;">
+        <p>{text key='frmmobileaccount+base_sign_in_txt_username_password'}</p>
+        {form name='login_mobile_account_username_password' class='account_form_box'}
+        <div class="account_status_box">
+            <span class="ow_preloader"></span>
+            <div id="account_status"></div>
+        </div>
+        <div class="account_field account_name OWM">
+            <div>{label name='username'}</div>
+            {input name='username'}
+            {error name="username"}
+        </div>
+        <div class="account_field account_name OWM">
+            <div>{label name='password'}</div>
+            {input name='password'}
+            {error name="password"}
+        </div>
+        {if isset($display_login_captcha) &&  $display_login_captcha}
+        <div class="ow_form_options clearfix" style="text-align: center;">
+            {input name='captchaField'}
+            {error name='captchaField'}
+        </div>
+        {/if}
+        <p class="ow_remember_me">{input name='remember'}{label name='remember'}</p>
+        <div class="network_submit">
+            <div class="owm_btn_wide owm_btn_positive owm_std_margin_top" style="padding: unset">
+                <span class="ow_button ow_positive">
+                    <span>{submit name='submit' class='ow_button ow_ic_save'}</span>
+                </span>
+            </div>
+        </div>
+        {/form}
+        <div class="back_box">
+        <span class="ow_button">
+            <span class="ow_button">
+                <a href="{$forgotPasswordnUrl}" class="ow_button">
+                    {text key='base+forgot_password_heading'}
+                </a>
+            </span>
+        </span>
+        </div>
+    </div>
+    <div class="mobile_account_links"></div>
+</div>
+
+<script>
+    $("#loginBySMSTab").click( function () {
+            if($("#loginBySMSTab").closest("li").hasClass("active")){
+                return false;
+            }
+            $("#loginBySMSTab").closest("li").addClass("active");
+            $("#loginBySmsDIV").css("display","block");
+            $("#loginByPasswordTab").closest("li").removeClass("active");
+            $("#loginByPasswordDIV").css("display","none");
+        }
+    );
+    $("#loginByPasswordTab").click( function () {
+            if($("#loginByPasswordTab").closest("li").hasClass("active")){
+                return false;
+            }
+            $("#loginBySmsDIV").css("display","none");
+            $("#loginBySMSTab").closest("li").removeClass("active");
+            $("#loginByPasswordDIV").css("display","block");
+            $("#loginByPasswordTab").closest("li").addClass("active");
+        }
+    );
+</script>

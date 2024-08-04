@@ -1,0 +1,44 @@
+<div class="frmcert_information_widget ">
+    <div class="content Vulnerabilities">
+        <p class="title">{text key="frmcert+widget_number_of_vulnerabilities"}</p>
+        <div class="count max_length_2">
+            <p>
+                <span class="term">{text key="frmcert+widget_today"}</span>
+                <span class="number">{$vulDayStatistics}</span>
+            </p>
+            <p>
+                <span class="term">{text key="frmcert+widget_week"}</span>
+                <span class="number">{$vulWeekStatistics}</span>
+            </p>
+            <p>
+                <span class="term">{text key="frmcert+widget_month"}</span>
+                <span class="number">{$vulMonthStatistics}</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="content Bots">
+        <p class="title">{text key="frmcert+widget_number_of_bots"}</p>
+        <div class="count max_length_2">
+            <p>
+                <span class="term">{text key="frmcert+widget_today"}</span>
+                <span class="number">{$botDayStatistics}</span>
+            </p>
+            <p>
+                <span class="term">{text key="frmcert+widget_week"}</span>
+                <span class="number">{$botWeekStatistics}</span>
+            </p>
+            <p>
+                <span class="term">{text key="frmcert+widget_month"}</span>
+                <span class="number">{$botMonthStatistics}</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="frmcert_widegt_time">
+        <p class="timestamp">
+            <span class="value">{text key="frmcert+last_update"} {$time}</span>
+            <a class="viwq_more" href="https://stats.cert.ir/">{text key="frmcert+view_more"}</a>
+        </p>
+    </div>
+</div>

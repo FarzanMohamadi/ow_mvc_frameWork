@@ -1,0 +1,15 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+{if !empty($list)}
+{foreach from=$list item=$group name='user_list'}
+    {decorator name='ipc' addClass='owm_list_item_with_image' data=$group infoString="<a href=\"`$group.url`\">`$group.title`</a>{if isset($group.parentTitle)}<div class='subgroup_icon_arrow'></div>{$group.parentTitle}{/if}"}
+{/foreach}
+{else}
+    <div class="ow_nocontent">{text key='base+empty_list'}</div>
+{/if}

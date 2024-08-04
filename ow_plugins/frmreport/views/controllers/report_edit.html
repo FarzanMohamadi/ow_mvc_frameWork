@@ -1,0 +1,71 @@
+<div class="ow_stdmargin">
+    {decorator name="button" class="ow_ic_right_arrow" langLabel="frmreport+edit_back_label" id="report-back_btn"}
+</div>
+<table class="ow_table_1 ow_form ow_automargin ow_superwide">
+    <tr class="ow_tr_first">
+        <th colspan="2"></th>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+group_title"}</td>
+        <td class="ow_value"><a href="{$groupUrl}">{$groupTitle}</a></td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+form_label_year"}</td>
+        <td class="ow_value">{$report->year}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+form_label_semester"}</td>
+        <td class="ow_value">{$report->semester}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+report_creator"}</td>
+        <td class="ow_value">{$report->creator}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+report_create_date"}</td>
+        <td class="ow_value">{$report->createDate}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+report_editor"}</td>
+        <td class="ow_value">{$report->editor}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+report_edit_date"}</td>
+        <td class="ow_value">{$report->editDate}</td>
+    </tr>
+</table>
+{form name='report_edit_form'}
+<table class="ow_table_1 ow_form ow_automargin ow_superwide">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='year'}</td>
+        <td class="ow_value">{input name='year'}{error name='year'}</td>
+        <td class="ow_desc">{text key="frmreport+year_should_be_complete"}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='semester'}</td>
+        <td class="ow_value">{input name='semester'}{error name='semester'}</td>
+        <td></td>
+    </tr>
+</table>
+{foreach from=$activityTypes item='activity'}
+<table class="ow_table_1 ow_form ow_automargin ow_superwide">
+    <tr class="ow_tr_first">
+        <th colspan="2">{$activity.title}</th>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">تعداد</td>
+        <td class="ow_value">{input name={$activity.count}}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+activity_description"}</td>
+        <td class="ow_value">{input name={$activity.description}}</td>
+    </tr>
+</table>
+{/foreach}
+<div class="clearfix ow_stdmargin">
+    <div class="ow_right">
+    {decorator name="button" class="ow_ic_delete ow_red ow_negative" langLabel="frmreport+delete_report_label" id="report-delete_btn"}
+    {submit name='send' class='ow_ic_save ow_positive'}
+    </div>
+</div>
+{/form}

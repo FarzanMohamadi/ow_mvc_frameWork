@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmupdateserver" label="frmupdateserver" language_tag="fa-IR" language_label="فارسی">
+    <key name="return">
+        <value>
+            بازگشت
+        </value>
+    </key>
+    <key name="current_version_label">
+        <value>
+            نسخه کنونی
+        </value>
+    </key>
+    <key name="new_version_label">
+        <value>
+            نسخه جدید
+        </value>
+    </key>
+    <key name="download_fullversion_label">
+        <value>
+            دانلود
+        </value>
+    </key>
+    <key name="download_updateversion_label">
+        <value>
+            دانلود بروزرسانی نسخه جدید
+        </value>
+    </key>
+    <key name="check_update_version">
+        <value>
+            بررسی به‌روزرسانی
+        </value>
+    </key>
+    <key name="check_update_version_description">
+        <value>
+            با استفاده از این دکمه، آخرین نسخه موجود در سرور تیم توسعه تمامی افزونه‌ها، پوسته‌ها و هسته اصلی موتور
+            اجتماعی با نسخه‌های موجود برای دانلود کاربران چک شده و در صورت لزوم، نسخه جدید به همراهی لاگ در پوشه
+            pluginfiles/frmupdateserver قرار خواهد گرفت.
+        </value>
+    </key>
+    <key name="delete_all_versions">
+        <value>
+            حذف تمام نسخه ها
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="plugins">
+        <value>
+            افزونه‌ها
+        </value>
+    </key>
+    <key name="core">
+        <value>
+            هسته
+        </value>
+    </key>
+    <key name="updater">
+        <value>
+            به‌روزرسان
+        </value>
+    </key>
+    <key name="themes">
+        <value>
+            پوسته‌ها
+        </value>
+    </key>
+    <key name="add_item">
+        <value>
+            اضافه کردن مورد
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="name">
+        <value>
+            نام
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            توضیحات
+        </value>
+    </key>
+    <key name="key">
+        <value>
+            شناسه یکتا
+        </value>
+    </key>
+    <key name="image">
+        <value>
+            تصویر
+        </value>
+    </key>
+    <key name="type">
+        <value>
+            نوع
+        </value>
+    </key>
+    <key name="replace_image">
+        <value>
+            تغییر تصویر
+        </value>
+    </key>
+    <key name="removed_successfully">
+        <value>
+            اطلاعات با موفقیت حذف شد.
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            اطلاعات با موفقیت ثبت شد.
+        </value>
+    </key>
+    <key name="top_menu_item">
+        <value>
+            دریافت موتور
+        </value>
+    </key>
+    <key name="plugins_sample">
+        <value>
+            افزونه‌ها
+        </value>
+    </key>
+    <key name="themes_sample">
+        <value>
+            پوسته‌ها
+        </value>
+    </key>
+    <key name="view_versions">
+        <value>
+            مشاهده تمامی نسخه‌ها
+        </value>
+    </key>
+    <key name="view_guideline">
+        <value>
+            راهنمای کاربری
+        </value>
+    </key>
+    <key name="guidelineurl_label">
+        <value>
+            نشانی اینترنتی راهنمای کاربری
+        </value>
+    </key>
+    <key name="download_last_version">
+        <value>
+            دانلود آخرین نسخه
+        </value>
+    </key>
+    <key name="download_plugins">
+        <value>
+            بارگیری افزونه‌ها
+        </value>
+    </key>
+    <key name="download_themes">
+        <value>
+            بارگیری پوسته‌ها
+        </value>
+    </key>
+    <key name="download_themes_description">
+        <value>
+            برای بارگیری پوسته‌ها می‌توانید وارد صفحه
+            &lt;a href=&quot;{$url}&quot; target=&quot;_blank&quot; &gt;
+            بارگیری پوسته‌ها
+            &lt;/a&gt;
+            شده و پوسته را پیدا کرده و نسخه مورد نظر را بارگیری کنید. همچنین می‌توانید پوسته مورد نظر خود را در لیست زیر پیدا کنید.
+        </value>
+    </key>
+    <key name="download_plugins_description">
+        <value>
+            برای بارگیری افزونه‌ها می‌توانید وارد صفحه
+            &lt;a href=&quot;{$url}&quot; target=&quot;_blank&quot; &gt;
+            بارگیری افزونه‌ها
+            &lt;/a&gt;
+            شده و افزونه را پیدا کرده و نسخه مورد نظر را بارگیری کنید. همچنین می‌توانید افزونه مورد نظر خود را در لیست زیر پیدا کنید.
+        </value>
+    </key>
+    <key name="download_core_update_description">
+        <value>
+            با استفاده از نسخه به‌روزرسانی، شما می‌توانید به صورت دستی، شبکه اجتماعی خود را از هر نسخه‌ای به نسخه
+            {$version}
+            به‌روزرسانی
+            کنید.
+        </value>
+    </key>
+    <key name="date_released">
+        <value>
+            تاریخ انتشار:
+        </value>
+    </key>
+    <key name="download_last_core_version">
+        <value>
+            بارگیری آخرین نسخه ({$version})
+        </value>
+    </key>
+    <key name="download_last_core_update-version">
+        <value>
+            بارگیری نسخه به‌روزرسانی به  ({$version})
+        </value>
+    </key>
+    <key name="download_last_core_version_title">
+        <value>
+            بارگیری آخرین نسخه
+        </value>
+    </key>
+    <key name="download_last_core_update_version_title">
+        <value>
+            بارگیری نسخه به‌روزرسانی به آخرین نسخه
+        </value>
+    </key>
+    <key name="download_core_main_description">
+        <value>
+            دریافت مجموعه فایل‌های لازم راه‌اندازی کامل یک شبکه اجتماعی (در داخل این مجموعه، افزونه‌های مورد نیاز نیز قرار دارند.)
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            موردی وجود ندارد.
+        </value>
+    </key>
+    <key name="plugin">
+        <value>
+            افزونه
+        </value>
+    </key>
+    <key name="theme">
+        <value>
+            پوسته
+        </value>
+    </key>
+    <key name="item_not_exist">
+        <value>
+            نسخه‌ای از این مورد تا کنون منتشر نشده است.
+        </value>
+    </key>
+    <key name="delete_all_versions_successfully">
+        <value>
+            تمامی نسخه‌های از قبل ایجاد شده حذف شدند.
+        </value>
+    </key>
+    <key name="all_items_checked">
+        <value>
+            تمامی موارد بررسی شدند و در صورت لزوم برای آن‌ها فایل دانلود ساخته شد.
+        </value>
+    </key>
+    <key name="prefix_download_path_label">
+        <value>
+            آدرس ریشه دانلود فایل‌ها
+        </value>
+    </key>
+    <key name="sha256_label">
+        <value>
+            صحت اطلاعات (Sha256)
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            تنظیمات افزونه سرور بروزرسانی افزونه ها و پوسته ها
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            تنظیمات افزونه سرور بروزرسانی افزونه ها و پوسته ها
+        </value>
+    </key>
+    <key name="update_guideline">
+        <value>
+            نحوه به‌روزرسانی
+        </value>
+    </key>
+    <key name="delete_item">
+        <value>
+            حذف کردن مورد
+        </value>
+    </key>
+    <key name="buildNumber">
+        <value>
+            نسخه
+        </value>
+    </key>
+    <key name="item_deleted_successfully">
+        <value>
+           نسخه مورد نظر با موفقیت حذف شد.
+        </value>
+    </key>
+    <key name="admin_delete_item_title">
+        <value>
+            تنظیمات افزونه سرور به‌روزرسانی افزونه‌ها و پوسته‌ها
+        </value>
+    </key>
+    <key name="last_version_buildNumber">
+        <value>
+            شماره آخرین نسخه:
+        </value>
+    </key>
+		<key name="admin_check_item_title">
+        <value>
+            بررسی به روزرسانی مورد
+        </value>
+    </key>
+    <key name="check_item">
+        <value>
+            به روزرسانی مورد
+        </value>
+    </key>
+    <key name="download_last_core_build_version">
+        <value>
+            شماره آخرین نسخه ساخت: {$value}
+        </value>
+    </key>
+    <key name="download_last_core_update_build_version">
+        <value>
+            شماره آخرین نسخه ساخت: {$value}
+        </value>
+    </key>
+    <key name="download_last_build_version_label">
+        <value>
+            نسخه {$value}
+        </value>
+    </key>
+    <key name="title_widget">
+        <value>
+            آخرین نسخه موتوشاب
+        </value>
+    </key>
+    <key name="download_directly">
+        <value>
+            دریافت مستقیم فایل
+        </value>
+    </key>
+    <key name="wait_for_download">
+        <value>
+            در حال دریافت فایل ...
+        </value>
+    </key>
+    <key name="frmupdateserver_sitemap">
+        <value>
+            بروزرسانی هسته، پوسته ها و افزونه ها
+        </value>
+    </key>
+    <key name="files">
+        <value>
+            فایل‌ها
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+دسته‌ها
+        </value>
+    </key>
+    <key name="label_category_label">
+        <value>
+            عنوان دسته
+        </value>
+    </key>
+    <key name="label_error_already_exist">
+        <value>
+دسته وارد شده وجود دارد
+        </value>
+    </key>
+    <key name="form_add_category_submit">
+        <value>
+            افزودن دسته
+        </value>
+    </key>
+    <key name="admin_settings_categories">
+        <value>
+            دسته افزونه‌ها
+        </value>
+    </key>
+    <key name="edit_item">
+        <value>
+ویرایش
+        </value>
+    </key>
+    <key name="database_record_removed">
+        <value>
+            دسته مورد نظر حذف شد
+        </value>
+    </key>
+    <key name="database_record_edit">
+        <value>
+            دسته مورد نظر ویرایش شد
+        </value>
+    </key>
+    <key name="database_record_edit_fail">
+        <value>
+            دسته مورد نظر ویرایش نشد
+        </value>
+    </key>
+    <key name="name_category">
+        <value>
+            دسته‌های موجود
+        </value>
+    </key>
+    <key name="edit_item_page_title">
+        <value>
+ویرایش برچسب دسته
+        </value>
+    </key>
+    <key name="category_label">
+        <value>
+        دسته
+        </value>
+    </key>
+    <key name="all_categories">
+        <value>
+            تمامی دسته‌ها
+        </value>
+    </key>
+    <key name="category_description">
+        <value>
+            دسته‌بندی افزونه‌ها بر اساس:
+        </value>
+    </key>
+    <key name="are_you_sure">
+        <value>
+            آیا از حذف این دسته مطمئن هستید؟
+        </value>
+    </key>
+</prefix>

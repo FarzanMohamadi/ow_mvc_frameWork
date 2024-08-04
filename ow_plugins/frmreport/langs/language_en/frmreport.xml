@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix name="frmreport" label="Six month report" language_tag="en" language_label="English">
+    <key name="activity_title">
+        <value>Activity Title</value>
+    </key>
+    <key name="count">
+        <value>Count</value>
+    </key>
+    <key name="activity_description">
+        <value>Description</value>
+    </key>
+    <key name="add_activity_type_submit">
+        <value>Add activity type</value>
+    </key>
+    <key name="add_activity_type_page_heading">
+        <value>Report Widget Configuration</value>
+    </key>
+    <key name="add_activity_type_page_title">
+        <value>Report Widget Configuration</value>
+    </key>
+    <key name="add_report_page_heading">
+        <value>Add report</value>
+    </key>
+    <key name="add_report_page_title">
+        <value>Add report</value>
+    </key>
+    <key name="index_report_page_heading">
+        <value>Six months report</value>
+    </key>
+    <key name="index_report_page_title">
+        <value>Six months report</value>
+    </key>
+
+    <key name="form_label_activity_type">
+        <value>Activity title</value>
+    </key>
+    <key name="form_label_count">
+        <value>Count</value>
+    </key>
+    <key name="form_label_description">
+        <value>Description</value>
+    </key>
+    <key name="form_label_year">
+        <value>year</value>
+    </key>
+    <key name="form_label_semester">
+        <value>semester</value>
+    </key>
+    <key name="form_label_submit_report">
+        <value>Add report</value>
+    </key>
+
+    <key name="first_semester">
+        <value>first semester</value>
+    </key>
+    <key name="second_semester">
+        <value>second semester</value>
+    </key>
+    <key name="form_label_search_report">
+        <value>Search</value>
+    </key>
+    <key name="report_enable">
+        <value>Activation</value>
+    </key>
+    <key name="semester_report">
+        <value>Semester Reports</value>
+    </key>
+    <key name="report_plugin_description">
+        <value>‌Manage your reports by activating this plugin</value>
+    </key>
+    <key name="report_widget_title">
+        <value>Reports</value>
+    </key>
+
+    <key name="form_label_edit_report">
+        <value>Edit</value>
+    </key>
+    <key name="auth_frmreport_label">
+        <value>Six months report</value>
+    </key>
+    <key name="console_reports_link">
+        <value>Six month report</value>
+    </key>
+    <key name="listing_no_items_msg">
+        <value>There is no item</value>
+    </key>
+    <key name="report_creator">
+        <value>Creator</value>
+    </key>
+    <key name="report_create_date">
+        <value>Create date</value>
+    </key>
+    <key name="report_editor">
+        <value>Editor</value>
+    </key>
+    <key name="report_edit_date">
+        <value>Edit date</value>
+    </key>
+    <key name="edit_back_label">
+        <value>Back to report</value>
+    </key>
+    <key name="detail_back_label">
+        <value>Back to report list</value>
+    </key>
+    <key name="delete_confirm_msg">
+        <value>Are you sure you want to delete this item</value>
+    </key>
+
+    <key name="report_widget_settings_count">
+        <value>Number of reports tp show in widget</value>
+    </key>
+    <key name="reports_count">
+        <value>Reports count</value>
+    </key>
+    <key name="view_report_list">
+        <value>View all reports</value>
+    </key>
+    <key name="add_report">
+        <value>Add report</value>
+    </key>
+    <key name="edit_activity_page_title">
+        <value>Edit report</value>
+    </key>
+    <key name="edit_activity_successfully">
+        <value>Edit is done successfully</value>
+    </key>
+    <key name="group_title">
+        <value>Group title</value>
+    </key>
+    <key name="all_semester">
+        <value>All</value>
+    </key>
+    <key name="back_to_group_label">
+        <value>Back to group</value>
+    </key>
+    <key name="edit_activity">
+        <value>Edit</value>
+    </key>
+    <key name="delete_report_label">
+        <value>Delete report</value>
+    </key>
+    <key name="report_widget_title">
+        <value>Six months report</value>
+    </key>
+    <key name="reports_confliction_error">
+        <value>There is a report with the same year and semester</value>
+    </key>
+    <key name="add_report_error">
+        <value>adding report failed</value>
+    </key>
+    <key name="semseter">
+        <value>Semester</value>
+    </key>
+    <key name="last_report_date">
+        <value>Last report date</value>
+    </key>
+    <key name="report_added_successfully">
+        <value>Report added successfully</value>
+    </key>
+    <key name="report_edited_successfully">
+        <value>Report edited successfully</value>
+    </key>
+    <key name="report_deleted_successfully">
+        <value>Report deleted successfully</value>
+    </key>
+    <key name="activity_added_successfully">
+        <value>Activity is defined successfully</value>
+    </key>
+    <key name="title_is_exist_error">
+        <value>This title is exist</value>
+    </key>
+    <key name="activity_exist_in_report_error">
+        <value>It is not possible to delete activity.it used in a report</value>
+    </key>
+    <key name="activity_deleted_successfully">
+        <value>Delete is done successfully</value>
+    </key>
+    <key name="year_should_be_complete">
+        <value>Year is in the form of 4 digit number</value>
+    </key>
+    <key name="year_number_of_digit_error">
+        <value>Enter year as a 4 digit number</value>
+    </key>
+    <key name = "view_group_reports">
+        <value>View Reports</value>
+    </key>
+    <key name="overall_reports_page_heading">
+        <value>Six months report</value>
+    </key>
+    <key name="overall_reports_page_title">
+        <value>Six months report</value>
+    </key>
+    <key name="back_to_overall_report">
+        <value>Six months report</value>
+    </key>
+</prefix>

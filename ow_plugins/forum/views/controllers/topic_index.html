@@ -1,0 +1,287 @@
+{style}
+{literal}
+    .ow_forum_attachment_icon {
+        display: inline-block;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        width: 14px;
+        height: 17px;
+    }
+    .forum_attachments_label {
+        margin: 15px 0 5px;
+        padding-left: 5px;
+        font-weight: bold;
+    }
+
+    .forum_add_post .jhtmlarea {
+        margin: 0px auto;
+    }
+
+    .post_content img { max-width: 100%; }
+    .post_content { overflow: hidden; }
+{/literal}
+{/style}
+
+{script}
+{literal}
+    $(".ow_forum_attachment").hover(
+	    function(){
+	        $(this).find("a.forum_delete_attachment").show();
+	    },
+	    function(){
+	        $(this).find("a.forum_delete_attachment").hide();
+	    }
+    );
+
+    $("a.forum_delete_attachment").each(function(){
+
+        var container_handler = $(this).parent();
+
+        $(this).click(function(e){
+            e.preventDefault();
+            if ( confirm(OW.getLanguageText('forum', 'confirm_delete_attachment')) )
+	        {
+	           var attachment_id = $(this).attr("rel");
+               var attachmentDeleteCode = $(this).attr("code");
+
+	           var params = {};
+	           var url = '{/literal}{url_for_route for='forum_delete_attachment'}{literal}';
+	           params['attachmentId'] = attachment_id;
+                if(attachmentDeleteCode!=null && attachmentDeleteCode!=undefined)
+                {
+                    params['attachmentDeleteCode'] = attachmentDeleteCode;
+                }
+	           $.ajaxSetup({dataType: 'json'});
+
+               $.post(url, params, function(data){
+
+                    if ( data.result == true )
+                    {
+                        OW.info(data.msg);
+                        container_handler.remove();
+                        location.reload();
+                    }
+                    else if (data.error != undefined)
+                    {
+                        OW.warning(data.error);
+                    }
+               });
+	        }
+	        else
+	        {
+	            return false;
+	        }
+        });
+    });
+{/literal}
+{/script}
+
+{if $isHidden}
+    <div class="ow_stdmargin">
+        {$componentForumCaption}
+    </div>
+{/if}
+{$breadcrumb}
+
+<div class="ow_smallmargin clearfix forum_toolbar">
+    <div class="ow_left">{$paging}</div>
+    <div class="ow_txtright forum_search_container">{$search}</div>
+</div>
+
+<div class="ow_forum_topic_posts">
+
+{foreach from=$postList item=post name=postList key=index}
+{capture assign='tpl'}
+	{capture name='info_string'}
+		<a href="{$avatars[$post.userId].url}">{$avatars[$post.userId].title}</a>
+    {if {!$post.isFirstPost}}
+        <span class="ow_tiny ow_ipc_date ow_remark">{$post.createStamp}</span>
+    {/if}
+    {/capture}
+
+	{capture name='content'}
+                {add_content key="forum.before_post_add_content" postId=$post.id userId=$post.userId text=$post.text}
+		<div id="{$post.id}showMore" class="post_content">{if isset($post.beforeMoreText)}{$post.beforeMoreText}{if isset($post.showMore)}...<a class="ow_lbutton" onclick="showMorePost('{$post.id}')" >{text key='frmforumplus+more'}</a>{/if}{else}{$post.text}{/if}</div>
+        {if isset($post.audio)}<div class="audioMassage">{$post.audio}</div>{/if}
+        {if isset($post.showMore)}<div id="{$post.id}" class="post_content" style="display: none">{$post.beforeMoreText}{$post.afterMoreText}</div>{/if}
+		{if $post.edited}
+                <div class="ow_post_comment ow_ic_edit">
+                    {text key='forum+post_edited'} <a href="{$avatars[$post.edited.userId].url}">{$avatars[$post.edited.userId].title}</a>  <bdi>({$post.edited.editStamp})  </bdi>
+                </div>
+		{/if}
+
+		{if $enableAttachments && isset($attachments[$post.id])}
+            <div class="ow_small">
+                <div class="forum_attachments_label">{text key='forum+attachments'}:</div>
+                {foreach from=$attachments[$post.id] item='attm'}
+                    <span class="ow_forum_attachment">
+                        <span class="ow_forum_attachment_icon ow_ic_attach">&nbsp;</span>
+                        <div class="ow_forum_attachment_topic_container">
+	                        {if $attm.downloadUrl != ''}
+                                {if isset($attachmentIcons)}
+                                    <a href="{$attm.downloadUrl}" target="_blank">
+                                        <img style="width: 20px;" src="{$attm.iconUrl}" alt="{$attm.fileName|escape}" title="{$attm.fileName}"/> {$attm.fileName}
+                                    </a>
+                                {else}
+                                    <a href="{$attm.downloadUrl}" target="_blank">{$attm.fileName}</a>
+                                {/if}
+                            {else}
+                                {$attm.fileName}
+                            {/if} ({$attm.fileSize}Kb)
+
+                            {if $isModerator || ($userId == $post.userId && !$topicInfo.locked)}
+                                {if isset($attachmentDeleteCode)}
+                                    <a href="javascript://" style="float: left;" class="forum_delete_attachment ow_lbutton ow_hidden" code="{$attachmentDeleteCode}" rel="{$attm.id}" target="_blank">{text key='forum+delete'}</a>
+                                {else}
+	                                <a href="javascript://" style="float: left;" class="forum_delete_attachment ow_lbutton ow_hidden" rel="{$attm.id}" target="_blank">{text key='forum+delete'}</a>
+	                            {/if}
+                            {/if}
+                        </div>
+                    </span><br/>
+                {/foreach}
+            </div>
+		{/if}
+        {add_content key="forum.after_post_add_content" postId=$post.id userId=$post.userId text=$post.text}
+	{/capture}
+
+	{decorator name='ipc'
+		avatar=$avatars[$post.userId]
+		content=$smarty.capture.content
+		infoString=$smarty.capture.info_string
+		toolbar=$toolbars[$post.id]
+	}
+
+    {if $commentsEnabled and {!$post.isFirstPost}}
+        <div class="forum-post-comment-wrapper">
+            {$comments{$post.id}}
+        </div>
+    {/if}
+{/capture}
+
+{if $smarty.foreach.postList.first}
+    <div class="topic_info_before_first_post{if $topicInfo.locked} locked_topic {/if} {if $post.edited} edited_post{/if} {if $showEditButton}can_edit_topic{/if}">
+        {if $canEdit && $isOwner || $isModerator || $canSubscribe || $isSubscribed || $canLock || !empty($tb)}
+            <ul class="ow_smallmargin ow_bl_narrow clearfix ow_small topic_action_buttons_container">
+                {if $canLock}<li>{if $oldCoreEnabled}<span class="ow_button">{/if}<a class="sticky_topic" href="javascript://">{if $topicInfo.sticky}{text key='forum+unsticky_topic'}{else}{text key='forum+sticky_topic'}{/if}</a>{if $oldCoreEnabled}</span>{/if}</li>{/if}
+                {if $canSticky}<li>{if $oldCoreEnabled}<span class="ow_button">{/if}<a class="lock_topic" href="javascript://">{if $topicInfo.locked}{text key='forum+unlock_topic'}{else}{text key='forum+lock_topic'}{/if}</a>{if $oldCoreEnabled}</span>{/if}</li>{/if}
+                {if $isModerator}{if !$isHidden || $canMoveToHidden}<li>{if $oldCoreEnabled}<span class="ow_button">{/if}<a class="move_topic" href="javascript://">{text key='forum+move_topic'}</a>{if $oldCoreEnabled}</span>{/if}</li>{/if}{/if}
+                {if $canDelete && $isOwner || $isModerator}
+                <li>{if $oldCoreEnabled}<span class="ow_button">{/if}<a class="delete_topic" href="javascript://">{text key='forum+delete_topic'}</a>{if $oldCoreEnabled}</span>{/if}</li>
+                {/if}
+                {if !empty($tb)}
+                {foreach from=$tb item='tblink'}
+                    <li><a{if isset($tblink.class)} class="{$tblink.class}"{/if} href="{$tblink.href}"{if isset($tblink.id)} id="{$tblink.id}"{/if}>{$tblink.label}</a></li>
+                {/foreach}
+                {/if}
+                <li>{if $oldCoreEnabled}<span class="ow_button">{/if}<a class="subscribe_to_topic {if $isSubscribed}unsubscribe{else}subscribe{/if}" href="javascript://">{if $isSubscribed}{text key='forum+unsubscribeNow'}{else}{text key='forum+subscribe'}{/if}</a>{if $oldCoreEnabled}</span>{/if}</li>
+                {if isset($extraToolbarActions)}
+                {foreach from=$extraToolbarActions item='etaction'}
+                <li>
+                    <span>
+                        <a {if isset($etaction.class)} class="{$etaction.class}"{/if} href="{$etaction.href}"{if isset($etaction.id)} id="{$etaction.id}"{/if}>{$etaction.label}</a>
+                    </span>
+                </li>
+                {/foreach}
+                {/if}
+            </ul>
+        {/if}
+
+        {block_decorator name='box' addClass=' ow_stdmargin clearfix' capEnabled=false}
+<!--        <p id="topic_title_in_topic_first_post">{$topicInfo.title}</p>-->
+        <div id="post-{$post.id}" class="topic_opening_post">
+            <div class="ow_smallmargin">{$tpl}</div>
+            {add_content key='socialsharing.get_sharing_buttons' description=$post.text title=$topicInfo.title image='' class='ow_social_sharing_nomargin' entityType='forum_topic' entityId=$post.topicId}
+        </div>
+        {/block_decorator}
+        {add_content key='forum.topic.content.after_first_post'}
+        <span class="topic_info_container">
+        <span>{text key='forum+creator'}: <a href="{$topicCreatorUrl}">{$topicCreator}</a></span>
+        {if {$post.isFirstPost}}
+            <span class="ow_tiny ow_ipc_date ow_remark" style="border-left: 1px solid gray;">{text key='forum+topic_create_time'}: {$post.createStamp}</span>
+            {if ($topicInfo.locked && isset($topicCloseTime))}
+                <span class="ow_tiny ow_ipc_date ow_remark" style="border-left: 1px solid gray;">{text key='forum+topic_close_time'}: {$topicCloseTime}</span>
+            {/if}
+        {/if}
+        </span>
+    </div>
+{else}
+    {if ($showClosingPostInInfoBoxConfig && $topicHasConclusionPost && {$index}== 2) ||
+        (!$showClosingPostInInfoBoxConfig && {$index}== 1)||
+        ($showClosingPostInInfoBoxConfig && !$topicHasConclusionPost && {$index}== 1)}
+            <p class="answers_label forum_topic_label">{text key='forum+answers'}:</p>
+            <span class="sort_topic_answers_container">
+            {text key='forum+sort_on'}
+            <select name="" id="change_forum_topic_posts_show_order" style="margin-bottom: 10px;">
+                <option value="ascending" class="ascending_sort"> {text key='forum+first_answer'}  </option>
+                <option value="descending" class="descending_sort" {if $reversePostsShow} selected {/if}>{text key='forum+last_answer'}</option>
+            </select>
+            </span>
+        {/if}
+        <div class="forum_answer ow_stdmargin clearfix {if $showClosingPostInInfoBoxConfig && $topicHasConclusionPost && $smarty.foreach.postList.iteration == 2} last_post ow_box {/if}" id="post-{$post.id}">
+            {if $showClosingPostInInfoBoxConfig && $topicHasConclusionPost && $smarty.foreach.postList.iteration == 2} <span class="last_post_badge">{text key='forum+last_topic_post_badge'}</span>  {/if}
+            {$tpl}
+        </div>
+    {/if}
+{/foreach}
+</div>
+
+<div class="ow_stdmargin ow_txtright">{$paging}</div>
+
+{if $topicInfo.sticky}
+    {block_decorator name='box' type='empty' addClass='ow_smallmargin ow_center'}
+        <div class="ow_forum_status"><span class="ow_ic_push_pin ow_icon"></span> {text key='forum+topic_is_sticky'}</div>
+    {/block_decorator}
+{/if}
+{if $topicInfo.locked}
+    {block_decorator name='box' type='empty' addClass='ow_smallmargin ow_center'}
+        <div class="ow_nocontent ow_forum_status"><span class="ow_ic_lock ow_icon"></span> {text key='forum+topic_is_locked'}</div>
+    {/block_decorator}
+{/if}
+
+<div class="forum_add_post clearfix">
+
+    {if $canEdit && $isOwner || $isModerator || $canSubscribe || $isSubscribed || $canLock || !empty($tb)}
+        <div class="ow_left ow_dnd_widget" style="width: 84%;margin-left: 8%;position: relative;">
+    {else}
+        <div class="ow_left ow_dnd_widget" style="width: 100%;">
+    {/if}
+    {if !$topicInfo.locked && (( !$isHidden && ($canPost || $isModerator) ) || ( $isHidden && $canPost )) }
+        {form name='add-post-form'}
+            {block_decorator name='box' iconClass='ow_ic_write' langLabel='forum+add_post_title' addClass='ow_stdmargin'}
+                <div class="ow_smallmargin">
+                {input name='text' class="ow_smallmargin"}
+                <div>{error name='text'}</div>
+                </div>
+                {if $enableAttachments}<div class="ow_smallmargin">{$attachmentsCmp}</div>{/if}
+                <div class="clearfix"><div class="ow_right">{submit name='submit' class='ow_positive'}</div></div>
+            {/block_decorator}
+        {/form}
+    {/if}
+    {if $isHidden && !$canPost && !isset($isChannelParticipant)}
+        {block_decorator name='box' type='empty' addClass='ow_smallmargin ow_center'}
+            <div class="ow_nocontent ow_forum_status"><span class="ow_ic_warning ow_icon"></span> {$postReplyPermissionErrorText}</div>
+        {/block_decorator}
+    {/if}
+    </div>
+
+    {if $canSubscribe || $isSubscribed}
+        <input type="checkbox" id="cb-subscribe" class="ow_hidden" {if $isSubscribed}checked="checked"{/if} />
+    {/if}
+</div>
+
+{if !$isHidden || $canMoveToHidden}
+    {*Move topic form*}
+    <div id="move_topic_form" style="display: none;">
+        <div class="ow_center">
+        {form name='move-topic-form'}
+
+            {input name='group-id'}
+            <b>{error name='group-id'}</b><br /><br />
+
+            {input name='topic-id'}
+
+            <div class="ow_submit">{submit name='save'}</div>
+        {/form}
+        </div>
+    </div>
+{/if}

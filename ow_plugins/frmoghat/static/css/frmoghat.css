@@ -1,0 +1,139 @@
+select#citiesOption {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.oghat-center, .cityholder, #azanazan
+{
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.table_patent{
+    width: 100%;
+}
+
+.no-side-padding{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+span[id^=azan_t] {
+    float: left;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+div[id^=azan_p] + span {
+    padding-right: 26px;
+}
+
+.MB {
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.ic_oghat {
+    background-image: url(../images/oghat_logo.svg);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-left: solid 1px #e1e2e3;
+    background-size: 45px;
+    margin-left: 8px;
+    padding-left: 8px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+}
+
+.oghat_col {
+    background-image: url(../images/oghat_collection.svg);
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    position: absolute;
+    filter: grayscale(100%);
+    margin-top: 5px;
+    margin-right: 4px;
+}
+.azan-icon-am {
+    background-position: 1px 0px;
+}
+
+.azan-icon-sunrise {
+    background-position: 1px -15px;
+}
+
+.azan-icon-pm {
+    background-position: 1px -30px;
+}
+
+.azan-icon-sunset {
+    background-position: 1px -45px;
+}
+
+.azan-icon-evening {
+    background-position: 1px -60px;
+}
+
+.activeAzan {
+    filter: none;
+}
+
+.todaysDate {
+    display: inline-block;
+    position: absolute;
+    font-weight: lighter;
+}
+
+
+@media (max-width: 1000px) {
+    span#azanazan,
+    .todaysDate{
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+    }
+    .ic_oghat {
+        margin: 0;
+        padding: 0;
+        background-position: center;
+        border: none;
+    }
+}
+
+@media (max-width: 850px) {
+    div[id^=azan_p] + span {
+        padding: 0;
+    }
+    .oghat_col {
+        display: none;
+    }
+}
+
+@media (max-width: 195px) {
+    div[id^=azan_p] + span {
+        padding: 0;
+    }
+    .oghat_col {
+        display: none;
+    }
+    .MB {
+        border: none;
+    }
+    .MB span {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .MB span:last-child {
+        margin-bottom: 10px;
+    }
+}

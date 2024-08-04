@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmfilemanager" label="frmfilemanager" language_tag="fa-IR" language_label="فارسی">
+    <key name="widget_files_title">
+        <value>
+            مدیریت فایل‌ها
+        </value>
+    </key>
+    <key name="admin_title">
+        <value>
+            تنظیمات برای افزونه مدیریت فایل‌ها
+        </value>
+    </key>
+    <key name="admin_reset_label">
+        <value>
+            هشدار: با زدن این دکمه‌ها، ساختار پوشه‌ها حذف شده و تمامی پوشه‌ها خالی و یا از افزونه‌های دیگر خوانده خواهند شد.
+            &lt;br/&gt;
+            بعد از نصب افزونه، ابتدا
+        </value>
+    </key>
+    <key name="submit">
+        <value>
+            ثبت
+        </value>
+    </key>
+    <key name="reset_all_files">
+        <value>
+            راه‌اندازی اولیه/مجدد تمامی فایل‌ها
+        </value>
+    </key>
+    <key name="reset_all_group_files">
+        <value>
+            راه‌اندازی اولیه/مجدد ساختار فایلی جدید برای تمامی گروه‌ها
+        </value>
+    </key>
+    <key name="reset_all_profile_files">
+        <value>
+            راه‌اندازی اولیه/مجدد ساختار فایلی جدید برای تمامی پوشه‌های شخصی کاربران
+        </value>
+    </key>
+    <key name="enable_mobile_version">
+        <value>
+            قعال در نسخه تلفن همراه
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="failed_to_relocate">
+        <value>
+            خطایی در انتقال فایل‌ها رخ داد
+        </value>
+    </key>
+</prefix>

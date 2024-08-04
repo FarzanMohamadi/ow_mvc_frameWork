@@ -1,0 +1,106 @@
+{style}{literal}
+    .floatbox_body {
+        overflow: hidden;
+    }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        margin-left: 45%;
+        margin-right: 45%;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: fit-content;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        z-index: 1;
+        bottom: 150%;
+        left: 50%;
+        margin-left: -75px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
+{/literal}{/style}
+<div id="gs_citt">
+    <table id="cite-table" style="width: 100%;
+                                    display: table;
+                                    border-collapse: separate;
+                                    border-spacing: 2px;
+                                    border-color: grey;">
+        <tbody>
+        {foreach $citations as $key => $citationLabel}
+        <tr>
+            <th scope="row" class="gs_cith" style="
+                font-weight: normal;
+    font-style: inherit;
+    font-size: medium;
+    padding: inherit;
+    padding-left: 2%;
+    padding-bottom: 3% !important;
+    color: #777 !important;
+    white-space: nowrap; -webkit-user-select: none; user-select: none; width: 10%; text-align: right;background-color: white;">{$key}</th>
+            <td class="gs_citr"style="background-color: white;border: none;padding-left: 7%;" >
+                <div id="selectall-{$key}" onclick="selectText('{$key}')" >{$citationLabel}</div>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+    <div class="tooltip">
+    <a href="javascript://" onclick="copyBibtex()"  onmouseout="outTooltip()" style="font-size: medium; color: #1a0dab;">{$bibtex}</a>
+    <span class="tooltiptext" id="myTooltip">{text key='frmjcse+click_to_copy'}</span>
+    </div>
+    <textarea style="display: none;" id="copyText" rows="4" cols="50">{$bibtex_citation}</textarea>
+</div>
+<script>
+    function selectText(key) {
+        if (document.selection) { // IE
+            let range = document.body.createTextRange();
+            range.moveToElementText(document.getElementById('selectall'+key));
+            range.select();
+        } else if (window.getSelection) {
+            let range = document.createRange();
+            range.selectNode(document.getElementById('selectall-'+key));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+        }
+    }
+    function copyBibtex() {
+        let str = document.getElementById("copyText").value;
+        let el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style.cssText = "position: 'absolute', left: '-9999px'";
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+        let tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "{text key='frmjcse+bibtex_format_copied'}";
+    }
+    function outTooltip() {
+        let tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "{text key='frmjcse+click_to_copy'}";
+    }
+</script>

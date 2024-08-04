@@ -1,0 +1,28 @@
+<div class="ow_ticket_list clearfix">
+    <div class="ow_superwide">
+
+        {foreach from=$tickets item='ticket'}
+
+            {*-- decorator data*}
+
+            {capture assign='info_string'}
+            <a href="{$ticket.ticketUrl}">{$ticket.title}</a>
+            <div class="ow_left">
+                {text key='frmticketing+ticket_tracking_number'} : {$ticket.ticketTrackingNumber}
+            </div>
+            {/capture}
+
+            {capture assign='content'}
+            {$ticket.description|truncate:350}
+            {/capture}
+
+            {*~~ decorator data*}
+            {decorator name='ipc' infoString=$info_string addClass="ow_stdmargin" content=$content toolbar=$toolbars[$ticket.id] avatar=$avatars[$ticket.userId]}
+        {foreachelse}
+            {text key='base+empty_list'}
+        {/foreach}
+
+        {if $paging}<center>{$paging}</center>{/if}
+
+    </div>
+</div>

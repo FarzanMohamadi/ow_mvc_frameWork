@@ -1,0 +1,62 @@
+<br/>
+<a href="{$returnToCompetitionsUrl}">{text key="frmcompetition+return"}</a>
+<br/>
+<br/>
+<div class="ow_left place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name="competitionGroup"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmcompetition+groups_values_form"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='groupId'}
+                </td>
+                <td class="ow_value">
+                    {input name='groupId'}
+                    {error name='groupId'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='value'}
+                </td>
+                <td class="ow_value">
+                    {input name='value'}
+                    {error name='value'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="3">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>
+
+<div class="ow_right place_section left_section ow_column">
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tr class="ow_tr_first">
+            <th colspan="3" class="ow_center">{text key="frmcompetition+competition_groups_values"}</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>{text key="frmcompetition+group_title"}</th>
+            <th>{text key="frmcompetition+value"}</th>
+        </tr>
+        <tbody>
+        {foreach from=$competitionGroups item="competitionGroup"}
+        <tr class="ow_high1 draggable-lang-item ow_tr_last">
+            <td class="category_feature_image">{if isset($competitionGroup.image)}<img width="50px" src="{$competitionGroup.image}">{/if}</td>
+            <td>{$competitionGroup.title}</td>
+            <td>{$competitionGroup.value}</td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>

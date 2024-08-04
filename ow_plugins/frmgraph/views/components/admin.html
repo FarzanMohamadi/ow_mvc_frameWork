@@ -1,0 +1,104 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {if !empty($subsections) }
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$subsections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {/if}
+</div>
+
+{if isset($lastCalculationDate)}
+    <p class="graphy_last_update_time">{text key='frmgraph+last_calculation_date'}: {$lastCalculationDate}</p>
+{/if}
+<p>
+    {text key="frmgraph+description"}
+</p>
+
+<div class="ow_std_margin clearfix">
+    {form name="calculateForm"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_tr_last ow_center">
+            <th></th>
+            <th></th>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td>
+                {submit name="submit" langLabel='frmgraph+get_result_submit' }
+            </td>
+            <td>
+                {text key="frmgraph+label_calculate_all"}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+
+    <br/>
+
+    {form name="form"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_tr_last ow_center">
+            <th></th>
+            <th></th>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td class="ow_label">
+                {label name='group_id'}
+            </td>
+            <td class="ow_value">
+                {input name='group_id'}{error name="group_id"}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td class="ow_label">
+                {label name='cron_period'}
+            </td>
+            <td class="ow_value">
+                {input name='cron_period'}{error name="cron_period"}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td class="ow_label">
+                {label name='server'}
+            </td>
+            <td class="ow_value">
+                {input name='server' style='text-align:left'}{error name="server"}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td>
+                {submit name="submit" langLabel='frmgraph+submit' }
+            </td>
+            <td></td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>
+
+{block_decorator name="box" iconClass="ow_ic_mail" langLabel='frmgraph+test_connection_title'}
+<div class="clearfix" style="padding: 5px;">
+    <div class="ow_right">
+        {form name="test"}
+        {submit name="submit" langLabel='frmgraph+test_button_label' }
+        {/form}
+    </div>
+</div>
+{/block_decorator}

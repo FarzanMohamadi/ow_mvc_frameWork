@@ -1,0 +1,77 @@
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+{if isset($sectionId) && $sectionId==1}
+<table class="ow_table_1 ow_form" style="font-size: 11px; margin: 10px; text-align: center">
+    <tr>
+        <td><span>{text key='frminvite+senderId'}</span></td>
+        <td><span>{text key='frminvite+senderUserName'}</span></td>
+        <td><span>{text key='frminvite+senderDisplayName'}</span></td>
+        <td><span>{text key='frminvite+invitedEmail'}</span></td>
+        <td><span>{text key='frminvite+timeStamp'}</span></td>
+    </tr>
+    {foreach from=$tableData item='rows'}
+    <tr>
+        <td><span>{$rows.senderId}</span></td>
+        <td><span>{$rows.senderUserName}</span></td>
+        <td><span>{$rows.senderDisplayName}</span></td>
+        <td><span>{$rows.invitedEmail}</span></td>
+        <td><span>{format_date timestamp=$rows.timeStamp}</span></td>
+    </tr>
+    {/foreach}
+</table>
+{$paging}
+{/if}
+{if isset($sectionId) && $sectionId==2}
+<div class="ow_automargin ow_superwide">
+    {form name='viewCount_setting'}
+
+    <table class="ow_table_1 ow_form">
+        <tr class="{cycle name="rm" values="ow_alt1,ow_alt2"}">
+        <td class="ow_label">{label name='invitation_view_count'}</td>
+        <td class="ow_value">{input name='invitation_view_count' style="width:30px;"}<br />{error name='invitation_view_count'}</td>
+        <td class="ow_desc"></td>
+        </tr>
+    </table>
+    <div class="clearfix ow_stdmargin">
+        {submit name='save' class='ow_ic_save ow_submit ow_right'}
+    </div>
+    {/form}
+</div>
+{/if}
+{if isset($sectionId) && $sectionId==3}
+<div class="ow_automargin ow_center ow_superwide">
+    {form name='createInvitationLink'}
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td colspan="2">{text key='frminvite+create_invite_link_description'}</td>
+        </tr>
+    </table>
+    <div class="clearfix ow_stdmargin">
+        {submit name='save' class='ow_submit ow_right' langLabel='frminvite+create_invite_link'}
+    </div>
+    {/form}
+    <div id="InvitationLink" style="display:none;">
+    </div>
+</div>
+{/if}
+{if isset($sectionId) && $sectionId==4}
+<div class="ow_automargin ow_superwide">
+    {form name='setting'}
+
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td class="ow_label">{label name='limit'}</td>
+            <td class="ow_value">{input name='limit'}<br />{error name='limit'}</td>
+        </tr>
+    </table>
+    <div class="clearfix ow_stdmargin">
+        {submit name='save' class='ow_ic_save ow_submit ow_right'}
+    </div>
+    {/form}
+</div>
+{/if}

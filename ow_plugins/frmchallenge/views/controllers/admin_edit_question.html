@@ -1,0 +1,111 @@
+
+<div class="ow_std_margin clearfix">
+    {form name='editQuestion'}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='title'}
+                </td>
+                <td class="ow_value">
+                    {input name='title'}
+                    {error name='title'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='point'}
+                </td>
+                <td class="ow_value">
+                    {input name='point'}
+                    {error name='point'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='category'}
+                </td>
+                <td class="ow_value">
+                    {input name='category'}
+                    {error name='category'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="3">
+                    {submit name='submit'}
+                    <span class="ow_button">
+                        <input type="button" onclick="location.href='{$returnUrl}'" value="{text key='frmchallenge+return'}" />
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>
+<div class="ow_left place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name='addAnswer'}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+                <tr>
+                    <th colspan="2">{text key="frmchallenge+create_answer"}</th>
+                </tr>
+                <tr class="ow_alt1">
+                    <td width="1" class="ow_label">
+                        {label name='ans_title'}
+                    </td>
+                    <td class="ow_value">
+                        {input name='ans_title'}
+                        {error name='ans_title'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td width="1" class="ow_label">
+                        {label name='correct'}
+                    </td>
+                    <td class="ow_value">
+                        {input name='correct'}
+                        {error name='correct'}
+                    </td>
+                </tr>
+                <tr class="ow_tr_last ow_center">
+                    <td colspan="3">
+                        {submit name='submit'}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>
+<div class="ow_right place_section left_section ow_column">
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr>
+            <th colspan="3">{text key="frmchallenge+answers"}</th>
+        </tr>
+        <tr>
+            <th>{text key="frmchallenge+title"}</th>
+            <th>{text key="frmchallenge+correct"}</th>
+            <th></th>
+        </tr>
+        {foreach from=$answers item=answer}
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {$answer['title']}
+            </td>
+            <td width="1" class="ow_label">
+                {if $answer['correct']}
+                    <span class="ow_green">{text key="frmchallenge+yes"}</span>
+                {else}
+                    <span class="ow_red">{text key="frmchallenge+no"}</span>
+                {/if}
+            </td>
+            <td class="features">
+                <a class="ow_lbutton ow_green" href="{$answer['editUrl']}" style="display: inline-block;">{text key="frmchallenge+edit"}</a>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>

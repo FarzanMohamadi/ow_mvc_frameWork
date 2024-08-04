@@ -1,0 +1,33 @@
+
+
+{form name='settings'}
+<table class="ow_table_1 ow_form ow_automargin" style="width: 600px;">
+    <tr class="ow_alt1">
+        <td class="ow_label" style="min-width:200px">
+            {label name='user'}
+        </td>
+        <td class="ow_value">
+            {input name='user'}
+            {error name='user'}
+        </td>
+        <td class="ow_value">
+            <img src="{$userURL}" width="100px" alt="dd "/>
+        </td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label" style="min-width:200px">
+            {label name='groups'}
+        </td>
+        <td class="ow_value">
+            {input name='groups'}
+            {error name='groups'}
+        </td>
+        <td class="ow_value">
+            <img src="{$groupsURL}" width="100px" alt="dd "/>
+        </td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="3">{submit name='save' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

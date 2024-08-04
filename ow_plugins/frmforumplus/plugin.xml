@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>plugin</name>
+    <key>frmforumplus</key>
+    
+        امکان مشاهده  ابزارک آخرین مطالب ارسالی انجمن بر اساس آخرین موضوعات، آخرین پست ها و  پربازدیدترین موضوعات در صفحه اصلی
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10832</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>published</item>
+    </category>
+    <prerequisite>
+        <item>forum</item>
+    </prerequisite>
+</plugin>

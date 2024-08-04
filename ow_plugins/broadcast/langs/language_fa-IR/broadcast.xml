@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="broadcast" label="broadcast" language_tag="fa-IR" language_label="فارسی">
+    <key name="order_submitted">
+        <value>
+            سفارش شما با شماره {$orderNumber} ثبت شد. جهت مشاهده سفارش کلیک کنید
+        </value>
+    </key>
+</prefix>

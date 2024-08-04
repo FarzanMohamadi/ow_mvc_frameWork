@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix name="frmtelegramimport" label="Import telegram Channel data" language_tag="en" language_label="English">
+    <key name="consider_max_upload_size">
+        <value>
+            uploaded file size exceeds maximum file upload size
+        </value>
+    </key>
+    <key name="uploaded_file_ix_corrupted">
+        <value>
+            uploaded file is corrupted
+        </value>
+    </key>
+    <key name="no_file_selected">
+        <value>
+            no file selected
+        </value>
+    </key>
+</prefix>

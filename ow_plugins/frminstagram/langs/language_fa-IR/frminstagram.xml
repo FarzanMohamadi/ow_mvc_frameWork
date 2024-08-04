@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frminstagram" label="frminstagram" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            اینستاگرام
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه ارتباط با اینستاگرام
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="default_page">
+        <value>
+            نام کاربری اینستاگرام پیش‌فرض
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="admin_changed_success">
+        <value>
+            با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="not_set">
+        <value>
+            نام کاربری اینستاگرام تنظیم نشده است
+        </value>
+    </key>
+    <key name="cant_load">
+        <value>
+            تصاویر به درستی دریافت نشدند.
+        </value>
+    </key>
+
+    <key name="instagram_settings">
+        <value>
+            تنظیمات اینستاگرام
+        </value>
+    </key>
+    <key name="instagram_already_connected">
+        <value>
+            به اینستاگرام وصل است
+        </value>
+    </key>
+    <key name="connect_instagram_to_entity">
+        <value>
+            اتصال به اینستاگرام
+        </value>
+    </key>
+</prefix>

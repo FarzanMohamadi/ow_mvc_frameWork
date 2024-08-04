@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>ویرایش‌گر متن پیشرفته</name>
+	<key>frmadvanceeditor</key>
+    
+        استفاده از ویرایشگر متن پیشرفته در صفحاتی که به کاربر اجازه نوشتن متن با قابلیت درج مولفه‌های HTML داده شده است. این ویرایشگر از نسخه 4.7.1 کتابخانه CKEditor استفاده می‌کند. در صورت انتخاب گزینه ‌"غیرفعال‌سازی  HTML" در تنظیمات محتوا در مدیریت  این افزونه  قابل استفاده نیست.
+    </description>
+	<author>Farzan</author>
+	<authorEmail>test@test.com</authorEmail>
+	<developerKey>12345</developerKey>
+	<build>10824</build>
+	<copyright>2023</copyright>
+	<license>No License</license>
+	<licenseUrl>No License</licenseUrl>
+	<category>
+		<item>essential</item>
+        <item>published</item>
+	</category>
+</plugin>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmwordscorrection" label="frmwordscorrection" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_correct_words">
+        <value>
+            اصلاح لغات
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه اصلاح‌کننده لغات
+        </value>
+    </key>
+    <key name="correct_words_success">
+        <value>
+            اصلاح لغات با موفقیت انجام شد.
+        </value>
+    </key>
+    <key name="admin_correct_words_description">
+        <value>
+            این افزونه تمامی لغات برخی از افزونه‌ها را اصلاح می‌کند (نغییر حرف ك و ي به ک و ی). این افزونه محتوای درون افزونه‌های اخبار، گروه، رویداد، بلاگ، ویدیو، انجمن، عکس، تازه‌ها و برچسب‌ها را بررسی می‌کند.
+        </value>
+    </key>
+</prefix>

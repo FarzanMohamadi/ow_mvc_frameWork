@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmnationalcode" label="frmnationalcode" language_tag="en" language_label="English">
+	<key name="form_validator_national_code_exists_message">
+		<value>
+			National code exists
+		</value>
+	</key>
+	<key name="form_validator_national_code_bad_format_message">
+		<value>
+			National code must be 10 digits
+		</value>
+	</key>
+	<key name="field_national_code_label">
+		<value>
+			National Code
+		</value>
+	</key>
+	<key name="field_national_code_description">
+		<value>
+			10 digits
+		</value>
+	</key>
+</prefix>

@@ -1,0 +1,162 @@
+{script}
+{literal}
+    $("a.blog_delete_attachment").each(function(){
+        $(this).click(function(){
+
+            if ( confirm(OW.getLanguageText('blogs', 'confirm_delete_attachment')) )
+            {
+               var attachment_id = $(this).data("aid");
+               var attachmentDeleteCode = $(this).attr("code");
+               var params = {};
+               var url = '{/literal}{url_for_route for='blog_delete_attachment'}{literal}';
+               params['attachmentId'] = attachment_id;
+                if(attachmentDeleteCode!=null && attachmentDeleteCode!=undefined)
+                {
+                    params['attachmentDeleteCode'] = attachmentDeleteCode;
+                }
+               $.ajaxSetup({dataType: 'json'});
+               $.post(url, params, function(data){
+                    if ( data.result == true ) {
+                        OW.info(data.msg);
+						window.location = window.location;
+                    }
+                    else if (data.error != undefined) {
+                        OW.warning(data.error);
+                    }
+               });
+            }
+            else
+            {
+                return false;
+            }
+        });
+    });
+{/literal}
+{/script}
+
+      	<div class="clearfix">
+         	<div class="ow_superwide blog_view" style="float:left;">
+         		{block_decorator name='box' type='empty' toolbar=$tb addClass="ow_stdmargin"}
+					<div class="clearfix">
+						{$info.dto->post}
+					</div>
+					<div class="ow_stdmargin"><center><br />{$paging}</center></div>
+				{/block_decorator}
+                {add_content key='socialsharing.get_sharing_buttons' title=$info.dto->title description=$info.dto->post entityType='blogs' entityId=$info.dto->id}
+
+                {add_content key='blogs.blog_view.content.after_blog_post'}
+
+                {if $adjasentUrl}
+				{block_decorator name="box" addClass="ow_stdmargin"}
+	                     <div class="clearfix">
+	                        <div style="float:left;">
+	                        	{if $adjasentUrl.prev|count_characters > 0}
+	                        		<a href="{$adjasentUrl.prev}">{text key="blogs+prev_post"}</a> <span class="ow_ic_left_arrow" style="background-repeat: no-repeat;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	                        	{/if}
+	                       	</div>
+	                        <div style="float:right;">
+	                        	{if $adjasentUrl.next|count_characters > 0}
+	                        		<span class="ow_ic_right_arrow" style="background-repeat: no-repeat;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="{$adjasentUrl.next}">{text key="blogs+next_post"}</a>
+	                        	{/if}
+	                       	</div>
+	                     </div>
+
+	                     <center> <span class="ow_ic_up_arrow" style="background-repeat: no-repeat;">&nbsp;&nbsp;&nbsp;&nbsp;</span> <a href="{$adjasentUrl.index}" class="blog_index">{text key="blogs+blog_index"}</a></center>
+				{/block_decorator}
+                {/if}
+
+                {$comments}
+
+         	</div>
+
+            <div class="ow_supernarrow" style="float:right;">
+				<div class="blog_widget ow_dnd_widget">
+               {block_decorator name="box" addClass="ow_stdmargin" langLabel="blogs+post_title" iconClass="ow_ic_picture"}
+                  <table class="ow_table_3 ow_form ow_nomargin detail_table">
+                     <tbody>
+                     	{if $isAuthorExists}
+							{if !empty($imgsrc)}
+								{if isset($imageInfo) && ($imageInfo.empty)}
+									<tr>
+										<td colspan="2" class="ow_value ow_blog_image"><a href="{$ProfileUrl}"><img src="{$imgsrc}" style="background-color: {$imageInfo.color}" /></a>&nbsp;</td>
+									</tr>
+								{else}
+									<tr>
+										<td colspan="2" class="ow_value ow_blog_image"><a href="{$ProfileUrl}"><img src="{$imgsrc}" /></a>&nbsp;</td>
+									</tr>
+								{/if}
+							{/if}
+                        <tr class="ow_tr_first">
+							<td colspan="2" class="ow_blog_creator_user" >
+								{user_link name=$displayname username=$username}
+							</td>
+                        </tr>
+                        {/if}
+                        <tr class="{if !$isAuthorExists}ow_tr_first{/if} ow_tr_last">
+                           <td class="ow_label">{text key="blogs+added"}</td>
+	                           <td class="ow_value">{format_date timestamp=$info.dto->timestamp}</td>
+                        </tr>
+                     </tbody>
+                  </table>
+
+				<div>
+					<div class="ow_user_blogs_botton clearfix ow_center">
+						{$my_bolgs_url}
+					</div>
+				</div>
+               {/block_decorator}
+				</div>
+
+				{if isset($attachments)}
+				<div class="blog_widget ow_dnd_widget attachments">
+					{block_decorator name="box" addClass="ow_stdmargin" langLabel="base+attch_attachment_label" iconClass="ow_ic_picture"}
+							{foreach from=$attachments item='attm'}
+							<div class="ow_file_attachment_preview">
+								<div class="ow_label">
+									<a title="{$attm.fileName}" class="ow_file_attachment_info {$attm.extension}" href="{$attm.downloadUrl}" target="_blank">{$attm.fileName}</a>
+									<span>({$attm.fileSize}Kb)</span>
+								</div>
+								{if isset($canEdit) && $canEdit==true}
+								<div class="ow_value">
+									{if isset($attachmentDeleteCode)}
+									<a title="{text key='base+delete'}" href="javascript://" style="float: left;" class="blog_delete_attachment ow_lbutton" data-aid="{$attm.id}" code="{$attachmentDeleteCode}" rel="{$attm.id}"></a>
+									{else}
+									<a title="{text key='base+delete'}" href="javascript://" style="float: left;" class="blog_delete_attachment ow_lbutton" data-aid="{$attm.id}" rel="{$attm.id}"></a>
+									{/if}
+								</div>
+								{/if}
+							</div>
+							{/foreach}
+					{/block_decorator}
+				</div>
+				{/if}
+
+				<div class="blog_widget ow_dnd_widget">
+               	{$tagCloud}
+				</div>
+				
+				<div class="blog_widget ow_dnd_widget">
+				{$rate}
+				</div>
+				{if isset($archive) && isset($dateParsed)}
+				<div class="blog_widget ow_dnd_widget">
+				{if $isAuthorExists}
+					{block_decorator name="box" langLabel="blogs+blog_archive_lbl_archives" iconClass="ow_ic_clock"}
+					{assign var="uname" value=$author->getUsername() }
+	                  <ul class="ow_regular">
+	                  	<li><a href="{url_for_route for="user-blog:[user=>`$uname`]"}">{text key="base+all"}</a> </li>
+	                  	{foreach from=$archive key='year' item='months'}
+	                  		{foreach from=$months item='month'}
+	                  			{assign var='u' value=$author->getUsername()}
+	                  			<li>
+	                  				<a href="{url_for_route for="user-blog:[user=>$u]"}?month={$month}-{$year}">{$dateParsed.{$year}.{$month}}</a>
+	                  			</li>
+	                  		{/foreach}
+	                  	{/foreach}
+	                  </ul>
+					{/block_decorator}
+				{/if}
+				</div>
+				{/if}
+            </div>
+      	</div>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmwidgetplus" label="frmwidgetplus" language_tag="fa-IR" language_label="فارسی">
+    <key name="display_rate_widget">
+        <value>
+           نمایش ابزارک امتیاز به
+        </value>
+    </key>
+    <key name="all_users">
+        <value>
+            همه کاربران
+        </value>
+    </key>
+    <key name="only_login_users">
+        <value>
+            همه به غیر از کاربران مهمان
+        </value>
+    </key>
+    <key name="settings_updated">
+        <value>
+            تنظیمات به‌روز شد
+        </value>
+    </key>
+    <key name="index_page_title">
+        <value>
+            مدیریت ابزارک‌ها
+        </value>
+    </key>
+    <key name="index_page_heading">
+        <value>
+            مدیریت ابزارک‌ها
+        </value>
+    </key>
+    <key name="activate_select2_checkbox_label">
+        <value>
+            استفاده از فیلد‌های انتخابی قابل جستجو
+        </value>
+    </key>
+    <key name="no_result">
+        <value>
+            نتیجه‌ای یافت نشد
+        </value>
+    </key>
+    <key name="error_loading">
+        <value>
+            خطا در بارگذاری نتایج
+        </value>
+    </key>
+    <key name="input_too_long">
+        <value>
+            ورودی طولانی می‌باشد
+        </value>
+    </key>
+    <key name="input_too_short">
+        <value>
+            ورودی کوتاه می‌باشد
+        </value>
+    </key>
+    <key name="loading_more">
+        <value>
+            در حال بارگذاری...
+        </value>
+    </key>
+    <key name="searching">
+        <value>
+            در حال جستجو...
+        </value>
+    </key>
+    <key name="maximum_selected">
+        <value>
+            تعداد انتخاب‌های باقیمانده:
+        </value>
+    </key>
+    <key name="select">
+        <value>
+            انتخاب
+        </value>
+    </key>
+    <key name="remove_all_items">
+        <value>
+            حذف همه موارد
+        </value>
+    </key>
+</prefix>

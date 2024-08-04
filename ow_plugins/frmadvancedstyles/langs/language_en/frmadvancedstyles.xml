@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmadvancedstyles" label="frmadvancedstyles" language_tag="en" language_label="English">
+	<key name="input_file"><value>Path to input file</value></key>
+	<key name="input_file_desc"><value>Path to file, relative to project root. Such as "ow_static/plugins/base/css/ow.scss"</value></key>
+	<key name="output_format"><value>Input file format</value></key>
+	<key name="convert"><value>Convert</value></key>
+	<key name="admin_settings_title"><value>frmadvancedstyles Plugin settings</value></key>
+	<key name="admin_settings_desc"><value>This form will convert your SCSS files to CSS format and saves them in the same folder.</value></key>
+	<key name="compiled_success"><value>File successfully compiled to css.</value></key>
+	<key name="compiled_failed"><value>File failed to compile to css.</value></key>
+	<key name="path_ow_base"><value>Base (desktop)</value></key>
+	<key name="path_ow_mobile_base"><value>Base (mobile)</value></key>
+	<key name="path_current_theme"><value>Current theme(desktop)</value></key>
+	<key name="path_current_theme_mobile"><value>Current theme (mobile)</value></key>
+	<key name="path_all_themes"><value>All themes (desktop)</value></key>
+	<key name="path_all_themes_mobile"><value>All themes (mobile)</value></key>
+	<key name="path_static"><value>static</value></key>
+	<key name="theme_desktop_scss_box_cap_label"><value>Desktop SCSS</value></key>
+	<key name="theme_mobile_scss_box_cap_label"><value>Mobile SCSS</value></key>
+</prefix>

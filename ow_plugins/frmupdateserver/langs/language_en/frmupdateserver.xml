@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmupdateserver" label="frmupdateserver" language_tag="en" language_label="English">
+    <key name="return">
+        <value>
+            Return
+        </value>
+    </key>
+    <key name="current_version_label">
+        <value>
+            Current version
+        </value>
+    </key>
+	<key name="new_version_label">
+        <value>
+            New version
+        </value>
+    </key>
+	<key name="download_fullversion_label">
+        <value>
+            Download
+        </value>
+    </key>
+	<key name="download_updateversion_label">
+        <value>
+            Download update pack
+        </value>
+    </key>
+    <key name="check_update_version">
+        <value>
+            Checking updates
+        </value>
+    </key>
+    <key name="check_update_version_description">
+        <value>
+            Check version of all plugins, themes and core for updating the last released version.
+        </value>
+    </key>
+	<key name="delete_all_versions">
+        <value>
+            Delete all versions
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            Settings
+        </value>
+    </key>
+    <key name="plugins">
+        <value>
+            Plugins
+        </value>
+    </key>
+    <key name="core">
+        <value>
+            Core
+        </value>
+    </key>
+    <key name="updater">
+        <value>
+            Updater
+        </value>
+    </key>
+    <key name="themes">
+        <value>
+            Themes
+        </value>
+    </key>
+    <key name="add_item">
+        <value>
+            Add item
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            Delete
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="name">
+        <value>
+            Name
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="key">
+        <value>
+            Key
+        </value>
+    </key>
+    <key name="image">
+        <value>
+            Image
+        </value>
+    </key>
+    <key name="type">
+        <value>
+            Type
+        </value>
+    </key>
+    <key name="replace_image">
+        <value>
+            Change image
+        </value>
+    </key>
+    <key name="removed_successfully">
+        <value>
+            Information removed successfully.
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            Information saved successfully.
+        </value>
+    </key>
+    <key name="top_menu_item">
+        <value>
+            Download
+        </value>
+    </key>
+    <key name="plugins_sample">
+        <value>
+            Plugins
+        </value>
+    </key>
+    <key name="themes_sample">
+        <value>
+            Themes
+        </value>
+    </key>
+    <key name="view_versions">
+        <value>
+            View all versions
+        </value>
+    </key>
+    <key name="view_guideline">
+        <value>
+            User manual
+        </value>
+    </key>
+    <key name="guidelineurl_label">
+        <value>
+            Guideline url
+        </value>
+    </key>
+    <key name="download_last_version">
+        <value>
+            Download the last version
+        </value>
+    </key>
+    <key name="download_plugins">
+        <value>
+            Download plugins
+        </value>
+    </key>
+    <key name="download_themes">
+        <value>
+            Download themes
+        </value>
+    </key>
+    <key name="download_themes_description">
+        <value>
+            You can find themes in the page of
+            &lt;a href=&quot;{$url}&quot; target=&quot;_blank&quot; &gt;
+            download themes
+            &lt;/a&gt;
+            for downloading in any versions. Also you can find all themes in the list.
+        </value>
+    </key>
+    <key name="download_plugins_description">
+        <value>
+            You can find plugins in the page of
+            &lt;a href=&quot;{$url}&quot; target=&quot;_blank&quot; &gt;
+            download plugins
+            &lt;/a&gt;
+            for downloading in any versions. Also you can find all plugins in the list.
+        </value>
+    </key>
+    <key name="download_core_update_description">
+        <value>
+            You can update manually your social network using with any version to version of {$version}.
+        </value>
+    </key>
+    <key name="date_released">
+        <value>
+            Date released:
+        </value>
+    </key>
+    <key name="download_last_core_version">
+        <value>
+            Download the last version ({$version})
+        </value>
+    </key>
+    <key name="download_last_core_update-version">
+        <value>
+            Download the last version of updating to ({$version})
+        </value>
+    </key>
+    <key name="download_last_core_version_title">
+        <value>
+            Download the latest version
+        </value>
+    </key>
+    <key name="download_last_core_update_version_title">
+        <value>
+            Download the updating files for the last version
+        </value>
+    </key>
+    <key name="download_core_main_description">
+        <value>
+            Zip file of core includes some essentials plugins.
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            There is no item.
+        </value>
+    </key>
+    <key name="plugin">
+        <value>
+            plugin
+        </value>
+    </key>
+    <key name="theme">
+        <value>
+            theme
+        </value>
+    </key>
+    <key name="item_not_exist">
+        <value>
+            There is not any version for this item.
+        </value>
+    </key>
+    <key name="delete_all_versions_successfully">
+        <value>
+            All plugins, themes and core version deleted.
+        </value>
+    </key>
+    <key name="all_items_checked">
+        <value>
+            All plugins, themes and core version updated
+        </value>
+    </key>
+    <key name="prefix_download_path_label">
+        <value>
+            Files download root address
+        </value>
+    </key>
+    <key name="sha256_label">
+        <value>
+            Information verification (Sha256)
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            Update server plugin
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            Update server plugin
+        </value>
+    </key>
+    <key name="update_guideline">
+        <value>
+            Update guideline
+        </value>
+    </key>
+    <key name="delete_item">
+        <value>
+            Delete Item
+        </value>
+    </key>
+    <key name="buildNumber">
+        <value>
+            Build Number
+        </value>
+    </key>
+    <key name="item_deleted_successfully">
+        <value>
+            Item Deleted Successfully
+        </value>
+    </key>
+    <key name="admin_delete_item_title">
+        <value>
+            Update Server Plugin setting
+        </value>
+    </key>
+    <key name="last_version_buildNumber">
+        <value>
+            Last Version Build Number
+        </value>
+    </key>
+	<key name="admin_check_item_title">
+        <value>
+            Check Item For Update
+        </value>
+    </key>
+	<key name="check_item">
+        <value>
+            Check Item For Update
+        </value>
+    </key>
+    <key name="download_last_core_build_version">
+        <value>
+            Last Version Build Number: {$value}
+        </value>
+    </key>
+    <key name="download_last_core_update_build_version">
+        <value>
+            Last Version Build Number: {$value}
+        </value>
+    </key>
+    <key name="download_last_build_version_label">
+        <value>
+            Version {$value}
+        </value>
+    </key>
+    <key name="title_widget">
+        <value>
+            Last version of 
+        </value>
+    </key>
+    <key name="download_directly">
+        <value>
+            Download directly
+        </value>
+    </key>
+    <key name="wait_for_download">
+        <value>
+            Downloading file ...
+        </value>
+    </key>
+    <key name="frmupdateserver_sitemap">
+        <value>
+            Update Server
+        </value>
+    </key>
+    <key name="files">
+        <value>
+            Files
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+            categories
+        </value>
+    </key>
+    <key name="label_category_label">
+        <value>
+            Category label
+        </value>
+    </key>
+    <key name="label_error_already_exist">
+        <value>
+            label already exist
+        </value>
+    </key>
+    <key name="form_add_category_submit">
+        <value>
+            Add‌ Category
+        </value>
+    </key>
+    <key name="admin_settings_categories">
+        <value>
+            Plugin Categories
+        </value>
+    </key>
+    <key name="edit_item">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="database_record_removed">
+        <value>
+            category removed
+        </value>
+    </key>
+    <key name="database_record_edit">
+        <value>
+            category edited
+        </value>
+    </key>
+    <key name="database_record_edit_fail">
+        <value>
+            category edit failed
+        </value>
+    </key>
+    <key name="name_category">
+        <value>
+            Existing Categories
+        </value>
+    </key>
+    <key name="edit_item_page_title">
+        <value>
+            Category label edit
+        </value>
+    </key>
+    <key name="category_label">
+        <value>
+            category
+        </value>
+    </key>
+    <key name="all_categories">
+        <value>
+            all categories
+        </value>
+    </key>
+    <key name="category_description">
+        <value>
+            Plugins are categorized in:
+        </value>
+    </key>
+    <key name="are_you_sure">
+        <value>
+            are you sure to delete this category
+        </value>
+    </key>
+</prefix>

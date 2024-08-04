@@ -1,0 +1,86 @@
+<div class="clearfix" style="padding: 0px 10px 0px 10px; text-align: center; background-color: #fff;">
+    {$sections}
+
+    {if $sectionId!='guideline'}
+    <div class="ow_left place_section left_section ow_supernarrow">
+        <table class="ow_table_1 st_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_first">
+                <th colspan="3" class="ow_center">{text key="frmrules+filer_by_category"}</th>
+            </tr>
+            {foreach from=$categories item="category"}
+            <tr class="ow_high1">
+                <td style="width: 20px;"><input checked type="checkbox" onchange="filterRulesChanged();"
+                                                name="filter_category" value="{$category.name}"/></td>
+                {if isset($category.icon)}
+                <td style="width: 30px;"><img width="30px" src="{$category.icon}"></td>
+                {/if}
+                {if isset($category.icon)}
+                <td>{/if}{if !isset($category.icon)}
+                <td colspan="2">{/if}
+                    {$category.name}
+                </td>
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+        <br/>
+        <table class="ow_table_1 st_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_first">
+                <th colspan="3" class="ow_center">{text key="frmrules+filer_by_tag"}</th>
+            </tr>
+            {foreach from=$tags item="tag"}
+            <tr class="ow_high1">
+                <td style="width: 20px;"><input type="checkbox" onchange="filterRulesChanged();" name="filter_tag"
+                                                value="{$tag}"/></td>
+                <td>{$tag}</td>
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="ow_right place_section left_section ow_superwide">
+        <table class="ow_table_1 st_table_2 ow_form">
+            <tbody>
+            <tr class="ow_tr_first">
+                <th class="ow_center">{$sectionsHeader}</th>
+            </tr>
+            {foreach from=$items item="item"}
+            <tr class="ow_high1 ow_tr_last" name="rule_item" data-category="{$item.categoryName}"
+                data-tag="{$item.tag}">
+                <td>
+                    <h2>
+                        {if isset($item.categoryIcon)}
+                        	<div style="vertical-align: middle; display: table-cell;">
+                        		<img width="30px" src="{$item.categoryIcon}">
+                        	</div>
+                        {/if}
+                        <div style="vertical-align: middle; display: table-cell;">
+                        	{$item.numberingLabel}
+                        	{$item.name}
+                        </div>
+                    </h2>
+                    <div>
+                   	<div style="vertical-align: top; display: table-cell; padding-top: 5px;">
+                    	{if isset($item.icon)}
+                    		<img style="width: 56px; opacity: 0.6; {$itemFloatCss}" src="{$item.icon}">
+                    	{else}
+                    		<span style="width: 56px; display: block;">&nbsp;</span>
+                    	{/if}
+                   	</div>
+                    <div style="vertical-align: top; display: table-cell; padding-top: 5px; text-align: justify;">
+                    	{$item.description}
+                    </div>
+                </td>
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+    </div>
+    {else}
+    {$frmrules_guidline}
+    {/if}
+
+</div>

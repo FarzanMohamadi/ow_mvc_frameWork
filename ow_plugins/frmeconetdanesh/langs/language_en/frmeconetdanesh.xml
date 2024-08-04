@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmeconetdanesh" label="frmeconetdanesh" language_tag="en" language_label="English">
+    <key name="admin_settings_title">
+        <value>
+            frmeconetdanesh setting
+        </value>
+    </key>
+    <key name="general_setting">
+        <value>General Settings</value>
+    </key>
+    <key name="categorized_tags_widget_setting">
+        <value>Categorized tags widget setting</value>
+    </key>
+    <key name="cmp_widget_post_count">
+        <value>Number of blog to show</value>
+    </key>
+    <key name="tag_widget_heading">
+        <value>Categorized blog posts using tags</value>
+    </key>
+    <key name="main_menu_item">
+        <value>Knowledge Center</value>
+    </key>
+
+</prefix>

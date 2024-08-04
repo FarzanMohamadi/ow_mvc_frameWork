@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>پشتیبانی از نرم‌افزار تلفن همراه</name>
+	<key>frmmobilesupport</key>
+	
+        شامل تنظیمات ارسال اعلان توسط FCM و ارائه دهنده اطلاعات مورد نیاز تلفن همراه
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10887</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>essential</item>
+        <item>published</item>
+    </category>
+</plugin>

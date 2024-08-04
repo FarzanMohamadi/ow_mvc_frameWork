@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmpreloader" label="frmpreloader" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_save_settings">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+         تنظیمات افزونه پیش بارگذار
+        </value>
+    </key>
+    <key name="user_save_success">
+        <value>
+            تنظیمات با موفقیت ذخیره شد.
+        </value>
+    </key>
+ 	<key name="preloadertype">
+        <value>
+           نوع پیش بارگذار
+        </value>
+    </key>
+ 	<key name="PreloaderDescription">
+        <value>
+           نوع پیش بارگذارمورد نظر خود را در اینجا می توانید تغییر دهید.
+        </value>
+    </key>
+	<key name="admin_save_settings">
+        <value>
+           ذخیره تنظیمات
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmslideshow" label="frmslideshow" language_tag="en" language_label="English">
+    <key name="news_widget_title">
+        <value>
+            Latest News
+        </value>
+    </key>
+    <key name="forum_widget_title">
+        <value>
+            Forum Sections
+        </value>
+    </key>
+
+    <key name="admin_settings_heading">
+        <value>
+            Slideshow Settings
+        </value>
+    </key>
+    <key name="general_settings">
+        <value>
+            Initial Slideshows
+        </value>
+    </key>
+    <key name="more_sections">
+        <value>
+            Extra Slideshows
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            Settings
+        </value>
+    </key>
+    <key name="news_count">
+        <value>
+            Maximum news/forum slides
+        </value>
+    </key>
+    <key name="max_text_char">
+        <value>
+            Maximum news text character
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            Save
+        </value>
+    </key>
+
+
+    <key name="add_album_form">
+        <value>
+            Add Album
+        </value>
+    </key>
+    <key name="albums">
+        <value>
+            Albums
+        </value>
+    </key>
+    <key name="actions">
+        <value>
+            Actions
+        </value>
+    </key>
+    <key name="slides">
+        <value>
+            Slides
+        </value>
+    </key>
+    <key name="slide">
+        <value>
+            Slide
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            Delete
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            Title
+        </value>
+    </key>
+
+    <key name="saved_successfully">
+        <value>
+            Changes saved successfully
+        </value>
+    </key>
+    <key name="edit_album">
+        <value>
+            Edit Album
+        </value>
+    </key>
+    <key name="return_to_albums">
+        <value>
+            Return to albums
+        </value>
+    </key>
+    <key name="deleted_successfully">
+        <value>
+            Item is deleted successfully
+        </value>
+    </key>
+    <key name="delete_item_warning">
+        <value>
+            Are you sure you want to delete this item?
+        </value>
+    </key>
+
+    <key name="description">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="add_slide_form">
+        <value>
+            Add Slide
+        </value>
+    </key>
+    <key name="edit_slide">
+        <value>
+            Edit Slide
+        </value>
+    </key>
+    <key name="return_to_slides">
+        <value>
+            Return to Slides
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            There are no items
+        </value>
+    </key>
+    <key name="untitled">
+        <value>
+            Untitled
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmgroupsinvitationlink" label="frmgroupsinvitationlink" language_tag="fa-IR" language_label="فارسی">
+    <key name="widget_link_label">
+        <value>
+            لینک دعوت
+        </value>
+    </key>
+    <key name="view_all_links">
+        <value>
+            تاریخچه لینک ها
+        </value>
+    </key>
+    <key name="no_link">
+        <value>
+            لینکی وجود ندارد
+        </value>
+    </key>
+    <key name="no_link_click_to_create_one">
+        <value>
+            تاکنون لینکی برای این گروه ساخته نشده است؛ در صورت تمایل با استفاده از دکمه ی ایجاد لینک جدید اقدام کنید.
+        </value>
+    </key>
+    <key name="add_link">
+        <value>
+            ایجاد لینک جدید
+        </value>
+    </key>
+    <key name="add_link_confirm">
+        <value>
+            آیا از ایجاد لینک جدید اطمینان دارید؟
+        </value>
+    </key>
+    <key name="link_generation_success_message">
+        <value>
+            لینک با موفقیت ایجاد شد
+        </value>
+    </key>
+    <key name="link_generation_failure_message">
+        <value>
+            خطا در تولید لینک. لطفا دوباره تلاش کنید
+        </value>
+    </key>
+    <key name="active_link">
+        <value>
+            فعال
+        </value>
+    </key>
+    <key name="deactivated_link">
+        <value>
+            غیرفعال
+        </value>
+    </key>
+    <key name="deactivate_link_button">
+        <value>
+            غیرفعالسازی
+        </value>
+    </key>
+    <key name="create_date">
+        <value>
+            زمان ایجاد
+        </value>
+    </key>
+    <key name="hash_link">
+        <value>
+            آدرس
+        </value>
+    </key>
+    <key name="status">
+        <value>
+            وضعیت
+        </value>
+    </key>
+    <key name="creator_user">
+        <value>
+            ایجاد کننده
+        </value>
+    </key>
+    <key name="related_users">
+        <value>
+            کاربران استفاده کننده
+        </value>
+    </key>
+    <key name="show">
+        <value>
+            مشاهده
+        </value>
+    </key>
+    <key name="show_all_users_joined_with_link">
+        <value>
+            مشاهده تمام کاربرانی که با لینک عضو شده اند
+        </value>
+    </key>
+    <key name="access_denied_for_see_link">
+        <value>
+            شما مجاز به مشاهده لینک گروه نیستید
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه لینک دعوت گروه
+        </value>
+    </key>
+    <key name="link_expiration_time">
+        <value>
+            مدت زمان انقضای لینک ها (روز)
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            تنظیمات افزونه لینک دعوت گروه
+        </value>
+    </key>
+    <key name="link_user_list_page_heading">
+        <value>
+            افراد عضو شده با لینک مورد نظر
+        </value>
+    </key>
+    <key name="all_links_user_list_page_heading">
+        <value>
+            تمام افراد عضو شده با لینک
+        </value>
+    </key>
+    <key name="link_user_list_page_title">
+        <value>
+            افراد عضو شده با لینک مورد نظر
+        </value>
+    </key>
+    <key name="all_links_user_list_page_title">
+        <value>
+            تمام افراد عضو شده با لینک
+        </value>
+    </key>
+    <key name="back_button">
+        <value>
+            بازگشت
+        </value>
+    </key>
+    <key name="links_page_title">
+        <value>
+            تاریخچه لینک ها
+        </value>
+    </key>
+    <key name="links_page_heading">
+        <value>
+            تاریخچه لینک ها
+        </value>
+    </key>
+    <key name="group_name">
+        <value>
+            گروه :
+        </value>
+    </key>
+    <key name="number_of_users">
+        <value>
+            تعداد کل : {$number} کاربر
+        </value>
+    </key>
+    <key name="related_link">
+        <value>
+            لینک مرتبط : {$link}
+        </value>
+    </key>
+    <key name="deep_link_label">
+        <value>
+            آدرس لینک عمیق
+        </value>
+    </key>
+    <key name="are_you_want_to_open_group_in_application">
+        <value>
+            آیا مایلید این گروه را در اپلیکیشن اندروید مشاهده کنید؟
+        </value>
+    </key>
+</prefix>

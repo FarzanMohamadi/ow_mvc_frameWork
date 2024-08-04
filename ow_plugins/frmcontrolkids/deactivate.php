@@ -1,0 +1,5 @@
+<?php
+/**
+ * 
+ * All rights reserved.
+ */

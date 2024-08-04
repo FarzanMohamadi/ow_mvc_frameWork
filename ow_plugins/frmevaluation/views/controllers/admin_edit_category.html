@@ -1,0 +1,66 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<h1 class="ow_stdmargin">
+    {text key="frmevaluation+edit_category"}
+</h1>
+
+<div class="ow_std_margin clearfix">
+    <h3>
+        <a href="{$returnToCategory}">{text key="frmevaluation+return_to_categories"}</a>
+    </h3>
+    {form name="category"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+name"}
+                </td>
+                <td class="ow_value">
+                    {input name='name'}
+                    {error name='name'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+description"}
+                </td>
+                <td class="ow_value">
+                    {input name='description'}
+                    {error name='description'}
+                </td>
+            </tr>
+            {if isset($iconImage)}
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+icon"}
+                </td>
+                <td class="ow_value">
+                    <img width="100px" src="{$iconImage}"/>
+                </td>
+            </tr>
+            {/if}
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+change_icon"}
+                </td>
+                <td class="ow_value">
+                    {input name='icon'}
+                    {error name='icon'}
+                </td>
+            </tr>
+                <tr class="ow_tr_last ow_center">
+                    <td colspan="2">
+                        {submit name='submit'}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {/form}
+</div>

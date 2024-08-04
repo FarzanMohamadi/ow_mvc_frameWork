@@ -1,0 +1,38 @@
+<script>
+    function setSpecial(type){
+        $('input[name=input_file]').val('>>'+type);
+    }
+</script>
+<div class="ow_automargin ow_superwide">
+    <div class="ow_box">{text key="frmadvancedstyles+admin_settings_desc"}</div>
+    {form name='adminForm'}
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td class="ow_label">{label name="input_file"}</td>
+            <td class="ow_value">
+                {input name="input_file"} {error name='input_file'}<br/>
+                {desc name="input_file"}<br/>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('base')">{text key='frmadvancedstyles+path_ow_base'}</a>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('base_mobile')">{text key='frmadvancedstyles+path_ow_mobile_base'}</a>
+                <br/>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('current_theme')">{text key='frmadvancedstyles+path_current_theme'}</a>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('current_theme_mobile')">{text key='frmadvancedstyles+path_current_theme_mobile'}</a>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('current_theme_static')">{text key='frmadvancedstyles+path_current_theme'} ({text key='frmadvancedstyles+path_static'})</a>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('current_theme_mobile_static')">{text key='frmadvancedstyles+path_current_theme_mobile'} ({text key='frmadvancedstyles+path_static'})</a>
+                <br/>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('all_themes')">{text key='frmadvancedstyles+path_all_themes'}</a>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('all_themes_mobile')">{text key='frmadvancedstyles+path_all_themes_mobile'}</a>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('all_themes_static')">{text key='frmadvancedstyles+path_all_themes'} ({text key='frmadvancedstyles+path_static'})</a>
+                <a class="ow_lbutton ow_red" onclick="setSpecial('all_themes_mobile_static')">{text key='frmadvancedstyles+path_all_themes_mobile'} ({text key='frmadvancedstyles+path_static'})</a>
+            </td>
+        </tr>
+        <tr>
+            <td class="ow_label">{label name="outputFormat"}</td>
+            <td class="ow_value">{input name="outputFormat"} {error name='outputFormat'}</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="ow_submit">{submit name="saveSettings" class='ow_ic_save'}</td>
+        </tr>
+    </table>
+    {/form}
+</div>

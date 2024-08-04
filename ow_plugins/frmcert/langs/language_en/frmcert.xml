@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcert" label="frmcert" language_tag="en" language_label="English">
+    <key name="widget_title">
+        <value>Statistical Reports</value>
+    </key>
+    <key name="widget_number_of_vulnerabilities">
+        <value>Number of vulnerable IPs</value>
+    </key>
+    <key name="widget_number_of_bots">
+        <value>Number of Bot Infected IPs</value>
+    </key>
+    <key name="widget_today">
+        <value>Last day:</value>
+    </key>
+    <key name="widget_week">
+        <value>Last week:</value>
+    </key>
+    <key name="widget_month">
+        <value>Last month:</value>
+    </key>
+    <key name="last_update">
+        <value>last update:</value>
+    </key>
+    <key name="view_more">
+        <value>view_more...</value>
+    </key>
+</prefix>

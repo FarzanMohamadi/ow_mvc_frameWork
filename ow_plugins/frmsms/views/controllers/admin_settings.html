@@ -1,0 +1,47 @@
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+{if isset($sectionId) && $sectionId==1}
+    <div class="ow_automargin ow_superwide">
+        {form name='adminForm'}
+             <table class="ow_table_1 ow_form">
+                 <tr>
+                     <td class="ow_label">{label name="credit_threshold"}</td>
+                     <td class="ow_value">{input name="credit_threshold"} {error name='credit_threshold'}</td>
+                 </tr>
+                 <tr>
+                     <td class="ow_label">{label name="token_resend_interval"}</td>
+                     <td class="ow_value">{input name="token_resend_interval"} {error name='token_resend_interval'}</td>
+                 </tr>
+                 <tr>
+                     <td class="ow_label">{label name="max_token_request"}</td>
+                     <td class="ow_value">{input name="max_token_request"} {error name='max_token_request'}</td>
+                 </tr>
+                 <tr>
+                     <td class="ow_label">{label name="remove_text_link"}</td>
+                     <td class="ow_value">{input name="remove_text_link"} {error name='remove_text_link'}</td>
+                 </tr>
+               <tr>
+                   <td colspan="2" class="ow_submit">{submit name="saveSettings" class='ow_ic_save'}</td>
+               </tr>
+             </table>
+        {/form}
+    </div>
+{else if isset($sectionId) && $sectionId==2}
+    {form name='form'}
+        <table class="ow_table_1 ow_form">
+            <tr class=" ow_tr_last {cycle name="rm" values="ow_alt1,ow_alt2"}">
+                <td class="ow_label">{label name='validPhoneNumbers'}</td>
+                <td class="ow_value">{input name='validPhoneNumbers'}</td>
+                <td class="ow_desc">{desc name='validPhoneNumbers'}</td>
+            </tr>
+        </table>
+        <div class="clearfix ow_stdmargin">
+            {submit name='save' class='ow_ic_save ow_submit ow_right'}
+        </div>
+    {/form}
+{/if}

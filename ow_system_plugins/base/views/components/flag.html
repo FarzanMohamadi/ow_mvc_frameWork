@@ -1,0 +1,20 @@
+{style}
+{literal}
+.flags-input ul li{
+    float: left;
+    text-align: left;
+}
+{/literal}
+{/style}
+
+<div style="height: 155px; text-align: center; margin-top: 10px;" class="flags-container">
+{form name="flag"}
+    <div class="clearfix flags-input flag_floatbox_options_container">
+        {input name="reason"}
+    </div>
+    <div class="flag_submit_button_container ow_left" style="margin-top: 15px">
+        {decorator name='button' langLabel='base+confirm_page_cancel_label' class="ow_ic_delete" onclick="$('.ow_ic_delete.close').click()"}
+        {decorator name='button' type='submit' langLabel='base+send_report' id='newFlagSendButton' buttonName='newFlagSendButton'}
+    </div>
+{/form}
+</div>

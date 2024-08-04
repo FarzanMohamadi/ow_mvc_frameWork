@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmforumplus" label="frmforumplus" language_tag="fa-IR" language_label="فارسی">
+    <key name="menu_latest_posts">
+        <value>
+            آخرین پست‌ها
+        </value>
+    </key>
+    <key name="menu_latest_topics">
+        <value>
+            آخرین موضوعات
+        </value>
+    </key>
+	<key name="menu_most_viewed">
+        <value>
+            پربازدیدترین موضوعات
+        </value>
+    </key>
+	<key name="mobile_forum_group_visibile_label">
+        <value>
+			پنهان‌سازی دکمه انجمن در گروه در نسخه تلفن همراه
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+			تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+	<key name="admin_settings_heading">
+        <value>
+			تنظیمات افزونه انجمن پلاس
+        </value>
+    </key>
+    <key name="more">
+        <value>
+            بیشتر
+        </value>
+    </key>
+    <key name="email_notifications_group_topic">
+        <value>
+            کاربری موضوع جدید در گروه‌های من ایجاد کرد
+        </value>
+    </key>
+    <key name="notify_add_group_topic">
+        <value>
+            &lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt;  موضوع «&lt;a href="{$topicUrl}"&gt;{$topicTitle}&lt;/a&gt;»  را در انجمن گروه «&lt;a href="{$groupUrl}"&gt;{$groupTitle}&lt;/a&gt;» ایجاد کرد
+        </value>
+    </key>
+    <key name="remove_to_topic_forum_group_widget">
+        <value>
+            ‌حذف از ابزارک موضوعات گروه‌ها
+        </value>
+    </key>
+    <key name="no_topics">
+        <value>
+            موضوعی وجود ندارد
+        </value>
+    </key>
+    <key name="cmp_widget_forum_topics_count">
+        <value>
+            تعداد موضوعات برای نمایش
+        </value>
+    </key>
+    <key name="cmp_widget_forum_topics_post_lenght">
+        <value>
+            پیش‌نمایش طول برای موضوع انجمن بر اساس حروف
+        </value>
+    </key>
+    <key name="view_topic_settings">
+        <value>
+            نمایش موضوعات انجمن
+        </value>
+    </key>
+    <key name="view_latest_groups_topics">
+        <value>
+           آخرین موضوعات انجمن  همه گروه‌ها
+        </value>
+    </key>
+    <key name="view_selected_groups_topics">
+        <value>
+           نمایش موضوعات گروه‌های انتخاب‌شده
+        </value>
+    </key>
+    <key name="group_topics_widget">
+        <value>
+            موضوعات انجمن گروه‌ها
+        </value>
+    </key>
+    <key name="add_to_topic_forum_group_widget">
+        <value>
+            افزودن به ابزارک موضوعات گروه‌ها
+        </value>
+    </key>
+    <key name="add_success_msg">
+        <value>
+            انجمن گروه با موفقیت به ابزارک مورد نظر افزوده شد
+        </value>
+    </key>
+    <key name="remove_success_msg">
+        <value>
+            انجمن گروه از ابزارک مورد نظر حذف شد
+        </value>
+    </key>
+    <key name="key_topic">
+        <value>
+            موضوع کلیدی
+        </value>
+    </key>
+    <key name="in_group">
+        <value>
+             در گروه
+        </value>
+    </key>
+    <key name="header_html_forum_group_widget">
+        <value>
+            متن دلخواه / HTML در سرآیند ابزارک موضوعات انجمن گروه‌ها در صفحه اصلی
+        </value>
+    </key>
+    <key name="subscribe_group_users_to_topic_checkbox_label">
+        <value>
+            دنبال کردن موضوعات انجمن یک گروه به صورت پیش‌فرض توسط تمام کاربران گروه
+        </value>
+    </key>
+    <key name="subscribe_group_users_to_topic_checkbox_description">
+        <value>
+            کاربران پس از عضویت در گروه همه موضوعات انجمن‌های آن را دنبال می‌کنند و همچنین با ساخته شدن یک موضوع جدید، آن موضوع توسط کلیه کاربران گروه مربوطه دنبال می‌شود
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,54 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+#### Uncomment and edit to redirect HTTP to HTTPS
+#RewriteCond %{HTTP_HOST} ^domain\.com [NC]
+#RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://domain.com/$1 [R,L]
+
+
+AddEncoding gzip .gz
+AddEncoding gzip .gzip
+<FilesMatch "\.(js.gz|js.gzip)$">
+  ForceType text/javascript
+</FilesMatch>
+<FilesMatch "\.(css.gz|css.gzip)$">
+  ForceType text/css
+</FilesMatch>
+
+<Files CHANGELOG.txt>
+deny from all
+</Files>
+<Files INSTALL.txt>
+deny from all
+</Files>
+<Files UPDATE.txt>
+deny from all
+</Files>
+
+
+RewriteCond %{REQUEST_URI} !^/index\.php
+RewriteCond %{REQUEST_URI} !/ow_userfiles
+RewriteCond %{REQUEST_URI} !/ow_static
+RewriteCond %{REQUEST_URI} !/ow_install
+RewriteCond %{REQUEST_URI} !/ow_updates/index\.php
+RewriteCond %{REQUEST_URI} !/__
+RewriteCond %{REQUEST_URI} !/firebase-messaging-sw\.js
+RewriteCond %{REQUEST_URI} !/manifest\.json
+RewriteCond %{REQUEST_URI} !/ow_cron/run\.php
+RewriteCond %{REQUEST_URI} !/e500\.php
+RewriteCond %{REQUEST_URI} !/captcha\.php
+RewriteCond %{REQUEST_URI} !/robots\.txt
+RewriteCond %{REQUEST_FILENAME} !(/|\.jpg|\.png)$  [NC]
+RewriteRule (.*) index.php
+
+RewriteCond %{REQUEST_URI} (/ow_userfiles|/ow_static|/ow_install)
+RewriteCond %{REQUEST_FILENAME} (/|\.php|\.htaccess)$  [NC]
+RewriteRule (.*) index.php
+
+
+## EXPIRES CACHING ##
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico|woff|svg|xml)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+## EXPIRES CACHING ##

@@ -1,0 +1,23 @@
+<table class="ow_table_1" style="margin: 0">
+    <tr>
+        <th>
+            {text key="frmcompetition+competitions"}
+        </th>
+    </tr>
+</table>
+{if empty($competitions) }
+<div class="ow_nocontent">{text key="frmcompetition+empty_competition"}</div>
+{/if}
+{foreach from=$competitions item="competition"}
+    {decorator name='ipc' data=$competition}
+{/foreach}
+{if $paging}
+<br/>
+<table class="ow_table_1" style="margin: 0">
+    <tr>
+        <td colspan="2">
+            {$paging}
+        </td>
+    </tr>
+</table>
+{/if}

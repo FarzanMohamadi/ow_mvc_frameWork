@@ -1,0 +1,28 @@
+{*
+
+
+
+/**
+ *
+ *
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.photo
+ * @since 1.6.1
+ */
+ 
+*}
+
+<div id="create-album-content">
+    {form name="add-album"}
+        <div style="margin-bottom: 16px;">
+            {input name="album-name"}<br />{error name="album-name"}
+            {input name="desc"}
+            {if isset($statusPrivacy)}{label name="statusPrivacy"}{input name="statusPrivacy"}{/if}
+        </div>
+        <div class="clearfix" style="margin-bottom: 8px;">
+            <div class="ow_right">
+                {submit name="add"}
+            </div>
+        </div>
+    {/form}
+</div>

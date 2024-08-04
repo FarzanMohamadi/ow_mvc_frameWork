@@ -1,0 +1,77 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_std_margin clearfix">
+    {form name="settings"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {text key="frmimport+use_import_yahoo_label"}
+            </td>
+            <td class="ow_value">
+                {input name='use_import_yahoo'}
+                {error name='use_import_yahoo'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='yahoo_id'}
+            </td>
+            <td class="ow_value">
+                {input name='yahoo_id'}
+                {error name='yahoo_id'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='yahoo_secret'}
+            </td>
+            <td class="ow_value">
+                {input name='yahoo_secret'}
+                {error name='yahoo_secret'}
+            </td>
+        </tr>
+
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {text key="frmimport+use_import_google_label"}
+            </td>
+            <td class="ow_value">
+                {input name='use_import_google'}
+                {error name='use_import_google'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='google_id'}
+            </td>
+            <td class="ow_value">
+                {input name='google_id'}
+                {error name='google_id'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='google_secret'}
+            </td>
+            <td class="ow_value">
+                {input name='google_secret'}
+                {error name='google_secret'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name='save'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>

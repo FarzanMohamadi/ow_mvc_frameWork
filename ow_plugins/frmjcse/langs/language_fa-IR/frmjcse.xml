@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix name="frmjcse" label="FRM JCSE" language_tag="fa-IR" language_label="فارسی">
+    <key name="publisher">
+        <value>
+            انجمن کامپیوتر ایران
+        </value>
+    </key>
+    <key name="journal_title">
+        <value>
+            نشریه علوم رایانش و فناوری اطلاعات
+        </value>
+    </key>
+    <key name="admin_issue_title">
+        <value>
+            تنظیمات نشریات
+        </value>
+    </key>
+    <key name="admin_issue_heading">
+        <value>
+            تنظیمات نشریات
+        </value>
+    </key>
+    <key name="label_issue_title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="label_issue_volume">
+        <value>
+            جلد
+        </value>
+    </key>
+    <key name="label_issue_no">
+        <value>
+            شماره
+        </value>
+    </key>
+    <key name="label_issue_poseterfile">
+        <value>
+            پوستر
+        </value>
+    </key>
+    <key name="label_issue_file">
+        <value>
+            فایل
+        </value>
+    </key>
+    <key name="form_add_issue_submit">
+        <value>
+            افزودن شماره
+        </value>
+    </key>
+    <key name="admin_article_title">
+        <value>
+            تنظیمات مقالات
+        </value>
+    </key>
+    <key name="admin_article_heading">
+        <value>
+            تنظیمات مقالات
+        </value>
+    </key>
+    <key name="label_article_title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="label_article_abstract">
+        <value>
+            چکیده
+        </value>
+    </key>
+    <key name="label_article_file">
+        <value>
+            فایل
+        </value>
+    </key>
+    <key name="label_article_active">
+        <value>
+            وضعیت
+        </value>
+    </key>
+    <key name="label_article_keywords">
+        <value>
+            کلمات کلیدی
+        </value>
+    </key>
+    <key name="label_article_authors">
+        <value>
+            نویسندگان
+        </value>
+    </key>
+    <key name="label_article_authors_name">
+        <value>
+            نام و نام خانوادگی
+        </value>
+    </key>
+    <key name="form_add_article_submit">
+        <value>
+            افزودن مقاله
+        </value>
+    </key>
+    <key name="admin_article_edit_title">
+        <value>
+            ویرایش مقاله
+        </value>
+    </key>
+    <key name="admin_article_edit_heading">
+        <value>
+            ویرایش مقاله
+        </value>
+    </key>
+    <key name="label_change_fileInput">
+        <value>
+            تغییر فایل
+        </value>
+    </key>
+    <key name="form_edit_article_submit">
+        <value>
+            ویرایش مقاله
+        </value>
+    </key>
+    <key name="admin_issue_edit_title">
+        <value>
+            ویرایش شماره
+        </value>
+    </key>
+    <key name="admin_issue_edit_heading">
+        <value>
+            ویرایش شماره
+        </value>
+    </key>
+    <key name="label_issue_posterfile">
+        <value>
+            پوستر
+        </value>
+    </key>
+    <key name="label_change_posterfileInput">
+        <value>
+            تغییر پوستر
+        </value>
+    </key>
+    <key name="label_change_fileInput">
+        <value>
+            تغییر فایل
+        </value>
+    </key>
+    <key name="form_edit_issue_submit">
+        <value>
+            ویرایش شماره
+        </value>
+    </key>
+    <key name="article_index_page_title">
+        <value>
+            Articles
+        </value>
+    </key>
+    <key name="article_index_page_heading">
+        <value>
+            مقالات
+        </value>
+    </key>
+    <key name="article_detail_index_page_title">
+        <value>
+            مقاله
+        </value>
+    </key>
+    <key name="article_detail_index_page_heading">
+        <value>
+            مقاله
+        </value>
+    </key>
+    <key name="issue_index_page_title">
+        <value>
+            شماره ها
+        </value>
+    </key>
+    <key name="issue_index_page_heading">
+        <value>
+            شماره ها
+        </value>
+    </key>
+    <key name="table_article_th_delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="table_article_th_title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="table_article_th_article">
+        <value>
+            فایل
+        </value>
+    </key>
+    <key name="table_article_th_isactive">
+        <value>
+            وضعیت
+        </value>
+    </key>
+    <key name="table_article_th_keywords">
+        <value>
+            کلمات کلیدی
+        </value>
+    </key>
+    <key name="table_article_th_authors">
+        <value>
+            نویسندگان
+        </value>
+    </key>
+    <key name="table_article_th_edit">
+        <value>
+            ویرایش مقاله
+        </value>
+    </key>
+    <key name="link">
+        <value>
+            لینک
+        </value>
+    </key>
+    <key name="active">
+        <value>
+            فعال
+        </value>
+    </key>
+    <key name="inactive">
+        <value>
+            غیر فعال
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="back">
+        <value>
+            برگشت
+        </value>
+    </key>
+    <key name="table_issue_th_delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="table_issue_th_title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="table_issue_th_volume">
+        <value>
+            جلد
+        </value>
+    </key>
+    <key name="table_issue_th_no">
+        <value>
+            شماره
+        </value>
+    </key>
+    <key name="table_issue_th_poster">
+        <value>
+            پوستر
+        </value>
+    </key>
+    <key name="table_issue_th_file">
+        <value>
+            فایل
+        </value>
+    </key>
+    <key name="table_issue_th_articles">
+        <value>
+            تنظیمات مقالات
+        </value>
+    </key>
+    <key name="table_issue_th_edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="articleslink">
+        <value>
+            صفحه مقالات
+        </value>
+    </key>
+    <key name="keywords">
+        <value>
+            کلمات کلیدی
+        </value>
+    </key>
+    <key name="authors">
+        <value>
+            نویسندگان
+        </value>
+    </key>
+    <key name="abstract">
+        <value>
+            چکیده
+        </value>
+    </key>
+    <key name="download_article_button">
+        <value>
+            دانلود مقاله
+        </value>
+    </key>
+    <key name="edit_article_button">
+        <value>
+            ویرایش مقاله
+        </value>
+    </key>
+    <key name="add_article_button">
+        <value>
+            افزودن مقاله
+        </value>
+    </key>
+    <key name="download_issue_button">
+        <value>
+            دانلود شماره
+        </value>
+    </key>
+    <key name="sorry_no_content_yet">
+        <value>
+            متاسفانه هنوز محتوایی موجود نیست
+        </value>
+    </key>
+    <key name="add_issue_button">
+        <value>
+            افزودن شماره
+        </value>
+    </key>
+    <key name="most_downloaded_list_header">
+        <value>
+            پردانلودترین مقالات
+        </value>
+    </key>
+    <key name="most_recent_list_header">
+        <value>
+            جدیدترین مقالات
+        </value>
+    </key>
+    <key name="widget_title">
+        <value>
+            ویجت مقالات
+        </value>
+    </key>
+    <key name="auth_group_label">
+        <value>
+            نشریه علوم و مهندسی کامپیوتر
+        </value>
+    </key>
+    <key name="auth_action_label_edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="search_widget_title">
+        <value>
+            جستجو در مقالات
+        </value>
+    </key>
+    <key name="search_page_title">
+        <value>
+            جستجو در مقالات
+        </value>
+    </key>
+    <key name="search_page_header">
+        <value>
+            جستجو در مقالات
+        </value>
+    </key>
+    <key name="search_field_label">
+        <value>
+            جستجو
+        </value>
+    </key>
+    <key name="label_checkbox_search_title">
+        <value>
+            عنوان‌
+        </value>
+    </key>
+    <key name="label_checkbox_search_author">
+        <value>
+            نویسندگان
+        </value>
+    </key>
+    <key name="label_checkbox_search_keyword">
+        <value>
+            کلمات‌کلیدی
+        </value>
+    </key>
+    <key name="label_checkbox_search_abstract">
+        <value>
+            چکیده
+        </value>
+    </key>
+    <key name="submit_search">
+        <value>
+            جستجو
+        </value>
+    </key>
+    <key name="search_input_placeholder">
+        <value>
+            جستجو در عنوان، کلمات‌کلیدی، نویسندگان و چکیده مقالات
+        </value>
+    </key>
+    <key name="search_button_text">
+        <value>
+            جستجو
+        </value>
+    </key>
+    <key name="search_settings">
+        <value>
+            جستجو در
+        </value>
+    </key>
+    <key name="search_in_titles_heading">
+        <value>
+            نتیجه جستجو در عناوین
+        </value>
+    </key>
+    <key name="search_titles_no_result">
+        <value>
+            چیزی یافت نشد
+        </value>
+    </key>
+    <key name="search_in_keywords_heading">
+        <value>
+            نتیجه جستجو در کلمات‌کلیدی
+        </value>
+    </key>
+    <key name="search_keywords_no_result">
+        <value>
+            چیزی یافت نشد
+        </value>
+    </key>
+    <key name="search_in_authors_heading">
+        <value>
+            نتیجه جستجو در نویسندگان
+        </value>
+    </key>
+    <key name="search_authors_no_result">
+        <value>
+            چیزی یافت نشد
+        </value>
+    </key>
+    <key name="search_in_abstracts_heading">
+        <value>
+            نتیجه جستجو در چکیده‌ها
+        </value>
+    </key>
+    <key name="search_abstracts_no_result">
+        <value>
+            چیزی یافت نشد
+        </value>
+    </key>
+    <key name="search_empty">
+        <value>
+            هیچ جستجویی انجام نشده
+        </value>
+    </key>
+    <key name="no_search_result">
+        <value>
+            هیچ نتیجه‌ای یافت نشد!
+        </value>
+    </key>
+    <key name="cite_floatbox_title">
+        <value>
+            استناد
+        </value>
+    </key>
+    <key name="export_citation_button">
+        <value>
+            استناد
+        </value>
+    </key>
+    <key name="edit_citation_button">
+        <value>
+            ویرایش فرمت‌های استناد
+        </value>
+    </key>
+    <key name="table_citation_th_delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="table_citation_th_title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="table_citation_th_format">
+        <value>
+            فرمت
+        </value>
+    </key>
+    <key name="label_citation_title">
+        <value>
+            عنوان استناد
+        </value>
+    </key>
+    <key name="label_citation_format">
+        <value>
+            فرمت استناد
+        </value>
+    </key>
+    <key name="add_citation_format_submit">
+        <value>
+            افزودن
+        </value>
+    </key>
+    <key name="admin_citation_setting_title">
+        <value>
+            تنظیمات استنادات
+        </value>
+    </key>
+    <key name="admin_citation_setting_heading">
+        <value>
+            تنظیمات استنادات
+        </value>
+    </key>
+    <key name="ciatation_setting_h1">
+        <value>
+            افزودن استناد
+        </value>
+    </key>
+    <key name="click_to_copy">
+        <value>
+            برای کپی کردن کلیک کنید
+        </value>
+    </key>
+    <key name="bibtex_format_copied">
+        <value>
+            استناد مورد نظر کپی شد
+        </value>
+    </key>
+    <key name="ciatation_setting_guide">
+        <value>
+            راهنمای فرمت استناد
+        </value>
+    </key>
+    <key name="label_article_institution">
+        <value>
+            دانشگاه/محل‌ کار
+        </value>
+    </key>
+    <key name="label_article_citation">
+        <value>
+            مراجع
+        </value>
+    </key>
+    <key name="table_article_th_institution">
+        <value>
+            دانشگاه/محل‌ کار
+        </value>
+    </key>
+    <key name="institution">
+        <value>
+            دانشگاه/محل‌ کار
+        </value>
+    </key>
+    <key name="citation">
+        <value>
+            مراجع
+        </value>
+    </key>
+    <key name="citation">
+        <value>
+            مراجع
+        </value>
+    </key>
+    <key name="citation">
+        <value>
+            مراجع
+        </value>
+    </key>
+    <key name="label_article_start_page">
+        <value>
+            از صفحه
+        </value>
+    </key>
+    <key name="label_article_end_page">
+        <value>
+            تا صفحه
+        </value>
+    </key>
+    <key name="table_article_th_startPage">
+        <value>
+            از صفحه
+        </value>
+    </key>
+    <key name="table_article_th_endPage">
+        <value>
+            تا صفحه
+        </value>
+    </key>
+    <key name="info_widget_title">
+        <value>
+            اطلاعات آماری
+        </value>
+    </key>
+    <key name="info_count_article">
+        <value>
+            تعداد مقالات
+        </value>
+    </key>
+    <key name="info_count_author">
+        <value>
+            تعداد نویسندگان
+        </value>
+    </key>
+    <key name="info_count_estenad">
+        <value>
+            تعداد استنادها
+        </value>
+    </key>
+    <key name="info_count_shomare">
+        <value>
+            شماره
+        </value>
+    </key>
+    <key name="info_count_dore">
+        <value>
+            دوره
+        </value>
+    </key>
+    <key name="info_h-index">
+        <value>
+            H-index
+        </value>
+    </key>
+    <key name="info_count_dl">
+        <value>
+            تعداد دانلود مقالات
+        </value>
+    </key>
+    <key name="info_count_view">
+        <value>
+            بازدیدکننده
+        </value>
+    </key>
+    <key name="info_rate_accept">
+        <value>
+            درصد پذیرش
+        </value>
+    </key>
+    <key name="info_average_time">
+        <value>
+            میانگین زمان داوری
+        </value>
+    </key>
+    <key name="views_count_label">
+        <value>
+            تعداد بازدید
+        </value>
+    </key>
+    <key name="dl_count_label">
+        <value>
+            تعداد دانلود
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,11 @@
+<div style="direction: ltr">
+<section class="frmslideshow_regular slider">
+    {foreach from=$slides item='item'}
+    <div class="frmss_regular_item owm_box" >
+        {$item.description}
+    </div>
+    {foreachelse}
+    {text key='base+empty_list'}
+    {/foreach}
+</section>
+</div>

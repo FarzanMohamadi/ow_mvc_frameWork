@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmemployee" label="frmemployee" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه مدیریت کارمند
+        </value>
+    </key>
+    <key name="admin_help">
+        <value>
+            در این بخش، نوع حساب افراد حقیقی و حقوقی و همچنین فیلد پرسش نمایه مربوط به اسم شرکت را مشخص کنید.
+        </value>
+    </key>
+    <key name="employer_account_type">
+        <value>
+            نوع حساب حقوقی
+        </value>
+    </key>
+    <key name="employee_account_type">
+        <value>
+            نوع حساب حقیقی
+        </value>
+    </key>
+    <key name="employer_question">
+        <value>
+            پرسش نمایه (از نوع متنی) نشانگر اسم شرکت (جزو نمایه حقوقی)
+        </value>
+    </key>
+    <key name="employee_question">
+        <value>
+            پرسش نمایه (از نوع انتخاب منفرد) برای انتخاب شرکت کارمند
+        </value>
+    </key>
+    <key name="form_submit">
+        <value>
+            ثبت
+        </value>
+    </key>
+
+    <key name="page_title">
+        <value>
+            مدیریت کارمندان
+        </value>
+    </key>
+    <key name="manage_employees">
+        <value>
+            مدیریت کارمندان
+        </value>
+    </key>
+    <key name="name">
+        <value>
+            نام کارمند
+        </value>
+    </key>
+    <key name="approve">
+        <value>
+            تائید
+        </value>
+    </key>
+    <key name="disapprove">
+        <value>
+            رفع تائید
+        </value>
+    </key>
+    <key name="approved_list">
+        <value>
+            کارمندان تائید شده
+        </value>
+    </key>
+    <key name="unapproved_list">
+        <value>
+            کارمندان تائید نشده
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="widget_text">
+        <value>
+            {$employee} در {$employer} مشغول به کار است
+        </value>
+    </key>
+    <key name="widget_title">
+        <value>
+            کارفرما
+        </value>
+    </key>
+</prefix>

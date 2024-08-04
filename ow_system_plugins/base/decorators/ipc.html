@@ -1,0 +1,45 @@
+{* `IPC` decorator template *}
+{style}
+{literal}
+.ow_ipc_toolbar span{
+    display:inline-block;
+}
+{/literal}
+{/style}
+<div class="ow_ipc {if !empty($data.addClass)}{$data.addClass}{/if} clearfix">
+	<div class="ow_ipc_picture {if isset($data.imageInfo) && ($data.imageInfo.empty)} colorful_avatar_{$data.imageInfo.digit} {/if}">
+        {if !empty($data.avatar)}
+            {decorator name='avatar_item' data=$data.avatar}
+        {elseif isset($data.imageInfo) && ($data.imageInfo.type == 'event' || $data.imageInfo.type == 'group') && ($data.imageInfo.empty)}
+		    <div class="event_image_in_events_list" style="background-image: url('{$data.imageSrc}'); background-color: {$data.imageInfo.color}"></div>
+		{else}
+			{if isset($data.imageSrc)}
+			<div class="ow_ipc_img_container">
+            	<img src="{$data.imageSrc}" alt="{$data.imageTitle}" title="{$data.imageTitle}" />
+			</div>
+			{/if}
+		{/if}
+    </div>
+	{if !empty($data.unreadCount) && $data.unreadCount>0}
+		<span class="ow_unread_count" title="{text key='base+unread_count'}">{$data.unreadCount}</span>
+	{/if}
+	<div class="ow_ipc_info">
+		{if isset($data.infoThumbSrc)}<span class="ow_ipc_thumb_src" style="background-image: url('{$data.infoThumbSrc}')"></span>{/if}
+		{if isset($data.infoString)}<div class="ow_ipc_header">{$data.infoString}</div>{/if}
+		<div class="ow_ipc_content">{$data.content}</div>
+		{if isset($data.toolbar) && $data.toolbar}
+      		<div class="clearfix">
+      		<div class="ow_ipc_toolbar ow_remark">
+      		{foreach from=$data.toolbar item='item' name='toolbar'}
+                {if !$smarty.foreach.toolbar.first && ( empty($item.class) || (!strstr($item.class, 'ow_ipc_date')) )} <span class="ow_delimiter"> </span> {/if}
+      		    <span class="ow_nowrap{if !empty($item.class)} {$item.class}{/if}">
+      		    {if isset($item.href)}<a {if isset($item.id)} id="{$item.id}"{/if} href="{$item.href}">{/if}
+      		    {$item.label}
+      		    {if isset($item.href)}</a>{/if}
+      		    </span>
+      		{/foreach}
+      		</div>
+      		</div>
+        {/if}
+   </div>
+</div>

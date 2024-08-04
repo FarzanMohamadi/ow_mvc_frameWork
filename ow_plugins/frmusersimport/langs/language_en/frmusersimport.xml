@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmusersimport" label="frmusersimport" language_tag="en" language_label="English">
+	<key name="file_description">
+		<value>
+			You should upload file with extension of .txt and encoding of utf-8. This file should be exported from excel. Headers are email, name and mobile.
+		</value>
+	</key>
+	<key name="admin_settings_title">
+		<value>
+			Admin users import settings
+		</value>
+	</key>
+	<key name="import_successfully">
+		<value>
+			Import users successfully
+		</value>
+	</key>
+	<key name="email_exist">
+		<value>
+			User with email of {$email} exist. So this user can not be add again.
+		</value>
+	</key>
+	<key name="email_invalid">
+		<value>
+			Email of User {$email} is not valid. So this user can not be add again.
+		</value>
+	</key>
+	<key name="mobile_exist">
+		<value>
+			User with mobile of {$mobile} exist. So this user can not be add again.
+		</value>
+	</key>
+	<key name="line_error">
+		<value>
+			Line of {$line} has empty or incorrect.
+		</value>
+	</key>
+	<key name="email_subject">
+		<value>
+			Your account has been created in {$site_name}
+		</value>
+	</key>
+	<key name="email_description">
+		<value>
+			You can login into <a href="{$site_url}">{$site_name}</a> using username of {$username} and password of {$password}. <br/> Link: <a href="{$site_url}">{$site_name}</a>
+		</value>
+	</key>
+	<key name="mobile_description">
+		<value>
+			Your account in {$site_name} with username: {$username} and password: {$password} created. Link: {$site_url}
+		</value>
+	</key>
+	<key name="error_import_extension">
+		<value>
+			File type is incorrect. you should use .txt types.
+		</value>
+	</key>
+	<key name="file_empty">
+		<value>
+			You should upload the file.
+		</value>
+	</key>
+	<key name="frmsms_plugin_not_active">
+		<value>
+			Plugin of frmsms is not activated or installed. You can not use mobile data and sms not sent.
+		</value>
+	</key>
+	<key name="saved_successfully">
+		<value>
+			Saved successfully.
+		</value>
+	</key>
+	<key name="notification_type">
+		<value>
+			Type of notification to users
+		</value>
+	</key>
+	<key name="email_type">
+		<value>
+			Email
+		</value>
+	</key>
+	<key name="mobile_type">
+		<value>
+			Sms
+		</value>
+	</key>
+	<key name="all_type">
+		<value>
+			All
+		</value>
+	</key>
+	<key name="notification_description">
+		<value>
+			Before uploading the file, please select the type of notification to users and press Save button
+		</value>
+	</key>
+	<key name="resend_to_user_sleepy_label">
+		<value>
+			Create new password and resend account information to users that not login yet.
+		</value>
+	</key>
+	<key name="resend_to_user_sleepy_description">
+		<value>
+			Using this bottom, you can resend account information to users that not login yet.
+		</value>
+	</key>
+	<key name="resend_successfully">
+		<value>
+			All account sent successfully.
+		</value>
+	</key>
+	<key name="empty_sleepy_users">
+		<value>
+			All users login once.
+		</value>
+	</key>
+	<key name="upload_file_submit_label">
+		<value>
+			Upload file
+		</value>
+	</key>
+	<key name="save_setting_submit_label">
+		<value>
+			Save setting
+		</value>
+	</key>
+	<key name="notification_desc_notice">
+		<value>
+			Notice: When "login with sms" plugin is installed, no account will be created and just an sms will be sent to users. Therefore this setting will be overseen.
+		</value>
+	</key>
+	<key name="default_approve_users_label">
+		<value>
+			don't need admin verification
+		</value>
+	</key>
+	<key name="ignore_auto_username_password">
+		<value>
+			Ignore auto creating username and password (username will be column 1 and password will be column 3)
+		</value>
+	</key>
+</prefix>

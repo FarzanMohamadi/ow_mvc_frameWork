@@ -1,0 +1,188 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+{script}
+{literal}
+
+$(document).ready( function() {
+$('#s1').sortable({
+items: 'tr.draggable-lang-item',
+helper: 'clone',
+placeholder: 'lang_placeholder',
+start: function (event, ui) {
+$(ui.placeholder).append('<td colspan="1"></td>');
+$(ui.placeholder).css('backgroundColor', 'rgb(220,220,220)');
+},
+
+stop: function (event, ui) {
+
+switch (this) {
+case $('#s1')[0]:
+
+$('tr.draggable-lang-item:odd', this).each(function () {
+
+if (!$(this).hasClass('ow_even')) $(this).addClass('ow_even');
+});
+
+
+$('tr.draggable-lang-item:even', this).each(function () {
+if ($(this).hasClass('ow_even')) $(this).removeClass('ow_even');
+});
+break;
+}
+},
+
+receive: function (event, ui) {
+switch (this) {
+case $('#s1')[0] :
+$('tr.draggable-lang-item', this).each(function () {
+$('td:nth(1) a.deact', this).show();
+$('td:nth(1) a.act', this).hide();
+$('td:nth(1) a.del', this).hide();
+
+if ($(this).hasClass('ow_high2')) {
+$(this).removeClass('ow_high2');
+}
+});
+
+if ($('tr.draggable-lang-item', this).length == 0) {
+$.alert('{text key="admin+msg_one_active_constraint"}');
+
+$(this).sortable('cancel');
+$('#s1 tr.empty').remove();
+break;
+}
+
+$('tr.draggable-lang-item:odd', this).each(function () {
+if (!$(this).hasClass('ow_even')) $(this).addClass('ow_even');
+});
+
+
+$('tr.draggable-lang-item:even', this).each(function () {
+if ($(this).hasClass('ow_even')) $(this).removeClass('ow_even');
+});
+
+break;
+}
+},
+
+update: function (event, ui) {
+if (ui.sender) {
+if ($('tr', ui.sender[0]).length == 0) $(ui.sender[0]).append('<tr class="empty"><td colspan="1">{/literal}{text key="frmevaluation+empty_row_label"}{literal}</td></tr>');
+return;
+}
+
+if ($('#s1 tr.empty').length == 1 && $('#s1 tr.draggable-lang-item').length > 0)
+$('#s1 tr.empty').remove();
+
+var set = {};
+
+$('tr.draggable-lang-item', '#s1').each(function (i) {
+set['list[' + i + ']'] = $('input:hidden', this).attr('value');
+});
+
+$('td:nth(0) span.ow_mild_green', $('tr.draggable-lang-item', '#s1')).remove();
+$.ajax({
+type: "POST",
+url: '{/literal}{url_for for="FRMTECHUNIT_CTRL_Admin:ajaxSaveOrder"}{literal}',
+data: set
+});
+
+},
+
+connectWith: '#s1'
+}).each(function () {
+$('tr.draggable-lang-item', this).hover(
+function () {
+$('td:nth-child(3) div span', this).show()
+},
+function () {
+$('td:nth-child(3) div span', this).hide()
+}
+);
+
+if ($('tr.draggable-lang-item', this).length == 0)
+$(this).append('<tr class="empty"><td colspan="1">{/literal}{text key="frmmainpage+empty_row_label"}{literal}</td></tr>');
+});
+});
+
+
+$('.disableMenu').click(function() {
+$.ajax({
+type: "POST",
+url: '{/literal}{url_for for="FRMMAINPAGE_CTRL_Admin:ajaxSaveDisable"}{literal}',
+data: { enable : $(this).is(':checked'),id :  $(this).attr('id')}
+});
+});
+
+{/literal}
+{/script}
+
+<div class="ow_frmtechunit ow_left place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name="section"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmtechunit+create_section_form"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='title'}
+                </td>
+                <td class="ow_value">
+                    {input name='title'}
+                    {error name='title'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='required'}
+                </td>
+                <td class="ow_value">
+                    {input name='required'}
+                    {error name='required'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="3">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>
+
+<div class="ow_right place_section left_section ow_column">
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tr class="ow_tr_first">
+            <th colspan="3" class="ow_center">{text key="frmtechunit+sections"}</th>
+        </tr>
+        <tbody id="s1">
+        {foreach from=$sections item="section"}
+        <tr class="ow_high1 draggable-lang-item ow_tr_last">
+            <td><input type="hidden" value="{$section.id}">{$section.title}</td>
+            <td class="features">
+                <a class="ow_lbutton ow_red" onclick="{$section.deleteUrl}" style="display: inline-block;">{text key="frmtechunit+delete"}</a>
+                <a class="ow_lbutton ow_green" href="{$section.editUrl}" style="display: inline-block;">{text key="frmtechunit+edit"}</a>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+        {if $paging}
+        <tr>
+            <td colspan="3">
+               {$paging}
+            </td>
+        </tr>
+        {/if}
+    </table>
+</div>

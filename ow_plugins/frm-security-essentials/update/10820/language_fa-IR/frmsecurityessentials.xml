@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="fa-IR" language_label="فارسی">
+    <key name="set_privacy_notification">
+        <value>
+            &lt;a href="{$url}"&gt;تنظیمات حریم خصوصی&lt;/a&gt;  خود را هم‌اکنون کامل کنید
+        </value>
+    </key>
+    <key name="email_notification_alerts_label">
+        <value>
+            موارد امنیتی ضروری
+        </value>
+    </key>
+    <key name="email_notifications_alerts">
+        <value>
+            دریافت پیغام‌های امنیتی
+        </value>
+    </key>
+    <key name="privacy_not_set_message">
+        <value>
+            شما تا کنون تنظیمات حریم خصوصی خود را ذخیره نکرده‌اید
+        </value>
+    </key>
+</prefix>

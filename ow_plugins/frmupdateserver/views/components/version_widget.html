@@ -1,0 +1,39 @@
+<div class="download_shub_widget">
+    <div class="st_download_shub_item">
+        <p class="description_item">
+            <a href="{$urlOfCoreMainLatestVersions}">
+                <b>{$download_last_core_version}</b>
+            </a>
+            <span>{$download_last_core_build_version}</span>
+        </p>
+        <p class="description_core">
+            {text key="frmupdateserver+download_core_main_description"}
+            (<a href="{$urlOfSha256CoreMainLatestVersions}">Sha256</a>)
+        </p>
+    </div>
+    <div class="st_download_shub_item">
+        <p class="description_item">
+            <a href="{$urlOfCoreUpdateLatestVersions}">
+                <b>{$download_last_core_update}</b>
+            </a>
+            <span>{$download_last_core_update_build_version}</span>
+        </p>
+        <p class="description_core">
+            {$download_core_update_description}
+            (<a href="{$urlOfSha256CoreUpdateLatestVersions}">Sha256</a>)
+        </p>
+    </div>
+    <div class="st_download_shub_date">
+        <p class="description_item">
+	            <span>
+	                {text key="frmupdateserver+date_released"}
+					<b>{$date_core_released}</b>
+				</span>
+        </p>
+        <p class="description_core">
+            <a href="{$urlOfAllCoreVersions}" target="_blank">
+                <i>{text key="frmupdateserver+view_versions"}</i>
+            </a>
+        </p>
+    </div>
+</div>

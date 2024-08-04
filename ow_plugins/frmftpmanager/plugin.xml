@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>plugin</name>
+    <key>frmftpmanager</key>
+    
+        این افزونه برای غیرفعالسازی و یا ذخیره کردن اطلاعات اتصال به FTP است تا در هر بار اتصال به درگاه FTP، اطلاعات از کاربر مدیر پرسیده نشود.
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10821</build>
+    <minCompatibleVersion>10833</minCompatibleVersion>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>published</item>
+    </category>
+    <plan>2</plan>
+</plugin>

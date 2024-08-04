@@ -1,0 +1,115 @@
+<div class="ow_left place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name="competition"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmcompetition+create_competitions_form"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='title'}
+                </td>
+                <td class="ow_value">
+                    {input name='title'}
+                    {error name='title'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='description'}
+                </td>
+                <td class="ow_value">
+                    {input name='description'}
+                    {error name='description'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='type'}
+                </td>
+                <td class="ow_value">
+                    {input name='type'}
+                    {error name='type'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='image'}
+                </td>
+                <td class="ow_value">
+                    {input name='image'}
+                    {error name='image'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='active'}
+                </td>
+                <td class="ow_value">
+                    {input name='active'}
+                    {error name='active'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='enSentNotification'}
+                </td>
+                <td class="ow_value">
+                    {input name='enSentNotification'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='startDate'}
+                </td>
+                <td class="ow_value">
+                    {input name='startDate'}
+                    {error name='startDate'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='endDate'}
+                </td>
+                <td class="ow_value">
+                    {input name='endDate'}
+                    {error name='endDate'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="3">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>
+
+<div class="ow_right place_section left_section ow_column">
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tr class="ow_tr_first">
+            <th colspan="3" class="ow_center">{text key="frmcompetition+competitions"}</th>
+        </tr>
+        <tbody>
+        {foreach from=$competitions item="competition"}
+        <tr class="ow_high1 draggable-lang-item ow_tr_last">
+            <td class="category_feature_image">{if isset($competition.image)}<img width="50px" src="{$competition.image}">{/if}</td>
+            <td><input type="hidden" value="{$competition.id}">{$competition.title}</td>
+            <td class="features">
+                <a class="ow_lbutton ow_red" onclick="{$competition.deleteUrl}" style="display: inline-block;">{text key="frmcompetition+delete"}</a>
+                <a class="ow_lbutton ow_green" href="{$competition.editUrl}" style="display: inline-block;">{text key="frmcompetition+edit"}</a>
+                <a class="ow_lbutton ow_green" href="{$competition.valuesUrl}">{text key="frmcompetition+values"}</a>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+        <tr>
+            <td colspan="3">
+                {if $paging}{$paging}{/if}
+            </td>
+        </tr>
+    </table>
+</div>

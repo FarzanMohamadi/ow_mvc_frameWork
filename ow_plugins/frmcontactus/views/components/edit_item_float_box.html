@@ -1,0 +1,26 @@
+<style>
+.table_margin_right_twenty_percent {
+    margin-right: 20%;
+}
+.about_us_table_border {
+    border: 1px solid #c6ced8 !important;
+}
+
+</style>
+
+{form name='edit-item'}
+<table class="table_margin_right_twenty_percent about_us_table_border">
+    <tr>
+        <td class="about_us_table_border" colspan="1">
+            {input name='email'}
+        </td>
+        <td class="about_us_table_border" colspan="1">
+            {input name='label'}
+        </td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">{submit class='ow_ic_save' name='submit'}</td>
+    </tr>
+</table>
+{input name='id'}
+{/form}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>اصلاح‌کننده لغات</name>
+	<key>frmwordscorrection</key>
+	
+        این افزونه لغات نوشته شده در محتوا به صورت عربی را به فارسی تبدیل می‌کند.
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10807</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>published</item>
+    </category>
+    <plan>2</plan>
+</plugin>

@@ -1,0 +1,52 @@
+<div class="ow_event_files_list ow_lp_avatars">
+    <ul class="ow_box_toolbar ow_remark ow_bl">
+        <li>
+            <a href="javascript:window.history.back();">{text key="frmeventplus+back"}</a>
+        </li>
+        {if isset($showAdd) && $showAdd==true}
+        <li>
+            <a href="javascript:showUploadFileIntoEventForm({$eventId})">
+                {text key="frmeventplus+add_file"}
+            </a>
+        </li>
+        {/if}
+    </ul>
+    <table class="ow_table_1 ow_form ow_stdmargin event_files">
+        <tr>
+            <th>{text key="frmeventplus+name"}</th>
+            <th>{text key="frmeventplus+by"}</th>
+            <th>{text key="frmeventplus+created_date"}</th>
+            <th></th>
+        </tr>
+        {foreach from=$fileList item='file' name='file'}
+        <tr class="ow_alt2 ow_tr_first">
+            <td class="file_name">
+                <a class="fileEventImage" href="{$file.fileUrl}" target="_blank">
+                    <img src="{$file.iconUrl}" alt="{$file.fileName|escape}" title="{$file.fileName}" />
+                </a>
+                <a href="{$file.fileUrl}" target="_blank">{$file.truncatedFileName}  </a>
+            </td>
+            <td>
+                <a href="{$file.userUrl}">{$file.userName}</a>
+            </td>
+            <td>
+                {format_date timestamp=$file.createdDate}
+            </td>
+            {if isset($deleteUrls[$file.name])}
+            <td class="delete_file">
+                <a href="{$deleteUrls[$file.name]}" onclick="return confirm('{text key="frmeventplus+are_you_sure_delete_file"}');"><img src="{$deleteIconUrl}"/></a>
+            </td>
+            {else}
+            <td></td>
+            {/if}
+        </tr>
+        {foreachelse}
+        <tr class="ow_alt2 ow_tr_first">
+            <td colspan="5">
+                <div class="ow_nocontent">{text key='frmeventplus+file_list_widget_empty'}</div>
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+    {$paging}
+</div>

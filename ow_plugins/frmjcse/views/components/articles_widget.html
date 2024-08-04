@@ -1,0 +1,94 @@
+{style}{literal}
+#frmjcse_widget * {
+    box-sizing: border-box;
+}
+/* Float four columns side by side */
+#frmjcse_widget .column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+    padding-top: 10px;
+}
+#frmjcse_widget a:link,
+#frmjcse_widget a:visited {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+#frmjcse_widget a:link:active, a:visited:active {
+    color: inherit;
+}
+#frmjcse_widget .headerOfCard {
+    text-align: center;
+    margin: 0px 10px 20px;
+}
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    #frmjcse_widget .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+    #frmjcse_widget .column:nth-child(2) {
+        border-top: 1px dashed #a2afa7;
+        padding-top: 17px;
+    }
+}
+/* Style the counter cards */
+#frmjcse_widget .card {
+    padding: 2px 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin-bottom: 6px;
+    opacity: 1;
+    border-radius: 4px;
+}
+#frmjcse_widget .card:lang(fa-IR),#frmjcse_widget .card h3:lang(fa-IR),#frmjcse_widget .card p:lang(fa-IR)  {
+    padding: 2px 5px;
+    text-align: center !important;
+    background-color: #f1f1f1;
+    margin-bottom: 6px;
+    opacity: 1;
+    border-radius: 4px;
+}
+#frmjcse_widget .card:hover {
+    opacity: 0.9;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+#frmjcse_widget .card p {
+    padding: 0px;
+    color: #b91f53;
+}
+#frmjcse_widget .column h3 {
+    margin-top: 5px;
+    color: #087124;
+}
+#frmjcse_widget h2 {
+    font-size: 17px;
+    color: #566155 !important;
+}
+{/literal}{/style}
+<div id="frmjcse_widget">
+    <div class="column">
+    <h2 class="headerOfCard">{text key='frmjcse+most_downloaded_list_header'}</h2>
+    {foreach from=$articles_dl item="article"}
+    <a href="{$article.url}">
+        <div class="card">
+            <h3>{$article.title}</h3>
+            <p>{$article.authors}</p>
+        </div>
+    </a>
+    {/foreach}
+    </div>
+    <div class="column">
+        <h2 class="headerOfCard">{text key='frmjcse+most_recent_list_header'}</h2>
+        {foreach from=$articles_latest item="article"}
+        <a href="{$article.url}">
+            <div class="card">
+                <h3>{$article.title}</h3>
+                <p>{$article.authors}</p>
+            </div>
+        </a>
+        {/foreach}
+    </div>
+</div>

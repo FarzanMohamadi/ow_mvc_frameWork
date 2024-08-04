@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtechnology" label="frmtechnology" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Technologies
+        </value>
+    </key>
+	<key name="mobile_main_menu_item">
+        <value>
+            Technologies
+        </value>
+    </key>
+    <key name="add_new_technology_button_label">
+        <value>
+           Add new technology
+        </value>
+    </key>
+    <key name="technology_form_title_label">
+        <value>
+            title
+        </value>
+    </key>
+    <key name="technology_form_description_label">
+        <value>
+            description
+        </value>
+    </key>
+    <key name="technology_form_executive_label">
+        <value>
+            executive
+        </value>
+    </key>
+    <key name="technology_form_source_label">
+        <value>
+            source
+        </value>
+    </key>
+    <key name="technology_form_price_label">
+        <value>
+            price
+        </value>
+    </key>
+    <key name="technology_form_image_label">
+        <value>
+            image
+        </value>
+        <key name="technology_form_supporters_label">
+            <value>
+                supporters
+            </value>
+        </key>
+    </key>
+    <key name="update">
+        <value>
+            update
+        </value>
+    </key>
+    <key name="save">
+        <value>
+            save
+        </value>
+    </key>
+    <key name="tags_field_label">
+        <value>
+            tags
+        </value>
+    </key>
+    <key name="edit_technology_page_heading">
+        <value>
+            edit technology
+        </value>
+    </key>
+    <key name="meta_title_edit_technology">
+        <value>
+            edit technology
+        </value>
+    </key>
+    <key name="meta_description_edit_technology">
+        <value>
+            edit technology information
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            edit
+        </value>
+    </key>
+    <key name="save_technology_page_heading">
+        <value>
+           add technology
+        </value>
+    </key>
+    <key name="meta_title_new_technology">
+        <value>
+            add technology
+        </value>
+    </key>
+    <key name="meta_description_new_technology">
+        <value>
+            add new technology
+        </value>
+    </key>
+    <key name="create_technology_success_msg">
+        <value>
+            technology created successfully and will be added after administration confirmation.
+        </value>
+    </key>
+    <key name="edit_technology_success_msg">
+        <value>
+            changes saved successfully
+        </value>
+    </key>
+    <key name="no_technology_label">
+        <value>
+            no technology
+        </value>
+    </key>
+    <key name="technology_main_page_heading">
+        <value>
+            Accessible technologies
+        </value>
+    </key>
+    <key name="technology_main_page_title">
+        <value>
+            Accessible technologies
+        </value>
+    </key>
+    <key name="delete_image">
+        <value>
+            delete image
+        </value>
+    </key>
+    <key name="view_page_title">
+        <value>
+            {$technology_title} technology
+        </value>
+    </key>
+    <key name="technology_description">
+        <value>
+            technology description
+        </value>
+    </key>
+    <key name="technology_other_information">
+        <value>
+            other information
+        </value>
+    </key>
+    <key name="technology_executive">
+        <value>
+            executive
+        </value>
+    </key>
+    <key name="technology_source">
+        <value>
+            source
+        </value>
+    </key>
+    <key name="technology_price">
+        <value>
+            price
+        </value>
+    </key>
+    <key name="technology_tags">
+        <value>
+            tags
+        </value>
+    </key>
+    <key name="technology_supporters">
+        <value>
+            supporters
+        </value>
+    </key>
+    <key name="order_button">
+        <value>
+            request more information and submit order
+        </value>
+    </key>
+
+    <key name="order_name">
+        <value>
+            full name
+        </value>
+    </key>
+    <key name="order_phone">
+        <value>
+            phone number
+        </value>
+    </key>
+    <key name="order_email">
+        <value>
+            email
+        </value>
+    </key>
+    <key name="order_company_name">
+        <value>
+            company name
+        </value>
+    </key>
+    <key name="order_company_website">
+        <value>
+            company website
+        </value>
+    </key>
+    <key name="order_job_title">
+        <value>
+            job title
+        </value>
+    </key>
+    <key name="order_company_address">
+        <value>
+            company address
+        </value>
+    </key>
+    <key name="order_company_activity_field">
+        <value>
+            company activity fields
+        </value>
+    </key>
+    <key name="order_description">
+        <value>
+            description
+        </value>
+    </key>
+    <key name="submit_order_success_msg">
+        <value>
+            your order submitted successfully
+        </value>
+    </key>
+    <key name="submit_order_page_heading">
+        <value>
+            submit order for {$technology}
+        </value>
+    </key>
+    <key name="meta_title_submit_order">
+        <value>
+            submit order
+        </value>
+    </key>
+    <key name="meta_description_submit_order">
+        <value>
+            submit order
+        </value>
+    </key>
+    <key name="order_index">
+        <value>
+            orders
+        </value>
+    </key>
+    <key name="auth_frmtechnology_label">
+        <value>
+            technology
+        </value>
+    </key>
+    <key name="auth_action_label_add_technology">
+        <value>
+            add technology
+        </value>
+    </key>
+    <key name="auth_action_label_view_technology">
+        <value>
+            view technology
+        </value>
+    </key>
+    <key name="auth_action_label_view_order">
+        <value>
+            view order
+        </value>
+    </key>
+    <key name="no_order_label">
+        <value>
+            no order
+        </value>
+    </key>
+    <key name="order_information">
+        <value>
+            order information
+        </value>
+    </key>
+    <key name="view_order_page_heading">
+        <value>
+            {$technology} order
+        </value>
+    </key>
+    <key name="search_btn_label">
+        <value>
+            search
+        </value>
+    </key>
+    <key name="select_technology">
+        <value>
+            all technologies
+        </value>
+    </key>
+    <key name="return_btn_label">
+        <value>
+            return
+        </value>
+    </key>
+    <key name="order_index_page_heading">
+        <value>
+            orders
+        </value>
+    </key>
+    <key name="order_index_page_title">
+        <value>
+            orders
+        </value>
+    </key>
+    <key name="technology_release_date">
+        <value>
+            release date
+        </value>
+    </key>
+    <key name="technology_release_date_list">
+        <value>
+            release date: {$date}
+        </value>
+    </key>
+    <key name="order_submit_date_list">
+        <value>
+            submit date: {$date}
+        </value>
+    </key>
+    <key name="order_submit_date">
+        <value>
+            submit date
+        </value>
+    </key>
+    <key name="order_requester">
+        <value>
+            requester: {$name}
+        </value>
+    </key>
+    <key name="order_technology">
+        <value>
+            technology:  {$technology}
+        </value>
+    </key>
+    <!--<key name="form_who_can_invite_supporter_members">-->
+        <!--<value>-->
+            <!--کلیه اعضا-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="form_who_can_invite_supporter_creator">-->
+        <!--<value>-->
+            <!--فقط سازنده فناوری-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="form_who_can_invite_supporter_label">-->
+        <!--<value>-->
+            <!--کسانی که می‌توانند حامیان را دعوت کنند-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="invite_supporter_fb_title">-->
+        <!--<value>-->
+            <!--دعوت حامی-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="invite_supporter_btn_label">-->
+        <!--<value>-->
+            <!--دعوت حامی-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="supporter_invite_success_message">-->
+        <!--<value>-->
+            <!--{$count} حامی دعوت شدند-->
+        <!--</value>-->
+    <!--</key>-->
+    <key name="do_not_support">
+        <value>
+            do not support
+        </value>
+    </key>
+    <key name="feed_not_support_complete_msg">
+        <value>
+you no longer support this technology
+        </value>
+    </key>
+    <key name="search_technology_title">
+        <value>
+            search by technology title
+        </value>
+    </key>
+    <key name="technology_list_menu_item_latest">
+        <value>
+            latest
+        </value>
+    </key>
+    <key name="technology_list_menu_item_my">
+        <value>
+            my technologies
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            delete
+        </value>
+    </key>
+    <key name="deactivate">
+        <value>
+            make unreachable
+        </value>
+    </key>
+    <key name="deactivate_success_message">
+        <value>
+            technology successfully made unreachable
+        </value>
+    </key>
+	<key name="active_success_message">
+        <value>
+            technology successfully made reachable
+        </value>
+    </key>
+    <key name="delete_technology_with_order_error">
+        <value>
+            {$orderCount} order exists for this technology.first delete these orders
+        </value>
+    </key>
+    <key name="delete_technology_success_massage">
+        <value>
+            technology deleted successfully
+        </value>
+    </key>
+    <key name="delete_technology_confirm_message">
+        <value>
+            Are you sure you want to delete this technology?
+        </value>
+    </key>
+    <key name="delete_order_success_massage">
+        <value>
+            order deleted successfully
+        </value>
+    </key>
+    <key name="activate">
+        <value>
+            Confirm
+        </value>
+    </key>
+    <key name="technology_form_title_label">
+        <value>
+            Title of technology
+        </value>
+    </key>
+    <key name="technology_form_userFullName_label">
+        <value>
+            Full name of technologist
+        </value>
+    </key>
+    <key name="option_position_student">
+        <value>
+            Student
+        </value>
+    </key>
+    <key name="option_position_faculty">
+        <value>
+            Member of faculty
+        </value>
+    </key>
+    <key name="option_position_postdoc">
+        <value>
+            Postdoc
+        </value>
+    </key>
+    <key name="technology_form_position_label">
+        <value>
+            Position
+        </value>
+    </key>
+    <key name="option_position_bsc">
+        <value>
+            BSc
+        </value>
+    </key>
+    <key name="option_position_masc">
+        <value>
+            MSc
+        </value>
+    </key>
+    <key name="option_position_phd">
+        <value>
+            Ph.D.
+        </value>
+    </key>
+    <key name="technology_form_grade_label">
+        <value>
+            Grade
+        </value>
+    </key>
+    <key name="technology_form_sn_label">
+        <value>
+            Student number
+        </value>
+    </key>
+    <key name="option_grade_math">
+        <value>
+            Mathematics college
+        </value>
+    </key>
+    <key name="option_grade_com">
+        <value>
+            Computer engineering college
+        </value>
+    </key>
+    <key name="option_grade_elec">
+        <value>
+            Electrical engineering college
+        </value>
+    </key>
+    <key name="technology_form_org_label">
+        <value>
+            College / Institute
+        </value>
+    </key>
+    <key name="technology_form_email_label">
+        <value>
+            Email address
+        </value>
+    </key>
+    <key name="technology_form_pn_label">
+        <value>
+            Phone number
+        </value>
+    </key>
+    <key name="technology_form_techArea_label">
+        <value>
+            Field of technology
+        </value>
+    </key>
+    <key name="technology_form_image1_label">
+        <value>
+            Image of technology 1
+        </value>
+    </key>
+    <key name="technology_form_image2_label">
+        <value>
+            Image of technology 2
+        </value>
+    </key>
+    <key name="technology_form_image3_label">
+        <value>
+            Image of technology 3
+        </value>
+    </key>
+    <key name="technology_form_image4_label">
+        <value>
+            Image of technology 4
+        </value>
+    </key>
+    <key name="technology_form_image5_label">
+        <value>
+            Image of technology 5
+        </value>
+    </key>
+    <key name="technology_form_techDesc_label">
+        <value>
+            Technology description
+        </value>
+    </key>
+    <key name="technology_userFullName">
+        <value>
+            Technologist name
+        </value>
+    </key>
+    <key name="technology_pn">
+        <value>
+            Phone number
+        </value>
+    </key>
+    <key name="technology_email">
+        <value>
+            Email address
+        </value>
+    </key>
+    <key name="form_label_captcha">
+        <value>
+            Security image
+        </value>
+    </key>
+    <key name="deactivate_technologies_page_heading">
+        <value>
+            Not confirmed technologies
+        </value>
+    </key>
+    <key name="deactivate_technologies_page_title">
+        <value>
+            Not confirmed technologies
+        </value>
+    </key>
+    <key name="auth_action_label_admin_technology">
+        <value>
+            Technology admin
+        </value>
+    </key>
+    <key name="admin_technology_deactivates_page">
+        <value>
+            Not Confirmed Technologies
+        </value>
+    </key>
+    <key name="technology_org">
+        <value>
+            College / Institute
+        </value>
+    </key>
+    <key name="technology_position">
+        <value>
+            Position
+        </value>
+    </key>
+    <key name="technology_sn">
+        <value>
+            Student number
+        </value>
+    </key>
+    <key name="technology_grade">
+        <value>
+            Grade
+        </value>
+    </key>
+    <key name="technology_area">
+        <value>
+            Field of technology
+        </value>
+    </key>
+    <key name="notif_add_new_technology">
+        <value>
+            New technology by title of "{$title}" is submitted.
+        </value>
+    </key>
+    <key name="email_notifications_section_label">
+        <value>
+            Technologies
+        </value>
+    </key>
+    <key name="email_notifications_setting_comment">
+        <value>
+            Someone submitted new technology.
+        </value>
+    </key>
+    <key name="null">
+        <value>
+            -
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            Technology plugin setting
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            Technology plugin setting
+        </value>
+    </key>
+    <key name="input_settings_position_list_label">
+        <value>
+            Positions list
+        </value>
+    </key>
+    <key name="input_settings_position_list_desc">
+        <value>
+            Can be selected in technology submit form
+        </value>
+    </key>
+    <key name="input_settings_grade_list_label">
+        <value>
+            Grades list
+        </value>
+    </key>
+    <key name="input_settings_grade_list_desc">
+        <value>
+            Can be selected in technology submit form
+        </value>
+    </key>
+    <key name="input_settings_org_list_label">
+        <value>
+            College / Institute list
+        </value>
+    </key>
+    <key name="input_settings_org_list_desc">
+        <value>
+            Can be selected in technology submit form
+        </value>
+    </key>
+    <key name="settings_updated">
+        <value>
+            Changes successfully submitted.
+        </value>
+    </key>
+    <key name="services_enterprise_widget_title">
+        <value>
+            Services for enterprise
+        </value>
+    </key>
+    <key name="services_uni_members_widget_title">
+        <value>
+            Services for university members
+        </value>
+    </key>
+    <key name="contact_us_widget_title">
+        <value>
+            Contact us
+        </value>
+    </key>
+    <key name="active_list">
+        <value>
+            Active technologies
+        </value>
+    </key>
+    <key name="deactivate_list">
+        <value>
+            Deactivate technologies
+        </value>
+    </key>
+    <key name="technology_list_tags">
+        <value>
+            View by tags
+        </value>
+    </key>
+    <key name="results_by_tag">
+        <value>Tag search results for: "&lt;b&gt;{$tag}&lt;/b&gt;"</value>
+    </key>
+    <key name="notice_upload_image">
+        <value>Notice: use images with jpeg/jpg extension.</value>
+    </key>
+</prefix>

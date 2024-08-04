@@ -1,0 +1,168 @@
+.ow_canvas,
+.ow_content{
+    padding: 0 !important;
+}
+.ow_box_empty.ow_highbox.ow_stdmargin.index_customize_box.ow_no_cap.ow_break_word.container {
+    float: left;
+    z-index: 5;
+    bottom: -70px;
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.ow_box_cap,
+.ow_box_cap_empty {
+    background: #fff;
+}
+
+.ow_page_container .ow_page {
+    padding: 0 !important;
+    background-color: transparent  !important;;
+    margin: 0  !important;;
+}
+
+.ow_page_container .ow_page {
+    padding: 0  !important;;
+    background-color: transparent  !important;;
+    margin: 0  !important;;
+}
+
+.ow_page_container {
+    max-width: inherit !important;
+    width: 100%;
+    margin: 0px auto 16px;
+}
+
+.ow_canvas {
+    margin: 0 auto;
+    max-width: inherit !important;
+    width: 100%;
+    word-wrap: break-word;
+}
+
+.ow_page_padding {
+    padding-top: 0  !important;;
+    top: -40px  !important;;
+    position: relative  !important;;
+}
+
+html body .ow_box_cap .ow_box_cap_body h3, html body .ow_box_cap_empty .ow_box_cap_body h3,
+html body .ow_box_cap .ow_box_cap_body h2, html body .ow_box_cap_empty .ow_box_cap_body h2{
+    color: black  !important;;
+    font-size: 18px !important;
+    font-weight: bold;
+    margin: 5px 0 15px 0;
+}
+
+.page_collapsible {
+    display: none !important;
+    right: -20px !important;
+}
+
+.ow_dragndrop_content > div.clearfix {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.ow_slideshow {
+    background-color: black;
+    top: -30px;
+    position: relative;
+}
+
+.ow_dnd_widget.index-GROUPS_CMP_GroupsWidget .ow_box_cap.ow_dnd_configurable_component.clearfix,
+.ow_dnd_widget.index-FRMCERTEDU_CMP_Faq .ow_box_cap_empty.ow_dnd_configurable_component.clearfix{
+    background: #179ad6;
+    height: 50px;
+    margin-bottom: 9px;
+}
+
+.ow_dnd_widget.index-GROUPS_CMP_GroupsWidget .ow_box_cap.ow_dnd_configurable_component.clearfix h3.ow_ic_comment,
+.ow_dnd_widget.index-FRMCERTEDU_CMP_Faq .ow_box_cap_empty.ow_dnd_configurable_component.clearfix h3.ow_ic_add{
+    color: white !important;
+}
+
+div#place_sections {
+    margin-bottom: -40px;
+}
+
+div#place_sections .ow_dragndrop_content {
+    margin-bottom: -50px;
+}
+
+.ow_slideshow ul.pagination{
+    display: none;
+}
+
+.ow_menu_wrap {
+    background-color: #00000091;
+    padding-bottom: 15px;
+}
+
+.ow_main_menu li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    border-bottom: none;
+    height: inherit;
+}
+
+.ow_site_panel .ow_responsive_menu {
+    border-bottom: none;
+}
+
+.ow_main_menu li.active a,
+.ow_main_menu li.active a:hover{
+    color: #fff;
+    padding-bottom: 2px;
+    height: 38px;
+    border-bottom: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.ow_main_menu li a:hover {
+    color: #b4ddff;
+    padding-bottom: 2px;
+    height: 38px;
+    text-shadow: 1px 1px 15px #337ab7;
+}
+.ow_dnd_widget.index-FRMCERTEDU_CMP_ContactUs {
+    margin: 0;
+    bottom: -15px;
+}
+
+
+@media (max-width: 500px){
+    .countdown .time-circle {
+        width: 50px;
+        height: 50px;
+    }
+
+    .registration_box {
+        left: 7vw;
+        margin-bottom: 40px;
+    }
+
+    .countdown .time-circle .time {
+        display: -moz-inline-stack;
+        display: inline-block;
+        font-size: 14px;
+        line-height: 40px;
+    }
+
+    .countdown .dots {
+        display: -moz-inline-stack;
+        display: inline-block;
+        padding: 15px 5px;
+        font-size: inherit;
+        vertical-align: bottom;
+        -webkit-animation: dots 1s infinite;
+        -moz-animation: dots 1s infinite;
+        -ms-animation: dots 1s infinite;
+    }
+
+    .timer_counter_for_courses {
+        width: 100%;
+    }
+}

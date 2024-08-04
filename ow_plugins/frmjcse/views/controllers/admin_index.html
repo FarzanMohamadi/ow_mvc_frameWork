@@ -1,0 +1,61 @@
+<table class="ow_table_1 ow_automargin" style="min-width: 400px;">
+    <tr>
+        <th>{text key='frmjcse+table_issue_th_delete'}</th>
+        <th>{text key='frmjcse+table_issue_th_title'}</th>
+        <th>{text key='frmjcse+table_issue_th_volume'}</th>
+        <th>{text key='frmjcse+table_issue_th_no'}</th>
+        <th>{text key='frmjcse+table_issue_th_poster'}</th>
+        <th>{text key='frmjcse+table_issue_th_file'}</th>
+        <th>{text key='frmjcse+table_issue_th_articles'}</th>
+        <th>{text key='frmjcse+table_issue_th_edit'}</th>
+    </tr>
+    {foreach from=$issues item="issue"}
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td width="1"><a href="{$deleteUrls[$issue.id]}" onclick="return confirm('{text key="base+are_you_sure"}');" style="width:16px; height:16px; display:block; margin:0 auto;background-repeat:no-repeat;background-position: 50% 50%;" class="ow_ic_delete"></a></td>
+        <td>{$issue.title}</td>
+        <td>{$issue.volume}</td>
+        <td>{$issue.no}</td>
+        <td>
+            {if $issue.posterfile!=""}
+                <a href="{$issue.posterfile}" >{text key='frmjcse+link'}</a>
+            {else} - {/if}
+        </td>
+        <td>
+            {if $issue.file!=""}
+                <a href="{$issue.file}" >{text key='frmjcse+link'}</a>
+            {else} - {/if}
+        </td>
+        <td><a href="{$issue.addArticle}" >{text key='frmjcse+articleslink'}</a></td>
+        <td><a href="{$issue.editIssue}" >{text key='frmjcse+edit'}</a></td>
+    </tr>
+    {/foreach}
+</table>
+
+<h1>{text key='frmjcse+form_add_issue_submit'}</h1>
+{form name='add_issue'}
+<table class="ow_table_1 ow_form ow_automargin" style="min-width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='title'}</td>
+        <td class="ow_value">{input name='title'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='volume'}</td>
+        <td class="ow_value">{input name='volume'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='no'}</td>
+        <td class="ow_value">{input name='no'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='posterfile'}</td>
+        <td class="ow_value">{input name='posterfile'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='file'}</td>
+        <td class="ow_value">{input name='file'}</td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">{submit name='add_issue' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

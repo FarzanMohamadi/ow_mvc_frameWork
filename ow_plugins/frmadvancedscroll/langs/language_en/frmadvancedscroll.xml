@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmadvancedscroll" label="frmadvancedscroll" language_tag="en" language_label="English">
+	<key name="admin_invalid_number_error"><value>Should be a valid Integer value</value></key>
+	<key name="admin_easespeed"><value>Speed of easing</value></key>
+	<key name="admin_save_settings"><value>Save Settings</value></key>
+	<key name="admin_settings_title"><value>GoTop - Settings</value></key>
+	<key name="user_save_success"><value>Settings saved successfully</value></key>
+	<key name="admin_selectbox_field_label"><value>Select type of easing</value></key>
+	<key name="admin_selectbox_value"><value>Select any</value></key>
+	<key name="admin_indelay"><value>Indelay</value></key>
+	<key name="admin_outdelay"><value>Outdelay</value></key>
+	<key name="admin_bottom"><value>bottom</value></key>
+	<key name="admin_right"><value>Right</value></key>
+	<key name="admin_left"><value>Left</value></key>
+	<key name="admin_desc_bottom"><value>bigger numbers are more far from the bottom of page</value></key>
+	<key name="admin_desc_right"><value>equal to css style right</value></key>
+	<key name="admin_desc_left"><value>set it to 0 if you want to place button right side</value></key>
+	<key name="admin_adminarea"><value>Admin area</value></key>
+	<key name="admin_adminarea_disable"><value>Disable easing in Admin area</value></key>
+	<key name="admin_adminarea_enable"><value>Enable easing in Admin area</value></key>
+</prefix>

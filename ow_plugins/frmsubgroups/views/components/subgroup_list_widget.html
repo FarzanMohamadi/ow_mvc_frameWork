@@ -1,0 +1,47 @@
+{if isset($accessDenied)}
+    <div class="ow_nocontent">{text key='frmsubgroups+access_denied_message'}</div>
+{else}
+    <div class="ow_lp_avatars">
+        <table class="ow_table_1 ow_form ow_stdmargin subgroups_widget_table">
+            {foreach from=$subgroupList item='group' name='group'}
+            <tr class="ow_alt2 ow_tr_first">
+                <td style="max-width: 100px !important;">
+                    <a class="groupImage" href="{$group.url}" target="_blank">
+                        {if $group.imageInfo.empty}
+                            <span title="{$group.title}" class="colorful_avatar_{$group.imageInfo.digit}" style="background-image: url({$group.imageUrl}); background-color: {$group.imageInfo.color}"></span>
+                        {else}
+                            <img src="{$group.imageUrl}" alt="{$group.title|escape}" title="{$group.title}"/>
+                        {/if}
+                        <span title="{$group.title}" class="group_title">{$group.title}</span>
+                    </a>
+                </td>
+            </tr>
+            {foreachelse}
+            <tr class="ow_alt2 ow_tr_first">
+                <td>
+                    <div class="ow_nocontent">{text key='frmsubgroups+subgroup_list_widget_empty'}</div>
+                </td>
+            </tr>
+            {/foreach}
+        </table>
+        <p>
+            {text key='frmsubgroups+subgroups_count'}: {$subgroupsCount}
+        </p>
+        <ul class="ow_box_toolbar ow_remark ow_bl">
+            {if isset($showCreate) && $showCreate==true}
+            <li>
+                <a href="{$createSubgroupLink}">
+                    {text key="frmsubgroups+create_subgroup"}
+                </a>
+            </li>
+            {/if}
+            {if isset($view_all_subGroups)}
+            <li>
+                <a href="{$view_all_subGroups}">
+                    {text key="frmsubgroups+view_all_subgroups"}
+                </a>
+            </li>
+            {/if}
+        </ul>
+    </div>
+{/if}

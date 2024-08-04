@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmassmailing" label="frmmassmailing" language_tag="fa-IR" language_label="فارسی">
+	<key name="admin_massmailing_settings_heading">
+        <value>
+            تنظیمات افزونه نمایش اطلاعات رایانامه های جمعی ارسال شده
+        </value>
+    </key>
+	<key name="mailingDetailsInfo">
+        <value>
+           اطلاعات رایانامه های ارسال شده
+        </value>
+    </key>
+	<key name="viewCountSetting">
+        <value>
+          تنظیمات نمایش رایانامه ها
+        </value>
+    </key>
+	<key name="roles">
+        <value>
+          نقش ها
+        </value>
+    </key>
+	<key name="title">
+        <value>
+          موضوع
+        </value>
+    </key>
+	<key name="body">
+        <value>
+          متن
+        </value>
+    </key>
+	<key name="createTimeStamp">
+        <value>
+          زمان ایجاد
+        </value>
+    </key>
+	<key name="input_settings_view_count_label">
+        <value>
+          تعداد رایانامه نمایش داده شده در هر صفحه
+        </value>
+    </key>
+	<key name="invalid_mail_count">
+        <value>
+          مقدار وارد شده صحیح نمی باشد
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+          تغییرات با موفقیت ذخیره شد
+        </value>
+    </key>
+</prefix>

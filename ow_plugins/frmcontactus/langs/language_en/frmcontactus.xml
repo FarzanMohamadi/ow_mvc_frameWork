@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcontactus" label="FRM Contact Us" language_tag="en" language_label="English">
+	<key name="are_you_sure"><value>if you delete this department all information about this department will be deleted, are you sure?</value></key>
+	<key name="message"><value>message</value></key>
+	<key name="label"><value>Label</value></key>
+	<key name="useremail"><value>user email</value></key>
+	<key name="subject"><value>Subject</value></key>
+	<key name="id"><value>ID</value></key>
+	<key name="returnToSetting"><value>Return</value></key>
+	<key name="showFormData"><value>show data</value></key>
+	<key name="numberOfData_label"><value>number of data contact us</value></key>
+	<key name="tables_label"><value>label</value></key>
+	<key name="form_data_label"><value>Show received messages</value></key>
+	<key name="userInfo"><value>Received messages</value></key>
+	<key name="label_error_already_exist"><value>This Department already exist!</value></key>
+	<key name="department"><value>Departments</value></key>
+	<key name="admin_dept_heading"><value>Contact us: Departments</value></key>
+	<key name="admin_dept_title"><value>Contact us: Departments</value></key>
+	<key name="after_install_notification"><value>Please &lt;a href='{$url}'&gt;create&lt;/a&gt; at least one department for the contact page.</value></key>
+	<key name="bottom_menu_item"><value>Contact Us</value></key>
+	<key name="form_label_captcha"><value>Secure image</value></key>
+	<key name="form_label_from"><value>Your e-mail</value></key>
+	<key name="form_label_message"><value>Message</value></key>
+	<key name="form_label_subject"><value>Subject</value></key>
+	<key name="form_label_submit"><value>Send</value></key>
+	<key name="form_label_to"><value>To</value></key>
+	<key name="index_page_heading"><value>Contact us</value></key>
+	<key name="index_page_title"><value>Contact us</value></key>
+	<key name="label_invitation_email"><value>email</value></key>
+	<key name="label_invitation_label"><value>label</value></key>
+	<key name="message_sent"><value>Your message has been sent. {$dept} will reply shortly. Thank you</value></key>
+	<key name="no_department"><value>There is no such department</value></key>
+	<key name="adminComment"><value>Comment Above of Form</value></key>
+	<key name="save_form_lbl_entry"><value>Everything Written here will be shown above of contact form</value></key>
+    <key name="addAdminComment">
+		<value>Save</value>
+	</key>
+    <key name="admin_contactus_settings_heading">
+		<value>Contact us settings</value>
+	</key>
+	<key name="modified_successfully">
+		<value>modification saved successfully</value>
+	</key>
+	<key name="mobile_bottom_menu_item">
+		<value>Contact us</value>
+	</key>
+	<key name="timeStamp">
+		<value>Date</value>
+	</key>
+	<key name="edit_item_page_title">
+		<value>Edit department</value>
+	</key>
+	<key name="database_record_edit">
+		<value>
+Department has been successfully updated.
+		</value>
+	</key>
+	<key name="email_error_already_exist">
+		<value>
+			Department email already exists.
+		</value>
+	</key>
+	<key name="form_add_dept_submit">
+		<value>
+			Add new department
+		</value>
+	</key>
+	<key name="no_message">
+		<value>
+			There is no message for this department
+		</value>
+	</key>
+</prefix>

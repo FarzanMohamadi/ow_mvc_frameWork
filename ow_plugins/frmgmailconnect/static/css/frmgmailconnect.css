@@ -1,0 +1,90 @@
+.ow_ico_signin_g {
+    background-image: url(../img/google_vc_white.svg);
+    float: right;
+    display: none !important;
+}
+
+form[name="sign-in"] .ow_sign_in .ow_box + .ow_connect_buttons .frmgmailconnect_button_blue {
+    margin-top: -16px;
+    margin-bottom: 17px;
+}
+
+.frmgmailconnect_button {
+    background: url(../img/google_vc_blak.svg) no-repeat;
+    background-position: center left;
+    height: 21px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    border-radius: 2px;
+    margin: 0px 5px 0px 0px;
+    width: 100%;
+    text-align: center;
+}
+.frmgmailconnect_button:lang(fa-IR) {
+    background-position: center right;
+}
+
+span.frmgmailconnect_button_text {
+    padding: 0px 7px 0px 29px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+span.frmgmailconnect_button_text:hover, span.frmgmailconnect_button_text a:hover {
+    text-decoration: none;
+}
+
+span.ow_signin_label.ow_signin_delimiter {
+    margin-top: -3px;
+}
+
+.ow_console_item .ow_ico_signin {
+    height: 18px !important;
+    margin: 0px 0 0 4px !important;
+    width: 19px !important;
+}
+
+.ow_sign_in span.ow_connect_text {
+    display: none;
+}
+
+.ow_sign_in .connect_button_list{
+    float: left;
+    width: 100% !important;
+}
+.ow_sign_in .connect_button_list:lang(fa-IR) {
+    float: right;
+}
+
+.ow_sign_in_wrap form .ow_connect_buttons {
+    padding: 0 0 0 0px !important;
+}
+
+.frmgmailconnect_button_blue {
+    background-color: #4285f4;
+    padding: 6px 4px 7px 4px;
+    margin: 0px 5px 0px 5px;
+    border-radius: 3px;
+    border: 1px #2265d4 solid;
+}
+.frmgmailconnect_button_blue:hover {
+    background-color: #5496ff;
+    border: 1px #4b87e5 solid;
+}
+a.frmgmailconnect_button_text {
+    color: #fff;
+}
+
+a.frmgmailconnect_button_text:hover {
+    text-decoration: none;
+}
+
+.base_sign_in a.frmgmailconnect_button_text {
+    background: transparent !important;
+    width: 100% !important;
+    font-size: 12px !important;
+    line-height: 22px !important;
+}

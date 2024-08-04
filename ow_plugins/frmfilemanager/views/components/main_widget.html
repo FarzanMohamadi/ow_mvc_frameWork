@@ -1,0 +1,34 @@
+<!-- fileManager initialization (REQUIRED) -->
+<script type="text/javascript" charset="utf-8">
+    // Documentation for client options:
+    // https://github.com/Studio-42/elFinder/wiki/Client-configuration-options
+    $(document).ready(function() {
+        $('#fileManager').elfinder(
+            // 1st Arg - options
+            {
+                {$options}
+            },
+            // 2nd Arg - before boot up function
+            function(fm, extraObj) {
+                // `init` event callback function
+                fm.bind('init', function() {
+                });
+                // Optional for set document.title dynamically.
+                var title = document.title;
+                fm.bind('open', function() {
+                    var path = '',
+                        cwd  = fm.cwd();
+                    if (cwd) {
+                        path = fm.path(cwd.hash) || null;
+                    }
+                    // document.title = path? path + ':' + title : title;
+                }).bind('destroy', function() {
+                    // document.title = title;
+                });
+            }
+        );
+    });
+</script>
+
+<!-- Element where fileManager will be created (REQUIRED) -->
+<div id="fileManager"></div>

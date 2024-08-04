@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmevaluation" label="frmevaluation" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            ارزیابی
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="return_to_questions">
+        <value>
+            بازگشت به سوالات
+        </value>
+    </key>
+    <key name="return_to_question">
+        <value>
+            بازگشت به سوال
+        </value>
+    </key>
+    <key name="returnToAdmin">
+        <value>
+            بازگشت به بخش تنظیمات
+        </value>
+    </key>
+    <key name="value_form_edit">
+        <value>
+            ویرایش فرم جواب
+        </value>
+    </key>
+    <key name="value_form_name">
+        <value>
+            نام
+        </value>
+    </key>
+    <key name="value_form_value">
+        <value>
+            مقدار
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+            دسته‌ها
+        </value>
+    </key>
+    <key name="name">
+        <value>
+            نام
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            توضیحات
+        </value>
+    </key>
+    <key name="icon">
+        <value>
+            آیکون
+        </value>
+    </key>
+    <key name="category_create_form">
+        <value>
+            ایجاد دسته
+        </value>
+    </key>
+    <key name="questions_of_category">
+        <value>
+            سوالات درون دسته
+        </value>
+    </key>
+    <key name="return_to_categories">
+        <value>
+            بازگشت به دسته‌ها
+        </value>
+    </key>
+    <key name="category">
+        <value>
+            دسته
+        </value>
+    </key>
+    <key name="hasDescribe">
+        <value>
+            آیا کاربران بتوانند توضیح دهند؟
+        </value>
+    </key>
+    <key name="hasFile">
+        <value>
+            آیا کاربران توانایی بارگذاری فایل دارند؟
+        </value>
+    </key>
+    <key name="hasVerification">
+        <value>
+            آیا این سوال نیاز به تعهد دارد؟
+        </value>
+    </key>
+    <key name="questions">
+        <value>
+            سوالات
+        </value>
+    </key>
+    <key name="questions_title">
+        <value>
+            عنوان سوال
+        </value>
+    </key>
+    <key name="change_icon">
+        <value>
+            تغییر آیکون
+        </value>
+    </key>
+    <key name="edit_question">
+        <value>
+            ویرایش سوال
+        </value>
+    </key>
+    <key name="edit_category">
+        <value>
+            ویرایش دسته
+        </value>
+    </key>
+    <key name="edit_value">
+        <value>
+            ویرایش پاسخ
+        </value>
+    </key>
+    <key name="values">
+        <value>
+            پاسخ‌های ممکن
+        </value>
+    </key>
+    <key name="value">
+        <value>
+            مقدار
+        </value>
+    </key>
+    <key name="value_form_add">
+        <value>
+            ایجاد مقدار
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            موردی وجود ندارد
+        </value>
+    </key>
+    <key name="question_count">
+        <value>
+            تعداد سوالات:
+        </value>
+    </key>
+    <key name="question_count_header">
+        <value>
+            تعداد سوالات
+        </value>
+    </key>
+    <key name="answer_count_header">
+        <value>
+            تعداد پاسخ‌های کاربر:
+        </value>
+    </key>
+    <key name="question_has_answer">
+        <value>
+            پاسخ کاربر
+        </value>
+    </key>
+    <key name="yes">
+        <value>
+            بله
+        </value>
+    </key>
+    <key name="no">
+        <value>
+            خیر
+        </value>
+    </key>
+    <key name="category_questions_header">
+        <value>
+            فهرست سوالات
+        </value>
+    </key>
+    <key name="saved_answer_successfully">
+        <value>
+            پاسخ شما با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="deleted_successfully">
+        <value>
+            حذف با موفقیت انجام شد
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            ذخیره با موفقیت انجام شد
+        </value>
+    </key>
+    <key name="user_file">
+        <value>
+            اسناد مرتبط
+        </value>
+    </key>
+    <key name="user_sign">
+        <value>
+            امضا (نام کامل خود را بنویسید)
+        </value>
+    </key>
+    <key name="user_verification">
+        <value>
+            متعهد می‌شوم تمامی موارد را به صورت صحیح وارد کرده‌ام
+        </value>
+    </key>
+    <key name="user_old_file">
+        <value>
+            اسناد مرتبط بارگذاری شده
+        </value>
+    </key>
+    <key name="user_file_change">
+        <value>
+            تغییر اسناد مرتبط
+        </value>
+    </key>
+    <key name="question_title">
+        <value>
+            عنوان سوال
+        </value>
+    </key>
+    <key name="users_setting">
+        <value>
+            ورود به تنظیمات کاربران
+        </value>
+    </key>
+    <key name="assigned_users">
+        <value>
+            کاربران اختصاص داده شده
+        </value>
+    </key>
+    <key name="username">
+        <value>
+            نام کاربری
+        </value>
+    </key>
+    <key name="form_find_user_by_username">
+        <value>
+            مشاهده پاسخ کاربر (از طریق نام کاربری)
+        </value>
+    </key>
+    <key name="form_assign_user_by_username">
+        <value>
+            اختصاص کاربر (از طریق نام کاربری)
+        </value>
+    </key>
+    <key name="form_unassigned_user_by_username">
+        <value>
+            حذف کاربر (از طریق نام کاربری)
+        </value>
+    </key>
+    <key name="assign_successfully">
+        <value>
+            کاربر به لیست کاربران مجاز اختصاص داده شد
+        </value>
+    </key>
+    <key name="no_user_found">
+        <value>
+            کاربری یافت نشد
+        </value>
+    </key>
+    <key name="unassigned_successfully">
+        <value>
+            کاربر از لیست کاربران مجاز حذف شد
+        </value>
+    </key>
+    <key name="locked_successfully">
+        <value>
+            فرم ارزیابی برای کاربر بسته شد
+        </value>
+    </key>
+    <key name="activated_successfully">
+        <value>
+            فرم ارزیابی برای کاربر باز شد
+        </value>
+    </key>
+    <key name="activate">
+        <value>
+            فعال
+        </value>
+    </key>
+    <key name="lock">
+        <value>
+            قفل
+        </value>
+    </key>
+    <key name="locked_users">
+        <value>
+            کاربران قفل شده
+        </value>
+    </key>
+    <key name="active_users">
+        <value>
+            کاربران فعال
+        </value>
+    </key>
+    <key name="level">
+        <value>
+            رده‌بندی
+        </value>
+    </key>
+    <key name="weight">
+        <value>
+            وزن
+        </value>
+    </key>
+    <key name="degree_header">
+        <value>
+            رده‌بندی فعلی:
+        </value>
+    </key>
+    <key name="results_header">
+        <value>
+            نتایج ارزیابی
+        </value>
+    </key>
+    <key name="requirement_suggest">
+        <value>
+            ارزیابی موارد پیشنهادی به تفکیک حوزه‌ها
+        </value>
+    </key>
+    <key name="requirement_normal">
+        <value>
+            ارزیابی الزامات عادی به تفکیک حوزه‌ها
+        </value>
+    </key>
+    <key name="requirement_important">
+        <value>
+            ارزیابی الزامات مهم به تفکیک حوزه‌ها
+        </value>
+    </key>
+    <key name="requirement_fundamental">
+        <value>
+            ارزیابی الزامات اساسی به تفکیک حوزه‌ها
+        </value>
+    </key>
+    <key name="user_value">
+        <value>
+            امتیاز کسب شده
+        </value>
+    </key>
+    <key name="remaining_value">
+        <value>
+            امتیاز باقی‌مانده
+        </value>
+    </key>
+    <key name="total_value">
+        <value>
+            حداکثر امتیاز
+        </value>
+    </key>
+    <key name="questions_without_values">
+        <value>
+            برای این سوال، پاسخی ایجاد نشده است
+        </value>
+    </key>
+    <key name="admin_evaluation_settings_heading">
+        <value>
+           تنظیمات افزونه ارزیابی
+        </value>
+    </key>
+		<key name="delete_item_warning">
+        <value>
+            آیا از حذف این مورد اطمینان دارید؟
+        </value>
+    </key>
+	<key name="active_item_warning">
+        <value>
+            آیا از فعال‌سازی این مورد اطمینان دارید؟
+        </value>
+    </key>
+	<key name="lock_item_warning">
+        <value>
+            آیا از قفل‌گذاری روی این مورد اطمینان دارید؟
+        </value>
+    </key>
+</prefix>

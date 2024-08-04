@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="fa-IR" language_label="فارسی">
+    <key name="newsFeedShowDefault">
+        <value>
+            نمایش فعالیت های تازه‌ها به صورت پیش فرض
+        </value>
+    </key>
+    <key name="passwordRequiredProfile">
+        <value>
+            وارد کردن کلمه عبور برای ذخیره تغییرات نمایه کاربری
+        </value>
+    </key>
+    <key name="questions_section_password">
+        <value>
+            کلمه عبور
+        </value>
+    </key>
+    <key name="password">
+        <value>
+            کلمه ‌عبور
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,30 @@
+{if $parentThemes === true}
+<div class="iithememanager_overlay ow_inprogress"></div>
+<div class="frmthememanager_page">
+    {form name='uploadTheme'}
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td class="ow_label">{label name="themeFile"}</td>
+            <td class="ow_value">{input type="file" name="themeFile"}</td>
+        </tr>
+        <tr>
+            <td class="ow_label">{label name="overwrite"}</td>
+            <td class="ow_value">{input name="overwrite"}</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="ow_submit">{submit name="uploadTheme" class='ow_ic_save'}</td>
+        </tr>
+    </table>
+    {/form}
+
+    <div class="back_button">
+        <span class="ow_button ow_ic_right_arrow">
+            <span>
+                <input type="button" onclick="location.href='{$returnUrl}'" value="{text key='base+back'}" />
+            </span>
+        </span>
+    </div>
+</div>
+{else}
+    <p>{text key='frmthememanager+noParentTheme'}</p>
+{/if}

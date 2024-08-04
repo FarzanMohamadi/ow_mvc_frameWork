@@ -1,0 +1,88 @@
+<div class="owm_box owm_padding">
+    <div class="ow_stdmargin">
+        {decorator name="button" class="ow_ic_left_arrow" langLabel="frmreport+edit_back_label" id="report-back_btn"}
+    </div>
+    <div class="owm_box ow_stdmargin">
+        <div class="ow_superwide ow_automargin">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{text key="frmreport+group_title"}</div>
+                <div class="owm_form_field_value"><a href="{$groupUrl}">{$groupTitle}</a></div>
+            </div>
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{text key="frmreport+form_label_year"}</div>
+                <div class="owm_form_field_value">{$report->year}</div>
+            </div>
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{text key="frmreport+form_label_semester"}</div>
+                <div class="owm_form_field_value">{$report->semester}</div>
+            </div>
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{text key="frmreport+report_creator"}</div>
+                <div class="owm_form_field_value">{$report->creator}</div>
+            </div>
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{text key="frmreport+report_create_date"}</div>
+                <div class="owm_form_field_value">{$report->createDate}</div>
+            </div>
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{text key="frmreport+report_editor"}</div>
+                <div class="owm_form_field_value">{$report->editor}</div>
+            </div>
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{text key="frmreport+report_edit_date"}</div>
+                <div class="owm_form_field_value">{$report->editDate}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    {form name='report_edit_form'}
+    <div class="ow_superwide ow_automargin">
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{label name='year'}</div>
+                <div class="owm_form_field_value">{input name='year'}</div>
+                <div class="owm_form_field_desc">{text key="frmreport+year_should_be_complete"}</div>
+            </div>
+            <div class="owm_error_txt">{error name='year'}</div>
+        </div>
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{label name='semester'}</div>
+                <div class="owm_form_field_value">{input name='semester'}</div>
+            </div>
+            <div class="owm_error_txt">{error name='semester'}</div>
+        </div>
+        {foreach from=$activityTypes item='activity'}
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{$activity.title}</div>
+            </div>
+        </div>
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{label name={$activity.count}}</div>
+                <div class="owm_form_field_value">{input name={$activity.count}}</div>
+            </div>
+            <div class="owm_error_txt">{error name={$activity.count}}</div>
+        </div>
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{label name={$activity.description}}</div>
+                <div class="owm_form_field_value">{input name={$activity.description}}</div>
+            </div>
+            <div class="owm_error_txt">{error name={$activity.description}}</div>
+        </div>
+        {/foreach}
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label"></div>
+                <div class="owm_form_field_value">
+                    {decorator name="button" class="ow_ic_delete ow_red ow_negative" langLabel="frmreport+delete_report_label" id="report-delete_btn"}
+                    {submit name='send' class='ow_ic_new'}
+                </div>
+            </div>
+        </div>
+    </div>
+    {/form}
+</div>

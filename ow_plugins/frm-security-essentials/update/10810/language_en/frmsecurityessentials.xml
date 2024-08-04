@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="en" language_label="English">
+	 <key name="newsfeed_homepage_setting">
+        <value>
+             show activities in main page's setting
+        </value>
+    </key>
+	 <key name="admin_customization_legend">
+        <value>
+             Here you may control which type of content is shown in main page. Please note that any changes will be applied to _new_ content only.
+        </value>
+    </key>
+	 <key name="save_customization_btn_label">
+        <value>
+             Save
+        </value>
+    </key>
+	 <key name="customization_changed">
+        <value>
+             Settings saved
+        </value>
+    </key>
+	 <key name="customization_not_changed">
+        <value>
+             Settings not changed
+        </value>
+    </key>
+</prefix>

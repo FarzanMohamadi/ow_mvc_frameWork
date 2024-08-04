@@ -1,0 +1,21 @@
+{*
+
+
+
+/**
+ *
+ *
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.photo
+ * @since 1.6.1
+ */
+ 
+*}
+
+<div class="clearfix">{add_content key='photo.add_content.list.top' listType=$listType}</div>
+
+<span class="photo_veiwlist_page_head_container">
+   {$pageHead}
+</span>
+
+{component class="PHOTO_CMP_PhotoList" type=$listType view=$listView userId=$userId}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmclamav" label="frmclamav" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            ضد ویروس Clamav
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه ضد ویروس Clamav
+        </value>
+    </key>
+    <key name="unknown_files_permission">
+        <value>
+            اجازه بارگذاری فایل‌های غیرقابل بررسی
+        </value>
+    </key>
+    <key name="socket_disable_decision">
+        <value>
+            اجازه به آپلود فایل در زمان غیرفعال بودن وب سوکت
+        </value>
+    </key>
+    <key name="host_field">
+        <value>
+            میزبان سوکت
+        </value>
+    </key>
+    <key name="port_field">
+        <value>
+            پورت سوکت
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="admin_changed_success">
+        <value>
+            با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="virus_file_found">
+        <value>
+            فایل(فایل‌های)  {$file} ویروسی تشخیص داده شد(شدند)
+        </value>
+    </key>
+    <key name="virus_is_detected">
+        <value>
+            بدافزار شناخته شد
+        </value>
+    </key>
+    <key name="file_is_clean">
+        <value>
+            فایل تایید شد
+        </value>
+    </key>
+    <key name="clamav_exception_subject">
+        <value>
+            خطا در کارکرد ضد ویروس clamav
+        </value>
+    </key>
+    <key name="clamav_exception_body">
+        <value>
+            پیغام خطا: {$message}
+        </value>
+    </key>
+    <key name="auth_group_label">
+        <value>
+           ضد ویروس clamav
+        </value>
+    </key>
+    <key name="auth_action_label_check_file">
+        <value>
+           بررسی ویروسی بودن فایل
+        </value>
+    </key>
+</prefix>

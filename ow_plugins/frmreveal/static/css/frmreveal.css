@@ -1,0 +1,122 @@
+.frame {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+}
+.curtain ,.curtain2{
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    z-index: 99999999999999;
+    top: 0px;
+}
+.curtain__wrapper,.curtain__wrapper2 {
+    width: 100%;
+    height: 100%;
+}
+.curtain__wrapper input[type=checkbox] ,.curtain__wrapper2 input[type=checkbox]{
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 0;
+    top: 0;
+    left: 0;
+}
+.curtain__wrapper input[type=checkbox]:checked ~ div.curtain__panel--left,.curtain__wrapper2 input[type=checkbox]:checked ~ div.curtain__panel--left2 {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.curtain__wrapper input[type=checkbox]:checked ~ div.curtain__panel--right,.curtain__wrapper2 input[type=checkbox]:checked ~ div.curtain__panel--right2 {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.curtain__panel {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: white;
+    color: #fff;
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    z-index: 2;
+}
+.curtain__panel2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: white;
+    color: #fff;
+    float: left;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    -webkit-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    z-index: 2;
+}
+.curtain__panel--left,.curtain__panel--left2 {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: #565658;
+    background-position: right;
+}
+.curtain__panel--right,.curtain__panel--right2 {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-color: #565658;
+    background-position: left;
+}
+.curtain__panel--right, .curtain__panel--left{
+    background-color: white;
+}
+
+.curtain__content,.curtain__content2 {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    background: transparent;
+}
+.curtain__content img,.curtain__content2 img {
+    width: 20%;
+}

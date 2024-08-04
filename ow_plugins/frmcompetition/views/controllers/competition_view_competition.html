@@ -1,0 +1,46 @@
+<div class="competition">
+    {if isset($notActive)}
+    <div class="active_info">
+        {text key="frmcompetition+not_active"}
+    </div>
+    <br/>
+    {/if}
+    <div class="main_info">
+        <img style="max-width: 200px;" src="{$competition.image}" />
+        <h3>{$competition.title}</h3>
+        <br/>
+        <br/>
+        <div class="description">
+            {$competition.description}
+        </div>
+        <br/>
+        <br/>
+    </div>
+    <div class="additional_info">
+        <div class="date">
+            {text key="frmcompetition+startDate"} :
+            {$competition.startDate}
+        </div>
+        <div class="date">
+            {text key="frmcompetition+endDate"} :
+            {$competition.endDate}
+        </div>
+    </div>
+    <br/>
+    {if $sizeOfParticipant == 0}
+    <p class="no_participant">
+        {text key="frmcompetition+no_participant"}
+    </p>
+    {else}
+    <table class="ow_table_1" style="margin: 0">
+        <tr>
+            <th>
+                {$titleOfValues}
+            </th>
+        </tr>
+    </table>
+    {foreach from=$competitionItems item="competitionItem"}
+        {decorator name='ipc' data=$competitionItem}
+    {/foreach}
+    {/if}
+</div>

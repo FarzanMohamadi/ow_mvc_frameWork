@@ -1,0 +1,31 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<a href="{$returnToCategory}">{text key="frmevaluation+return_to_categories"}</a>
+<br/>
+<h3 class="ow_center">{$categoryName}</h3>
+<br/>
+<p>{$categoryDescription}</p>
+<table class="ow_table_1">
+    <tr class="ow_tr_first">
+        <th colspan="2" class="ow_center">{$header}</th>
+    </tr>
+    <tr>
+        <th>{text key="frmevaluation+question_title"}</th>
+        <th>{text key="frmevaluation+question_has_answer"}</th>
+    </tr>
+    {foreach from=$questions item="question"}
+    <tr>
+        <td>
+            <a href="{$question.url}">{$question.counter}- {$question.title}</a>
+        </td>
+        <td class="ow_center">{$question.answeredOrNot}</td>
+    </tr>
+    {/foreach}
+</table>

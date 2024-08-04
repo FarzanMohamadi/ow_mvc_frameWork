@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtechnology" label="frmtechnology" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+فناوری‌ها
+        </value>
+    </key>
+	    <key name="mobile_main_menu_item">
+        <value>
+فناوری‌ها
+        </value>
+    </key>
+    <key name="add_new_technology_button_label">
+        <value>
+            ثبت فناوری جدید
+        </value>
+    </key>
+    <key name="technology_form_title_label">
+        <value>
+            عنوان طرح
+        </value>
+    </key>
+    <key name="technology_form_description_label">
+        <value>
+            خلاصه طرح
+        </value>
+    </key>
+    <key name="technology_form_executive_label">
+        <value>
+            مجری فناوری
+        </value>
+    </key>
+    <key name="technology_form_source_label">
+        <value>
+            خواستگاه فناوری
+        </value>
+    </key>
+    <key name="technology_form_price_label">
+        <value>
+            قیمت فناوری
+        </value>
+    </key>
+    <key name="technology_form_image_label">
+        <value>
+            تصویر
+        </value>
+        <key name="technology_form_supporters_label">
+            <value>
+                حامیان
+            </value>
+        </key>
+    </key>
+    <key name="update">
+        <value>
+            به روز رسانی
+        </value>
+    </key>
+    <key name="save">
+        <value>
+            ایجاد
+        </value>
+    </key>
+    <key name="tags_field_label">
+        <value>
+            کلمات کلیدی فناوری
+        </value>
+    </key>
+    <key name="edit_technology_page_heading">
+        <value>
+            ویرایش فناوری
+        </value>
+    </key>
+    <key name="meta_title_edit_technology">
+        <value>
+            ویرایش فناوری
+        </value>
+    </key>
+    <key name="meta_description_edit_technology">
+        <value>
+            ویرایش اطلاعات فناوری
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="save_technology_page_heading">
+        <value>
+            ثبت فناوری
+        </value>
+    </key>
+    <key name="meta_title_new_technology">
+        <value>
+            ثبت فناوری
+        </value>
+    </key>
+    <key name="meta_description_new_technology">
+        <value>
+            ثبت فناوری جدید
+        </value>
+    </key>
+    <key name="create_technology_success_msg">
+        <value>
+            فناوری با موفقیت ثبت شد. پس از تایید مدیریت به لیست فناوری‌های موجود اضافه ‌می‌شود.
+        </value>
+    </key>
+    <key name="edit_technology_success_msg">
+        <value>
+            تغییرات ذخیره شد
+        </value>
+    </key>
+    <key name="no_technology_label">
+        <value>
+           موردی وجود ندارد
+        </value>
+    </key>
+    <key name="technology_main_page_heading">
+        <value>
+            فناوری‌های در دسترس
+        </value>
+    </key>
+    <key name="technology_main_page_title">
+        <value>
+            ‌فناوری‌‌های در دسترس
+        </value>
+    </key>
+<key name="delete_image">
+    <value>
+        حذف تصویر
+    </value>
+</key>
+    <key name="view_page_title">
+        <value>
+            فناوری {$technology_title}
+        </value>
+    </key>
+    <key name="technology_description">
+        <value>
+            خلاصه طرح
+        </value>
+    </key>
+    <key name="technology_other_information">
+        <value>
+            سایر اطلاعات
+        </value>
+    </key>
+    <key name="technology_executive">
+        <value>
+            مجری
+        </value>
+    </key>
+    <key name="technology_source">
+        <value>
+            خواستگاه
+        </value>
+    </key>
+    <key name="technology_price">
+        <value>
+            قیمت
+        </value>
+    </key>
+    <key name="technology_tags">
+        <value>
+            کلمات‌ کلیدی
+        </value>
+    </key>
+    <key name="technology_supporters">
+        <value>
+            حامیان
+        </value>
+    </key>
+    <key name="order_button">
+        <value>
+            درخواست اطلاعات بیشتر و ثبت سفارش
+        </value>
+    </key>
+
+    <key name="order_name">
+        <value>
+            نام و نام‌خانوادگی
+        </value>
+    </key>
+    <key name="order_phone">
+        <value>
+            شماره تماس
+        </value>
+    </key>
+    <key name="order_email">
+        <value>
+            آدرس ایمیل
+        </value>
+    </key>
+    <key name="order_company_name">
+        <value>
+            نام شرکت
+        </value>
+    </key>
+    <key name="order_company_website">
+        <value>
+            وبسایت شرکت
+        </value>
+    </key>
+    <key name="order_job_title">
+        <value>
+            عنوان شغلی
+        </value>
+    </key>
+    <key name="order_company_address">
+        <value>
+            آدرس شرکت
+        </value>
+    </key>
+    <key name="order_company_activity_field">
+        <value>
+            زمینه‌های فعالیت شرکت
+        </value>
+    </key>
+    <key name="order_description">
+        <value>
+            شرح درخواست
+        </value>
+    </key>
+    <key name="submit_order_success_msg">
+        <value>
+            درخواست شما با موفقیت ثبت شد
+        </value>
+    </key>
+    <key name="submit_order_page_heading">
+        <value>
+             ثبت درخواست برای فناوری {$technology}
+        </value>
+    </key>
+    <key name="meta_title_submit_order">
+        <value>
+            ثبت درخواست
+        </value>
+    </key>
+    <key name="meta_description_submit_order">
+        <value>
+            ثبت درخواست
+        </value>
+    </key>
+    <key name="order_index">
+        <value>
+            لیست سفارشات
+        </value>
+    </key>
+    <key name="auth_frmtechnology_label">
+        <value>
+            فناوری
+        </value>
+    </key>
+    <key name="auth_action_label_add_technology">
+        <value>
+            افزودن فناوری
+        </value>
+    </key>
+    <key name="auth_action_label_view_technology">
+        <value>
+            مشاهده فناوری‌ها
+        </value>
+    </key>
+    <key name="auth_action_label_view_order">
+        <value>
+            مشاهده سفارشات
+        </value>
+    </key>
+    <key name="no_order_label">
+        <value>
+            موردی وجود ندارد
+        </value>
+    </key>
+    <key name="order_information">
+        <value>
+            اطلاعات سفارش
+        </value>
+    </key>
+    <key name="view_order_page_heading">
+        <value>
+           سفارش فناوری {$technology}
+        </value>
+    </key>
+    <key name="search_btn_label">
+        <value>
+            جستجو
+        </value>
+    </key>
+    <key name="select_technology">
+        <value>
+            همه فناوری‌ها
+        </value>
+    </key>
+    <key name="return_btn_label">
+        <value>
+            بازگشت
+        </value>
+    </key>
+    <key name="order_index_page_heading">
+        <value>
+            سفارشات
+        </value>
+    </key>
+    <key name="order_index_page_title">
+        <value>
+            سفارشات
+        </value>
+    </key>
+    <key name="technology_release_date">
+        <value>
+            تاریخ معرفی
+        </value>
+    </key>
+    <key name="technology_release_date_list">
+        <value>
+            تاریخ معرفی: {$date}
+        </value>
+    </key>
+    <key name="order_submit_date_list">
+        <value>
+            تاریخ سفارش: {$date}
+        </value>
+    </key>
+    <key name="order_submit_date">
+        <value>
+            تاریخ سفارش
+        </value>
+    </key>
+    <key name="order_requester">
+        <value>
+            سفارش دهنده: {$name}
+        </value>
+    </key>
+    <key name="order_technology">
+        <value>
+            فناوری:  {$technology}
+        </value>
+    </key>
+    <!--<key name="form_who_can_invite_supporter_members">-->
+        <!--<value>-->
+            <!--کلیه اعضا-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="form_who_can_invite_supporter_creator">-->
+        <!--<value>-->
+            <!--فقط سازنده فناوری-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="form_who_can_invite_supporter_label">-->
+        <!--<value>-->
+            <!--کسانی که می‌توانند حامیان را دعوت کنند-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="invite_supporter_fb_title">-->
+        <!--<value>-->
+<!--دعوت حامی-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="invite_supporter_btn_label">-->
+        <!--<value>-->
+            <!--دعوت حامی-->
+        <!--</value>-->
+    <!--</key>-->
+    <!--<key name="supporter_invite_success_message">-->
+        <!--<value>-->
+           <!--{$count} حامی دعوت شدند-->
+        <!--</value>-->
+    <!--</key>-->
+    <key name="do_not_support">
+        <value>
+            حمایت نکردن
+        </value>
+    </key>
+    <key name="feed_not_support_complete_msg">
+        <value>
+            شما دیگر این فناوری را حمایت نمی‌کنید
+        </value>
+    </key>
+    <key name="search_technology_title">
+        <value>
+            جستجو براساس عنوان فناوری
+        </value>
+    </key>
+    <key name="technology_list_menu_item_latest">
+        <value>
+            آخرین
+        </value>
+    </key>
+    <key name="technology_list_menu_item_my">
+        <value>
+            فناوری‌های من
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="deactivate">
+        <value>
+            خارج سازی از دسترس
+        </value>
+    </key>
+    <key name="deactivate_technology_title">
+        <value>
+            {$title} (تایید نشده)
+        </value>
+    </key>
+    <key name="deactivate_success_message">
+        <value>
+            فناوری با موفقیت از دسترس خارج شد
+        </value>
+    </key>
+	<key name="active_success_message">
+        <value>
+             فناوری با موفقیت فعال شد
+        </value>
+    </key>
+    <key name="delete_technology_with_order_error">
+        <value>
+            {$orderCount} سفارش از این فناوری موجود است.جهت حذف ابتدا سفارشات مربوطه را حذف کنید
+        </value>
+    </key>
+    <key name="delete_technology_success_massage">
+        <value>
+            فناوری با موفقیت حذف شد
+        </value>
+    </key>
+    <key name="delete_technology_confirm_message">
+    <value>
+        آیا از حذف این تکنولوژی اطمینان دارید؟
+    </value>
+    </key>
+    <key name="delete_order_success_massage">
+        <value>
+            سفارش با موفقیت حذف شد
+        </value>
+    </key>
+    <key name="activate">
+        <value>
+            تایید کردن
+        </value>
+    </key>
+    <key name="technology_form_title_label">
+        <value>
+            عنوان فناوری
+        </value>
+    </key>
+    <key name="technology_form_userFullName_label">
+        <value>
+            نام و نام‌خانوادگی فناور
+        </value>
+    </key>
+    <key name="option_position_student">
+        <value>
+            دانشجو
+        </value>
+    </key>
+    <key name="option_position_faculty">
+        <value>
+            هیئت علمی
+        </value>
+    </key>
+    <key name="option_position_postdoc">
+        <value>
+            محقق پسا دکتری
+        </value>
+    </key>
+    <key name="technology_form_position_label">
+        <value>
+            سمت
+        </value>
+    </key>
+    <key name="option_grade_bsc">
+        <value>
+            کارشناسی
+        </value>
+    </key>
+    <key name="option_grade_masc">
+        <value>
+            کارشناسی‌ارشد
+        </value>
+    </key>
+    <key name="option_grade_phd">
+        <value>
+            دکتری
+        </value>
+    </key>
+    <key name="technology_form_grade_label">
+        <value>
+            مقطع تحصیل
+        </value>
+    </key>
+    <key name="technology_form_sn_label">
+        <value>
+            شماره دانشجویی
+        </value>
+    </key>
+    <key name="option_position_math">
+        <value>
+            دانشکده ریاضی
+        </value>
+    </key>
+    <key name="option_position_com">
+        <value>
+            دانشکده مهندسی کامپیوتر
+        </value>
+    </key>
+    <key name="option_position_elec">
+        <value>
+            دانشکده برق
+        </value>
+    </key>
+    <key name="technology_form_org_label">
+        <value>
+            دانشکده / پژوهشکده
+        </value>
+    </key>
+    <key name="technology_form_email_label">
+        <value>
+            آدرس ایمیل
+        </value>
+    </key>
+    <key name="technology_form_pn_label">
+        <value>
+            شماره تلفن
+        </value>
+    </key>
+    <key name="technology_form_techArea_label">
+        <value>
+            حوزه فناوری
+        </value>
+    </key>
+    <key name="technology_form_image1_label">
+        <value>
+            تصویر فناوری ۱
+        </value>
+    </key>
+    <key name="technology_form_image2_label">
+        <value>
+            تصویر فناوری ۲
+        </value>
+    </key>
+    <key name="technology_form_image3_label">
+        <value>
+            تصویر فناوری ۳
+        </value>
+    </key>
+    <key name="technology_form_image4_label">
+        <value>
+            تصویر فناوری ۴
+        </value>
+    </key>
+    <key name="technology_form_image5_label">
+        <value>
+            تصویر فناوری ۵
+        </value>
+    </key>
+    <key name="technology_form_techDesc_label">
+        <value>
+            شرح فناوری
+        </value>
+    </key>
+    <key name="technology_userFullName">
+        <value>
+            نام فناور
+        </value>
+    </key>
+    <key name="technology_pn">
+        <value>
+            شماره تماس
+        </value>
+    </key>
+    <key name="technology_email">
+        <value>
+            آدرس ایمیل
+        </value>
+    </key>
+    <key name="form_label_captcha">
+        <value>
+            تصویر امنیتی
+        </value>
+    </key>
+    <key name="deactivate_technologies_page_heading">
+        <value>
+            فناوری‌های تایید نشده
+        </value>
+    </key>
+    <key name="deactivate_technologies_page_title">
+        <value>
+            فناوری‌های تایید نشده
+        </value>
+    </key>
+    <key name="auth_action_label_admin_technology">
+        <value>
+            مدیریت فناوری‌
+        </value>
+    </key>
+    <key name="admin_technology_deactivates_page">
+        <value>
+            فناوری‌های تایید نشده
+        </value>
+    </key>
+    <key name="technology_org">
+        <value>
+            دانشکده / پژوهشکده
+        </value>
+    </key>
+    <key name="technology_position">
+        <value>
+            سمت
+        </value>
+    </key>
+    <key name="technology_sn">
+        <value>
+            شماره دانشجویی
+        </value>
+    </key>
+    <key name="technology_grade">
+        <value>
+            مقطع تحصیل
+        </value>
+    </key>
+    <key name="technology_area">
+        <value>
+            حوزه فناوری
+        </value>
+    </key>
+    <key name="notif_add_new_technology">
+        <value>
+            فناوری جدید با عنوان "{$title}" ثبت گردید.
+        </value>
+    </key>
+    <key name="email_notifications_section_label">
+        <value>
+            فناوری‌ها
+        </value>
+    </key>
+    <key name="email_notifications_setting_comment">
+        <value>
+            کاربری فناوری جدیدی را ثبت کرد.
+        </value>
+    </key>
+    <key name="null">
+        <value>
+            -
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه فناوری
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه فناوری
+        </value>
+    </key>
+    <key name="input_settings_position_list_label">
+        <value>
+            لیست سمت‌ها
+        </value>
+    </key>
+    <key name="input_settings_position_list_desc">
+        <value>
+            قابل انتخاب در فرم ثبت فناوری
+        </value>
+    </key>
+    <key name="input_settings_grade_list_label">
+        <value>
+            لیست مقاطع تحصیلی
+        </value>
+    </key>
+    <key name="input_settings_grade_list_desc">
+        <value>
+            قابل انتخاب در فرم ثبت فناوری
+        </value>
+    </key>
+    <key name="input_settings_org_list_label">
+        <value>
+            لیست دانشکده / پژوهشکده‌ ها
+        </value>
+    </key>
+    <key name="input_settings_org_list_desc">
+        <value>
+            قابل انتخاب در فرم ثبت فناوری
+        </value>
+    </key>
+    <key name="settings_updated">
+        <value>
+            تغییرات با موفقیت ذخیره شد.
+        </value>
+    </key>
+    <key name="services_enterprise_widget_title">
+        <value>
+            خدمات برای صنایع و سازمان‌ها
+        </value>
+    </key>
+    <key name="services_uni_members_widget_title">
+        <value>
+            خدمات برای اعضای دانشگاه
+        </value>
+    </key>
+    <key name="contact_us_widget_title">
+        <value>
+            تماس با ما
+        </value>
+    </key>
+    <key name="active_list">
+        <value>
+            فناوری‌های در دسترس
+        </value>
+    </key>
+    <key name="deactivate_list">
+        <value>
+            فناوری‌های تایید نشده
+        </value>
+    </key>
+    <key name="technology_list_tags">
+        <value>
+            مرور با برچسب
+        </value>
+    </key>
+    <key name="results_by_tag">
+        <value>نتایج جستجو براساس برچسب: «&lt;b&gt;{$tag}&lt;/b&gt;»</value>
+    </key>
+    <key name="notice_upload_image">
+        <value>توجه: لطفا از تصاویر با فرمت jpg/jpeg استفاده شود.</value>
+    </key>
+</prefix>

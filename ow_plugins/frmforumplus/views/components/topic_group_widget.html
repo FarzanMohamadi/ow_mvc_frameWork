@@ -1,0 +1,91 @@
+{script}
+	{literal}
+		$(document).ready(function(){
+		var $tb_container = $(".ow_box_toolbar_cont", $("#topic_list_widget").parents('.ow_box, .ow_box_empty').get(0));
+		});
+	{/literal}
+{/script}
+{if isset($headerForumGroupWidgetHtml)}
+	{$headerForumGroupWidgetHtml}
+{/if}
+{if isset($topics)}
+<div id="topic_list_widget">
+		{assign var="temp" value=null}
+		{foreach from=$topics item='topic' name='topic'}
+		{capture assign='topic_feature'}
+		{if $topic.new || $topic.locked || $topic.sticky}
+			<div class="ow_forum_icon widget {if $topic.new} new_topic_icon_container {elseif $topic.locked} locked_topic_icon_container {elseif $topic.sticky} important_topic_icon_container {/if}">
+				{if $topic.new}<span class="ow_forum_new ow_lbutton ow_green ow_nowrap" title="{text key='forum+new'}">{text key='forum+new'}</span>{/if}
+				{if $topic.sticky}<span class="ow_forum_sticky ow_lbutton ow_nowrap" title="{text key='forum+sticky'}">{text key='forum+sticky'}</span>{/if}
+				{if $topic.locked}<span class="ow_forum_locked ow_lbutton ow_red ow_nowrap" title="{text key='forum+locked'}">{text key='forum+locked'}</span>{/if}
+			</div>
+		{/if}
+		{/capture}
+		{capture assign='info_string'}
+		<a title="{$topic.title}" href="{$topic.lastPost.postUrl}">{$topic.title}</a>
+		{/capture}
+
+		{capture assign='content'}
+		{if isset($info_string)}<div class="forum_widget_header"> <span>{text key='frmforumplus+key_topic'}:</span> {$info_string}</div>{/if}
+		{assign var="sectId" value=$groups[$topic.groupId]->sectionId}
+
+	    <div class="forum_widget_text_and_avatar_container">
+	        <div class="ow_smallmargin clearfix forum_widget_avatar_container">
+	        	<div class="forum_widget_avater">
+	        		{if !empty($avatars[$topic.lastPost.userId])}
+	        		{decorator name='avatar_item' data=$avatars[$topic.lastPost.userId] class='rounded_image_container'}
+	        		{else}
+	        		{if isset($imageSrc)}
+	        		<img src="{$imageSrc}" alt="{$imageTitle}" title="{$imageTitle}" class="rounded_image_container" />
+	        		{/if}
+	        		{/if}
+	        	</div>
+	        </div>
+	        <div class="ow_smallmargin forum_widget_content_text">
+		    	{capture assign='length'}{$topic.lastPost.text|count_characters}{/capture}
+		    	{$topic.lastPost.text|truncate:$postLength} {if $length > $postLength}<a href="{$topic.lastPost.postUrl}" class="ow_lbutton">{text key='base+more'}</a>{/if}
+		    </div>
+	    </div>
+		{/capture}
+
+		{capture assign='path_to_forum'}
+		<div class="ow_smallmargin ow_small path_to_forum_container">
+			<a title="{$topic.groupEntityTitle}" href="{$topic.groupEntityUrl}" class="tag_item group_name">{$topic.groupEntityTitle}</a>
+		</div>
+		{/capture}
+
+		{if $temp === null}
+			<div class="topic_label_group_container forum_widget_container group_id_{$topic.groupEntityId} hide">
+				<div class="topic_label_group ow_smallmargin group_id_{$topic.groupEntityId}">
+					{$topic.groupEntityTitle}
+				</div>
+			{assign var="temp" value=$topic.groupEntityId}
+		{elseif $temp !== $topic.groupEntityId}
+			</div>
+			<div class="topic_label_group_container forum_widget_container group_id_{$topic.groupEntityId} hide">
+				<div class="topic_label_group ow_smallmargin group_id_{$topic.groupEntityId}">
+					{$topic.groupEntityTitle}
+				</div>
+			{assign var="temp" value=$topic.groupEntityId}
+		{/if}
+
+		<div class="forum_widget_container group_id_{$topic.groupEntityId}">
+			{if !empty($topic_feature)}{$topic_feature}{/if}
+
+			<div class="ow_ipc_content forum_widget_content">{$content}</div>
+
+			<div class="forum_widget_footer">
+				<span class="forum_widget_path_to_forum"><span>{text key='frmforumplus+in_group'}</span>{$path_to_forum}</span>
+				<span class="forum_widget_date">{$toolbars[$topic.lastPost.postId].date.label}</span>
+			</div>
+
+			<div class="forum_widget_forums_divider"></div>
+		</div>
+		{if $smarty.foreach.topic.last}
+			</div>
+		{/if}
+		{foreachelse}
+		<div class="ow_nocontent">{text key='frmforumplus+no_topics'}</div>
+		{/foreach}
+</div>
+{/if}

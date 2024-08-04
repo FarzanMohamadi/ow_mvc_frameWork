@@ -1,0 +1,29 @@
+<div class="user_profile_data" style="position:relative">
+    <h1 id="user-display-name">
+        {$displayName}
+        {if isset($isApproved) && $isApproved === false}
+            <span class="ow_profile_user_approve_status">({text key='base+menu_item_users_unapproved'})</span>
+        {/if}
+    </h1>
+    {if isset($moderator_note)}
+        <div id="moderator_note" style="border: 1px solid #ccc;margin: 20px 40px 20px 22px;border-radius: 3px;padding: 2px 7px;background-color: #fffff1;">
+            <b>{text key='base+moderator_note_unapproved'}</b>:
+            {$moderator_note}
+        </div>
+    {/if}
+    {if isset($additionalWidget)}
+        {$additionalWidget}
+    {/if}
+    {$profileActionToolbar}
+    <!-- {if !empty($changePassword) }
+    <div class="ow_stdmargin change_password">
+        <div class="ow_right">{$changePassword}</div>
+    </div>
+    {/if} -->
+
+    {foreach  from=$sectionsHtml key='section' item='html'}
+        {$html}
+    {/foreach}
+ </div>
+
+{add_content key='socialsharing.get_sharing_buttons' title=$displayName image=$avatarUrl entityType='user' entityId=$userId }

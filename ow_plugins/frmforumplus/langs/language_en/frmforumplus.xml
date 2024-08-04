@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmforumplus" label="frmforumplus" language_tag="en" language_label="English">
+    <key name="menu_latest_posts">
+        <value>
+            Latest Posts
+        </value>
+    </key>
+    <key name="menu_latest_topics">
+        <value>
+            Latest Topics
+        </value>
+    </key>
+	<key name="menu_most_viewed">
+        <value>
+            Most Viewed Topics
+        </value>
+    </key>
+	<key name="mobile_forum_group_visibile_label">
+        <value>
+			Hide group's forum button in a group view in mobile version
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+			Settings has been saved successfully
+        </value>
+    </key>
+	<key name="admin_settings_heading">
+        <value>
+			frmforum plus Settings
+        </value>
+    </key>
+    <key name="more">
+        <value>
+            more
+        </value>
+    </key>
+    <key name="email_notifications_group_topic">
+        <value>
+            someone creates topic in my groups
+        </value>
+    </key>
+    <key name="notify_add_group_topic">
+        <value>
+            &lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt;  add topic «&lt;a href="{$topicUrl}"&gt;{$topicTitle}&lt;/a&gt;»  to  «&lt;a href="{$groupUrl}"&gt;{$groupTitle}&lt;/a&gt;»
+        </value>
+    </key>
+    <key name="remove_to_topic_forum_group_widget">
+        <value>
+           Remove from topic group widget
+        </value>
+    </key>
+    <key name="no_topics">
+        <value>
+            No topic
+        </value>
+    </key>
+    <key name="cmp_widget_forum_topics_count">
+        <value>
+            Number of Topics to show
+        </value>
+    </key>
+    <key name="cmp_widget_forum_topics_post_lenght">
+        <value>
+            Preview length for forum topic in characters
+        </value>
+    </key>
+    <key name="view_topic_settings">
+        <value>
+           View topic setting
+        </value>
+    </key>
+    <key name="view_latest_groups_topics">
+        <value>
+            Latest topic of all groups
+        </value>
+    </key>
+    <key name="view_selected_groups_topics">
+        <value>
+            latst topics of selected groups
+        </value>
+    </key>
+    <key name="group_topics_widget">
+        <value>
+            Topics of Groups
+        </value>
+    </key>
+    <key name="add_to_topic_forum_group_widget">
+        <value>
+            اAdd to topic groups widget
+        </value>
+    </key>
+    <key name="add_success_msg">
+        <value>
+            Group topic(s) added successfully
+        </value>
+    </key>
+    <key name="remove_success_msg">
+        <value>
+            Group topic(s) removed successfully
+        </value>
+    </key>
+    <key name="key_topic">
+        <value>
+            key topic
+        </value>
+    </key>
+    <key name="in_group">
+        <value>
+            in group
+        </value>
+    </key>
+    <key name="header_html_forum_group_widget">
+        <value>
+            Header html for forum group widget in site page
+        </value>
+    </key>
+    <key name="subscribe_group_users_to_topic_checkbox_label">
+        <value>
+            Default subscription to forum topics by all of the group's users
+        </value>
+    </key>
+    <key name="subscribe_group_users_to_topic_checkbox_description">
+        <value>
+            After joining group user will be subscribed to all of the topics and after adding new topic all of the users will be subscribed to it
+        </value>
+    </key>
+</prefix>

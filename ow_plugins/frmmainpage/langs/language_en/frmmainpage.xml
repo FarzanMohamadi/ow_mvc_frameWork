@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmainpage" label="frmmainpage" language_tag="en" language_label="English">
+    <key name="mobile_main_menu_list">
+        <value>
+            Main page
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            Mainpage Plugin Settings
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            Settings
+        </value>
+    </key>
+    <key name="chat">
+        <value>
+            Chats
+        </value>
+    </key>
+    <key name="mail">
+        <value>
+            Messages
+        </value>
+    </key>
+    <key name="find_friends">
+        <value>
+            Find New Friends
+        </value>
+    </key>
+    <key name="orders">
+        <value>
+            Menu orders
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            Empty
+        </value>
+    </key>
+    <key name="search">
+        <value>
+            Search
+        </value>
+    </key>
+    <key name="username_or_realname">
+        <value>
+            Username / Real name
+        </value>
+    </key>
+    <key name="public_photos">
+        <value>
+            Public photos
+        </value>
+    </key>
+    <key name="chat_groups_console_title">
+        <value>
+           Conversations
+        </value>
+    </key>
+    <key name="distinct_chat__chanel_groups_console_title">
+        <value>
+            Conversations
+        </value>
+    </key>
+    <key name="chatGroups">
+        <value>
+            Conversations
+        </value>
+    </key>
+    <key name="distinctChatChanelGroup">
+        <value>
+            Conversations include distinct tabs for groups, chats, and channels
+        </value>
+    </key>
+    <key name="two_characters_for_search">
+        <value>
+            Please enter text to be searched. At least two characters needed
+        </value>
+    </key>
+    <key name="no_result">
+        <value>
+            No results found
+        </value>
+    </key>
+    <key name="set_as_default">
+        <value>
+            Set as default
+        </value>
+    </key>
+    <key name="list_type_all_label">
+        <value>
+            Conversations
+        </value>
+    </key>
+    <key name="list_type_group_label">
+        <value>
+            Groups
+        </value>
+    </key>
+    <key name="list_type_chanel_label">
+        <value>
+            Channels
+        </value>
+    </key>
+    <key name="list_type_chat_label">
+        <value>
+            Chats
+        </value>
+    </key>
+    <key name="chanel_page_heading">
+        <value>
+            My Channels
+        </value>
+    </key>
+    <key name="all_page_heading">
+        <value>
+           My  Conversations
+        </value>
+    </key>
+</prefix>

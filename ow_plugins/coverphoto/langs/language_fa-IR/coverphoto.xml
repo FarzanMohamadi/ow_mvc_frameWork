@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="coverphoto" label="coverphoto" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            تصویر سرصفحه
+        </value>
+    </key>
+    <key name="add_more_cover_photo">
+        <value>
+            مورد جدید
+        </value>
+    </key>
+    <key name="admin_title">
+        <value>
+            تنظیمات افزونه سر صفحه
+        </value>
+    </key>
+    <key name="default_user">
+        <value>
+            پیشفرض پروفایل کاربران
+        </value>
+    </key>
+    <key name="default_groups">
+        <value>
+            پیشفرض گروه‌ها
+        </value>
+    </key>
+    <key name="list_is_empty">
+        <value>
+            شما تصویر سرصفحه‌ای ندارید
+        </value>
+    </key>
+    <key name="edit_for_select_cover">
+        <value>
+            تغییر تصویر سرصفحه
+        </value>
+    </key>
+    <key name="empty_image">
+        <value>
+            شما باید یک تصویر سرصفحه بارگذاری نمایید
+        </value>
+    </key>
+    <key name="not_valid_image">
+        <value>
+            این تصویر پشتیبانی نمی‏شود
+        </value>
+    </key>
+    <key name="description_coverphoto_float_page">
+        <value>
+            شما می‌توانید از تصاویر سرصفحه قدیمی خود به عنوان تصویر سرصفحه فعلی استفاده کنید، مورد جدید اضافه کنید و یا حذف کنید.
+        </value>
+    </key>
+    <key name="description_coverphoto_page">
+        <value>
+            شما می‌توانید تصویر جدید بارگذاری کنید تا به عنوان تصویر سرصفحه انتخاب شود.
+        </value>
+    </key>
+    <key name="errors_image_invalid">
+        <value>
+            این نوع تصویر پشتیبانی نمی‏‌شود
+        </value>
+    </key>
+    <key name="forms_file_field_label">
+        <value>
+            بارگذاری فایل
+        </value>
+    </key>
+    <key name="forms_submit_field_label">
+        <value>
+            ثبت
+        </value>
+    </key>
+    <key name="forms_page_heading">
+        <value>
+            تصاویر سرصفحه
+        </value>
+    </key>
+    <key name="forms_page_title">
+        <value>
+            تصاویر سرصفحه
+        </value>
+    </key>
+    <key name="are_you_sure_to_remove">
+        <value>
+            آیا شما از حذف این تصویر سرصفحه اطمینان دارید؟
+        </value>
+    </key>
+    <key name="are_you_sure_to_use_this">
+        <value>
+            آیا شما از استفاده از این تصویر به عنوان تصویر سرصفحه اطمینان دارید؟
+        </value>
+    </key>
+    <key name="delete_this_cover">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="use_this_cover">
+        <value>
+            استفاده
+        </value>
+    </key>
+    <key name="covers">
+        <value>
+            لیست تصاویر سرصفحه:
+        </value>
+    </key>
+    <key name="forms_title_field_description">
+        <value>
+            شما باید عنوان تصویر سرصفحه را وارد نمایید
+        </value>
+    </key>
+    <key name="forms_title_field_label">
+        <value>
+            عنوان تصویر سرصفحه
+        </value>
+    </key>
+    <key name="index_page_heading">
+        <value>
+            تصاویر سرصفحه
+        </value>
+    </key>
+    <key name="index_page_title">
+        <value>
+            تصاویر سرصفحه
+        </value>
+    </key>
+    <key name="database_record_saved_info">
+        <value>
+            تصویر سرصفحه با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="database_record_used">
+        <value>
+            تصویر سرصفحه با موفقیت تغییر کرد
+        </value>
+    </key>
+    <key name="database_record_deleted">
+        <value>
+            تصویر سرصفحه با موفقیت حذف شد
+        </value>
+    </key>
+    <key name="upload_image">
+        <value>
+            بارگذاری تصویر
+        </value>
+    </key>
+    <key name="repositioning_label">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="save_position_label">
+        <value>
+            ذخیره موقعیت
+        </value>
+    </key>
+    <key name="cancel_position_label">
+        <value>
+            لغو
+        </value>
+    </key>
+    <key name="reposition_label">
+        <value>
+            تغییر موقعیت تصویر
+        </value>
+    </key>
+    <key name="drag_to_reposition_label">
+        <value>
+            کشیدن عمودی تصویر برای تغییر موقعیت
+        </value>
+    </key>
+</prefix>

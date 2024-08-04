@@ -1,0 +1,174 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {if !empty($subsections) }
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$subsections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {/if}
+</div>
+
+<div class="ow_box">{text key="frmgraph+all_users_desc"}</div>
+
+<div style="position: relative; margin-bottom: 10px;">
+{block_decorator name='box'
+    capEnabled='1'
+    iconClass='ow_ic_info'
+    langLabel='frmgraph+label_linear_formula_form'
+    capAddClass="ow_dnd_configurable_component clearfix"
+    type=''
+    addClass="ow_stdmargin clearfix ow_group_users_view"}
+
+    {form name="mainForm"}
+        <table class="ow_table_1 ow_form frmgraph_table" style="margin: 0">
+    <tbody>
+    <tr class="ow_tr_first ow_center">
+        <th class="ow_value">{text key="frmgraph+metric"}</th>
+        <th class="ow_value">{text key="frmgraph+importance_coefficient"}</th>
+    </tr>
+    {foreach from=$fieldsArray item='fieldName'}
+    <tr class="ow_center">
+        <td class="ow_label">
+            {label name=$fieldName}
+            {if in_array($fieldName, $tooltipKeyList)}
+                {component class='FRMGRAPH_CMP_TooltipIcon' text=$tooltipList[$fieldName]}
+            {/if}
+        </td>
+        <td class="ow_value">
+            {input name=$fieldName}
+            <br/>
+            {error name=$fieldName}
+        </td>
+    </tr>
+    {/foreach}
+
+    <tr class="ow_center">
+        <td class="ow_label">
+            {text key="frmgraph+number_of_result_rows"}
+        </td>
+        <td class="ow_value">
+            {input name="results_rows_number"}
+        </td>
+    </tr>
+
+    {foreach from=$profileQuestions item='question'}
+        <tr class="ow_center">
+            <td class="ow_label">
+                {text key="frmgraph+filter_according_to"}
+                {$question.question_label}
+            </td>
+            <td class="ow_value">
+                {foreach from=$question.options item='option'}
+                    {input name=$option->getAttribute('name')}
+                    {label name=$option->getAttribute('name')}
+                {/foreach}
+            </td>
+        </tr>
+    {/foreach}
+
+    <tr class="ow_center">
+        <td class="ow_label">
+            {text key="frmgraph+filter_according_to"}
+            {text key="admin+heading_user_roles"}
+        </td>
+        <td class="ow_value">
+
+    {foreach from=$roleList item='role' name='role'}
+        {input name="roles_`$role->id`"}
+        {label name="roles_`$role->id`"}
+    {/foreach}
+        </td>
+    </tr>
+
+     <tr class="ow_center">
+        <td class="ow_label">
+            {text key="frmgraph+is_output_normalized"}
+            {component class='FRMGRAPH_CMP_TooltipIcon' text={text key="frmgraph+tooltip_is_normalized"}}
+        </td>
+        <td class="ow_value">
+            {input name="is_normalized"}
+            {label name="is_normalized"}
+        </td>
+    </tr>
+
+    <tr class="ow_tr_last ow_center">
+        <td>
+            {submit name="submit" langLabel='frmgraph+display' }
+        </td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+    {/form}
+{/block_decorator}
+</div>
+
+<br/>
+{if isset($allInfo)}
+{if isset($empty)}
+    <div class="ow_box">{text key='base+empty_list'}</div>
+{else}
+
+<table class="ow_table_1 export_table" style="margin: 0; display: none;">
+    <tbody>
+    <tr class="ow_tr_first ow_center">
+        {foreach from=$exportLabels item='item'}
+        <th class="ow_value">{$item}</th>
+        {/foreach}
+    </tr>
+    {foreach from=$exportAllInfo item='item' key='rank'}
+    <tr class="ow_center">
+        {foreach from=$item item='score'}
+        <td class="ow_value">{$score}</td>
+        {/foreach}
+    </tr>
+    {/foreach}
+    </tbody>
+</table>
+
+{if isset($lastCalculationDate)}
+    <p class="graphy_last_update_time">{text key='frmgraph+last_calculation_date'}: {$lastCalculationDate}</p>
+{/if}
+<div style="overflow: auto;">
+    <table class="ow_table_1 frmgraph_table" style="margin: 0">
+        <tbody>
+        <tr class="ow_tr_first ow_center">
+            {foreach from=$labels item='item'}
+                <th class="ow_value">{$item}</th>
+            {/foreach}
+        </tr>
+        {foreach from=$allInfo item='item' key='rank'}
+        <tr class="ow_center">
+            {foreach from=$item item='score'}
+                <td class="ow_value">{$score}</td>
+            {/foreach}
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>
+
+<div class="ow_stdmargin">{$paging}</div>
+
+{if isset($exportAllInfo)}
+<div class="export_to_excel_button_container" style="text-align: left">
+    {submit name="export_excel" langLabel='frmgraph+export_to_excel' class='export_to_excel'}
+</div>
+{/if}
+
+{/if}
+{/if}

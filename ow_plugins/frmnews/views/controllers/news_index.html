@@ -1,0 +1,107 @@
+<div class="clearfix">{add_content key='news.add_content.list.top' listType=$listType}</div>
+
+{style}{literal}
+.ow_wrap_normal{
+    white-space: normal;
+}
+{/literal}{/style}
+<div class="news_page_action_buttons_container">
+	{if $addNew_isAuthorized}
+	    {if $addNew_promoted}
+	        <div class="ow_right ow_add_new_news">{decorator name='button' class='ow_ic_add' id='btn-add-new-entry' langLabel='frmnews+add_new'}</div>
+	    {else}
+	        <div class="ow_right ow_add_new_news">{decorator name='button' class='ow_ic_add' id='btn-add-new-entry' langLabel='frmnews+add_new' onclick="location.href='`$url_new_entry`'"}</div>
+	    {/if}
+	{/if}
+	{if isset($hasRss)}
+	<div class="ow_right receive_rss_button">{decorator name='button' style="border: none;" langLabel='frmrss+rss' onclick="showRssFormComponent()"}</div>
+	{/if}
+</div>
+
+	{$menu}
+      <div class="ow_news_list clearfix">
+
+         <div class="ow_superwide" style="float:left;">
+
+			{if $paging}<center>{$paging}</center>{/if}
+
+			{if $isBrowseByTagCase}       
+				{if isset($tag)}
+	         	<div class="ow_anno ow_stdmargin ow_center ow_ic_searchTag">
+					{text key="frmnews+results_by_tag" tag=$tag}
+				</div>
+				{else if isset($tagCloud)}
+					{$tagCloud}				
+				{/if}
+         	{/if}
+			 {if $isSearchResultsCase}
+				 <div class="ow_anno ow_stdmargin ow_center ow_ic_searchTag">
+					 {text key="frmnews+search_results_for" q=$q}
+				 </div>
+			 {/if}
+                
+            {if $showList}
+            {foreach from=$list item='entry'}
+
+				{assign var=dto value=$entry.dto}
+
+				{*-- decorator data*}
+
+				{assign var=userId value=$dto->getAuthorId()}
+
+				{capture assign='info_string'}
+					<a href="{$entry.url}">{$dto->getTitle()}</a>
+				{/capture}
+
+				{capture assign='content'}
+					{$entry.text}{if $entry.showMore}... <a class="ow_lbutton" href="{$entry.url}">{text key='frmnews+more'}</a>{/if}
+				{/capture}
+				{assign var='id' value=$dto->getId()}
+
+				{*~~ decorator data*}
+
+			 	{decorator name='ipc' infoString=$info_string data=$entry addClass="ow_stdmargin news_item news_with_image" content=$content toolbar=$toolbars[$id]}
+
+            {foreachelse}
+			 	<div class="ow_nocontent">{text key='base+empty_list'}</div>
+            {/foreach}
+
+            {if $paging}<center>{$paging}</center>{/if}
+            {/if}
+        </div>    
+
+         <div class="ow_supernarrow" style="float:right;">
+			 <div class="news_widget ow_dnd_widget">
+				 {$entrySearch}
+			 </div>
+			 <div class="news_widget ow_dnd_widget">
+         		{$tagSearch}
+			 </div>
+			 {if isset($archive) && isset($dateParsed)}
+				 <div class="news_widget ow_dnd_widget">
+					 {block_decorator name="box" langLabel="frmnews+news_archive_lbl_archives" iconClass="ow_ic_clock"}
+					 <ul class="ow_regular">
+						 <li><a href="{url_for_route for="frmnews"}">{text key="base+all"}</a> </li>
+						 {foreach from=$archive key='year' item='months'}
+						 {foreach from=$months item='month'}
+						 <li>
+							 <a href="{url_for_route for="archive-frmnews"}?month={$month}-{$year}">{$dateParsed.{$year}.{$month}}</a>
+						 </li>
+						 {/foreach}
+						 {/foreach}
+					 </ul>
+					 {/block_decorator}
+				 </div>
+			 {/if}
+             {if isset($my_published_entrys_url)}
+				 <div class="news_widget">
+             <div style="" class="ow_stdmargin clearfix ow_no_cap ow_break_word">
+                 <div class="ow_my_drafts_widget clearfix ow_center">
+                     {decorator name="button" langLabel="frmnews+my_drafts" class="ow_ic_draft" onclick="location.href='$my_published_entrys_url'"}
+                 </div>
+             </div>
+				 </div>
+             {/if}
+         </div>
+
+      </div>

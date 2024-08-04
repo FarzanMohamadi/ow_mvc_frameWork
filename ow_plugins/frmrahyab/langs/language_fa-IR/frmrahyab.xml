@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrahyab" label="frmrahyab" language_tag="fa-IR" language_label="فارسی">
+	<key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه رهیاب
+        </value>
+    </key>
+    <key name="modified_successfully">
+        <value>
+            تنظیمات با موفقیت ذخیره شدند.
+        </value>
+    </key>
+    <key name="provider">
+        <value>
+            نوع وب سرویس
+        </value>
+    </key>
+    <key name="panel_username">
+        <value>
+            نام کاربری پنل
+        </value>
+    </key>
+    <key name="panel_password">
+        <value>
+            گذرواژه پنل
+        </value>
+    </key>
+    <key name="panel_number">
+        <value>
+            شماره ارسال‌کننده
+        </value>
+    </key>
+    <key name="provider_port">
+        <value>
+            شماره پورت اتصال
+        </value>
+    </key>
+    <key name="provider_host">
+        <value>
+            نشانی اینترنتی میزبان
+        </value>
+    </key>
+    <key name="company">
+        <value>
+            نام شرکت
+        </value>
+    </key>
+    <key name="section1_label">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="section2_label">
+        <value>
+            پی‌گیری پیامک‌ها
+        </value>
+    </key>
+    <key name="text_label">
+        <value>
+            متن پیامک
+        </value>
+    </key>
+    <key name="status_label">
+        <value>
+            وضعیت
+        </value>
+    </key>
+    <key name="mobile_label">
+        <value>
+            شماره تلفن همراه
+        </value>
+    </key>
+    <key name="time_label">
+        <value>
+            زمان ارسال
+        </value>
+    </key>
+    <key name="status_0">
+        <value>
+            نامشخص
+        </value>
+    </key>
+    <key name="status_1">
+        <value>
+            رسیده به گوشی
+        </value>
+    </key>
+    <key name="status_2">
+        <value>
+            ارسال شده به مخابرات
+        </value>
+    </key>
+    <key name="status_3">
+        <value>
+            ریزش گیت وی
+        </value>
+    </key>
+    <key name="status_4">
+        <value>
+            نرسیده به گوشی(ریزش مخابرات)
+        </value>
+    </key>
+</prefix>

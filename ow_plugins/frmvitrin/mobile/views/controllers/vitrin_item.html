@@ -1,0 +1,58 @@
+
+<div class="owm_frmvitrin_view owm_list_item_view">
+    <div class="owm_list_item_view_title  clearfix owm_nav_cap owm_nav_cap_left_cont owm_bg_color_3">
+        <div class="owm_float_left">
+            <a class="owm_nav_cap_left" href="{$returnToVitrin}"></a>
+        </div>
+        <h4>
+            {text key="frmvitrin+return_to_vitrin"}
+        </h4>
+    </div>
+
+    <div class="owm_box owm_brief_info" style="margin-top:10px;padding:10px">
+        <div class="owm_box_cap  clearfix">
+            <h3 class="ow_ic_info">{$item.title}</h3>
+        </div>
+        <div class="owm_box_body">
+            <div class="logo">
+                <img alt="{$item.title}" src="{$item.logo}"/>
+            </div>
+            <div class="owm_item_info_description">{$item.description}</div>
+        </div>
+        <div class="owm_box_bottom" style="font-size: small;padding: 16px 6px 3px;">
+            <div class="features_item">
+                <img src="{$target_icon}" alt="{$item.targetMarket}"/>
+                <span>
+                    {text key="frmvitrin+targetMarket"}:
+                </span>
+                {$item.targetMarket}
+            </div>
+            <div class="features_item">
+                <img src="{$developer_icon}" alt="{$item.vendor}"/>
+                <span>
+                    {text key="frmvitrin+vendor"}:
+                </span>
+                {$item.vendor}
+            </div>
+            <div class="features_item">
+                <img src="{$language_icon}" alt="{$item.language}"/>
+                <span>
+                    {text key="frmvitrin+language"}:
+                </span>
+                {$item.language}
+            </div>
+            <div class="features_item">
+                <img src="{$business_model_icon}" alt="{$item.businessModel}"/>
+                <span>
+                    {text key="frmvitrin+business_model"}:
+                </span>
+                {$item.businessModel}
+            </div>
+        </div>
+        <div class="owm_box_bottom">
+            <div class="owm_box_toolbar">
+                <div class="website"><a class="btn btn-blue" href="{$item.url}" target="_blank">{text key="frmvitrin+view_website"}</a></div>
+            </div>
+        </div>
+    </div>
+</div>

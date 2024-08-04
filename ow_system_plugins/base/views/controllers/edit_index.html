@@ -1,0 +1,201 @@
+{style}
+    .anno_padding_left {
+        padding-left:45px;
+    }
+{/style}
+{literal}
+<script language="javascript" type="text/javascript">
+    $(function(){
+        $(".unregister_profile_button").click(
+            function() { window.location = {/literal}"{$unregisterProfileUrl}"{literal} }
+        );
+   });
+</script>
+{/literal}
+
+{block_decorator name="box" type="empty" addClass="ow_superwide ow_automargin"}
+
+{if !$adminMode && !$isAdmin}
+    <div style="float:left">
+        {decorator name="button" class="unregister_profile_button ow_ic_delete ow_red ow_negative ow_red_button" langLabel='base+delete_profile'}
+    </div>
+{/if}
+{if !empty($changePassword) }
+    <div style="float:left">
+        {$changePassword}
+    </div>
+{/if}
+<span>{$displayName}</span>
+{if isset($moderator_note)}
+<div id="moderator_note" style="border: 1px solid #ccc;margin: 29px 0px 20px 9px;border-radius: 3px;padding: 2px 7px;background-color: #fffff1;">
+    <b>{text key='base+moderator_note_unapproved_user'}</b>: {$moderator_note}
+</div>
+{/if}
+{if isset($editSynchronizeHook)}
+    {block_decorator name="box" addClass="ow_center" iconClass='ow_ic_update' langLabel='base+edit_remote_field_synchronize_title' style="overflow:hidden;"}
+       {foreach from=$editSynchronizeHook item='item'}
+          {$item}
+       {/foreach}
+    {/block_decorator}
+    {block_decorator name="box" type="empty" addClass="ow_center" style="padding:15px;"}
+        {text key="base+join_or"}
+    {/block_decorator}
+{/if}
+
+{form name=editForm}
+    <table class="ow_table_1 ow_form ow_stdmargin">
+        {if $displayAccountType}
+        {cycle assign='alt' values='ow_alt1,ow_alt2'}
+            <tr class="ow_tr_first">
+                <th class="ow_box_cap ow_heading">
+                    <h2>{text key='base+questions_question_accountType_label'}</h2>
+                    <div class="ow_name_search_label"></div>
+                </th>
+            </tr>
+            <tr class="ow_alt1 ow_tr_first ow_tr_last ow_accountType">
+                <td class="ow_search_accountType">
+                    {input name='accountType'}
+                    <div class="ow_separation"></div>
+                    {error name='accountType'}
+                </td>
+            </tr>
+            <tr class="ow_tr_delimiter"><td></td></tr>
+        {/if}
+        {foreach from=$questionArray key='section' item='questions' name='question'}
+            {if !empty($section) }
+                <tr class="ow_tr_first">
+                    <th class="ow_box_cap ow_heading">
+                        <h2>{text key="base+questions_section_`$section`_label"}</h2>
+                        <div class="ow_name_search_label"></div>
+                     </th>
+                </tr>
+            {/if}
+
+            {foreach from=$questions item='question' name='question'}
+                {cycle assign='alt' name=$section values='ow_alt1,ow_alt2'}
+                <tr class=" {if $smarty.foreach.question.last}ow_tr_last{/if} {if !empty($changeList[$question.name]) && $adminMode } ow_premoderation_high {/if} ow_type_{$question.type}">
+                    <td class="{$alt} ow_value ow_label ow_presentation_{$question.presentation}">
+                        {if $question.type == "text" }
+                            {if $question.presentation == "textarea" }
+                                {label name=$question.name}
+                                <br>
+                                {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} onkeyup="ShowLabelQuestion(this)"}
+                                <br>
+                            {else}
+                                {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} }
+                                </br>
+                                {label name=$question.name}
+                            {/if}
+                            <div class="ow_desc">
+                                {desc name=$question.name}
+                            </div>
+                            <div class="ow_separation"></div>
+                            {error name=$question.name}
+                        {else}
+                        <div class="ow_label_question">
+                            {label name=$question.name}
+                            <br>
+                            {input name=$question.name}
+                            {if $question.type == "boolean" }
+                                {label name=$question.name}
+                            {/if}
+                            <div class="ow_desc">
+                                {desc name=$question.name}
+                            </div>
+                            <div class="ow_separation"></div>
+                            {error name=$question.name}
+                        </div>
+                        {/if}
+                    </td>
+                </tr>
+            {/foreach}
+            {if !empty($section)}{if !$smarty.foreach.question.first}
+            <tr class="ow_tr_delimiter"><td></td></tr>
+            {/if}
+            {/if}
+        {/foreach}
+        {if isset($display_parent_email) &&  $display_parent_email}
+            <tr class="ow_tr_first parent_email">
+                <th class="ow_box_cap ow_heading">
+                    <h2>{text key="frmcontrolkids+join_parent_email_header"}</h2>
+                    <div class="ow_name_search_label"></div>
+                </th>
+            </tr>
+            <tr class=" ow_tr_last ow_type_text parent_email">
+                <td class="{$alt} ow_value ow_label ow_presentation_text">
+                    {input name='parentEmail' placeholder={text key="frmcontrolkids+enter_parent_email_heading"} }
+                    </br>
+                    {label name='parentEmail'}
+                    <div class="ow_desc">
+                        {text key="frmcontrolkids+join_parent_email_description"}
+                    </div>
+                    <div class="ow_separation"></div>
+                    {error name='parentEmail'}
+                </td>
+            </tr>
+            <tr class="ow_tr_desc parent_email"><th>{text key="frmcontrolkids+parents_kids_message" kidsAge=$kidsAge}</th></tr>
+            <tr class="ow_tr_delimiter"><td></td></tr>
+        {/if}
+        <tr class="ow_tr_first ow_display_photo">
+            <th class="ow_box_cap ow_heading">
+                <h2>{text key='base+questions_section_user_photo_label'}</h2>
+                <div class="ow_name_search_label"></div>
+            </th>
+        </tr>
+        <tr class="ow_tr_last ow_user_photo">
+            <td>
+                {text key='base+avatar_update_description' profileUrl=$profileUrl}
+            </td>
+        </tr>
+
+        {if $passwordRequiredProfile}
+        <tr class="ow_tr_delimiter"><td></td></tr>
+        <tr class="ow_tr_first ow_editor_password">
+            <th class="ow_box_cap ow_heading">
+                <h2>{text key='frmsecurityessentials+editor_password_heading'}</h2>
+                <div class="ow_name_search_label"></div>
+            </th>
+        </tr>
+        <tr class="ow_tr_last ow_type_text ow_password_check">
+            <td class="ow_alt1 ow_value ow_label ow_presentation_password">
+                {text key='frmsecurityessentials+editor_password'}
+                <br>
+                {input name='oldPasswordCheck' placeholder={text key="base+change_password_old_password"} }
+                </br>
+                {label name='oldPasswordCheck'}
+                <div class="ow_separation"></div>
+                {error name='oldPasswordCheck'}
+            </td>
+        </tr>
+        {/if}
+    </table>
+
+    {if !$adminMode && !$isAdmin && $approveEnabled}
+        <div class="ow_anno ow_std_margin anno_padding_left">{text key="base+edit_profile_warning"}</div>
+    {/if}
+
+	<div class="clearfix ow_stdmargin{if !$isAdmin} ow_btn_delimiter{/if}">
+        {if $adminMode}
+            {if !$isUserApproved && !$isEditedUserModerator}
+                {decorator name="button" class="delete_user_by_moderator ow_ic_delete ow_red ow_negative" langLabel='base+delete_profile'}
+            {/if}
+
+            <div class="ow_left">
+                <span class="ow_button cancel_button"><a href="{$cancelUrl}" class="ow_button" id="cancel-button">{text key="base+confirm_page_cancel_label"}</a></span>
+                {if !$isUserApproved}
+                    {decorator name="button" class="write_message_button ow_green ow_positive" langLabel='base+write_message'}
+                    {submit name='saveAndApprove'}
+                {else}
+                    {submit name='editSubmit'}
+                {/if}
+            </div>
+        {else}
+            <div class="ow_left">
+                <span class="ow_button cancel_button"><a href="{$cancelUrl}" class="ow_button" id="cancel-edit-profile-button">{text key="base+confirm_page_cancel_label"}</a></span>
+                {submit name='editSubmit'}
+            </div>
+        {/if}
+
+    </div>
+{/form}
+{/block_decorator}

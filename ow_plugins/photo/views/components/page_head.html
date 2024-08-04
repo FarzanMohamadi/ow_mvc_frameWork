@@ -1,0 +1,92 @@
+{*
+
+
+
+/**
+ *
+ *
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.photo
+ * @since 1.6.1
+ */
+
+*}
+
+<div class="ow_btn_delimiter photos_page_add_buttons_container photos_page_buttons_container ow_right">
+    {if $isAuthorized}
+        {if !$isInAlbumPage}
+            {decorator name='button' class='ow_ic_add' langLabel='photo+create_album'
+                onclick="OW.ajaxFloatBox('PHOTO_CMP_CreateFakeAlbum', [], {
+                    title: OW.getLanguageText('photo', 'create_album'),
+                    width: 500
+                });"
+            }
+        {/if}
+        {decorator name="button" class="ow_ic_add" id="add-new-photo-album" langLabel="photo+upload_photos" onclick="{$url}();"}
+    {elseif !$isAuthorized}
+
+
+
+    {elseif !empty($isPromo)}
+        {decorator name="button" class="ow_ic_add" id="add-new-photo-album" langLabel="photo+create_album"}
+        {decorator name="button" class="ow_ic_add" id="btn-add-new-photo" langLabel="photo+upload_photos"}
+
+        {script}
+            $("#add-new-photo-album,#btn-add-new-photo").on("click", function()
+            {
+                OW.authorizationLimitedFloatbox({$promoMsg});
+            });
+        {/script}
+    {/if}
+    <div class="ow_hidden">
+        <div id="add-new-photo-album-content">
+            <div style="margin-bottom: 16px;">
+                <div class="ow_smallmargin">
+                    <input id="add-new-photo-album-name" type="text" value="{text key="photo+album_name"}" class="invitation">
+                    <span class="ow_error" style="color: #FF0000; display: none">{text key='base+form_validator_required_error_message'}</span>
+                </div>
+                <textarea id="add-new-photo-album-desc" class="invitation">{text key='photo+album_desc'}</textarea>
+            </div>
+            <div style="margin-bottom: 8px;" class="clearfix">
+                <div class="ow_right">
+                    <span class="ow_button">
+                        <span class=" ow_ic_submit ow_positive">
+                            <input type="button" class="ow_ic_submit ow_positive" value="{text key='photo+add_photos'}">
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{if !empty($photoMenu)}
+    {$photoMenu}
+{/if}
+
+{if !empty($user)}
+    <div class="clearfix" style="display: inline-block; margin-bottom: 12px;">
+        <div class="ow_user_list_picture">
+            {decorator name='avatar_item' data=$avatar}
+        </div>
+        <div class="ow_user_list_data">
+            <a href="{$avatar.url}">{$avatar.title}</a>
+            <div class="ow_small">
+                {if !empty($onlineStatus)}
+                    {online_now userId=$user->id}
+                {elseif $user->activityStamp}
+                    {text key="base+user_list_activity"}:
+                    <span class="ow_remark">{format_date timestamp=$user->activityStamp}</span>
+                {/if}
+            </div>
+        </div>
+    </div>
+{/if}
+
+{if isset($subMenu)}
+    {$subMenu}
+{/if}
+
+{if isset($subMenuView)}
+    {$subMenuView}
+{/if}

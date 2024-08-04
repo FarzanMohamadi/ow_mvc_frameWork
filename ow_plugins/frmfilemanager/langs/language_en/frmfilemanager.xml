@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmfilemanager" label="frmfilemanager" language_tag="en" language_label="English">
+    <key name="widget_files_title">
+        <value>
+            File management
+        </value>
+    </key>
+    <key name="admin_title">
+        <value>
+            Settings for File Manager Widget
+        </value>
+    </key>
+    <key name="admin_reset_label">
+        <value>
+            Be careful: This button will reset and re-import all files from other plugins (such as groups).
+        </value>
+    </key>
+    <key name="submit">
+        <value>
+            Submit
+        </value>
+    </key>
+    <key name="reset_all_files">
+        <value>
+            Initialize/Reset all files from all plugins
+        </value>
+    </key>
+    <key name="reset_all_group_files">
+        <value>
+            Initialize/Reset all files for Groups widget
+        </value>
+    </key>
+    <key name="reset_all_profile_files">
+        <value>
+            Initialize/Reset all files for Profile widget
+        </value>
+    </key>
+    <key name="enable_mobile_version">
+        <value>
+            Enable in the mobile version
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            Saved successfully
+        </value>
+    </key>
+    <key name="failed_to_relocate">
+        <value>
+            Failed to save a file
+        </value>
+    </key>
+</prefix>

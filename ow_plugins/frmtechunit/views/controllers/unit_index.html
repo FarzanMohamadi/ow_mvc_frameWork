@@ -1,0 +1,43 @@
+<div class="ow_frmtechunit clearfix" style="overflow: hidden;">
+    <div class="ow_right place_section ow_supernarrow">
+        {form name="search"}
+        <div class="ow_box_cap">
+            <div class="ow_box_cap_right">
+                <div class="ow_box_cap_body">
+                    <h2 class="ow_ic_edit">{text key="frmtechunit+search"}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="ow_box">
+            {input name="search" id="unitSearch"}{error name="search"}
+            <td>{decorator name='button' iconClass="ow_ic_lens" id="searchFilter" onclick="window.searchUnits('{$originalUrl}');" langLabel='frmtechunit+search'} </td>
+        </div>
+        {/form}
+    </div>
+
+
+    <div class="ow_left place_section ow_superwide">
+        <div class="ow_box_cap">
+            <div class="ow_box_cap_right">
+                <div class="ow_box_cap_body">
+                    <h2 class="ow_ic_edit">{text key="frmtechunit+units"}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="ow_box">
+            {if isset($add_url)}
+            <span class="ow_button ow_ic_add"><span class=" ow_ic_add"><input type="button" value="{text key="frmtechunit+add"}" id="add_profile_button" class="ow_ic_add" onclick="window.location.href = '{$add_url}'"></span></span>
+            {/if}
+            {if empty($list) }
+            <div class="ow_nocontent">{text key="frmtechunit+listing_no_items_msg"}</div>
+            {else}
+            {foreach from=$list key='key' item='unit'}
+            {decorator name='ipc' addClass='ow_smallmargin' data=$unit infoString="<a
+                href=\"`$unit.url`\">`$unit.title`</a>"}
+            {/foreach}
+            <br/>
+            {$paging}
+            {/if}
+        </div>
+    </div>
+</div>

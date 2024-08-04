@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix name="frmtelegramimport" label="Import telegram Channel data" language_tag="fa-IR" language_label="فارسی">
+    <key name="upload_file_submit_label">
+        <value>
+آپلود اطلاعات دریافتی از تلگرام
+        </value>
+    </key>
+    <key name="error_import_file_extension">
+        <value>
+            فرمت فایل نادرست است
+        </value>
+    </key>
+    <key name="file_label">
+        <value>
+            فایل
+        </value>
+    </key>
+    <key name="import_successfully">
+        <value>
+            اطلاعات با موفقیت منتشر شد
+        </value>
+    </key>
+    <key name ="forward_from_channel_message">
+        <value>اطلاعات وارد شده از {$source} در تلگرام</value>
+    </key>
+    <key name = "channel_title">
+        <value>عنوان گروه یا کانال</value>
+    </key>
+    <key name="text_message_count">
+        <value>تعداد پیام‌های متنی</value>
+    </key>
+    <key name="photo_message_count">
+        <value>تعداد تصاویر</value>
+    </key>
+    <key name="video_message_count">
+        <value>تعداد ویدئوها</value>
+    </key>
+    <key name="audio_message_count">
+        <value>تعداد پیام‌های صوتی</value>
+    </key>
+    <key name="file_message_count">
+        <value>تعداد فایل‌ها</value>
+    </key>
+    <key name="animation_message_count">
+        <value>تعداد تصاویر متحرک</value>
+    </key>
+    <key name="sticker_message_count">
+        <value>تعداد استیکرها</value>
+    </key>
+    <key name="help">
+        <value>راهنمای ارسال محتوای کانال‌ها و گروه‌های تلگرامی به یک یا چند گروه در شبکه اجتماعی</value>
+    </key>
+    <key name="select_destination">
+        <value>
+            گروه یا کانال‌هایی که قصد ارسال داده‌های تلگرام به آنها را دارید را انتخاب کنید
+        </value>
+    </key>
+    <key name="select_source">
+        <value>
+            گروه‌ها یا کانال‌های تلگرامی که قصد انتشار محتوای آنرا دارید را انتخاب کنید
+        </value>
+    </key>
+    <key name="publish">
+        <value>
+            انتشار محتوا
+        </value>
+    </key>
+    <key name="help_telegram_setting_section">
+        <value>
+            آخرین نسخه دسکتاپ تلگرام را نصب کنید و به بخش تنظیمات بروید و گزینه Export Telegram Data را انتخاب کنید.
+        </value>
+    </key>
+    <key name="help_export_data_format_section">
+        <value>
+            محل ذخیره‌سازی داده‌ها را مشخص کنید و با انتخاب گزینه Machine-readable JSON فرمت داده‌ها را مشخص کنید
+        </value>
+    </key>
+    <key name="help_prepare_zip_file">
+        <value>نام پوشه حاوی اطلاعات اکسپورت شده را تغییر داده و برابر data قرار دهید و سپس آنرا در قالب فایل zip فشرده کنید</value>
+    </key>
+    <key name="help_upload_zip_file">
+        <value>
+            فایل zip را انتخاب کرده و آپلود کنید
+        </value>
+    </key>
+    <key name="help_import_data">
+        <value>
+            پس از آپلود فایل، خلاصه‌ای از اطلاعات گروه‌ها و کانال‌های تلگرامی به شما نشان داده می‌شود که می‌توانید کانال‌ها و یا گروه‌هایی که قصد انتشار اطلاعات آنرا دارید را را انتخاب کنید. همچنین باید از میان لیست گروه‌هایی که امکان ارسال محتوا به آنرا دارید، یک یا چند مورد را برای ارسال اطلاعات انتخاب کنید
+        </value>
+    </key>
+    <key name="help_import_data_to_group">
+        <value>
+            پس از آپلود فایل، خلاصه‌ای از اطلاعات گروه‌ها و کانال‌های تلگرامی به شما نشان داده می‌شود که می‌توانید کانال‌ها و یا گروه‌هایی که قصد انتشار اطلاعات آنرا دارید را را انتخاب کنید.
+        </value>
+    </key>
+    <key name="telegram_widget_title">
+        <value>وارد سازی اطلاعات تلگرام</value>
+    </key>
+    <key name="telegram_widget_help">
+        <value>راهنمای وارد سازی اطلاعات تلگرام</value>
+    </key>
+    <key name="data_is_not_available_error_message">
+        <value>برای وارد سازی اطلاعات تلگرام، ابتدا باید فایل دریافتی از تلگرام را مطابق راهنمای زیر، آپلود کنید </value>
+    </key>
+    <key name="import_data_to_group">
+        <value>وارد سازی اطلاعات به گروه</value>
+    </key>
+    <key name="consider_max_upload_size">
+        <value>
+            حجم فایل انتخاب شده بیش از حد مجاز است
+        </value>
+    </key>
+    <key name="uploaded_file_ix_corrupted">
+        <value>
+           فایل آپلود شده مشکلی دارد
+        </value>
+    </key>
+    <key name="no_file_selected">
+        <value>
+            فایلی انتخاب نشده است
+        </value>
+    </key>
+</prefix>

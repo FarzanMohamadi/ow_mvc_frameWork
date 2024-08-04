@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmboursesms" label="frmboursesms" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه سرویس پیامک سازمان بورس و اوراق بهادار
+        </value>
+    </key>
+    <key name="apikey_label">
+        <value>
+            apikey
+        </value>
+    </key>
+    <key name="sender_label">
+        <value>
+            sender
+        </value>
+    </key>
+    <key name="url_label">
+        <value>
+            url
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت ذخیره شد
+        </value>
+    </key>
+</prefix>

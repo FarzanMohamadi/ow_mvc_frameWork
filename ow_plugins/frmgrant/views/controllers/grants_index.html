@@ -1,0 +1,21 @@
+<div class="clearfix">
+        {if isset($url_new_entry) }
+        <div id="add-new-grant" >{decorator name='button' class='ow_ic_add ' langLabel='frmgrant+add_new_grant_button_label' onclick="location.href='`$url_new_entry`'"}</div>
+        {/if}
+        {if !empty($no_grant) }
+        <div class="ow_nocontent">{text key="frmgrant+no_grant_label"}</div>
+        {else}
+            <div id="grant_container">
+            {foreach from=$grants key='key' item='grant'}
+                <a class="grant_link" href="{$grant.url}">
+                    <div class="grant_item">
+                        <p class="grant_title">{$grant.title}</p>
+                        <p class="grant_more">{text key="frmgrant+more"}</p>
+                    </div>
+                </a>
+            {/foreach}
+            </div>
+        <br />
+        {$paging}
+        {/if}
+</div>

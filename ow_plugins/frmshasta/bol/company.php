@@ -1,0 +1,18 @@
+<?php
+/**
+ * 
+ * All rights reserved.
+ */
+
+/**
+ *
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.frmshasta.bol
+ * @since 1.0
+ */
+class FRMSHASTA_BOL_Company extends OW_Entity
+{
+    public $name;
+    public $parentId;
+    public $imageUrl;
+}

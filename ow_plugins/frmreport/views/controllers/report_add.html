@@ -1,0 +1,35 @@
+<div class="ow_stdmargin">
+    {decorator name="button" class="ow_ic_right_arrow" langLabel="frmreport+back_to_group_label" id="back-to-group_btn"}
+</div>
+{form name='add_report_form'}
+<table class="ow_table_1 ow_form ow_automargin ow_superwide">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='year'}</td>
+        <td class="ow_value">{input name='year'}{error name='year'}</td>
+        <td class="ow_desc">{text key="frmreport+year_should_be_complete"}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='semester'}</td>
+        <td class="ow_value">{input name='semester'}{error name='semester'}</td>
+        <td class="ow_desc"></td>
+    </tr>
+</table>
+    {foreach from=$activityTypes item='activity'}
+<table class="ow_table_1 ow_form ow_automargin ow_superwide">
+    <tr class="ow_tr_first">
+        <th colspan="2">{$activity.title}</th>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+count"}</td>
+        <td class="ow_value">{input name={$activity.count}}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmreport+activity_description"}</td>
+        <td class="ow_value">{input name={$activity.description}}</td>
+    </tr>
+</table>
+    {/foreach}
+    <div>
+        {submit name='send' class='ow_button'}
+    </div>
+{/form}

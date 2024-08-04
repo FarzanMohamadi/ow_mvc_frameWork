@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmfarapayamak" label="frmfarapayamak" language_tag="fa-IR" language_label="فارسی">
+	<key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه فراپیامک
+        </value>
+    </key>
+    <key name="modified_successfully">
+        <value>
+            تنظیمات با موفقیت ذخیره شدند
+        </value>
+    </key>
+    <key name="provider">
+        <value>
+            نوع وب سرویس
+        </value>
+    </key>
+    <key name="panel_username">
+        <value>
+            نام کاربری پنل
+        </value>
+    </key>
+    <key name="panel_password">
+        <value>
+            گذرواژه پنل
+        </value>
+    </key>
+    <key name="panel_number">
+        <value>
+            شماره ارسال‌کننده
+        </value>
+    </key>
+    <key name="provider_soap_url">
+        <value>
+            نشانی اینترنتی اتصال به ارائه‌دهنده پیامک از طریق سواپ
+        </value>
+    </key>
+    <key name="provider_rest_send_sms_url">
+        <value>
+            نشانی اینترنتی ارسال پیامک از طریق رست
+        </value>
+    </key>
+    <key name="provider_rest_get_credit_url">
+        <value>
+            نشانی اینترنتی گرفتن اعتبار از طریق رست
+        </value>
+    </key>
+    <key name="provider_rest_check_status_url">
+        <value>
+            نشانی اینترنتی گرفتن  وضعیت تحویل پیامک از طریق رست
+        </value>
+    </key>
+    <key name="section1_label">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="section2_label">
+        <value>
+            پی‌گیری پیامک‌ها
+        </value>
+    </key>
+    <key name="text_label">
+        <value>
+            متن پیامک
+        </value>
+    </key>
+    <key name="status_label">
+        <value>
+            وضعیت
+        </value>
+    </key>
+    <key name="mobile_label">
+        <value>
+            شماره تلفن همراه
+        </value>
+    </key>
+    <key name="time_label">
+        <value>
+            زمان ارسال
+        </value>
+    </key>
+    <key name="status_0">
+        <value>
+            ارسال شده به مخابرات
+        </value>
+    </key>
+    <key name="status_1">
+        <value>
+            رسیده به گوشی
+        </value>
+    </key>
+    <key name="status_2">
+        <value>
+            نرسیده به گوشی
+        </value>
+    </key>
+    <key name="status_3">
+        <value>
+            خطای مخابرات
+        </value>
+    </key>
+    <key name="status_5">
+        <value>
+            خطای نامعلوم
+        </value>
+    </key>
+    <key name="status_8">
+        <value>
+            رسیده به مخابرات
+        </value>
+    </key>
+    <key name="status_16">
+        <value>
+            نرسیده به مخابرات
+        </value>
+    </key>
+    <key name="status_35">
+        <value>
+            لیست سیاه
+        </value>
+    </key>
+    <key name="status_100">
+        <value>
+            نامعلوم
+        </value>
+    </key>
+    <key name="status_200">
+        <value>
+            ارسال شده
+        </value>
+    </key>
+    <key name="status_300">
+        <value>
+            فیلتر شده
+        </value>
+    </key>
+    <key name="status_400">
+        <value>
+            در لیست ارسال
+        </value>
+    </key>
+    <key name="status_500">
+        <value>
+            عدم پذیرش
+        </value>
+    </key>
+    <key name="status_other">
+        <value>
+            نامعلوم
+        </value>
+    </key>
+</prefix>

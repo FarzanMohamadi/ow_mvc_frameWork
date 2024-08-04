@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsms" label="frmsms" language_tag="en" language_label="English">
+	<key name="admin_save_settings">
+		<value>
+			Save Settings
+		</value>
+	</key>
+	<key name="admin_settings_title">
+		<value>
+			SMS Setting
+		</value>
+	</key>
+	<key name="invalid_sms_code">
+		<value>
+			The entered SMS code is not valid
+		</value>
+	</key>
+	<key name="user_save_success">
+		<value>
+			Settings saved successfully
+		</value>
+	</key>
+	<key name="mobile_code_label">
+		<value>
+			Mobile activation code
+		</value>
+	</key>
+	<key name="mobile_code_description">
+		<value>
+			Mobile activation code send to your mobile number.
+		</value>
+	</key>
+	<key name="mail_code_label">
+		<value>
+			Email activation code
+		</value>
+	</key>
+	<key name="mail_code_description">
+		<value>
+			Email activation code send to your mobile number.
+		</value>
+	</key>
+	<key name="check_code_description">
+		<value>
+			Account Verification
+		</value>
+	</key>
+	<key name="check_code_submit">
+		<value>
+			Check code
+		</value>
+	</key>
+	<key name="verify_later">
+		<value>
+			Logout
+		</value>
+	</key>
+	<key name="form_validator_mobile_exists_message">
+		<value>
+			Mobile number exists.
+		</value>
+	</key>
+	<key name="form_validator_mobile_invalid_message">
+		<value>
+			Mobile number is invalid, The number should be like 09XXXXXXXXX or 00989XXXXXXXXX or +989XXXXXXXXX.
+		</value>
+	</key>
+	<key name="mobile_token_authenticated">
+		<value>
+			Your mobile number is activated.
+		</value>
+	</key>
+	<key name="user_authenticated_successful">
+		<value>
+			Your account is activated.
+		</value>
+	</key>
+	<key name="fill_correct_data">
+		<value>
+			Fill data correctly.
+		</value>
+	</key>
+	<key name="fill_mobile_code">
+		<value>
+			Enter mobile code activation.
+		</value>
+	</key>
+	<key name="verify_email_placeholder">
+		<value>
+			Your email address is activated
+		</value>
+	</key>
+	<key name="verify_sms_placeholder">
+        <value>
+            Your mobile number is activated
+        </value>
+    </key>
+	<key name="sms_provider_label">
+		<value>
+			SMS providers
+		</value>
+	</key>
+	<key name="admin_save_settings">
+		<value>
+			Save
+		</value>
+	</key>
+	<key name="field_mobile_description">
+		<value>
+			Mobile number should be activated using code activation.
+		</value>
+	</key>
+	<key name="field_mobile_label">
+		<value>
+			Mobile number
+		</value>
+	</key>
+	<key name="resend_mobile_code">
+		<value>
+			Resend activation code
+		</value>
+	</key>
+	<key name="resend_mail_code">
+		<value>
+			Resend activation code
+		</value>
+	</key>
+	<key name="description_locked">
+		<value>
+			You are blocked because of several unsuccessful attempts. You should continue in later at:
+		</value>
+	</key>
+	<key name="number">
+		<value>
+			Sender number
+		</value>
+	</key>
+	<key name="username">
+		<value>
+			Username
+		</value>
+	</key>
+	<key name="password">
+		<value>
+			Password
+		</value>
+	</key>
+	<key name="soap_client_url">
+		<value>
+			Soap client url
+		</value>
+	</key>
+	<key name="no_credit">
+		<value>
+			No credit in sms provider.
+		</value>
+	</key>
+	<key name="setting_is_empty">
+		<value>
+			Complete sms setting.
+		</value>
+	</key>
+	<key name="credit_threshold">
+		<value>
+			Credit remaining for sending an email to admin
+		</value>
+	</key>
+	<key name="resend_token_successfully">
+		<value>
+			Token sent successfully.
+		</value>
+	</key>
+	<key name="sms_content">
+		<value>
+			Activation code: {$code}
+		</value>
+	</key>
+	<key name="unverified_number_message">
+		<value>
+			unverified declared number: {$mobile}
+		</value>
+	</key>
+	<key name="remove_unverified_number">
+		<value>
+			remove unverified number
+		</value>
+	</key>
+	<key name="number_is_not_valid_list">
+		<value>
+			The phone number is not in valid phone numbers list
+		</value>
+	</key>
+	<key name="input_settings_valid_phone_number_list_label">
+		<value>
+			Valid phone numbers list
+		</value>
+	</key>
+	<key name="no_provider_plugin_found">
+		<value>
+			SMS provider plugin not found
+		</value>
+	</key>
+	<key name="input_settings_valid_phone_number_list_desc">
+		<value>
+			Enter valid phone numbers here. enter one phone number in each line with this format:"09XXXXXXXXX"
+		</value>
+	</key>
+		<key name="restrictSetting">
+		<value>
+			Restriction Setting
+		</value>
+	</key>
+		<key name="generalSetting">
+		<value>
+			General Setting
+		</value>
+	</key>
+		<key name="settings_successfuly_saved">
+		<value>
+			Data has been saved successfully
+		</value>
+	</key>
+	
+	<key name="smsActivation_user_btn">
+		<value>
+			approve
+		</value>
+	</key>
+		<key name="users_need_sms_code_activation">
+		<value>
+			unapproved users (mobile sms code)
+		</value>
+	</key>
+
+	<key name="forgot_password_email_and_mobile_invitation_message">
+		<value>
+			Your email address or phone number
+		</value>
+	</key>
+	<key name="form_validator_email_or_mobile_error_message">
+		<value>
+			Email or Mobile validator error!
+		</value>
+	</key>
+	<key name="reset_password_sms_template_content_txt">
+		<value>
+			Dear user ({$username}),\r\n\r\nYou requested to reset your password. Follow this link ({$resetUrl}) to change your password.\r\n\r\nOr enter the following code{$code}in the page:{$requestUrl}If you didn't request password reset, please ignore this sms.\r\n\r\nThank you,\r\n{$site_name}
+		</value>
+	</key>
+	<key name="forgot_password_sms_send_success">
+		<value>
+			The information on changing and confirming your new password sent to your mobile
+		</value>
+	</key>
+	<key name="token_request_exists_error_message">
+		<value>
+			code already sent. Please try again in {$time} minutes
+		</value>
+	</key>
+	<key name="token_resend_interval">
+		<value>
+			time interval for requesting new code (in minute)
+		</value>
+	</key>
+	<key name="max_token_request">
+		<value>
+			maximum request for code
+		</value>
+	</key>
+	<key name="mobile_change_number_title">
+		<value>
+			Change phone number
+		</value>
+	</key>
+	<key name="mobile_change_number_submit">
+		<value>
+			Submit
+		</value>
+	</key>
+	<key name="cancel_button">
+		<value>
+			Cancel
+		</value>
+	</key>
+	<key name="change_password_send_sms_code">
+		<value>
+			SMS Verification Code
+		</value>
+	</key>
+	<key name="change_password_resend_mobile_code">
+		<value>
+			Send Code via SMS
+		</value>
+	</key>
+	<key name="forgot_password_header_message">
+		<value>
+			Fill your email address or phone number
+		</value>
+	</key>
+	<key name="error_duplication">
+		<value>
+			Please try again
+		</value>
+	</key>
+	<key name="remove_text_link">
+		<value>
+			Remove Links from sms
+		</value>
+	</key>
+	<key name="mobile_number_not_valid">
+		<value>
+			mobile number is not valid
+		</value>
+	</key>
+</prefix>

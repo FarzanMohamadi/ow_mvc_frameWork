@@ -1,0 +1,38 @@
+{form name='overall_reports'}
+<table class="ow_table_1 ow_form ow_automargin ow_superwide">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='title'}</td>
+        <td class="ow_value ow_center">{input name='title'}{error name='title'}</td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">{submit name='search' class='ow_ic_search'}</td>
+    </tr>
+</table>
+{/form}
+
+<table class="ow_table_1 ow_automargin" style="width: 100%;">
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td>{text key="frmreport+group_title"}</td>
+        <td>{text key="frmreport+reports_count"}</td>
+        <td>{text key="frmreport+last_report_date"}</td>
+        <td></td>
+    </tr>
+    {foreach from=$overallReports item='item'}
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td>
+            <a href="{$groupUrls[$item.groupId]}">
+                {$item.groupTitle}
+            </a>
+        </td>
+        <td>{$item.reportCount}</td>
+        <td>{$item.lastReport}</td>
+        <td>
+            <a  class="ow_lbutton ow_green"  href="{$groupReportsUrls[$item.groupId]}">
+                {text key="frmreport+view_group_reports"}
+            </a>
+        </td>
+    </tr>
+    {/foreach}
+</table>
+<div class="ow_center">{$paging}</div>
+

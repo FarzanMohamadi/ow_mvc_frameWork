@@ -1,0 +1,89 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+{if isset($otpForm)}
+<style>
+    header#header {
+        position: fixed;
+        width: 100%;
+        z-index: 12;
+    }
+    .owm_content_menu_wrap.owm_padding {
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        background-color: white;
+        top: 34px;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .owm_content_menu_wrap.owm_padding ul.owm_content_menu.clearfix {
+        padding-top: 15px;
+    }
+    .owm_newsfeed_list {
+        margin-top: 90px;
+    }
+    .owm_newsfeed_item {
+        max-width: 700px;
+    }
+    .frmmainpage div#newsfeed-status-form-inv {
+        bottom: 46px !important;
+    }
+    .feed-load-more.owm_newsfeed_comment_load_more.owm_load_more {
+        position: relative;
+        z-index: 11;
+        float: left;
+        width: 35px;
+        top: -42px;
+        background-color: transparent;
+    }
+    .owm_newsfeed_item:last-child {
+        margin-bottom: 100px !important;
+    }
+    #content .tabs{
+        box-shadow: none;
+    }
+    .frmmainpage#dashboard_page .owm_newsfeed_item {
+        margin: 12px 60px 10px 5px !important;
+    }
+    .owm_newsfeed_header_pic {
+        margin-right: -55px !important;
+    }
+    div#newsfeed-status-form-inv {
+        background-color: #ffffff !important;
+        border-top-color: #d6d6d6 !important;
+        border-bottom: 1px solid #d6d6d6;
+    }
+    .owm_newsfeed_body {
+        background-color: #ffffff;
+    }
+    .owm_newsfeed_item_cont {
+        border-radius: 8px !important;
+        box-shadow: 0 0 5px 0px #bfbfbf;
+    }
+    .owm_newsfeed_header_cont {
+        padding-right: 8px;
+    }
+    .owm_newsfeed_date {
+        padding-right: 8px !important;
+    }
+    a.cd-nav-trigger {
+        margin-left: 5px;
+    }
+    textarea.owm_invitation {
+        color: #b9b9b9;
+    }
+</style>
+{/if}
+
+{$menuCmp}
+<div class="frmmainpage" id="dashboard_page">
+    <div class="owm_list_page">
+        {add_content key="mobile.content.dashboard" userId=$userId}
+    </div>
+</div>

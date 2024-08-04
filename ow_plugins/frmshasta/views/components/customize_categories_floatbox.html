@@ -1,0 +1,13 @@
+{form name='customize_categories'}
+<table class="ow_table_1 ow_form">
+    {foreach from=$categoryFieldsNames item='categoryFieldName'}
+    <tr>
+        <td class="ow_label">{label name=$categoryFieldName}</td>
+        <td class="ow_value">{input name=$categoryFieldName} {error name=$categoryFieldName}</td>
+    </tr>
+    {/foreach}
+    <tr>
+        <td colspan="2" class="ow_submit">{submit name="submit" class='ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

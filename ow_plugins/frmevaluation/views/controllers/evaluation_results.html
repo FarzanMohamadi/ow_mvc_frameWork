@@ -1,0 +1,21 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+{$sections}
+
+<p class="p_degree">
+    {text key="frmevaluation+degree_header"}
+    <div class="evaluation_degree {$degreeClass}">
+        {$degree}
+    </div>
+</p>
+
+{foreach from=$containers item="container"}
+    <div class="evaluation_chart" id="{$container}" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+{/foreach}

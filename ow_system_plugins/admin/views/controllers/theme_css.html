@@ -1,0 +1,66 @@
+{style}
+{literal}
+textarea.edit_css{
+    height:100px;
+}
+.css_code pre{
+	padding:10px;
+	height:200px;
+	overflow:scroll;
+}
+{/literal}
+{/style}
+<div class="ow_admin_theme_css_customization">
+{$contentMenu}
+{block_decorator name='box' addClass='ow_stdmargin' langLabel='admin+theme_css_existing_css_box_cap_label'}
+    <div class="css_code">{$code}</div>
+{/block_decorator}
+
+
+{block_decorator name='box' style='text-align:center;' iconClass="ow_ic_write" langLabel='admin+theme_css_edit_css_box_cap_label'}
+{form name='desktop_css'}
+{input name='style' class='edit_css'}
+<div class="clearfix ow_smallmargin">
+	<div class="ow_right" style="padding-top: 20px;padding-left: 10px; padding-right: 15px;">
+		{submit name='submit' class='ow_positive'}
+	</div>
+</div>
+{/form}
+{/block_decorator}
+
+{block_decorator name='box' style='text-align:center;' iconClass="ow_ic_write" langLabel='admin+mobile_theme_css_edit_css_box_cap_label'}
+{form name='mobile_css'}
+{input name='style' class='edit_css'}
+<div class="clearfix ow_smallmargin">
+	<div class="ow_right" style="padding-top: 20px;padding-left: 10px; padding-right: 15px;">
+		{submit name='submit' class='ow_positive'}
+	</div>
+</div>
+{/form}
+{/block_decorator}
+
+{if isset($scss) & $scss}
+	{block_decorator name='box' style='text-align:center;' iconClass="ow_ic_write" langLabel='frmadvancedstyles+theme_desktop_scss_box_cap_label'}
+	{form name='desktop_scss'}
+	{input name='style' class='edit_css'}
+	<div class="clearfix ow_smallmargin">
+		<div class="ow_right" style="padding-top: 20px;padding-left: 10px; padding-right: 15px;">
+			{submit name='submit' class='ow_positive'}
+		</div>
+	</div>
+	{/form}
+	{/block_decorator}
+
+	{block_decorator name='box' style='text-align:center;' iconClass="ow_ic_write" langLabel='frmadvancedstyles+theme_mobile_scss_box_cap_label'}
+	{form name='mobile_scss'}
+	{input name='style' class='edit_css'}
+	<div class="clearfix ow_smallmargin">
+		<div class="ow_right" style="padding-top: 20px;padding-left: 10px; padding-right: 15px;">
+			{submit name='submit' class='ow_positive'}
+		</div>
+	</div>
+	{/form}
+	{/block_decorator}
+{/if}
+
+</div>

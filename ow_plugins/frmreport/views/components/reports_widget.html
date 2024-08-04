@@ -1,0 +1,40 @@
+{if $visible}
+<div class="ow_lp_avatars">
+    <p>
+        {text key="frmreport+reports_count"} : {$count}
+    </p>
+    {if $count>0}
+    <table class="ow_table_1 ow_automargin" style="width: 100%;">
+        <tr class="{cycle values='ow_alt1,ow_alt2'}">
+            <td>{text key="frmreport+form_label_year"}</td>
+            <td>{text key="frmreport+semseter"}</td>
+        </tr>
+        {foreach from=$reports item='report'}
+        <tr class="{cycle values='ow_alt1,ow_alt2'}">
+            <td>
+                <a href="{$detailUrls[$report.id]}">
+                    {$report.year}
+                </a>
+            </td>
+            <td>{$report.semester}</td>
+        </tr>
+        {/foreach}
+    </table>
+    {/if}
+
+    <div class="ow_box_toolbar_cont clearfix">
+        <ul class="ow_box_toolbar ow_remark ow_bl">
+            <li>
+                <a href="{$add_report}">
+                    {text key="frmreport+add_report"}
+                </a>
+            </li>
+            <li>
+                <a href="{$view_report_list}">
+                    {text key="frmreport+view_report_list"}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+{/if}

@@ -1,0 +1,951 @@
+.account_status_box span {
+    width: 20px;
+    height: 20px;
+    padding: 2px 10px 2px 10px;
+}
+
+#account_status,
+.account_status_box span{
+    display: inline-block;
+}
+
+.account_status_box {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: none;
+    width: calc(100% - 25px);
+    background-color: #DFF2BF;
+    margin: 6px;
+    padding: 10px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    padding-bottom: 0px;
+}
+
+#account_status {
+    vertical-align: top;
+    padding-top: 2px;
+    padding-bottom: 8px;
+}
+
+a.social_account_url {
+    direction: ltr !important;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inherit;
+}
+
+.login_mobile_account .ow_page_container {
+    max-width: 800px !important;
+    width: calc(100% - 100px) !important;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px #00000017;
+    max-height: 400px;
+    background-color: white;
+    margin-top: 8vw;
+}
+.login_mobile_account .blank_page .ow_content {
+    height: 350px;
+    padding-top: 20px;
+}
+.login_mobile_account .logo_frame {
+    width: 300px;
+    height: 350px;
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #ccd6de;
+}
+.login_mobile_account .forgot_pass {
+    float: left;
+}
+.login_mobile_account .form_message {
+    font-size: 14px;
+    margin-top: 15px;
+}
+.login_mobile_account .captcha-input input {
+    position: absolute;
+    right: 0;
+    top: 56px;
+}
+.login_mobile_account .captcha-info {
+    max-width: 125px !important;
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+.login_mobile_account .captcha-refresh {
+    padding-top: 0px !important;
+    float: none;
+    position: absolute;
+    right: 0;
+}
+.login_mobile_account .captcha_box {
+    position: relative;
+}
+/***
+form css
+ */
+
+#loginBySmsDIV {
+    padding-top: 20px;
+}
+#loginByPasswordDIV {
+    padding-top: 20px;
+}
+.account_field {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.account_field + .account_field {
+    margin-top: 13px;
+}
+.account_field input {
+    height: 40px;
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.account_field.OWM input {
+    height: 40px;
+    padding-right: 10px;
+    text-align: left;
+}
+.account_form_box button {
+    margin-top: 35px;
+    background-color: white;
+    line-height: 0;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 20px 15px;
+    border-radius: 60px;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    letter-spacing: 0.01em;
+    position: relative;
+    z-index: 1;
+}
+.account_form_box button:hover, .account_form_box button:focus {
+    color: white;
+}
+
+.account_submit span.ow_button {
+    width: calc(100% - 12px);
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin: 6px;
+    padding: 0px;
+    text-align: center;
+}
+
+.account_submit span.ow_button .ow_button{
+    margin: 0px;
+}
+
+.account_submit span.ow_button input {
+    width: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+    height: 47px;
+}
+
+.account_status_box span.ow_preloader {
+    padding: 5px 10px 0px 10px;
+}
+
+.mobile_account a.ow_button {
+    background-repeat: no-repeat;
+    background-position: right;
+    color: white;
+    display: inline-block;
+    margin: 4px 0;
+}
+
+.mobile_account.mobile_version {
+    background-color: white;
+    margin: 5px;
+    border-radius: 5px;
+    border: solid 1px lightgray;
+    padding: 10px;
+    min-height: 260px;
+    text-align: justify;
+    width: calc(100% - 30px);
+}
+
+.mobile_account.mobile_version .network_submit {
+    min-height: 45px;
+}
+
+.mobile_account.mobile_version input[type="checkbox"] {
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+.mobile_account.mobile_version {
+    font-size: 75%;
+}
+
+.mobile_account.mobile_version .back_box {
+    display: inline-block;
+}
+
+.mobile_account.mobile_version .back_box .ow_button,
+.mobile_account.mobile_version .network_submit,
+.mobile_account.mobile_version .resend_button{
+    margin-top: 10px;
+}
+
+.mobile_account.mobile_version div#loginByPasswordDIV .network_submit {
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+
+.mobile_account.mobile_version .resend_button{
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 4px;
+}
+
+.mobile_account.mobile_version .network_submit {
+    width: 100%;
+}
+
+.mobile_account.mobile_version .ow_button,
+.mobile_account.mobile_version .back_box{
+    width: 100%;
+}
+
+.mobile_account.mobile_version .ow_button .ow_button input{
+    padding: 8px 15px 8px 12px;
+}
+
+.mobile_account.mobile_version p {
+    line-height: 30px;
+}
+
+.mobile_account.mobile_version .ow_button .ow_button a {
+    background-color: #e6e9ef;
+    color: white !important;
+    background-color: #2c8dec !important;
+    font-size: 80%;
+    text-align: center;
+    font-size: 11px;
+    color: black;
+    padding: 11px 0px 9px 0px !important;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    border: none;
+    margin: 0px !important;
+    width: 100%;
+}
+
+.login_mobile_account .ow_button {
+    border: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 0;
+    margin: 0px;
+}
+html body.login_mobile_account .ow_button input {
+    background: white;
+    background-image: none !important;
+    height: 35px;
+    width: 120px !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 12px;
+}
+
+
+.login_mobile_account .ow_button input:hover {
+    box-shadow: 0 0 9px 0px #5493ff5c;
+}
+.login_mobile_account .ow_content {
+    position: relative;
+}
+.login_mobile_account .account_field  input:-webkit-autofill,
+.login_mobile_account .account_field  input:-webkit-autofill:hover,
+.login_mobile_account .account_field  input:-webkit-autofill:focus {
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+.login_mobile_account .ow_remember_me label {
+    cursor: pointer;
+}
+.login_mobile_account .ow_remember_me input {
+    display: none;
+}
+.login_mobile_account .ow_remember_me label:before {
+    content: '';
+    margin: 0px 0px -3px 6px;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: white;
+    border-radius: 3px;
+    border: 1px solid #00000094;
+}
+.login_mobile_account .ow_remember_me {
+    position: relative;
+    width: inherit;
+    display: inline-block;
+    margin-top: 10px;
+}
+.login_mobile_account .ow_remember_me input[type=checkbox]:hover + label:before {
+    background: #f0f0f0;
+}
+
+.login_mobile_account .ow_remember_me input[type=checkbox]:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.login_mobile_account .logo_frame .ow_logo {
+    width: calc(100% - 20px);
+    height: calc(100% - 50px);
+    background-size: 50%;
+    float: right !important;
+}
+.login_mobile_account .mobile_account_links {
+    width: calc(100% - 20px);
+    float: right;
+}
+.login_mobile_account .mobile_account_links a.app_download_link{
+    width: 100px;
+}
+.login_mobile_account .back_box .ow_button a {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    margin: 0px !important;
+    left: 168px;
+    height: 33px;
+    width: 69px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #bfbfbf;
+    color: #a2a2a2 !important;
+}
+.login_mobile_account .back_box .ow_button a:hover {
+    color: white !important;
+    box-shadow: 0 0 9px 0px #5493ff5c;
+}
+.login_mobile_account input[type="text"]::placeholder,
+.login_mobile_account input[type="password"]::placeholder{
+    text-align: left;
+    direction: ltr;
+}
+.login_mobile_account input[type="text"]:lang(fa-IR)::placeholder,
+.login_mobile_account input[type="password"]:lang(fa-IR)::placeholder{
+    text-align: right;
+    direction: rtl;
+}
+.login_mobile_account input[type="text"],
+.login_mobile_account input[type="password"]{
+    text-align: left;
+    direction: ltr;
+    filter: none;
+}
+/**
+tab css
+ */
+
+.wizard, .tabcontrol {
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+
+.wizard a, .tabcontrol a {
+    outline: 0
+}
+
+.wizard ul, .tabcontrol ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0
+}
+
+.wizard ul > li, .tabcontrol ul > li {
+    display: block;
+    padding: 0
+}
+
+.wizard > .steps .current-info, .tabcontrol > .steps .current-info {
+    position: absolute;
+    left: -999em
+}
+
+.wizard > .content > .title, .tabcontrol > .content > .title {
+    position: absolute;
+    left: -999em
+}
+
+.wizard > .steps {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.wizard.vertical > .steps {
+    display: inline;
+    float: left;
+    width: 30%
+}
+
+.wizard > .steps .number {
+    font-size: 1.429em
+}
+
+.wizard > .steps > ul > li {
+    width: 30%
+}
+
+.wizard > .steps > ul > li, .wizard > .actions > ul > li {
+    float: left
+}
+
+.wizard.vertical > .steps > ul > li {
+    float: none;
+    width: 100%
+}
+
+.wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active {
+    display: block;
+    width: auto;
+    margin: 0 .5em .5em;
+    padding: 1em 1em;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.wizard > .steps .disabled a, .wizard > .steps .disabled a:hover, .wizard > .steps .disabled a:active {
+    background: #eee;
+    color: #aaa;
+    cursor: default
+}
+
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
+    background: #2184be;
+    color: #fff;
+    cursor: default
+}
+
+.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active {
+    background: #9dc8e2;
+    color: #fff
+}
+
+.wizard > .steps .error a, .wizard > .steps .error a:hover, .wizard > .steps .error a:active {
+    background: #ff3111;
+    color: #fff
+}
+
+.wizard > .content {
+    background: #eee;
+    display: block;
+    margin: .5em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.wizard.vertical > .content {
+    display: inline;
+    float: left;
+    margin: 0 2.5% .5em 2.5%;
+    width: 65%
+}
+
+.wizard > .content > .body {
+    float: left;
+    position: relative;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%
+}
+
+.wizard > .content > .body ul {
+    list-style: disc !important
+}
+
+.wizard > .content > .body ul > li {
+    display: list-item
+}
+
+.wizard > .content > .body > iframe {
+    border: 0 none;
+    width: 100%;
+    height: 100%
+}
+
+.wizard > .content > .body input.error {
+    background: #fbe3e4;
+    border: 1px solid #fbc2c4;
+    color: #8a1f11
+}
+
+.wizard > .content > .body label {
+    display: inline-block;
+    margin-bottom: .5em
+}
+
+.wizard > .content > .body label.error {
+    color: #8a1f11;
+    display: inline-block;
+    margin-left: 1.5em
+}
+
+.wizard > .actions {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%
+}
+
+.wizard.vertical > .actions {
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%
+}
+
+.wizard > .actions > ul {
+    display: inline-block;
+    text-align: right
+}
+
+.wizard > .actions > ul > li {
+    margin: 0 .5em
+}
+
+.wizard.vertical > .actions > ul > li {
+    margin: 0 0 0 1em
+}
+
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+    background: #2184be;
+    color: #fff;
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.wizard > .actions .disabled a, .wizard > .actions .disabled a:hover, .wizard > .actions .disabled a:active {
+    background: #eee;
+    color: #aaa
+}
+
+.wizard > .loading {
+}
+
+.wizard > .loading .spinner {
+}
+
+.tabcontrol > .steps {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.tabcontrol > .steps > ul {
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1
+}
+
+.tabcontrol > .steps > ul > li {
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.mobile_account.desktop_version .tabcontrol > .steps > ul > li.current {
+    border: 1px solid #bbb;
+    padding: 0;
+}
+
+.tabcontrol > .steps > ul > li.current {
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+}
+
+.mobile_account.desktop_version .tabcontrol > .steps > ul > li.current {
+    padding: 0 0 1px 0;
+    margin-top: 0;
+}
+
+.mobile_account.mobile_version.tabcontrol > .steps > ul > li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tabcontrol > .steps > ul > li > a {
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none
+}
+
+.tabcontrol > .steps > ul > li > a:hover {
+    text-decoration: none
+}
+
+.tabcontrol > .steps > ul > li.current > a {
+    padding: 15px 30px 10px 30px
+}
+
+.tabcontrol > .content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px
+}
+
+.tabcontrol > .content > .body {
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%
+}
+
+.tabcontrol > .content > .body ul {
+    list-style: disc !important
+}
+
+.tabcontrol > .content > .body ul > li {
+    display: list-item
+}
+
+@media (max-width: 600px) {
+    .wizard > .steps > ul > li {
+        width: 50%
+    }
+
+    .wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active {
+        margin-top: .5em
+    }
+
+    .wizard.vertical > .steps, .wizard.vertical > .actions {
+        display: block;
+        float: none;
+        width: 100%
+    }
+
+    .wizard.vertical > .content {
+        display: block;
+        float: none;
+        margin: 0 .5em .5em;
+        width: auto
+    }
+}
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+    z-index: 999;
+}
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+.popup-inner {
+    max-height: calc(100% - 130px);
+    overflow: auto;
+}
+
+.popup-close {
+    right: 20px;
+    top: 20px;
+    height: 27px;
+    width: 29px;
+}
+
+.wizard > .content > .body ul > li {
+    list-style: none;
+}
+
+.tabcontrol > .steps > ul > li:lang(fa-IR) {
+    float: right;
+}
+
+.mobile_account.desktop_version {
+    width: 350px;
+    margin-right: 45px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.network_submit {
+    float: left;
+    margin-top: 45px;
+}
+
+.mobile_account.desktop_version div.ow_form_options {
+    display: inline-block !important;
+    width: 142px;
+    height: 90px;
+    max-width: 100%;
+}
+
+body.ow.frmmodernblue.base_sign_in.login_mobile_account.login_mobile_account_code_verify .network_submit {
+    margin-top: 45px;
+}
+
+div#loginByPasswordDIV .network_submit {
+    margin-left: -80px;
+    margin-top: 30px;
+}
+
+.mobile_account.desktop_version .back_box {
+    display: inline-block;
+    margin-top: 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .tabcontrol > .content > .body {
+        position: relative;
+    }
+
+    .tabcontrol > .content {
+        height: auto !important;
+    }
+
+    .tabcontrol > .steps > ul > li > a {
+        padding: 3px 3px 3px 3px !important;
+    }
+
+    .popup-close {
+        right: 50px;
+    }
+
+    .wizard > .content > .body {
+        background-color: lightblue;
+    }
+
+    .wizard > .steps > ul > li {
+        width: 32%;
+    }
+}
+
+@media (max-width: 400px) {
+    .tabcontrol > .steps > ul > li > a {
+        padding: 3px 3px 3px 3px !important;
+    }
+
+    .wizard > .steps > ul > li {
+        width: 100%
+    }
+
+}
+
+@media (max-width: 365px) {
+    .tabcontrol > .steps > ul > li > a {
+        font-size: 84%;
+    }
+}
+
+@media (max-width: 317px) {
+    .login_mobile_account #loginByPasswordDIV .form_message {
+        font-size: 10px !important;
+        margin-top: 0 !important;
+    }
+    div#loginByPasswordDIV .network_submit {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 300px) {
+    div#loginByPasswordDIV .network_submit {
+        margin-top: 0;
+    }
+}
+
+.ow_button.join_button:hover span.ow_button.ow_ic_save{
+    background-color: #ea8d43 !important;
+}
+
+@media (max-width: 920px) {
+    .network_submit {
+        margin-top: 0px;
+    }
+    .login_mobile_account .logo_frame {
+        display: block;
+        width: 100%;
+        height: 232px;
+        border-left: 0;
+        padding-bottom: 20px;
+    }
+
+    .login_mobile_account .logo_frame .ow_logo {
+        width: calc(100% - 20px);
+        height: 120px;
+        margin-top: 20px;
+        background-size: 100px;
+        text-align: center;
+        float: unset !important;
+    }
+
+    .login_mobile_account .ow_logo {
+        margin-bottom: 4px;
+    }
+
+    .login_mobile_account #login_frame {
+        margin: auto;
+        display: block;
+        width: inherit;
+    }
+
+    .login_mobile_account .ow_page_container {
+        max-width: 95% !important;
+        width: 88% !important;
+        height: 685px !important;
+        max-height: 800px;
+    }
+
+    .login_mobile_account ul.ow_content_menu {
+        border-top: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        padding: 0 !important;
+        width: inherit;
+    }
+
+    .login_mobile_account .ow_content_menu li a {
+        font-size: 12px;
+    }
+
+    .login_mobile_account .mobile_account {
+        display: inline-block;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .login_mobile_account .back_box .ow_button a {
+        left: 104px;
+        bottom: -190px;
+    }
+}
+
+@media (max-width: 195px) {
+    span.login_method_span {
+        padding-left: 0;
+        padding-right: 0;
+        background-image: none !important;
+    }
+    .login_mobile_account .logo_frame .ow_logo {
+        background-size: 70px;
+        height: 70px;
+    }
+    .login_mobile_account .ow_page_container {
+        width: 100% !important;
+        height: 720px !important;
+        max-height: inherit;
+        max-width: inherit !important;
+    }
+    .form_message {
+        font-size: 10px !important;
+        margin-top: 0px !important;
+    }
+    div#loginByPasswordDIV .network_submit {
+        margin-left: 0;
+        margin-top: 7px;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    div#loginByPasswordDIV .forgot_pass {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile_account.desktop_version .back_box {
+        text-align: center;
+        width: 100%;
+    }
+}

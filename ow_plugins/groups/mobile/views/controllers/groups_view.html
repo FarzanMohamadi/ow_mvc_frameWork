@@ -1,0 +1,320 @@
+<script type="text/javascript">
+    {literal}
+
+    function GROUPS_InitInviteButton( options )
+    {
+        var floatBox, userIdList = options.userList;
+
+        $(document).on('click', '#GROUPS_InviteLink', function() {
+                    floatBox = OW.ajaxFloatBox('BASE_CMP_AvatarUserListSelect', [userIdList],
+                            {
+                                width:600,
+                                height:350,
+                                iconClass: 'ow_ic_user',
+                                title: options.floatBoxTitle
+                            })
+                });
+
+        OW.bind('base.avatar_user_list_select',
+                function(list)
+                {
+                    floatBox.close();
+
+                    $.ajax({
+                        type: 'POST',
+                        url: options.inviteResponder,
+                        data: {"groupId": options.groupId, "userIdList": JSON.stringify(list), "allIdList": JSON.stringify(options.userList)},
+                        dataType: 'json',
+                        success : function(data)
+                        {
+                            if( data.messageType == 'error' )
+                            {
+                                OW.error(data.message);
+                            }
+                            else if( data.directAdd ){
+                                document.location = data.url;
+                            }
+                            else
+                            {
+                                OW.info(data.message);
+                                document.location.reload();
+                                userIdList = data.allIdList;
+                            }
+                        }
+                    });
+                }
+        );
+    }
+
+    {/literal}
+</script>
+
+{if isset($otpForm)}
+<script type="text/javascript">
+    {literal}
+    $(document).ready(function() {
+            if($('.owm_view_subgroups_list.owm_widget_hidden').size() == 0 &&
+                $('.owm_pending_users_list_cmp.owm_widget_hidden').size() > 0 )
+            {
+                $('.owm_pending_users_list_cmp.owm_widget_hidden').css('padding-top', '143px');
+            }
+        }
+    );
+    {/literal}
+</script>
+<style>
+    header#header {
+        position: fixed;
+        width: 100%;
+        z-index: 12;
+    }
+    section#content {
+        margin-top: 90px;
+    }
+    .owm_list_item_view_title.clearfix.owm_nav_cap.owm_nav_cap_left_cont.owm_nav_cap_right_cont.owm_bg_color_3 {
+        position: fixed;
+        margin-top: -46px;
+        z-index: 10;
+        width: 100%;
+    }
+    .owm_newsfeed_list {
+        max-width: 700px;
+        margin: 12px 60px 10px 5px;
+    }
+    .owm_newsfeed_header_pic {
+        margin-right: -55px !important;
+    }
+    .owm_newsfeed_header:lang(fa-IR) {
+        padding: 3px 3px 3px 20px;
+    }
+    .owm_group_view .owm_content_menu_wrap.owm_padding {
+        width: auto !important;
+        position: absolute;
+        margin-right: calc(50% - 60px);
+    }
+    .owm_newsfeed_item:last-child {
+        margin-bottom: 0px  !important;
+    }
+
+    .owm_view_user_list.owm_widget_hidden .owm_box_body.container {
+        z-index: 10;
+    }
+
+    .owm_group_view .owm_widget_hidden {
+        position: fixed;
+        width: 100%;
+        z-index: 10;
+    }
+    .owm_view_user_list.owm_widget_hidden {
+        margin-top: 47px;
+        z-index: 9;
+    }
+
+    .owm_view_file_list.owm_widget_hidden {
+        margin-top: 92px;
+        z-index: 8;
+        background: white;
+    }
+
+    .owm_view_subgroups_list.owm_widget_hidden {
+        margin-top: -6px;
+        padding-top: 145px;
+        z-index: 7;
+        background: white;
+    }
+
+    textarea.owm_invitation {
+        background-color: #797979 !important;
+    }
+    .owm_newsfeed_item:last-child {
+        margin-bottom: 50px !important;
+    }
+    .owm_pending_users_list_cmp.owm_widget_hidden {
+        margin-top: -6px;
+        padding-top: 195px;
+        z-index: 6;
+        background: white;
+    }
+    .owm_group_view .owm_view_user_list.owm_widget_hidden .owm_box_toolbar {
+        display: none;
+    }
+</style>
+{/if}
+<div class="owm_group_view {$groupDirection}">
+    {if !empty($permissionMessage)}
+    <div class="owm_info owm_anno">
+        {$permissionMessage}
+    </div>
+    {else}
+    <div class="owm_list_item_view_title  clearfix owm_nav_cap owm_nav_cap_left_cont owm_nav_cap_right_cont owm_bg_color_3">
+        <div class="owm_float_left">
+            <a class="owm_nav_cap_left" href="javascript:window.history.back();"></a>
+        </div>
+        <div class="owm_box_heading_btns">
+            {if isset($joinUrl)}
+                <div class="group_invite">
+                    <a href="{$joinUrl}" onclick="return confirm_redirect('{text key="groups+join_group_confirm"}','{$joinUrl}');" style="font-size: 100%;">
+                    <img src="{$joinGroupIcon}" alt="" style="height: 25px;">
+                    </a>
+                 </div>
+            {/if}
+            {if isset($forumConnected) && $forumConnected==true}
+            <div class="group_forum">
+                {decorator name='button' class='ow_ic_add OWM_GROUPS_ForumLink' type='button' langLabel='groups+forum_btn_label' id='GROUPS_ForumLink'}
+            </div>
+            {script}
+                {literal}
+                    $('#GROUPS_ForumLink').click(function(){location.href='{/literal}{url_for_route for="group-default:[groupId=>`$forumGroupId`]"}{literal}'})
+                {/literal}
+            {/script}
+            {/if}
+        </div>
+        {if isset($otpForm)}
+            {if  isset($options)}
+            <div style="direction: initial">
+                <div class="category_section">
+                    <select id="newsfeed_select_order" onchange="changeNewsfeedOrders()">
+                        {foreach $options item="option"}
+                        <option value={$option.value} {if isset($option.selected)} selected="selected"{/if}>{$option.text}</option>
+                        {/foreach}
+                    </select>
+                </div>
+            </div>
+            {/if}
+            {if !empty($extra_component)}
+                {$extra_component}
+            {/if}
+        {/if}
+        <h4>
+            {text key="base+back"}
+        </h4>
+    </div>
+    <div class="owm_brief_info owm_widget_hidden" style="margin-top:10px">
+        {$groupBriefInfo}
+    </div>
+    <div class="owm_view_user_list owm_widget_hidden" >
+        {block_decorator name='box'
+        capEnabled=$userBoxInformation.show_title
+        iconClass=$userBoxInformation.icon
+        label=$userBoxInformation.title
+        capAddClass="ow_dnd_configurable_component clearfix"
+        type=$userBoxInformation.type
+        addClass="ow_stdmargin clearfix"}
+            <div class="owm_box_empty ow_no_cap" style="padding: 10px;">
+                {$groupUserInfo}
+            </div>
+            <div class="owm_box_toolbar">
+                {if isset($viewAll)}
+                <span class="ow_nowrap">
+                        {if isset($viewAll.href)}<a href="{$viewAll.href}">{/if}
+                        {$viewAll.label}
+                        {if isset($viewAll.href)}</a>{/if}
+                    </span>
+                {/if}
+            </div>
+        {/block_decorator}
+
+    </div>
+
+    {if isset($groupFileList)}
+    <div class="owm_view_file_list owm_widget_hidden" >
+        {block_decorator name='box'
+        capEnabled=$fileBoxInformation.show_title
+        iconClass=$fileBoxInformation.icon
+        label=$fileBoxInformation.title
+        capAddClass="ow_dnd_configurable_component clearfix"
+        type=$fileBoxInformation.type
+        addClass="ow_stdmargin clearfix"}
+        <div style="text-align:center">
+            {$groupFileList}
+        </div>
+        <div class="owm_box_toolbar">
+            {if isset($view_all_files)}
+                <span class="ow_nowrap">
+                        {if isset($view_all_files.href)}<a href="{$view_all_files.href}">{/if}
+                        {$view_all_files.label}
+                        {if isset($view_all_files.href)}</a>{/if}
+                </span>
+            {/if}
+        </div>
+        {/block_decorator}
+
+    </div>
+    {/if}
+
+    {if isset($subGroupsList)}
+    <div class="owm_view_subgroups_list owm_widget_hidden" >
+        {block_decorator name='box'
+        capEnabled=$subGroupsBoxInformation.show_title
+        iconClass=$subGroupsBoxInformation.icon
+        label=$subGroupsBoxInformation.title
+        capAddClass="ow_dnd_configurable_component clearfix"
+        type=$subGroupsBoxInformation.type
+        addClass="ow_stdmargin clearfix"}
+        <div style="text-align:center">
+            {$subGroupsList}
+        </div>
+        <div class="owm_box_toolbar">
+            {if isset($view_all_subGroups)}
+            <span class="ow_nowrap">
+            <a href="{$view_all_subGroups}">
+                 {text key="frmsubgroups+view_all_subgroups"}
+            </a>
+            </span>
+            {/if}
+        </div>
+        {/block_decorator}
+
+    </div>
+    {/if}
+
+    {if isset($groupPendingUserList)}
+    <div class="owm_pending_users_list_cmp owm_widget_hidden">
+        {block_decorator name='box'
+        capEnabled=$pendingUsersListInfo.show_title
+        iconClass=$pendingUsersListInfo.icon
+        label=$pendingUsersListInfo.title
+        capAddClass="ow_dnd_configurable_component clearfix"
+        type=$pendingUsersListInfo.type
+        addClass="ow_stdmargin clearfix"}
+        <div>
+            {$groupPendingUserList}
+        </div>
+        {/block_decorator}
+
+    </div>
+    {/if}
+
+    {if isset($groupReports)}
+    <div class="owm_frmreport_widget owm_widget_hidden">
+        {block_decorator name='box'
+        capEnabled=$reportBoxInformation.show_title
+        iconClass=$reportBoxInformation.icon
+        label=$reportBoxInformation.title
+        capAddClass="ow_dnd_configurable_component clearfix"
+        type=$reportBoxInformation.type
+        addClass="ow_stdmargin clearfix"}
+        <div>
+            {$groupReports}
+        </div>
+        {/block_decorator}
+
+    </div>
+    {/if}
+
+    {if isset($leave)}
+    <div class="owm_box owm_group_left">
+            <span class="ow_nowrap">
+                {if isset($leave.href)}<a href="{$leave.href}">{/if}
+                {$leave.label}
+                {if isset($leave.href)}</a>{/if}
+            </span>
+    </div>
+    {/if}
+
+    <div>
+        {$feed}
+    </div>
+    
+    {/if}
+</div>

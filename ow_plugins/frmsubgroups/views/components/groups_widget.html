@@ -1,0 +1,120 @@
+{style}
+{literal}
+    .ow_lp_groups .ow_lp_wrapper{
+        width: 75px;
+        float: left;
+        margin-right: -80px;
+    }
+
+    .ow_lp_groups .ow_lp_wrapper_inline {
+        display:inline-block;
+        margin:0 3px 3px 0;
+        width:75px;
+    }
+
+{/literal}
+{/style}
+
+{script}
+{literal}
+    var $tb_container = $(".ow_box_toolbar_cont", $("#groups-list_widget").parents('.ow_box, .ow_box_empty').get(0));
+
+    $("#frmsubgroups-widget-menu-popular").click(function(){
+        $tb_container.html($("#frmsubgroups-widget-toolbar-popular").html());
+    });
+
+    $("#frmsubgroups-widget-menu-latest").click(function(){
+        $tb_container.html($("#frmsubgroups-widget-toolbar-latest").html());
+    });
+{/literal}
+{/script}
+
+<div id="groups-list_widget">
+
+    {$menu}
+
+    {if !empty($menuItems)}
+        <div class="ow_lp_groups ow_hidden" id="{$menuItems.1.contId}">
+            {if $showTitles}
+                {foreach from=$popular item='item'}
+                    <div class="clearfix ow_smallmargin group_item">
+                        <div class="ow_lp_wrapper">
+                            <a href="{$item.url}">
+                                {if $item.imageInfo.empty}
+                                    <span title="{$item.title|escape}" class="colorful_avatar_{$item.imageInfo.digit}" style="background-image: url({$item.image}); background-color: {$item.imageInfo.color}"></span>
+                                {else}
+                                    <img title="{$item.title|escape}" alt="{$item.title|escape}" src="{$item.image}" width="75"/>
+                                {/if}
+                            </a>
+                        </div>
+                        {if !empty($item.unreadCount) && $item.unreadCount>0}
+                            <span class="ow_unread_count" title="{text key='base+unread_count'}">{$item.unreadCount}</span>
+                        {/if}
+                        <div class="ow_lp_label ow_small">
+                            <a href="{$item.url}">{$item.title}</a>
+                            {if isset($item.parentTitle)}<div class='subgroup_icon_arrow'></div>{$item.parentTitle}{/if}
+                            <br />
+                            {text key="groups+listing_users_label" count=$item.users}
+                        </div>
+                    </div>
+                {/foreach}
+            {else}
+                <div class="ow_center">
+                {strip}
+                {foreach from=$popular item='item'}
+                    <a class="ow_lp_wrapper_inline" href="{$item.url}">
+                        <img title="{$item.title|escape}" alt="{$item.title|escape}" src="{$item.image}" width="75" />
+                    </a>
+                {/foreach}
+                {/strip}
+                </div>
+            {/if}
+        </div>
+
+        <div class="ow_lp_groups" id="{$menuItems.0.contId}">
+            {if $showTitles}
+                {foreach from=$latest item='item'}
+                    <div class="clearfix ow_smallmargin group_item">
+                        <div class="ow_lp_wrapper">
+                            <a href="{$item.url}">
+                                {if $item.imageInfo.empty}
+                                <span title="{$item.title|escape}" class="colorful_avatar_{$item.imageInfo.digit}" style="background-image: url({$item.image}); background-color: {$item.imageInfo.color}"></span>
+                                {else}
+                                    <img title="{$item.title|escape}" alt="{$item.title|escape}" src="{$item.image}" width="75"/>
+                                {/if}
+                            </a>
+                        </div>
+                        {if !empty($item.unreadCount) && $item.unreadCount>0}
+                            <span class="ow_unread_count" title="{text key='base+unread_count'}">{$item.unreadCount}</span>
+                        {/if}
+                        <div class="ow_lp_label ow_small">
+                            <a href="{$item.url}">{$item.title}</a>
+                            {if isset($item.parentTitle)}<div class='subgroup_icon_arrow'></div>{$item.parentTitle}{/if}
+                            <br />
+                            {text key="groups+listing_users_label" count=$item.users}
+                        </div>
+                    </div>
+                {/foreach}
+            {else}
+                <div class="ow_center ">
+                {strip}
+                {foreach from=$latest item='item'}
+                    <a class="ow_lp_wrapper_inline" href="{$item.url}">
+                        <img title="{$item.title|escape}" alt="{$item.title|escape}" src="{$item.image}" width="75" />
+                    </a>
+                {/foreach}
+                </div>
+                {/strip}
+            {/if}
+        </div>
+
+        <div id="frmsubgroups-widget-toolbar-latest" style="display: none">{decorator name='box_toolbar' itemList=$toolbars.latest}</div>
+        <div id="frmsubgroups-widget-toolbar-popular" style="display: none">{decorator name='box_toolbar' itemList=$toolbars.popular}</div>
+
+    {else}
+        <div class="ow_nocontent" id="groups-create-btn-c">
+            {text key='groups+groups_widget_empty'}، <a href="{$createUrl}">{text key='groups+add_new'}</a>
+        </div>
+    {/if}
+
+</div>

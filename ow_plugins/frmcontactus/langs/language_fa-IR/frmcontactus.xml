@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcontactus" label="FRM Contact Us" language_tag="fa-IR" language_label="فارسی">  
+<key name="are_you_sure">
+ <value> با حذف دپارتمان کلیه داده های مرتبط با آن نیز حذف خواهند شد، آیا مطمئن هستید؟ </value>
+</key>
+  <key name="message">
+   <value>پیغام</value></key>
+ <key name="label"><value>برچسب</value>
+ </key>
+ <key name="useremail">
+  <value>ایمیل کاربر</value>
+ </key>
+ <key name="subject">
+  <value>موضوع</value>
+ </key>
+  <key name="id">
+   <value>شناسه</value>
+  </key>
+    <key name="returnToSetting">
+     <value>بازگشت</value>
+    </key>
+ <key name="showFormData">
+  <value>نمایش داده</value>
+ </key>
+  <key name="numberOfData_label">
+   <value>تعداد داده‌های قابل نمایش</value>
+  </key>
+  <key name="tables_label">
+   <value>برچسب</value>
+  </key>
+ <key name="form_data_label">
+  <value>نمایش پیام‌های دریافتی </value>
+ </key>
+ <key name="userInfo">
+  <value>پیام‌های دریافتی</value>
+ </key>
+ <key name="label_error_already_exist">
+  <value>واحد دریافت کننده مورد نظر در حال حاضر موجود است</value>
+ </key>
+ <key name="department">
+  <value>واحد‌های دریافت‌کننده</value>
+ </key>
+ <key name="admin_dept_heading">
+  <value>تنظیمات افزونه ارتباط با ما</value>
+ </key>
+<key name="admin_dept_title">
+ <value>تنظیمات افزونه ارتباط با ما</value>
+</key>
+<key name="after_install_notification">
+ <value>لطفا برای ارسال رایانامه یک گروه &lt;a href='{$url}'&gt;ایجاد&lt;/a&gt; کنید</value>
+</key>
+<key name="bottom_menu_item">
+ <value>تماس با ما</value>
+</key>
+<key name="form_add_dept_submit">
+ <value>افزودن واحد جدید</value>
+</key>
+<key name="form_label_captcha">
+ <value>تصویر امنیتی</value>
+</key>
+<key name="form_label_from">
+ <value>رایانشانی</value>
+</key>
+<key name="form_label_message">
+ <value>متن</value>
+</key>
+<key name="form_label_subject">
+ <value>عنوان</value>
+</key>
+<key name="form_label_submit">
+ <value>ارسال</value>
+</key>
+<key name="form_label_to">
+ <value>به</value>
+</key>
+<key name="index_page_heading">
+ <value>تماس با ما</value>
+</key>
+<key name="index_page_title">
+ <value>تماس با ما</value>
+</key>
+<key name="label_invitation_email">
+ <value>ایمیل</value>
+</key>
+<key name="label_invitation_label">
+ <value>برچسب</value>
+</key>
+<key name="message_sent">
+ <value>پیام شما به {$dept} ارسال شد. پاسخ در اسرع وقت ارسال خواهد شد</value>
+</key>
+<key name="no_department">
+ <value>هیچ بخشی وجود ندارد</value>
+</key>
+<key name="adminComment">
+ <value>نوشته بالای فرم</value>
+</key>
+<key name="save_form_lbl_entry">
+ <value>هر آنچه در این قسمت نوشته شود در بالای فرم تماس با ما نمایش داده خواهد شد.</value>
+</key>
+<key name="addAdminComment">
+ <value>ذخیره</value>
+</key>
+<key name="admin_contactus_settings_heading">
+ <value>تنظیمات افزونه تماس با ما</value>
+ </key>
+<key name="modified_successfully">
+ <value>تغییرات با موفقیت ذخیره شد</value>
+</key>
+<key name="mobile_bottom_menu_item">
+ <value>ارتباط با ما</value>
+</key>
+<key name="timeStamp">
+ <value>تاریخ</value>
+</key>
+ <key name="edit_item_page_title">
+  <value>
+   ویرایش واحد دریافت کننده
+  </value>
+ </key>
+ <key name="database_record_edit">
+  <value>
+واحد دریافت‌کننده با موفقیت به‌روزرسانی شد
+  </value>
+ </key>
+ <key name="email_error_already_exist">
+  <value>
+   رایانشانی واحد دریافت‌کننده وجود دارد
+  </value>
+ </key>
+ <key name="no_message">
+  <value>
+    پیامی برای این بخش وجود ندارد
+  </value>
+ </key>
+</prefix>

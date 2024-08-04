@@ -1,0 +1,22 @@
+{* `Avatar Item` decorator template *}
+{if isset($data.imageInfo) && ($data.imageInfo.empty)}
+    <div class="colorful_avatar_container colorful_avatar_{$data.imageInfo.digit}" style="display: inline-block;">
+{/if}
+<div class="ow_avatar{if !empty($data.class)} {$data.class}{/if}">
+{if !empty($data.isMarked)}<div class="ow_ic_bookmark ow_bookmark_icon"></div>{/if}
+{if !empty($data.url)}
+    {if isset($data.imageInfo) && ($data.imageInfo.empty)}
+        <a href="{$data.url}"><span {if !empty($data.title)} alt="{$data.title|escape}" title="{$data.title|escape}"{/if} style="background-image: url('{$data.src}'); background-color: {$data.imageInfo.color}" {if !empty($data.attrs)}{$data.attrs}{/if} /></a>
+    {else}
+        <a href="{$data.url}"><img {if !empty($data.title)} alt="{$data.title|escape}" title="{$data.title|escape}"{/if} {if !empty($data.attrs)}{$data.attrs}{/if} src="{$data.src}" /></a>
+    {/if}
+{else}
+    <a>
+        <img {if !empty($data.title)} alt="{$data.title|escape}" title="{$data.title|escape}"{/if} {if !empty($data.attrs)}{$data.attrs}{/if} src="{$data.src}" />
+    </a>
+{/if}
+{if !empty($data.label)}<span title="{$data.label}" class="ow_avatar_label"{if !empty($data.labelColor)} style="background-color: {$data.labelColor}"{/if}>{$data.label}</span>{/if}
+</div>
+{if isset($data.imageInfo) && ($data.imageInfo.empty)}
+</div>
+{/if}

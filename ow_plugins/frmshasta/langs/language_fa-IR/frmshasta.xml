@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmshasta" label="frmshasta" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_save_settings">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="holding">
+        <value>
+            شرکت
+        </value>
+    </key>
+    <key name="company">
+        <value>
+            شرکت
+        </value>
+    </key>
+    <key name="name">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="keywords">
+        <value>
+            کلمات کلیدی
+        </value>
+    </key>
+    <key name="category">
+        <value>
+            موضوع
+        </value>
+    </key>
+    <key name="file">
+        <value>
+            فایل
+        </value>
+    </key>
+    <key name="monthFilter">
+        <value>
+            امکان فیلتر بر اساس ماه
+        </value>
+    </key>
+    <key name="yearFilter">
+        <value>
+            امکان فیلتر بر اساس سال
+        </value>
+    </key>
+    <key name="customize_file_categories_floatbox_title">
+        <value>
+            موضوعات مورد علاقه خود را انتخاب نمایید
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+            موضوعات
+        </value>
+    </key>
+    <key name="roles">
+        <value>
+            نقش‌ها
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت انجام شد.
+        </value>
+    </key>
+    <key name="users_count">
+        <value>
+            تعداد اعضا
+        </value>
+    </key>
+    <key name="view_all">
+        <value>
+            مشاهده همه
+        </value>
+    </key>
+    <key name="add_file">
+        <value>
+            ایجاد فایل
+        </value>
+    </key>
+    <key name="add_category">
+        <value>
+            ایجاد موضوع
+        </value>
+    </key>
+    <key name="file_date">
+        <value>
+            تاریخ فایل
+        </value>
+    </key>
+    <key name="holding_permission">
+        <value>
+            نمایش به شرکت‌ها
+        </value>
+    </key>
+    <key name="roles_permission">
+        <value>
+            نمایش به نقش‌ها
+        </value>
+    </key>
+    <key name="file_upload_time">
+        <value>
+            تاریخ بارگذاری
+        </value>
+    </key>
+    <key name="file_time">
+        <value>
+            تاریخ
+        </value>
+    </key>
+    <key name="upload_file_header">
+        <value>
+            بارگذاری فایل
+        </value>
+    </key>
+    <key name="default_all">
+        <value>
+            (پیشفرض تمامی آن‌ها)
+        </value>
+    </key>
+    <key name="my_files">
+        <value>
+            فایل‌های من
+        </value>
+    </key>
+    <key name="file_username_label">
+        <value>
+            ایجاد کننده
+        </value>
+    </key>
+    <key name="file_company_label">
+        <value>
+            شرکت
+        </value>
+    </key>
+    <key name="file_holding_label">
+        <value>
+            شرکت
+        </value>
+    </key>
+    <key name="some_holding_permission">
+        <value>
+            نمایش به برخی شرکت‌ها
+        </value>
+    </key>
+    <key name="some_roles_permission">
+        <value>
+            نمایش به برخی نقش‌ها
+        </value>
+    </key>
+    <key name="all_holding_permission">
+        <value>
+            نمایش به تمامی شرکت‌ها
+        </value>
+    </key>
+    <key name="all_roles_permission">
+        <value>
+            نمایش به تمامی نقش‌ها
+        </value>
+    </key>
+    <key name="are_you_sure_delete_file">
+        <value>
+            آیا از حذف این فایل اطمینان دارید؟
+        </value>
+    </key>
+    <key name="are_you_sure_delete_category">
+        <value>
+            آیا از حذف این موضوع اطمینان دارید؟ تمام فایل‌های آن نیز حذف خواهند شد.
+        </value>
+    </key>
+    <key name="file_start_date">
+        <value>
+            از تاریخ
+        </value>
+    </key>
+    <key name="file_end_date">
+        <value>
+            تا تاریخ
+        </value>
+    </key>
+    <key name="all_roles">
+        <value>
+            همه نقش‌ها
+        </value>
+    </key>
+    <key name="all_holdings">
+        <value>
+            همه شرکت‌ها
+        </value>
+    </key>
+    <key name="search">
+        <value>
+            جستجو
+        </value>
+    </key>
+    <key name="select">
+        <value>
+            انتخاب
+        </value>
+    </key>
+    <key name="no_result">
+        <value>
+            نتیجه‌ای یافت نشد
+        </value>
+    </key>
+    <key name="error_loading">
+        <value>
+            خطا در بارگذاری نتایج
+        </value>
+    </key>
+    <key name="input_too_long">
+        <value>
+            ورودی طولانی می‌باشد
+        </value>
+    </key>
+    <key name="input_too_short">
+        <value>
+            ورودی کوتاه می‌باشد
+        </value>
+    </key>
+    <key name="loading_more">
+        <value>
+            در حال بارگذاری...
+        </value>
+    </key>
+    <key name="searching">
+        <value>
+            در حال جستجو...
+        </value>
+    </key>
+    <key name="maximum_selected">
+        <value>
+            تعداد انتخاب‌های باقیمانده:
+        </value>
+    </key>
+    <key name="add_company">
+        <value>
+            ایجاد شرکت
+        </value>
+    </key>
+    <key name="manage_company">
+        <value>
+            مدیریت شرکت
+        </value>
+    </key>
+    <key name="parent_name">
+        <value>
+            شرکت پدر
+        </value>
+    </key>
+    <key name="companies">
+        <value>
+            شرکت‌ها
+        </value>
+    </key>
+    <key name="email_notifications_section_label">
+        <value>
+            اعلان ایجاد فایل توسط دیگر کاربران
+        </value>
+    </key>
+    <key name="email_notifications_setting_status_comment">
+        <value>
+        </value>
+    </key>
+    <key name="add_file_notification">
+        <value>
+            &lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt; فایل {$fileName} را بارگذاری کرد.
+        </value>
+    </key>
+    <key name="sub_company">
+        <value>
+            شامل زیرشرکت‌ها
+        </value>
+    </key>
+    <key name="manage_success_message">
+        <value>
+            دسترسی‌ها با موفقیت اعمال شدند
+        </value>
+    </key>
+    <key name="save_button_label">
+        <value>
+            ثبت
+        </value>
+    </key>
+    <key name="customize_special_category">
+        <value>
+            تعیین گزارشات مدیریتی
+        </value>
+    </key>
+    <key name="managers_reports">
+        <value>
+            گزارش‌های مدیریتی
+        </value>
+    </key>
+    <key name="search_users">
+        <value>
+            جستجوی کاربران
+        </value>
+    </key>
+    <key name="plugin_label">
+        <value>
+            سازمان تامین اجتماعی
+        </value>
+    </key>
+    <key name="file_based">
+        <value>
+            فایل
+        </value>
+    </key>
+    <key name="company_based">
+        <value>
+            شرکت
+        </value>
+    </key>
+    <key name="manage_access">
+        <value>
+            مدیریت دسترسی‌ها
+        </value>
+    </key>
+    <key name="concept_based">
+        <value>
+            مبتنی بر
+        </value>
+    </key>
+    <key name="not_sent_file">
+        <value>
+            ارسال نشده
+        </value>
+    </key>
+    <key name="sent_file">
+        <value>
+            ارسال شده
+        </value>
+    </key>
+    <key name="overall_reports">
+        <value>
+            گزارشات
+        </value>
+    </key>
+    <key name="sent_files_list">
+        <value>
+            فهرست ارسال شده‌ها
+        </value>
+    </key>
+    <key name="not_sent_files_list">
+        <value>
+            فهرست ارسال نکرده‌ها
+        </value>
+    </key>
+    <key name="access_setting">
+        <value>
+            تعیین دسترسی
+        </value>
+    </key>
+    <key name="favorite_categories_setting">
+        <value>
+            تعیین موضوعات مورد علاقه
+        </value>
+    </key>
+    <key name="manage_category">
+        <value>
+            مدیریت موضوع
+        </value>
+    </key>
+    <key name="access_setting">
+        <value>
+            تعیین دسترسی
+        </value>
+    </key>
+    <key name="are_you_sure_delete_company">
+        <value>
+            با حذف این شرکت، شرکت‌های زیرین مربوطه در ساختار درختی شرکت‌ها، جایگاهش را می‌گیرند و کاربران آن شرکت در اولین استفاده از سامانه مجبور خواهند گردید تا شرکت جدید خود را مشخص نمایند.
+        </value>
+    </key>
+    <key name="create_field_image_label">
+        <value>
+            تصویر
+        </value>
+    </key>
+</prefix>

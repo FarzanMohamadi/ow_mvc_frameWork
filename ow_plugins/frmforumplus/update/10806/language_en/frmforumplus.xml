@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmforumplus" label="frmforumplus" language_tag="en" language_label="English">
+	<key name="mobile_forum_group_visibile_label">
+        <value>
+			Hide group's forum button in a group view in mobile version
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+			Settings has been saved successfully
+        </value>
+    </key>
+	<key name="admin_settings_heading">
+        <value>
+			frmforum plus Settings
+        </value>
+    </key>
+</prefix>

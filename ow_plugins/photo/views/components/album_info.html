@@ -1,0 +1,27 @@
+{*
+
+
+
+/**
+*
+*
+* @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+* @package ow_plugins.photo
+* @since 1.7.6
+*/
+
+*}
+<div class="ow_photo_album_cover ow_high1" style="background-image: url({$coverUrl})">
+    <img src="{$coverUrlOrig}" alt="" class="cover_orig ow_hidden" />
+</div>
+<div id="album-edit" class="ow_photo_album_info_wrap clearfix">
+{if isset($privacy_label)}<img src="{$privacy_label.imgSrc}" title="{$privacy_label.label}" class="feed_image_privacy" />{/if}
+</div>
+<div id="photo-album-info" class="ow_photo_album_info_wrap clearfix">
+    <div class="ow_photo_album_info">
+        <h3 class="ow_photo_album_name">{$album->name|escape}</h3>
+        <div class="ow_photo_album_description ow_stdmargin">{$album->description|escape}</div>
+
+        {add_content key='photo.view_album' album=$album}
+    </div>
+</div>

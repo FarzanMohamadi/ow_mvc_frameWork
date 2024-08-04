@@ -1,0 +1,78 @@
+<div class="wrap-collabsible">
+    <input id="collapsible-{$additionalId}-{$file.categoryId}-{$file.id}" class="toggle" type="checkbox">
+    <label for="collapsible-{$additionalId}-{$file.categoryId}-{$file.id}" class="lbl-toggle" tabindex="0">
+        <div class="file_bar">
+            <div class="file_name {$file.extension}">{$file.name}</div>
+            {if isset($file.editUrl)}
+            <div class="file_edit">
+                <a href="javascript:showUploadFileForm({$file.id})">
+                    <button class="custom_button">
+                        <span class="icon_edit">
+                        </span>
+                    </button>
+                </a>
+            </div>
+            {/if}
+            {if isset($file.deleteUrl)}
+            <div class="file_delete">
+                <a href="{$file.deleteUrl}" onclick="return confirm_redirect('{text key="frmshasta+are_you_sure_delete_file"}','{$file.deleteUrl}');">
+                <button class="custom_button"><span class="icon_delete"></span></button>
+                </a>
+            </div>
+            {/if}
+            {if isset($file.url)}
+            <div class="file_download">
+                <a target="_blank" href="{$file.url}">
+                    <button class="custom_button"><span class="icon_download"></span></button>
+                </a>
+            </div>
+            {/if}
+            {if isset($file.viewUrl)}
+            <div class="file_url">
+                <a href="{$file.viewUrl}">
+                    <button class="custom_button"><span class="icon_view"></span></button>
+                </a>
+            </div>
+            {/if}
+            {if isset($file.manageAccess_url)}
+            <div class="file_access">
+                <a onclick="{$file.manageAccess_url}">
+                    <button class="custom_button"><span class="icon_access"></span></button>
+                </a>
+            </div>
+            {/if}
+        </div>
+    </label>
+    <div class="collapsible-content">
+        <div class="file_details">
+            <div class="user_details">
+                <div class="file_username">
+                    <span class="file_username_label">{text key="frmshasta+file_username_label"}</span>
+                    <a href="{$file.user.url}">{$file.user.name}</a>
+                </div>
+                <div class="file_holding">
+                    <span class="file_holding_label">{text key="frmshasta+file_holding_label"}</span>
+                    {$file.user.holding}
+                </div>
+            </div>
+            <div class="file_time_details">
+                <div class="file_upload_time">
+                                <span class="file_upload_time_label">
+                                    {text key="frmshasta+file_upload_time"}
+                                </span>
+                    <div class="file_upload_time_value">
+                        {$file.uploadTime}
+                    </div>
+                </div>
+                <div class="file_time">
+                                <span class="file_time_label">
+                                    {text key="frmshasta+file_time"}
+                                </span>
+                    <div class="file_time_value">
+                        {$file.time}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+.video_list_user_avatar {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    float: right;
+    margin: -19px 7px 0 0;
+    box-shadow: 0 0 0px 3px white;
+    background-color: white;
+}
+
+.ow_video_item_title {
+    width: 100%;
+    float: right;
+}
+
+.video_list_user_name {
+    float: right;
+    margin-right: 7px;
+}
+
+.ow_video_item_title a {
+    display: block;
+    color: #a2acb3;
+    text-overflow: ellipsis;
+    max-width: 98%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 2px 5px 0px 5px;
+}
+
+.ow_video_thumbnail_list,
+.ow_video_thumbnail_list_box{
+    width: 100%;
+    height: 150px;
+}
+
+.ow_video_thumbnail_list{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 3px;
+}
+
+.ow_video_item_rate {
+    display: none;
+}
+
+.ow_video_thumbnail_list_box {
+    background-image: url(../img/play_icon.svg);
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ow_video_thumbnail_list.no_thumbnail {
+    background-image: url(../img/video_no_thumbnail.png);
+}
+
+.ow_video_not_found {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.ow_video_not_found_img {
+    background-image: url(../img/video_not_found.svg);
+    height: 300px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

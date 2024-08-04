@@ -1,0 +1,98 @@
+<div class="ow_menu_overlay"></div>
+<div class="ow_page_wrap">
+	<div class="ow_header">
+        <div class="ow_header_pic">
+        </div>
+	</div>
+	<div class="ow_menu_fullpage">
+		<div class="ow_nav_btn_close"></div>
+		<div class="ow_menu_fullpage_wrap">{$main_menu}</div>
+	</div>
+	<div class="ow_site_panel clearfix">
+			<a class="ow_logo ow_left" href="{$siteUrl}"></a>
+			<div class="ow_nav_btn"></div>
+			<div class="ow_console_right">
+				{component class='BASE_CMP_Console'}
+			</div>
+		<div class="ow_menu_wrap">{component class='BASE_CMP_MainMenu' responsive=true}</div>
+	</div>
+	<div class="ow_page_padding">
+		<div class="ow_page_container">
+			<div class="ow_canvas">
+				<div class="ow_page ow_bg_color clearfix">
+					<h1 class="ow_stdmargin {$heading_icon_class}">{$heading}</h1>
+					<div class="ow_content">
+						{add_content key='base.add_page_top_content'}
+						{$content}
+						{add_content key='base.add_page_bottom_content'}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ow_footer">
+	<div class="ow_canvas">
+		<div class="ow_page clearfix">
+			{$bottom_menu}
+			{if isset($footer_custom_tag)}
+				{$footer_custom_tag}
+			{/if}
+			<div class="ow_copyright">
+				<div class="ow_site_name">{$site_name}</div>
+				<div class="ow_copyright_text">{text key='base+copyright_no_name'}</div>
+			</div>
+			<div class="ow_copyright_logo">
+
+			</div>
+			<div class="powered_by_logo">
+				<div class="powered_by">
+					<a href="http://" target="_blank">
+					{text key='base+powered_by_community'}
+					</a>
+				</div>
+				<div class="ow_logos">
+					{$bottomPoweredByLink}
+				</div>
+			</div>
+			<div class="created_by">
+				<a href="http://new.local.ir" target="_blank">
+					{text key='base+produced_by_frmcenter'}
+				</a>
+			</div>
+		</div>
+	</div>
+</div>    
+{decorator name='floatbox'}
+<script type="text/javascript">
+	$(window).scroll(function() {
+	var $menuwrappos = $('.ow_menu_wrap').offset().top;
+    if ($(this).scrollTop() > $menuwrappos) { 
+        $('.ow_page_wrap').addClass('ow_hidden_menu');
+    }
+    else {
+    	$('.ow_page_wrap').removeClass('ow_hidden_menu');
+    }
+	});
+	$('.ow_nav_btn').click(function() {
+		$('body').addClass('ow_menu_active');
+		$('.ow_menu_overlay').show();
+		$('.ow_nav_btn_close').show();
+    });
+	$('.ow_nav_btn_close').click(function() {
+		$('body').removeClass('ow_menu_active');
+		$('.ow_menu_overlay').hide();
+		$('.ow_nav_btn_close').hide();
+	});
+    $('.ow_menu_fullpage_wrap a').click(function(event) {
+		if($(this).parent().attr('class').indexOf('active')>=0) {
+			event.preventDefault();
+			return;
+		}
+    })
+	$('.ow_menu_overlay').click(function() {
+		$('body').removeClass('ow_menu_active');
+		$('.ow_menu_overlay').hide();
+		$('.ow_nav_btn_close').hide();
+	});
+</script>

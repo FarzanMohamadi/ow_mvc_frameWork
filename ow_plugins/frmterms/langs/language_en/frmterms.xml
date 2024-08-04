@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmterms" label="frmterms" language_tag="en" language_label="English">
+    <key name="active_label">
+        <value>Active</value>
+    </key>
+    <key name="terms_description">
+        <value>This plugin lets you as a admin to add item or use default items to make yout own terms like terms of
+            service, privacy policy and FAQ page. Also you can use from two default page to make any page you want.
+            Every page with having at least one item show to user in terms link. You can drag and drop items to manage
+            orders or deactivate item for not showing to front-user.
+        </value>
+    </key>
+    <key name="terms_description_label">
+        <value>Description</value>
+    </key>
+    <key name="terms_header_information">
+        <value>Terms information</value>
+    </key>
+
+    <key name="notification_on_changing_label">
+        <value>Notification on changing</value>
+    </key>
+    <key name="email_on_changing_label">
+        <value>Email on changing</value>
+    </key>
+    <key name="add">
+        <value>Add</value>
+    </key>
+    <key name="edit">
+        <value>Edit</value>
+    </key>
+    <key name="empty_row_label">
+        <value>Empty</value>
+    </key>
+    <key name="terms_of_service_page">
+        <value>Terms of service</value>
+    </key>
+    <key name="privacy_policy_page">
+        <value>Privacy policy</value>
+    </key>
+    <key name="FAQ_page">
+        <value>FAQ</value>
+    </key>
+    <key name="database_record_add">
+        <value>Item added successfully</value>
+    </key>
+    <key name="database_record_edit">
+        <value>Item Edited successfully</value>
+    </key>
+    <key name="database_record_deleted">
+        <value>Item removed successfully</value>
+    </key>
+    <key name="database_record_deactivate_item">
+        <value>Item deactivated successfully</value>
+    </key>
+    <key name="database_record_activate_item">
+        <value>Item activated successfully</value>
+    </key>
+    <key name="database_record_deactivate_section">
+        <value>Section deactivated successfully</value>
+    </key>
+    <key name="database_record_activate_section">
+        <value>Section activated successfully</value>
+    </key>
+    <key name="section_is_inactive">
+        <value>This section is inactive.</value>
+    </key>
+    <key name="section_is_active">
+        <value>This section is active.</value>
+    </key>
+    <key name="database_record_add_version">
+        <value>Version released successfully</value>
+    </key>
+    <key name="deactivate_item">
+        <value>Deactive</value>
+    </key>
+    <key name="activate_item">
+        <value>Active</value>
+    </key>
+    <key name="deactivate_section_button">
+        <value>Deactivate this section</value>
+    </key>
+    <key name="activate_section_button">
+        <value>Activate this section</value>
+    </key>
+    <key name="items">
+        <value>Items</value>
+    </key>
+    <key name="default1">
+        <value>Default1</value>
+    </key>
+    <key name="default2">
+        <value>Default2</value>
+    </key>
+    <key name="active_items">
+        <value>Active items</value>
+    </key>
+    <key name="inactive_items">
+        <value>Inactive items</value>
+    </key>
+    <key name="description_label">
+        <value>Description</value>
+    </key>
+    <key name="header_label">
+        <value>Header</value>
+    </key>
+    <key name="delete_item">
+        <value>Delete</value>
+    </key>
+    <key name="delete_section">
+        <value>Delete</value>
+    </key>
+    <key name="delete_item_warning">
+        <value>Are you sure to delete this item?</value>
+    </key>
+    <key name="delete_section_warning">
+        <value>Are you sure to delete this version?</value>
+    </key>
+    <key name="edit_item">
+        <value>Edit</value>
+    </key>
+    <key name="edit_item_page_title">
+        <value>Edit item</value>
+    </key>
+    <key name="table_of_content_label">
+        <value>Table of content</value>
+    </key>
+    <key name="add_version_warning">
+        <value>Are you sure to release new version of active items? Users will be informed about items that changed relative to previous version and marked their notifications or emails.
+        </value>
+    </key>
+    <key name="add_version_description">
+        <value>You can release new version using bellow link. New version include all active items.</value>
+    </key>
+    <key name="add_version_label">
+        <value>Release new version</value>
+    </key>
+    <key name="section_empty_description">
+        <value>There is no released version. The terms will bew released as soon as possible.</value>
+    </key>
+    <key name="table_of_archive_label">
+        <value>Archives</value>
+    </key>
+    <key name="current_version_label">
+        <value>Current Version</value>
+    </key>
+    <key name="comparison_with_current_version_label">
+        <value>Comparison with current version</value>
+    </key>
+    <key name="selected_version_label">
+        <value>Selected version</value>
+    </key>
+    <key name="returnToArchiveLabel">
+        <value>Return to archives.</value>
+    </key>
+    <key name="returnToTerms">
+        <value>Return to terms.</value>
+    </key>
+    <key name="archives_is_empty_description">
+        <value>There is no any released version.</value>
+    </key>
+    <key name="add_version_without_items">
+        <value>You can't release new version without any item.</value>
+    </key>
+    <key name="number_of_exist_version">
+        <value>There are {$value} released version for this section.</value>
+    </key>
+    <key name="add_new_item_header">
+        <value>Add new Item to this section.</value>
+    </key>
+    <key name="section_information_label">
+        <value>Section Information</value>
+    </key>
+    <key name="email_subject">
+        <value>A new version of {$value} released.</value>
+    </key>
+    <key name="email_html_content">
+        <value>You can see all items in {$value}. Important items that changed or added in a released version show bellow.</value>
+    </key>
+    <key name="notification_content">
+        <value>A new version of {$value1} released. {$value2} important items changed, added or removed.</value>
+    </key>
+    <key name="mobile_notification_content">
+        <value>&lt;a href="{$url}"&gt;A new version of {$value1} released. {$value2} important items changed, added or removed.&lt;/a&gt;</value>
+    </key>
+    <key name="send_notification_description">
+        <value>Send a notification to inform users that terms have been changed, added or removed.</value>
+    </key>
+    <key name="agree_with_terms">
+        <value>I agree with &lt;a target="blank" href="{$value}"&gt; terms&lt;/a&gt;</value>
+    </key>
+    <key name="terms_show_on_join_form_enable">
+        <value>This feature is enable. If you enable this feature, users should checked the terms agreement but if you disable this, terms agreement do not display to users in join form.</value>
+    </key>
+    <key name="terms_show_on_join_form_disable">
+        <value>This feature is disable. If you enable this feature, users should checked the terms agreement but if you disable this, terms agreement do not display to users in join form.</value>
+    </key>
+    <key name="terms_show_in_join_form_set_enable">
+        <value>&lt;a href="{$value}"&gt; Show on join form.&lt;/a&gt;</value>
+    </key>
+    <key name="terms_show_in_join_form_set_disable">
+        <value>&lt;a href="{$value}"&gt; Hide from join form.&lt;/a&gt;</value>
+    </key>
+    <key name="terms_show_in_join_form">
+        <value>Visible in join form</value>
+    </key>
+    <key name="terms_hide_in_join_form">
+        <value>Hide in join form</value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>Terms</value>
+    </key>
+    <key name="view_all_archive_label">
+        <value>View all archive</value>
+    </key>
+    <key name="release_date_label">
+        <value>Release date: {$value}</value>
+    </key>
+    <key name="admin_page_heading">
+        <value>Terms plugin settings</value>
+    </key>
+    <key name="admin_page_title">
+        <value>Terms plugin settings</value>
+    </key>
+	<key name="mobile_bottom_menu_item">
+        <value>Terms</value>
+    </key>
+    <key name="frmterms_sitemap">
+        <value>Terms</value>
+    </key>
+	<key name="js_agree_with_terms">
+        <value>I agree with &lt;a href="{$value}"&gt; terms&lt;/a&gt;</value>
+    </key>
+</prefix>

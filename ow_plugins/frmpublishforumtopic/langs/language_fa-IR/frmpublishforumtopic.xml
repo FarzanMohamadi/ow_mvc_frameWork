@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmpublishforumtopic" label="frmpublishforumtopic" language_tag="fa-IR" language_label="فارسی">
+    <key name="publish_topic">
+        <value>انتشار موضوع</value>
+    </key>
+    <key name="topic_description">
+        <value>شرح موضوع:</value>
+    </key>
+    <key name="topic_author">
+        <value>نویسنده موضوع:</value>
+    </key>
+    <key name="topic_startDate">
+        <value>تاریخ شروع:</value>
+    </key>
+    <key name="topic_endDate">
+        <value>تاریخ پایان:</value>
+    </key>
+    <key name="topic_conclusion_post">
+        <value>پست جمع‌بندی</value>
+    </key>
+    <key name="topic_conclusion_post_author">
+        <value>توسط</value>
+    </key>
+    <key name="topic_url">
+        <value>پیوند به موضوع:</value>
+    </key>
+    <key name="topic_reviewers">
+        <value>نظردهندگان:</value>
+    </key>
+    <key name="view_topic">
+        <value>مشاهده موضوع</value>
+    </key>
+    <key name="blog">
+        <value>بلاگ</value>
+    </key>
+    <key name="news">
+        <value>اخبار</value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>تنظیمات افزونه انتشار موضوعات انجمن</value>
+    </key>
+    <key name="admin_settings_title">
+        <value>تنظیمات افزونه انتشار موضوعات انجمن</value>
+    </key>
+    <key name="settings_updated">
+        <value>تنظیمات به‌روزرسانی شد</value>
+    </key>
+    <key name="publish_destination">
+        <value>مقصد انتشار</value>
+    </key>
+</prefix>

@@ -1,0 +1,74 @@
+{*
+
+/**
+ *
+ *
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.photo
+ * @since 1.6.1
+ */
+ 
+*}
+
+{$menu}
+
+{form name='configSaveForm'}
+    <table class="ow_table_1 ow_form ow_stdmargin">
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="3">
+                <span class="ow_section_icon ow_ic_up_arrow">{text key='photo+upload_settings'}</span>
+            </th>
+        </tr>
+        <tr class="ow_alt1 ow_tr_last">
+            <td class="ow_label">{label name='acceptedFilesize'}</td>
+            <td class="ow_value">{input name='acceptedFilesize' class='ow_settings_input'} Mb <span class="ow_small">{text key='photo+upload_ini_value' value=$iniValue}</span> {error name='acceptedFilesize'}</td>
+            <td class="ow_desc ow_small">{text key='photo+accepted_filesize_desc'}</td>
+        </tr>
+        <tr class="ow_tr_delimiter"><td colspan="3"></td></tr>
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="3">
+                <span class="ow_section_icon ow_ic_lock">{text key='photo+quotas'}</span>
+            </th>
+        </tr>
+        <tr class="{cycle values='ow_alt2, ow_alt1'}">
+            <td class="ow_label">{label name='albumQuota'}</td>
+            <td class="ow_value">{input name='albumQuota' class='ow_settings_input'} {error name='albumQuota'}</td>
+            <td class="ow_desc ow_small">{text key='photo+album_quota_desc'}</td>
+        </tr>
+        <tr class="{cycle values='ow_alt2, ow_alt1'}">
+            <td class="ow_label">{label name='userQuota'}</td>
+            <td class="ow_value">{input name='userQuota' class='ow_settings_input'} {error name='userQuota'}</td>
+            <td class="ow_desc ow_small">{text key='photo+user_quota_desc'}</td>
+        </tr>
+        <tr class="{cycle values='ow_alt2, ow_alt1'}">
+            <td class="ow_label">{label name='downloadAccept'}</td>
+            <td class="ow_value">{input name='downloadAccept' class='ow_settings_input'}</td>
+            <td class="ow_desc ow_small">&nbsp;</td>
+        </tr>
+        <tr class="{cycle values='ow_alt2, ow_alt1'} ow_tr_last">
+            <td class="ow_label">{label name='storeFullsize'}</td>
+            <td class="ow_value">{input name='storeFullsize' class='ow_settings_input'}</td>
+            <td class="ow_desc ow_small">&nbsp;</td>
+        </tr>
+        {foreach $extendedSettings as $section}
+            <tr class="ow_tr_delimiter"><td colspan="3"></td></tr>
+            <tr class="ow_tr_first">
+                <th class="ow_name ow_txtleft" colspan="3">
+                    <span class="ow_section_icon {$section.icon}">{text key=$section.section_lang}</span>
+                </th>
+            </tr>
+            {foreach $section.settings as $setting}
+                <tr class="{cycle values='ow_alt2, ow_alt1'}{if $setting@last} ow_tr_last{/if}">
+                    <td class="ow_label">{label name=$setting@key}</td>
+                    <td class="ow_value">{input name=$setting@key}</td>
+                    <td class="ow_desc ow_small">{desc name=$setting@key}</td>
+                </tr>
+            {/foreach}
+        {/foreach}
+    </table>
+    <div class="clearfix ow_stdmargin">
+        <div class="ow_right">
+            {submit name='save' class='ow_ic_save ow_positive'}
+        </div>
+    </div>
+{/form}

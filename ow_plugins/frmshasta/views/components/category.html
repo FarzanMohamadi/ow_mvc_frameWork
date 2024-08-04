@@ -1,0 +1,27 @@
+<div class="category_wrapper">
+    <div class="category_detail">
+        <div class="category_name">{$categoryInfo.name}</div>
+        <div class="category_edit">
+            <a onclick ="showCategoryForm({$categoryInfo.id},'{text key="frmshasta+manage_category"}')">
+                <button class="custom_button"><span class="icon_edit"></span></button>
+            </a>
+        </div>
+        {if isset($manageAccess)}
+        <div class="category_access">
+            <a onclick="showManageAccessCategoryForm({$categoryInfo.id},'{text key="frmshasta+access_setting"}')">
+                <button class="custom_button"><span class="icon_access"></span></button>
+            </a>
+        </div>
+        {/if}
+    </div>
+    {$files}
+    <div class="category_url">
+        <a href="{$categoryInfo.url}">
+            <button class="custom_big_button">
+                <span class="icon_more">
+                    {text key="frmshasta+view_all"}
+                </span>
+            </button>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,267 @@
+body .ow_forum_attachment_icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    width: 18px;
+    height: 20px;
+    margin-bottom: 1px;
+}
+body .ow_forum_lock_icon {
+    display: inline-block;
+    vertical-align: bottom;
+    background-repeat: no-repeat;
+    cursor: initial;
+    width: 17px;
+    height: 18px;
+    margin-bottom: 2px;
+}
+span.ow_forum_sticky {
+    display: inline-block;
+    color: #ec2f2f !important;
+    background-color: inherit !important;
+    padding: 1px 3px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-shadow: none;
+    vertical-align: text-bottom;
+    border-radius: 2px;
+    margin-right: 2px;
+    border:1px solid #ec2f2f !important;
+    font-size: 10px;
+}
+
+.ow_forum_icon {
+    display: initial;
+}
+.owm_topic_list_locked:lang(fa-IR){
+    background: url(ico_comment_locked_read.svg) center center no-repeat !important;
+    float: right;
+    margin-left: 6px;
+    width: 12px;
+    height: 15px;
+    margin-top: 4px;
+    margin-right: -0.5px;
+}
+.owm_topic_sticky_icon:lang(fa-IR) {
+    background: initial !important;
+    display: inline-block;
+    color: #ec2f2f !important;
+    background-color: inherit !important;
+    padding-left: 2px;
+    padding-right: 2px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-shadow: none;
+    vertical-align: text-bottom;
+    border-radius: 2px;
+    margin-right: 2px;
+    border:1px solid #ec2f2f !important;
+    margin-bottom: 2px;
+    font-size: 8px;
+    width: 15px;
+}
+.owm_topic_attach_icon{
+    width: 12px;
+    height: 15px;
+}
+.owm_topic_sticky_icon
+{
+    height: 13px;
+    float: left;
+    margin-top: 4px;
+    background: initial !important;
+    display: inline-block;
+    color: #ec2f2f !important;
+    background-color: inherit !important;
+    padding-left: 2px;
+    padding-right: 2px;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-shadow: none;
+    vertical-align: text-bottom;
+    border-radius: 2px;
+    border:1px solid #ec2f2f !important;
+    margin-bottom: 2px;
+    font-size: 7px;
+    width: 25px;
+}
+.owm_topic_list_locked{
+    background: url(ico_comment_locked_read.svg) center center no-repeat !important;
+    float: left;
+    margin-right: 6px;
+    width: 12px;
+    height: 15px;
+    margin-top: 4px;
+}
+
+.ow_forum_topic_posts div.topic_info_before_first_post > div{
+    margin-bottom: 10px;
+}
+
+.sort_topic_answers_container{
+    float: left;
+    margin-top: -37px;
+    margin-left: 7px;
+    margin-bottom: -5px;
+}
+
+.answers_label.forum_topic_label{
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+
+#change_forum_topic_posts_show_order{
+    width: unset !important;
+}
+
+.last_post{
+    border-top: none;
+    margin-top: -20px;
+    padding: 10px;
+}
+
+
+.topic_info_before_first_post.locked_topic .ow_box.container,
+.last_post{
+    border: none;
+    border-radius: 3px;
+}
+
+
+.ow_forum_topic_posts .topic_info_before_first_post div.ow_box.ow_no_cap,
+.topic_info_before_first_post,
+.topic_info_before_first_post + .ow_box.last_post{
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+
+#topic_title_in_topic_first_post{
+    font-size: 110%;
+    font-style: italic;
+}
+
+.forum_topic_index .ow_forum_topic_posts .topic_info_before_first_post .ow_stdmargin.clearfix,
+.ow_forum_topic_posts .topic_info_before_first_post div[id*="post-"] .ow_ipc_info{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.ow_forum_topic_posts .topic_info_before_first_post + div[id*="post-"].last_post .ow_ipc_info{
+    border: none !important;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+.topic_opening_post .ow_ipc_info{
+    background-color: transparent;
+}
+
+.topic_opening_post .ow_ipc .ow_ipc_picture,
+.topic_opening_post .ow_ipc .ow_ipc_picture + .ow_ipc_info .ow_ipc_header{
+    display: none;
+}
+
+.topic_opening_post .ow_ipc .ow_ipc_picture + .ow_ipc_info .ow_ipc_header + .ow_ipc_content{
+    margin-right: 0;
+}
+
+.last_post_badge{
+    position: absolute;
+    right: calc(45% - 24px);
+    margin-top: -4px !important;
+    background: #666365;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    padding: 1px 5px;
+    opacity: 0.3;
+}
+
+.topic_info_container{
+    margin-top: -49px;
+    position: absolute;
+    left: 18px;
+}
+
+.topic_info_container span{
+    font-size: 85%;
+    padding-right: 7px;
+    float: left;
+}
+
+.ow_button.topic_first_post_edit{
+    padding: 2px 5px;
+    border-radius: 3px;
+    position: absolute;
+    left: 0;
+    top: -31px;
+}
+
+.ow_button.topic_first_post_edit a{
+    text-decoration: none !important;
+}
+
+.forum_topic_index .ow_forum_topic_posts .last_post.ow_stdmargin.clearfix{
+    border: none;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.ow_forum_topic_posts .topic_info_before_first_post{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.topic_info_before_first_post.locked_topic .ow_ipc_info .ow_ipc_content + .clearfix .ow_ipc_toolbar.ow_remark{
+    height: 0;
+    margin-bottom: 15px;
+}
+
+.ow_button.topic_first_post_edit:hover a{
+    color: #fff;
+}
+
+ul.topic_action_buttons_container{
+    text-align: left;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+}
+
+.topic_info_before_first_post.can_edit_topic ul.topic_action_buttons_container{
+    margin-left: 61px;
+}
+
+ul.topic_action_buttons_container li{
+    display: inline-block;
+    color: #6e6f6f;
+    border: 1px solid #bec5ca;
+    border-radius: 3px;
+}
+
+ul.topic_action_buttons_container li a{
+    color: #6e6f6f;
+    font-size: 10px;
+    line-height: 16px;
+}
+
+ul.topic_action_buttons_container li:hover{
+    border-color: #5493ff;
+}
+
+ul.topic_action_buttons_container li a:hover{
+    color: #fff;
+    background-color: #5493ff;
+}
+
+@media (max-width: 678px) {
+    .topic_info_before_first_post.locked_topic.edited_post .topic_info_container {
+        margin-top: -65px;
+    }
+}

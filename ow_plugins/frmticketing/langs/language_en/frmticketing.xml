@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmticketing" label="Messages" language_tag="en" language_label="English">
+	<key name="manage_ticket_settings_label">
+		<value>Ticketing Setting</value>
+	</key>
+	<key name="view_tickets_label">
+		<value>Manage Tickets</value>
+	</key>
+	<key name="settings_page_heading">
+		<value>Ticketing Setting</value>
+	</key>
+	<key name="ticket_tracking_number">
+		<value>Ticket Tracking Number</value>
+	</key>
+	<key name="settings_page_title">
+		<value>Ticketing Setting</value>
+	</key>
+	<key name="category_setting">
+		<value>category Setting</value>
+	</key>
+	<key name="users_setting">
+		<value>Users Setting</value>
+	</key>
+	<key name="name_users">
+		<value>users</value>
+	</key>
+	<key name="username">
+		<value>username</value>
+	</key>
+	<key name="form_add_category_user_submit">
+		<value>submit user</value>
+	</key>
+	<key name="name_category">
+		<value>Category Title</value>
+	</key>
+	<key name="edit_item">
+		<value>Edit</value>
+	</key>
+	<key name="title_order_label">
+		<value>The importance of the ticket</value>
+	</key>
+	<key name="title_category_label">
+		<value>Category Label</value>
+	</key>
+	<key name="active_categories">
+		<value>Active Categories</value>
+	</key>
+	<key name="inactive_categories">
+		<value>Inactive Categories</value>
+	</key>
+	<key name="deactivate">
+		<value>deactivate</value>
+	</key>
+	<key name="activate">
+		<value>activate</value>
+	</key>
+	<key name="delete_permanently">
+		<value>remove permanently</value>
+	</key>
+	<key name="delete_item">
+		<value>Delete</value>
+	</key>
+	<key name="are_you_sure">
+		<value>Are You sure?</value>
+	</key>
+	<key name="are_you_sure_delete_permanently">
+		<value>In case of permanent deletion, the connection between the category and the people responsible for each category will be deleted and will not be recoverable. Are you sure about permanent deletion?</value>
+	</key>
+	<key name="are_you_sure_deactivate">
+		<value>Are you sure you want to deactivate the category?</value>
+	</key>
+	<key name="are_you_sure_activate">
+		<value>Are you sure you want to reactivate the category?</value>
+	</key>
+	<key name="category_title_label">
+		<value>Category Title</value>
+	</key>
+	<key name="form_add_category_submit">
+		<value>Add</value>
+	</key>
+	<key name="edit_item_page_title">
+		<value>Edit</value>
+	</key>
+	<key name="order_setting">
+		<value>Order Setting</value>
+	</key>
+	<key name="name_order">
+		<value>Order Title</value>
+	</key>
+	<key name="order_title_label">
+		<value>Order Title</value>
+	</key>
+	<key name="form_add_order_submit">
+		<value>Add</value>
+	</key>
+	<key name="ticket_list_page_heading">
+		<value>Tickets List</value>
+	</key>
+	<key name="ticket_list_page_title">
+		<value>Tickets List</value>
+	</key>
+	<key name="add_ticket">
+		<value>Add Ticket</value>
+	</key>
+	<key name="add_ticket_title">
+		<value>Add Ticket</value>
+	</key>
+	<key name="add_ticket_page_title">
+		<value>Add Ticket</value>
+	</key>
+	<key name="ticket_title_label">
+		<value>Add Ticket</value>
+	</key>
+	<key name="select_category">
+		<value>Select category</value>
+	</key>
+	<key name="select_order">
+		<value>Select order</value>
+	</key>
+	<key name="select_locked_unlocked">
+		<value>Locked or Unlocked</value>
+	</key>
+	<key name="save_button">
+		<value>Submit</value>
+	</key>
+	<key name="cancel_button">
+		<value>Return</value>
+	</key>
+	<key name="view_page_details_block_cap_label">
+		<value>Ticket details</value>
+	</key>
+	<key name="view_page_date_label">
+		<value>Created date</value>
+	</key>
+	<key name="view_page_order_label">
+		<value>Order</value>
+	</key>
+	<key name="view_page_created_label">
+		<value>Submitted By</value>
+	</key>
+	<key name="view_network_label">
+		<value>Category</value>
+	</key>
+	<key name="this_ticket">
+		<value>Ticket Settings</value>
+	</key>
+	<key name="lock_ticket">
+		<value>Lock</value>
+	</key>
+	<key name="unlock_ticket">
+		<value>Unlock</value>
+	</key>
+	<key name="delete_ticket">
+		<value>Delete</value>
+	</key>
+	<key name="edit_ticket">
+		<value>Edit</value>
+	</key>
+	<key name="toolbar_post_number">
+		<value>Post num {$num}</value>
+	</key>
+	<key name="post_quote">
+		<value>Quote</value>
+	</key>
+	<key name="post_edit">
+		<value>Edit</value>
+	</key>
+	<key name="post_delete">
+		<value>Delete</value>
+	</key>
+	<key name="add_post_title">
+		<value>Add Post</value>
+	</key>
+	<key name="add_post_btn">
+		<value>Submit</value>
+	</key>
+	<key name="back">
+		<value>Return</value>
+	</key>
+	<key name="edit_post_title">
+		<value>Edit Post</value>
+	</key>
+	<key name="post_edited">
+		<value>Edit By</value>
+	</key>
+	<key name="settings_saved_successfully">
+		<value>settings have been saved successfully</value>
+	</key>
+	<key name="database_record_edit">
+		<value>settings have been saved successfully</value>
+	</key>
+	<key name="title_error_already_exist">
+		<value>Item already exists</value>
+	</key>
+	<key name="description">
+		<value>Description</value>
+	</key>
+	<key name="confirm_delete_attachment">
+		<value>Are you sure about deleting this document?</value>
+	</key>
+	<key name="lock_ticket_confirm">
+		<value>Are you sure?</value>
+	</key>
+	<key name="unlock_ticket_confirm">
+		<value>Are you sure?</value>
+	</key>
+	<key name="ticket_is_locked">
+		<value>This Ticket is locked</value>
+	</key>
+	<key name="attachment_deleted">
+		<value>Attachment deleted successfully</value>
+	</key>
+	<key name="delete">
+		<value>Delete</value>
+	</key>
+	<key name="attachments">
+		<value>Attachments</value>
+	</key>
+	<key name="delete_post_confirm">
+		<value>Are you sure?</value>
+	</key>
+	<key name="delete_ticket_confirm">
+		<value>Are you sure?</value>
+	</key>
+	<key name="ticket_quote">
+		<value>Quote</value>
+	</key>
+	<key name="ticket_quote_from">
+		<value>from</value>
+	</key>
+	<key name="edit_ticket_title">
+		<value>Edit Ticket</value>
+	</key>
+	<key name="view_category_label">
+		<value>Category</value>
+	</key>
+	<key name="my_tickets_label">
+		<value>My Tickets</value>
+	</key>
+	<key name="received_ticket">
+		<value>received ticket</value>
+	</key>
+	<key name="notifications_section_label">
+		<value>Ticketing</value>
+	</key>
+	<key name="notifications_new_message">
+		<value>Receive Ticket Messages</value>
+	</key>
+	<key name="search_title">
+		<value>Search Title</value>
+	</key>
+	<key name="search_btn_label">
+		<value>Search</value>
+	</key>
+	<key name="auth_action_label_manage_ticket_settings">
+		<value>Manage Ticket Settings</value>
+	</key>
+	<key name="auth_action_label_view_tickets">
+		<value>Manage Tickets</value>
+	</key>
+	<key name="ticket_notification_string">
+		<value>&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; submitted a ticket: &lt;a href="{$url}"&gt;"{$title}"&lt;/a&gt;</value>
+	</key>
+	<key name="ticket_notification_post">
+		<value>&lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt; replied in &lt;a href="{$postUrl}"&gt;{$title}&lt;/a&gt;
+			Ticket
+		</value>
+	</key>
+	<key name="auth_group_label">
+		<value>Ticketing</value>
+	</key>
+	<key name="select_locked">
+		<value>Locked tickets</value>
+	</key>
+	<key name="select_unlocked">
+		<value>Unlocked tickets</value>
+	</key>
+	<key name="database_record_deleted">
+		<value>Record removed successfully</value>
+	</key>
+	<key name="category_activated_successfully">
+		<value>Category activated successfully</value>
+	</key>
+	<key name="category_deactivated_successfully">
+		<value>Category deactivated successfully</value>
+	</key>
+</prefix>

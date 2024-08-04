@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>plugin</name>
+    <key>passwordsecurity</key>
+    
+        قرار دادن رمز روی قسمت های برنامه مثل بخش پیام رسان
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10800</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>private</item>
+    </category>
+</plugin>

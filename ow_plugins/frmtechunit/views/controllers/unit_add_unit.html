@@ -1,0 +1,94 @@
+<div class="ow_frmtechunit ow_automargin">
+    {form name="add_unit"}
+    <table class="ow_table_1 ow_form">
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='name' }
+            </td>
+            <td>
+                {input name='name'}<br />
+                {error name='name'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='image' }
+            </td>
+            <td>
+                {input name='image'}<br />
+                {error name='image'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='qr_code' }
+            </td>
+            <td>
+                {input name='qr_code'}<br />
+                {error name='qr_code'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='manager' }
+            </td>
+            <td>
+                {input name='manager'}<br />
+                {error name='manager'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='address' }
+            </td>
+            <td>
+                {input name='address'}<br />
+                {error name='address'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='phone' }
+            </td>
+            <td>
+                {input name='phone'}<br />
+                {error name='phone'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='email' }
+            </td>
+            <td>
+                {input name='email'}<br />
+                {error name='email'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td>
+                {label name='website' }
+            </td>
+            <td>
+                {input name='website'}<br />
+                {error name='website'}
+            </td>
+        </tr>
+        {foreach from=$sections item=section}
+            <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+                <td>
+                    {label name=$section}
+                </td>
+                <td>
+                    {input name=$section}<br />
+                    {error name=$section}
+                </td>
+            </tr>
+        {/foreach}
+    </table>
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+            {submit name="submit"}
+        </div>
+    </div>
+    {/form}
+</div>

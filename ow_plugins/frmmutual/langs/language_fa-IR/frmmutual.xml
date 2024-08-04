@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmutual" label="frmmutual" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            دوستان مشترک
+        </value>
+    </key>
+    <key name="settings_successfuly_saved">
+        <value>تنظیمات با موفقیت ذخیره شد</value>
+    </key>
+    <key name="view_all">
+        <value>
+            نمایش همه ({$number})
+        </value>
+    </key>
+    <key name="empty_list">
+        <value>
+            شما دوست مشترکی ندارید
+        </value>
+    </key>
+    <key name="number_of_mutual_friends_setting">
+        <value>
+        تنظیمات
+        </value>
+    </key>
+    <key name="numberOfMutualFriends">
+        <value>
+        حداکثر تعداد دوست مشترک به کاربر
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            تنظیمات افزونه دوستان مشترک
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            تنظیمات افزونه دوستان مشترک
+        </value>
+    </key>
+</prefix>

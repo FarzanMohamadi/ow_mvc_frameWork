@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsuggestfriend" label="frmsuggestfriend" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Suggest friends
+        </value>
+    </key>
+    <key name="empty_list">
+        <value>
+            There is no one to suggest.
+        </value>
+    </key>
+</prefix>

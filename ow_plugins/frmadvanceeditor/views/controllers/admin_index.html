@@ -1,0 +1,35 @@
+<div class="ow_automargin ow_wide">
+    {form name="editor_config_form"}
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="2">
+                <span class="ow_section_icon ow_ic_gear_wheel">{text key="base+widgets_fb_setting_box_title"}</span>
+            </th>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td style="width: 50%">
+                {label name='max_symbols_count'}
+            </td>
+            <td>
+                {input name='max_symbols_count' style="width: 50px;"}<br />
+                {error name='max_symbols_count'}
+            </td>
+        </tr>
+
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td style="width: 50%">
+                {label name='is_custom_html_widget_advance'}
+            </td>
+            <td>
+                {input name='is_custom_html_widget_advance' style="width: 50px;"}<br />
+                {error name='is_custom_html_widget_advance'}
+            </td>
+        </tr>
+    </table>
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+            {submit name="save"}
+        </div>
+    </div>
+    {/form}
+</div>

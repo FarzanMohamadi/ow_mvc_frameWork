@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmdemo" label="frmdemo" language_tag="en" language_label="English">
+    <key name="admin_panel">
+        <value>Go to admin panel</value>
+    </key>
+    <key name="reset_data">
+        <value>Demo resets in:</value>
+    </key>
+    <key name="theme">
+        <value>Themes</value>
+    </key>
+</prefix>

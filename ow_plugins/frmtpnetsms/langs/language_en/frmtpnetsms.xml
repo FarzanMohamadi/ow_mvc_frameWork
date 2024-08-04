@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtpnetsms" label="frmtpnetsms" language_tag="en" language_label="English">
+    <key name="admin_settings_title">
+        <value>
+            TPNET SMS service setting
+        </value>
+    </key>
+    <key name="user_id_label">
+        <value>
+            USER ID
+        </value>
+    </key>
+    <key name="password_label">
+        <value>
+            PASSWORD
+        </value>
+    </key>
+    <key name="originator_label">
+        <value>
+            ORIGINATOR
+        </value>
+    </key>
+    <key name="url_label">
+        <value>
+            URL
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            Saved successfully
+        </value>
+    </key>
+</prefix>

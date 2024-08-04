@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcommentplus" label="frmcommentplus" language_tag="en" language_label="English">
+	<key name="comment_notification_string"><value>&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; also commented on &lt;a href="{$contextUrl}"&gt; this status &lt;/a&gt; by &lt;a href="{$ownerUrl}"&gt;{$ownerName}&lt;/a&gt;'s post.</value></key>
+	<key name="comment_notification_string_for_confession"><value>&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; also commented on Someone's confession.</value></key>
+	<key name="comment_news_string">
+		<value>
+			&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; also commented on &lt;a href="{$contextUrl}"&gt; this news &lt;/a&gt;
+		</value>
+	</key>
+</prefix>

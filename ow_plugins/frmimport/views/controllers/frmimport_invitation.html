@@ -1,0 +1,38 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_txtcenter">
+    <h1 class="ow_icon_control ow_ic_moderator ow_smallmargin">
+        {text key="frmimport+invite_users_desc"}
+    </h1>
+</div>
+
+
+<div class=".ow_canvas">
+    <form action="{$actionInvitationForm}" method="post" name="{$invitationFormName}">
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_first">
+                <th><a href="{$skipUrl}">{text key="frmimport+skip_label"}</a></th>
+                <th>{decorator name='button' langLabel='frmimport+invite_user' class="add_button" type='submit'}</th>
+            </tr>
+            <tr class="ow_tr_first">
+                <th colspan="2"><input checked type="checkbox" id="select_all_imported" />{text key="frmimport+select_all"}</th>
+            </tr>
+            {foreach from=$emailsInformation item="emailInformation"}
+            <tr class="ow_high1">
+                <td style="max-width: 20px;width: 20px;"><input checked type="checkbox"
+                                                                name="{$emailInformation.email}"/></td>
+                <td style="width: 30px;">{$emailInformation.email}</td>
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+    </form>
+</div>

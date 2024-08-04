@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsso" label="frmsso" language_tag="fa-IR" language_label="فارسی">
+    <key name="captcha_activate_label">
+        <value>نمایش کپچا در فرم ورود</value>
+    </key>
+	<key name="captcha_try_label">
+        <value>تعداد دفعات تلاش ناموفق برای نمایش کپچا در فرم ورود (خالی گذاشتن برای نمایش همیشگی کپچا)</value>
+    </key>
+	<key name="block_activate_label">
+        <value>مسدود کردن کاربران ناهنجار</value>
+    </key>
+	<key name="block_try_label">
+        <value>تعداد دفعات تلاش ناموفق در فرم ورود/ثبت‌نام برای کاربران ناهنجار</value>
+    </key>
+	<key name="Lock_per_minute_label">
+        <value>میزان زمان قفل شدن کاربران (به دقیقه)</value>
+    </key>
+	<key name="title_locked">
+        <value>شما مسدود شده‌اید!</value>
+    </key>
+    <key name="description_locked">
+        <value>حساب کاربری شما به دلیل مسائل امنیتی قفل شده است. حساب کاربری شما در زمان مشخص شده از قفل در می آید.</value>
+    </key>
+	 <key name="settings_successfuly_saved">
+        <value>تنظیمات با موفقیت ذخیره شد.</value>
+    </key>
+    <key name="admin_page_heading">
+        <value>تنظیمات افزونه احراز هویت کاربران از طریق SSO مرکز راهکارها</value>
+    </key>
+    <key name="admin_page_title">
+        <value>احراز هویت کاربران از طریق SSO مرکز راهکارها</value>
+    </key>
+    <key name="ssoUrl">
+        <value>آدرس کارگزار احراز هویت</value>
+    </key>
+    <key name="ssoTicketValidationUrl">
+        <value>آدرس احراز صحت تیکت</value>
+    </key>
+    <key name="ssoLoginUrl">
+        <value>آدرس صفحه ورود کارگزار</value>
+    </key>
+    <key name="ssoLogoutUrl">
+        <value>آدرس خروج از سامانه کارگزار</value>
+    </key>
+    <key name="ssoRegistrationUrl">
+        <value>آدرس ثبت نام</value>
+    </key>
+    <key name="ssoChangePasswordUrl">
+        <value>آدرس تغییر گذرواژه</value>
+    </key>
+    <key name="ssoServerSecret">
+        <value>کد امنیتی کارگزار</value>
+    </key>
+    <key name="ssoClientSecret">
+        <value>کد امنیتی مشتری</value>
+    </key>
+    <key name="ssoCookieKey">
+        <value>کلید کوکی کارگزار احراز هویت</value>
+    </key>
+    <key name="ssoSameDomain">
+        <value>آیا وبگاه در دامنه کارگزار احراز هویت قرار دارد؟</value>
+    </key>
+    <key name="autoRegisterUsers">
+        <value>ثبت نام خودکار کاربران</value>
+    </key>
+    <key name="usersDetailsUrl">
+        <value>آدرس اخذ جزئیات اطلاعات کاربران</value>
+    </key>
+    <key name="SSOCreationUserEmailExistsError">
+        <value>ایمیل کاربر در سامانه وجود دارد. کاربر ایجاد نشد.</value>
+    </key>
+    <key name="ssoSharedCookieDomain">
+        <value>دامنه SSO برای تنظیم کوکی مشترک</value>
+    </key>
+    <key name="sign_up_button">
+        <value>ثبت‌نام</value>
+    </key>
+    <key name="usernameComesFromSSO">
+        <value>نام کاربر از سامانه احراز هویت مرکزی گرفته شده است.</value>
+    </key>
+    <key name="emailComesFromSSO">
+        <value>ایمیل از سامانه احراز هویت مرکزی گرفته شده است. اما می‌توانید آن را تغییر دهید. در صورت تغییر می‌بایست آن را تایید کنید.</value>
+    </key>
+    <key name="field_mobile_label">
+        <value>
+            شماره تلفن همراه
+        </value>
+    </key>
+    <key name="field_mobile_description">
+        <value> </value>
+    </key>
+</prefix>

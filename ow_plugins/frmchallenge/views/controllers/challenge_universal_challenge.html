@@ -1,0 +1,185 @@
+<div class="solitary_challenge challenge_item">
+    <h1>
+        {$challenge.title}
+    </h1>
+    {if isset($userIsManager) && $userIsManager}
+        <a href="{$removeLink}">{text key='frmchallenge+remove_challenges'}</a>
+    {/if}
+    {if isset($question.not_start)}
+        <div class="challenge_info">
+            {text key='frmchallenge+challenge_not_start'}
+        </div>
+    {else if isset($question.finish_status)}
+    <div class="challenge_info">
+        {text key='frmchallenge+finish_challenge_description'}
+    </div>
+    {else}
+        {if $question.finish}
+        <div class="challenge_info">
+            {text key='frmchallenge+finish_universal_challenge_description'}
+        </div>
+        {/if}
+    {/if}
+    {if !$question.finish && !isset($question.not_start)}
+    <div class="challenge_info remaining_time">
+        <div class="title">
+            {text key='frmchallenge+remaining_time'}
+        </div>
+        <div id="challenge_question_counter"></div>
+    </div>
+    {/if}
+    <div class="challenge_info">
+        <div class="description">
+            {$challenge.description}
+        </div>
+    </div>
+</div>
+<div class="solitary_challenge_question">
+    {if !$question.finish && !isset($question.not_start)}
+    {form name=answers_form}
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_alt2 ow_tr_last">
+            <td class="ow_label" style="width:40%;">
+                {text key='frmchallenge+question'}
+            </td>
+            <td class="ow_value">{$question.title}</td>
+        </tr>
+        <tr class="ow_alt2 ow_tr_last">
+            <td class="ow_label" style="width:40%;">{label name='answerId'}</td>
+            <td class="ow_value">{input name='answerId'}</td>
+        </tr>
+        <tr class="ow_alt2 ow_tr_last">
+            <td colspan="2" class="ow_label">
+                {if !empty($question.value)}
+                <div class="your_answer">
+                    {text key='frmchallenge+user_value'}
+                    {$question.value}
+                </div>
+                <div class="info">
+                    {text key='frmchallenge+wait_for_opponent_answer'}
+                </div>
+                {else}
+                <div class="submit_answer">
+                    {submit name='submit'}
+                </div>
+                {/if}
+            </td>
+        </tr>
+    </table>
+    {/form}
+    {/if}
+</div>
+<div class="solitary_challenge challenge_item">
+    <h1>
+        {text key='frmchallenge+more_information'}
+    </h1>
+    {if !isset($question.not_start)}
+    <div class="challenge_info">
+        <div class="user_point self_point">
+            <div class="label">
+                {text key='frmchallenge+user_point'}
+            </div>
+            <div class="value">
+                {$question.userPoint}
+            </div>
+        </div>
+    </div>
+    {/if}
+    <div class="challenge_info">
+        {if $challenge.max_point > 0}
+        <div class="max_point">
+            <div class="label">
+                {text key='frmchallenge+max_point'}
+            </div>
+            <div class="value">
+                {$challenge.max_point}
+            </div>
+        </div>
+        {/if}
+    </div>
+
+    {if isset($challenge.winner_username)}
+    <div class="challenge_info">
+        <div class="winner label">
+            {$challenge.winner_label}
+        </div>
+        <div class="winner value">
+            <a href="{$challenge.winner_url}">
+                {$challenge.winner_username}
+            </a>
+        </div>
+        <div class="win_point point_item">
+            <div class="label">
+                {text key='frmchallenge+point'}
+            </div>
+            <div class="value">
+                {$challenge.winner_point}
+            </div>
+        </div>
+    </div>
+    {/if}
+    {if isset($question.start_date)}
+    <div class="challenge_info">
+        <div class="finish_date">
+            <div class="label">
+                {text key='frmchallenge+start_time'}
+            </div>
+            <div class="value">
+                {$question.start_date}
+            </div>
+        </div>
+    </div>
+    {/if}
+    {if isset($question.finish_date)}
+    <div class="challenge_info">
+        <div class="finish_date">
+            <div class="label">
+                {text key='frmchallenge+finish_date'}
+            </div>
+            <div class="value">
+                {$question.finish_date}
+            </div>
+        </div>
+    </div>
+    {/if}
+    <div class="challenge_info">
+        <div class="categories">
+            <div class="label">
+                {text key='frmchallenge+category'}
+            </div>
+            <div class="value">
+                {$challenge.categories_string}
+            </div>
+        </div>
+        {if $challenge.min_point > 0}
+        <div class="max_point">
+            <div class="label">
+                {text key='frmchallenge+min_point_label'}
+            </div>
+            <div class="value">
+                {$challenge.min_point}
+            </div>
+        </div>
+        {/if}
+    </div>
+</div>
+{if sizeof($challenge.users_point) > 0 && !isset($question.not_start)}
+<div class="solitary_challenge challenge_item">
+    <h1>
+        {text key='frmchallenge+users_point_label'}
+    </h1>
+    {foreach from=$challenge.users_point item='user'}
+    <div class="challenge_info">
+        <div class="user_point self_point">
+            <div class="label">
+                {$user.index} -
+                <a href="{$user.url}">{$user.username}</a>
+            </div>
+            <div class="value">
+                {$user.point}
+            </div>
+        </div>
+    </div>
+    {/foreach}
+</div>
+{/if}

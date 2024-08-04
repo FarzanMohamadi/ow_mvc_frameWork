@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmstaticupdater" label="frmstaticupdater" language_tag="en" language_label="English">
+    <key name="description">
+        <value>
+            Admin user can update all static files with calling url of "domain/update-all-static-files/" in browser (Only work in desktop versions). This work recommended after plugin or theme updated.
+        </value>
+    </key>
+    <key name="successfully_update">
+        <value>
+            All static files updated successfully. Please clear the browser cache.
+        </value>
+    </key>
+		<key name="update_static_files">
+        <value>
+            click here to update static files
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            Settings of static updater plugin
+        </value>
+    </key>
+    <key name="update_language_description">
+        <value>
+            Also all languages values can be updated using button.
+        </value>
+    </key>
+    <key name="update_language_button">
+        <value>
+            Update languages
+        </value>
+    </key>
+    <key name="update_language_successfully">
+        <value>
+            Languages values updated.
+        </value>
+    </key>
+</prefix>

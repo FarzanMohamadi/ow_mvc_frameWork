@@ -1,0 +1,40 @@
+{if isset($accessDenied)}
+    <div class="ow_nocontent">{text key='frmsubgroups+access_denied_message'}</div>
+{else}
+    <div class="owm_sub_group_widget">
+        {foreach from=$subgroupList item='group' name='group'}
+        <div class="owm_sub_groups_widget_item">
+            <a class="groupImage" href="{$group.url}" target="_blank">
+                <img src="{$group.imageUrl}" alt="{$group.title|escape}" title="{$group.title}"/>
+            </a>
+            <a href="{$group.url}" target="_blank">{$group.title} </a>
+        </div>
+        {foreachelse}
+        <div class="owm_sub_groups_widget_item">
+            <span>
+                <div class="owm_nocontent">{text key='frmsubgroups+subgroup_list_widget_empty'}</div>
+            </span>
+        </div>
+        {/foreach}
+        <p class="owm_sub_groups_widget_counter">
+            {text key='frmsubgroups+subgroups_count'}: {$subgroupsCount}
+        </p>
+
+        {if isset($showCreate) && $showCreate==true}
+        <div class="owm_box_toolbar">
+            <span class="ow_nowrap">
+                <a href="{$createSubgroupLink}">{text key="frmsubgroups+create_subgroup"}</a>
+            </span>
+        </div>
+        {/if}
+
+        {if isset($showCreate) && $showCreate==true}
+        <div class="owm_box_toolbar">
+            <span class="ow_nowrap">
+                <a href="{$view_all_subGroups}">{text key="frmsubgroups+view_all_subgroups"}</a>
+            </span>
+        </div>
+        {/if}
+
+    </div>
+{/if}

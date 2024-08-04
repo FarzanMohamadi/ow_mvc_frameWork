@@ -1,0 +1,69 @@
+<ul class="ow_bl clearfix ow_small ow_right">
+    {if $allowEdit}
+    <li><a href="{$info.editUrl}">{text key="frmgrant+edit"}</a></li>
+    <li><a href="{$info.delete.url}" onclick="return confirm('{$info.delete.confirmMessage}');">{text
+        key="frmgrant+delete"}</a></li>
+    {/if}
+
+</ul>
+<div class="ow_frmgrant">
+    <table class=" ow_nomargin  data_table" style="width: 100%; font-size: 14px;">
+        <tbody>
+        <tr class="ow_tr_first">
+        </tr>
+        <tr class="ow_tr_first">
+            <th colspan="3" class="ow_section"><span>{text key="frmgrant+grant_heading_view_table"}</span></th>
+        </tr>
+        <tr>
+            <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmgrant+grant_title"}
+            </td>
+            <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.title}</td>
+        </tr>
+        {if isset($info.prof)}
+        <tr>
+            <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmgrant+grant_prof"}
+            </td>
+            <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.prof}</td>
+        </tr>
+        {/if}
+        {if isset($info.college)}
+        <tr>
+            <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmgrant+grant_college"}
+            </td>
+            <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.college}</td>
+        </tr>
+        {/if}
+        {if isset($info.lab)}
+        <tr>
+            <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmgrant+grant_lab"}
+            </td>
+            <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.lab}</td>
+        </tr>
+        {/if}
+        {if isset($info.started)}
+        <tr>
+            <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmgrant+grant_started"}
+            </td>
+            <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.started}</td>
+        </tr>
+        {/if}
+        {if isset($info.desc)}
+        <tr>
+            <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmgrant+grant_desc"}
+            </td>
+            <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.desc}</td>
+        </tr>
+        {/if}
+        </tbody>
+    </table>
+    <div class="button_container">
+        <ul class="ow_bl clearfix ow_small">
+            <li>
+                <a href="{$grantsListUrl}">
+                    {text key="frmgrant+grants_list"}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmobileaccount" label="frmmobileaccount" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_save_settings">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات حساب کاربری تلفن همراه
+        </value>
+    </key>
+    <key name="wrong_code">
+        <value>
+            کد وارد شده اشتباه است.
+        </value>
+    </key>
+    <key name="sent_code">
+        <value>
+            کد از طریق پیامک ارسال شد.
+        </value>
+    </key>
+    <key name="wrong_mobile">
+        <value>
+            شماره تلفن همراه وارد شده اشتباه است.
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت ذخیره شد.
+        </value>
+    </key>
+    <key name="mobile_number">
+        <value>
+            شماره تلفن همراه
+        </value>
+    </key>
+    <key name="mobile_code">
+        <value>
+            کد ارسالی
+        </value>
+    </key>
+    <key name="expired_cookie">
+        <value>
+            تعداد روزهای نگهداری کوکی کاربران
+        </value>
+    </key>
+    <key name="enter_code">
+        <value>
+            کد ارسالی به تلفن همراه خود را وارد نمایید.
+        </value>
+    </key>
+    <key name="check_code">
+        <value>
+            بررسی کد
+        </value>
+    </key>
+    <key name="login_label">
+        <value>
+            ورود
+        </value>
+    </key>
+    <key name="back_label">
+        <value>
+            بازگشت
+        </value>
+    </key>
+    <key name="base_sign_in_txt">
+        <value>
+            شماره تلفن همراه خود را وارد نمایید.
+        </value>
+    </key>
+    <key name="mobile_menu_item">
+        <value>
+            ورود به حساب کاربری
+        </value>
+    </key>
+    <key name="login_type_version">
+        <value>
+            نوع نسخه ورود
+        </value>
+    </key>
+    <key name="join_type_version">
+        <value>
+            نوع نسخه ثبت‌نام
+        </value>
+    </key>
+    <key name="join_label">
+        <value>
+            ثبت‌نام
+        </value>
+    </key>
+    <key name="create_successfully">
+        <value>
+            شما با موفقیت ثبت‌نام نمودید.
+        </value>
+    </key>
+    <key name="exist_username">
+        <value>
+            نام کاربری وارد شده موجود است.
+        </value>
+    </key>
+    <key name="exist_mobile">
+        <value>
+            شماره تلفن همراه وارد نموده موجود است.
+        </value>
+    </key>
+    <key name="base_join_txt">
+        <value>
+            به منظور ایجاد حساب کاربری، نام کاربری و تلفن همراه خود را وارد نمایید.
+        </value>
+    </key>
+    <key name="resending_token">
+        <value>
+            در حال ارسال مجدد کد احراز هویت
+        </value>
+    </key>
+    <key name="resend_token_successfully">
+        <value>
+            با موفقیت ارسال شد.
+        </value>
+    </key>
+    <key name="try_again">
+        <value>
+            لطفا مجددا تلاش نمایید.
+        </value>
+    </key>
+    <key name="resend_label">
+        <value>
+            ارسال مجدد کد
+        </value>
+    </key>
+    <key name="login_with_username_password">
+        <value>
+            ورود از طریق گذرواژه
+        </value>
+    </key>
+    <key name="login_with_sms">
+        <value>
+            ورود و ثبت‌نام از طریق کد پیامکی
+        </value>
+    </key>
+    <key name="base_sign_in_txt_username_password">
+        <value>
+            اطلاعات ورود خود را وارد نمایید.
+        </value>
+    </key>
+    <key name="account_sms">
+        <value>
+            حساب کاربری شما در شبکه {$site_name}: نام کاربری: {$username}. گذرواژه: {$password}
+        </value>
+    </key>
+    <key name="mandatory">
+        <value>
+            ضروری
+        </value>
+    </key>
+    <key name="optional">
+        <value>
+            اختیاری
+        </value>
+    </key>
+    <key name="sms_text_general_part">
+        <value>
+            پیوند ورود/عضویت در {$site}
+        </value>
+    </key>
+    <key name="sms_text_website_part">
+        <value>
+            از طریق وبگاه: {$site}
+        </value>
+    </key>
+    <key name="username_prefix">
+        <value>
+            پیشوند نام‌کاربری برای تولید خودکار آن
+        </value>
+    </key>
+    <key name="email_postfix">
+        <value>
+            پسوند ایمیل برای تولید خودکار آن
+        </value>
+    </key>
+    <key name="sms_text_welcome_name_part">
+        <value>
+            آقای/خانم {$name} گرامی،
+        </value>
+    </key>
+    <key name="sms_text_welcome_invitation_part">
+        <value>
+            از شما دعوت شده تا به {$site} بپیوندید.
+        </value>
+    </key>
+    <key name="sms_max_try_met">
+        <value>
+            تعداد درخواست‌های ناموفق شما از حد مجاز بیشتر شده است. لطفا با مدیریت سامانه تماس بگیرید
+        </value>
+    </key>
+    <key name="sms_code_resend_message">
+        <value>
+            کد پیامکی دوباره برای شما ارسال گردید.
+        </value>
+    </key>
+    <key name="change_your_username_notification">
+        <value>
+            لطفا نام کاربری خود را ویرایش نمائید
+        </value>
+    </key>
+    <key name="notification_section_label">
+        <value>
+            ورود به حساب کاربری از طریق ارسال پیامک
+        </value>
+    </key>
+    <key name="email_notifications_setting_user_register">
+        <value>
+            کاربری با شماره تلفن‌همراه عضو شده و نام کاربری را تغییر نداده است
+        </value>
+    </key>
+    <key name="ssoGetToken">
+        <value>
+            دریافت توکن
+        </value>
+    </key>
+</prefix>

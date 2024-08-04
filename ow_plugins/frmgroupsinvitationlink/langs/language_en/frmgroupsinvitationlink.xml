@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmgroupsinvitationlink" label="frmgroupsinvitationlink" language_tag="en" language_label="English">
+    <key name="widget_link_label">
+        <value>
+            invitation link
+        </value>
+    </key>
+    <key name="view_all_links">
+        <value>
+            link history
+        </value>
+    </key>
+    <key name="no_link">
+        <value>
+            no active links
+        </value>
+    </key>
+    <key name="no_link_click_to_create_one">
+        <value>
+            There is no link. In order to create a new link, click on the create link button.
+        </value>
+    </key>
+    <key name="add_link">
+        <value>
+            generate new link
+        </value>
+    </key>
+    <key name="add_link_confirm">
+        <value>
+            are you sure about generating new link?
+        </value>
+    </key>
+    <key name="link_generation_success_message">
+        <value>
+            the link generated successfully!
+        </value>
+    </key>
+    <key name="link_generation_failure_message">
+        <value>
+            link generation failure. please try again!
+        </value>
+    </key>
+    <key name="active_link">
+        <value>
+            active
+        </value>
+    </key>
+    <key name="deactivated_link">
+        <value>
+            deactivated
+        </value>
+    </key>
+    <key name="deactivate_link_button">
+        <value>
+            disable
+        </value>
+    </key>
+    <key name="create_date">
+        <value>
+            creation time
+        </value>
+    </key>
+    <key name="hash_link">
+        <value>
+            address
+        </value>
+    </key>
+    <key name="status">
+        <value>
+            status
+        </value>
+    </key>
+    <key name="creator_user">
+        <value>
+            creator
+        </value>
+    </key>
+    <key name="related_users">
+        <value>
+            related users
+        </value>
+    </key>
+    <key name="show">
+        <value>
+            detail
+        </value>
+    </key>
+    <key name="show_all_users_joined_with_link">
+        <value>
+            show all users joined with links
+        </value>
+    </key>
+    <key name="access_denied_for_see_link">
+        <value>
+            you are not allowed to see this link
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            groups invitation link setting
+        </value>
+    </key>
+    <key name="link_expiration_time">
+        <value>
+            link expiration time (days)
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            submit
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            groups invitation link plugin setting
+        </value>
+    </key>
+    <key name="link_user_list_page_heading">
+        <value>
+            users joined by chosen link
+        </value>
+    </key>
+    <key name="all_links_user_list_page_heading">
+        <value>
+            all users joined by links
+        </value>
+    </key>
+    <key name="link_user_list_page_title">
+        <value>
+            users joined by chosen link
+        </value>
+    </key>
+    <key name="all_links_user_list_page_title">
+        <value>
+            all users joined by links
+        </value>
+    </key>
+    <key name="back_button">
+        <value>
+            back
+        </value>
+    </key>
+    <key name="links_page_title">
+        <value>
+            links history
+        </value>
+    </key>
+    <key name="links_page_heading">
+        <value>
+            links history
+        </value>
+    </key>
+    <key name="group_name">
+        <value>
+            group :
+        </value>
+    </key>
+    <key name="number_of_users">
+        <value>
+            total number : {$number}
+        </value>
+    </key>
+    <key name="related_link">
+        <value>
+            related link : {$link}
+        </value>
+    </key>
+    <key name="deep_link_label">
+        <value>
+            Deep link address
+        </value>
+    </key>
+    <key name="are_you_want_to_open_group_in_application">
+        <value>
+            are you want to open this group in android application?
+        </value>
+    </key>
+</prefix>

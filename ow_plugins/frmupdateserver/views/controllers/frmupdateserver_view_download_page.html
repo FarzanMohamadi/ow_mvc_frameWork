@@ -1,0 +1,213 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+<div class="plugin-full-center-content">
+	<div class="ow_wide">
+		<div id="frmus_download_latest_version" class="st_download_shub_item">
+			<p class="frmus_description_header">
+                <b>{text key="frmupdateserver+download_last_core_version_title"}</b>
+	        </p>
+	        <p class="frmus_description_core">
+	            {text key="frmupdateserver+download_core_main_description"}
+	            (<a href="{$urlOfSha256CoreMainLatestVersions}">Sha256</a>)
+	        </p>
+            <p class="frmus_description_core">
+                <a class="version-logs" data-type="core" data-key="" data-header="{$core_header}">
+                    <i>{text key="frmupdateserver+view_versions"}</i>
+                </a>
+            </p>
+            <p class="frmus_description_item">
+	            <span>
+	                {text key="frmupdateserver+date_released"}
+					<b>{$date_core_released}</b>
+				</span>
+            </p>
+            <div class="frmus_download_btn_wrapper">
+                <a class="frmus_download_btn" onclick="{$urlOfCoreMainLatestVersions}">
+                    <b>{text key="frmupdateserver+download_fullversion_label"}
+                        <span class="frmus_download_btn_subtext">({$download_last_build_version_label})</span>
+                    </b>
+                </a>
+            </div>
+		</div>
+		<div id="st_upgrade_latest_version" class="st_download_shub_item">
+			<p class="frmus_description_header">
+                <b>{text key="frmupdateserver+download_last_core_update_version_title"}</b>
+	        </p>
+	        <p class="frmus_description_core">
+	            {$download_core_update_description}
+	            (<a href="{$urlOfSha256CoreUpdateLatestVersions}">Sha256</a>)
+	        </p>
+            <p class="frmus_description_core">
+                <a class="version-logs" data-type="core" data-key="" data-header="{$core_header}">
+                    <i>{text key="frmupdateserver+view_versions"}</i>
+                </a>
+                <br>
+                <a href="http://docs./doku.php?id=%D8%A8%D9%87_%D8%B1%D9%88%D8%B2%D8%B1%D8%B3%D8%A7%D9%86%DB%8C_%D9%85%D9%88%D8%AA%D9%88%D8%B4%D8%A7%D8%A8" target="_blank">
+                    <i>{text key="frmupdateserver+update_guideline"}</i>
+                </a>
+            </p>
+            <p class="frmus_description_item">
+	            <span>
+	                {text key="frmupdateserver+date_released"}
+					<b>{$date_core_released}</b>
+				</span>
+            </p>
+            <div class="frmus_download_btn_wrapper">
+                <a class="frmus_download_btn" onclick="{$urlOfCoreUpdateLatestVersions}">
+                    <b>{text key="frmupdateserver+download_fullversion_label"}
+                        <span class="frmus_download_btn_subtext">({$download_last_build_version_label})</span>
+                    </b>
+                </a>
+            </div>
+		</div>
+	</div>
+	<div class="ow_narrow" style="width: 30%;">
+		<div class="item-information">
+	        <p>
+	            <a class="st_smooth_scroll" href="#plugins">
+	                <img title='{text key="frmupdateserver+plugins_sample"}' alt='{text key="frmupdateserver+plugins_sample"}' src="{$pluginsImageUrl}"/>
+	            </a>
+	        </p>
+	        <p class="description_item">
+	            <a class="st_smooth_scroll" href="#plugins">
+	                <b>{text key="frmupdateserver+plugins_sample"}</b>
+	            </a>
+	        </p>
+		</div>
+		<div class="item-information theme">
+	           <p>
+	               <a class="st_smooth_scroll" href="#themes">
+	                   <img title='{text key="frmupdateserver+themes_sample"}' alt='{text key="frmupdateserver+themes_sample"}' src="{$themesImageUrl}"/>
+	               </a>
+	           </p>
+	           <p class="description_item">
+	               <a class="st_smooth_scroll" href="#themes">
+	                   <b>{text key="frmupdateserver+themes_sample"}</b>
+	               </a>
+	           </p>
+		</div>
+	</div>
+</div>
+
+<div class="plugin-full-center-content" id="plugins">
+    <h2 class="shub_header_style">
+        {text key="frmupdateserver+plugins_sample"}
+    </h2>
+    <br/>
+    <p class="description">
+        {$download_plugins_description}
+    </p>
+    <br/>
+    <div class="category_section">
+        <p class="category_description">
+            {text key="frmupdateserver+category_description"}
+        </p>
+        <select id="pluginCategorySelectBox" onchange="pluginCategoryFilter()">
+            <option id=0>{text key="frmupdateserver+all_categories"}</option>
+            {foreach $categoryList item="item"}
+            <option id={$item.id}>{$item.label}</option>
+            {/foreach}
+        </select>
+    </div>
+    <br/>
+    {foreach from=$pluginItems item="item"}
+    <div class="plugin-information {$item.categories}">
+    	<div class="st_top_info clearfix">
+    		<div class="st_top_info_title">
+    			{$item.name}
+    		</div>
+    		<div class="st_top_info_icon">
+	            <img title='{$item.name}' alt='{$item.name}' src="{$item.image}" />
+    		</div>
+    	</div>
+        <p class="description">{$item.description}</p>
+        <p class="download">
+            <a href="{$item.downloadSha256Url}" target="_blank">
+                <img src="{$sha256IconUrl}" title='{text key="frmupdateserver+sha256_label"}'>
+            </a>
+
+            {if isset($item.guidelineUrl)}
+            <a href="{$item.guidelineUrl}" target="_blank">
+                <img src="{$guidelineIconUrl}" title='{text key="frmupdateserver+view_guideline"}'>
+            </a>
+            {/if}
+
+            <a class="version-logs" data-type="plugins" data-key="{$item.key}" data-header="{$item.header}">
+                <img src="{$archivesIconUrl}" title='{text key="frmupdateserver+view_versions"}'>
+            </a>
+
+            <a class="ow_cursor_pointer" onclick="{$item.downloadUrl}" target="_blank">
+                <img src="{$downloadIconUrl}" title='{text key="frmupdateserver+download_last_version"}'>
+            </a>
+            {if isset($item.version)}
+            <br/>
+            <span>
+                {text key="frmupdateserver+last_version_buildNumber"}
+                <b>{$item.version}</b>
+            </span>
+            {/if}
+            {if isset($item.releasedDate)}
+            <br/>
+             <span>
+                {text key="frmupdateserver+date_released"}
+                <b>{$item.releasedDate}</b>
+             </span>
+            {/if}
+        </p>
+    </div>
+    {/foreach}
+</div>
+
+<div class="plugin-full-center-content" id="themes">
+    <h2 class="shub_header_style">
+        {text key="frmupdateserver+themes_sample"}
+    </h2>
+    <br/>
+    <p class="description">
+        {$download_themes_description}
+    </p>
+    <br/>
+    {foreach from=$themeItems item="item"}
+    <div class="themes-information">
+        <p>
+            {$item.name}
+        </p>
+        <a href="{$item.image}" onclick="OW.showImageInFloatBox(this.href); return false;">
+            <img title='{$item.name}' alt='{$item.name}' src="{$item.image}"/>
+        </a>
+        <p class="download">
+            <a href="{$item.downloadSha256Url}" target="_blank">
+                <img src="{$sha256IconUrl}" title='{text key="frmupdateserver+sha256_label"}'>
+            </a>
+
+            <a class="version-logs" data-type="themes" data-key="{$item.key}" data-header="{$item.header}">
+                <img src="{$archivesIconUrl}" title='{text key="frmupdateserver+view_versions"}'>
+            </a>
+
+            <a class="ow_cursor_pointer" onclick="{$item.downloadUrl}" target="_blank">
+                <img src="{$downloadIconUrl}" title='{text key="frmupdateserver+download_last_version"}'>
+            </a>
+            {if isset($item.version)}
+            <br/>
+            <span>
+                {text key="frmupdateserver+last_version_buildNumber"}
+                <b>{$item.version}</b>
+            </span>
+            {/if}
+            {if isset($item.releasedDate)}
+            <br/>
+             <span>
+                {text key="frmupdateserver+date_released"}
+                <b>{$item.releasedDate}</b>
+             </span>
+            {/if}
+        </p>
+    </div>
+    {/foreach}
+</div>

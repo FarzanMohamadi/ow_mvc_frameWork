@@ -1,0 +1,76 @@
+<table class="ow_table_1 ow_automargin" style="min-width: 400px;">
+    <tr>
+        <th>{text key='frmjcse+table_citation_th_delete'}</th>
+        <th>{text key='frmjcse+table_citation_th_title'}</th>
+        <th>{text key='frmjcse+table_citation_th_format'}</th>
+    </tr>
+    {foreach from=$citations item="citation"}
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td width="1"><a href="{$deleteUrls[$citation.id]}" onclick="return confirm('{text key="base+are_you_sure"}');" style="width:16px; height:16px; display:block; margin:0 auto;background-repeat:no-repeat;background-position: 50% 50%;" class="ow_ic_delete"></a></td>
+        <td>{$citation.title}</td>
+        <td>{$citation.format}</td>
+    </tr>
+    {/foreach}
+</table>
+
+<h1>{text key='frmjcse+ciatation_setting_h1'}</h1>
+{form name='add_citation_format'}
+<table class="ow_table_1 ow_form ow_automargin" style="min-width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='title'}</td>
+        <td class="ow_value">{input name='title'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='format'}</td>
+        <td class="ow_value">{input name='format'}</td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">{submit name='add' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}
+
+<h1>{text key='frmjcse+ciatation_setting_guide'}</h1>
+<table class="ow_table_1 ow_form ow_automargin" style="min-width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_label">Normal</td>
+        <td class="ow_value">Seyed Ali Khatami<br> Issa Moradnejad<br> Hadi Asadi Moghadam</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}authors-en{rdelim}</td>
+        <td class="ow_value">S. A. Khatami<br>S. A. Khatami and I. Moradnejad<br>S. A. Khatami, I. Moradneja, and H. A. Moghadam
+        </td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}authors-en2{rdelim}</td>
+        <td class="ow_value">Khatami, S. A.<br>Khatami, S. A., & Moradnejad, I.<br>Khatami, S. A., Moradnejad, I., & Moghadam, H. A.</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}authors-en3{rdelim}</td>
+        <td class="ow_value">Khatami, S.A.<br>Khatami, S.A., and Moradnejad, I.<br>Khatami, S.A., Moradnejad, I., and Moghadam, H.A.</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}year{rdelim}</td>
+        <td class="ow_value">The year number that is in the issue title.</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}title{rdelim}</td>
+        <td class="ow_value">The title of the article.</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}vol{rdelim}</td>
+        <td class="ow_value">The volume of the article's issue.</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}no{rdelim}</td>
+        <td class="ow_value">The no. of the article's issue.</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">&lt;i&gt;&lt;/i&gt;</td>
+        <td class="ow_value">Use this html tag to italic the journal's name where needed.</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{ldelim}doNotInclude{rdelim}</td>
+        <td class="ow_value">Used for formats like BibTeX. (citation will not display like others)</td>
+    </tr>
+</table>

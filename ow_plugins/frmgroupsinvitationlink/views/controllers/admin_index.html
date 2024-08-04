@@ -1,0 +1,36 @@
+<div class="ow_automargin ow_wide">
+{form name="form"}
+	<table class="ow_table_1 ow_form">
+	    <tr class="ow_tr_first">
+	        <th class="ow_name ow_txtleft" colspan="2">
+	            <span class="ow_section_icon ow_ic_gear_wheel">{text key="frmgroupsinvitationlink+settings"}</span>
+	        </th>
+	    </tr>
+	    
+	    <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+	    	<td style="width: 50%">
+                {label name='link_expiration_time' }
+	    	</td>
+	    	<td>
+	    		{input name='link_expiration_time' style="width: 50px;"}<br />
+	    		{error name='link_expiration_time'}
+	    	</td>
+	    </tr>
+
+		<tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+			<td style="width: 50%">
+				{label name='deep_link' }
+			</td>
+			<td>
+				{input name='deep_link' style="text-align: left;"}<br />
+				{error name='deep_link'}
+			</td>
+		</tr>
+	</table>
+    <div class="clearfix ow_submit ow_stdmargin">
+    	<div class="ow_right">
+    	{submit name="submit"}
+    	</div>
+    </div>
+{/form}
+</div>

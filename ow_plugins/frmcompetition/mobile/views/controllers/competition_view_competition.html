@@ -1,0 +1,63 @@
+<div class="owm_list_item_view_title clearfix owm_nav_cap owm_nav_cap_left_cont owm_nav_cap_right_cont owm_bg_color_3 owm_border">
+    <div class="owm_float_left">
+        <a class="owm_nav_cap_left" href="javascript:window.history.back();"></a>
+    </div>
+    <h4>{text key='frmcompetition+return'}</h4>
+</div>
+
+<div class="owm_view_competition_info">
+    {block_decorator name='box'
+    capEnabled=true
+    label={$competition.title}
+    capAddClass="ow_dnd_configurable_component clearfix"
+    addClass="ow_stdmargin clearfix"}
+    <div class="owm_box_body owm_box_cap" style="padding: 10px;">
+        {if isset($notActive)}
+        <div class="owm_active_info">
+            {text key="frmcompetition+not_active"}
+        </div>
+        <br/>
+        {/if}
+        {$competition.description}
+    </div>
+    <div class="owm_list_section_toolbar owm_border">
+        <div class="owm_padding owm_list_additional_info">
+                <span class="owm_competition_additional_item competition_start_date ow_ipc_date">
+                    {text key="frmcompetition+startDate"}: {$competition.startDate}
+                </span>
+            <span class="owm_competition_additional_item competition_end_date ow_ipc_date">
+                    {text key="frmcompetition+endDate"}: {$competition.endDate}
+                </span>
+        </div>
+    </div>
+    {/block_decorator}
+</div>
+
+<div class="competition owm_view_user_list">
+    {block_decorator name='box'
+    capEnabled=true
+    label={$titleOfValues}
+    capAddClass="ow_dnd_configurable_component clearfix"
+    addClass="ow_stdmargin clearfix"}
+    <div class="owm_box_body owm_box_cap" style="padding: 10px;">
+        {if $sizeOfParticipant == 0}
+        <p class="no_participant">
+            {text key="frmcompetition+no_participant"}
+        </p>
+        {else}
+        {foreach from=$competitionItems item='item'}
+        <div class="owm_content_list_item">
+            <div class="owm_user_list_item">
+                <div class="owm_avatar">
+                    <a href="{$item.url}"><img src="{$item.imageSrc}"/></a>
+                </div>
+                <div class="owm_user_list_name"><span><a href="{$item.url}">{$item.title}</a></span></div>
+                <p>{$item.content}</p>
+            </div>
+        </div>
+        {/foreach}
+        {/if}
+    </div>
+    {/block_decorator}
+</div>
+</div>

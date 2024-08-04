@@ -1,0 +1,23 @@
+{if !empty($permissionMessage)}
+    <div class="owm_padding">
+        <div class="owm_anno owm_info">
+            {$permissionMessage}
+        </div>
+    </div>
+{else}
+    {add_content key="mobile.content.profile_view_top" userId=$userId}
+    <div class="owm_profile_block owm_bg_color_1">
+        {$header}
+        {$contentMenu}
+        {$about}
+    </div>
+    {if isset($filesWidget)}
+        <div class="owm_profile_block owm_bg_color_1">
+            <div class="owm_field_container owm_section">
+                <span class="owm_section_label">{text key='frmfilemanager+widget_files_title'}</span>
+            </div>
+            {$filesWidget}
+        </div>
+    {/if}
+    {add_content key="mobile.content.profile_view_bottom" userId=$userId}
+{/if}

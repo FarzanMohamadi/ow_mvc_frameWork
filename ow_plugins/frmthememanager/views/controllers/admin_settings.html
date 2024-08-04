@@ -1,0 +1,114 @@
+{script}
+{literal}
+$("a.forum_delete_attachment").each(function(){
+var container_handler = $(this).closest(".attachment_container");
+$(this).click(function(){
+    if ( confirm(OW.getLanguageText('forum', 'confirm_delete_attachment')) ){}
+}
+)})
+{/literal}
+{/script}
+
+<div class="iithememanager_overlay ow_inprogress"></div>
+<div class="frmthememanager_page">
+    <div class="theme_page_description">
+        <p>
+            {text key='frmthememanager+theme_create_description'}
+        </p>
+    </div>
+
+    <div class="ow_std_margin clearfix">
+        <div class="create_new_theme">
+            {if isset($themeExists)}
+            <span class="ow_button create_new_theme_button">
+                <a class="ow_lbutton ow_green" onclick="window.location = '{$createNewTheme}' " style="display: inline-block;">{text key="frmthememanager+create_new_theme"}</a>
+            </span>
+            <span class="ow_button create_new_theme_button">
+                <a class="ow_lbutton ow_green" onclick="window.location = '{$uploadNewTheme}' " style="display: inline-block;">{text key="frmthememanager+upload_new_theme"}</a>
+            </span>
+            {else}
+                <p>{text key="frmthememanager+noParentTheme"}</p>
+            {/if}
+
+            <div class="frmthememanager_color_picker_config">
+                <input name="colorPicker" id="colorPicker" type="checkbox" onchange="colorPickerConfigChange($('#colorPicker').is(':checked'),'{$themeActionController}')" {if $colorPicker}checked{/if}>
+                <label for="colorPicker">{text key='frmthememanager+color_picker'}</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="themes_list_description">
+        <p>
+            {text key='frmthememanager+themes_list_description'}
+        </p>
+    </div>
+
+    <div class="ow_std_margin clearfix themes_list_table">
+        <table class="ow_table_1 ow_form themes_table">
+            <tbody>
+
+            {foreach from=$allThemes key=count item=theme}
+            {if $count === 0}
+            <tr class="First_row_themes_table">
+                <td class="ow_label themeName">{text key='frmthememanager+theme_name'}</td>
+                <td class="ow_label mainLogo">{text key='frmthememanager+theme_logo'}</td>
+                <td class="ow_label themeColors">{text key='frmthememanager+theme_colors'}</td>
+                <td class="ow_label theme_information">{text key='frmthememanager+theme_information'}</td>
+                <td class="ow_label Operations">{text key='frmthememanager+Operations'}</td>
+            </tr>
+            {/if}
+            <tr {if $activeTheme == $theme.themeKey} class="active_theme" {/if}>
+                <td class="ow_value themeName">{$theme.themeName}</td>
+                <td class="ow_value mainLogo">
+                    {if isset($theme.urls.mainLogo)}
+                        <span class="frmthememanager_logo_box" style="background-image: url({$theme.urls.mainLogo});"></span>
+                    {/if}
+                </td>
+                <td class="ow_value themeColors">
+                    {if isset($theme.themeColors)}
+                        {foreach from=$theme.themeColors key=count item=color}
+                            <span class="frmthememanager_color_box" style="background-color: {$color};"></span>
+                        {foreachelse}
+                            <p class="frmthememanager_no_specific_color">{text key='frmthememanager+no_specific_color'}</p>
+                        {/foreach}
+                    {/if}
+                </td>
+                <td class="ow_value theme_information">{text key='frmthememanager+theme_key'}  {$theme.themeKey} </br> {text key='frmthememanager+parent_theme'} {$theme.parentTheme}</td>
+                <td class="ow_value Operations">
+                    {if isset($theme.csrf_token)}
+                        <a class="ow_lbutton ow_green" onclick="themeActionController('{$theme.themeKey}','{$theme.csrf_token}','edit','{$themeActionController}')" style="display: inline-block;">{text key="frmthememanager+edit"}</a>
+                        <a class="ow_lbutton ow_red" onclick="var result =$.confirm('{text key='frmthememanager+delete_theme_confirm'}');result.buttons.ok.action = function () { themeActionController('{$theme.themeKey}','{$theme.csrf_token}','remove','{$themeActionController}')}" style="display: inline-block;">{text key="frmthememanager+remove"}</a>
+                        <a class="ow_lbutton ow_green export"  onclick="themeActionController('{$theme.themeKey}','{$theme.csrf_token}','export','{$themeActionController}')"  style="display: inline-block;">{text key="frmthememanager+export"}</a>
+                        {if $activeTheme == $theme.themeKey}
+                        <span class="frmthememanager_active_theme">{text key="frmthememanager+active"}</span>
+                        {else}
+                        <a class="ow_lbutton ow_green"  onclick="themeActionController('{$theme.themeKey}','{$theme.csrf_token}','activate','{$themeActionController}')"  style="display: inline-block;">{text key="frmthememanager+activate"}</a>
+                        {/if}
+                    {/if}
+                </td>
+            </tr>
+            {foreachelse}
+            <div class="no_theme_massage">
+                <p>
+                    {text key="frmthememanager+no_theme_massage"}
+                </p>
+            </div>
+            {/foreach}
+            </tbody>
+        </table>
+        {if isset($activeTheme) &&  $activeTheme != null}
+        <div class="disable_all_themes">
+            <p>{text key="frmthememanager+disable_all_themes_desc"}</p>
+            <a class="ow_lbutton ow_green" onclick="themeActionController('{$activeTheme}','{$activeThemeToken}','deactivateAll','{$themeActionController}')" style="display: inline-block;">{text key="frmthememanager+disable_all_themes"}</a>
+        </div>
+
+        <div class="update_all_themes">
+            <p>{text key="frmthememanager+update_all_themes_desc"}</p>
+            <a class="ow_lbutton ow_green" onclick="themeActionController('{$activeTheme}','{$activeThemeToken}','updateAllThemesList','{$themeActionController}')" style="display: inline-block;">{text key="frmthememanager+update_all_themes"}</a>
+        </div>
+
+        {/if}
+
+    </div>
+
+</div>

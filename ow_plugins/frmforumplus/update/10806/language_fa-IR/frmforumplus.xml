@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmforumplus" label="frmforumplus" language_tag="fa-IR" language_label="فارسی">
+	<key name="mobile_forum_group_visibile_label">
+        <value>
+			پنهان‌سازی دکمه انجمن در گروه در نسخه تلفن همراه
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+			تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+	<key name="admin_settings_heading">
+        <value>
+			تنظیمات افزونه انجمن پلاس
+        </value>
+    </key>
+</prefix>

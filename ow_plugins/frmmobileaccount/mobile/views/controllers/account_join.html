@@ -1,0 +1,36 @@
+<div class="mobile_account {$type_class}">
+    <p>{text key='frmmobileaccount+base_join_txt'}</p>
+    {form name='login_mobile_account' class='account_form_box'}
+    <div class="account_status_box">
+        <span class="ow_preloader"></span>
+        <div id="account_status"></div>
+    </div>
+    <div class="account_field account_name">
+        {input name='mobile_number'}
+        {label name='mobile_number'}
+        {error name="mobile_number"}
+    </div>
+    <div class="account_field account_name">
+        {input name='username'}
+        {label name='username'}
+        {error name="username"}
+    </div>
+    <div class="account_field account_name">
+        {input name='email'}
+        {label name='email'}
+        {error name="email"}
+    </div>
+    <div class="network_submit">
+        {submit name='submit' class='ow_button ow_ic_save'}
+    </div>
+    {/form}
+    <div class="back_box">
+        <span class="ow_button">
+            <span class="ow_button">
+                <a href="{$backUrl}" class="ow_button ow_ic_left_arrow">
+                    {text key='frmmobileaccount+login_label'}
+                </a>
+            </span>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+{if $visible}
+<div class="ow_lp_avatars">
+    <table class="owm_table_1 owm_form owm_stdmargin">
+        <tr>
+            <td>
+                {text key="frmreport+reports_count"}
+            </td>
+            <td>
+                {$count}
+            </td>
+        </tr>
+    </table>
+    <div>
+        {decorator name='button' class=''  langLabel='frmreport+add_report' onclick="location.href='`$add_report`'"}
+        {decorator name='button' class=''  langLabel='frmreport+view_report_list' onclick="location.href='`$view_report_list`'"}
+    </div>
+</div>
+{/if}
+

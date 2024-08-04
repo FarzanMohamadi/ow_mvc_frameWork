@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmchallenge" label="frmchallenge" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            مسابقات
+        </value>
+    </key>
+    <key name="point">
+        <value>
+            امتیاز
+        </value>
+    </key>
+    <key name="user_point">
+        <value>
+            امتیاز شما
+        </value>
+    </key>
+    <key name="opponent_point">
+        <value>
+            امتیاز رقیب
+        </value>
+    </key>
+    <key name="solitary_challenge_label">
+        <value>
+            مسابقه انفرادی
+        </value>
+    </key>
+    <key name="win_point">
+        <value>
+            امتیاز برد
+        </value>
+    </key>
+    <key name="lose_point">
+        <value>
+            باخت
+        </value>
+    </key>
+    <key name="equal_point">
+        <value>
+            تساوی
+        </value>
+    </key>
+    <key name="category">
+        <value>
+            دسته
+        </value>
+    </key>
+    <key name="opponent">
+        <value>
+            رقیب
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            توضیحات
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="question">
+        <value>
+            سوال
+        </value>
+    </key>
+    <key name="challenge_type">
+        <value>
+            نوع مسابقه
+        </value>
+    </key>
+    <key name="on_construction_type">
+        <value>
+            نوع گروهی در دست انجام است
+        </value>
+    </key>
+    <key name="challenge_info">
+        <value>
+            مشخصات مسابقه
+        </value>
+    </key>
+    <key name="create_challenge">
+        <value>
+            ایجاد مسابقه
+        </value>
+    </key>
+    <key name="create_challenge_description">
+        <value>
+            هم اکنون درخواست مسابقه را ارسال کنید
+        </value>
+    </key>
+    <key name="my_challenges">
+        <value>
+            مسابقات من
+        </value>
+    </key>
+    <key name="finished_challenges">
+        <value>
+            مسابقات به اتمام رسیده
+        </value>
+    </key>
+    <key name="your_requested_challenges">
+        <value>
+            مسابقات درخواستی
+        </value>
+    </key>
+    <key name="public_challenges">
+        <value>
+            مسابقات عمومی
+        </value>
+    </key>
+    <key name="all_category">
+        <value>
+            همه نوع
+        </value>
+    </key>
+    <key name="unknown_opponent">
+        <value>
+            نامشخص
+        </value>
+    </key>
+    <key name="find_opponent_text">
+        <value>
+            نام کاربری مخاطب (می‌توانید این فیلد را خالی نگه داشته تا سامانه به صورت خودکار، رقیب شما را انتخاب کند)
+        </value>
+    </key>
+    <key name="user_not_found">
+        <value>
+            کاربر وارد شده شناسایی نشد
+        </value>
+    </key>
+    <key name="create_same_challenge">
+        <value>
+            این نوع مسابقه قبلا توسط شما ایجاد شده است
+        </value>
+    </key>
+    <key name="empty_title">
+        <value>
+            فیلد عنوان خالی است
+        </value>
+    </key>
+    <key name="create_successfully">
+        <value>
+            مسابقه با موفقیت ایجاد شد
+        </value>
+    </key>
+    <key name="join_successfully">
+        <value>
+            شما وارد مسابقه شدید
+        </value>
+    </key>
+    <key name="next_label">
+        <value>
+            بعدی
+        </value>
+    </key>
+    <key name="previous_label">
+        <value>
+            قبلی
+        </value>
+    </key>
+    <key name="finish_label">
+        <value>
+            ایجاد مسابقه
+        </value>
+    </key>
+    <key name="challenge_button_wait">
+        <value>
+            منتظر پیدا شدن رقیب
+        </value>
+    </key>
+    <key name="challenge_button_view_result">
+        <value>
+            نمایش جزئیات
+        </value>
+    </key>
+    <key name="challenge_button_continue">
+        <value>
+            ادامه مسابقه
+        </value>
+    </key>
+    <key name="challenge_button_join">
+        <value>
+            ورود به مسابقه
+        </value>
+    </key>
+    <key name="answers">
+        <value>
+            گزینه‌ها
+        </value>
+    </key>
+    <key name="answers">
+        <value>
+            پاسخ
+        </value>
+    </key>
+    <key name="empty_challenge">
+        <value>
+            مسابقه‌ای وجود ندارد
+        </value>
+    </key>
+    <key name="wait_for_opponent_answer">
+        <value>
+            باید منتظر بمانید تا رقیب شما نیز پاسخ این سوال را بدهد
+        </value>
+    </key>
+    <key name="finish_challenge_description">
+        <value>
+            این مسابقه تمام شد
+        </value>
+    </key>
+    <key name="user_value">
+        <value>
+            پاسخ شما
+        </value>
+    </key>
+    <key name="cancel_label">
+        <value>
+            خروج
+        </value>
+    </key>
+    <key name="cancel_challenge_description">
+        <value>
+            این مسابقه توسط یکی از اعضا لغو شده است
+        </value>
+    </key>
+    <key name="canceled">
+        <value>
+            لغو شده
+        </value>
+    </key>
+    <key name="wait_for_answer">
+        <value>
+            منتظر پاسخ رقیب
+        </value>
+    </key>
+    <key name="answer">
+        <value>
+            پاسخ
+        </value>
+    </key>
+    <key name="challenge_finished">
+        <value>
+            زمان مسابقه به پایان رسیده است
+        </value>
+    </key>
+    <key name="finish_date">
+        <value>
+            آخرین مهلت پاسخ
+        </value>
+    </key>
+    <key name="solitary_challenge_tab_label">
+        <value>
+            مسابقه انفرادی
+        </value>
+    </key>
+    <key name="group_challenge_tab_label">
+        <value>
+            مسابقه گروهی
+        </value>
+    </key>
+    <key name="public_challenge_tab_label">
+        <value>
+            مسابقه همگانی
+        </value>
+    </key>
+    <key name="challenge_button_wait_opponent">
+        <value>
+            منتظر ورود رقیب
+        </value>
+    </key>
+    <key name="notification_request_to_answer">
+        <value>
+            &lt;a href="{$user_url}"&gt;{$username}&lt;/a&gt; به سوال در مسابقه پاسخ داد. نوبت پاسخ شماست. &lt;a href="{$url}"&gt; ورود به مسابقه &lt;/a&gt;
+        </value>
+    </key>
+    <key name="notification_request_to_start_challenge">
+        <value>
+            مسابقه انفرادی با &lt;a href="{$user_url}"&gt;{$username}&lt;/a&gt;  شروع شد. &lt;a href="{$url}"&gt; ورود به مسابقه &lt;/a&gt;
+        </value>
+    </key>
+    <key name="notification_request_to_join">
+        <value>
+            &lt;a href="{$user_url}"&gt;{$username}&lt;/a&gt;  درخواست شرکت در مسابقه انفرادی برای شما ارسال کرده است. &lt;a href="{$url}"&gt; شروع مسابقه &lt;/a&gt;
+        </value>
+    </key>
+    <key name="email_request_challenge_notifications_alerts">
+        <value>
+            کاربری شما را به مسابقه دعوت کرد
+        </value>
+    </key>
+    <key name="email_answer_challenge_notifications_alerts">
+        <value>
+            رقیب شما در مسابقه پاسخ داد
+        </value>
+    </key>
+    <key name="email_start_challenge_notifications_alerts">
+        <value>
+            مسابقه شروع شد
+        </value>
+    </key>
+    <key name="email_notification_alerts_label">
+        <value>
+            مسابقات تعاملی
+        </value>
+    </key>
+    <key name="challenges_description">
+        <value>
+            در این صفحه شما می‌توانید یک مسابقه جدید (از طریق دکمه «ایجاد مسابقه») ایجاد کرده و تمامی مسابقات را از فهرست پایین مشاهده کنید. مسابقات در سه نوع انفرادی، گروه و همگانی برگزار میشوند.
+            &lt;h3&gt;مسابقات انفرادی&lt;/h3&gt;
+            مسابقات انفرادی بین شما و دیگر کاربران برگزار خواهد شد. در هنگام ایجاد مسابقه انفرادی، امکان انتخاب رقیب از بین دوستان شما وجود داشته و در صورت عدم انتخاب، سامانه به صورت تصادفی، رقیب شما را انتخاب خواهد کرد. در این مسابقات کاربران به صورت نوبتی به یکی از سوالات مسابقه پاسخ داده و در صورت پاسخ‌دهی به تمامی سوالات یا اتمام زمان مسابقه، مسابقه تمام‌شده تلقی گردیده و امتیاز مسابقه به امتیازات کاربران اضافه می‌شود. کاربران با پاسخ به هر سوال در مسابقه، امتیاز آن سوال را نیز دریافت می‌کنند.
+            &lt;h3&gt;مسابقات همگانی&lt;/h3&gt;
+            تمامی کاربران شبکه امکان عضویت در مسابقات همگانی را داشته و برنده این مسابقات فرد با امتیاز بیشتر خواهد بود. پاسخ به سوالات درون این مسابقات به صورت نوبتی نبوده و هر فرد می‌تواند ادامه مسابقه خود را تا قبل از اتمام آن انجام دهد. این مسابقات توسط افراد قابل لغو یا تولید نبوده و تنها امکان شرکت در آن برای کاربران فراهم شده است.
+        </value>
+    </key>
+    <key name="max_point">
+        <value>
+            مجموع امتیازات سوالات
+        </value>
+    </key>
+    <key name="min_point">
+        <value>
+            حداقل امتیاز
+        </value>
+    </key>
+    <key name="sponsor">
+        <value>
+            اسپانسر
+        </value>
+    </key>
+    <key name="prize">
+        <value>
+            جایزه
+        </value>
+    </key>
+    <key name="empty_min_point">
+        <value>
+            حداقل امتیاز را باید به درستی وارد نمایید
+        </value>
+    </key>
+    <key name="empty_win_point">
+        <value>
+            امتیاز برنده را باید به درستی وارد نمایید
+        </value>
+    </key>
+    <key name="win_point_label">
+        <value>
+            امتیاز برد
+        </value>
+    </key>
+    <key name="create_category">
+        <value>
+            ایجاد دسته
+        </value>
+    </key>
+    <key name="create_answer">
+        <value>
+            ایجاد پاسخ
+        </value>
+    </key>
+    <key name="create_question">
+        <value>
+            ایجاد سوال
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+            دسته‌ها
+        </value>
+    </key>
+    <key name="questions">
+        <value>
+            سوال‌ها
+        </value>
+    </key>
+    <key name="changes_not_successful">
+        <value>
+            اعمال تغییرات موفقیت آمیز نبود
+        </value>
+    </key>
+    <key name="changes_successful">
+        <value>
+            تغییرات با موفقیت اعمال شدند
+        </value>
+    </key>
+    <key name="category_exists">
+        <value>
+            دسته در حال حاظر موجود می‌باشد
+        </value>
+    </key>
+    <key name="question_category_exists">
+        <value>
+            سوالی با همین عنوان در این دسته موجود است
+        </value>
+    </key>
+    <key name="answer_question_exists">
+        <value>
+            پاسخی با همین عنوان در این سوال موجود است
+        </value>
+    </key>
+    <key name="correct">
+        <value>
+            پاسخ صحیح
+        </value>
+    </key>
+    <key name="yes">
+        <value>
+            بله
+        </value>
+    </key>
+    <key name="no">
+        <value>
+            خیر
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="search">
+        <value>
+            جست و جو
+        </value>
+    </key>
+    <key name="finish_universal_challenge_description">
+        <value>
+            شما به تمامی سوالات پاسخ داده‌اید
+        </value>
+    </key>
+    <key name="current_winner">
+        <value>
+            برنده فعلی
+        </value>
+    </key>
+    <key name="min_point_label">
+        <value>
+            حداقل امتیاز قابل ورود
+        </value>
+    </key>
+    <key name="challenges">
+        <value>
+            مسابقات تعاملی کاربران
+        </value>
+    </key>
+    <key name="auth_universal_challenge_label">
+        <value>
+            ایجاد مسابقه همگانی
+        </value>
+    </key>
+    <key name="max_users_point">
+        <value>
+            امتیازات
+        </value>
+    </key>
+    <key name="users_point_label">
+        <value>
+            پر امتیاز ترین کاربران
+        </value>
+    </key>
+    <key name="mobile_main_menu_item">
+        <value>
+            مسابقات
+        </value>
+    </key>
+    <key name="min_question_count_warning">
+        <value>
+            به دلیل کمبود سوال در دسته انتخاب شده، مسابقه قابل اجرا نیست
+        </value>
+    </key>
+    <key name="question_has_correct_answer">
+        <value>
+            سوال در حال حاضر یک پاسخ صحیح دارد
+        </value>
+    </key>
+    <key name="solitary_question_count">
+        <value>
+            تعداد سوالات مسابقه انفرادی
+        </value>
+    </key>
+    <key name="solitary_answer_time">
+        <value>
+            مدت زمان برای پاسخ دادن در مسابقه انفرادی (ساعت)
+        </value>
+    </key>
+    <key name="universal_question_count">
+        <value>
+            تعداد سوالات مسابقه همگانی
+        </value>
+    </key>
+    <key name="universal_answer_time">
+        <value>
+            مدت زمان برای پاسخ دادن در مسابقه همگانی (ساعت)
+        </value>
+    </key>
+    <key name="general_setting">
+        <value>
+            تنظیمات عمومی
+        </value>
+    </key>
+    <key name="return">
+        <value>
+            بازگشت
+        </value>
+    </key>
+    <key name="win_num">
+        <value>
+            تعداد نمایش برندگان
+        </value>
+    </key>
+    <key name="remaining_time">
+        <value>
+            زمان باقیمانده
+        </value>
+    </key>
+    <key name="upload_file_submit_label">
+        <value>
+            بارگذاری فایل
+        </value>
+    </key>
+    <key name="file_description">
+        <value>
+            قبل از بارگذاری فایل، مطمئن شوید که فایل مورد نظر دارای فرمت متنی (txt) است و مقدار encoding آن برابر با «utf-8» باشد. در غیر اینصورت، متون فارسی به درستی بارگذاری نخواهند شد. فایل مورد نظر باید از نرم‌افزار excel استخراج شود. ستون‌ داده‌ها باید به ترتیب ...
+        </value>
+    </key>
+    <key name="question_from_file">
+        <value>
+             فرم ورود سوالات از فایل متنی
+        </value>
+    </key>
+    <key name="file_empty">
+        <value>
+            لطفا فایل را بارگذاری کنید
+        </value>
+    </key>
+    <key name="import_successfully">
+        <value>
+            واردسازی کاربران با موفقیت انجام شد
+        </value>
+    </key>
+    <key name="line_error">
+        <value>
+            اطلاعاتی که در خط {$line} نوشته شده، مشکل دارد. لذا اطلاعات این سطر وارده نشده است
+        </value>
+    </key>
+    <key name="line_error">
+        <value>
+فایل به درستی خوانده نشده است. هیچ خطی وجود نداشته است
+        </value>
+    </key>
+    <key name="line_question_error">
+        <value>
+ سوال  در سطر  {$line} دارای مشکل است
+        </value>
+    </key>
+    <key name="correct_answer_info">
+        <value>
+            پاسخ شما درست بود
+        </value>
+    </key>
+    <key name="wrong_answer_info">
+        <value>
+            پاسخ شما غلط بود
+        </value>
+    </key>
+    <key name="wrong_answer_info_description">
+        <value>
+            پاسخ درست گزینه «{$title}» بود
+        </value>
+    </key>
+    <key name="more_information">
+        <value>
+            اطلاعات بیشتر
+        </value>
+    </key>
+    <key name="start_time">
+        <value>
+            تاریخ شروع
+        </value>
+    </key>
+    <key name="end_time">
+        <value>
+            مدت زمان (به روز)
+        </value>
+    </key>
+    <key name="questions_number">
+        <value>
+            تعداد سوالات
+        </value>
+    </key>
+    <key name="challenge_not_start">
+        <value>
+            مسابقه هنوز شروع نشده است
+        </value>
+    </key>
+    <key name="remove_challenge">
+        <value>
+            حذف مسابقه
+        </value>
+    </key>
+</prefix>

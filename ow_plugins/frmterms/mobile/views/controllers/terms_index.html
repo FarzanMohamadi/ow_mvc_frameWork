@@ -1,0 +1,55 @@
+{if !empty($menu)}
+    {$menu}
+
+    <div class="owm_frmterms">
+    {if !empty($items)}
+        <div class="owm_box ow_smallmargin">
+            <div class="owm_box_cap clearfix owm_padding owm_small">
+                <p class="release_date">{$lastModified}</p>
+        {foreach from=$items item="item"}
+        {if !empty($item.header)}
+            </div>
+        </div>
+        <div class="owm_box ow_stdmargin clearfix">
+            <div class="owm_box_cap ow_dnd_configurable_component clearfix clearfix">
+                <h3>{$item.header}</h3>
+            </div>
+            <span class="page_collapsible collapse-open" style="display: none;"></span>
+            <div class="owm_box_body container" style="display: block;">
+        {/if}
+                <div class="owm_box_row {cycle values="owm_row_alt2, owm_row_alt1"}">
+                    <div class="owm_box_body_cont clearfix">
+                        <div class="owm_box_padding">
+
+                            <p>{$item.description}</p>
+
+                        </div>
+                    </div>
+                </div>
+        {/foreach}
+            </div>
+        </div>
+
+    {else}
+        <div class="owm_box ow_smallmargin">
+            <div class="owm_box_body">
+                <div class="owm_box_body_cont clearfix">
+                    <div class="owm_box_padding">
+                        <p>{text key="frmterms+archives_is_empty_description"}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {/if}
+    </div>
+{else}
+    <div class="owm_box ow_smallmargin">
+        <div class="owm_box_body">
+            <div class="owm_box_body_cont clearfix">
+                <div class="owm_box_padding">
+                    <p>{text key="frmterms+section_empty_description"}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{/if}

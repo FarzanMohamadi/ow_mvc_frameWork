@@ -1,0 +1,127 @@
+{if !empty($authErrorText)}
+<div class="ow_anno ow_center">
+    {$authErrorText}
+</div>
+{else}
+<div class="owm_nav_cap owm_nav_cap_left_cont owm_nav_cap_right_cont owm_bg_color_3 owm_border clearfix">
+    <div class="owm_box_heading_btns events_mobile">
+        {if !empty($editArray)}
+        <a class="owm_btn_class_3 delete_link event_mobile" href="{$editArray.delete.url}" onclick="return confirm('{$editArray.delete.confirmMessage}');" style="display: inline-block;">{$editArray.delete.label}</a>
+        <a class="owm_btn_class_2 edit_link event_mobile" href="{$editArray.edit.url}" style="display: inline-block;">{$editArray.edit.label}</a>
+        {/if}
+        {if !empty($leaveArray)}
+        <a class="owm_btn_class_2 leave_link event_mobile" href="" onclick="return confirm('{$leaveArray.leave.confirmMessage}');" style="display: inline-block;">{$leaveArray.leave.label}</a>
+        {/if}
+    </div>
+    <div class="owm_float_left">
+        <a class="owm_nav_cap_left" href="{$urlForBack}"></a>
+    </div>
+    <h3>
+        {text key='frmcfp+back'}
+    </h3>
+</div>
+
+<div class="ow_superwide owm_events_view frmcfp_view">
+    <div class="owm_box">
+        <div class="owm_events_view_header clearfix">
+
+            <div class="owm_events_view_additional_info owm_float_left clearfix">
+                <div>
+                    <span class="owm_item_info_label">{text key='frmcfp+view_page_date_label'}: </span>
+                    <span class="owm_item_info_value">{$info.date}</span>
+                </div>
+                {if !empty($info.endDate)}
+                <div>
+                    <span class="owm_item_info_label" style="width: 25%">{text key='frmcfp+view_page_end_date_label'}: </span>
+                    <span class="owm_item_info_value">{$info.endDate}</span>
+                </div>
+                {/if}
+                <div>
+                    <span class="owm_item_info_label" style="width: 25%">{text key='frmcfp+view_page_created_label'}: </span>
+                    <span class="owm_item_info_value"><a href="{$info.creatorLink}">{$info.creatorName}</a></span>
+                </div>
+            </div>
+        </div>
+
+        {block_decorator name='box' type='empty' iconClass='ow_ic_picture' langLabel='' addClass=" ow_std_margin clearfix"}
+        {if !empty($info.image)}<div class="clearfix" style="padding: 15px"><img src="{$info.image}" alt="{$info.title|escape}" style="float: right;margin: 5px;max-width:100%" /></div>{/if}
+        {$info.desc}
+        {/block_decorator}
+    </div>
+
+    {if $uploadSection}
+    <div class="cfp_upload_widget">
+    {if !$isModerator and isset($eventFileList)}
+        {block_decorator name='box'
+        capEnabled=$fileBoxInformation.show_title
+        iconClass=$fileBoxInformation.icon
+        label=$fileBoxInformation.title
+        capAddClass="ow_dnd_configurable_component clearfix"
+        type=$fileBoxInformation.type
+        addClass="owm_view_file_list ow_stdmargin clearfix"}
+            {if $isOpen}
+                {if $canUpload}
+                    <div class="owm_box_body owm_box_cap" style="padding: 10px;">
+                        {$eventFileList}
+                    </div>
+                    <div class="owm_box_toolbar">
+                        {if isset($view_all_files)}
+                            <span class="ow_nowrap">
+                                {if isset($view_all_files.href)}<a href="{$view_all_files.href}">{/if}
+                                {$view_all_files.label}
+                                {if isset($view_all_files.href)}</a>{/if}
+                            </span>
+                        {/if}
+                    </div>
+                {else}
+                    <div class="ow_anno ow_center">
+                        {$info.loginToParticipateText}
+                    </div>
+                {/if}
+            {else}
+                <div class="ow_anno ow_center">
+                    {if $isEnded}
+                        {text key='frmcfp+cfp_is_ended'}
+                    {else}
+                        {text key='frmcfp+cfp_is_not_started'}
+                    {/if}
+                </div>
+            {/if}
+        {/block_decorator}
+    {/if}
+    </div>
+    {/if}
+
+    {add_content key='frmcfp.view.content.between_description_and_wall' eventId=$info.id}
+
+    {if false and !empty($comments)}
+        <div class="owm_box owm_event_comments {if isset($frmmenu_active)} frmmenu-active {/if}">{$comments}</div>
+    {/if}
+
+
+    {if !empty($info.file) || $isModerator}
+    <div class="event_widget file_container">
+        {block_decorator name='box' addClass='ow_std_margin' iconClass='ow_ic_info' langLabel='frmcfp+download_file'}
+            {if !empty($info.file)}
+            <div class="owm_btn_class_1" style="margin: 9px 30px 10px;">
+                <a href="{$info.file}" target="_blank" style="color: white;">
+                    <img src="{$info.fileDownloadImg}" alt="{$info.title|escape}" style="float: right;margin: 5px;" />
+                    <span>{text key='frmcfp+download_file'}</span>
+                </a>
+            </div>
+            {/if}
+            {if $isModerator && $uploadSection}
+                <div class="owm_btn_class_1" style="margin: 9px 30px 10px;">
+                    <a href="{$view_all_files}" target="_blank" style="color: white; padding-right: 30px;">
+                        <span>{text key='frmcfp+file_list'}</span>
+                    </a>
+                </div>
+            {/if}
+        {/block_decorator}
+    </div>
+    {/if}
+
+</div>
+{/if}
+{add_content key='frmcfp.content.view.bottom' eventId=$info.id}
+

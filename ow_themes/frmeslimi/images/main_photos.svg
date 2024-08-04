@@ -1,0 +1,25 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="22" height="22" id="canvas_background" fill="none"/>
+ </g>
+
+ <g>
+  <title>Layer 1</title>
+  <metadata transform="matrix(0.011377778328789612,0,0,0.011377778328789612,0,0) ">Svg Vector Icons : http://www.onlinewebfonts.com/icon</metadata>
+  <metadata transform="matrix(0.011377778328789612,0,0,0.011377778328789612,0,0) ">Svg Vector Icons : http://www.onlinewebfonts.com/icon</metadata>
+  <g stroke="null" id="svg_410">
+   <g stroke="null" transform="matrix(0.03631514737858328,0,0,0.03631514737858328,-0.4295102842758922,0.08788663981859912) " id="svg_408">
+    <title stroke="null" transform="translate(92.9364242553711,3.442089796066284) translate(-59.599998474121094,0) translate(0,13.400006294250488) ">background</title>
+    <rect stroke="null" x="32.336426" y="15.842096" width="582" height="402" id="svg_406" fill="none"/>
+   </g>
+   <g stroke="null" transform="matrix(0.03631514737858328,0,0,0.03631514737858328,-0.4295102842758922,0.08788663981859912) " id="svg_409">
+    <title stroke="null" transform="translate(92.9364242553711,3.442089796066284) translate(-59.599998474121094,0) translate(0,13.400006294250488) ">Layer 1</title>
+    <g stroke="null" id="svg_403">
+     <circle stroke="null" cx="289.147426" cy="302.151096" r="75.217003" id="svg_405" fill="#ffffff"/>
+     <path stroke="null" d="m510.336426,153.842096l-124.282,0l-3.718,-29c0,-16.568 -13.432,-30 -30,-30l-128,0c-16.568,0 -30,13.432 -30,30l-3.718,29l-123.282,0c-11.046,0 -20,8.454 -20,19.5l0,258c0,11.046 8.954,20.5 20,20.5l443,0c11.046,0 20,-9.454 20,-20.5l0,-258c0,-11.046 -8.954,-19.5 -20,-19.5zm-221.405,271.562c-67.928,0 -122.994,-55.066 -122.994,-122.993c0,-67.928 55.066,-122.994 122.994,-122.994c67.928,0 122.994,55.066 122.994,122.994c0,67.926 -55.066,122.993 -122.994,122.993zm218.405,-218.562l-105,0l0,-31l105,0l0,31z" id="svg_404" fill="#ffffff"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

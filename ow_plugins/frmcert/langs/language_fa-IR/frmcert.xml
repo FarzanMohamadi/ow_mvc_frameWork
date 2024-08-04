@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcert" label="frmcert" language_tag="fa-IR" language_label="فارسی">
+    <key name="widget_title">
+        <value>گزارش‌های آماری</value>
+    </key>
+    <key name="widget_number_of_vulnerabilities">
+        <value>تعداد IPهای آسیب‌پذیر</value>
+    </key>
+    <key name="widget_number_of_bots">
+        <value>تعداد IPهای آلوده به بدافزار</value>
+    </key>
+    <key name="widget_today">
+        <value>روز گذشته:</value>
+    </key>
+    <key name="widget_week">
+        <value>هفته گذشته:</value>
+    </key>
+    <key name="widget_month">
+        <value>ماه گذشته:</value>
+    </key>
+    <key name="last_update">
+        <value>آخرین به‌روزرسانی:</value>
+    </key>
+    <key name="view_more">
+        <value>نمایش بیشتر...</value>
+    </key>
+</prefix>

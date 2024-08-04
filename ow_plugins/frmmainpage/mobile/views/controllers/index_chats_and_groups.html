@@ -1,0 +1,139 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+
+{if isset($otpForm)}
+<style>
+
+    body {
+        background-color: white;
+    }
+    .owm_list_item {
+        border: none !important;
+    }
+    .frmmainpage .owm_user_list .owm_list_search {
+        padding-top: 15px;
+    }
+    .owm_list_search input[type="text"] {
+        border-color: transparent;
+        background-color: #e6e6e6;
+    }
+    ::placeholder {
+        color: #888888;
+    }
+    .frmmainpage .owm_list_item_with_image {
+        border: none !important;
+        margin-bottom: 5px !important;
+    }
+    .ow_video_item_title, .owm_list_item_with_image .ow_ipc_info .ow_ipc_header {
+        margin-top: -5px;
+    }
+
+    .owm_list_item_with_image .ow_ipc_info .ow_ipc_content,
+    .owm_list_item_with_image .ow_ipc_info .ow_ipc_header a{
+        text-overflow: ellipsis;
+        max-width: 70%;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+    }
+
+    @media only screen and (max-width: 440px) {
+        .owm_list_item_with_image .ow_ipc_info .ow_ipc_content, .owm_list_item_with_image .ow_ipc_info .ow_ipc_header a {
+            max-width: 50%;
+        }
+    }
+    @media only screen and (max-width: 300px) {
+        .ow_ipc_toolbar span,
+        .frmmainpage .owm_user_list_item .owm_newsfeed_date{
+            display: none;
+        }
+    }
+
+    .owm_list_item_with_image .ow_ipc_info .ow_ipc_header a,
+    .owm_list_item .owm_user_list_name a{
+        font-weight: bold !important;
+        font-size: 14px !important;
+        color: black;
+    }
+    .owm_list_item_with_image .ow_ipc_info .ow_ipc_toolbar {
+        font-size: 60%;
+        margin-top: -45px;
+        float: left;
+    }
+    .frmmainpage .owm_user_list_item {
+        padding: 0 !important;
+    }
+    .frmmainpage .owm_user_list_item .owm_newsfeed_date {
+        margin-top: -45px;
+        background-color: transparent;
+    }
+
+    .ow_ipc.owm_list_item_with_image.clearfix .ow_ipc_info {
+        padding: 2px 0px 2px 0;
+    }
+    .new_group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+</style>
+{/if}
+
+
+{$menuCmp}
+<div class="frmmainpage" id="chatgroups_page">
+    <div class="owm_newsfeed_status_update_circle" id="newsfeed-status-form-inv" ></div>
+    <div class="owm_user_list owm_content_list owm_std_margin_bottom clearfix" style="margin: 0px 6px -6px 6px !important;">
+        <div class="owm_list_search">
+            <div class="owm_form_field_wrap">
+                <input id="frmmainpage_chat_group_search" type="text" placeholder="{text key='frmmainpage+search'}">
+            </div>
+        </div>
+    </div>
+    <div class="owm_chat_group_list owm_list_page  clearfix">
+        <div class="owm_list_item_parent">
+        {$cmp}
+        </div>
+    <div id="chat_group-list-preloader" class="owm_user_list_preloader owm_preloader" style="display: none;float: left;width: 100%;"></div>
+    </div>
+    <div id="atLeastTwoChar" class="chat_and_groups_message" style="display: none">{text key="frmmainpage+two_characters_for_search"}</div>
+    <div class="ow_nocontent chat_and_groups_message" style="display: none">{text key="frmmainpage+no_result"}</div>
+
+    <div style="display: none">
+        <div class="clearfix" id="new-chat-group-list">
+            {if !empty($newChatGroupCmp)}
+
+            {if !empty($showCreate)}
+            <span class=" owm_fill_box clearfix" >
+            <input type="button" id='create-new-group' value="{text key='groups+add_new'}" class=" new_group clearfix"
+           onclick="location.href='{$createGroupUrl}';" >
+            </span>
+            {/if}
+
+            <div class="owm_box owm_friendes_search_input">
+                <div class="owm_list_search">
+                    <div class="owm_form_field_wrap">
+                        <input id="frmmainpage_friends_search" type="text" placeholder="{text key='frmmainpage+search'}: {text key='frmmainpage+username_or_realname'}">
+                    </div>
+                </div>
+            </div>
+
+            {$newChatGroupCmp}
+            <div class="owm_user_list_preloader owm_preloader"></div>
+            <div class="owm_user_list_search_preloader owm_preloader" style="display: none"></div>
+            <div class="ow_nocontent" style="display: none">{text key="base+user_no_users"}</div>
+            {else}
+            <div class="ow_nocontent">{text key="base+user_no_users"}</div>
+            {/if}
+
+        </div>
+    </div>
+
+</div>

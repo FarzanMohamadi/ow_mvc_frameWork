@@ -1,0 +1,39 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<div class="ow_std_margin clearfix">
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+            <a href="{$returnToAlbums}">{text key="frmslideshow+return_to_albums"}</a>
+        </div>
+    </div>
+    {form name="addAlbum"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr>
+            <th colspan="2">{text key="frmslideshow+edit_album"}</th>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='name' }
+            </td>
+            <td class="ow_value">
+                {input name='name'}
+                {error name='name'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+            {submit name="submit"}
+        </div>
+    </div>
+    {/form}
+</div>

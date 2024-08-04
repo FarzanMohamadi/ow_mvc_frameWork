@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmadminnotification" label="frmadminnotification" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_save_settings">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+         تنظیمات افزونه اطلاع‌رسان مدیریت
+        </value>
+    </key>
+    <key name="user_save_success">
+        <value>
+            تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="newsCommentNotification">
+        <value>
+            اطلاع‌رسانی بعد از ایجاد نظر در خبر
+        </value>
+    </key>
+    <key name="topicForumNotification">
+        <value>
+            اطلاع‌رسانی در هنگام ایجاد موضوع و ایجاد نظر در انجمن
+        </value>
+    </key>
+    <key name="registerNotification">
+        <value>
+            اطلاع‌رسانی بعد از ثبت‌نام
+        </value>
+    </key>
+    <key name="registration_notice">
+        <value>
+            کاربری با نام کاربری «&lt;a href="{$profile_url}"&gt;{$username}&lt;/a&gt;» و اسم واقعی «{$realname}»، در تاریخ «{$join_date}»، عضو «{$site_name}» شد
+        </value>
+    </key>
+    <key name="registration_notice_subject">
+        <value>
+            کاربری عضو «{$site_name}» شد
+        </value>
+    </key>
+    <key name="emailSendTo">
+        <value>
+            ارسال به (در صورت خالی گذاشتن این فیلد، از فیلد رایانامه وب‌گاه استفاده خواهد شد)
+        </value>
+    </key>
+    <key name="topic_forum_add_subject">
+        <value>
+            کاربری در انجمن وب‌گاه «{$site_name}»، موضوعی ایجاد کرد
+        </value>
+    </key>
+    <key name="topic_forum_add_description">
+        <value>
+            کاربری با نام کاربری «{$username}»، در انجمن وب‌گاه «{$site_name}»، موضوعی تحت عنوان «&lt;a href="{$topicUrl}"&gt;{$topic_title} &lt;/a&gt;» ایجاد کرد
+        </value>
+    </key>
+    <key name="topic_forum_edit_description">
+        <value>
+
+            کاربری با نام کاربری «{$username}»، در انجمن وب‌گاه «{$site_name}»، موضوعی تحت عنوان «&lt;a href="{$topicUrl}"&gt;{$topic_title} &lt;/a&gt;» را ویرایش کرد
+
+        </value>
+    </key>
+    <key name="comment_topic_forum_add_subject">
+        <value>
+            کاربری در انجمن وب‌گاه «{$site_name}»، پاسخی در موضوع درج کرد
+        </value>
+    </key>
+    <key name="comment_topic_forum_add_description">
+        <value>
+            کاربری با نام کاربری «{$username}»، در انجمن وب‌گاه «{$site_name}»، پاسخی در موضوعی تحت عنوان «&lt;a href="{$topicUrl}"&gt;{$topic_title}&lt;/a&gt;» را درج کرد
+        </value>
+    </key>
+    <key name="comment_news_add_subject">
+        <value>
+            کاربری در اخبار وب‌گاه «{$site_name}»، نظری در خبر درج کرد
+        </value>
+    </key>
+    <key name="comment_news_add_description">
+        <value>
+            کاربری با نام کاربری «{$username}»، در اخبار وب‌گاه «{$site_name}»، یک نظر در خبری تحت عنوان «{$news_title}» درج کرد (نشانی اینترنتی خبر:
+            &lt;a href="{$newsUrl}"&gt;
+            پیوند
+            &lt;/a&gt;
+            )
+        </value>
+    </key>
+</prefix>

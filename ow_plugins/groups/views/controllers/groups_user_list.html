@@ -1,0 +1,37 @@
+{style}{literal}
+.ow_btn_close_search:lang(en){
+right: -2px;
+}
+
+input[type=submit]{
+font-size : 11px;
+}
+input[type=text]{
+width: 35%;border-radius: 10px; margin-bottom: 20px;
+}
+{/literal}{/style}
+<div class="ow_stdmargin">
+    {$groupBriefInfo}
+</div>
+
+{add_content key='groups.content.user_list.after_cap' groupId=$groupId}
+
+{foreach from=$extraComponent item=componentInfo}
+    {block_decorator name='box' type='empty' iconClass='ow_ic_user' langLabel=$componentInfo.label}{/block_decorator}
+    {${$componentInfo.name}}
+{/foreach}
+{add_content key='groups.content.user_list.bottom' groupId=$groupId}
+
+{add_content key='groups.content.user_list.after_cap' groupId=$groupId}
+{block_decorator name='box' type='empty' iconClass='ow_ic_user' label="{text key='groups+group_members'} {if $userCount neq 0}({$userCount}){/if}"}{/block_decorator}
+<div class="ow_group_users_list_search">
+{form name="searchUserForm"}
+    <div class="ow_group_user_list_search">
+        {input name="searchValue" style="width: 60%; margin-bottom: 0px ; padding:0 22px 0 22px; display: inline-block;"}
+        {decorator name='button' iconClass="ow_ic_lens" id="searchUsers" onclick="searchUserList('{$groupUserUrl}');" langLabel='admin+search' style="width: 40%; display: inline-block;"}
+    </div>
+{/form}
+</div>
+{if isset($listCmp)}{$listCmp} {/if}
+
+{add_content key='groups.content.user_list.bottom' groupId=$groupId}

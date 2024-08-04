@@ -1,0 +1,63 @@
+{if isset($all_del_url)}<a class="ow_lbutton ow_red ow_left" href="{$all_del_url}" onclick="return confirm('{text key='base+are_you_sure'}');" style="margin: 5px;">{text key='base+delete_all'}</a>{/if}
+{block_decorator name='box' type='empty' addClass='ow_stdmargin' iconClass='ow_ic_trash' langLabel='admin+manage_plugins_available_box_cap_label'}
+{if empty($plugins)}
+    {text key='admin+plugins_manage_no_available_items'}
+{else}
+<div class="ow_plugins_search">
+    <input id="searchPluginsInput" type="text" class="ow_searchbar_input" placeholder="{text key='admin+plugin_search_input_placeholder'}">
+</div>
+      <script>
+         let plugins = [];
+         let plugin;
+         let desc = "";
+         let title = "";
+         $("#searchPluginsInput").keyup(function(e){
+            let text = $(this).val();
+            if(text.length<3){
+               $( "[id^='plugin-active-']" ).show();
+            }else{
+               $( "[id^='plugin-active-']" ).show();
+               let selectedIds = [];
+               plugins.forEach(function(item, index){
+                  if(item["title"].includes(text) || item["desc"].includes(text)){
+                     selectedIds.push(index);
+                  }
+               });
+               if(selectedIds.length>0){
+                  plugins.forEach(function (item, index) {
+                     if(!selectedIds.includes(index)){
+                        $("#plugin-active-"+index).hide();
+                     }
+                  });
+               }else{
+                  plugins.forEach(function (item, index) {
+                     $("#plugin-active-"+index).hide();
+                  });
+               }
+            }
+         });
+      </script>
+      {assign var=counter value=1}
+      {foreach from=$plugins item='plugin'}
+      <script>
+          desc = "{$plugin.description|escape:javascript}";
+          title = "{$plugin.title|escape:javascript}";
+         plugin = {
+            "title": title,
+            "desc": desc
+         };
+         plugins[{$counter}] = plugin;
+      </script>
+      <div id="plugin-active-{$counter}" class="ow_plugin_block">
+         <div class="ow_plugin_title" {if $plugin.title|count_characters:true >45 } title="{$plugin.title}" {/if}><b>{$plugin.title|truncate:45:" ..."}</b></div>
+         <div class="ow_plugin_desc" {if $plugin.description|count_characters:true >200 } title="{$plugin.description}" {/if}>{$plugin.description|truncate:200:" ..."}</div>
+         <div class="ow_plugin_controls">
+                {if $plugin.inst_url}<a id="install-{$plugin.key}" class="ow_button_new ow_green" href="{$plugin.inst_url}">{text key='admin+manage_plugins_install_button_label'}</a>{/if}
+                {if isset($plugin.del_url)}<a id="delete-{$plugin.key}" class="ow_button_new ow_red" href="{$plugin.del_url}" onclick="return confirm('{text key='admin+manage_plugins_delete_confirm_message' pluginName=$plugin.title}');">{text key='admin+manage_plugins_delete_button_label'}</a>{/if}
+         </div>
+      </div>
+      {assign var=counter value=$counter+1}
+      {/foreach}
+
+{/if}
+{/block_decorator}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmslideshow" label="frmslideshow" language_tag="fa-IR" language_label="فارسی">
+    <key name="news_widget_title">
+        <value>
+آخرین اخبار
+        </value>
+    </key>
+    <key name="forum_widget_title">
+        <value>
+موضوعات انجمن
+        </value>
+    </key>
+
+    <key name="admin_settings_heading">
+        <value>
+            تنظیمات اسلایدشو
+        </value>
+    </key>
+    <key name="general_settings">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="more_sections">
+        <value>
+            موارد دلخواه
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="news_count">
+        <value>
+            حداکثر تعداد اسلایدها در ابزارک اخبار/انجمن
+        </value>
+    </key>
+    <key name="max_text_char">
+        <value>
+            حداکثر تعداد کاراکتر متن در ابزارک اخبار
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            ذخیره
+        </value>
+    </key>
+
+
+    <key name="add_album_form">
+        <value>
+            افزودن آلبوم
+        </value>
+    </key>
+    <key name="albums">
+        <value>
+            آلبوم‌ها
+        </value>
+    </key>
+    <key name="actions">
+        <value>
+            عملیات
+        </value>
+    </key>
+    <key name="slides">
+        <value>
+            اسلایدها
+        </value>
+    </key>
+    <key name="slide">
+        <value>
+            اسلاید
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            عنوان
+        </value>
+    </key>
+
+    <key name="saved_successfully">
+        <value>
+            تغییرات با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="edit_album">
+        <value>
+            ویرایش آلبوم
+        </value>
+    </key>
+    <key name="return_to_albums">
+        <value>
+            بازگشت به لیست آلبوم‌ها
+        </value>
+    </key>
+    <key name="deleted_successfully">
+        <value>
+            آیتم با موفقیت حذف شد
+        </value>
+    </key>
+    <key name="delete_item_warning">
+        <value>
+            آیا مطمئنید؟
+        </value>
+    </key>
+
+    <key name="description">
+        <value>
+            متن اسلاید
+        </value>
+    </key>
+    <key name="add_slide_form">
+        <value>
+            افزودن اسلاید
+        </value>
+    </key>
+    <key name="edit_slide">
+        <value>
+            اصلاح اسلاید
+        </value>
+    </key>
+    <key name="return_to_slides">
+        <value>
+            بازگشت به لیست اسلایدها
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+           لیست خالی است.
+        </value>
+    </key>
+    <key name="untitled">
+        <value>
+            بدون عنوان
+        </value>
+    </key>
+</prefix>

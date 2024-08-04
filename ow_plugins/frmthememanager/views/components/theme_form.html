@@ -1,0 +1,84 @@
+<div class="iithememanager_overlay ow_inprogress"></div>
+<div class="frmthememanager_page">
+    {form name='newTheme'}
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td class="ow_label">{label name="themeName"}</td>
+            <td class="ow_value">{input name="themeName"} {error name='themeName'}</td>
+        </tr>
+        <tr>
+            <td class="ow_label">{label name="themeKey"}</td>
+            <td class="ow_value">{input name="themeKey"} {error name='themeKey'}</td>
+        </tr>
+        <tr>
+            <td class="ow_label">{label name="parentTheme"}</td>
+            <td class="ow_value">{input name="parentTheme" onchange="parentThemeSelectAjax( $(this), '{$themeActionController}');"} {error name='parentTheme'}</td>
+        </tr>
+
+        <tr>
+            <td class="ow_label">{text key='frmthememanager+colors'}</td>
+            <td class="ow_value">
+                {foreach from=$colorList item='colorName'}
+                <span class="color_row">
+                        {label name="{$colorName}"}
+                        {if $colorPicker}
+                            {input type="color" name="{$colorName}" class="color_input_viewer"}
+                        {else}
+                            {input name="{$colorName}" class="color_input_viewer text_input" onkeydown="colorChanger($(this))"}
+                        {/if}
+                    </span>
+                {/foreach}
+            </td>
+        </tr>
+
+        <tr>
+            <td class="ow_label">{text key='frmthememanager+images_and_icons'}</td>
+            <td class="ow_value">
+                {foreach from=$urlsList item='urlName'}
+                <span class="url_row">
+                        {label name="{$urlName.name}"}{input type="file" name="{$urlName.name}"  onclick="removeFile('{$urlName.name}',true)"}
+                        {if isset($urlName.url) && $urlName.url !=null }
+                            <div class="theme_file_preview {$urlName.name}" style="background: url('{$urlName.url}')"></div>
+                            <a class="remove_file" id="{$urlName.name}" onclick="removeFile('{$urlName.name}')">{text key="frmthememanager+remove"}</a>
+                        {else}
+                            <a style="display: none" class="remove_file" id="{$urlName.name}" onclick="removeFile('{$urlName.name}')">{text key="frmthememanager+remove"}</a>
+                        {/if}
+                    </span>
+                {/foreach}
+            </td>
+        </tr>
+
+
+        <tr>
+            <td class="ow_label">{label name="themeConfigs"}</td>
+            <td class="ow_value">{input name="themeConfigs"}</td>
+        </tr>
+
+        <tr>
+            <td class="ow_label">{label name="themeStyle"}</td>
+            <td class="ow_value">{input name="themeStyle"}</td>
+        </tr>
+
+        <tr>
+            <td class="ow_label">{label name="footerTags"}</td>
+            <td class="ow_value">{input name="footerTags"}</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="ow_submit">{submit name="createTheme" class='ow_ic_save'}</td>
+        </tr>
+    </table>
+    {/form}
+
+    <div class="plugin_guide">
+        <a target="_blank" href="{$guideLink}">{text key='frmthememanager+plugin_guide'}</a>
+    </div>
+
+    <div class="back_button">
+        <span class="ow_button ow_ic_right_arrow">
+            <span>
+                <input type="button" onclick="location.href='{$returnUrl}'" value="{text key='base+back'}" />
+            </span>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {if !empty($subsections) }
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$subsections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {/if}
+</div>
+
+{if isset($lastCalculationDate)}
+    <p class="graphy_last_update_time">{text key='frmgraph+last_calculation_date'}: {$lastCalculationDate}</p>
+{/if}
+{form name="clusterForm"}
+<table class="ow_table_1 ow_form" style="margin: 0">
+    <tbody>
+    <tr class="ow_tr_last ow_center">
+        <td class="ow_value">
+            {label name='question'}{input name='question'}{error name="question"}
+        </td>
+    </tr>
+    <tr class="ow_tr_last ow_center">
+        <td>
+            {submit name="submit" langLabel='frmgraph+submit' }
+        </td>
+    </tr>
+    </tbody>
+</table>
+{/form}
+
+<div id="network"></div>

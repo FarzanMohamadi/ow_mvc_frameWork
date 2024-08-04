@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frminvite" label="frminvite" language_tag="fa-IR" language_label="فارسی">
+	<key name="admin_invitation_settings_heading">
+        <value>
+            تنظیمات افزونه دعوت افراد
+        </value>
+    </key>
+	<key name="invitationDetailsInfo">
+        <value>
+            اطلاعات دعوت افراد
+        </value>
+    </key>
+	<key name="viewCountSetting">
+        <value>
+            تنظیمات نمایش
+        </value>
+    </key>
+		<key name="senderId">
+        <value>
+            شناسه دعوت کننده
+        </value>
+    </key>
+		<key name="senderUserName">
+        <value>
+            نام کاربری دعوت کننده
+        </value>
+    </key>
+		<key name="senderDisplayName">
+        <value>
+            نام حقیقی دعوت کننده
+        </value>
+    </key>
+		<key name="invitedEmail">
+        <value>
+            رایانامه دعوت شونده
+        </value>
+    </key>
+		<key name="timeStamp">
+        <value>
+            تاریخ
+        </value>
+    </key>
+		<key name="input_settings_view_count_label">
+        <value>
+            تعداد مورد نمایش در هر صفحه
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+             تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+	<key name="invalid_invitation_count">
+        <value>
+             عدد وارد شده صحیح نیست
+        </value>
+    </key>
+</prefix>

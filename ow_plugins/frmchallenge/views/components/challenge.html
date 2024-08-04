@@ -1,0 +1,135 @@
+{foreach from=$challenges item='item'}
+<div class="solitary_challenge challenge_item">
+    {if !empty($item.title)}
+    <div class="challenge_info">
+        <div class="title">
+            {$item.title}
+            <div class="categories">
+                <div class="value">
+                    ({$item.categories_string})
+                </div>
+            </div>
+            {if !isset($item.not_start)}
+            <div class="join_label">
+                {if !empty($item.join_url)}
+                <a href="{$item.join_url}">{$item.join_label}</a>
+                {else}
+                {$item.join_label}
+                {/if}
+            </div>
+
+            {if !empty($item.cancel_url)}
+            <div class="cancel_label">
+                <a class="cancel" href="{$item.cancel_url}">{$item.cancel_label}</a>
+            </div>
+            {/if}
+
+            {if $item.wait_for_answer}
+            <div class="wait_for_answer">
+                {text key='frmchallenge+wait_for_answer'}
+            </div>
+            {/if}
+
+            {if !empty($item.cancelerId)}
+            <div class="cancecled_box cancel_label">
+                {text key='frmchallenge+canceled'}
+            </div>
+            {/if}
+            {if isset($item.opponent_name)}
+            <div class="opponent_name">
+                <div class="label">
+                    {text key='frmchallenge+opponent'}
+                </div>
+                <div class="value">
+                    {if isset($item.opponent_url)}
+                    <a href="$item.opponent_url">
+                        {$item.opponent_name}
+                    </a>
+                    {else}
+                    {$item.opponent_name}
+                    {/if}
+                </div>
+            </div>
+            {/if}
+            {/if}
+        </div>
+    </div>
+    {/if}
+
+    {if isset($item.not_start)}
+    <div class="challenge_info">
+        {text key='frmchallenge+challenge_not_start'}
+    </div>
+    {/if}
+    <div class="challenge_info">
+        {if isset($item.finish_date) && !isset($item.finish_status)}
+        <div class="finish_date">
+            <div class="label">
+                {text key='frmchallenge+finish_date'}
+            </div>
+            <div class="value">
+                {$item.finish_date}
+            </div>
+        </div>
+        {/if}
+
+        {if isset($item.start_time)}
+        <div class="finish_date">
+            <div class="label">
+                {text key='frmchallenge+start_time'}
+            </div>
+            <div class="value">
+                {$item.start_time}
+            </div>
+        </div>
+        {/if}
+    </div>
+
+    <div class="challenge_info">
+        {if $item.lose_point > 0}
+        <div class="lose_point point_item">
+            <div class="label">
+                {text key='frmchallenge+lose_point'}
+            </div>
+            <div class="value">
+                {$item.lose_point}
+            </div>
+        </div>
+        {/if}
+        {if $item.equal_point > 0}
+        <div class="equal_point point_item">
+            <div class="label">
+                {text key='frmchallenge+equal_point'}
+            </div>
+            <div class="value">
+                {$item.equal_point}
+            </div>
+        </div>
+        {/if}
+        {if $item.max_point > 0}
+        <div class="max_point">
+            <div class="label">
+                {text key='frmchallenge+max_point'}
+            </div>
+            <div class="value">
+                {$item.max_point}
+            </div>
+        </div>
+        {/if}
+        {if $item.min_point > 0}
+        <div class="max_point">
+            <div class="label">
+                {text key='frmchallenge+min_point_label'}
+            </div>
+            <div class="value">
+                {$item.min_point}
+            </div>
+        </div>
+        {/if}
+    </div>
+</div>
+{foreachelse}
+<p>
+    {text key='frmchallenge+empty_challenge'}
+</p>
+{/foreach}

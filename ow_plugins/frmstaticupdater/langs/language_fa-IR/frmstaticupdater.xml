@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmstaticupdater" label="frmstaticupdater" language_tag="fa-IR" language_label="فارسی">
+    <key name="description">
+        <value>
+            کاربر مدیر می‌تواند با وارد شدن به نشانی اینترنتی domain/update-all-static-files در نسخه رومیزی، تمامی فایل‌های استاتیک را به‌روزرسانی کند. این اقدام پس از به‌روزرسانی افزونه یا پوسته توصیه می‌شود.
+        </value>
+    </key>
+    <key name="successfully_update">
+        <value>
+            تمامی فایل‌های استاتیک به‌روزرسانی شدند. لطفا حافظه نهان مرورگر خود را خالی کنید.
+        </value>
+    </key>
+	<key name="update_static_files">
+        <value>
+            به‌روزرسانی فایل‌های استاتیک
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه به‌روزرسان فایل‌های استاتیک هسته، افزونه‌ها، پوسته‌ها و به‌روزرسانی ترجمه‌ها
+        </value>
+    </key>
+    <key name="update_language_description">
+        <value>
+            همچنین با استفاده از دکمه زیر، می‌توان نسخ اصلاح شده تمامی ترجمه‌ها را اعمال کرد.
+        </value>
+    </key>
+    <key name="update_language_button">
+        <value>
+            به‌روزرسانی ترجمه‌ها
+        </value>
+    </key>
+    <key name="update_language_successfully">
+        <value>
+            به‌روزرسانی ترجمه‌ها با موفقیت انجام شد.
+        </value>
+    </key>
+</prefix>

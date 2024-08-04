@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcontrolkids" label="frmcontrolkids" language_tag="fa-IR" language_label="فارسی">
+    <key name="setting_saved">
+        <value>
+            تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="join_parent_email_header">
+        <value>رایانامه والد</value>
+    </key>
+    <key name="join_parent_email_description">
+        <value>شما باید رایانامه والد خود را وارد نمایید</value>
+    </key>
+    <key name="minimumKidsAgeLabel">
+       <value>حداکثر سن برای شناسایی کاربر کودک</value>
+    </key>
+    <key name="parentEmailEmpty">
+        <value>
+            فیلد رایانامه والد باید به درستی پر شود
+        </value>
+    </key>
+    <key name="kids_list_header">
+        <value>فرزندان</value>
+    </key>
+    <key name="kid_username_label">
+        <value>نام کاربری</value>
+    </key>
+    <key name="kid_shadow_login_url_label">
+        <value>ورود به عنوان این فرزند</value>
+    </key>
+    <key name="kid_email_label">
+        <value>رایانامه</value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>
+            فرزندان
+        </value>
+    </key>
+    <key name="email_registration_subject">
+        <value>
+            ثبت نام در شبکه اجتماعی {$site_name}
+        </value>
+    </key>
+    <key name="parent_email_subject">
+        <value>
+            ثبت نام فرزند شما در شبکه اجتماعی {$site_name}
+        </value>
+    </key>
+    <key name="email_registration_content">
+        <value>
+            فرزند شما با رایانامه {$kidEmail} و نام کاربری {$kidUsername}، به دلیل محدودیت سنی، شما را با رایانامه {$parentEmail} به عنوان والد انتخاب کرده است. شما با استفاده از لینک زیر می‌توانید در شبکه اجتماعی {$site_name} ثبت‌نام کرده و فرزند خود را پایش کنید.
+        </value>
+    </key>
+    <key name="parent_email_content">
+        <value>
+            فرزند شما با رایانامه {$kidEmail} و نام کاربری {$kidUsername}، به دلیل محدودیت سنی، شما را با رایانامه {$parentEmail} به عنوان والد انتخاب کرده است. شما در شبکه اجتماعی {$site_name}، از این پس می‌توانید فرزند خود را پایش کنید.
+        </value>
+    </key>
+    <key name="email_registration_link_label">
+        <value>
+            ثبت‌نام
+        </value>
+    </key>
+    <key name="marginTimeLabel">
+        <value>
+            مدت زمان باقی‌مانده برای خروج از سن کودکی (بر حسب هفته)
+        </value>
+    </key>
+	<key name="parents_kids_message">
+        <value>
+بر اساس قوانین این شبکه اگر شما زیر {$kidsAge} سال سن دارید، موظف هستید رایانامه والد خود را وارد نمایید
+        </value>
+    </key>
+    <key name="login_as_label">
+        <value>
+            ورود
+        </value>
+    </key>
+    <key name="logoutFromShadowLogin">
+        <value>
+            خارج شدن از {$kidUsername} و وارد شدن با {$parentUsername}
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            تنظیمات افزونه پایش فرزندان
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            تنظیمات افزونه پایش فرزندان
+        </value>
+    </key>
+    <key name="enter_parent_email_title">
+        <value>
+            رایانامه والد
+        </value>
+    </key>
+    <key name="enter_parent_email_heading">
+        <value>
+            رایانامه والد
+        </value>
+    </key>
+    <key name="form_add_parent_email_submit">
+        <value>
+            ذخیره
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmadminnotification" label="frmadminnotification" language_tag="en" language_label="English">
+	<key name="admin_save_settings"><value>Save Settings</value></key>
+	<key name="admin_settings_title"><value>Admin notification - Settings</value></key>
+	<key name="user_save_success"><value>Settings saved successfully</value></key>
+	<key name="newsCommentNotification"><value>Send notification on creating comment in news</value></key>
+	<key name="topicForumNotification"><value>Send notification on creating post and comment in forum</value></key>
+	<key name="registerNotification"><value>Send notification after registration</value></key>
+	<key name="registration_notice"><value>User registered in {$site_name} (username: &lt;a href="{$profile_url}"&gt;{$username}&lt;/a&gt; and real name: {$realname}) at {$join_date}</value></key>
+	<key name="registration_notice_subject"><value>User registered in {$site_name}</value></key>
+	<key name="emailSendTo"><value>Send to (If you set this field empty, the email of site will be used)</value></key>
+	<key name="topic_forum_add_subject"><value>User creates a topic of forum in {$site_name}</value></key>
+	<key name="topic_forum_add_description"><value>A user with username of {$username}, creates a topic of forum with name of &lt;a href="{$topicUrl}"&gt;{$topic_title}&lt;/a&gt; in {$site_name}</value></key>
+	<key name="topic_forum_edit_description"><value>A user with username of {$username}, edit a topic of forum with name of &lt;a href="{$topicUrl}"&gt;{$topic_title}&lt;/a&gt; in {$site_name}</value></key>
+	<key name="comment_topic_forum_add_subject"><value>User creates a post of topic of forum in {$site_name}</value></key>
+	<key name="comment_topic_forum_add_description"><value>A user with username of {$username}, creates a post of topic of forum with name of &lt;a href="{$topicUrl}"&gt;{$topic_title}&lt;/a&gt; in {$site_name}</value></key>
+	<key name="comment_news_add_subject"><value>User creates a comment of news in {$site_name}</value></key>
+	<key name="comment_news_add_description"><value>A user with username of {$username}, creates a comment of news with name of {$news_title} in {$site_name}. Link of news is &lt;a href="{$newsUrl}"&gt;here&lt;/a&gt;</value></key>
+</prefix>

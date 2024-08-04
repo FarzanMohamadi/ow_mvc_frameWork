@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="fa-IR" language_label="فارسی">
+    <key name="idle_time_label">
+        <value>
+            زمان بیکار بودن کاربران (به دقیقه)
+        </value>
+    </key>
+    <key name="settings_successfuly_saved">
+        <value>
+            تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+	
+	<key name="status_field_ownUser">
+        <value>
+           چه خبر؟
+        </value>
+    </key>
+	<key name="status_field_otherUser">
+        <value>
+            بنویس به {$username}
+        </value>
+    </key>
+	<key name="status_field_invintation">
+        <value>
+             چه خبر؟
+        </value>
+    </key>
+    <key name="change_privacy_label">
+        <value>
+            حق دسترسی
+        </value>
+    </key>
+    <key name="change_privacy_of_album_label">
+        <value>
+            حق دسترسی آلبوم
+        </value>
+    </key>
+    <key name="change_privacy_description">
+        <value>
+            نمایش این اطلاعات به:
+        </value>
+    </key>
+    <key name="submit">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="privacy_successfuly_changed">
+        <value>
+            حق دسترسی با موفقیت تغییر کرد
+        </value>
+    </key>
+    <key name="privacy_not_changed">
+        <value>
+            شما امکان تغییر حق دسترسی را ندارید
+        </value>
+    </key>
+    <key name="my_post_on_feed_newsfeed">
+        <value>
+            پیش‌فرض نوشته‌های من
+        </value>
+    </key>
+    <key name="my_post_on_feed_newsfeed_description">
+        <value>
+            با تغییر این گزینه، حق دسترسی به پیش‌فرض نوشته‌های شما تغییر خواهد کرد
+        </value>
+    </key>
+    <key name="other_post_on_feed_newsfeed">
+        <value>
+            نمایش نوشته‌های دیگران در نمایه من
+        </value>
+    </key>
+    <key name="other_post_on_feed_newsfeed_description">
+        <value>
+            با تغییر این گزینه، حق دسترسی به پیش‌فرض نوشته‌ها توسط دیگران برای شما تغییر خواهد کرد
+        </value>
+    </key>
+    <key name="last_post_of_others_newsfeed">
+        <value>
+            نوشته‌های گذشته دیگران در نمایه
+        </value>
+    </key>
+    <key name="last_post_of_myself_newsfeed">
+        <value>
+            نوشته‌های گذشته خودم در نمایه
+        </value>
+    </key>
+    <key name="who_post_on_newsfeed">
+        <value>
+            نوشتن در نمایه من
+        </value>
+    </key>
+    <key name="who_post_on_newsfeed_description">
+        <value>
+            با تغییر این گزینه، حق دسترسی به نوشتن در نمایه شما تغییر خواهد کرد
+        </value>
+    </key>
+    <key name="show_to_everybody">
+        <value>
+            نمایش به همه
+        </value>
+    </key>
+    <key name="show_to_friends">
+        <value>
+            نمایش به دوستان {$username}
+        </value>
+    </key>
+    <key name="show_to_user">
+        <value>
+            نمایش به {$username}
+        </value>
+    </key>
+    <key name="photo_default_privacy">
+        <value>
+            پیش‌فرض تصاویر من
+        </value>
+    </key>
+    <key name="video_default_privacy">
+        <value>
+            پیش‌فرض ویدیوهای من
+        </value>
+    </key>
+    <key name="video_default_privacy_description">
+        <value>
+            با تغییر این گزینه، حق دسترسی به پیش‌فرض ویدیوهای شما تغییر پیدا خواهد کرد
+        </value>
+    </key>
+    <key name="view_user_comment_widget">
+        <value>
+            نمایش ابزارک نظر در نمایه (به دلیل مسائل حریم خصوصی توصیه می‌شود آن را فعال نکنید)
+        </value>
+    </key>
+    <key name="verify_later">
+        <value>
+            بعدا تایید خواهم کرد
+        </value>
+    </key>
+    <key name="verify_using_resend_email">
+        <value>
+            بازگشت به فرم ارسال دوباره کد فعال‌سازی
+        </value>
+    </key>
+    <key name="verify_using_code">
+        <value>
+            فعال‌سازی حساب کاربری از طریق کد ارسال شده به شما
+        </value>
+    </key>
+    <key name="last_post_of_myself_newsfeed_description">
+        <value>
+        با تغییر این گزینه، حق دسترسی تمامی نوشته‌های گذشته ایجاد شده توسط شما، تغییر خواهد کرد
+        </value>
+    </key>
+    <key name="last_post_of_others_newsfeed_description">
+        <value>
+            با تغییر این گزینه، حق دسترسی تمامی نوشته‌های گذشته ایجاد شده توسط دیگران در نمایه شما، تغییر خواهد کرد
+		</value>
+    </key>
+    <key name="general_setting">
+        <value>
+            تنظیمات عمومی
+        </value>
+    </key>
+    <key name="privacy_setting">
+        <value>
+            تنظیمات حریم خصوصی
+        </value>
+    </key>
+    <key name="privacy_setting_description">
+        <value>
+            در این فرم شما می‌توانید مقادیر پیش‌فرض حق دسترسی را تعیین کنید. کاربران می‌توانند به صورت اختصاصی این مقادیر را برای خود تنظیم کنند
+        </value>
+    </key>
+    <key name="privacy_value_empty">
+        <value>
+            شما مقدار پیش‌فرض این مورد را هنوز مشخص نکرده‌اید
+        </value>
+    </key>
+    <key name="plugin_privacy_not_exist_description">
+        <value>
+            افزونه حریم خصوصی نصب نیست. به منظور مدیریت حق دسترسی‌های محتوای کاربران، شما باید افزونه حریم خصوصی را نیز نصب کنید
+        </value>
+    </key>
+    <key name="index_status_enabled_desc">
+        <value>
+            به دلایل امنیتی این گزینه غیرفعال است
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+           تنظیمات موارد امنیتی ضروری
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            تنظیمات موارد امنیتی ضروری
+        </value>
+    </key>
+    <key name="delete_feed_item_label">
+        <value>
+            حذف نوشته از نمایه
+        </value>
+    </key>
+    <key name="delete_feed_item_confirmation">
+        <value>
+            آیا از حذف این نوشته از نمایه اطمینان دارید؟
+        </value>
+    </key>
+    <key name="approve_user_after_edit_profile_label">
+        <value>
+            عدم نیاز به تایید کاربران پس از ویرایش نمایه (در زمان اجباری بودن تایید کاربران)
+        </value>
+    </key>
+		 <key name="newsfeed_homepage_setting">
+        <value>
+             تنظیمات نمایش فعالیت در صفحه اصلی
+        </value>
+    </key>
+	 <key name="admin_customization_legend">
+        <value>
+             امکان کنترل این‌که چه نوع مطالبی در تازه‌ها در صفحه اصلی نشان داده شود، لطفا توجه کنید که تغییرات تنها بر روی پست‌های جدید اثر خواهد گذاشت
+        </value>
+    </key>
+	 <key name="save_customization_btn_label">
+        <value>
+             ذخیره
+        </value>
+    </key>
+	 <key name="customization_changed">
+        <value>
+             تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+	 <key name="customization_not_changed">
+        <value>
+             تنظیمات تغییر نکرد
+        </value>
+    </key>
+    <key name="newsFeedShowDefault">
+        <value>
+            نمایش فعالیت های تازه‌ها به صورت پیش فرض
+        </value>
+    </key>
+    <key name="passwordRequiredProfile">
+        <value>
+            وارد کردن گذرواژه برای ذخیره تغییرات نمایه کاربری
+        </value>
+    </key>
+    <key name="questions_section_password">
+        <value>
+            گذرواژه
+        </value>
+    </key>
+    <key name="password">
+        <value>
+            گذرواژه
+        </value>
+    </key>
+    <key name="change_user_password_by_code">
+        <value>
+            تغییر گذرواژه
+        </value>
+    </key>
+	    <key name="email_is_not_registered">
+        <value>
+            کاربری با ایمیل وارد شده یافت نشد
+        </value>
+    </key>
+    <key name="password_changed_successfully">
+        <value>
+            گذرواژه با موفقیت تغییر کرد
+        </value>
+    </key>
+    <key name="set_privacy_notification">
+        <value>
+            &lt;a href="{$url}"&gt;تنظیمات حریم خصوصی&lt;/a&gt;  خود را هم‌اکنون کامل کنید
+        </value>
+    </key>
+    <key name="email_notification_alerts_label">
+        <value>
+            موارد امنیتی ضروری
+        </value>
+    </key>
+    <key name="email_notifications_alerts">
+        <value>
+            دریافت پیغام‌های امنیتی
+        </value>
+    </key>
+    <key name="privacy_not_set_message">
+        <value>
+            شما تا کنون تنظیمات حریم خصوصی خود را ذخیره نکرده‌اید
+        </value>
+    </key>
+    <key name="auth_action_label_privacy_alert">
+        <value>
+            اعلان حریم خصوصی
+        </value>
+    </key>
+    <key name="auth_group_label">
+        <value>
+            موارد امنیتی ضروری
+        </value>
+    </key>
+    <key name="remember_me_default_value">
+        <value>
+            فعال بودن مرا بخاطر داشته باش در صفحه ورود
+        </value>
+    </key>
+    <key name="set_valid_ips">
+        <value>
+            تنظیمات IPهای مجاز
+        </value>
+    </key>
+    <key name="input_settings_valid_ip_list_label">
+        <value>
+            آدرس IPهای مجاز
+        </value>
+    </key>
+    <key name="input_settings_valid_ip_list_desc">
+        <value>
+            در این قسمت آدرس IPهای مجاز برای دسترسی به بخش مدیریت را وارد نمایید. در هر خط یک IP وارد کنید
+        </value>
+    </key>
+    <key name="user_ip_address">
+        <value>
+          آدرس IP شما:
+        </value>
+    </key>
+    <key name="privacyUpdateNotification">
+        <value>
+فعال بودن اعلان به‌روزرسانی تنظیمات حریم خصوصی
+        </value>
+    </key>
+    <key name="auth_action_label_view_users_list">
+        <value>
+            مشاهده فهرست اعضا
+        </value>
+    </key>
+    <key name="allow_update_all_plugins">
+        <value>
+            امکان به‌روزرسانی تمام افزونه‌ها به صورت یکجا
+        </value>
+    </key>
+    <key name="editor_password">
+        <value>
+            برای اعمال تغییرات، ورودی زیر را به درستی کامل کنید
+        </value>
+    </key>
+    <key name="editor_password_heading">
+        <value>
+             اعمال تغییرات
+        </value>
+    </key>
+    <key name="auth_action_label_customize_user_profile">
+        <value>
+            شخصی سازی نمایه کاربر
+        </value>
+    </key>
+    <key name="ie_message">
+        <value>
+            جهت استفاده از این شبکه، از مرورگرهای به‌روز مانند
+        &lt;a href="https://www.google.com/chrome/"&gt;Google Chrome&lt;/a&gt;
+        &lt;a href="https://www.mozilla.org/en-US/firefox/new/"&gt;Firefox&lt;/a&gt;
+            و یا
+        &lt;a href="https://www.microsoft.com/en-us/windows/microsoft-edge"&gt;Edge&lt;/a&gt;
+            استفاده نمایید.
+        </value>
+    </key>
+    <key name="ie_message_enabled">
+        <value>
+            نمایش یک پیغام به کاربران مرورگر IE
+        </value>
+    </key>
+    <key name="disable_verify_peer">
+        <value>
+            غیر فعال کردن تنظیم verify_peer در راه‌اندازی اولیه php mailer
+        </value>
+    </key>
+
+    <key name="delete_user_heading">
+        <value>
+            حذف کاربران
+        </value>
+    </key>
+    <key name="delete_user_form_title">
+        <value>
+            توجه
+        </value>
+    </key>
+    <key name="delete_user_form_desc">
+        <value>
+            این فرم برای حذف کاربران به شکل دائمی، به همراه تمامی داده‌ها و فایل‌ها است. توجه شود که شما قادر به بازگشت اطلاعات کاربران انتخابی بعد از ثبت این فرم نخواهید بود
+        </value>
+    </key>
+    <key name="email_all_admins">
+        <value>
+            ارسال اعلان به تمامی مدیران از طریق رایانامه
+        </value>
+    </key>
+    <key name="email_all_deleted_users">
+        <value>
+            ارسال اعلان به تمامی کاربران در حال حذف از طریق رایانامه
+        </value>
+    </key>
+    <key name="your_password">
+        <value>
+            گذرواژه شما
+        </value>
+    </key>
+    <key name="your_password_desc">
+        <value>
+            به دلایل امنیتی، لطفا گذرواژه خود را وارد کنید
+        </value>
+    </key>
+    <key name="delete_user_submit_warning">
+        <value>
+            توجه شود که شما قادر به بازگرداندن اطلاعات کاربران حذف‌شده بعد از ثبت این فرم نخواهید بود
+        </value>
+    </key>
+    <key name="users_deleted_successfully">
+        <value>
+            حذف با موفقیت انجام شد
+        </value>
+    </key>
+    <key name="user_is_removed_email_title">
+        <value>
+            کاربری از شبکه حذف شد
+        </value>
+    </key>
+    <key name="user_is_removed_email_content">
+        <value>
+            {$realName} با نام کاربری "{$username}" و رایانامه {$email} توسط {$adminRealName} ({$adminUsername}) حذف شد
+        </value>
+    </key>
+    <key name="cancel">
+        <value>
+            انصراف
+        </value>
+    </key>
+    <key name="back_to_user_profile">
+        <value>
+            بازگشت به نمایه کاربر
+        </value>
+    </key>
+    <key name="auth_action_label_user_can_view_comments">
+        <value>
+            اجازه مشاهد نظرات درج شده در تمامی بخش‌ها
+        </value>
+    </key>
+    <key name="profile_field_privacy">
+        <value>
+            حریم خصوصی اطلاعات نمایه
+        </value>
+    </key>
+    <key name="privacy_friends">
+        <value>
+            دوستان
+        </value>
+    </key>
+    <key name="privacy_everybody">
+        <value>
+            همه
+        </value>
+    </key>
+    <key name="privacy_only_for_me">
+        <value>
+            فقط خودم
+        </value>
+    </key>
+    <key name="update_system_code">
+        <value>
+            به روز رسانی کدهای سامانه
+        </value>
+    </key>
+    <key name="extract_file_error">
+        <value>
+            در بازگشایی فایل فشرده مشکلی به وجود آمد
+        </value>
+    </key>
+    <key name="system_code_updated_successfully">
+        <value>
+            فایل‌های مورد نظر به‌رورسانی  شدند
+        </value>
+    </key>
+    <key name="system_code_permission_denied">
+        <value>
+            دسترسی مورد نیاز برای به روز رسانی فایل‌ها وجود ندارد
+        </value>
+    </key>
+    <key name="system_code_update_can_not_write">
+        <value>
+            در فایل‌های زیر امکان نوشتن وجود ندارد:
+        </value>
+    </key>
+    <key name="system_code_update_description">
+        <value>
+            برای به‌روزرسانی سامانه می‌توان فایل‌های جدید را به همراه ساختار پوشه‌بندی موردنظر، به صورت فشرده‌شده (zip) در این  بخش آپلود نمود. برای مثال در صورتی که قصد به‌روزرسانی فایل content_provider.php از پوشه‌ی ‍classes درون افزونه‌ی blogs‍ را دارید، باید این فایل را به همراه ساختار پوشه‌بندی ow_plugins/blogs/classes/content_provider.php  به صورت فشرده (zip) درآورده و در این بخش آپلود کنید.
+        </value>
+    </key>
+    <key name="reset_services_description">
+        <value>
+            بعد از تغییر کد، برخی از سرویس‌ها نیازمند ریستارت هستند. با استفاده از دکمه زیر می‌توانید این سرویس‌ها را ریستارت کنید. در نظر بگیرید این مورد تنها برای سرویس‌هایی قابل استفاده بوده که به صورت خودکار پس از توقف، اجرا می‌شوند.
+        </value>
+    </key>
+    <key name="reset_services_button">
+        <value>
+            ریستارت
+        </value>
+    </key>
+    <key name="disable_user_get_other_sites_content">
+        <value>
+            محدودسازی واکشی مطالب سایت‌های دیگر تنها توسط مدیران اصلی سامانه
+        </value>
+    </key>
+    <key name="user_can_change_account_type">
+        <value>
+            امکان تغییر نوع حساب کاربری توسط کاربر
+        </value>
+    </key>
+    <key name="public_warning_alert">
+        <value>
+            پیام هشدار عمومی
+        </value>
+    </key>
+     <key name="warningAlert_enable_label">
+        <value>
+            فعال سازی هشدار پیام
+        </value>
+    </key>
+    <key name="warningAlert_enable_desc">
+        <value>
+           با فعالسازی هشدار به صورت عمومی برای همه ی کاربران فرستاده می شود
+        </value>
+    </key>
+    <key name="warningAlert_text_label">
+        <value>
+           متن ارسالی به کاربران
+        </value>
+    </key>
+    <key name="warningAlert_text_desc">
+        <value>
+            متن پیام هشدار
+        </value>
+    </key>
+    <key name="warningAlert_section_label">
+        <value>
+            ارسال پیام هشدار
+        </value>
+    </key>
+    <key name="warningAlert_types_label">
+        <value>
+            نوع هشدار پیام  
+        </value>
+    </key>
+    <key name="warningAlert_types_desc">
+        <value>
+           در نوع both هر دو شکل پیام ارسال می گردد
+        </value>
+    </key>
+    <key name="warningAlert_updated">
+        <value>
+           پیام هشدار با موفقیت بروز رسانی گردید
+        </value>
+    </key>
+    <key name="accept">
+        <value>
+           تایید
+        </value>
+    </key>
+     <key name="warningAlert_action_label">
+        <value>
+            عملیات هشدار 
+        </value>
+    </key>
+    <key name="warningAlert_action_desc">
+        <value>
+          نوعی کد دستوری است که توسط توسعه دهنده ها جهت انجام عملیات استفاده می گردد. 
+        </value>
+    </key>
+</prefix>

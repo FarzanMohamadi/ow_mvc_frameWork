@@ -1,0 +1,50 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<h1 class="ow_stdmargin">
+    {text key="frmevaluation+edit_value"}
+</h1>
+
+<div class="ow_std_margin clearfix">
+    <h3>
+        <a href="{$returnToQuestion}">{text key="frmevaluation+return_to_question"}</a>
+    </h3>
+    {form name="value"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr>
+            <th colspan="2">{text key="frmevaluation+value_form_edit"}</th>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {text key="frmevaluation+value_form_name"}
+            </td>
+            <td class="ow_value">
+                {input name='name'}
+                {error name='name'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {text key="frmevaluation+value_form_value"}
+            </td>
+            <td class="ow_value">
+                {input name='value'}
+                {error name='value'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name='submitValue'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>

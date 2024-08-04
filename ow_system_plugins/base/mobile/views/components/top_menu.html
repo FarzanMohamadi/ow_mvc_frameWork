@@ -1,0 +1,17 @@
+<nav class="owm_nav_left_top">
+    <ul class="owm_nav_left">
+        {foreach from=$data item='item'}
+            <li class="owm_nav_left_item">
+                {if !empty($item.addUrl)}
+                    <a href="{$item.addUrl}" class="owm_nav_left_item_add"></a>
+                    <a href="{$item.url}" class="owm_nav_left_item_icon owm_nav_left_item_with_add"><span>{$item.label}</span></a>
+                {else if !empty($item.addId)}
+                    <a href="javascript://" class="owm_nav_left_item_add" id="{$item.addId}"></a>
+                    <a href="{$item.url}" class="owm_nav_left_item_icon owm_nav_left_item_with_add"><span>{$item.label}</span></a>
+                {else}
+                    <a href="{$item.url}" class="owm_nav_left_item_icon"><span>{$item.label}</span></a>
+                {/if}
+            </li>
+        {/foreach}
+    </ul>
+</nav>

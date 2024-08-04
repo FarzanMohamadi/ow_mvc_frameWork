@@ -1,0 +1,73 @@
+{style}
+{literal}
+    select {
+    width: 200px;
+    }
+{/literal}
+{/style}
+
+<div class="question_roles">
+    <h1>{text key='frmquestionroles+admin_title'}</h1>
+    <div class="ow_narrow ow_right">
+        {form name='roles'}
+        <table class="ow_table_1 ow_form ow_automargin" style="max-width: 400px;">
+            <tr class="ow_alt1">
+                <td class="question_roles header" colspan="2">{text key='frmquestionroles+choose_moderator'}</td>
+            </tr>
+            <tr class="ow_alt1">
+                <td class="ow_label" style="min-width: 120px !important;">{label name=role}</td>
+                <td class="ow_value">{input name=role}
+                    <div style="height:1px;"></div>{error name=role}
+                </td>
+            </tr>
+
+            <tr class="ow_alt1">
+                <td class="question_roles header" colspan="2">{text key='frmquestionroles+choose_fields_value'}</td>
+            </tr>
+            {foreach from=$allJoinQuestionsKey item='field'}
+            <tr class="ow_alt1">
+                <td class="ow_label">
+                    {label name=$field}
+                </td>
+                <td class="ow_value">
+                    {input name=$field}
+                    <div style="height:1px;"></div>
+                    {error name=$field}
+                </td>
+            </tr>
+            {/foreach}
+            <tr class="ow_alt2">
+                <td class="ow_center" colspan="2">{submit name='save' class='ow_button ow_ic_save'}</td>
+            </tr>
+        </table>
+        {/form}
+    </div>
+    <div class="ow_wide ow_right">
+        <table class="ow_table_1 ow_form ow_automargin" style="width: 400px;">
+            <tr class="ow_alt1">
+                <td class="question_roles header" colspan="3">{text key='frmquestionroles+map_roles_to_fields'}</td>
+            </tr>
+            {foreach from=$rolesDefinedInfo item='role'}
+            <tr class="ow_alt1">
+                <td class="ow_label">
+                    {$role.roleName}
+                </td>
+                <td class="ow_value">
+                    {foreach from=$role.questions item='question'}
+                    <div class="question_roles row">
+                        {$question.title}: {$question.value}
+                    </div>
+                    {/foreach}
+                </td>
+                <td class="image_wrapper">
+                    <a href="javascript://" onclick='deleteQuestionRoles("{$role.deleteUrl}")'><img src="{$deleteIconUrl}"/></a>
+                </td>
+            </tr>
+            {foreachelse}
+            <tr class="ow_alt1" style="text-align: center">
+                <td colspan="3">{text key='base+empty_list'}</td>
+            </tr>
+            {/foreach}
+        </table>
+    </div>
+</div>

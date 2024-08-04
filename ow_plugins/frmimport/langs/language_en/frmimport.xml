@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmimport" label="frmimport" language_tag="en" language_label="English">
+    <key name="settings_successfuly_saved">
+        <value>
+            Setting Saved Successfully.
+        </value>
+    </key>
+    <key name="request_to_users_desc">
+        <value>
+            Users in the list are registered. You can send friend request for them.
+        </value>
+    </key>
+    <key name="invite_users_desc">
+        <value>
+            Users in the list are not registered yet. You can send invitation request for them.
+        </value>
+    </key>
+    <key name="request_to_users">
+        <value>
+            Send friend request
+        </value>
+    </key>
+    <key name="invite_user">
+        <value>
+            Send invitation
+        </value>
+    </key>
+    <key name="invitation_email_content">
+        <value>
+            You are invited in {$site_name} by {$username}. You can register using click on &lt;a href="{$join_url}"&gt;link&lt;/a&gt;.
+        </value>
+    </key>
+    <key name="send_successfully">
+        <value>
+            Send successfully.
+        </value>
+    </key>
+    <key name="send_empty">
+        <value>
+            Nobody selected for sending request.
+        </value>
+    </key>
+    <key name="list_empty">
+        <value>
+            Nobody existed for sending request.
+        </value>
+    </key>
+    <key name="find_list_successfully">
+        <value>
+            All of your friends received successfully.
+        </value>
+    </key>
+    <key name="find_list_empty">
+        <value>
+            Nobody found. Try again.
+        </value>
+    </key>
+    <key name="error_find_list">
+        <value>
+            Error occurred. Try again.
+        </value>
+    </key>
+    <key name="invitation_email_to_inviter_content">
+        <value>
+            User with email of {$email} registered in {$site_name}.
+        </value>
+    </key>
+    <key name="invitation_email_to_inviter_subject">
+        <value>
+            User that invited by you, registered in {$site_name}.
+        </value>
+    </key>
+    <key name="invitation_email_subject">
+        <value>
+            You are invited from {$site_name}.
+        </value>
+    </key>
+    <key name="skip_label">
+        <value>
+            Skip
+        </value>
+    </key>
+    <key name="yahoo_client_id">
+        <value>
+            Yahoo Client Id
+        </value>
+    </key>
+    <key name="yahoo_client_secret">
+        <value>
+            Yahoo Secret Id
+        </value>
+    </key>
+    <key name="yahoo_import_button">
+        <value>
+            Find friends from Yahoo account
+        </value>
+    </key>
+    <key name="google_client_id">
+        <value>
+            Google Client Id
+        </value>
+    </key>
+    <key name="google_client_secret">
+        <value>
+            Google Secret Id
+        </value>
+    </key>
+    <key name="google_import_button">
+        <value>
+            Find friends from Google account
+        </value>
+    </key>
+    <key name="select_all">
+        <value>
+            Select all
+        </value>
+    </key>
+    <key name="import_users_desc">
+        <value>
+            You can use these account to add your friends or send request for joining to them.
+        </value>
+    </key>
+    <key name="import_users_header">
+        <value>
+            Find friends using another account.
+        </value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>
+            Find friends
+        </value>
+    </key>
+    <key name="connect_google_waining">
+        <value>
+            Please wait,Connecting to google api.
+        </value>
+    </key>
+    <key name="use_import_yahoo_label">
+        <value>
+            Use Yahoo account
+        </value>
+    </key>
+    <key name="use_import_google_label">
+        <value>
+            Use Google account
+        </value>
+    </key>
+    <key name="no_account_exist">
+        <value>
+            You cant use your another profile to find friends.
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            import plugin settings
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            import plugin settings
+        </value>
+    </key>
+
+</prefix>

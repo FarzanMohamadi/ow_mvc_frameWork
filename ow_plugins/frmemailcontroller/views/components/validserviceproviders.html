@@ -1,0 +1,12 @@
+<p>
+    {$description}
+</p>
+{if isset($validEmailProviders)}
+    <ul class="valid_provider_list">
+        {foreach from=$validEmailProviders item="validEmailProvider"}
+            <li>
+                {$validEmailProvider}
+            </li>
+        {/foreach}
+    </ul>
+{/if}

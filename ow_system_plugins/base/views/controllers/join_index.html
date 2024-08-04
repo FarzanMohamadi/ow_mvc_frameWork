@@ -1,0 +1,229 @@
+
+{block_decorator name="box" type="empty" addClass="ow_superwide ow_automargin"}
+{if isset($notValidInviteCode)}
+    <div class="ow_joinNotValidInviteImage"></div>
+    {block_decorator name="box" type="empty" addClass="ow_center" style="padding:15px;"}
+         {text key="base+join_not_valid_invite_code"}
+    {/block_decorator}
+{else}
+    {if $step == 1}
+        {block_decorator name="box" type="empty" addClass="ow_center" style="padding:15px;"}
+            {text key="base+join_promo"}
+        {/block_decorator}
+
+        {if !empty($joinConnectHook)}
+           {block_decorator name="box" addClass="ow_center" style="overflow:hidden;" iconClass='ow_ic_key' langLabel='base+join_connect_title'}
+               {foreach from=$joinConnectHook item='item'}
+                  {$item}
+               {/foreach}
+           {/block_decorator}
+           {block_decorator name="box" type="empty" addClass="ow_center" style="padding:15px;"}
+                {text key="base+join_or"}
+           {/block_decorator}
+        {/if}
+    {/if}
+    {block_decorator name='box' type='empty' iconClass='ow_ic_user' langLabel='base+join_form_title'}{/block_decorator}
+    {form name=joinForm}
+        <table class="ow_table_1 ow_form ow_stdmargin">
+            {if $displayAccountType==true}
+            {cycle assign='alt' values='ow_alt1,ow_alt2'}
+            <tr class="ow_tr_first">
+                <th class="ow_box_cap ow_heading">
+                    <h2>{text key='base+questions_question_accountType_label'}</h2>
+                    <div class="ow_name_search_label"></div>
+                </th>
+            </tr>
+            <tr class="ow_alt1 ow_tr_first ow_tr_last ow_accountType">
+                <td class="ow_search_accountType">
+                    {input name='accountType'}
+                    <div class="ow_separation"></div>
+                    {error name='accountType'}
+                </td>
+            </tr>
+            {/if}
+            {foreach from=$questionArray key='section' item='questions' name='section'}
+                {if !empty($section) }
+                    <tr class="ow_tr_first">
+                        <th class="ow_box_cap ow_heading">
+                            <h2>{text key="base+questions_section_`$section`_label"}</h2>
+                            <div class="ow_name_search_label"></div>
+                        </th>
+                    </tr>
+                {/if}
+
+                {foreach from=$questions item='question' name='question'}
+                    {cycle assign='alt' name=$section values='ow_alt1,ow_alt2'}
+                    <tr class=" {if empty($section)}ow_tr_first{/if} {if $smarty.foreach.question.last && $question.name!='password'}ow_tr_last{/if} ow_type_{$question.type}">
+                        <td class="{if !empty($question.trClass)}{$question.trClass}{/if} ow_value ow_label ow_presentation_{$question.presentation}">
+                            {if $question.type == "text" }
+                                {if $question.presentation == "textarea" }
+                                    {label name=$question.name}
+                                    <br>
+                                    {input name=$question.name placeholder={text key="base+questions_question_`$question.realName`_label"} onkeyup="ShowLabelQuestion(this)"}
+                                    <br>
+                                {else}
+                                    {input name=$question.name placeholder={text key="base+questions_question_`$question.realName`_label"} }
+                                    </br>
+                                    {label name=$question.name}
+                                {/if}
+                                <div class="ow_desc">
+                                    {desc name=$question.name}
+                                </div>
+                                <div  class="ow_separation"></div>
+                                {error name=$question.name}
+                            {else}
+                                <div class="ow_label_question">
+                                    {label name=$question.name}
+                                    <br>
+                                    {input name=$question.name}
+                                    {if $question.type == "boolean" }
+                                    {label name=$question.name}
+                                    {/if}
+                                    <div class="ow_desc">
+                                        {desc name=$question.name}
+                                    </div>
+                                    <div class="ow_separation"></div>
+                                    {error name=$question.name}
+                                </div>
+                            {/if}
+                        </td>
+                    </tr>
+                    {if $question.name=='password'}
+                        <tr class="{if $smarty.foreach.question.last}ow_tr_last{/if} ow_type_{$question.type} ow_name_repeatPassword">
+                            <td class="{if !empty($question.trClass) && $question.trClass == 'ow_alt1'}ow_alt2{else}ow_alt1{/if} ow_value ow_label ow_presentation_{$question.presentation}">
+                                {input name='repeatPassword' placeholder={text key="base+questions_question_repeat_password_label"} }
+                                </br>
+                                {label name='repeatPassword'}
+                                <div class="ow_desc">
+                                    {desc name='repeatPassword'}
+                                </div>
+                                <div class="ow_separation"></div>
+                                {error name='repeatPassword'}
+                            </td>
+                        </tr>
+                    {/if}
+                {/foreach}
+                {if !empty($section)}<tr class="ow_tr_delimiter"><td></td></tr>{/if}
+            {/foreach}
+            {if isset($display_parent_email) &&  $display_parent_email}
+                {cycle assign='alt' values='ow_alt1,ow_alt2'}
+                <tr class="ow_tr_first parent_email">
+                    <th class="ow_box_cap ow_heading">
+                        <h2>{text key="frmcontrolkids+join_parent_email_header"}</h2>
+                        <div class="ow_name_search_label"></div>
+                    </th>
+                </tr>
+                <tr class=" ow_tr_last ow_type_text parent_email">
+                    <td class="{$alt} ow_value ow_label ow_presentation_text">
+                        {input name='parentEmail' placeholder={text key="frmcontrolkids+enter_parent_email_heading"} }
+                        </br>
+                        {label name='parentEmail'}
+                        <div class="ow_desc">
+                            {text key="frmcontrolkids+join_parent_email_description"}
+                        </div>
+                        <div class="ow_separation"></div>
+                        {error name='parentEmail'}
+                    </td>
+
+                </tr>
+                <tr class="ow_tr_desc parent_email"><th>{text key="frmcontrolkids+parents_kids_message" kidsAge=$kidsAge}</th></tr>
+                <tr class="ow_tr_delimiter"><td></td></tr>
+            {/if}
+            {if isset($display_mobile_field) &&  $display_mobile_field}
+            {cycle assign='alt' values='ow_alt1,ow_alt2'}
+            <tr class="ow_tr_first mobile_field">
+                <th class="ow_box_cap ow_heading">
+                    <h2>{text key="frmsms+join_mobile_field_header"}</h2>
+                    <div class="ow_name_search_label"></div>
+                </th>
+
+            </tr>
+            <tr class=" ow_tr_last mobile_field">
+                <td class="{$alt} ow_value ow_label">
+                    {input name='mobile_field' placeholder={text key="frmsms+mobile_field_description"} }
+                    </br>
+                    {label name='mobile_field'}
+                    <div class="ow_desc">
+                        {text key="frmsms+mobile_field_description"}
+                    </div>
+                    <div class="ow_separation"></div>
+                    {error name='mobile_field'}
+                </td>
+            </tr>
+            <tr class="ow_tr_delimiter mobile_field_delimiter"><td></td></tr>
+            {/if}
+            {if $isLastStep}
+                {if $display_photo}
+                    <tr class="ow_tr_first ow_display_photo">
+                        <th class="ow_box_cap ow_heading">
+                            <h2>{text key="base+questions_section_user_photo_label"}</h2>
+                            <div class="ow_name_search_label"></div>
+                        </th>
+
+                    </tr>
+                    {cycle assign='alt' name=userPhoto values='ow_alt1,ow_alt2'}
+                    <tr class="ow_tr_last ow_userPhoto">
+                        <td class="{$alt} ow_value">
+                            {input name='userPhoto'}
+                            <div class="ow_separation"></div>
+                            {error name='userPhoto'}
+                        </td>
+
+                    </tr>
+                    <tr class="ow_tr_delimiter"><td></td></tr>
+                {/if}
+
+                {if $display_terms_of_use}
+                    <tr class="ow_tr_first ow_display_terms_of_use">
+                        <th class="ow_box_cap ow_heading">
+                            <h2>{text key="base+questions_section_terms_of_use_label"}</h2>
+                            <div class="ow_name_search_label"></div>
+                        </th>
+                    </tr>
+                    {cycle assign='alt' name=userPhoto values='ow_alt1,ow_alt2'}
+                    <tr class=" ow_tr_last ow_term_of_use">
+                        <td class="{$alt} ow_value ow_label">
+                            {label name='termOfUse'}
+                            <br>
+                            {input name='termOfUse'}
+                            <div class="ow_separation"></div>
+                            {error name='termOfUse'}
+                            <br>
+                            {desc name='termOfUse'}
+                        </td>
+                    </tr>
+                    <tr class="ow_tr_delimiter"><td></td></tr>
+                {/if}
+                {if $display_captcha}
+                    <tr class="ow_tr_first ow_display_captcha">
+                        <th class="ow_box_cap ow_heading">
+                            <h2>{text key="base+questions_section_captcha_label"}</h2>
+                            <div class="ow_name_search_label"></div>
+                        </th>
+                    </tr>
+                    {cycle assign='alt' name=captchaField values='ow_alt1,ow_alt2'}
+                    <tr class="ow_tr_last ow_captcha_field" >
+                        <td  class="{$alt} ow_center">
+                            <div style='padding:10px;'>
+                                {input name='captchaField'}
+                                <div class="ow_separation"></div>
+                                {error name='captchaField'}
+                            </div>
+                        </td>
+                    </tr>
+                {/if}
+                <tr class="ow_tr_delimiter"><td></td></tr>
+            {/if}
+        </table>
+		<div class="clearfix">
+           <div class="ow_left">
+               {if isset($back_step)}
+               {decorator name='button' class='ow_ic_left_arrow' id='btn-add-new-post' langLabel='base+back' onclick="location.href='`$back_step`'"}
+               {/if}
+               {submit name='joinSubmit'}
+               {if isset($invisibleRecaptchaCmp)} {$invisibleRecaptchaCmp} {/if}
+           </div>
+        </div>
+    {/form}
+{/if}
+{/block_decorator}

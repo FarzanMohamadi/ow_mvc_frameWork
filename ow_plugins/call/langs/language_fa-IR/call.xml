@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="call" label="call" language_tag="fa-IR" language_label="فارسی">
+    <key name="voice_call">
+        <value>تماس صوتی</value>
+    </key>
+</prefix>

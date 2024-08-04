@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsubgroups" label="frmsubgroups" language_tag="fa-IR" language_label="فارسی">
+    <key name="create_heading">
+        <value>
+            ایجاد زیرگروه برای "{$parentGroupTitle}"
+        </value>
+    </key>
+    <key name="create_subgroup">
+        <value>
+            ایجاد زیرگروه
+        </value>
+    </key>
+    <key name="view_all_subgroups">
+        <value>
+           مشاهده همه
+        </value>
+    </key>
+
+    <key name="subgroup_list_title">
+        <value>
+            زیرگروه‌ها
+        </value>
+    </key>
+
+    <key name="subgroup_list_widget_empty">
+        <value>
+            هیچ زیر گروهی وجود ندارد
+        </value>
+    </key>
+
+    <key name="subgroups_count">
+        <value>
+           تعداد کل زیرگروه‌ها
+        </value>
+    </key>
+
+    <key name="search_btn_label">
+        <value>
+            جستجو
+        </value>
+    </key>
+
+    <key name="search_subgroups_title">
+        <value>
+            جستجو بر اساس عنوان زیرگروه
+        </value>
+    </key>
+    <key name="widget_groups_title">
+        <value>
+            گروه‌ها و زیر گروه‌ها
+        </value>
+    </key>
+    <key name="access_denied_message">
+        <value>
+            امکان مشاهده زیرگروه‌ها تنها برای اعضای گروه وجود دارد
+        </value>
+    </key>
+    <key name="parent_group_title">
+        <value>
+            &lt;div&gt;(زیرگروه &lt;a href="{$parentUrl}"&gt;{$parentTitle}&lt;/a&gt;)&lt;/div&gt;
+        </value>
+    </key>
+    <key name="delete_subgroups_message">
+        <value>
+            با حذف گروه، این زیرگروه‌ها و تمامی زیر‌گروه‌هایشان نیز حذف خواهند شد:  {$subGroupsTitles}
+        </value>
+    </key>
+    <key name="subgroup_list_settings_count">
+        <value>
+            حداکثر تعداد
+        </value>
+    </key>
+</prefix>

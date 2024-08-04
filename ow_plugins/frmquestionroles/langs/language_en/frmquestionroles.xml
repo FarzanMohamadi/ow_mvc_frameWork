@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmquestionroles" label="frmquestionroles" language_tag="en" language_label="English">
+    <key name="admin_title">
+        <value>
+            Distribute roles by user information
+        </value>
+    </key>
+    <key name="console_label">
+        <value>
+            Distribute admin roles
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="select_role">
+        <value>
+            Select role
+        </value>
+    </key>
+    <key name="role_empty">
+        <value>
+            Role is empty
+        </value>
+    </key>
+    <key name="all_fields_empty">
+        <value>
+            All fields are empty
+        </value>
+    </key>
+    <key name="wait">
+        <value>
+            Please wait
+        </value>
+    </key>
+    <key name="choose_fields_value">
+        <value>
+            Choose fields value
+        </value>
+    </key>
+    <key name="map_roles_to_fields">
+        <value>
+            Mapping roles to user fields value
+        </value>
+    </key>
+    <key name="are_you_sure_delete">
+        <value>
+            Are you sure to delete?
+        </value>
+    </key>
+    <key name="users_disapproved">
+        <value>
+            Disapproved users
+        </value>
+    </key>
+    <key name="empty_list">
+        <value>
+            There is no one to verify.
+        </value>
+    </key>
+</prefix>

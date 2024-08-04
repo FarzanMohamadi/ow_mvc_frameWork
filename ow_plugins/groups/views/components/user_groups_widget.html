@@ -1,0 +1,15 @@
+<div class="ow_lp_avatars">
+        {foreach from=$list item=item}
+            <a href="{$item.url}" class="ow_lp_wrapper" title="{$item.title|escape}">
+            {if isset($item.imageInfo) && ({$item.imageInfo.empty})}
+                <span style="background-image: url('{$item.image}'); background-color: {$item.imageInfo.color}" class="colorful_avatar_{$item.imageInfo.digit}"></span>
+            {else}
+                <img src="{$item.image}" width="45" alt="{$item.title|escape}" />
+            {/if}
+            </a>
+        {foreachelse}
+            <div class="ow_nocontent">
+                {text key='groups+user_groups_widget_empty'}
+            </div>
+        {/foreach}
+</div>

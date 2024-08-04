@@ -1,0 +1,46 @@
+.competition h3, .competition img, .competition .description {
+    display: inline-block;
+    color: black;
+}
+
+.competition img {
+    max-width: 150px !important;
+    margin-left: 10px;
+}
+
+.competition .additional_info {
+    border: solid 1px rgba(15, 130, 126, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+.competition .additional_info .date {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.competition_start_date.ow_ipc_date {
+    margin-left: 10px;
+    background-repeat: no-repeat;
+}
+
+.competition_end_date.ow_ipc_date {
+    background-repeat: no-repeat;
+}
+
+.owm_active_info,
+.active_info{
+    border: solid 1px rgba(15, 130, 126, 0.7);
+    padding: 10px;
+    text-align: center;
+}
+
+.competition .owm_user_list_name {
+    text-align: right;
+}
+
+.owm_competition_box{
+    padding-left: 4px;
+    padding-right: 4px;
+}

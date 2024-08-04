@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrahyabpayamgostaransms" label="frmboursesms" language_tag="en" language_label="English">
+    <key name="admin_settings_title">
+        <value>
+            frmrahyabpayamgostaransms setting
+        </value>
+    </key>
+    <key name="sender_label">
+        <value>
+            sender
+        </value>
+    </key>
+    <key name="username_label">
+        <value>
+            username
+        </value>
+    </key>
+    <key name="password_label">
+        <value>
+            password
+        </value>
+    </key>
+    <key name="url_label">
+        <value>
+            url
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+           setting saved successfully
+        </value>
+    </key>
+</prefix>

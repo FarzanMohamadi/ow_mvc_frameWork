@@ -1,0 +1,13 @@
+#header {
+    position: fixed;
+    z-index: 100;
+    left: 0px;
+    right: 0px;
+}
+
+.owm_content_menu_wrap.owm_padding {
+    position: fixed;
+    left: 0px;
+    top: 38px;
+    right: 0;
+}

@@ -1,0 +1,64 @@
+<div id="{$cmpContext}">
+    {if isset($hasReply)}
+    <div class="ow_feed_comments_viewall">{text key="base+show_reply_list"} {if !empty($repliesCountToLoad) && $repliesCountToLoad > 0} <span class="reply_remaind"> (+<span class="reply_count_remained">{$repliesCountToLoad}</span> {text key='base+reply_load_more_label'})</span> {/if} </div>
+    {/if}
+    <div class="ow_comments_list {if isset($hasReply)} ow_reply_list {/if}" {if isset($hasReply)} id="{$replyListId}" {/if}  >
+        {if !empty($countToLoad) && $countToLoad > 0}
+        <div class="ow_comment_list_loader ow_feed_comments_viewall ow_small">
+            <a href="javascript://">+<span>{$countToLoad}</span> {$loadMoreLabel}</a>
+        </div>
+        {/if}
+        {if isset($noComments)}
+        <div class="ow_nocontent">{text key="base+comment_no_comments"}</div>
+        {else}
+        {foreach from=$comments item='comment'}
+        {if $comment.replyList}
+    <div id="{$comment.contentId}">
+        {/if}
+        <div class="ow_comments_item clearfix">
+            <div class="cnx_action" style="display: none">{$comment.cnxAction}</div>
+            <div class="ow_comments_item_picture">
+                {decorator name='avatar_item' data=$comment.avatar}
+            </div>
+            <div class="ow_comments_item_info">
+                <div class="ow_comments_item_header"><a href="{$comment.profileUrl}">{$comment.displayName}</a></div>
+                <div class="ow_comments_content ow_smallmargin">
+                    {if isset($comment.userReplyDisplayName)}
+                    <a href="{$comment.userReplyProfileUrl}" class="user_reply_display_name_for_comment">{$comment.userReplyDisplayName}</a> <br>
+                    {/if}
+                    {if !empty($comment.previewMaxChar)}
+                    {$comment.content|more:$comment.previewMaxChar}
+                    {else}
+                    {$comment.content}
+                    {/if}
+                </div>{$comment.content_add}
+            </div>
+            <div class="comment_footer_container">
+                <span class="{if !empty($comment.cnxAction)}ow_comments_date_hover {/if}ow_comments_date ow_nowrap ow_tiny ow_remark">{$comment.date}</span>
+                {if !empty($comment.voteCmp)}<div class="comment_like_dislike_container">{$comment.voteCmp}</div>{/if}
+            </div>
+        </div>
+        {if $comment.replyList}
+        <div class="comments_list_cont" style="padding-right: 35px;" >
+           {${$comment.replyComponent}}
+        </div>
+        {/if}
+        {if $comment.replyList}
+    </div>
+        {/if}
+        {/foreach}
+        {/if}
+    </div>
+    {if !empty($pages)}
+    <div class="ow_paging clearfix ow_stdmargin">
+        <span>{text key='base+pages_label'}</span>
+        {foreach from=$pages item='page'}
+        {if !isset($page.pageIndex)}
+        <span>{$page.label}</span>
+        {else}
+        <a href="javascript://" class="page-{$page.pageIndex}{if isset($page.active) && $page.active} active{/if}">{$page.label}</a>
+        {/if}
+        {/foreach}
+    </div>
+    {/if}
+</div>

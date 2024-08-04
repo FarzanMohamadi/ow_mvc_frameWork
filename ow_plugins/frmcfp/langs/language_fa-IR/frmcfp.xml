@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcfp" label="frmcfp" language_tag="fa-IR" language_label="فارسی">
+
+    <key name="accept_request">
+        <value>
+            تایید
+        </value>
+    </key>
+    <key name="add_event_meta_description">
+        <value>
+            طرح یک ملاقات با کاربران {$site_name}
+        </value>
+    </key>
+    <key name="add_form_date_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_date_label">
+        <value>
+            شروع
+        </value>
+    </key>
+    <key name="add_form_desc_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_desc_label">
+        <value>
+            شرح
+        </value>
+    </key>
+    <key name="add_form_empty_image_error_message">
+        <value>
+            فیلد خالی برای تصویر
+        </value>
+    </key>
+    <key name="add_form_end_date_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_end_date_label">
+        <value>
+            تاریخ و زمان اتمام
+        </value>
+    </key>
+    <key name="not_valid_file">
+        <value>
+            فایل نامعتبر است (باید در فرمت pdf باشد)
+        </value>
+    </key>
+    <key name="add_form_image_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_image_label">
+        <value>
+            تصویر
+        </value>
+    </key>
+    <key name="add_form_invalid_end_date_error_message">
+        <value>
+            تاریخ پایان نامعتبر است
+        </value>
+    </key>
+    <key name="add_form_file_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_file_label">
+        <value>
+            فایل فراخوان
+        </value>
+    </key>
+    <key name="add_form_file_disabled_label">
+        <value>
+            غیرفعال کردن بخش بارگذاری فایل پیشنهاد
+        </value>
+    </key>
+    <key name="add_form_file_note_label">
+        <value>
+            متن جایگزین برای پیغام به مهمانان
+        </value>
+    </key>
+    <key name="download_current_file">
+        <value>
+            فایل فعلی
+        </value>
+    </key>
+    <key name="download_file">
+        <value>
+            دریافت فایل فراخوان
+        </value>
+    </key>
+    <key name="add_form_submit_label">
+        <value>
+            اضافه کردن
+        </value>
+    </key>
+    <key name="add_form_success_message">
+        <value>
+            فراخوان اضافه شد
+        </value>
+    </key>
+    <key name="add_form_title_desc">
+        <value>
+            &amp;nbsp
+        </value>
+    </key>
+    <key name="add_form_title_label">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="add_form_who_can_view_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_who_can_view_label">
+        <value>
+            چه کسی می‌تواند مشاهده کند
+        </value>
+    </key>
+    <key name="add_form_who_can_view_option_anybody">
+        <value>
+            هرکس
+        </value>
+    </key>
+    <key name="add_form_who_can_view_option_creators">
+        <value>
+        فقط ایجادکننده فراخوان
+        </value>
+    </key>
+    <key name="add_new_button_label">
+        <value>
+            افزودن فراخوان جدید
+        </value>
+    </key>
+    <key name="add_new_link_label">
+        <value>
+            فراخوان
+        </value>
+    </key>
+    <key name="add_page_heading">
+        <value>
+            ساخت فراخوان جدید
+        </value>
+    </key>
+    <key name="add_page_title">
+        <value>
+            ساخت فراخوان جدید - {$site_name}
+        </value>
+    </key>
+    <key name="all_day">
+        <value>
+            کل روز
+        </value>
+    </key>
+    <key name="attend_maybe_btn_label">
+        <value>
+            شاید
+        </value>
+    </key>
+    <key name="attend_no_btn_label">
+        <value>
+            خیر
+        </value>
+    </key>
+    <key name="attend_yes_btn_label">
+        <value>
+            شرکت می‌کنم
+        </value>
+    </key>
+    <key name="auth_action_label_add_comment">
+        <value>
+            درج نظر بر روی فراخوان‌ها
+        </value>
+    </key>
+    <key name="auth_action_label_add_event">
+        <value>
+            افزودن فراخوان‌ها
+        </value>
+    </key>
+    <key name="auth_action_label_view_event">
+        <value>
+            مشاهده فراخوان‌ها
+        </value>
+    </key>
+    <key name="auth_group_label">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="avatar_user_list_bottom_link_label">
+        <value>
+            مشاهده همه ({$count} کاربر)
+        </value>
+    </key>
+    <key name="avatar_user_list_link_label_1">
+        <value>
+            بله
+        </value>
+    </key>
+    <key name="avatar_user_list_link_label_2">
+        <value>
+            شاید
+        </value>
+    </key>
+    <key name="avatar_user_list_link_label_3">
+        <value>
+            خیر
+        </value>
+    </key>
+    <key name="cmp_widget_events_count">
+        <value>
+		تعداد فراخوان‌ها
+        </value>
+    </key>
+    <key name="common_list_type_joined_label">
+        <value>
+            فراخوان‌های من
+        </value>
+    </key>
+    <key name="common_list_type_latest_label">
+        <value>
+            آینده
+        </value>
+    </key>
+    <key name="common_list_type_past_label">
+        <value>
+            گذشته
+        </value>
+    </key>
+    <key name="console_notification_label">
+        <value>
+            فراخوان دعوت‌نامه‌ها
+        </value>
+    </key>
+    <key name="content_events_label">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="content_event_label">
+        <value>
+            فراخوان
+        </value>
+    </key>
+    <key name="creator">
+        <value>
+            سازنده
+        </value>
+    </key>
+    <key name="current_status_change_label">
+        <value>
+            تغییر
+        </value>
+    </key>
+    <key name="dashboard_widget_menu_my_events_label">
+        <value>
+            ایجاد شد
+        </value>
+    </key>
+    <key name="dashboard_widget_menu_part_events_label">
+        <value>
+            عضو شد
+        </value>
+    </key>
+    <key name="delete_button_label">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="delete_confirm_message">
+        <value>
+            آیا از حذف این فراخوان اطمینان دارید؟
+        </value>
+    </key>
+    <key name="delete_success_message">
+        <value>
+            فراخوان حذف شد
+        </value>
+    </key>
+    <key name="edit_button_label">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="edit_form_end_date_error_message">
+        <value>
+            لطفا یک فراخوان پایانی تاریخ/زمان را انتخاب کنید
+        </value>
+    </key>
+    <key name="edit_form_submit_label">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="edit_form_success_message">
+        <value>
+            فراخوان ویرایش شد
+        </value>
+    </key>
+    <key name="edit_page_heading">
+        <value>
+            ویرایش فراخوان
+        </value>
+    </key>
+    <key name="edit_page_title">
+        <value>
+            ویرایش فراخوان – {$site_name}
+        </value>
+    </key>
+    <key name="email_notification_comment">
+        <value>
+            &lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt; نظر خود را در فراخوان &lt;a href="{$url}"&gt;{$title}&lt;/a&gt; بیان کرد 
+        </value>
+    </key>
+    <key name="email_notification_comment_setting">
+        <value>
+            یک نفر بر دیوارهای فراخوان پست ارسال کرد
+        </value>
+    </key>
+    <key name="event_created_by_me_page_heading">
+        <value>
+            فراخوان‌هایی که ایجاد کرده‌ام
+        </value>
+    </key>
+    <key name="event_created_by_me_page_title">
+        <value>
+            فراخوان‌هایی که ایجاد کرده‌ام - {$site_name}
+        </value>
+    </key>
+    <key name="event_create_string">
+        <value>
+            ایجاد فراخوان جدید
+        </value>
+    </key>
+    <key name="event_edited_string">
+        <value>
+            ویرایش فراخوان
+        </value>
+    </key>
+    <key name="event_joined_by_me_page_heading">
+        <value>
+            فراخوان‌هایی که شرکت می کنم
+        </value>
+    </key>
+    <key name="event_joined_by_me_page_title">
+        <value>
+            فراخوان‌هایی که شرکت می‌کنم - {$site_name}
+        </value>
+    </key>
+    <key name="event_view_page_heading">
+        <value>
+            {$event_title} در {$site_name} روی داد
+        </value>
+    </key>
+    <key name="event_view_permission_error_message">
+        <value>
+            با عرض پوزش، شما اجازه‌ مشاهده این صفحه را ندارید
+        </value>
+    </key>
+    <key name="feed_actiovity_attend_string">
+        <value>
+            در فراخوان {$user} شرکت می‌کند
+        </value>
+    </key>
+    <key name="feed_activity_comment_string">
+        <value>
+            بر فراخوان {$user} نظر داد
+        </value>
+    </key>
+    <key name="feed_activity_event_string_like">
+        <value>
+            فراخوان {$user} را پسندید
+        </value>
+    </key>
+    <key name="feed_activity_event_string_like_own">
+        <value>
+		فراخوان را پسندید
+        </value>
+    </key>
+    <key name="feed_activity_joined">
+        <value>
+            {$user} هم‌اکنون مراجعه کرد
+        </value>
+    </key>
+    <key name="feed_activity_own_comment_string">
+        <value>
+            بر فراخوان اظهارنظر کرد
+        </value>
+    </key>
+    <key name="feed_activity_users">
+        <value>
+            مجموع کاربران : &lt;span class="ow_txt_value"&gt;{$usersCount}&lt;/span&gt;
+        </value>
+    </key>
+    <key name="feed_add_item_label">
+        <value>
+            فراخوان جدید ایجاد کرد
+        </value>
+    </key>
+    <key name="feed_content_label">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="feed_user_join_string">
+        <value>
+            در فراخوان شرکت می‌کند
+        </value>
+    </key>
+    <key name="ignore_request">
+        <value>
+            چشم‌پوشی
+        </value>
+    </key>
+    <key name="invitation_join_string_1">
+        <value>
+            {$user1} شما را به فراخوان {$event} دعوت کرد
+        </value>
+    </key>
+    <key name="invitation_join_string_2">
+        <value>
+            {$user1} و {$user2} شما را به فراخوان {$event} دعوت کردند
+        </value>
+    </key>
+    <key name="invitation_join_string_many">
+        <value>
+            {$user1} و {$user2} و {$otherUsers} شما را به فراخوان {$event} دعوت کردند
+        </value>
+    </key>
+    <key name="latest_events_page_desc">
+        <value>
+            لیست فراخوان‌های پیش‌رو برای اعضا {$site_name}
+        </value>
+    </key>
+    <key name="latest_events_page_heading">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="latest_events_page_title">
+        <value>
+            فراخوان‌ها - {$site_name}
+        </value>
+    </key>
+    <key name="main_menu_item">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="moderation_status_pending_approval">
+        <value>
+            در انتظار تصویب
+        </value>
+    </key>
+    <key name="my_events_widget_block_cap_label">
+        <value>
+            فراخوان‌های من
+        </value>
+    </key>
+    <key name="notifications_new_message">
+        <value>
+            شخصی مرا به یک فراخوان دعوت می‌کند
+        </value>
+    </key>
+    <key name="notifications_section_label">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="no_events_label">
+        <value>
+            موردی وجود ندارد
+        </value>
+    </key>
+    <key name="no_index_events_label">
+        <value>
+            فراخوانی نیست، &lt;a href="{$url}"&gt;افزودن جدید&lt;/a&gt;
+        </value>
+    </key>
+    <key name="past_events_page_desc">
+        <value>
+            لیست فراخوان‌های سابق برای اعضای {$site_name}
+        </value>
+    </key>
+    <key name="past_events_page_heading">
+        <value>
+            فراخوان‌های سابق
+        </value>
+    </key>
+    <key name="past_events_page_title">
+        <value>
+            فراخوان‌های سابق - {$site_name}
+        </value>
+    </key>
+    <key name="privacy_action_view_attend_events">
+        <value>
+            مشاهده فراخوان‌های من
+        </value>
+    </key>
+    <key name="privacy_action_view_attend_events_description">
+        <value>
+            با تغییر این گزینه، حق دسترسی به فراخوان‌های شما در نمایه تغییر خواهد کرد
+        </value>
+    </key>
+    <key name="private_event_text">
+        <value>
+            پوزش می‌خواهیم، این فراخوان خصوصی است
+        </value>
+    </key>
+    <key name="private_page_heading">
+        <value>
+            فراخوان خصوصی
+        </value>
+    </key>
+    <key name="private_page_title">
+        <value>
+            فراخوان خصوصی
+        </value>
+    </key>
+    <key name="profile_events_widget_block_cap_label">
+        <value>
+            فراخوان‌های من
+        </value>
+    </key>
+    <key name="time_field_invitation_label">
+        <value>
+            زمان
+        </value>
+    </key>
+    <key name="up_events_widget_block_cap_label">
+        <value>
+            فراخوان‌های پیش‌رو
+        </value>
+    </key>
+    <key name="usercredits_action_add_comment">
+        <value>
+            نظر دادن فراخوان
+        </value>
+    </key>
+    <key name="usercredits_action_add_event">
+        <value>
+            افزودن فراخوان
+        </value>
+    </key>
+    <key name="user_list_page_desc_1">
+        <value>
+            لیست کاربران شرکت کننده در فراخوان «{$eventTitle}»
+        </value>
+    </key>
+    <key name="user_list_page_desc_2">
+        <value>
+            لیست کاربران شرکت کننده احتمالی در فراخوان «{$eventTitle}»
+        </value>
+    </key>
+    <key name="user_list_page_desc_3">
+        <value>
+            لیست کاربرانی که در فراخوان «{$eventTitle}» شرکت نمی‌کنند
+        </value>
+    </key>
+    <key name="user_list_page_heading_1">
+        <value>
+            «{$eventTitle}» شرکت کنندگان فراخوان - {$site_name}
+        </value>
+    </key>
+    <key name="user_list_page_heading_2">
+        <value>
+            فراخوان «{$eventTitle}» – افرادای که ممکن است شرکت کنند - {$site_name}
+        </value>
+    </key>
+    <key name="user_list_page_heading_3">
+        <value>
+            فراخوان «{$eventTitle}» – افرادی که شرکت نمی‌کنند - {$site_name}
+        </value>
+    </key>
+    <key name="user_participated_events_page_desc">
+        <value>
+            لیست فراخوان‌هایی که {$display_name} در آن شرکت می‌کند
+        </value>
+    </key>
+    <key name="user_participated_events_page_heading">
+        <value>
+            فراخوان‌های {$display_name}
+        </value>
+    </key>
+    <key name="user_participated_events_page_title">
+        <value>
+            فراخوان‌های {$display_name} - {$site_name}
+        </value>
+    </key>
+    <key name="user_status_author_cant_leave_error">
+        <value>
+            با عرض پوزش، شما نمی‌توانید فراخوان خود را ترک کنید
+        </value>
+    </key>
+    <key name="user_status_label_1">
+        <value>
+            شرکت می‌کنم
+        </value>
+    </key>
+    <key name="user_status_label_2">
+        <value>
+            احتمالا شرکت می‌کنم
+        </value>
+    </key>
+    <key name="user_status_label_3">
+        <value>
+            شرکت نمی‌کنم
+        </value>
+    </key>
+    <key name="user_status_not_changed_error">
+        <value>
+            در حال حاضر این وضعیت انتخاب شده است
+        </value>
+    </key>
+    <key name="user_status_updated">
+        <value>
+            وضعیت شما به‌روزرسانی شد
+        </value>
+    </key>
+    <key name="view_all_label">
+        <value>
+            مشاهده همه
+        </value>
+    </key>
+    <key name="view_page_created_label">
+        <value>
+            سازنده
+        </value>
+    </key>
+    <key name="view_page_date_label">
+        <value>
+            شروع
+        </value>
+    </key>
+    <key name="view_page_desc_label">
+        <value>
+            شرح
+        </value>
+    </key>
+    <key name="view_page_details_block_cap_label">
+        <value>
+            جزئیات
+        </value>
+    </key>
+    <key name="view_page_end_date_label">
+        <value>
+            پایان
+        </value>
+    </key>
+    <key name="view_page_image_block_cap_label">
+        <value>
+            شرح
+        </value>
+    </key>
+    <key name="view_page_location_label">
+        <value>
+            مکان
+        </value>
+    </key>
+    <key name="view_page_users_block_cap_label">
+        <value>
+            کسانی‌که شرکت می‌کنند
+        </value>
+    </key>
+    <key name="event_sitemap">
+        <value>فراخوان‌ها</value>
+    </key>
+    <key name="seo_meta_section">
+        <value>فراخوان‌ها</value>
+    </key>
+    <key name="seo_meta_events_list_label">
+        <value>
+            صفحه فهرست فراخوان‌ها
+        </value>
+    </key>
+    <key name="meta_title_events_list">
+        <value>
+            {$event_list} فراخوان‌ها | {$site_name}
+        </value>
+    </key>
+    <key name="meta_desc_events_list">
+        <value>
+            تمامی فراخوان‌های {$event_list} را در {$site_name} مشاهده کرده، نظرات خود را درج کرده و با دیگر کاربران گفت‌وگو کنید
+        </value>
+    </key>
+    <key name="meta_keywords_events_list">
+        <value></value>
+    </key>
+    <key name="created_events_page_title">
+        <value>
+            ایجاد شده
+        </value>
+    </key>
+    <key name="joined_events_page_title">
+        <value>
+            اضافه شده
+        </value>
+    </key>
+    <key name="seo_meta_event_view_label">
+        <value>
+            صفحه فراخوان جداگانه
+        </value>
+    </key>
+    <key name="meta_title_event_view">
+        <value>{$event_title} | {$site_name}</value>
+    </key>
+    <key name="meta_desc_event_view">
+        <value>{$event_description}</value>
+    </key>
+    <key name="meta_keywords_event_view">
+        <value></value>
+    </key>
+    <key name="seo_meta_event_users_label">
+        <value>
+            صفحه شرکت‌کنندگان فراخوان
+        </value>
+    </key>
+    <key name="meta_title_event_users">
+        <value>
+            همه کاربران "{$event_title}" | {$site_name}
+        </value>
+    </key>
+    <key name="meta_desc_event_users">
+        <value>
+            فهرست تمامی کاربران {$site_name}، که در فراخوان "{$event_title}" مشارکت می‌کنند
+        </value>
+    </key>
+    <key name="meta_keywords_event_users">
+        <value></value>
+    </key>
+	<key name="event_mobile">
+        <value>
+		فراخوان‌ها
+		</value>
+    </key>	
+	<key name="back">
+        <value>
+		بازگشت
+		</value>
+    </key>
+
+    <key name="name">
+        <value>
+            نام
+        </value>
+    </key>
+    <key name="created_date">
+        <value>
+            تاریخ ایجاد
+        </value>
+    </key>
+    <key name="by">
+        <value>
+            سازنده
+        </value>
+    </key>
+    <key name="file_list_widget_empty">
+        <value>
+            هیچ فایلی وجود ندارد
+        </value>
+    </key>
+
+    <key name="widget_files_settings_count">
+        <value>
+            تعداد فایل
+        </value>
+    </key>
+    <key name="files_count">
+        <value>
+            تعداد کل فایل‌ها
+        </value>
+    </key>
+    <key name="widget_files_title">
+        <value>
+            بارگذاری فایل پیشنهاد
+        </value>
+    </key>
+    <key name="file_list">
+        <value>
+            لیست فایل‌های پیشنهاد
+        </value>
+    </key>
+    <key name="view_all_files">
+        <value>
+            مشاهده همه
+        </value>
+    </key>
+    <key name="add_file">
+        <value>
+            افزودن فایل
+        </value>
+    </key>
+    <key name="create_field_file_name_label">
+        <value>
+            نام فایل
+        </value>
+    </key>
+    <key name="create_field_file_upload_label">
+        <value>
+            بارگذاری فایل
+        </value>
+    </key>
+    <key name="cfp_is_ended">
+        <value>
+            زمان ارسال پیشنهاد به پایان رسیده است
+        </value>
+    </key>
+    <key name="login_to_participate">
+        <value>
+            برای ارسال فایل پیشنهاد خود، لطفا وارد سامانه شوید
+        </value>
+    </key>
+    <key name="cfp_is_not_started">
+        <value>
+            زمان ارسال پیشنهاد آغاز نشده است
+        </value>
+    </key>
+    <key name="EVENT_GENERAL_HEADING">
+        <value>
+فراخوان‌ها
+        </value>
+    </key>
+    <key name="event_general_events_page_title">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="search_btn_label">
+        <value>
+            فراخوان‌ها
+        </value>
+    </key>
+    <key name="are_you_sure_delete_file">
+        <value>
+            آیا از حذف این فایل مطمئن هستید؟
+        </value>
+    </key>
+</prefix>

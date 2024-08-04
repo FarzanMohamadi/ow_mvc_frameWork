@@ -1,0 +1,37 @@
+<div class="ow_telegram_widget clearfix">
+    <div class="clearfix"></div>
+    {$menu}
+    {foreach from=$items item='item'}
+    <div id="{$item.contId}" {if !$item.active} style="display: none" {/if}>
+        <div style="height: 20px;text-align: center">
+            <a href="javascript://"><img id="items_wrapper_new_items_icon_{$item.id}" class="items_wrapper_new_items_icon_widget" onclick="go_to_last_item('_{$item.id}')" src="{$new_items_img_url}"></a>
+        </div>
+        <div id="items_wrapper_{$item.id}" class="items_wrapper_widget frmtelegram_type_{$item.type}">
+            {foreach from=$item.list item='entry'}
+            <div class="item_wrapper ow_ipc ow_stdmargin clearfix" id="telegram_item_{$entry.id}">
+                {$entry.authorView}
+                <div class="ow_ipc_info">
+                    <div class="ow_ipc_content" style="display: inline;">
+                        <span style="white-space: pre-wrap;">{$entry.entry}</span>
+                    </div>
+                    <div class="clearfix">
+                        <div class="ow_ipc_toolbar ow_remark">
+                            <span class="ow_ipc_date">
+                                {text key='frmtelegram+at'} {$entry.timestamp}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {foreachelse}
+            {text key='base+empty_list'}
+            {/foreach}
+        </div>
+        <div style="height: 40px;text-align: center">
+            <img id="items_wrapper_preloader_{$item.id}" class="items_wrapper_preloader_widget" src="{$preloader_img_url}">
+        </div>
+    </div>
+    {foreachelse}
+    {text key='base+empty_list'}
+    {/foreach}
+</div>

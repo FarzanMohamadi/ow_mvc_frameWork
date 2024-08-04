@@ -1,0 +1,715 @@
+.wizard, .tabcontrol {
+    display: block;
+    width: 100%;
+    overflow: hidden
+}
+
+.wizard a, .tabcontrol a {
+    outline: 0
+}
+
+.wizard ul, .tabcontrol ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0
+}
+
+.wizard ul > li, .tabcontrol ul > li {
+    display: block;
+    padding: 0
+}
+
+.wizard > .steps .current-info, .tabcontrol > .steps .current-info {
+    position: absolute;
+    left: -999em
+}
+
+.wizard > .content > .title, .tabcontrol > .content > .title {
+    position: absolute;
+    left: -999em
+}
+
+.wizard > .steps {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.wizard.vertical > .steps {
+    display: inline;
+    float: left;
+    width: 30%
+}
+
+.wizard > .steps .number {
+    font-size: 1.429em
+}
+
+.wizard > .steps > ul > li {
+    width: 30%
+}
+
+.wizard > .steps > ul > li, .wizard > .actions > ul > li {
+    float: left
+}
+
+.wizard.vertical > .steps > ul > li {
+    float: none;
+    width: 100%
+}
+
+.wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active {
+    display: block;
+    width: auto;
+    margin: 0 .5em .5em;
+    padding: 1em 1em;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.wizard > .steps .disabled a, .wizard > .steps .disabled a:hover, .wizard > .steps .disabled a:active {
+    background: #eee;
+    color: #aaa;
+    cursor: default
+}
+
+.wizard > .steps .current a, .wizard > .steps .current a:hover, .wizard > .steps .current a:active {
+    background: #2184be;
+    color: #fff;
+    cursor: default
+}
+
+.wizard > .steps .done a, .wizard > .steps .done a:hover, .wizard > .steps .done a:active {
+    background: #9dc8e2;
+    color: #fff
+}
+
+.wizard > .steps .error a, .wizard > .steps .error a:hover, .wizard > .steps .error a:active {
+    background: #ff3111;
+    color: #fff
+}
+
+.wizard > .content {
+    background: #eee;
+    display: block;
+    margin: .5em;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.wizard.vertical > .content {
+    display: inline;
+    float: left;
+    margin: 0 2.5% .5em 2.5%;
+    width: 65%
+}
+
+.wizard > .content > .body {
+    float: left;
+    position: relative;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%
+}
+
+.wizard > .content > .body ul {
+    list-style: disc !important
+}
+
+.wizard > .content > .body ul > li {
+    display: list-item
+}
+
+.wizard > .content > .body > iframe {
+    border: 0 none;
+    width: 100%;
+    height: 100%
+}
+
+.wizard > .content > .body input.error {
+    background: #fbe3e4;
+    border: 1px solid #fbc2c4;
+    color: #8a1f11
+}
+
+.wizard > .content > .body label {
+    display: inline-block;
+    margin-bottom: .5em
+}
+
+.wizard > .content > .body label.error {
+    color: #8a1f11;
+    display: inline-block;
+    margin-left: 1.5em
+}
+
+.wizard > .actions {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%
+}
+
+.wizard.vertical > .actions {
+    display: inline;
+    float: right;
+    margin: 0 2.5%;
+    width: 95%
+}
+
+.wizard > .actions > ul {
+    display: inline-block;
+    text-align: right
+}
+
+.wizard > .actions > ul > li {
+    margin: 0 .5em
+}
+
+.wizard.vertical > .actions > ul > li {
+    margin: 0 0 0 1em
+}
+
+.wizard > .actions a, .wizard > .actions a:hover, .wizard > .actions a:active {
+    background: #2184be;
+    color: #fff;
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px
+}
+
+.wizard > .actions .disabled a, .wizard > .actions .disabled a:hover, .wizard > .actions .disabled a:active {
+    background: #eee;
+    color: #aaa
+}
+
+.wizard > .loading {
+}
+
+.wizard > .loading .spinner {
+}
+
+.tabcontrol > .steps {
+    position: relative;
+    display: block;
+    width: 100%
+}
+
+.tabcontrol > .steps > ul {
+    position: relative;
+    margin: 6px 0 0 0;
+    top: 1px;
+    z-index: 1
+}
+
+.tabcontrol > .steps > ul > li {
+    float: left;
+    margin: 5px 2px 0 0;
+    padding: 1px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.tabcontrol > .steps > ul > li:hover {
+    background: #edecec;
+    border: 1px solid #bbb;
+    padding: 0
+}
+
+.tabcontrol > .steps > ul > li.current {
+    background: #fff;
+    border: 1px solid #bbb;
+    border-bottom: 0 none;
+    padding: 0 0 1px 0;
+    margin-top: 0
+}
+
+.tabcontrol > .steps > ul > li > a {
+    color: #5f5f5f;
+    display: inline-block;
+    border: 0 none;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none
+}
+
+.tabcontrol > .steps > ul > li > a:hover {
+    text-decoration: none
+}
+
+.tabcontrol > .steps > ul > li.current > a {
+    padding: 15px 30px 10px 30px
+}
+
+.tabcontrol > .content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 35em;
+    overflow: hidden;
+    border-top: 1px solid #bbb;
+    padding-top: 20px
+}
+
+.tabcontrol > .content > .body {
+    float: left;
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    padding: 2.5%
+}
+
+.tabcontrol > .content > .body ul {
+    list-style: disc !important
+}
+
+.tabcontrol > .content > .body ul > li {
+    display: list-item
+}
+
+@media (max-width: 600px) {
+    .wizard > .steps > ul > li {
+        width: 50%
+    }
+
+    .wizard > .steps a, .wizard > .steps a:hover, .wizard > .steps a:active {
+        margin-top: .5em
+    }
+
+    .wizard.vertical > .steps, .wizard.vertical > .actions {
+        display: block;
+        float: none;
+        width: 100%
+    }
+
+    .wizard.vertical > .content {
+        display: block;
+        float: none;
+        margin: 0 .5em .5em;
+        width: auto
+    }
+}
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+    z-index: 999;
+}
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+.solitary_challenge.challenge_item {
+    border: solid 1px #9a9999;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.challenge_item .point,
+.challenge_item .join_label,
+.challenge_item .cancel_label {
+    border: solid 1px lightgray;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.challenge_item .point_item .value,
+.user_point .value{
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    width: 28px;
+    padding-top: 4px;
+    font-size: 70%;
+}
+
+.win_point.point_item .value {
+    color: green;
+}
+
+.lose_point.point_item .value {
+    color: red;
+}
+
+.equal_point.point_item .value {
+    color: blue;
+}
+
+.point_item.point_label {
+    width: 50px;
+    border: none;
+}
+
+.challenge_info {
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.user_point .value {
+    border-color: indianred;
+}
+
+.user_point.self_point .value {
+    border-color: green;
+}
+
+.join_label,
+.cancel_label{
+    background-color: #9bdc9b;
+    min-width: 50px;
+    border-radius: 5px;
+}
+
+.cancel_label {
+    background-color: indianred;
+}
+
+.join_label a {
+    color: black;
+}
+
+.cancel_label a {
+    color: white;
+}
+
+.popup-inner {
+    max-height: calc(100% - 130px);
+    overflow: auto;
+}
+
+.popup-close {
+    right: 20px;
+    top: 20px;
+    height: 27px;
+    width: 29px;
+}
+
+.challenge_create_button a {
+    color: black;
+}
+
+.challenge_create_button {
+    border: solid green 1px;
+    border-radius: 5px;
+    height: 40px;
+    text-align: center;
+    background-color: #9bdc9b;
+}
+
+.challenge_box {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.challenge_box .item {
+    width: 45%;
+    text-align: center;
+    height: 60px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    transition: background-color 1000ms linear;
+    padding-top: 45px !important;
+}
+
+.challenge_box .item:hover {
+    text-decoration: none !important;
+    background-color: #d6d6f5 !important;
+    color: black !important;
+}
+
+.widget_challenges .challenge_box a.item,
+.challenge_box a.item{
+    color: gray !important;
+}
+
+.challenge_box .item.my_challenge {
+    border: solid 1px #1d1d27;
+}
+
+.challenge_box .item.public_challenge {
+    border: solid 1px #2f422d;
+}
+
+.challenge_box .item.requested_challenge {
+    border: solid 1px #40322e;
+}
+
+.challenge_box .item.finished_challenge {
+    border: solid 1px #44334a;
+}
+
+.challenge_item div.join_label,
+.challenge_create_button,
+.challenge_item .cancel_label{
+    transition: background-color 1000ms linear;
+    font-size: 80%;
+}
+
+.challenge_item div.join_label:hover,
+.challenge_create_button:hover,
+.challenge_item .cancel_label:hover
+{
+    background-color: #0d0d2f !important;
+    color: white;
+}
+
+
+.challenge_create_button a {
+    color: black;
+    width: 100%;
+    display: inline-block;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.challenge_item div.join_label a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.cancel_label a:hover, .challenge_create_button a:hover{
+    text-decoration: none;
+}
+
+.challenge_create_button a:hover,
+.challenge_create_button:hover{
+    color: white;
+}
+
+.tabcontrol > .steps > ul > li:lang(fa-IR){
+    float: right;
+}
+
+.challenge.ow_preloader {
+    display: block;
+    position: relative;
+    z-index: 999999;
+    width: 20px;
+    height: 40px;
+}
+
+.challenge_description {
+    border: solid 1px lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.challenge_description h3 {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.finish_date,
+.challenge_box .item,
+.user_point .value, .user_point .label,
+.challenge_item .point_item,
+.challenge_item .point_item .value,
+.challenge_item .point_item .label,
+.user_point,
+.finish_date .label,
+.finish_date .value,
+.max_point .label,
+.max_point .value,
+.max_point,
+.categories .label,
+.categories .value,
+.opponent_name .label,
+.opponent_name .value,
+.opponent_name,
+.categories,
+.challenge_item .wait_for_answer,
+.challenge_info .winner.value ,
+.challenge_info .winner.label,
+.remaining_time .title,
+.remaining_time #challenge_question_counter{
+    display: inline-block;
+}
+
+#challenge_question_counter{
+    background-color: lightpink;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-size: 75%;
+}
+
+.finish_date .value,
+.max_point .value,
+.categories .value,
+.opponent_name .value,
+.challenge_item .wait_for_answer,
+.challenge_info .winner.value{
+    background-color: lightgray;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    font-size: 75%;
+}
+
+.finish_date,
+.max_point{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+form#create_challenge {
+    margin-top: 5px;
+}
+
+.challenges_page {
+    background-color: white;
+    text-align: justify;
+}
+
+.wizard > .content > .body ul > li {
+    list-style: none;
+}
+
+@media (max-width: 600px) {
+    .challenge_box .item {
+        width: 100%;
+    }
+
+    .tabcontrol > .content > .body {
+        position: relative;
+    }
+
+    .tabcontrol > .content {
+        height: auto !important;
+    }
+
+    .tabcontrol > .steps > ul > li > a {
+        padding: 3px 3px 3px 3px !important;
+        font-size: 90%;
+    }
+
+    .popup-close {
+        right: 50px;
+    }
+
+    form#create_challenge {
+        margin-top: 20px;
+    }
+
+    .wizard > .content > .body {
+        background-color: lightblue;
+    }
+
+    .wizard > .steps > ul > li {
+        width: 32%;
+        font-size: 85%;
+    }
+
+    .challenges_page {
+        padding: 8px;
+        padding-top: 10px;
+        font-size: 80%;
+    }
+
+    .challenge_create_button a {
+        padding-top: 13px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tabcontrol > .steps > ul > li > a {
+        padding: 3px 3px 3px 3px !important;
+        font-size: 70%;
+    }
+
+    .wizard > .steps > ul > li {
+        width: 100%
+    }
+}
+
+.widget_challenges .challenge_box .item {
+    width: 100% !important;
+    height: 30px;
+    padding-top: 10px !important;
+    margin-top: 5px;
+}
+
+.widget_challenges .challenge_box {
+    margin-top: 0px;
+}
+
+.widget_challenges .content {
+    padding-top: 0px;
+}
+
+.widget_challenges .tabcontrol > .content > .body {
+    position: relative;
+}
+
+.widget_challenges .tabcontrol > .content {
+    height: auto !important;
+}
+
+.widget_challenges .tabcontrol > .steps > ul > li > a {
+    padding: 3px 3px 3px 3px !important;
+    font-size: 90%;
+}

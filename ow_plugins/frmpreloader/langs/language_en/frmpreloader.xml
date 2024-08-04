@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmpreloader" label="frmpreloader" language_tag="en" language_label="English">
+	<key name="admin_save_settings"><value>Save Settings</value></key>
+	<key name="admin_settings_title"><value>Preloader - Settings</value></key>
+	<key name="user_save_success"><value>Settings saved successfully</value></key>
+	<key name="preloadertype"><value>Preloader Type</value></key>
+	<key name="PreloaderDescription"><value>Select the type of preloader which runs as long as your site loads</value></key>
+	<key name="admin_save_settings"><value>Save Settings</value></key>
+</prefix>

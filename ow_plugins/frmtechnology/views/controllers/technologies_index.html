@@ -1,0 +1,80 @@
+{if $isMobile==false}
+<!--<div class="clearfix">{add_content key='frmtechnology.add_content.list.top' listType=$listType}</div>-->
+    <div class="clearfix ow_frmtechnology">
+        <!--<div class="ow_automargin ow_superwide">-->
+            <!--&lt;!&ndash;{if isset($filterForm)}&ndash;&gt;-->
+            <!--&lt;!&ndash;{form name="technologyFilterForm"}&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="ow_frmtechnology_search">&ndash;&gt;-->
+            <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                <!--&lt;!&ndash;<td><b>{label name="searchTitle"}</b></td>&ndash;&gt;-->
+                <!--&lt;!&ndash;<td>&ndash;&gt;-->
+                    <!--&lt;!&ndash;{input name="searchTitle"}&ndash;&gt;-->
+                <!--&lt;!&ndash;</td>&ndash;&gt;-->
+            <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+            <!--&lt;!&ndash;<td>{decorator name='button' iconClass="ow_ic_lens" id="searchFilter" onclick="searchTechnology('{$originalUrl}');" langLabel='frmtechnology+search_btn_label'} </td>&ndash;&gt;-->
+            <!--&lt;!&ndash;{/form}&ndash;&gt;-->
+            <!--&lt;!&ndash;{/if}&ndash;&gt;-->
+            <!--</div>-->
+            <div class="ow_right">
+                <div id="add-new-tech" >{decorator name='button' class='ow_ic_add ' langLabel='frmtechnology+add_new_technology_button_label' onclick="location.href='`$url_new_entry`'"}</div>
+            </div>
+            {$menu}
+            {if !empty($no_technology) }
+            <div class="ow_nocontent">{text key="frmtechnology+no_technology_label"}</div>
+            {else}
+            <div id="results">
+            {foreach from=$technologies key='key' item='technology'}
+                <div>
+                    <a href="{$technology.url}">
+                <span class="image">
+                    <img width="300" height="300" src="{$technology.imageSrc}">
+                </span>
+                <span class="search-content">
+                    <h3>{$technology.title|truncate:30}</h3>
+                    <p>{$technology.content|truncate:250}</p>
+                </span>
+                    </a>
+                </div>
+            {/foreach}
+            </div>
+            <br />
+            {$paging}
+            {/if}
+        </div>
+    </div>
+
+{else}
+
+<div class="owm_frmtechnology clearfix">{add_content key='frmtechnology.add_content.list.top' listType=$listType}</div>
+
+{if isset($allowAdd)}<div class="ow_right">{decorator name='button' class='owm_frmtechnology_add_new' langLabel='frmtechnology+add_new_technology_button_label' onclick="location.href='`$url_new_entry`'"}</div>{/if}
+{$menu}
+
+<div class="owm_frmtechnology clearfix owm_box">
+    <div class="ow_automargin ow_superwide">
+        <div class="owm_frmtechnology_search">
+        {if isset($filterForm)}
+        {form name="technologyFilterForm"}
+        <tr>
+            <td><b>{label name="searchTitle"}</b></td>
+            <td>
+                {input name="searchTitle"}
+            </td>
+        </tr>
+        <td>{decorator name='button' iconClass="ow_ic_lens" id="searchFilter" onclick="searchTechnology('{$originalUrl}');" langLabel='frmtechnology+search_btn_label'} </td>
+        {/form}
+        {/if}
+        </div>
+        {if !empty($no_technology) }
+        <div class="ow_nocontent">{text key="frmtechnology+no_technology_label"}</div>
+        {else}
+        {foreach from=$technologies key='key' item='technology'}
+        {decorator name='ipc' addClass='owm_list_item_with_image' data=$technology infoString="<a href=\"`$technology.url`\">`$technology.title`</a>"}
+        {/foreach}
+        <br />
+        {$paging}
+        {/if}
+    </div>
+</div>
+
+{/if}

@@ -1,0 +1,38 @@
+<div class="page_description">
+    {text key="coverphoto+description_coverphoto_float_page"}
+</div>
+
+
+
+<div class="ow_table_1 ow_form ow_stdmargin">
+
+    {if empty($list)}
+        <br>
+        <span>{text key="coverphoto+list_is_empty"}</span>
+    {/if}
+
+    {foreach from=$list item="listItem"}
+    <div onmouseover="$('.cover_action', this).show();" onmouseout="$('.cover_action', this).hide();" class="coverphoto-list-item">
+        <div class="ow_photo_cover_hover">
+            <div class="ow_photo_cover_action">
+                <a class="cover_select"  href="{$listItem.deleteUrl}" onclick="if (confirm('{text key="coverphoto+are_you_sure_to_remove"}')) return true; else return false;">
+                <img title="{text key='coverphoto+delete_this_cover'}" class="coverphoto-list-icon" src="{$listItem.deleteThisCoverIcon}"/>
+                </a>
+                <a class="cover_select"  href="{$listItem.useCoverUrl}" onclick="if (confirm('{text key="coverphoto+are_you_sure_to_use_this"}')) return true; else return false;">
+                <img title="{text key='coverphoto+use_this_cover'}" class="coverphoto-list-icon" src="{$listItem.useThisCoverIcon}"/>
+                </a>
+            </div>
+        </div>
+        <img class="coverphoto-list-image" src="{$listItem.coverPhotoImageUrl}"/>
+
+        <div class="coverphoto-title">{$listItem.title}</div>
+        <div class="coverphoto-date">{$listItem.addDateTime} <a href="{$listItem.AutherUrl}" class="coverphoto-author">({$listItem.AutherName})</a> {if $listItem.isCurrent}<a><img class="is_current" src="{$is_current_icon}" /></a>{/if}</div>
+    </div>
+    {/foreach}
+
+    <a href='{$coverPhotosUrl}' target="_blank">
+    {decorator name='button' class='ow_ic_add' style='float: left;' id='btn-add-new-post' langLabel='coverphoto+add_more_cover_photo'}
+    </a>
+</div>
+
+

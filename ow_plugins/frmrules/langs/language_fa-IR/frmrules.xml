@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrules" label="frmrules" language_tag="fa-IR" language_label="فارسی">
+    <key name="edit">
+        <value>ویرایش</value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>خالی</value>
+    </key>
+    <key name="database_record_add">
+        <value>آیتم با موفقیت اضافه شد</value>
+    </key>
+    <key name="database_record_edit">
+        <value>آیتم با موفقیت ویرایش شد</value>
+    </key>
+    <key name="database_record_deleted">
+        <value>آیتم با موفقیت برداشته شد</value>
+    </key>
+    <key name="items">
+        <value>آیتم‌ها</value>
+    </key>
+    <key name="description">
+        <value>
+            توضیحات
+        </value>
+    </key>
+    <key name="delete_item_warning">
+        <value>آیا از حذف این آیتم اطمینان دارید؟</value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>توصیه به متولیان</value>
+    </key>
+    <key name="rules_mobile">
+        <value>توصیه به متولیان</value>
+    </key>
+    <key name="add_new_category_label">
+        <value>
+            ایجاد دسته جدید
+        </value>
+    </key>
+    <key name="add_new_item_label">
+        <value>
+            ایجاد آیتم جدید
+        </value>
+    </key>
+    <key name="security">
+        <value>
+            توصیه‌های امنیتی
+        </value>
+    </key>
+    <key name="privacy">
+        <value>
+            توصیه‌های حریم خصوصی
+        </value>
+    </key>
+    <key name="country">
+        <value>
+            قوانین کشور
+        </value>
+    </key>
+    <key name="guideline">
+        <value>
+            راهنمای مطالعه توصیه‌ها
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+            دسته‌ها
+        </value>
+    </key>
+    <key name="category">
+        <value>
+            دسته
+        </value>
+    </key>
+    <key name="name">
+        <value>
+            نام
+        </value>
+    </key>
+    <key name="icon">
+        <value>
+            آیکون
+        </value>
+    </key>
+    <key name="tag">
+        <value>
+        برچسب (با نقطه جدا شود)
+        </value>
+    </key>
+    <key name="without_icon">
+        <value>
+            بدون آیکون
+        </value>
+    </key>
+    <key name="icon_world">
+        <value>
+            جهان
+        </value>
+    </key>
+    <key name="icon_iran">
+        <value>
+            ایران
+        </value>
+    </key>
+    <key name="icon_administrative">
+        <value>
+            مدیریتی
+        </value>
+    </key>
+    <key name="icon_technical">
+        <value>
+            فنی
+        </value>
+    </key>
+    <key name="icon_iso">
+        <value>
+            ایزو
+        </value>
+    </key>
+    <key name="add_item_page_title">
+        <value>
+            ایجاد آیتم
+        </value>
+    </key>
+    <key name="add_category_page_title">
+        <value>
+            ایجاد دسته
+        </value>
+    </key>
+    <key name="edit_item_page_title">
+        <value>
+            ویرایش آیتم
+        </value>
+    </key>
+    <key name="edit_category_page_title">
+        <value>
+            ویرایش دسته
+        </value>
+    </key>
+    <key name="security_header">
+        <value>
+        فهرست توصیه‌های امنیت نرم‌افزار در شبکه‌های اجتماعی
+        </value>
+    </key>
+    <key name="privacy_header">
+        <value>
+            فهرست توصیه‌های حریم خصوصی کاربران در شبکه‌های اجتماعی
+        </value>
+    </key>
+    <key name="country_header">
+        <value>
+            فهرست قوانین و ضوابط اجرایی جمهوری اسلامی ایران در حوزه فضای مجازی
+        </value>
+    </key>
+    <key name="numberingLabel">
+        <value>
+            توصیه شماره {$value}:
+        </value>
+    </key>
+    <key name="filer_by_category">
+        <value>
+            دسته‌ها
+        </value>
+    </key>
+    <key name="filer_by_tag">
+        <value>
+            فیلتر بر اساس برچسب
+        </value>
+    </key>
+    <key name="numberingRuleLabel">
+        <value>
+            قانون شماره {$value}:
+        </value>
+    </key>
+    <key name="empty_tag_label">
+        <value>
+            بدون برچسب
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+تنظیمات افزونه توصیه ها
+        </value>
+    </key>
+
+    <key name="admin_page_title">
+        <value>
+تنظیمات افزونه توصیه ها
+        </value>
+    </key>
+    <key name="guidelineFieldLabel">
+        <value>
+            متن راهنمای توصیه‌ها
+        </value>
+    </key>
+	<key name="frmrules_sitemap">
+        <value>
+            توصیه‌ها
+        </value>
+    </key>
+</prefix>

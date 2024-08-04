@@ -1,0 +1,209 @@
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage + a {
+    max-width: 182px !important;
+    display: block;
+    margin-top: 7px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ow_create_subgroup {
+    display: block;;
+    width: 100%;
+    margin-top: -9px;
+}
+.owm_right.owm_add_new_sub_group {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.owm_box.owm_group_list.owm_sub_group_list.clearfix .group_search_title {
+    margin: 10px;
+    width: calc(100% - 110px);
+}
+
+.owm_box.owm_group_list.owm_sub_group_list.clearfix span.ow_button input#searchFilter {
+    margin-top: 9px;
+}
+
+.owm_sub_groups_item {
+    margin: 10px 10px 8px 10px;
+    border: 1px solid gainsboro;
+    padding: 5px 6px 0px 10px;
+    border-radius: 3px;
+    display: block;
+}
+.owm_sub_groups_item .ow_ipc_picture {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.owm_sub_groups_item .ow_ipc_info {
+    display: inline-block;
+    padding-right: 7px;
+}
+
+.owm_sub_group_list_link .ow_ipc_picture {
+    display: inline-block;
+}
+
+.owm_sub_group_list_link .ow_ipc_picture {
+    margin-bottom: -60px;
+    float: right;
+}
+
+.owm_sub_group_list_link .ow_ipc_picture img {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.owm_sub_groups_item .ow_ipc_content {
+    font-size: 12px;
+}
+
+.owm_sub_groups_item span.ow_nowrap {
+    font-size: 11px;
+    color: darkgrey;
+}
+
+.owm_sub_group_widget {
+    border-top: 1px solid #d0d0d0;
+    padding: 5px;
+}
+
+.owm_sub_groups_widget_item a {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.owm_sub_group_widget a.groupImage {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.owm_sub_groups_widget_counter{
+    text-align: center !important;
+    margin: 15px 0 10px 0;
+    font-size: 11px;
+}
+
+.owm_sub_groups_widget_item {
+    margin: 4px 0 4px 0;
+    display: block;
+    text-align: right;
+}
+
+.owm_sub_group_widget a.groupImage img {
+    border-radius: 4px;
+}
+
+.owm_sub_group_widget .owm_box_toolbar {
+    display: inline-block;
+    padding: 5px;
+}
+
+form[name="subGroupFilterForm"] #searchTitle {
+    display: inline-block;
+    margin: 0px 10px 7px 1px;
+    max-width: calc(100% - 133px);
+}
+
+.subgroup_icon_arrow {
+    background-image: url(../img/left-down-arrow-curve.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 27px;
+    position: absolute;
+    right: 57px;
+}
+
+.subgroup_icon_arrow:lang(en) {
+    background-image: url(../img/left-down-arrow-curve.svg);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 27px;
+    position: absolute;
+    left: 57px;
+    margin-top: -3px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.subgroup_icon_arrow + div {
+    margin-right: 92px !important;
+    padding-top: 5px;
+}
+
+.subgroup_icon_arrow + div:lang(en) {
+    margin-left: 90px !important;
+    padding-top: 5px;
+}
+
+.index-FRMSUBGROUPS_CMP_GroupsWidget .subgroup_icon_arrow {
+    background-size: 20px;
+    right: 56px;
+}
+
+.index-FRMSUBGROUPS_CMP_GroupsWidget .subgroup_icon_arrow:lang(en) {
+    background-size: 20px;
+    left: 71px;
+    margin-top: -5px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.index-FRMSUBGROUPS_CMP_GroupsWidget .subgroup_icon_arrow + div {
+    margin-right: 30px !important;
+    padding-top: 0px;
+    margin-bottom: -20px;
+}
+
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+}
+
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage img {
+    height: 40px;
+    width: 40px;
+}
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage span.group_title,
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage span[class*='colorful_avatar'] + span.group_title {
+    vertical-align: top;
+    padding-top: 10px;
+    display: inline-block;
+
+}
+
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage span.group_title {
+    max-width: calc(100% - 50px);
+    overflow:hidden;
+    white-space:nowrap;
+    margin-right: 5px;
+    text-overflow: ellipsis;
+    display: inline-block;
+    line-height: 14px;
+}
+
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage img,
+.group-FRMSUBGROUPS_CMP_SubgroupListWidget a.groupImage span[class*='colorful_avatar']{
+    border-radius: 50%;
+    display: inline-block;
+}

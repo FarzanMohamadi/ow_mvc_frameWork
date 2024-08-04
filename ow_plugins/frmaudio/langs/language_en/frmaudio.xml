@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmaudio" label="frmaudio" language_tag="en" language_label="English">
+    <key name="index_page_heading">
+	<value>Audio</value>
+    </key>
+    <key name="index_page_title">
+	<value>Audio Massages</value>
+    </key>  
+    <key name="main_menu_item">
+        <value>Audio</value>
+    </key>
+    <key name="database_record_deleted">
+        <value>Audio Massage Removed</value>
+    </key>
+    <key name="delete_item_warning">
+        <value>Are You Sure to Delete This Audio Massage?</value>
+    </key>
+    <key name="delete_audio_item">
+        <value>Remove</value>
+    </key>
+    <key name="Audio_inserterd">
+        <value>Audio Massage Inserterd Successfully</value>
+    </key>
+    <key name="feed_item_line">
+        <value>Inserted New Audio Massage</value>
+    </key>
+    <key name="Audio_not_inserterd">
+        <value>Audio Massage Has Not Inserterd</value>
+    </key>
+    <key name="description_audio_page">
+        <value>List of Your Audio Massages</value>
+    </key>
+    <key name="audio_creator">
+        <value>By:</value>
+    </key>
+    <key name="audionamefield">
+        <value>Audio Massage Name:</value>
+    </key>
+    <key name="floatboxname">
+        <value>Audio Recorder</value>
+    </key>
+    <key name="Record">
+        <value>Record</value>
+    </key>
+    <key name="Pause">
+        <value>Stop</value>
+    </key>
+    <key name="Recording">
+        <value>Recording...</value>
+    </key>
+    <key name="Converting">
+        <value>Saving.Please wait...</value>
+    </key>
+    <key name="admin_settings_title">
+        <value>Audio Massage Plugin Settings</value>
+    </key>
+    <key name="admin_save_settings">
+        <value>Save Settings</value>
+    </key>
+    <key name="audio_in_dashbord">
+        <value>Users Are Able to Add Aduio Massage in Dashboard</value>
+    </key>
+   <key name="audio_in_profile"> 
+        <value>Users Are Able to Add Aduio in Massage Profile</value>
+    </key>
+   <key name="audio_in_forum">
+        <value>Users Are Able to Add Aduio Massage in Forum</value>
+    </key>
+   <key name="audio_feed_removed">
+        <value>An Audio Massage Has Been Removed From This Post</value>
+    </key>
+	<key name="newsfeed_audio_located">
+        <value>Newsfeed</value>
+    </key>
+	<key name="forum_audio_located">
+        <value>Forum</value>
+    </key>
+	<key name="audio_located">
+        <value>In:</value>
+    </key>
+	<key name="mobile_main_menu_item">
+        <value>Audios</value>
+    </key>
+	<key name="no_audio_data_list">
+        <value>No Audio Massages</value>
+    </key>
+</prefix>

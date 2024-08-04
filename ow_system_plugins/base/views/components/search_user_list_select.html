@@ -1,0 +1,141 @@
+{style}
+{literal}
+
+.avatar_select_list{
+height:320px;
+text-align:left;
+padding:0 8px;
+}
+
+.avatar_select_list .ow_user_list_picture{
+height:45px;
+}
+
+.avatar_select_list .ow_user_list_item{
+cursor:pointer;
+}
+
+.avatar_select_list .ow_item_set2{
+width:47%;
+}
+
+.avatar_select_list .asl_users{
+height:200px;
+overflow-y:scroll;
+}
+
+{/literal}
+{/style}
+
+<div class="ow_wide">
+    <div class="user_search_index_floatbox">
+    {form name=SearchUserForm}
+    <table class="ow_table_1 ow_form">
+        {if $displayAccountType==true}
+        {cycle assign='alt' values='ow_alt1,ow_alt2'}
+        <tr class="ow_tr_first">
+            <th class="ow_box_cap " colspan="3">
+                <h2 class="ow_ic_info">{text key='base+questions_question_accountType_label'}</h2>
+                <div class="ow_name_search_label"></div>
+            </th>
+        </tr>
+        <tr class=" ow_tr_first ow_tr_last">
+            <td class="ow_search_accountType">
+                {input name='accountType'}
+                <div class="ow_separation"></div>
+                {error name='accountType'}
+            </td>
+        </tr>
+        {/if}
+
+        {if !empty($questionList)}
+        {foreach from=$questionList key='section' item='questions'}
+        {if !empty($section) }
+        <tr class="ow_tr_first"><th class="ow_box_cap " colspan="3">
+            <h2 class="ow_ic_info">{text key="base+questions_section_`$section`_label"}</h2>
+            <div class="ow_name_search_label"></div>
+        </th></tr>
+        {/if}
+        {foreach from=$questions item='question' name='question'}
+        {cycle assign='alt' values='ow_alt1,ow_alt2'}
+        <tr class=" ow_type_{$question.type} ow_name_{$question.name} {if $smarty.foreach.question.last}ow_tr_last{/if}">
+            <td class="{$alt} ow_value ow_presentation_{$question.presentation}">
+                {if $question.type == "text" }
+                {if $question.presentation == "textarea" }
+                {label name=$question.name}
+                <br>
+                {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} onkeyup="ShowLabelQuestion(this)"}
+                <br>
+                {else}
+                {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} }
+                </br>
+                {label name=$question.name}
+                {/if}
+                <div class="ow_desc">
+                    {desc name=$question.name}
+                </div>
+                <div class="ow_separation"></div>
+                {error name=$question.name}
+                {else}
+                <div class="ow_label_question">
+                    {label name=$question.name}
+                    <br>
+                    {input name=$question.name}
+                    {if $question.type == "boolean" }
+                    {label name=$question.name}
+                    {/if}
+                    <div class="ow_desc">
+                        {desc name=$question.name}
+                    </div>
+                    <div class="ow_separation"></div>
+                    {error name=$question.name}
+                </div>
+                {/if}
+            </td>
+        </tr>
+        {/foreach}
+
+        {/foreach}
+        {/if}
+    </table>
+    {if !empty($questionList)}
+    <div class="clearfix">
+        <div class="ow_left">
+            {decorator name='button' iconClass="ow_ic_lens" id="searchUsersByRQButton" onclick="searchUsersByRQ('{$filterUrl}','{$loadMoreUrl}');" langLabel='base+user_search_submit_button_label'}
+        </div>
+    </div>
+    {/if}
+    {/form}
+</div>
+</div>
+
+
+<div class="ow_lp_avatars avatar_select_list" id="{$contexId}">
+    {if empty($users)}
+    <div class="ow_nocontent">{text key='base+empty_user_avatar_list_select'}</div>
+    {else}
+    <div style="width: 100%;">
+        <input id="instant_search_txt_input" type="text" placeholder="{text key='base+search_users'}" style="width: 200px;margin: 3px 0px;">
+    </div>
+    <div class="asl_users">
+        {foreach from=$users item='user' name='user_list'}
+        {decorator name="user_list_item"
+        avatar=$avatars[$user.id]
+        username=$user.username
+        displayName=$user.title
+        noUserLink=1
+        contId=$user.linkId
+        set_class='ow_item_set2'}
+        {/foreach}
+    </div>
+    <div class="ow_center" style="padding: 8px;">
+        {if !empty($langs.countLabel)}<input type="hidden" class="count_label" value="{$langs.countLabel}" />{/if}
+        <input type="hidden" class="button_label" value="{$langs.buttonLabel}" />
+        {if !empty($langs.countLabel)}<div class="count_label" style="display: inline-block;">{$langs.startCountLabel}</div>
+        <div class="ow_right"><input type="checkbox" id="selectAllByRQButton"> <label for="selectAllByRQButton">{text key='base+select_all'}</label></div>
+        <div class="clearfix"></div>
+        {/if}
+        <div class="submit_cont"><div class="ow_left">{decorator name='button' label=$langs.startButtonLabel class='submit'}</div></div>
+    </div>
+    {/if}
+</div>

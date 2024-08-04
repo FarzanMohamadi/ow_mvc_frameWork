@@ -1,0 +1,116 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+
+{if isset($sectionId) && $sectionId==1}
+<div class="ow_automargin ow_wide">
+    {form name="form"}
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="2">
+                <span class="ow_section_icon ow_ic_gear_wheel">{text key="frmslideshow+settings"}</span>
+            </th>
+        </tr>
+
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td style="width: 50%">
+                {label name='news_count' }
+            </td>
+            <td>
+                {input name='news_count'}<br />
+                {error name='news_count'}
+            </td>
+        </tr>
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td style="width: 50%">
+                {label name='max_text_char' }
+            </td>
+            <td>
+                {input name='max_text_char'}<br />
+                {error name='max_text_char'}
+            </td>
+        </tr>
+    </table>
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+            {submit name="submit"}
+        </div>
+    </div>
+    {/form}
+</div>
+{/if}
+
+
+
+
+{if isset($sectionId) && $sectionId==2}
+
+<div class="ow_left place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name="addAlbum"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmslideshow+add_album_form"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='name' }
+                </td>
+                <td class="ow_value">
+                    {input name='name'}
+                    {error name='name'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="clearfix ow_submit ow_stdmargin">
+            <div class="ow_right">
+                {submit name="submit"}
+            </div>
+        </div>
+        {/form}
+    </div>
+</div>
+
+<div class="ow_right place_section left_section ow_column">
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tr class="ow_tr_first">
+            <th colspan="3" class="ow_center">{text key="frmslideshow+albums"}</th>
+        </tr>
+        <tr class="ow_tr_first">
+            <th>{text key="frmslideshow+title"}</th>
+            <th>{text key="frmslideshow+actions"}</th>
+        </tr>
+
+        <tbody id="s1" class="s">
+        {foreach from=$albums item="album"}
+        <tr class="ow_high1 draggable-lang-item ow_tr_last">
+            <td><input type="hidden" value="{$album.id}">{$album.name}</td>
+            <td class="features">
+                <a class="ow_lbutton ow_red" onclick="{$album.deleteUrl}" style="display: inline-block;">{text key="frmslideshow+delete"}</a>
+                <a class="ow_lbutton ow_green" href="{$album.editUrl}" style="display: inline-block;">{text key="frmslideshow+edit"}</a>
+                <a class="ow_lbutton ow_green" href="{$album.questionsUrl}">{text key="frmslideshow+slides"}</a>
+            </td>
+        </tr>
+        {foreachelse}
+        <tr class="empty"><td colspan="3">{text key="frmslideshow+empty_row_label"}</td></tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>
+
+{/if}

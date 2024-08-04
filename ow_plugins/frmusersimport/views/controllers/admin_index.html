@@ -1,0 +1,88 @@
+{if isset($sms_plugin_is_not_active)}
+    <p>{$sms_plugin_is_not_active}</p>
+{/if}
+{if isset($linesError)}
+<div class="error_import">
+    {foreach from=$linesError item='item'}
+    <p>{$item}</p>
+    {/foreach}
+</div>
+{/if}
+<div class="ow_automargin ow_superwide">
+    {form name='users_import_setting'}
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td class="ow_label">{label name="type"}</td>
+            <td class="ow_value">{input name="type"} {error name='type'}</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="ow_label">
+                <p>{text key="frmusersimport+notification_description"}</p>
+                <p class="ow_red">{text key="frmusersimport+notification_desc_notice"}</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="ow_submit">{submit name="submit" class='ow_ic_save'}</td>
+        </tr>
+    </table>
+    {/form}
+</div>
+<br/>
+    <div class="ow_automargin ow_superwide">
+        {form name='users_import'}
+        <table class="ow_table_1 ow_form">
+            <tr>
+                <td class="ow_value">
+                    <div>
+                        {input name="ignoreAutoUsernameAndPassword"}{text key="frmusersimport+ignore_auto_username_password"}
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="ow_value"><div>{input name="adminVerified"}{text key="frmusersimport+default_approve_users_label"}</div></td>
+            </tr>
+            <tr>
+                <td class="ow_value"><div>{input name="file"} {error name='file'}</div></td>
+            </tr>
+            <tr>
+                <td class="ow_label">{text key="frmusersimport+file_description"}</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="ow_submit">{submit name="submit" class='ow_ic_save'}</td>
+            </tr>
+        </table>
+        {/form}
+    </div>
+<br/>
+<table class="ow_table_2 ow_form" style="margin: 0">
+    <tbody>
+    <tr class="ow_tr_last ow_center">
+        <td>
+            <p>{text key="frmusersimport+resend_to_user_sleepy_description"}</p>
+        </td>
+    </tr>
+    <tr class="ow_tr_last ow_center">
+        <td>
+            <a href="{$sleepyUrl}">{text key="frmusersimport+resend_to_user_sleepy_label"}</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<br/>
+<div class="ow_automargin ow_superwide">
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td>
+                <b>
+                    {$guideline_heading}
+                </b>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {$guideline}
+            </td>
+        </tr>
+    </table>
+</div>

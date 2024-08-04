@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmenu" label="frmmenu" language_tag="en" language_label="English">
+	<key name="admin_save_settings"><value>Save Settings</value></key>
+	<key name="admin_settings_title"><value>Menu - Settings</value></key>
+	<key name="user_save_success"><value>Settings saved successfully</value></key>
+	<key name="replaceMenu"><value>Replace desktop menu</value></key>
+</prefix>

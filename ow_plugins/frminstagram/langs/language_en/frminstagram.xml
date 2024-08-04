@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frminstagram" label="frminstagram" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Instagram
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            Instagram Plugin Settings
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            Settings
+        </value>
+    </key>
+    <key name="default_page">
+        <value>
+            Default Instagram username
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            Save
+        </value>
+    </key>
+    <key name="admin_changed_success">
+        <value>
+            Settings successfully changed.
+        </value>
+    </key>
+    <key name="not_set">
+        <value>
+            No Instagram username is set.
+        </value>
+    </key>
+    <key name="cant_load">
+        <value>
+            Images cannot be loaded.
+        </value>
+    </key>
+
+    <key name="instagram_settings">
+        <value>
+            Instagram Settings
+        </value>
+    </key>
+    <key name="instagram_already_connected">
+        <value>
+            Already connected to Instagram.
+        </value>
+    </key>
+    <key name="connect_instagram_to_entity">
+        <value>
+            Connect to Instagram
+        </value>
+    </key>
+</prefix>

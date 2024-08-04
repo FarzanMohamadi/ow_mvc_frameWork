@@ -1,0 +1,43 @@
+{style}
+{literal}
+span, p, div, a, label, input{
+    font-size: 12px;
+}
+{/literal}
+{/style}
+<div class="mobile_account {$type_class}">
+    <p>{text key='frmmobileaccount+enter_code'}</p>
+    {form name='code_mobile_account' class='account_form_box'}
+    <div class="account_status_box">
+        <span class="ow_preloader"></span>
+        <div id="account_status"></div>
+    </div>
+    <div class="account_field account_name OWM">
+        {input name='mobile_code'}
+        {error name="mobile_code"}
+    </div>
+    <div class="network_submit">
+        <div class="owm_btn_wide owm_btn_positive owm_std_margin_top" style="padding: unset">
+                <span class="ow_button ow_positive">
+                    <span>{submit name='submit' class='ow_button ow_ic_save'}</span>
+                </span>
+        </div>
+    </div>
+    {/form}
+    <div class="back_box">
+        <span class="ow_button resend_button">
+            <span class=" ow_button">
+                <a href="javascript://" onclick="{$resend_function}" class="ow_button ow_ic_save">
+                    {text key='frmmobileaccount+resend_label'}
+                </a>
+            </span>
+        </span>
+        <span class="ow_button">
+            <span class=" ow_button">
+                <a href="{$backUrl}" class="ow_button ow_ic_left_arrow">
+                    {text key='frmmobileaccount+back_label'}
+                </a>
+            </span>
+        </span>
+    </div>
+</div>

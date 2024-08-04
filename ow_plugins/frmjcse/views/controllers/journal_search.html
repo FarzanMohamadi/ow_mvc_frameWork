@@ -1,0 +1,64 @@
+{style}{literal}
+div.article-container {
+text-align: left;
+border: 3px solid #409424a6;
+border-width: 0px 2px 0 2px;
+color: #d2205c;
+counter-increment: myCounter;
+margin: 0 0 6px 0;
+padding: 13px;
+top: 1em;
+border-radius: 13px 5px 13px 7px;
+padding-left: 2em;
+font-size: 1.2em;
+font-family: Constantia;
+background-color: #f8f8f8;
+}
+#right-container {
+width: 30%;
+min-width: 100px;
+max-width: 300px;
+}
+.article-title {
+font-weight: bold;
+}
+.article-authors {
+font-size: small;
+}
+.article-keywords {
+font-size: small;
+}
+#poster {
+width:100%;
+border-radius: 5px;
+}
+{/literal}{/style}
+
+{form name='search_form'}
+<table class="ow_table_1 ow_form ow_automargin" style="min-width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_value ow_center">{input name='search'}</td>
+        <td class="ow_value ow_center " style="height: 1px;width: 100px;">{submit name='search_submit' class='ow_ic_search'}</td>
+    <tr class="ow_alt2">
+        <td class="ow_value ow_center" colspan="2">
+            {text key='frmjcse+search_settings'}
+            {label name='checkbox_search_title'}{input name='checkbox_search_title'}
+            {label name='checkbox_search_author'}{input name='checkbox_search_author'}
+            {label name='checkbox_search_keyword'}{input name='checkbox_search_keyword'}
+            {label name='checkbox_search_abstract'}{input name='checkbox_search_abstract'}</td>
+    </tr>
+    </tr>
+</table>
+{/form}
+{if $hasResult!=false}
+    {foreach from=$searchResult item="article"}
+        <div class="article-container">
+            <div class="article-title"><a href="{$article.url}"> {$article.title}</a></div>
+                <div class="article-authors"  style="color: black">{$article.authors}</div>
+                <div class="article-keywords" style="color: black"> <b>{text key='frmjcse+keywords'}: </b>{$article.keywords}</div>
+        </div>
+    {/foreach}
+{if isset($paging)}<div style="text-align: center;width: 100%;margin-top: 10px">{$paging}</div>{/if}
+{else}
+    {text key='frmjcse+no_search_result'}
+{/if}

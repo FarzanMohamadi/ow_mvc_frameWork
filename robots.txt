@@ -1,0 +1,10 @@
+User-agent: *
+Disallow:/ow_version.xml
+Disallow:/INSTALL.txt
+Disallow:/LICENSE.txt
+Disallow:/README.txt
+Disallow:/UPDATE.txt
+Disallow:/CHANGELOG.txt
+Disallow:/ReadMe.pdf
+Disallow:/admin/
+Disallow:/ow_userfiles/

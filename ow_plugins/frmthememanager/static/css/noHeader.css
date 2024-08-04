@@ -1,0 +1,23 @@
+.ow_header_pic {
+    background-image: none !important;
+    height: 70px !important;
+}
+.ow_console_right {
+    top: -15px;
+}
+.ow_site_panel {
+    margin-top: 62px;
+}
+
+a.ow_logo.ow_left {
+    top: -50px !important;
+}
+
+.ow_menu_more_wrap.ow_cursor_pointer {
+    left: initial !important;
+    margin-right: -40px;
+}
+
+.ow_header {
+    height: 100px;
+}

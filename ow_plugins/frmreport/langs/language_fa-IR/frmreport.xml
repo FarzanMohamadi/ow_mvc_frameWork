@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix name="frmreport" label="Six month report" language_tag="fa-IR" language_label="فارسی">
+    <key name="activity_title">
+        <value>عنوان فعالیت</value>
+    </key>
+    <key name="count">
+        <value>تعداد</value>
+    </key>
+    <key name="activity_description">
+        <value>توضیحات</value>
+    </key>
+    <key name="add_activity_type_submit">
+        <value>ثبت نوع فعالیت</value>
+    </key>
+    <key name="add_activity_type_page_heading">
+        <value>تنظیمات افزونه گزارش ۶ ماهه</value>
+    </key>
+    <key name="add_activity_type_page_title">
+        <value>تنظیمات افزونه گزارش ۶ ماهه</value>
+    </key>
+    <key name="add_report_page_heading">
+        <value>تعریف گزارش</value>
+    </key>
+    <key name="add_report_page_title">
+        <value>تعریف گزارش</value>
+    </key>
+    <key name="index_report_page_heading">
+        <value>لیست گزارش ها</value>
+    </key>
+    <key name="index_report_page_title">
+        <value>لیست گزارش ها</value>
+    </key>
+    <key name="form_label_activity_type">
+        <value>عنوان فعالیت</value>
+    </key>
+    <key name="form_label_count">
+        <value>تعداد</value>
+    </key>
+    <key name="form_label_description">
+        <value>توضیحات</value>
+    </key>
+    <key name="form_label_year">
+        <value>سال</value>
+    </key>
+    <key name="form_label_semester">
+        <value>شماره نیم‌سال</value>
+    </key>
+    <key name="form_label_submit_report">
+        <value>ثبت گزارش</value>
+    </key>
+    <key name="form_label_edit_report">
+        <value>ویرایش</value>
+    </key>
+    <key name="first_semester">
+        <value>شش ماهه اول</value>
+    </key>
+    <key name="second_semester">
+        <value>شش ماهه دوم</value>
+    </key>
+    <key name="form_label_search_report">
+        <value>جستجو</value>
+    </key>
+    <key name="report_enable">
+        <value>فعالسازی</value>
+    </key>
+    <key name="semester_report">
+        <value>گزارش شش ماهه</value>
+    </key>
+    <key name="report_plugin_description">
+        <value>با فعال‌سازی این افزونه، امکان مشاهده گزارش‌ها برای کاربر مدیر فراهم شده است.</value>
+    </key>
+    <key name="report_widget_title">
+        <value>گزارشات</value>
+    </key>
+    <key name="auth_frmreport_label">
+        <value>گزارش شش ماهه</value>
+    </key>
+    <key name="console_reports_link">
+        <value>گزارش شش ماهه</value>
+    </key>
+    <key name="listing_no_items_msg">
+        <value>موردی وجود ندارد</value>
+    </key>
+    <key name="report_creator">
+        <value>سازنده</value>
+    </key>
+    <key name="report_create_date">
+        <value>تاریخ ایجاد</value>
+    </key>
+    <key name="report_editor">
+        <value>ویراستار</value>
+    </key>
+    <key name="report_edit_date">
+        <value>تاریخ ویرایش</value>
+    </key>
+    <key name="edit_back_label">
+        <value>بازگشت</value>
+    </key>
+    <key name="detail_back_label">
+        <value>بازگشت</value>
+    </key>
+    <key name="delete_confirm_msg">
+        <value>آیا از حذف گزارش اطمینان دارید؟</value>
+    </key>
+
+    <key name="report_widget_settings_count">
+        <value>تعداد گزارش‌های قابل نمایش</value>
+    </key>
+    <key name="reports_count">
+        <value>تعداد گزارش‌ها</value>
+    </key>
+    <key name="view_report_list">
+        <value>مشاهده همه</value>
+    </key>
+    <key name="add_report">
+        <value>افزودن گزارش</value>
+    </key>
+    <key name="edit_activity_page_title">
+        <value>ویرایش فعالیت</value>
+    </key>
+    <key name="edit_activity_successfully">
+        <value>ویرایش با موفقیت انجام شد</value>
+    </key>
+    <key name="group_title">
+        <value>عنوان گروه</value>
+    </key>
+    <key name="all_semester">
+        <value>همه موارد</value>
+    </key>
+    <key name="back_to_group_label">
+        <value>بازگشت</value>
+    </key>
+    <key name="edit_activity">
+        <value>ویرایش</value>
+    </key>
+    <key name="delete_report_label">
+        <value>حذف گزارش</value>
+    </key>
+    <key name="report_widget_title">
+        <value>گزارش شش ماهه</value>
+    </key>
+    <key name="reports_confliction_error">
+        <value>در این سال و نیم‌سال ، قبلا گزارشی تعریف شده است</value>
+    </key>
+    <key name="add_report_error">
+        <value>خطا در ثبت گزارش</value>
+    </key>
+    <key name="semseter">
+        <value>نیم‌سال</value>
+    </key>
+    <key name="last_report_date">
+        <value>تاریخ آخرین گزارش</value>
+    </key>
+    <key name="report_added_successfully">
+        <value>گزارش با موفقیت ثبت شد</value>
+    </key>
+    <key name="report_edited_successfully">
+        <value>گزارش با موفقیت ویرایش شد</value>
+    </key>
+    <key name="report_deleted_successfully">
+        <value>گزارش با موفقیت حذف شد</value>
+    </key>
+    <key name="activity_added_successfully">
+        <value>فعالیت با موفقیت ثبت شد</value>
+    </key>
+    <key name="title_is_exist_error">
+        <value>این عنوان قبلا تعریف شده است</value>
+    </key>
+    <key name="activity_exist_in_report_error">
+        <value>گزارشی بر اساس این فعالیت تعریف شده است. امکان حذف وجود ندارد</value>
+    </key>
+    <key name="activity_deleted_successfully">
+        <value>حذف با موفقیت انجام شد</value>
+    </key>
+    <key name="year_should_be_complete">
+        <value>سال باید به صورت عددی و در قالب 4 رقم باشد مانند 1396</value>
+    </key>
+    <key name="year_number_of_digit_error">
+        <value>سال را به صورت عددی و در قالب 4 رقم وارد کنید</value>
+    </key>
+    <key name = "view_group_reports">
+        <value>مشاهده گزارش ها</value>
+    </key>
+    <key name="overall_reports_page_heading">
+        <value>گزارش شش ماه</value>
+    </key>
+    <key name="overall_reports_page_title">
+        <value>گزارش شش ماهه</value>
+    </key>
+    <key name="back_to_overall_report">
+        <value>گزارش شش ماهه</value>
+    </key>
+</prefix>

@@ -1,0 +1,89 @@
+<svg width="200" height="180" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+ <defs>
+  <path d="m32.42,0l0,244.99" id="b1qLsTogXz"/>
+  <path d="m32.42,0l0,244.99" id="b6NWjCSCj2"/>
+  <path d="m32.42,0l0,244.99" id="d36GEE4giZ"/>
+  <path d="m32.42,98c-13.53,0 -24.5,10.97 -24.5,24.5c0,13.53 10.97,24.5 24.5,24.5c13.53,0 24.5,-10.97 24.5,-24.5c0,-13.53 -10.97,-24.5 -24.5,-24.5z" id="a3Zbi7VsH"/>
+  <path d="m32.42,98c-13.53,0 -24.5,10.97 -24.5,24.5c0,13.53 10.97,24.5 24.5,24.5c13.53,0 24.5,-10.97 24.5,-24.5c0,-13.53 -10.97,-24.5 -24.5,-24.5z" id="drOQ8azAf"/>
+  <path d="m32.42,97.99c-13.53,0 -24.5,10.97 -24.5,24.5c0,13.53 10.97,24.5 24.5,24.5c13.53,0 24.5,-10.97 24.5,-24.5c0,-13.53 -10.97,-24.5 -24.5,-24.5z" id="c6B579iue8"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="202" height="182" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_30" transform="matrix(0, 0.846435, -0.792184, 0, 346.193, 103.017)">
+   <use xlink:href="#b1qLsTogXz" fill="#000000" fill-opacity="0" id="svg_27" y="187.17404" x="22.20633" stroke="#5493ff"/>
+   <g id="svg_29">
+    <use xlink:href="#b1qLsTogXz" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_28" y="187.17404" x="22.20633"/>
+   </g>
+  </g>
+  <g id="svg_34" transform="matrix(0, 0.846435, -0.792184, 0, 346.193, 103.017)">
+   <use xlink:href="#b6NWjCSCj2" fill="#000000" fill-opacity="0" id="svg_31" y="187.17404" x="22.20633" stroke="#5493ff"/>
+   <g id="svg_33">
+    <use xlink:href="#b6NWjCSCj2" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_32" y="187.17404" x="22.20633"/>
+   </g>
+  </g>
+  <g id="svg_38" transform="matrix(0, 0.846435, -0.797617, 0, 346.477, 103.017)">
+   <use xlink:href="#d36GEE4giZ" fill="#000000" fill-opacity="0" id="svg_35" y="186.2601" x="22.20633" stroke="#5493ff"/>
+   <g id="svg_37">
+    <use xlink:href="#d36GEE4giZ" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_36" y="186.2601" x="22.20633"/>
+   </g>
+  </g>
+  <g id="svg_42" transform="matrix(0, 0.846435, -0.792184, 0, 399.265, 46.3106)">
+   <use xlink:href="#a3Zbi7VsH" fill="#ffffff" id="svg_39" y="198.52918" x="89.20047" stroke="#5493ff"/>
+   <g id="svg_41">
+    <use xlink:href="#a3Zbi7VsH" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_40" y="198.52918" x="89.20047"/>
+   </g>
+  </g>
+  <g id="svg_3" transform="matrix(0, 0.805948, -0.800371, 0, 289.813, 53.3406)">
+   <use xlink:href="#b1qLsTogXz" fill="#000000" fill-opacity="0" id="svg_4" y="115.64797" x="11.89548" stroke="#5493ff"/>
+   <g id="svg_5">
+    <use xlink:href="#b1qLsTogXz" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_6" y="115.64797" x="11.89548"/>
+   </g>
+  </g>
+  <g id="svg_7" transform="matrix(0, 0.805948, -0.800371, 0, 289.813, 53.3406)">
+   <use xlink:href="#b6NWjCSCj2" fill="#000000" fill-opacity="0" id="svg_8" y="115.64797" x="11.89548" stroke="#5493ff"/>
+   <g id="svg_9">
+    <use xlink:href="#b6NWjCSCj2" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_10" y="115.64797" x="11.89548"/>
+   </g>
+  </g>
+  <g id="svg_11" transform="matrix(0, -0.402974, -0.800371, 0, 289.813, 105.418)">
+   <use xlink:href="#d36GEE4giZ" fill="#000000" fill-opacity="0" id="svg_12" y="115.64797" x="11.89548" stroke="#5493ff"/>
+   <g id="svg_13">
+    <use xlink:href="#d36GEE4giZ" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_14" y="115.64797" x="11.89548"/>
+   </g>
+  </g>
+  <g id="svg_23" transform="matrix(0, 0.805948, -0.800371, 0, 232.191, 109.752)">
+   <use xlink:href="#c6B579iue8" fill="#ffffff" id="svg_24" y="100.9102" x="-59.09866" stroke="#5493ff"/>
+   <g id="svg_25">
+    <use xlink:href="#c6B579iue8" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_26" y="100.9102" x="-59.09866"/>
+   </g>
+  </g>
+  <g id="svg_56" transform="matrix(0, 0.805948, -0.803088, 0, 229.773, -2.26983)">
+   <use xlink:href="#b1qLsTogXz" fill="#000000" fill-opacity="0" id="svg_53" y="39.96882" x="3.33112" stroke="#5493ff"/>
+   <g id="svg_55">
+    <use xlink:href="#b1qLsTogXz" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_54" y="39.96882" x="3.33112"/>
+   </g>
+  </g>
+  <g id="svg_60" transform="matrix(0, 0.805948, -0.803088, 0, 229.773, -2.26983)">
+   <use xlink:href="#b6NWjCSCj2" fill="#000000" fill-opacity="0" id="svg_57" y="39.96882" x="3.33112" stroke="#5493ff"/>
+   <g id="svg_59">
+    <use xlink:href="#b6NWjCSCj2" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_58" y="39.96882" x="3.33112"/>
+   </g>
+  </g>
+  <g id="svg_64" transform="matrix(0, 0.805948, -0.803088, 0, 229.773, -2.26983)">
+   <use xlink:href="#d36GEE4giZ" fill="#000000" fill-opacity="0" id="svg_61" y="39.96882" x="3.33112" stroke="#5493ff"/>
+   <g id="svg_63">
+    <use xlink:href="#d36GEE4giZ" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_62" y="39.96882" x="3.33112"/>
+   </g>
+  </g>
+  <g id="svg_68" transform="matrix(0, 0.805948, -0.803088, 0, 285.984, -60.2933)">
+   <use xlink:href="#a3Zbi7VsH" fill="#ffffff" id="svg_65" y="52.66009" x="75.56603" stroke="#5493ff"/>
+   <g id="svg_67">
+    <use xlink:href="#a3Zbi7VsH" fill-opacity="0" stroke="#5493ff" stroke-width="13.34" id="svg_66" y="52.66009" x="75.56603"/>
+   </g>
+  </g>
+ </g>
+</svg>

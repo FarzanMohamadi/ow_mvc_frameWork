@@ -1,0 +1,19 @@
+{form name='settings'}
+<table class="ow_table_1 ow_form ow_automargin" style="width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_value">{label name='max_db_requests'}</td>
+        <td class="ow_value">{input name='max_db_requests'}{error name='max_db_requests'}</td>
+    </tr>
+    <tr class="ow_alt2">
+        <td class="ow_value">{label name='minutes_to_reset'}</td>
+        <td class="ow_value">{input name='minutes_to_reset'}{error name='minutes_to_reset'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_value">{label name='blocking_minutes'}</td>
+        <td class="ow_value">{input name='blocking_minutes'}{error name='blocking_minutes'}</td>
+    </tr>
+    <tr class="ow_alt2">
+        <td class="ow_center" colspan="2">{submit name='save' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcompetition" label="frmcompetition" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            مسابقات
+        </value>
+    </key>
+    <key name="mobile_main_menu_item">
+        <value>
+            مسابقات
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="return">
+        <value>
+            بازگشت
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            توضیحات
+        </value>
+    </key>
+    <key name="image">
+        <value>
+            تصویر
+        </value>
+    </key>
+    <key name="deleted_successfully">
+        <value>
+            حذف با موفقیت انجام شد
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            ذخیره با موفقیت انجام شد
+        </value>
+    </key>
+    <key name="username">
+        <value>
+            نام کاربری
+        </value>
+    </key>
+    <key name="user_not_found">
+        <value>
+            کاربری یافت نشد
+        </value>
+    </key>
+    <key name="values">
+        <value>
+            امتیازات
+        </value>
+    </key>
+    <key name="value">
+        <value>
+            امتیاز
+        </value>
+    </key>
+    <key name="competitions">
+        <value>
+            مسابقات
+        </value>
+    </key>
+    <key name="create_competitions_form">
+        <value>
+            فرم ایجاد مسابقه
+        </value>
+    </key>
+    <key name="edit_competitions_form">
+        <value>
+            فرم ویرایش مسابقه
+        </value>
+    </key>
+    <key name="type">
+        <value>
+            نوع شرکت‌کنندگان
+        </value>
+    </key>
+    <key name="active">
+        <value>
+            فعال
+        </value>
+    </key>
+    <key name="startDate">
+        <value>
+            تاریخ شروع
+        </value>
+    </key>
+    <key name="endDate">
+        <value>
+            تاریخ اتمام
+        </value>
+    </key>
+    <key name="competition_groups_values">
+        <value>
+            امتیازات گروه‌ها
+        </value>
+    </key>
+    <key name="competition_users_values">
+        <value>
+            امتیازات کاربران
+        </value>
+    </key>
+    <key name="groups_values_form">
+        <value>
+            فرم امتیازدهی به گروه‌ها
+        </value>
+    </key>
+    <key name="users_values_form">
+        <value>
+            فرم امتیازدهی به کاربران
+        </value>
+    </key>
+    <key name="group_title">
+        <value>
+            عنوان گروه
+        </value>
+    </key>
+    <key name="groups_label">
+        <value>
+            گروه‌ها
+        </value>
+    </key>
+    <key name="users_label">
+        <value>
+            کاربران
+        </value>
+    </key>
+    <key name="not_active">
+        <value>
+            این مسابقه به پایان رسیده است
+        </value>
+    </key>
+    <key name="no_participant">
+        <value>
+            شرکت‌کننده‌ای در این مسابقه شرکت نکرده است
+        </value>
+    </key>
+    <key name="empty_competition">
+        <value>
+            مسابقه‌ای وجود ندارد
+        </value>
+    </key>
+	<key name="competition_notification_string">
+		<value>
+			 مسابقه‌ای تحت عنوان &lt;a href="{$competitionUrl}"&gt;{$competitionTitle}&lt;/a&gt; منتشر شده است
+		</value>
+	</key>
+	<key name="notification_form_lbl_published">
+		<value>
+			 ارسال اعلان
+		</value>
+	</key>
+	<key name="email_notifications_setting_competition">
+		<value>
+			 مسابقه‌ای منتشر شد
+		</value>
+	</key>
+	<key name="email_notification_section_label">
+		<value>
+			 مسابقات
+		</value>
+	</key>
+		<key name="group_add_point_notification_string">
+		<value>
+			   گروه شما با نام  &lt;a href="{$groupUrl}"&gt;{$groupTitle}&lt;/a&gt;  در  &lt;a href="{$competitionUrl}"&gt;{$competitionTitle}&lt;/a&gt; {$competitionPoint} امتیاز کسب کرده است
+		</value>
+	</key>
+	<key name="user_add_point_notification_string">
+		<value>
+			 شما در &lt;a href="{$competitionUrl}"&gt;{$competitionTitle}&lt;/a&gt; {$competitionPoint} امتیاز کسب کرده‌اید
+		</value>
+	</key>
+	<key name="email_notifications_setting_group_get_point">
+		<value>
+			امتیازی به یکی از گروه‌های من داده شد
+		</value>
+	</key>
+	<key name="email_notifications_setting_user_get_point">
+		<value>
+			 امتیازی به شخص من در یکی از مسابقات داده شد
+		</value>
+	</key>
+</prefix>

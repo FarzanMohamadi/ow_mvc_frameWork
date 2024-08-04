@@ -1,0 +1,25 @@
+<div class="ow_std_margin clearfix">
+    {form name='editCategory'}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='category'}
+            </td>
+            <td class="ow_value">
+                {input name='category'}
+                {error name='category'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="3">
+                {submit name='submit'}
+                <span class="ow_button">
+                    <input type="button" onclick="location.href='{$returnUrl}'" value="{text key='frmchallenge+return'}" />
+                </span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>

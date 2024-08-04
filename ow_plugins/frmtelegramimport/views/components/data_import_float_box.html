@@ -1,0 +1,73 @@
+{if $dataIsAvailable}
+{script}
+{literal}
+    $(document).ready(function() {
+        $('form[name="channel_import"]').submit(function(e) {
+            e.preventDefault();
+            $(this).ajaxSubmit({
+                forceSync: true,
+                target:   '#targetLayer',
+                success:function (){
+                    closeImportForm();
+                    $('#loader-icon').hide();
+                    setTimeout(function() {
+                        window.location = window.location;
+                    }, 1000);
+                },
+                resetForm: true
+            });
+            return false;
+        });
+    });
+{/literal}
+{/script}
+<div class="ow_superwide ow_automargin">
+    {form name='channel_import'}
+    <div>
+        <br/>
+        <b>
+            {text key='frmtelegramimport+select_source'}
+        </b>
+        <br/>
+    </div>
+    <table class="ow_table_1" style="width: 100%;">
+        <tr>
+            <th></th>
+            <th>{text key='frmtelegramimport+channel_title'}</th>
+            <th>{text key='frmtelegramimport+text_message_count'}</th>
+            <th>{text key='frmtelegramimport+photo_message_count'}</th>
+            <th>{text key='frmtelegramimport+video_message_count'}</th>
+            <th>{text key='frmtelegramimport+audio_message_count'}</th>
+            <th>{text key='frmtelegramimport+file_message_count'}</th>
+            <th>{text key='frmtelegramimport+animation_message_count'}</th>
+            <th>{text key='frmtelegramimport+sticker_message_count'}</th>
+        </tr>
+        {foreach from=$channelsInfo item='info'}
+        <tr class="{cycle values='ow_alt1,ow_alt2'}">
+            <td>
+                {input name=$info.channelId}
+            </td>
+            <td>
+                {$info.title}
+            </td>
+            {foreach from=$info.statistics item='item'}
+            <td>
+                {$item}
+            </td>
+            {/foreach}
+        </tr>
+        {/foreach}
+        <tr>
+            <td colspan="9" class="ow_submit ow_center">{submit name="import" langLabel='frmtelegramimport+publish'}</td>
+        </tr>
+    </table>
+    <div id="targetLayer"></div>
+    {/form}
+</div>
+{else}
+<div>
+    <div>{$errorMessage}</div>
+    <a href="{$helpUrl}">{$helpTitle}</a>
+</div>
+{/if}
+

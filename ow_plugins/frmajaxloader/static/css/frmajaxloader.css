@@ -1,0 +1,58 @@
+/**
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.frmajaxloader
+ * @since 1.0
+ */
+.ow_ajax_newly_button {
+    position: fixed;
+    top: 10px;
+    left: calc(50% - 10vw);
+    z-index: 1000;
+}
+.ow_ajax_newly_button > .ow_button {
+    background-color: #36d0ae;
+}
+span.ow_button.ajax_ok_part {
+    padding-left: 20px;
+    padding-right: 40px;
+}
+span.ow_button.ajax_ok_part:lang(fa-IR) {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+.ow_ajax_newly_button > .ow_ic_close {
+    background-color: white;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin: -5px -38px;
+    position: absolute;
+    top: 15px;
+}
+
+.owm_ajax_newly_button > input {
+    left: 40px;
+    width: calc( 100% - 80px );
+    position: fixed;
+    top: 0px;
+    padding: 0px;
+    /*background-color: #25af90;*/
+    margin-top: 10px;
+}
+.owm_ajax_newly_button > div {
+    width: 18px;
+    height: 18px;
+    left: 43px;
+    position: fixed;
+    top: 2px;
+    margin-top: 11px;
+}
+
+.ow_newsfeed_item.ow_ajax_newly_feed .ow_newsfeed_body,
+.owm_newsfeed_item.ow_ajax_newly_feed .owm_newsfeed_item_cont {
+    border-width: 2px !important;
+    background-color: #ecffec;
+}

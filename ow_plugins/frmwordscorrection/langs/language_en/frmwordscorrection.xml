@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmwordscorrection" label="frmwordscorrection" language_tag="en" language_label="English">
+	<key name="admin_correct_words"><value>Correct words</value></key>
+	<key name="admin_settings_title"><value>Words correction - Settings</value></key>
+	<key name="correct_words_success"><value>All words corrected!</value></key>
+	<key name="admin_correct_words_description"><value>This plugin correct all words in some plugins. (convert ي and ك into ی and ک). This plugin uses plugins of news, group, event, blogs, video, forum, photo, newsfeed and tags.</value></key>
+</prefix>

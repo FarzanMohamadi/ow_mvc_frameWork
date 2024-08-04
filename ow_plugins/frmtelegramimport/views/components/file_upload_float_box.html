@@ -1,0 +1,48 @@
+{script}
+{literal}
+    $(document).ready(function() {
+        $('form[name="channel_upload"]').submit(function(e) {
+            if($('input[name="file"]').val()) {
+            e.preventDefault();
+            $(this).ajaxSubmit({
+                forceSync: true,
+                target:   '#targetLayer',
+                beforeSubmit: function() {
+                    OW.trigger('base.progress_bar_actions', { 'action': 'initiate', 'percentComplete': null });
+                },
+                uploadProgress: function (event, position, total, percentComplete){
+                    OW.trigger('base.progress_bar_actions', { 'action': 'progress', 'percentComplete': percentComplete });
+                },
+                success:function (){
+                    OW.trigger('base.progress_bar_actions', { 'action': 'terminate', 'percentComplete': null });
+                    var id = document.getElementById('groupId').value;
+                    closeUploadForm();
+                    showImportForm(id);
+                    $('#loader-icon').hide();
+                },
+                resetForm: false
+            });
+            return false;
+            }
+        });
+    });
+{/literal}
+{/script}
+<div class="ow_create_group clearfix">
+    <div class="ow_superwide ow_automargin">
+        <div>
+            <a href="{$helpUrl}">{$helpTitle}</a>
+        </div>
+        {form name='channel_upload'}
+        <table class="ow_table_1 ow_form">
+            <tr class="ow_alt1">
+                <td class="ow_label">{label name='file'}</td>
+                <td class="ow_value">{input name='file'}<br />{error name='file'}</td>
+            </tr>
+        </table>
+        <div id="targetLayer"></div>
+        <div class="clearfix ow_stdmargin"><div style="text-align: center;">{submit name='save' class='ow_ic_save'}</div></div>
+        {/form}
+    </div>
+
+</div>

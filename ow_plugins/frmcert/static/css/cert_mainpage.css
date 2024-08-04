@@ -1,0 +1,85 @@
+.ow_dnd_widget.index-FRMCERT_CMP_Widget {
+    float: right;
+    margin: -280px 24px 0 0;
+    z-index: 100;
+    position: absolute;
+    background-color: #fbfbfbeb;
+}
+
+.frmcert_information_widget .content.Vulnerabilities{
+    width: 45%;
+    display: inline-block;
+}
+.frmcert_information_widget .content.Bots{
+    width: 40%;
+    display: inline-block;
+}
+
+.frmcert_information_widget  p.title {
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+}
+
+.frmcert_information_widget  span.number {
+    font-weight: bold;
+}
+
+.count.max_length_2 p {
+    text-align: center;
+}
+
+.frmcert_information_widget  p.timestamp {
+    border-top: 1px solid white;
+    padding-top: 6px;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.frmcert_information_widget  p.timestamp span.value {
+    margin: 5px 0px 0px 10px;
+    display: inline-block;
+}
+
+.frmcert_information_widget {
+    padding-top: 5px;
+}
+
+@media (max-width: 767px) {
+    .frmcert_information_widget {
+        float: unset;
+        position: relative;
+        margin: 0;
+        z-index: inherit;
+    }
+    .ow_dnd_widget.index-FRMCERT_CMP_Widget {
+        float: unset;
+        margin: inherit;
+        position: inherit;
+        background-color: #fbfbfbeb;
+    }
+}
+
+.frmcert_information_widget .content {
+    padding: 5px;
+}
+.frmcert_information_widget  .ow_custom_html_widget {
+    margin: 0;
+}
+
+
+.frmcert_information_widget p.timestamp span.value {
+    direction: rtl;
+}
+
+.ow_box_empty.ow_stdmargin.clearfix.index-FRMCERT_CMP_Widget.ow_no_cap.ow_break_word.container {
+    margin-bottom: 0;
+    min-width: 385px;
+}
+
+.ow_dnd_widget.index-FRMCERT_CMP_Widget:lang(en) {
+    left: 60px;
+}

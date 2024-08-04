@@ -1,0 +1,51 @@
+a#aRssWithTagLink {
+    text-align: left !important;
+    direction: ltr !important;
+    float: left;
+}
+td.ow_rss_td {
+    border-left: 0px !important;
+    border-right: 1px !important;
+}
+
+tr.ow_rss_tr:last-child {
+    background-color: transparent;
+}
+
+.ow_frmrss_gen_disc{
+    font-size: 10px;
+    max-width: 500px;
+}
+
+.no_rss_tag {
+    display: none;
+}
+
+.rss_submit_center {
+    text-align: center;
+}
+
+.rss_submit_center a.ow_lbutton {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #777777;
+    color: white !important;
+}
+
+td.ow_rss_td {
+    word-break: break-all;
+}
+
+.ow_rss_widget .ow_ic_description img {
+    margin: 0px 15px 15px 0;
+}
+
+ul.ow_regular.ow_ic.ow_rss_widget li .ow_ic_description br {
+    display: none;
+}
+
+
+.ow_rss_widget .ow_ic_header {
+    margin-top: 20px;
+}
+

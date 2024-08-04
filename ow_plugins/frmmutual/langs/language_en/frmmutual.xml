@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmutual" label="frmmutual" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Mutual friends
+        </value>
+    </key>
+    <key name="settings_successfuly_saved">
+        <value>Settings successfuly saved</value>
+    </key>
+    <key name="view_all">
+        <value>View All ({$number})</value>
+    </key>
+    <key name="empty_list">
+        <value>
+            You have not any mutual friend.
+        </value>
+    </key>
+    <key name="number_of_mutual_friends_setting">
+        <value>
+            settings
+        </value>
+    </key>
+    <key name="numberOfMutualFriends">
+        <value>
+            Maximum number of mutual friends
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            Mutual friends plugin
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            Mutual friends plugin
+        </value>
+    </key>
+
+</prefix>

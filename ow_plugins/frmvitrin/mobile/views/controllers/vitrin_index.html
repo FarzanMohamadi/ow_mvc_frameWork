@@ -1,0 +1,47 @@
+<div class="owm_frmvitrin_page owm_list_page">
+    <div class="owm_std_margin_bottom">
+
+        {if !empty($no_events) }
+        <div class="ow_nocontent">{text key="frmvitrin+empty_row_label"}</div>
+        {else}
+            {if isset($vitrinDescription)}
+            <div class="owm_list_item_without_image">
+                <div class="owm_list_section_body owm_bg_color_1 owm_padding">
+                    <div class="owm_list_body_body">
+                        {$vitrinDescription}
+                    </div>
+                </div>
+            </div>
+            {/if}
+            {foreach from=$items item="item"}
+            <div class="owm_list_item owm_list_item_with_image  clearfix">
+                <div class="owm_list_section_body owm_padding">
+                    <div class="owm_float_right">
+                        <a class="owm_nav_cap_right" href="{$item.viewUrl}"></a>
+                    </div>
+                    <div class="ow_ipc_picture">
+                        <img alt="{$item.title}" src="{$item.logo}"/>
+                    </div>
+                    <a class="owm_list_title_format owm_list_title_unread" href="{$item.viewUrl}">
+                        <div class="owm_list_title_name owm_small_margin_bottom">
+                            <div>{$item.title}</div>
+                        </div>
+                    </a>
+                    <div class="owm_list_body_body">
+                        {$item.description}
+                    </div>
+                </div>
+                <div class="owm_list_section_toolbar owm_border">
+                    <div class="owm_padding owm_list_additional_info">
+                        <span class="target_market"><span>{text key="frmvitrin+targetMarket"}:</span> {$item.targetMarket}</span>
+                        <!--<span class="vendor"><span>{text key="frmvitrin+vendor"}:</span> {$item.vendor}</span>-->
+                        <span class="list_features_item"><span>{text key="frmvitrin+language"}:</span> {$item.language}</span>
+                        <span class="list_features_item"><span>{text key="frmvitrin+business_model"}:</span> {$item.businessModel}</span>
+                        <span class="list_features_item"><span>{text key="frmvitrin+vendor"}:</span> {$item.vendor}</span>
+                    </div>
+                </div>
+            </div>
+            {/foreach}
+        {/if}
+    </div>
+</div>

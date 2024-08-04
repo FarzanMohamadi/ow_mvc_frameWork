@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmiosdetector" label="frmiosdetector" language_tag="en" language_label="English">
+
+    <key name="frmiosdetector_txt">
+        <value>iOS detector</value>
+    </key>
+    <key name="title_prefix">
+        <value>Please add</value>
+    </key>
+    <key name="title_suffix">
+        <value>Application to the Home Screen</value>
+    </key>
+    <key name="step_1">
+        <value>1. Click on Share located on the button</value>
+    </key>
+    <key name="step_2">
+        <value>2. Activate Add to Home Screen</value>
+    </key>
+    <key name="step_3">
+        <value>3. Click on Add on the top of the window</value>
+    </key>
+    <key name="agree">
+        <value>Done</value>
+    </key>
+
+</prefix>

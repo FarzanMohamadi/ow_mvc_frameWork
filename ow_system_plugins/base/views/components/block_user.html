@@ -1,0 +1,7 @@
+{block_decorator name="box" type="empty"}
+<div class="ow_center">
+        {text key="base+user_block_confirm_message"}<br/><br/>
+        {decorator name="button" id="baseBlockButton" type="submit" buttonName="user_block_btn" class="ow_ic_block_user ow_left ow_gray" langLabel="base+user_block_btn_lbl"}
+        {decorator name="button" id="closeBlockModal" class="ow_ic_delete ow_left ow_gray" langLabel="base+cancel" onclick="$(this).closest('.floatbox_container').find('.ow_ic_delete.close').click()"}
+        </div>
+{/block_decorator}

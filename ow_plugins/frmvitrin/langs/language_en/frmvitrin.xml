@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmvitrin" label="frmvitrin" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Vitrin
+        </value>
+    </key>
+    <key name="main_menu_mobile_item">
+        <value>
+            Vitrin
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            Delete
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="return_to_vitrin">
+        <value>
+            Return to vitrin
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="business_model">
+        <value>
+            Business Model
+        </value>
+    </key>
+    <key name="targetMarket">
+        <value>
+            Target market
+        </value>
+    </key>
+    <key name="vendor">
+        <value>
+            Vendor
+        </value>
+    </key>
+    <key name="language">
+        <value>
+            Programming language
+        </value>
+    </key>
+    <key name="logo">
+        <value>
+            Logo
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            Saved successfully.
+        </value>
+    </key>
+	<key name="delete_item_warning">
+        <value>
+            Are you sure to delete this item?
+        </value>
+    </key>
+    <key name="create_item_form">
+        <value>
+            Create item form
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            There is no item
+        </value>
+    </key>
+    <key name="edit_item">
+        <value>
+            Edit item
+        </value>
+    </key>
+    <key name="url">
+        <value>
+            Url
+        </value>
+    </key>
+    <key name="empty_logo_error">
+        <value>
+            Logo can not be empty and should be valid.
+        </value>
+    </key>
+    <key name="uploaded_logo">
+        <value>
+            Uploaded logo
+        </value>
+    </key>
+    <key name="view_website">
+        <value>
+            View website
+        </value>
+    </key>
+    <key name="admin_main_page_title">
+        <value>
+            Vitrin Plugin Settings
+        </value>
+    </key>
+</prefix>

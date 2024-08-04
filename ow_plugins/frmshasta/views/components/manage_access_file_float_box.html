@@ -1,0 +1,29 @@
+<div class="ow_lp_avatars avatar_select_list" id="{$contexId}">
+    {if empty($users)}
+    <div class="ow_nocontent">{text key='base+empty_user_avatar_list_select'}</div>
+    {else}
+    <div style="width: 100%;">
+        <input id="instant_search_txt_input" type="text" placeholder="{text key='frmshasta+search_users'}" style="width: 200px;margin: 3px 0px;">
+    </div>
+    <div class="asl_users">
+        {foreach from=$users item='user' name='user_list'}
+        {decorator name="user_list_item"
+        avatar=$avatars[$user.id]
+        username=$user.username
+        displayName=$user.title
+        noUserLink=1
+        contId=$user.linkId
+        set_class=$user.class}
+        {/foreach}
+    </div>
+    <div class="ow_center" style="padding: 8px;">
+        {if !empty($langs.countLabel)}<input type="hidden" class="count_label" value="{$langs.countLabel}" />{/if}
+        <input type="hidden" class="button_label" value="{$langs.buttonLabel}" />
+        <div class="submit_cont">
+            <div class="ow_right user_select_submit_button">
+                {decorator name='button' label=$langs.buttonLabel class='submit'}
+            </div>
+        </div>
+    </div>
+    {/if}
+</div>

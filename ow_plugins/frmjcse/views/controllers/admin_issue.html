@@ -1,0 +1,122 @@
+{style}{literal}
+    #admin-btn:link, #admin-btn:visited  {
+        background-color: dodgerblue;
+        color: white;
+        padding: 6px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 10px 0 23px;
+    }
+    #admin-btn:hover, #admin-btn:active {
+        background-color: deepskyblue;
+    }
+{/literal}{/style}
+
+<a id="admin-btn" href="{$redirectUrl}">{text key='frmjcse+back'}</a>
+
+<table class="ow_table_1 ow_automargin" style="min-width: 400px;">
+    <tr>
+        <th>{text key='frmjcse+table_article_th_delete'}</th>
+        <th>{text key='frmjcse+table_article_th_title'}</th>
+        <th>{text key='frmjcse+label_article_file'}</th>
+        <th>{text key='frmjcse+table_article_th_isactive'}</th>
+        <th>{text key='frmjcse+table_article_th_keywords'}</th>
+        <th>{text key='frmjcse+table_article_th_authors'}</th>
+        <th>{text key='frmjcse+table_article_th_startPage'}</th>
+        <th>{text key='frmjcse+table_article_th_endPage'}</th>
+        <th>{text key='frmjcse+table_article_th_edit'}</th>
+    </tr>
+    {foreach from=$articles item="article"}
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td width="1"><a href="{$deleteUrls[$article.id]}" onclick="return confirm('{text key="base+are_you_sure"}');" style="width:16px; height:16px; display:block; margin:0 auto;background-repeat:no-repeat;background-position: 50% 50%;" class="ow_ic_delete"></a></td>
+        <td>{$article.title}</td>
+        <td>
+            {if $article.file!=""}
+                <a href="{$article.file}" >{text key='frmjcse+link'}</a>
+            {else} - {/if}
+        </td>
+        <td>
+            {if $article.active==1}
+                {text key='frmjcse+active'}
+            {else}
+                {text key='frmjcse+inactive'}
+            {/if}
+        </td>
+        <td>
+            {foreach from=$article.keywords item="keyword"}
+                {$keyword};
+            {/foreach}
+        </td>
+        <td>
+            {foreach from=$article.authors item="author"}
+                {$author};
+            {/foreach}
+        </td>
+        <td>{$article.startPage}</td>
+        <td>{$article.endPage}</td>
+        <td><a href="{$article.editArticle}" >{text key='frmjcse+edit'}</a></td>
+    </tr>
+    {/foreach}
+</table>
+
+<h1>{text key='frmjcse+form_add_article_submit'}</h1>
+{form name='add_article'}
+<table class="ow_table_1 ow_form ow_automargin" style="min-width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='title'}</td>
+        <td class="ow_value">{input name='title'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='abstract'}</td>
+        <td class="ow_value">{input name='abstract'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='file'}</td>
+        <td class="ow_value">{input name='file'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='active'}</td>
+        <td class="ow_value">{input name='active'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='keywords'}</td>
+        <td class="ow_value">{input name='keywords'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key='frmjcse+table_article_th_authors'}</td>
+        <td class="ow_value">
+            <table width="100%" id="authors_table">
+                <thead>
+                    <th>{text key='frmjcse+label_article_authors_name'}</th>
+                    <th>Email</th>
+                    <th>{text key='frmjcse+table_article_th_institution'}</th>
+                </thead>
+                {for $x=0; $x<4; $x++}
+                <tr>
+                    <td class="ow_value"><input name="author_name[]" value="" /></td>
+                    <td class="ow_value"><input name="author_email[]" value="" /></td>
+                    <td class="ow_value"><input name="author_affliation[]" value="" /></td>
+                </tr>
+                {/for}
+            </table>
+        </td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='startPage'}</td>
+        <td class="ow_value">{input name='startPage'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='endPage'}</td>
+        <td class="ow_value">{input name='endPage'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='citation'}</td>
+        <td class="ow_value">{input name='citation'}</td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">{submit name='add_article' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

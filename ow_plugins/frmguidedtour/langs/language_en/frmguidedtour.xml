@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmguidedtour" label="frmguidedtour" language_tag="en" language_label="english">
+        <key name="guide_title">
+            <value>
+            guided tour
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> buttons >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="button_activateGuideline">
+            <value>
+                Guided tour
+            </value>
+        </key>
+        <key name="button_next">
+            <value>
+                Next
+            </value>
+        </key>
+        <key name="button_prev">
+            <value>
+                Previous
+            </value>
+        </key>
+        <key name="button_nextPage">
+            <value>
+                Next page guide
+            </value>
+        </key>
+        <key name="button_previousPage">
+            <value>
+                Previous page guide
+            </value>
+        </key>
+        <key name="button_skip">
+            <value>
+                Ignore guide
+            </value>
+        </key>
+        <key name="end_guided_tour">
+            <value>
+                End guide
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> page unavailable >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="page_unavailable">
+            <value>
+                No guided tour is available for this page.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mobile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="mobile_info">
+            <value>
+                Welcome to {$site_name} guided tour. You can see next and previous guided and close this guide temporarily. You can also dismiss this guide.
+            </value>
+        </key>
+        <key name="mobile_notifications">
+            <value>
+                This option can show you a list of notifications.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mobile groups >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="mobile_groups_info">
+            <value>
+                In my groups page, there is a list of groups in which you have joined. Choosing any of them would lead you to that group page.
+            </value>
+        </key>
+
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mobile friends >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="mobile_friends_info">
+            <value>
+                In friends page there is a list of your friends. You can be redirected to any of their profile page by choosing their name. You an also search among users by find new friend button.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mobile dashboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="mobile_dashboard_info">
+            <value>
+                In dashboard page all activities that are related to you are displayed.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mobile mailbox >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="mobile_mailbox_info">
+            <value>
+                In mailbox page, all your messages are listed. By choosing any of them you will be redirected to that conversation's page.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> mobile setting >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="mobile_setting_info">
+            <value>
+                In setting section, you can access profile, edit profile and your preferences. You can start guided tour again by choosing "guided tour".
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> index >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="index_info">
+            <value>
+                Welcome to {$site_name} guided tour. You can see next and previous guided and close this guide temporarily. You can also dismiss this guide.
+            </value>
+        </key>
+        <key name="index_guideLink">
+            <value>
+                Guided tour will be shown in any page by clicking on this option.
+            </value>
+        </key>
+        <key name="index_profileLink">
+            <value>
+                Profile options, preferences and other parts related to your accounts are accessible here.
+            </value>
+        </key>
+        <key name="index_notificationLink">
+            <value>
+                All notifications are listed here.
+            </value>
+        </key>
+        <key name="index_messages">
+            <value>
+                New messages will be shown here.
+            </value>
+        </key>
+        <key name="index_groups_widget">
+            <value>
+                In this section last and most favorite groups are represented.
+            </value>
+        </key>
+        <key name="index_users_widget">
+            <value>
+                In this section you can see newly joined, online and top users
+
+            </value>
+        </key>
+        <key name="index_pics_widget">
+            <value>
+                In this section, last and best images are shown.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> dashboard >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="dashboard_info">
+            <value>
+                In dashboard page, all activities related to you are shown,
+            </value>
+        </key>
+        <key name="dashboard_news">
+            <value>
+                In dashboard news section, you can share contents like file, video, image and questionnaire and you can set privacy level for them.
+            </value>
+        </key>
+        <key name="news_create">
+            <value>
+                Using this button you can create new blog content.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> groups >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="groups_info">
+            <value>
+                Groups page contains groups' information and activities.
+            </value>
+        </key>
+        <key name="groups_myGroups">
+            <value>
+                All groups in which you are joined are shown here. You can also search among them.
+            </value>
+        </key>
+        <key name="groups_latest">
+            <value>
+                This section contains public groups.
+            </value>
+        </key>
+        <key name="groups_invitations">
+            <value>
+                All invitations sent to you are accessible from this section. You can accept or reject them.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> profile >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="profile_info">
+            <value>
+                Profile page contains all information about you.
+            </value>
+        </key>
+        <key name="profile_details">
+            <value>
+                In this section you can see your information. Yoo can also change each item privacy level from here.
+            </value>
+        </key>
+        <key name="profile_news">
+            <value>
+                You can see news about yourself here. You can write new content here or add a new questionnaire.
+            </value>
+        </key>
+        <key name="profile_picture">
+            <value>
+                Profile picture is shown here. You can change it by clicking on it,
+            </value>
+        </key>
+        <key name="profile_aboutMe">
+            <value>
+                You can add some information about yourself here. This information will be visible for all users.
+            </value>
+        </key>
+        <key name="profile_contacts">
+            <value>
+                You can see your all friends here.
+            </value>
+        </key>
+    <key name="profile_groups">
+        <value>
+            You can see all your groups.
+        </value>
+    </key>
+    <key name="profile_toolbar_buttons">
+        <value>
+            You can update your profile information and change your password by using these buttons.
+        </value>
+    </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> competition >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="competitions_info">
+            <value>
+                In competitions' page, all competition held at {$site_name} are represented.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> events >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="events_info">
+            <value>
+                This part contains events' information and activities.
+            </value>
+        </key>
+        <key name="events_myEvents">
+            <value>
+                This part shows all events which you have engaged in. You can also search among them.
+            </value>
+        </key>
+        <key name="events_latest">
+            <value>
+                This section contains latest general events.
+            </value>
+        </key>
+        <key name="events_invitations">
+            <value>
+                In this part, you can see all events invitations sent to you. You can accept or reject them.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> blogs >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="blogs_info">
+            <value>
+                In blogs page, all created blogs are represented. You can also search among them and create new blogs.
+            </value>
+        </key>
+        <key name="blogs_latest">
+            <value>
+                This section is a list of users latest posts.
+            </value>
+        </key>
+        <key name="blogs_create">
+            <value>
+                Using this button, you can create new blog content.
+            </value>
+        </key>
+        <key name="blogs_top_rated">
+            <value>
+                In this section you can see a list of top-rated blogs.
+            </value>
+        </key>
+        <key name="blogs_most_discussed">
+            <value>
+                In this section you can see a list of most-discussed blogs.
+            </value>
+        </key>
+        <key name="blogs_browse_by_tag">
+            <value>
+                In this section you can see a list of blogs according to the tags.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> photo >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="photo_info">
+            <value>
+                In images page, you can see and manage images. This page contains latest uploaded images and uploading new images.
+            </value>
+        </key>
+        <key name="photo_create">
+            <value>
+                Using these options, you can upload new image or create an album of a group of images.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> video >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="video_info">
+            <value>
+                In videos page you can watch latest uploaded videos and search among them. You can also upload new videos.
+            </value>
+        </key>
+        <key name="video_create">
+            <value>
+                By using this button you can add upload new videos.
+            </value>
+        </key>
+    <key name="video_toolbar_guide">
+        <value>
+            using these options, you can see a list of videos according to latest uploaded, top-rated, labels, your friends' videos and your own videos.
+        </value>
+    </key>
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> news >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="news_info">
+            <value>
+                News page contains latest news. This page allows you to search content, create new content and search labels.
+            </value>
+        </key>
+        <key name="news_tools">
+            <value>
+                In this section you can access most discussed and top rated topics, and latest contents and create new content.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> hashtag >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="hashtag_info">
+            <value>
+                Hashtag page contains used hashtags in website's contents. The size of hashtag represents its use rate. You can also search among hashtags.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> questions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="questions_info">
+            <value>
+                Questions page contains all created questionnaires. You can participate in questionnaires or create one.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> frmterms >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="frmterms_info">
+            <value>
+                Terms page contains detailed conditions of using website and terms. To be informed of terms and conditions, please read this page.
+            </value>
+        </key>
+
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> frmcontact >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="frmcontact_info">
+            <value>
+                In contact page, you can send mail to website's managers.
+            </value>
+        </key>
+        <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> active-sessions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+        <key name="active-sessions-info">
+            <value>
+                Active sessions page contains different information about user activities such as their last activity time, the browser they use and other related information.
+            </value>
+        </key>
+        <key name="active-sessions-login">
+            <value>
+                This page provides details about user's login such as the time they logged in, browser they used or their IP address.
+            </value>
+        </key>
+
+        <key name="active-sessions-active">
+            <value>
+                This page provides information about user's active sessions such as their last activity time, their browser and their IP address. You can also terminate all other sessions in this page.
+            </value>
+        </key>
+
+        <key name="active-sessions-terminate">
+            <value>
+                In this part you are able to terminate all sessions except for the current one.
+            </value>
+        </key>
+
+        <key>
+            <value>
+                With this button you are able to terminate the session you which can't be the current one.
+            </value>
+        </key>
+
+    <key name="page_has_no_guide">
+        <value>
+            Page has no guide
+        </value>
+    </key>
+    <!-->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> frmquestions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>-->
+    <key name="frmquestions-info">
+        <value>
+            On the polls page, you can view polls created by users in other sections, such as the recent section.
+        </value>
+    </key>
+
+    <key name="all-polls">
+        <value>
+            In this section you can see all the polls.
+        </value>
+    </key>
+
+    <key name="popular-polls">
+        <value>
+            Only popular polls are displayed in this section.
+        </value>
+    </key>
+
+    <key name="friends_polls">
+        <value>
+            Only polls created by your friends are visible in this section.
+        </value>
+    </key>
+
+    <key name="my_polls">
+        <value>
+            In this section, the polls that you have created can be seen.
+        </value>
+    </key>
+</prefix>
+

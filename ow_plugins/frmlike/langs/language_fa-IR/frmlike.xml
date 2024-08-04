@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmlike" label="frmlike" language_tag="fa-IR" language_label="فارسی">
+	<key name="like_owner_msg_new">
+		<value>
+			شما نمی‌توانید بر روی نظر خود رای دهید
+		</value>
+	</key>
+	<key name="like_login_msg">
+		<value>
+			برای رای‌دادن می‌بایست ابتدا وارد شوید
+		</value>
+	</key>
+	<key name="liked_user_list">
+		<value>
+			کاربرانی که پسندیده‌اند
+		</value>
+	</key>
+	<key name="disliked_user_list">
+		<value>
+			کاربرانی که نپسندیده‌اند
+		</value>
+	</key>
+	<key name="total_user_list">
+		<value>
+			مجموع کاربرانی که رای داده‌اند
+		</value>
+	</key>
+	<key name="notification_comment_like_string">
+		<value>
+			&lt;a target="_blank" href=&quot;{$userUrl}&quot;&gt;{$userName}&lt;/a&gt; &lt;a href=&quot;{$url}&quot;&gt;نظر&lt;/a&gt; شما را پسندید
+		</value>
+	</key>
+	<key name="notification_comment_dislike_string">
+		<value>
+			&lt;a target="_blank" href=&quot;{$userUrl}&quot;&gt;{$userName}&lt;/a&gt; &lt;a href=&quot;{$url}&quot;&gt;نظر&lt;/a&gt; شما را نپسندید
+		</value>
+	</key>
+	<key name="notification_section_label">
+		<value>
+			لایک‌پلاس
+		</value>
+	</key>
+	<key name="comment_notifications_setting">
+		<value>
+			پسندیدن نظرات
+		</value>
+	</key>
+	<key name="admin_title">
+		<value>
+			تنظیمات افزونه لایک پلاس
+		</value>
+	</key>
+	<key name="admin_heading">
+		<value>
+			تنظیمات افزونه لایک پلاس
+		</value>
+	</key>
+	<key name="dislike_activate_label">
+		<value>
+			فعال‌سازی امکان نپسندیدن نظرات تازه‌ها
+		</value>
+	</key>
+	<key name="dislike_post_activate_label">
+		<value>
+			فعال‌سازی امکان نپسندیدن مطالب تازه‌ها
+		</value>
+	</key>
+	<key name="dislike_activate_submit">
+		<value>
+			ثبت
+		</value>
+	</key>
+	<key name="submit_successful_message">
+		<value>
+			تغییرات با موفقیت ذخیره شد
+		</value>
+	</key>
+	<key name="email_notifications_status_dislike">
+		<value>
+			&lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt; &lt;a href="{$url}"&gt; نوشته &lt;/a&gt; شما را نپسندید
+		</value>
+	</key>
+	<key name="mrege_like_tables_message">
+		<value>
+			برای کارکرد صحیح پسندیدن و نپسندیدن، لازم است جداول مربوطه تجمیع شوند.
+			در هر دفعه کلیک بر روی دکمه‌ی زیر {$numberOfLikesToConvertByEachRequest} مورد از داده‌ها تجمیع می‌شوند و لازم است این کار را تا صفرشدن داده‌ها و حذف جدول اضافه تکرار کنید.
+			تعداد داده‌های باقیمانده:
+			{$newsfeedLikeCount}
+		</value>
+	</key>
+	<key name="mrege_like_tables_form_submit">
+		<value>
+			تجمیع
+		</value>
+	</key>
+	<key name="merge_like_tables_successful_message">
+		<value>
+			تجمیع داده‌ها با موفقیت انجام شد
+		</value>
+	</key>
+	<key name="delete_newsfeed_like_table_form_submit">
+		<value>
+			حذف جدول اضافه
+		</value>
+	</key>
+	<key name="admin_merge_tables_notification">
+		<value>
+			به منظور کارکرد صحیح پسندیدن و نپسندیدن، جداول مربوطه را &lt;a href='{$url}'&gt;تجمیع&lt;/a&gt;  کنید
+		</value>
+	</key>
+	<key name="admin_remove_newsfeed_like_table_notification">
+		<value>
+			به منظور کارکرد صحیح پسندیدن و نپسندیدن، جداول اضافه را &lt;a href='{$url}'&gt;حذف&lt;/a&gt;  کنید
+		</value>
+	</key>
+	<key name="admin_settings_heading">
+		<value>
+			تنظیمات افزونه لایک پلاس
+		</value>
+	</key>
+</prefix>

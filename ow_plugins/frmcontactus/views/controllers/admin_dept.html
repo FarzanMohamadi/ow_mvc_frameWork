@@ -1,0 +1,89 @@
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+{if isset($sectionId) && $sectionId==2}
+<table class="ow_table_1 ow_automargin">
+    {foreach from=$contacts item=contact name=contact}
+    <tr class="{cycle values='ow_alt1,ow_alt2'} {if $smarty.foreach.contact.last}ow_tr_last{/if} {if $smarty.foreach.contact.first}ow_tr_first{/if}">
+        <td>{$contact.email}</td>
+        <td>{$contact.label}</td>
+        <td>
+            <a class="ow_lbutton ow_green" onclick="{$editUrls[$contact.name]}" style="display: inline-block;">{text key="base+ow_ic_edit"}</a>
+            <a class="ow_lbutton ow_green" href="{$deleteUrls[$contact.name]}" onclick="return confirm('{text key="frmcontactus+are_you_sure"}');" style="display: inline-block;"> {text key="base+ow_ic_delete"} </a>
+        </td>
+    </tr>
+    {/foreach}
+</table>
+
+{form name='add_dept'}
+<div style="width: 400px; margin:0 auto">
+    <table class="ow_table_1 ow_form ow_automargin">
+        <tr class="ow_alt1 ow_tr_first ow_tr_last">
+            <td class="ow_value">{input name='email'}</td>
+            <td class="ow_value">{input name='label'}</td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div class="clearfix ow_submit ow_stdmargin">
+                    <div class="ow_center">
+                        {submit name='add' class='ow_button ow_ic_save'}
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{/form}
+
+{*<a href="{$deleteCatUrls[$id]}" onclick="return confirm('{text key="base+are_you_sure"}');" style="width:16px; height:16px; display:block; margin:0 auto;background-repeat:no-repeat;background-position: 50% 50%;" class="ow_ic_delete"></a>*}
+
+{/if}
+{if isset($sectionId) && $sectionId==1}
+<h1 class="ow_stdmargin">
+    {text key="frmcontactus+form_data_label"}
+</h1>
+
+<div class="ow_std_margin clearfix">
+    {form name="formData"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {text key="frmcontactus+tables_label"}
+            </td>
+            <td class="ow_value">
+                {input name='departments'}
+                {error name='departments'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name='showFormData'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>
+{/if}
+{if isset($sectionId) && $sectionId=='new'}
+    {form name="add_adminComment"}
+        <table class="ow_table_1 ow_form ow_stdmargin">
+            <tr class="ow_alt1">
+                <td>
+                    {label name="comment"}<br />
+                    {input name='comment'}
+                    <br />{error name="comment"}
+                </td>
+            </tr>
+        </table>
+        <div class="clearfix ow_stdmargin ow_submit ow_btn_delimiter">
+            <div class="ow_right">{submit name="add" class="ow_button ow_green ow_positive"}</div>
+        </div>
+    {/form}
+{/if}

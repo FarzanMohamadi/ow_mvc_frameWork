@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmusersimport" label="frmusersimport" language_tag="fa-IR" language_label="فارسی">
+    <key name="file_description">
+        <value>
+            قبل از بارگذاری فایل، مطمئن شوید که فایل مورد نظر دارای فرمت متنی (txt) است و مقدار encoding آن برابر با «utf-8» باشد. در غیر اینصورت، متون فارسی به درستی بارگذاری نخواهند شد. فایل مورد نظر باید از نرم‌افزار excel استخراخ شود. ستون‌ داده‌ها باید به ترتیب ایمیل، نام و موبایل باشند. ردیف اول نیز باید شامل سرستون (داده‌ای در ردیف اول قرار نگرفته باشد) باشد.
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+         تنظیمات افزونه واردسازی کاربران
+        </value>
+    </key>
+    <key name="import_successfully">
+        <value>
+            واردسازی کاربران با موفقیت انجام شد.
+        </value>
+    </key>
+    <key name="email_exist">
+        <value>
+            کاربر با رایانامه {$email}، قبلا ثبت‌نام نموده است. لذا اطلاعات این کاربر دیگر وارد نمی‌شود.
+        </value>
+    </key>
+    <key name="email_invalid">
+        <value>
+            رایانامه کاربر {$email}، مشکل دارد. لذا اطلاعات این کاربر دیگر وارد نمی‌شود.
+        </value>
+    </key>
+    <key name="mobile_exist">
+        <value>
+            کاربر با شماره تلفن  {$mobile}، قبلا ثبت‌نام نموده است. لذا اطلاعات این کاربر دیگر وارد نمی‌شود.
+        </value>
+    </key>
+    <key name="line_error">
+        <value>
+            اطلاعات کاربری که در خط {$line} نوشته شده، مشکل دارد. لذا اطلاعات این کاربر دیگر وارد نمی‌شود.
+        </value>
+    </key>
+    <key name="email_subject">
+        <value>
+            حساب کاربری شما در {$site_name} ایجاد شد.
+        </value>
+    </key>
+    <key name="email_description">
+        <value>
+            شما عضو &lt;a href="{$site_url}"&gt;{$site_name}&lt;/a&gt; شده‌اید. حساب کاربری برای شما با اطلاعات نام کاربری {$username} و گذرواژه {$password} ایجاد شده است. &lt;br/&gt; شما می‌توانید از طریق اطلاعات مذکور، وارد سامانه شوید. &lt;br/&gt; پیوند سامانه: &lt;a href="{$site_url}"&gt;{$site_name}&lt;/a&gt; &lt;br/&gt; با سپاس، مدیریت {$site_name}
+        </value>
+    </key>
+    <key name="mobile_description">
+        <value>
+            حساب کاربری برای شما با اطلاعات نام کاربری {$username} و گذرواژه {$password} در {$site_name} ایجاد شده است. پیوند: {$site_url}. مدیریت {$site_name}
+        </value>
+    </key>
+    <key name="error_import_extension">
+        <value>
+            نوع فایل مجاز نیست. باید از .txt استفاده شود.
+        </value>
+    </key>
+    <key name="file_empty">
+        <value>
+            لطفا فایل را بارگذاری کنید.
+        </value>
+    </key>
+    <key name="frmsms_plugin_not_active">
+        <value>
+            افزونه پیامکی نصب نیست. امکان ارسال پیامک در هنگام واردسازی کاربران و ذخیره شماره تلفن همراه آن‌ها مقدور نخواهد بود.
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت ذخیره شد.
+        </value>
+    </key>
+    <key name="notification_type">
+        <value>
+            نوع اطلاع‌رسانی به کاربران
+        </value>
+    </key>
+    <key name="email_type">
+        <value>
+            رایانامه
+        </value>
+    </key>
+    <key name="mobile_type">
+        <value>
+            پیامک
+        </value>
+    </key>
+    <key name="all_type">
+        <value>
+            همه
+        </value>
+    </key>
+    <key name="notification_description">
+        <value>
+            لطفا پیش از بارگذاری فایل، نوع اطلاع‌رسانی را انتخاب نموده و ثبت را بفشارید.
+        </value>
+    </key>
+    <key name="resend_to_user_sleepy_label">
+        <value>
+            ایجاد گذرواژه مجدد و ارسال اطلاعات به کاربرانی که تا کنون وارد سامانه نشده‌اند
+        </value>
+    </key>
+    <key name="resend_to_user_sleepy_description">
+        <value>
+            با استفاده از دکمه زیر می‌توانید گذرواژه کاربرانی که تا کنون وارد سامانه نشده را مجدد ایجاد کرده و اطلاعات حساب کاربری آن‌ها را مجدد برایشان ارسال نمایید.
+        </value>
+    </key>
+    <key name="resend_successfully">
+        <value>
+            اطلاعات حساب کاربری ارسال شدند.
+        </value>
+    </key>
+    <key name="empty_sleepy_users">
+        <value>
+            تمامی کاربران برای حداقل یکبار وارد سامانه شدند.
+        </value>
+    </key>
+    <key name="upload_file_submit_label">
+        <value>
+            بارگذاری فایل
+        </value>
+    </key>
+    <key name="save_setting_submit_label">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+    <key name="import_user_guideline">
+        <value>
+            ابتدا می‌بایست یک فایل Excel ایجاد شود.  فایل مذکور می‌بایست دارای ۳ ستون با نام‌های: ۱- رایانامه  ۲- نام و نام‌خانوادگی ۳- تلفن همراه باشد. واردسازی اطلاعات می‌بایست دقیقا مانند شکل 1 انجام شود‌. فرمت واردسازی شماره تلفن همراه به صورت 989XXXXXXXXX+ باشد.
+            &lt;br/&gt;
+            {$image1}
+            &lt;br/&gt;
+            برای واردسازی شماره تلفن همراه به فرمت 989XXXXXXXXX+ بایستی کل ستون مربوطه‌ (برای مثال ستون C در شکل 2) انتخاب شود و بعد کلیک راست ماوس فشرده شود، از میان گزینه‌های نمایش داده شده گزینه Format Cells انتخاب گردد.
+            &lt;br/&gt;
+            {$image2}
+            &lt;br/&gt;
+            در ابزارک Format Cells بایستی  در بخش Number گزینه Text انتخاب شده و دکمه ok زده شود‌ (شکل 3).
+            &lt;br/&gt;
+            {$image3}
+            &lt;br/&gt;
+            پس از واردسازی اطلاعات فایل مورد نظر را save as نموده، در بخش File name نام فایل را وارد کرده و  سپس در قسمت save as type  گزینه Unicode Text انتخاب شود(شکل 4).
+            &lt;br/&gt;
+            {$image4}
+            &lt;br/&gt;
+            روی گزینه Tools کلیک کرده و گزینه Web Options انتخاب شود(شکل 5).
+            &lt;br/&gt;
+            {$image5}
+            &lt;br/&gt;
+            در ابزارک  Web Options بخش Encoding، برای Save this documents as گزینه (Unicode (UTF-8 انتخاب شده و دکمه ok زده شود(شکل 6).
+            &lt;br/&gt;
+            {$image6}
+            &lt;br/&gt;
+            سپس با زدن دکمه save فایل ذخیره شود. توجه شود که فایل می‌بایست با فرمت txt. ایجاد شده باشد.  شکل 7 نمونه فایل ذخیره شده را نشان می‌دهد که با برنامه Notepad باز شده است.
+            &lt;br/&gt;
+            {$image7}
+            &lt;br/&gt;
+            در مرحله آخر فایل ذخیره شده با برنامه ++Notepad باز شود و از منوی بالا روی گزینه Encoding کلیک کرده و گزینه Encode in UTF-8 انتخاب شود، سپس فایل دوباره ذخیره (save) شود(شکل 8).
+            &lt;br/&gt;
+            {$image8}
+            &lt;br/&gt;
+        </value>
+    </key>
+    <key name="help_image_caption1">
+        <value>
+            شکل 1 نحوه واردسازی اطلاعات در excel
+        </value>
+    </key>
+    <key name="help_image_caption2">
+        <value>
+            شکل 2 انتخاب تنظیم Format برای یک ستون
+        </value>
+    </key>
+    <key name="help_image_caption3">
+        <value>
+            شکل 3 انتخاب Text در بخش Number
+        </value>
+    </key>
+    <key name="help_image_caption4">
+        <value>
+            شکل 4 انتخاب Unicode Text در بخش save as type
+        </value>
+    </key>
+    <key name="help_image_caption5">
+        <value>
+            شکل 5 انتخاب Web Options از Tools
+        </value>
+    </key>
+    <key name="help_image_caption6">
+        <value>
+            شکل 6  انتخاب (Unicode (UTF-8 برای save this document as
+        </value>
+    </key>
+    <key name="help_image_caption7">
+        <value>
+            شکل 7 نمونه داده‌های فایل ذخیره شده در نمایش با برنامه Notepad
+        </value>
+    </key>
+    <key name="help_image_caption8">
+        <value>
+            شکل 8 انتخاب گزینه Encode in UTF-8 در بخش Encoding مربوط به نرم افزار ++Notepad
+        </value>
+    </key>
+    <key name="guideline_heading">
+        <value>
+            راهنمای ایجاد فایل با فرمت متنی
+        </value>
+    </key>
+    <key name="notification_desc_notice">
+        <value>
+            توجه: در صورت نصب بودن افزونه ورود به حساب کاربری از طریق پیامک، ثبت نام صورت نگرفته و صرفا یک پیامک حاوی پیوند دریافت برنامه نیتیو تلفن همراه (در صورت وجود داشتن) و پیوند به سامانه برای کلیه کاربران ارسال خواهد شد. همچنین در اینصورت ستون مربوط به ایمیل می‌تواند خالی باشد.
+        </value>
+    </key>
+    <key name="default_approve_users_label">
+        <value>
+            عدم نیاز به تایید مدیریت بعد از ثبت‌نام
+        </value>
+    </key>
+    <key name="ignore_auto_username_password">
+        <value>
+            ایجاد نام کاربری برابر با مقدار ستون اول و رمز عبور برابر با مقدار ستون سوم
+        </value>
+    </key>
+</prefix>

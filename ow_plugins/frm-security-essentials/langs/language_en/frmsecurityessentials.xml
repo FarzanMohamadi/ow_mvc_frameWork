@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="en" language_label="English">
+	<key name="idle_time_label">
+        <value>Idle Time (.min)</value>
+    </key>
+    <key name="settings_successfuly_saved">
+        <value>Settings successfuly saved</value>
+    </key>
+	
+	<key name="status_field_ownUser">
+        <value>
+            What's Up?
+        </value>
+    </key>
+	<key name="status_field_otherUser">
+        <value>
+            Messeage to {$username}
+        </value>
+    </key>
+	<key name="status_field_invintation">
+        <value>
+             What's Up?
+        </value>
+    </key>
+	
+    <key name="change_privacy_label">
+        <value>
+            Privacy
+        </value>
+    </key>
+    <key name="change_privacy_of_album_label">
+        <value>
+            Privacy of album
+        </value>
+    </key>
+    <key name="change_privacy_description">
+        <value>
+            Show information to:
+        </value>
+    </key>
+    <key name="submit">
+        <value>
+            submit
+        </value>
+    </key>
+    <key name="privacy_successfuly_changed">
+        <value>
+            Privacy successfuly changed
+        </value>
+    </key>
+    <key name="privacy_not_changed">
+        <value>
+            You cant change Privacy of this information
+        </value>
+    </key>
+    <key name="my_post_on_feed_newsfeed">
+        <value>
+            Default my posts
+        </value>
+    </key>
+    <key name="my_post_on_feed_newsfeed_description">
+        <value>
+            by modification of this option, the access right to your default posts will be changed
+        </value>
+    </key>
+    <key name="other_post_on_feed_newsfeed">
+        <value>
+            The default post written by others for me
+        </value>
+    </key>
+    <key name="other_post_on_feed_newsfeed_description">
+        <value>
+            by modification of this option, the access right to default post written by others for you will be changed
+        </value>
+    </key>
+    <key name="last_post_of_others_newsfeed">
+        <value>
+Last posts of other on profile
+        </value>
+    </key>
+    <key name="last_post_of_myself_newsfeed">
+        <value>
+            Last posts of myself on profile
+        </value>
+    </key>
+    <key name="who_post_on_newsfeed">
+        <value>
+            Who can post on my feed
+        </value>
+    </key>
+    <key name="who_post_on_newsfeed_description">
+        <value>
+            by modification of this option, the access right to write in your profile will be changed
+        </value>
+    </key>
+    <key name="show_to_everybody">
+        <value>
+            Show to everybody
+        </value>
+    </key>
+    <key name="show_to_friends">
+        <value>
+            Show to friends of {$username}
+        </value>
+    </key>
+    <key name="show_to_user">
+        <value>
+            Show to {$username}
+        </value>
+    </key>
+    <key name="photo_default_privacy">
+        <value>
+            efault of my photos
+        </value>
+    </key>
+    <key name="video_default_privacy">
+        <value>
+            Default of my videos
+        </value>
+    </key>
+    <key name="video_default_privacy_description">
+        <value>
+            by modification of this option, the access right to your default videos will be changed
+        </value>
+    </key>
+    <key name="view_user_comment_widget">
+        <value>
+            View profile user comment widget (It is not recommended)
+        </value>
+    </key>
+    <key name="verify_later">
+        <value>
+            I will be confirmed later
+        </value>
+    </key>
+    <key name="verify_using_code">
+        <value>
+            Account activation via the verification code that has been sent 
+        </value>
+    </key>
+    <key name="verify_using_resend_email">
+        <value>
+            Return to resend verification code form
+        </value>
+    </key>
+    <key name="last_post_of_myself_newsfeed_description">
+        <value>
+            by modification of this option, the access right for all your previous posts in your profile will be changed
+        </value>
+    </key>
+    <key name="last_post_of_others_newsfeed_description">
+        <value>
+            by modification of this option, the access right for all other previous posts in your profile will be changed
+        </value>
+    </key>
+    <key name="general_setting">
+        <value>
+            General setting
+        </value>
+    </key>
+    <key name="privacy_setting">
+        <value>
+            Privacy setting
+        </value>
+    </key>
+    <key name="privacy_setting_description">
+        <value>
+            You can set the default value of privacy items here. Also users can set value of these items for themselves
+        </value>
+    </key>
+    <key name="privacy_value_empty">
+        <value>
+            You don't set the default value of this item
+        </value>
+    </key>
+    <key name="plugin_privacy_not_exist_description">
+        <value>
+            Plugin of privacy does not exist. For managing the privacy of contents, you should install the privacy plugin
+        </value>
+    </key>
+    <key name="index_status_enabled_desc">
+        <value>
+            This option is disabled because of security issues
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            Security essentials plugin
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            Security essentials plugin
+        </value>
+    </key>
+    <key name="delete_feed_item_label">
+        <value>
+            Delete post form profile
+        </value>
+    </key>
+    <key name="delete_feed_item_confirmation">
+        <value>
+            Are you sure to delete this post from your profile?
+        </value>
+    </key>
+    <key name="approve_user_after_edit_profile_label">
+        <value>
+            Do not need user approval after editing profile (In case of mandatory user's approve)
+        </value>
+    </key>
+		 <key name="newsfeed_homepage_setting">
+        <value>
+             show activities in main page's setting
+        </value>
+    </key>
+	 <key name="admin_customization_legend">
+        <value>
+             Here you may control which type of content is shown in main page. Please note that any changes will be applied to _new_ content only
+        </value>
+    </key>
+	 <key name="save_customization_btn_label">
+        <value>
+             Save
+        </value>
+    </key>
+	 <key name="customization_changed">
+        <value>
+             Settings saved
+        </value>
+    </key>
+	 <key name="customization_not_changed">
+        <value>
+             Settings not changed
+        </value>
+    </key>
+    <key name="newsFeedShowDefault">
+        <value>
+            Show newsfeed activities as default
+        </value>
+    </key>
+    <key name="passwordRequiredProfile">
+        <value>
+            Require password before saving profile changes
+        </value>
+    </key>
+    <key name="questions_section_password">
+        <value>
+            Password
+        </value>
+    </key>
+    <key name="password">
+        <value>
+            Password
+        </value>
+    </key>
+    <key name="change_user_password_by_code">
+        <value>
+            change user password
+        </value>
+    </key>
+    <key name="email_is_not_registered">
+        <value>
+            No user found with this email
+        </value>
+    </key>
+    <key name="password_changed_successfully">
+        <value>
+            user password changed successfully
+        </value>
+    </key>
+    <key name="set_privacy_notification">
+        <value>
+            complete &lt;a href="{$url}"&gt;your profile privacy&lt;/a&gt; now
+        </value>
+    </key>
+    <key name="email_notification_alerts_label">
+        <value>
+            security essentials
+        </value>
+    </key>
+    <key name="email_notifications_alerts">
+        <value>
+            Security Alerts Notifications
+        </value>
+    </key>
+    <key name="privacy_not_set_message">
+        <value>
+            Your Privacy setting has not been saved yet
+        </value>
+    </key>
+    <key name="auth_action_label_privacy_alert">
+        <value>
+            Privacy Alert
+        </value>
+    </key>
+    <key name="auth_group_label">
+        <value>
+            Security Essentials
+        </value>
+    </key>
+    <key name="remember_me_default_value">
+        <value>
+            Activate remember me in sign-in page
+        </value>
+    </key>
+    <key name="set_valid_ips">
+        <value>
+            set valid ips
+        </value>
+    </key>
+    <key name="input_settings_valid_ip_list_label">
+        <value>
+            valid IP addresses
+        </value>
+    </key>
+    <key name="input_settings_valid_ip_list_desc">
+        <value>
+            Insert valid IP addresses that has access to admin panel. Enter one IP for each row
+        </value>
+    </key>
+    <key name="user_ip_address">
+        <value>
+            Your IP address:
+        </value>
+    </key>
+    <key name="privacyUpdateNotification">
+        <value>
+            Privacy settings update notification
+        </value>
+    </key>
+    <key name="allow_update_all_plugins">
+        <value>
+            Update all plugins once
+        </value>
+    </key>
+    <key name="auth_action_label_view_users_list">
+        <value>
+            View users list
+        </value>
+    </key>
+    <key name="editor_password">
+    <value>
+        Enter the following field to apply changes
+    </value>
+    </key>
+    <key name="auth_action_label_customize_user_profile">
+        <value>
+            Customize user profile
+        </value>
+    </key>
+    <key name="ie_message">
+        <value>
+            To access this website, please use
+            &lt;a href="https://www.google.com/chrome/"&gt;Google Chrome&lt;/a&gt;,
+            &lt;a href="https://www.mozilla.org/en-US/firefox/new/"&gt;Firefox&lt;/a&gt;
+            or
+            &lt;a href="https://www.microsoft.com/en-us/windows/microsoft-edge"&gt;Edge&lt;/a&gt;
+            .
+        </value>
+    </key>
+    <key name="ie_message_enabled">
+        <value>
+            Display an alert for IE users
+        </value>
+    </key>
+    <key name="disable_verify_peer">
+        <value>
+            Disable Verify Peer config for initializing php mailer connection
+        </value>
+    </key>
+
+    <key name="delete_user_heading">
+        <value>
+            Delete users
+        </value>
+    </key>
+    <key name="delete_user_form_title">
+        <value>
+            Warning
+        </value>
+    </key>
+    <key name="delete_user_form_desc">
+        <value>
+            This form is to delete users permanently, with all data and files. Please beware that you cannot reverse this process after deletion.
+        </value>
+    </key>
+    <key name="email_all_admins">
+        <value>
+            Notify all admins using Email
+        </value>
+    </key>
+    <key name="email_all_deleted_users">
+        <value>
+            Notify the affected users using Email
+        </value>
+    </key>
+    <key name="your_password">
+        <value>
+            Your password
+        </value>
+    </key>
+    <key name="your_password_desc">
+        <value>
+            For security purposes, please enter your password.
+        </value>
+    </key>
+    <key name="delete_user_submit_warning">
+        <value>
+            Please beware that you cannot reverse user deletion after submitting this form.
+        </value>
+    </key>
+    <key name="users_deleted_successfully">
+        <value>
+            Users successfully removed
+        </value>
+    </key>
+    <key name="user_is_removed_email_title">
+        <value>
+            A user was deleted
+        </value>
+    </key>
+    <key name="user_is_removed_email_content">
+        <value>
+            {$realName} (username: "{$username}", Email: {$email}) was deleted by {$adminRealName} ({$adminUsername}")
+        </value>
+    </key>
+    <key name="cancel">
+        <value>
+           cancel
+        </value>
+    </key>
+    <key name="back_to_user_profile">
+        <value>
+            back to user profile
+        </value>
+    </key>
+    <key name="auth_action_label_user_can_view_comments">
+        <value>
+            View comments in all sections to users
+        </value>
+    </key>
+    <key name="profile_field_privacy">
+        <value>
+            Profile privacy
+        </value>
+    </key>
+    <key name="privacy_friends">
+        <value>
+            Friends
+        </value>
+    </key>
+    <key name="privacy_everybody">
+        <value>
+            Everybody
+        </value>
+    </key>
+    <key name="privacy_only_for_me">
+        <value>
+            Only for me
+        </value>
+    </key>
+    <key name="update_system_code">
+        <value>
+            update system's code
+        </value>
+    </key>
+    <key name="extract_file_error">
+        <value>
+            There is a problem in extracting files
+        </value>
+    </key>
+    <key name="system_code_updated_successfully">
+        <value>
+            System successfully updated
+        </value>
+    </key>
+    <key name="system_code_permission_denied">
+        <value>
+            There is no permission to update these files
+        </value>
+    </key>
+    <key name="system_code_update_can_not_write">
+        <value>
+            There is no permission to update these files:
+        </value>
+    </key>
+    <key name="system_code_update_description">
+        <value>
+            For updating system, you can compress (zip) new files and upload them with their folders. For example if you want to upload content_provider.php file from classes folder in blogs plugin, you should compress (zip) this file with it's directories (ow_plugins/blogs/classes/content_provider.php) and upload them here.
+        </value>
+    </key>
+    <key name="reset_services_description">
+        <value>
+            After code change, some services may need to be restarted. You can force them to restart with this button.
+        </value>
+    </key>
+    <key name="reset_services_button">
+        <value>
+            Restart
+        </value>
+    </key>
+    <key name="disable_user_get_other_sites_content">
+        <value>
+            enable get other site contents only for admin
+        </value>
+    </key>
+    <key name="user_can_change_account_type">
+        <value>
+            user can change his/her account type
+        </value>
+    </key>
+     <key name="warningAlert_enable_label">
+        <value>
+           Enable Warning Alert
+        </value>
+    </key>
+    <key name="warningAlert_enable_desc">
+        <value>
+          By activating the warning, it will be sent publicly to all users
+        </value>
+    </key>
+    <key name="warningAlert_text_label">
+        <value>
+           Text sent to users
+        </value>
+    </key>
+    <key name="warningAlert_text_desc">
+        <value>
+            Warning Alert Text
+        </value>
+    </key>
+    <key name="warningAlert_section_label">
+        <value>
+            Send Warning Alert
+        </value>
+    </key>
+    <key name="warningAlert_types_label">
+        <value>
+            Warning Alert Type 
+        </value>
+    </key>
+    <key name="warningAlert_types_desc">
+        <value>
+         In the both type, both forms of the message are sent
+        </value>
+    </key>
+    <key name="warningAlert_updated">
+        <value>
+          Warning alert successfully updated
+        </value>
+    </key>
+     <key name="accept">
+        <value>
+           accept
+        </value>
+    </key>
+         <key name="warningAlert_action_label">
+        <value>
+          Warning Function
+        </value>
+    </key>
+    <key name="warningAlert_action_desc">
+        <value>
+          It is a type of command code that is used by developers to perform operations.
+        </value>
+    </key>
+</prefix>

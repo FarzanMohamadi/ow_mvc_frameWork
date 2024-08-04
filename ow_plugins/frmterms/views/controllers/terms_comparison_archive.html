@@ -1,0 +1,46 @@
+<div class="clearfix">
+{if !empty($sections)}
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span>{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+{/if}
+<p><a href="{$returnToArchiveUrl}">{text key="frmterms+returnToArchiveLabel"}</a></p>
+<div class="ow_left place_section left_section ow_column">
+    <table class="ow_table_1">
+        <tr>
+            <td>{$lastModifiedCurrentVersion}<span class="current_version">{text key="frmterms+current_version_label"}</span></td>
+        </tr>
+        {foreach from=$currentItems item="item"}
+        {if !empty($item.header)}
+        <tr>
+            <td><h2>{$item.header}</h2></td>
+        </tr>
+        {/if}
+        <tr>
+            <td><p class="justify">{$item.description}</p></td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+<div class="ow_right place_section right_section ow_column">
+    <table class="ow_table_1">
+        <tr>
+            <td>{$lastModifiedOldVersion}<span class="current_version">{text key="frmterms+selected_version_label"}</span></td>
+        </tr>
+        {foreach from=$oldItems item="item"}
+        {if !empty($item.header)}
+        <tr>
+            <td><h2>{$item.header}</h2></td>
+        </tr>
+        {/if}
+        <tr>
+            <td><p class="justify">{$item.description}</p></td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+</div>

@@ -1,0 +1,323 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+
+
+{if $currentSection==1}
+<div class="ow_std_margin clearfix">
+    {form name="settings"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {label name='idleTime'}
+                        <div style="max-width: 40px;display: inline-block;">{input name='idleTime'}</div>
+                        {error name='idleTime'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='viewUserCommentWidget'}
+                        {text key="frmsecurityessentials+view_user_comment_widget"}
+                        {error name='viewUserCommentWidget'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='approveUserAfterEditProfile'}
+                        {label name='approveUserAfterEditProfile'}
+                        {error name='approveUserAfterEditProfile'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='newsFeedShowDefault'}
+                        {label name='newsFeedShowDefault'}
+                        {error name='newsFeedShowDefault'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='passwordRequiredProfile'}
+                        {label name='passwordRequiredProfile'}
+                        {error name='passwordRequiredProfile'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='remember_me_default_value'}
+                        {label name='remember_me_default_value'}
+                        {error name='remember_me_default_value'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='allow_update_all_plugins'}
+                        {label name='allow_update_all_plugins'}
+                        {error name='allow_update_all_plugins'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='privacyUpdateNotification'}
+                        {label name='privacyUpdateNotification'}
+                        {error name='privacyUpdateNotification'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='ie_message_enabled'}
+                        {label name='ie_message_enabled'}
+                        {error name='ie_message_enabled'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='disable_verify_peer'}
+                        {label name='disable_verify_peer'}
+                        {error name='disable_verify_peer'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='disable_user_get_other_sites_content'}
+                        {label name='disable_user_get_other_sites_content'}
+                        {error name='disable_user_get_other_sites_content'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td class="ow_value">
+                        {input name='user_can_change_account_type'}
+                        {label name='user_can_change_account_type'}
+                        {error name='user_can_change_account_type'}
+                    </td>
+                </tr>
+                <tr class="ow_tr_last ow_center">
+                    <td colspan="2">
+                        {submit name='save'}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    {/form}
+</div>
+{/if}
+
+{if $currentSection==2 && !isset($plugin_privacy_not_exist_description)}
+<p>
+    {text key="frmsecurityessentials+privacy_setting_description"}
+</p>
+
+{form name='privacyForm'}
+<table class="ow_table_1 ow_form ow_smallmargin">
+    {foreach from=$actionList item='action' name="a"}
+    <tr class="ow_privacy {cycle name='privacy_action' values='ow_alt1,ow_alt2'} {if $smarty.foreach.a.first}ow_tr_first{/if} {if $smarty.foreach.a.last}ow_tr_last{/if}">
+        <td class="ow_label">
+            {label name=$action}
+        </td>
+        <td class="ow_value">
+            {input name=$action}
+            <div style="height:1px;"></div>
+            {error name=$action}
+        </td>
+        <td class="ow_desc" style="color:red;">
+            {desc name=$action}
+        </td>
+    </tr>
+    {/foreach}
+
+</table>
+
+<div class="clearfix ow_smallmargin">
+    <div class="ow_right">{submit name='submit'}</div>
+</div>
+{/form}
+
+{/if}
+
+{if $currentSection==4}
+    {form name="changeUserPasswordForm"}
+        <table class="ow_table_1 ow_form">
+            <tr class="ow_alt1">
+                <td class="ow_label">
+                    {label name='userName'}
+                </td>
+                <td class="ow_value" dir="ltr">
+                    {input name='userName'}
+                    <div style="height:1px;"></div>
+                    {error name='userName'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td class="ow_label">
+                    {label name='changedPassword'}
+                </td>
+                <td class="ow_value" dir="ltr">
+                    {input name='changedPassword'}
+                    <div style="height:1px;"></div>
+                    {error name='changedPassword'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="2">
+                    {submit name='save'}
+                </td>
+            </tr>
+        </table>
+    {/form}
+{/if}
+
+{if $currentSection==5}
+    {form name='form'}
+        <table class="ow_table_1 ow_form">
+            <tr class="ow_alt1">
+                <td class="ow_label">{text key='frmsecurityessentials+user_ip_address'}</td>
+                <td class="ow_value">{$userIP}</td>
+                <td class="ow_desc"></td>
+            </tr>
+            <tr class="{cycle name="comments" values="ow_alt1,ow_alt2"} ow_tr_last">
+            <td class="ow_label">{label name='validIps'}</td>
+            <td class="ow_value">{input name='validIps'}</td>
+            <td class="ow_desc">{desc name='validIps'}</td>
+            </tr>
+        </table>
+        <div class="clearfix ow_stdmargin">
+            {submit name='save' class='ow_ic_save ow_submit ow_right'}
+        </div>
+    {/form}
+{/if}
+
+
+{if $currentSection==6}
+{form name="profile_privacy_form"}
+<table class="ow_table_1 ow_form">
+    <tr class="ow_tr_last ow_center">
+        {foreach from=$formFieldsKey item='field'}
+            <tr class="ow_privacy">
+                <td class="ow_label">
+                    {label name=$field}
+                </td>
+                <td class="ow_value">
+                    {input name=$field}
+                    <div style="height:1px;"></div>
+                    {error name=$field}
+                </td>
+            </tr>
+        {/foreach}
+        <td colspan="2">
+            {submit name='save'}
+        </td>
+    </tr>
+</table>
+{/form}
+{/if}
+
+{if $currentSection==7}
+{form name='update-system-code'}
+<div class="ow_update_system_code">
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_alt1">
+            <td colspan="2">
+                {text key='frmsecurityessentials+system_code_update_description'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {input name='file'}
+                {error name='file' class='ow_error_margin_top'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name='save'}
+            </td>
+        </tr>
+        {if count($errors)}
+        <tr class="ow_tr_last">
+            <td colspan="2">
+                {text key='frmsecurityessentials+system_code_update_can_not_write'}
+                <ol>
+                    {foreach from=$errors item='error'}
+                    <li>{$error}</li>
+                    {/foreach}
+                </ol>
+            </td>
+        </tr>
+        {/if}
+    </table>
+</div>
+{/form}
+{form name='reset-services'}
+<div class="ow_update_system_code">
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_alt1">
+            <td colspan="2">
+                {text key='frmsecurityessentials+reset_services_description'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name='reset'}
+            </td>
+        </tr>
+    </table>
+</div>
+{/form}
+{/if}
+
+{if $currentSection==8}
+{form name='warningAlert'}
+<div class="ow_update_system_code">
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="3">
+                <span class="ow_section_icon ow_ic_gear_wheel">{text
+                        key="frmsecurityessentials+warningAlert_section_label"}</span>
+            </th>
+        </tr>
+        <tr class="{cycle values='ow_alt2,ow_alt1'}">
+            <td class="ow_label">{label name='warningAlert_enable'}</td>
+            <td class="ow_value">{input name='warningAlert_enable'}</td>
+            <td class="ow_desc">{desc name='warningAlert_enable'}</td>
+        </tr>
+        <tr class="{cycle values='ow_alt2,ow_alt1'}">
+            <td class="ow_label">{label name='warningAlert_types'}</td>
+            <td class="ow_value">{input name='warningAlert_types'}</td>
+            <td class="ow_desc">{desc name='warningAlert_types'}</td>
+        </tr>
+        <tr class="{cycle values='ow_alt2,ow_alt1'}">
+            <td class="ow_label">{label name='warningAlert_action'}</td>
+            <td class="ow_value">{input name='warningAlert_action'}</td>
+            <td class="ow_desc">{desc name='warningAlert_action'}</td>
+        </tr>
+        <tr class="{cycle values='ow_alt2,ow_alt1'} ow_tr_last">
+            <td class="ow_label">{label name='warningAlert_text'}</td>
+            <td class="ow_value">{input name='warningAlert_text'}</td>
+            <td class="ow_desc">{desc name='warningAlert_text'}</td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="3">
+                {submit name='save'}
+            </td>
+        </tr>
+    </table>
+</div>
+{/form}
+{/if}
+
+{if isset($plugin_privacy_not_exist_description)}
+{$plugin_privacy_not_exist_description}
+{/if}

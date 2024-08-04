@@ -1,0 +1,57 @@
+{* `IPC` decorator template *}
+{style}
+{literal}
+.ow_ipc_toolbar span{
+display:inline-block;
+}
+{/literal}
+{/style}
+
+<div class="ow_audio_list clearfix">
+    <div class="ow_automargin ow_superwide">
+        {if isset($isListItemEmpty)}
+        <div class="ow_nocontent">{text key="frmaudio+no_audio_data_list"}</div>
+        {else}
+        {foreach from=$list key='key' item='listItem'}
+        <div class="ow_ipc {if !empty($data.addClass)}{$data.addClass}{/if} clearfix">
+            <div class="ow_ipc_picture">
+                {if !empty($listItem.autherAvatar)}
+                    {decorator name='avatar_item' data=$listItem.autherAvatar}
+                {else}
+                    <div class="ow_avatar">
+                        <a href="{$listItem.autherUrl}">{$listItem.autherName}</a>
+                    </div>
+                {/if}
+            </div>
+            <div class="ow_ipc_info">
+                <div class="ow_ipc_header">
+                    <a>{$listItem.title}</a>
+                </div>
+                <div class="ow_ipc_content">
+                    <br/>
+                    <audio controls src="{$listItem.audioUrl}" class="audio_item_player" width="100%" height="38px" type="audio/mp3"></audio>
+                </div>
+                <div class="clearfix">
+                    <div class="ow_ipc_toolbar ow_remark">
+                        <span class="ow_nowrap">
+                            {text key="frmaudio+audio_located"}
+                            {if $listItem.audioForumUrl!=null}
+                                <a href="{$listItem.audioForumUrl}" class="audio_item_details" >{$listItem.audioType}</a>
+                            {else}
+                                {$listItem.audioType}
+                            {/if}
+      		            </span>
+                        <span class="ow_nowrap ow_ipc_date">
+                            {$listItem.addDateTime}
+                            <a class="audio_item_delete" onclick="{$listItem.deleteUrl}">{text key="frmaudio+delete_audio_item"}</a>
+      		            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+        <br />
+        {$paging}
+        {/if}
+    </div>
+</div>

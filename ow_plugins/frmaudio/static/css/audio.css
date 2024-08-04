@@ -1,0 +1,94 @@
+.frmaudio_mic{
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+    background-position-y: 3px;
+    cursor: pointer;
+    float: right !important;
+    height: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    width: 30px;
+    z-index: 2;
+}
+canvas{
+    display: block;
+}
+
+.audio_item_player {
+    width: 100%;
+}
+.audio_item {
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px lightgray;
+    margin-bottom: 20px;
+}
+
+.audio_item_name {
+    text-align: left;
+}
+
+.audio_item_name:lang(fa-IR) {
+    text-align: right;
+}
+
+.audio_item_details {
+    text-align: right;
+}
+
+.audio_item_details:lang(fa-IR) {
+    text-align: left;
+}
+.audio_item_delete, a.audio_item_delete{
+    cursor: pointer;
+}
+
+.owm_floatbox_cont div.audio_item_player {
+    height: 26px;
+}
+
+.ow_audio_floatbox .owm_floatbox_cont div.audio_item_player {
+    height: 42px !important;
+}
+
+a.audio_item_delete:hover {
+    color: black;
+}
+.audio_level{
+    height: 100px;
+    display: inline-block;
+    text-align:center;
+    width: 100%;
+}
+
+.audio_item_removed{
+    color:red;
+}
+
+.start.disabled {
+    color: #a2acb3;
+    cursor: inherit;
+}
+
+.stop.disabled {
+    color: #a2acb3;
+    cursor: inherit;
+}
+#time-display {
+    margin: 0px 10px;
+    border: 1px solid #ccc;
+    padding: 0px 3px;
+}
+
+span.ow_smallmargin.frmaudio_mic {
+    margin: 0;
+}
+
+.ow_submit_auto_click span.ow_smallmargin.frmaudio_mic {
+    margin: -4px 0 0 0;
+}
+
+.recorder input {
+    color: black;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+    <name>plugin</name>
+    <key>frmbaghnet</key>
+    <version>1.0</version>
+    <compatibility>1.7 and higher</compatibility>
+    
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10863</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>private</item>
+    </category>
+    <installable>0</installable>
+    <plan>2</plan>
+</theme>

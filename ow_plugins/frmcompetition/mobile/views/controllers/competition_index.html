@@ -1,0 +1,34 @@
+{if empty($competitions) }
+<div class="ow_nocontent">{text key="frmcompetition+empty_competition"}</div>
+{else}
+<div class="owm_competition_page owm_competition_box owm_list_page">
+{foreach from=$competitions key='key' item='competition'}
+<div class="owm_list_item_view clearfix">
+    <a href="{$competition.url}">
+        <div class="owm_list_item_view_header clearfix">
+            <span class="owm_list_item_view_title">{$competition.title}</span>
+        </div>
+    </a>
+
+    <div class="owm_list_item_view_body">
+        <div class="owm_list_item_view_body_text clearfix">
+            {$competition.content}
+        </div>
+    </div>
+
+    <div class="owm_list_item_view_footer">
+        {if !empty($competition.toolbar)}
+        {foreach from=$competition.toolbar item='item' name='toolbar'}
+        <span {if !empty($item.id)}id="{$item.id}"{/if}   class="owm_competition_additional_item {if !empty($item.class)}{$item.class}{/if}">
+        {if isset($item.href)}<a {if isset($item.id)} id="{$item.id}"{/if} href="{$item.href}">{/if}
+        {$item.label}
+        {if isset($item.href)}</a>{/if}
+        </span>
+        {/foreach}
+        {/if}
+    </div>
+</div>
+{/foreach}
+</div>
+{if $paging}<center>{$paging}</center>{/if}
+{/if}

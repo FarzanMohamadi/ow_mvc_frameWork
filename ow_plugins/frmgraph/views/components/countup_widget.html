@@ -1,0 +1,11 @@
+<div class="statistical_info">
+    {foreach from=$items item='item'}
+    <div class="statistical_info_item">
+        <div class="statistical_info_item_icon_container">
+            <div class="statistical_info_item_icon {$item.class}"></div>
+        </div>
+        <div class="statistical_info_item_count" id="statistical_info_item_count_{$item.class}">{$item.count}</div>
+        <div class="statistical_info_item_title">{$item.title}</div>
+    </div>
+    {/foreach}
+</div>

@@ -1,0 +1,25 @@
+<a class="ow_lbutton ow_red ow_left" href="{$frmThemeManagerNewTheme}"  style="margin: 5px;">{text key='frmthememanager+create_new_theme'}</a>
+<a class="ow_lbutton ow_red ow_left" href="{$frmThemeManagerUploadTheme}"  style="margin: 5px;">{text key='base+upload'}</a>
+{block_decorator name='box' type='empty' addClass='ow_stdmargin' iconClass="ow_ic_monitor" langLabel='frmthememanager+themes_list_cap_title'}
+<div class="themes_select frmthememanager_themes_select clearfix">
+    {foreach from=$frmThemeManagerThemes item='theme'}
+    <div class="theme_item frmthememanager_theme {if $activeTheme == $theme.themeKey} active {/if}">
+        <a class="theme_icon"
+           onclick="themeActionController('{$theme.themeKey}','{$theme.csrf_token}','click','{$themeActionController}')"
+           style="background-image:url({if isset($theme.urls.mainLogo)}{$pluginUrl}{$theme.urls.mainLogo}{else}{$noLogoLink}{/if});">
+        <span class="fake clicked"></span>
+        <span class="name">{$theme.themeName}</span>
+        </a>
+    </div>
+    {foreachelse}
+    <div class="no_theme_massage">
+        <p>
+            {text key="frmthememanager+no_theme_massage"}
+        </p>
+    </div>
+    {/foreach}
+    <div class="frmtheme_manager_active_theme_terms">
+        <p>{text key="frmthememanager+active_theme_terms"}</p>
+    </div>
+</div>
+{/block_decorator}

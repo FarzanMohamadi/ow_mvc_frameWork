@@ -1,0 +1,77 @@
+div#network {
+    /*width: 800px;*/
+    height: 400px;
+    border: 1px solid lightgray;
+}
+
+text.highcharts-credits {
+    display: none !important;
+}
+
+.frmgraph_distribution_chart {
+    direction: ltr !important;
+    border: 2px solid #636363;
+    /*border-width: 2px 0;*/
+}
+
+.highcharts-text-outline,
+.highcharts-data-label-color-0,
+.highcharts-root,
+text{
+    font-family: inherit !important;
+}
+
+table.frmgraph_table {
+    /*font-family: tahoma;*/
+}
+table.frmgraph_table input[type=number]{
+    font-family: tahoma, Arial !important;
+    direction: ltr;
+}
+table.frmgraph_table img {
+    max-height: 50px;
+}
+
+
+#legend {
+    background-color: #ffffff8a;
+    position: absolute;
+    margin: 10px;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+    padding: 2px;
+    z-index: 1;
+}
+#legend .legend-node {
+    /* display: flex; */
+    /* float: right; */
+    border: 1px solid #c2c2c2;
+    border-radius: 2px;
+    margin: 3px 3px;
+    padding: 1px 0px;
+    background-color: #eeeeeea1;
+}
+
+g.highcharts-pie-series tspan.highcharts-text-outline{
+    display: none;
+}
+
+#admin-user-statistics-header,
+#admin-content-statistics-header{
+    padding: 10px;
+}
+.admin_statistics_container{
+    border: 2px solid #636363;
+    margin-right: 2px;
+}
+
+.admin_statistics_container canvas#content-statistics-chart,
+.admin_statistics_container canvas#user-statistics-chart{
+    width: 95% !important;
+    display: block;
+    margin: auto;
+}
+
+.export_to_excel_button_container span.ow_button{
+    margin-left: 0;
+}

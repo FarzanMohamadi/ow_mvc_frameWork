@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>plugin</name>
+    <key>frmrahyab</key>
+    
+        امکان استفاده از ارائه‌دهنده رهیاب رایانه به عنوان سرویس ارسال پیامک را فراهم می‌کند.
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10825</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>published</item>
+    </category>
+    <plan>2</plan>
+    <prerequisite>
+        <item>frmsms</item>
+    </prerequisite>
+</plugin>

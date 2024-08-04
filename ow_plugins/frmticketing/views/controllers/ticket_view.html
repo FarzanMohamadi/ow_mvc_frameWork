@@ -1,0 +1,216 @@
+<a href={$ticketViewsUrl}>{$ticketViews}</a>
+<div class="clearfix">
+    <div class="ow_right ow_supernarrow">
+        <!-- ticket info -->
+        <div class="ticket_widget">
+            {block_decorator name='box' addClass='ow_std_margin' iconClass='ow_ic_info'
+            langLabel='frmticketing+view_page_details_block_cap_label'}
+            <table class="ow_table_3 detail_table">
+                <tr class="ow_tr_first">
+                    <td class="ow_label" style="width: 25%">{text key='frmticketing+view_page_date_label'}</td>
+                    <td class="ow_value">{$ticketInfo.timeStamp}</td>
+                </tr>
+                <tr>
+                    <td class="ow_label" style="width: 25%">{text key='frmticketing+ticket_tracking_number'}</td>
+                    <td class="ow_value">{$ticketInfo.ticketTrackingNumber}</td>
+                </tr>
+                {if isset($ticketInfo.categoryTitle)}
+                <tr>
+                    <td class="ow_label" style="width: 25%">{text key='frmticketing+view_category_label'}</td>
+                    <td class="ow_value">{$ticketInfo.categoryTitle}</td>
+                </tr>
+                {/if}
+                <tr>
+                    <td class="ow_label" style="width: 25%">{text key='frmticketing+view_page_order_label'}</td>
+                    <td class="ow_value">
+                        <div style="width:90px;">{$ticketInfo.orderTitle}</div>
+                    </td>
+                </tr>
+                <tr class="ow_tr_last" >
+                    <td class="ow_label" style="width: 25%">{text key='event+view_page_created_label'}</td>
+                    <td class="ow_value">{user_link name=$ticketInfo.displayName username=$ticketInfo.username}</td>
+                </tr>
+            </table>
+            {/block_decorator}
+        </div>
+
+        <!-- ticket settings -->
+        {if $isTicketManager || $isOwner || !empty($tb)}
+            <div class="ow_right" style="width: 100%;position: relative;">
+                {block_decorator name='box' iconClass='ow_ic_info' langLabel='frmticketing+this_ticket' addClass='ow_stdmargin'}
+                    <ul class="ow_smallmargin ow_bl_narrow clearfix ow_small">
+                        {if $isTicketManager}
+                            <li>
+                                <a class="lock_ticket" href="javascript://">{if $ticketInfo.locked}{text key='frmticketing+unlock_ticket'}{else}{text key='frmticketing+lock_ticket'}{/if}</a>
+                            </li>
+                        {/if}
+                        {if $isOwner || $isManager}
+                            <li>
+                                <a class="delete_ticket" href="javascript://">{text key='frmticketing+delete_ticket'}</a>
+                            </li>
+                        {/if}
+                        {if !empty($tb)}
+                            {foreach from=$tb item='tblink'}
+                            <li><a>{if isset($tblink.class)} class="{$tblink.class}"{/if} href="{$tblink.href}" {if isset($tblink.id)} id="{$tblink.id}"{/if}>{$tblink.label}</a></li>
+                            {/foreach}
+                        {/if}
+                    </ul>
+                {/block_decorator}
+            </div>
+        {/if}
+    </div>
+
+    <div class="ow_event_content ow_left ow_superwide">
+        {block_decorator
+            name='box'
+            type='empty'
+            iconClass='ow_ic_picture'
+            langLabel='event+view_page_image_block_cap_label'
+            addClass="ow_std_margin clearfix"}
+                {$ticketInfo.description}
+        {/block_decorator}
+        <div class="ow_file_attachment_preview clearfix">
+            {foreach from=$attachments item='attm'}
+                <div class="attachment_container ow_file_attachment_block{cycle values='1,2'}">
+                    <div class="ow_file_attachment_info">
+                        <div class="ow_file_attachment_name">
+                            {if $attm.downloadUrl != ''}
+                                <a href="{$attm.downloadUrl}" target="_blank">
+                                    {$attm.fileName}
+                                </a>
+                            {else}
+                                {$attm.fileName}
+                            {/if}
+                            <span class="ow_file_attachment_size" style="display: inline-block;">({$attm.fileSize}Kb)</span>
+                        </div>
+                    </div>
+                </div>
+            {/foreach}
+        </div>
+
+        <div class="ow_ticket_ticket_posts">
+            {foreach from=$postList item=post name=postList}
+                {capture assign='tpl'}
+
+                {capture name='info_string'}
+                    <a href="{$avatars[$post.userId].url}">{$avatars[$post.userId].title}</a>
+                    <span class="ow_tiny ow_ipc_date ow_remark">{$post.createStamp}</span>
+                {/capture}
+
+                {capture name='content'}
+
+                {add_content key="ticket.before_post_add_content" postId=$post.id userId=$post.userId text=$post.text}
+
+                <div id="{$post.id}showMore" class="post_content">
+                    {if isset($post.beforeMoreText)}
+                        {$post.beforeMoreText}
+                        {if isset($post.showMore)}...
+                            <a class="ow_lbutton" onclick="showMorePost('{$post.id}')">{text key='frmticketp+more'}</a>
+                        {/if}
+                    {else}
+                        {$post.text}
+                    {/if}
+                </div>
+
+                {if isset($post.showMore)}
+                    <div id="{$post.id}" class="post_content" style="display: none">
+                        {$post.beforeMoreText}{$post.afterMoreText}
+                    </div>
+                {/if}
+
+                {if isset($postAttachment[$post.id])}
+                    <div class="ow_small">
+                        <div class="ticket_attachments_label">
+                            {text key='frmticketing+attachments'}:
+                        </div>
+                        {foreach from=$postAttachment[$post.id] item='attm'}
+                            <div class="ow_ticket_attachment">
+                                <span class="ow_ticket_attachment_icon ow_ic_attach">&nbsp;</span>
+                                <div class="ow_ticket_attachment_ticket_container">
+                                    {if $attm.downloadUrl != ''}
+                                        <a href="{$attm.downloadUrl}" target="_blank">
+                                            <img style="width: 20px;" src="{$attm.iconUrl}" alt="{$attm.fileName|escape}"
+                                                 title="{$attm.fileName}"/> {$attm.fileName}
+                                        </a>
+                                    {else}
+                                        {$attm.fileName}
+                                    {/if} ({$attm.fileSize}Kb)
+
+                                </div>
+                            </div>
+                        <br/>
+                        {/foreach}
+                    </div>
+                {/if}
+
+                {add_content key="ticket.after_post_add_content" postId=$post.id userId=$post.userId text=$post.text}
+
+                {/capture}
+                    {decorator
+                        name='ipc'
+                        avatar=$avatars[$post.userId]
+                        content=$smarty.capture.content
+                        infoString=$smarty.capture.info_string
+                        toolbar=$toolbars[$post.id] }
+                {/capture}
+
+                {if $page==1 && $smarty.foreach.postList.first}
+                        <div id="post-"{$post.id}>
+                            <div class="ow_smallmargin">{$tpl}</div>
+                            {add_content
+                                key='socialsharing.get_sharing_buttons'
+                                description=$post.text title=$ticketInfo.title
+                                image=''
+                                class='ow_social_sharing_nomargin'
+                                entityType='ticket_ticket'
+                                entityId=$post.ticketId}
+                        </div>
+                    {add_content key='ticket.ticket.content.after_first_post'}
+                {else}
+                    <div class="ow_stdmargin clearfix" id="post-{$post.id}">{$tpl}</div>
+                {/if}
+            {/foreach}
+        </div>
+    </div>
+</div>
+
+
+<div class="ow_stdmargin ow_txtright">{$paging}</div>
+
+{if $ticketInfo.locked}
+    {block_decorator name='box' type='empty' addClass='ow_smallmargin ow_center'}
+    <div class="ow_nocontent ow_ticket_status"><span class="ow_ic_lock ow_icon"></span>
+        {text key='frmticketing+ticket_is_locked'}
+    </div>
+    {/block_decorator}
+{/if}
+
+<div class="ticket_add_post clearfix">
+
+    {if $isOwner || $isTicketManager || !empty($tb)}
+    <div class="ow_left" style="width: 70%;position: relative;">
+    {else}
+    <div class="ow_left" style="width: 100%;">
+    {/if}
+
+        {if !$ticketInfo.locked &&  ($isTicketManager || $isOwner) }
+            {form name='add-post-form'}
+                {block_decorator name='box' iconClass='ow_ic_write' langLabel='frmticketing+add_post_title'
+                    addClass='ow_stdmargin'}
+                    <div class="ow_smallmargin">
+                        {input name='text' class="ow_smallmargin"}
+                        <div>{error name='text'}</div>
+                    </div>
+                    <div class="ow_smallmargin">{$attachmentsCmp}</div>
+                    <div class="clearfix">
+                        <div class="ow_right">
+                            {submit name='submit-post' class='ow_positive'}
+                            {decorator name='button' langLabel='frmticketing+back' onclick="window.location='{$backUrl}'"}
+                        </div>
+                    </div>
+                {/block_decorator}
+            {/form}
+        {/if}
+    </div>
+</div>
+</div>

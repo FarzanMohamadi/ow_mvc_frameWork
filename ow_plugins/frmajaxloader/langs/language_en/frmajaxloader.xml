@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmajaxloader" label="frmajaxloader" language_tag="en" language_label="English">
+    <key name="new_activities">
+        <value>
+            New Activities in Newsfeed
+        </value>
+    </key>
+    <key name="new_posts">
+        <value>
+            New Posts in Newsfeed
+        </value>
+    </key>
+</prefix>

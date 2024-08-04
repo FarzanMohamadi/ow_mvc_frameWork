@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmterms" label="frmterms" language_tag="fa-IR" language_label="فارسی">
+    <key name="active_label">
+        <value>فعال</value>
+    </key>
+    <key name="terms_description">
+        <value>
+افزونه به شما اجازه می‌دهد تا به عنوان مدیر، مورد اضافه کنید یا از موارد پیش‌فرض مانند شرایط برخورداری از خدمت، سیاست حریم خصوصی و صفحه سئوالات متداول استفاده کنید. به‌علاوه، شما می‌توانید دو صفحه پیش‌فرض را برای موارد خود شخصی‌سازی کنید. کاربر می‌تواند صفحه‌ای را ببیند که حداقل دارای یک مورد باشد. شما می‌توانید از گزینه‌های کشیدن و انداختن برای مدیریت چینش یا تغییر وضعیت موارد استفاده کنید.
+</value>
+    </key>
+    <key name="terms_description_label">
+        <value>شرح</value>
+    </key>
+    <key name="terms_header_information">
+        <value>شرایط اطلاعات</value>
+    </key>
+
+    <key name="notification_on_changing_label">
+        <value>
+            اطلاع رسانی بصورت اعلان در هنگام ایجاد نسخه
+        </value>
+    </key>
+    <key name="email_on_changing_label">
+        <value>
+            اطلاع رسانی بصورت رایانامه در هنگام ایجاد نسخه
+        </value>
+    </key>
+    <key name="add">
+        <value>اضافه کردن</value>
+    </key>
+    <key name="edit">
+        <value>ویرایش</value>
+    </key>
+    <key name="empty_row_label">
+        <value>خالی</value>
+    </key>
+    <key name="terms_of_service_page">
+        <value>شرایط استفاده از خدمات</value>
+    </key>
+    <key name="privacy_policy_page">
+        <value>سیاست حریم خصوصی</value>
+    </key>
+    <key name="FAQ_page">
+        <value>سئوالات متداول</value>
+    </key>
+    <key name="database_record_add">
+        <value>مورد با موفقیت اضافه شد</value>
+    </key>
+    <key name="database_record_edit">
+        <value>مورد با موفقیت ویرایش شد</value>
+    </key>
+    <key name="database_record_deleted">
+        <value>مورد با موفقیت برداشته شد</value>
+    </key>
+    <key name="database_record_deactivate_item">
+        <value>مورد با موفقیت غیرفعال شد</value>
+    </key>
+    <key name="database_record_activate_item">
+        <value>مورد با موفقیت فعال شد.</value>
+    </key>
+    <key name="database_record_deactivate_section">
+        <value>بخش با موفقیت غیرفعال شد.</value>
+    </key>
+    <key name="database_record_activate_section">
+        <value>بخش با موفقیت فعال شد.</value>
+    </key>
+    <key name="section_is_inactive">
+        <value>این بخش غیر فعال است.</value>
+    </key>
+    <key name="section_is_active">
+        <value>این بخش فعال است.</value>
+    </key>
+    <key name="database_record_add_version">
+        <value>نسخه با موفقیت منتشر شد.</value>
+    </key>
+    <key name="deactivate_item">
+        <value>غیرفعال</value>
+    </key>
+    <key name="activate_item">
+        <value>فعال</value>
+    </key>
+    <key name="deactivate_section_button">
+        <value>غیرفعال کردن این بخش</value>
+    </key>
+    <key name="activate_section_button">
+        <value>فعال کردن این بخش</value>
+    </key>
+    <key name="items">
+        <value>موارد</value>
+    </key>
+    <key name="default1">
+        <value>پیش‌فرض1</value>
+    </key>
+    <key name="default2">
+        <value>پیش‌فرض2</value>
+    </key>
+    <key name="active_items">
+        <value>موارد فعال</value>
+    </key>
+    <key name="inactive_items">
+        <value>موارد غیرفعال</value>
+    </key>
+    <key name="description_label">
+        <value>شرح</value>
+    </key>
+    <key name="header_label">
+        <value>سرآیند</value>
+    </key>
+    <key name="delete_item">
+        <value>حذف</value>
+    </key>
+    <key name="delete_section">
+        <value>حذف</value>
+    </key>
+    <key name="delete_item_warning">
+        <value>آیا از حذف این مورد اطمینان دارید؟</value>
+    </key>
+    <key name="delete_section_warning">
+        <value>آیا از حذف این نسخه اطمینان دارید؟</value>
+    </key>
+    <key name="edit_item">
+        <value>ویرایش</value>
+    </key>
+    <key name="edit_item_page_title">
+        <value>ویرایش مورد</value>
+    </key>
+    <key name="table_of_content_label">
+        <value>جدول محتویات</value>
+    </key>
+    <key name="add_version_warning">
+        <value>
+آیا از انتشار نسخه جدید موارد فعال مطمئن هستید؟ کاربران در ارتباط با موارد ویرایش شده در مقایسه با نسخه‌های سابق آن‌ها  زمانی که گزینه‌های اطلاع رسانی یا رایانشانی برای آن موارد فعال باشد، آگاه خواهند شد.
+        </value>
+    </key>
+    <key name="add_version_description">
+        <value>شما با استفاده از پیوند زیرمی‌توانید نسخه جدید را منتشر کنید. نسخه جدید شامل همه مورد‌های فعال است.</value>
+    </key>
+    <key name="add_version_label">
+        <value>انتشار نسخه جدید</value>
+    </key>
+    <key name="section_empty_description">
+        <value>نسخه‌ای منتشر نشده است. شرایط در اسرع وقت منتشر خواهد شد.</value>
+    </key>
+    <key name="table_of_archive_label">
+        <value>بایگانی</value>
+    </key>
+    <key name="current_version_label">
+        <value>نسخه کنونی</value>
+    </key>
+    <key name="comparison_with_current_version_label">
+        <value>مقایسه با نسخه کنونی</value>
+    </key>
+    <key name="selected_version_label">
+        <value>نسخه انتخاب شده</value>
+    </key>
+    <key name="returnToArchiveLabel">
+        <value>بازگشت به بایگانی.</value>
+    </key>
+    <key name="returnToTerms">
+        <value>بازگشت به شرایط.</value>
+    </key>
+    <key name="archives_is_empty_description">
+        <value>هیچ نسخه منتشر شده‌ای وجود ندارد.</value>
+    </key>
+    <key name="add_version_without_items">
+        <value>شما نمی‌توانید یک نسخه جدید را بدون هیچ موردی منتشر کنید.</value>
+    </key>
+    <key name="number_of_exist_version">
+        <value>
+            {$value} نسخه منتشر شده برای این بخش وجود دارد.
+        </value>
+    </key>
+    <key name="add_new_item_header">
+        <value>اضافه کردن یک مورد جدید به این بخش.</value>
+    </key>
+    <key name="section_information_label">
+        <value>اطلاعات بخش</value>
+    </key>
+    <key name="email_subject">
+        <value>نسخه جدیدی از {$value} منتشر شد.</value>
+    </key>
+    <key name="email_html_content">
+        <value>
+شما می‌توانید همه موارد را در {$value} مشاهده کنید. موارد مهمی که تغییر کرده‌اند یا در یک نسخه منتشر شده اضافه شده‌اند در زیر قابل مشاهده‌اند.
+		</value>
+    </key>
+    <key name="notification_content">
+        <value>نسخه جدیدی از {$value1} شامل {$value2} تغییر منتشر شد.</value>
+    </key>
+    <key name="mobile_notification_content">
+        <value>
+            &lt;a href="{$url}"&gt;نسخه جدیدی از {$value1} شامل {$value2} تغییر منتشر شد.&lt;/a&gt;
+        </value>
+    </key>
+    <key name="send_notification_description">
+        <value>ارسال پیام جهت اطلاع از تغییرات در شرایط استفاده از خدمات و سیاست حریم خصوصی</value>
+    </key>
+    <key name="agree_with_terms">
+        <value>من با &lt;a target="blank" href="{$value}"&gt; قوانین&lt;/a&gt; موافقم.</value>
+    </key>
+    <key name="terms_show_on_join_form_enable">
+        <value>این ویژگی فعال است. با فعال کردن این ویژگی، کاربر باید شرایط قرارداد را مورد بررسی قرار دهد اما با غیر فعال کردن آن، شرایط قرارداد در فرم ثبت‌نام به کاربران نمایش داده نمی‌شود.</value>
+    </key>
+    <key name="terms_show_on_join_form_disable">
+        <value>این ویژگی غیرفعال است. با فعال کردن این ویژگی، کاربر باید شرایط قرارداد را مورد بررسی قرار دهد اما با غیر فعال کردن آن، شرایط قرارداد در فرم ثبت‌نام به کاربران نمایش داده نمی‌شود.</value>
+    </key>
+    <key name="terms_show_in_join_form_set_enable">
+        <value>&lt;a href="{$value}"&gt; نمایش در فرم ثبت‌نام.&lt;/a&gt;</value>
+    </key>
+    <key name="terms_show_in_join_form_set_disable">
+        <value>&lt;a href="{$value}"&gt; پنهان‌ شده در فرم ثبت‌نام.&lt;/a&gt;</value>
+    </key>
+    <key name="terms_show_in_join_form">
+        <value>قابل مشاهده در فرم ثبت‌نام</value>
+    </key>
+    <key name="terms_hide_in_join_form">
+        <value>پنهان شده در فرم ثبت‌نام</value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>شرایط</value>
+    </key>
+    <key name="view_all_archive_label">
+        <value>
+            نمایش تمامی نسخه‌ها
+        </value>
+    </key>
+    <key name="release_date_label">
+        <value>
+            تاریخ انتشار:{$value}
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>تنظیمات افزونه شرایط</value>
+    </key>
+    <key name="admin_page_title">
+        <value>تنظیمات افزونه شرایط</value>
+    </key>
+	<key name="mobile_bottom_menu_item">
+        <value>شرایط</value>
+    </key>
+    <key name="frmterms_sitemap">
+        <value>شرایط</value>
+    </key>
+	<key name="js_agree_with_terms">
+        <value>من با &lt;a href="{$value}"&gt; قوانین&lt;/a&gt; موافقم.</value>
+    </key>
+</prefix>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmshasta" label="frmshasta" language_tag="en" language_label="English">
+	<key name="admin_save_settings"><value>Save Settings</value></key>
+	<key name="delete">
+		<value>
+			Delete
+		</value>
+	</key>
+	<key name="edit">
+		<value>
+			Edit
+		</value>
+	</key>
+	<key name="holding">
+		<value>
+			Holdings
+		</value>
+	</key>
+	<key name="company">
+		<value>
+			Company
+		</value>
+	</key>
+	<key name="name">
+		<value>
+			Name
+		</value>
+	</key>
+	<key name="keywords">
+		<value>
+			Keywords
+		</value>
+	</key>
+	<key name="category">
+		<value>
+			Category
+		</value>
+	</key>
+	<key name="file">
+		<value>
+			File
+		</value>
+	</key>
+	<key name="monthFilter">
+		<value>
+			Filter based on month
+		</value>
+	</key>
+	<key name="yearFilter">
+		<value>
+			Filter based on year
+		</value>
+	</key>
+	<key name="customize_file_categories_floatbox_title">
+		<value>
+			Select your favorite category
+		</value>
+	</key>
+	<key name="admin_settings_title">
+		<value>
+			Settings
+		</value>
+	</key>
+	<key name="categories">
+		<value>
+			Categories
+		</value>
+	</key>
+	<key name="roles">
+		<value>
+			Roles
+		</value>
+	</key>
+	<key name="saved_successfully">
+		<value>
+			Saved successfully
+		</value>
+	</key>
+	<key name="view_all">
+		<value>
+			View all
+		</value>
+	</key>
+	<key name="add_file">
+		<value>
+			Add file
+		</value>
+	</key>
+	<key name="add_category">
+		<value>
+			Add category
+		</value>
+	</key>
+	<key name="file_date">
+		<value>
+			File date
+		</value>
+	</key>
+	<key name="holding_permission">
+		<value>
+			Display to holdings
+		</value>
+	</key>
+	<key name="roles_permission">
+		<value>
+			Display to roles
+		</value>
+	</key>
+	<key name="file_upload_time">
+		<value>
+			Upload date
+		</value>
+	</key>
+	<key name="file_time">
+		<value>
+			Date
+		</value>
+	</key>
+	<key name="upload_file_header">
+		<value>
+			Upload file
+		</value>
+	</key>
+	<key name="default_all">
+		<value>
+			Default All
+		</value>
+	</key>
+	<key name="my_files">
+		<value>
+			My files
+		</value>
+	</key>
+	<key name="file_username_label">
+		<value>
+			Created by
+		</value>
+	</key>
+	<key name="file_company_label">
+		<value>
+			Company
+		</value>
+	</key>
+	<key name="file_holding_label">
+		<value>
+			Holding
+		</value>
+	</key>
+	<key name="are_you_sure_delete_file">
+		<value>
+			Are you sure to delete this file?
+		</value>
+	</key>
+	<key name="are_you_sure_delete_category">
+		<value>
+			Are you sure to delete this category? all containing files will be deleted.
+		</value>
+	</key>
+	<key name="file_start_date">
+		<value>
+			From date
+		</value>
+	</key>
+	<key name="file_end_date">
+		<value>
+			To date
+		</value>
+	</key>
+	<key name="all_roles">
+		<value>
+			All roles
+		</value>
+	</key>
+	<key name="all_holdings">
+		<value>
+			All holdings
+		</value>
+	</key>
+	<key name="search">
+		<value>
+			Search
+		</value>
+	</key>
+	<key name="select">
+		<value>
+			Select
+		</value>
+	</key>
+	<key name="no_result">
+		<value>
+			no results found
+		</value>
+	</key>
+	<key name="input_too_long">
+		<value>
+			Input is too long
+		</value>
+	</key>
+	<key name="input_too_short">
+		<value>
+			Input is too short
+		</value>
+	</key>
+	<key name="loading_more">
+		<value>
+			Loading more...
+		</value>
+	</key>
+	<key name="searching">
+		<value>
+			Searching...
+		</value>
+	</key>
+	<key name="maximum_selected">
+		<value>
+			Number of remaining items to select:
+		</value>
+	</key>
+	<key name="add_company">
+		<value>
+			Add company
+		</value>
+	</key>
+	<key name="manage_company">
+		<value>
+			Manage company
+		</value>
+	</key>
+	<key name="parent_name">
+		<value>
+			parent company
+		</value>
+	</key>
+	<key name="companies">
+		<value>
+			Companies
+		</value>
+	</key>
+	<key name="email_notifications_section_label">
+		<value>
+			Upload file by other users
+		</value>
+	</key>
+	<key name="email_notifications_setting_status_comment">
+		<value>
+		</value>
+	</key>
+	<key name="add_file_notification">
+		<value>
+			&lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt;  Upload file {$fileName}
+		</value>
+	</key>
+	<key name="sub_company">
+		<value>
+			Include sub companies
+		</value>
+	</key>
+	<key name="save_button_label">
+		<value>
+			save
+		</value>
+	</key>
+	<key name="manage_success_message">
+		<value>
+			access modifications have been saved successfully
+		</value>
+	</key>
+	<key name="save_button_label">
+		<value>
+			save
+		</value>
+	</key>
+	<key name="customize_special_category">
+		<value>
+			تعیین گزارشات مدیریتی
+		</value>
+	</key>
+	<key name="managers_reports">
+		<value>
+			Managers reports
+		</value>
+	</key>
+	<key name="search_users">
+		<value>
+			search users
+		</value>
+	</key>
+	<key name="plugin_label">
+		<value>
+			frmshasta
+		</value>
+	</key>
+	<key name="file_based">
+		<value>
+			File
+		</value>
+	</key>
+	<key name="company_based">
+		<value>
+			Company
+		</value>
+	</key>
+	<key name="manage_access">
+		<value>
+			manage accessing
+		</value>
+	</key>
+	<key name="concept_based">
+		<value>
+			Concept
+		</value>
+	</key>
+	<key name="not_sent_file">
+		<value>
+			Not sent
+		</value>
+	</key>
+	<key name="sent_file">
+		<value>
+			Sent
+		</value>
+	</key>
+	<key name="overall_reports">
+		<value>
+			Overall reports
+		</value>
+	</key>
+	<key name="users_count">
+		<value>
+			Users count
+		</value>
+	</key>
+	<key name="sent_files_list">
+		<value>
+			Sent list
+		</value>
+	</key>
+	<key name="not_sent_files_list">
+		<value>
+			Not sent list
+		</value>
+	</key>
+	<key name="access_setting">
+		<value>
+			Access Setting
+		</value>
+	</key>
+	<key name="favorite_categories_setting">
+		<value>
+			Favorite categories setting
+		</value>
+	</key>
+	<key name="manage_category">
+		<value>
+			Manage Category
+		</value>
+	</key>
+	<key name="access_setting">
+		<value>
+			Access Setting
+		</value>
+	</key>
+	<key name="are_you_sure_delete_company">
+		<value>
+			By deleting this company every child(s) in companies tree structure will take its place and its users will be forced to specify their new company on their first login.
+		</value>
+	</key>
+	<key name="create_field_image_label">
+		<value>
+			image
+		</value>
+	</key>
+</prefix>

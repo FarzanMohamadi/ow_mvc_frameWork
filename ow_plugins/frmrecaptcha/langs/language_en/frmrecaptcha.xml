@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix name="frmrecaptcha" label="Google invisible ReCAPTCHA" language_tag="en" language_label="English">
+    <key name="set_keys_title">
+        <value>Activate Google ReCAPTCHA</value>
+    </key>
+    <key name="recaptcha_setting_desc">
+        <value>
+            &lt;p&gt;
+            To activate Google CAPTCHA follow these steps:
+            &lt;/p&gt;&#13;
+            &lt;ul class="ow_regular ow_stdmargin"&gt;&#13;
+            &lt;li&gt;&#13;
+            &lt;b&gt; Register your domain &lt;a href="https://www.google.com/recaptcha/admin/create" target="_blank"&gt;in this page&lt;/a&gt;&lt;/b&gt; and choose reCAPTCHA v2 for reCAPTCHA Type and Invisible reCAPTCHA badge for reCAPTCHA v2 .&#13;
+            &lt;/li&gt;&#13;
+            &lt;li&gt;You will be given &lt;b&gt;Site Key&lt;/b&gt; and &lt;b&gt;Secret Key&lt;/b&gt;. Copy them to the form below and you are all set!
+            &lt;/li&gt;&#13;
+            &lt;/ul&gt;&#13;
+        </value>
+    </key>
+    <key name="save_recaptcha_setting_success">
+        <value>Configurations saved</value>
+    </key>
+    <key name="save_recaptcha_setting_failed">
+        <value>An error occurred</value>
+    </key>
+    <key name="heading_configuration">
+        <value>Activate Google Invisible ReCAPTCHA</value>
+    </key>
+    <key name="recaptcha_settings_site_key_label">
+        <value>Site Key</value>
+    </key>
+    <key name="recaptcha_settings_secret_key_label">
+        <value>Secret Key</value>
+    </key>
+    <key name="recaptcha_verification_failed">
+        <value>Verification Failed</value>
+    </key>
+    <key name="save_btn_label">
+        <value>Save</value>
+    </key>
+    <key name="invalid_secret_key_notice_html">
+        <value>
+            Dear user ،
+            &lt;br /&gt;&#13;
+            The Secret key provided for Google Invisible ReCAPTCHA is invalid. Please enter a valid secret key.
+        </value>
+    </key>
+    <key name="invalid_secret_key_notice_text">
+        <value>
+            Dear user، The Secret key provided for Google Invisible ReCAPTCHA is invalid. Please enter a valid secret key.
+        </value>
+    </key>
+    <key name="invalid_secret_key_notice_subject">
+        <value>
+            Invalid secret key for Google Invisible ReCAPTCHA plugin
+        </value>
+    </key>
+</prefix>

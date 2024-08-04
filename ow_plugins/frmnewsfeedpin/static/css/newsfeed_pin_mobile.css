@@ -1,0 +1,22 @@
+.frmnewsfeedpin_pin{
+    background: url("../images/ic_pin.svg") no-repeat;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    float: right;
+    margin-right: auto;
+}
+
+.frmnewsfeedpin_unpin{
+    background: url("../images/ic_delete.svg") no-repeat;
+    width: 21px;
+    height: 21px;
+    position: relative;
+    float: right;
+    margin-right: auto;
+}
+
+.frmnewsfeedpin_pined_class div.owm_newsfeed_item_cont{
+    border-width: 2px;
+    background: #FFF5F5
+}

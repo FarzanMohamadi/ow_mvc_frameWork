@@ -1,0 +1,27 @@
+{style}
+{literal}
+.ow_table_1 {
+    width: 65%;
+    margin: auto;
+}
+.ow_table_1 tr td:first-child {
+    width: 50%;
+}
+{/literal}
+{/style}
+
+{form name='rateWidgetView'}
+<table class="ow_table_1 ow_form">
+    <tr>
+        <td class="ow_label">{label name='rate_widget_display'}:</td>
+        <td class="ow_value">{input name="rate_widget_display"} {error name='rate_widget_display'}</td>
+    </tr>
+    <tr>
+        <td class="ow_label">{label name="activate_select2_checkbox"}:</td>
+        <td class="ow_value">{input name="activate_select2_checkbox"} {error name='activate_select2_checkbox'}</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="ow_submit">{submit name="save" class='ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

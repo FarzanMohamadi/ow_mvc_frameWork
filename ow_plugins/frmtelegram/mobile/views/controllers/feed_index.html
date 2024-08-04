@@ -1,0 +1,74 @@
+<div class="owm_telegram_list clearfix">
+	<div class="clearfix"></div>
+	{$menu}
+	{if $showList}
+
+	<div class="owm_box">
+		<div class="owm_box_body">
+			<div class="owm_box_body_cont clearfix">
+				<div style="height: 20px;text-align: center">
+					<a href="javascript://"><img id="items_wrapper_new_items_icon" onclick="go_to_last_item('')" src="{$new_items_img_url}"></a>
+				</div>
+				<div id="items_wrapper">
+					{foreach from=$list item='entry'}
+					<div class="owm_newsfeed_item_cont " id="telegram_item_{$entry.id}">
+						<div class="owm_newsfeed_context_menu">
+							<div class="owm_newsfeed_date">
+								<span> {text key='frmtelegram+at'} {$entry.timestamp}</span>
+								{if $delete_isAuthorized}
+								<a href="javascript://" onclick="delete_item('{$delete_url}',{$entry.id})" >{text key='frmtelegram+remove'}</a>
+								{/if}
+							</div>
+						</div>
+						<div class="owm_newsfeed_header clearfix">
+							{if $chatType!="channel"}
+							<div class="owm_newsfeed_header_pic">
+								<div class="owm_avatar">
+									<a {$entry.authorURL}>
+										<img alt="{$entry.authorName}" src="{$entry.authorPhotoSrc}">
+									</a>
+								</div>
+							</div>
+							<div class="owm_newsfeed_header_cont">
+								<div class="owm_newsfeed_header_txt">
+									<a {$entry.authorURL}><b>{$entry.authorName}</b></a>
+								</div>
+							</div>
+							{/if}
+						</div>
+						<div class="owm_newsfeed_body">
+							<div class="owm_newsfeed_body_status">{$entry.entry}</div>
+						</div>
+					</div>
+					{foreachelse}
+					{text key='base+empty_list'}
+					{/foreach}
+				</div>
+				<div style="height: 40px;text-align: center">
+					<img id="items_wrapper_preloader" src="{$preloader_img_url}">
+				</div>
+			</div>
+		</div>
+		<div class="owm_box_bottom">
+			{if $addNew_isAuthorized}
+
+			{form name="sendTelegram"}
+				<div class="owm_newsfeed_comment_input">
+					{input name='text'}
+					{error name='text'}
+				</div>
+				<div class="owm_newsfeed_comment_submit clearfix comment_submit">
+					<div class="owm_float_right">
+						<span class="ow_button"><span class="">
+							{submit name='save'}
+						</span></span>
+					</div>
+				</div>
+			{/form}
+			{/if}
+		</div>
+	</div>
+	{else}
+		<div class="ow_nocontent">{text key='base+empty_list'}</div>
+	{/if}
+</div>

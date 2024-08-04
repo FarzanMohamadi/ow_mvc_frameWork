@@ -1,0 +1,41 @@
+.lang_placeholder {
+    border: 1px dashed grey;
+}
+
+tr.lang_placeholder td{
+    border: 1px dashed grey;
+}
+
+#s2 a.deact{
+    display: none;
+}
+
+#s1 a.act{
+    display: none;
+}
+
+.draggable-lang-item{
+    cursor: move;
+}
+
+.current_version{
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+img.notification_item_icon {
+    height: 15px;
+}
+
+img.email_item_icon {
+    height: 10px;
+}
+
+table.ow_table_1 ul {
+    list-style: circle;
+    padding-right: 30px;
+}

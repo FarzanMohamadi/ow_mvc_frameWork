@@ -1,0 +1,90 @@
+{style}{literal}
+    #admin-btn:link, #admin-btn:visited  {
+        background-color: dodgerblue;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        margin: 10px;
+    }
+    #admin-btn:hover, #admin-btn:active {
+        background-color: deepskyblue;
+    }
+{/literal}{/style}
+
+<a id="admin-btn" href="{$redirectUrl}">{text key='frmjcse+back'}</a> <br />
+
+{form name='edit_article'}
+<table class="ow_table_1 ow_form ow_automargin" style="min-width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='title'}</td>
+        <td class="ow_value">{input name='title'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='abstract'}</td>
+        <td class="ow_value">{input name='abstract'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='file'}</td>
+        <td class="ow_value">
+            {label name='change_file'}{input name='change_file'}
+            <br />
+            {input name='file'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='active'}</td>
+        <td class="ow_value">{input name='active'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='keywords'}</td>
+        <td class="ow_value">{input name='keywords'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key='frmjcse+table_article_th_authors'}</td>
+        <td class="ow_value">
+            <table width="100%" id="authors_table">
+                <thead>
+                    <th>{text key='frmjcse+label_article_authors_name'}</th>
+                    <th>Email</th>
+                    <th>{text key='frmjcse+table_article_th_institution'}</th>
+                </thead>
+                {foreach $author_data as $key => $author}
+                <tr>
+                    <td class="ow_value"><input name="author_name[]" value="{$author->name}" /></td>
+                    <td class="ow_value"><input name="author_email[]" value="{$author->email}" /></td>
+                    <td class="ow_value"><input name="author_affliation[]" value="{$author->affliation}" /></td>
+                </tr>
+                {/foreach}
+                {for $x=0; $x<2; $x++}
+                <tr>
+                    <td class="ow_value"><input name="author_name[]" value="" /></td>
+                    <td class="ow_value"><input name="author_email[]" value="" /></td>
+                    <td class="ow_value"><input name="author_affliation[]" value="" /></td>
+                </tr>
+                {/for}
+            </table>
+        </td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='startPage'}</td>
+        <td class="ow_value">{input name='startPage'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='endPage'}</td>
+        <td class="ow_value">{input name='endPage'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='dorl'}</td>
+        <td class="ow_value">{input name='dorl'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='citation'}</td>
+        <td class="ow_value">{input name='citation'}</td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">{submit name='edit_article' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

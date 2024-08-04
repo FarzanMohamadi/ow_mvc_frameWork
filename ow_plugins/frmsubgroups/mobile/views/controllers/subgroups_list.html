@@ -1,0 +1,46 @@
+<div class="owm_list_item_view_title  clearfix owm_nav_cap owm_nav_cap_left_cont owm_nav_cap_right_cont owm_bg_color_3">
+    <div class="owm_float_left">
+        <a class="owm_nav_cap_left" {if isset($backUrl)} href="{$backUrl}" {else}  href="javascript:window.history.back();" {/if} ></a>
+    </div>
+</div>
+{if isset($groupBriefInfo)}
+<div class="owm_stdmargin">
+    {$groupBriefInfo}
+</div>
+{/if}
+{if isset($createSubgroupLink)}
+<div class="owm_right owm_add_new_sub_group">{decorator name='button' class='' id='btn-create-new-sub-group' langLabel='frmsubgroups+create_subgroup'}</div>
+{script}{literal}
+$('#btn-create-new-sub-group').click(function(){location.href='{/literal}{$createSubgroupLink}{literal}'})
+{/literal}{/script}
+{/if}
+
+<div class="owm_box  owm_group_list  owm_sub_group_list  clearfix">
+    <div class="owm_automargin owm_superwide">
+        {form name="subGroupFilterForm"}
+        <tr>
+            <td>
+                {input name='searchTitle'}
+            </td>
+        </tr>
+        <td>
+            {if isset($originalUrl)}
+            {decorator name='button' iconClass="ow_ic_lens" id="searchFilter" onclick="searchSubGroup('{$originalUrl}');" langLabel='frmsubgroups+search_btn_label'}
+            {/if}
+        </td>
+        {/form}
+
+        {if empty($list) }
+        <div class="owm_nocontent">{text key="groups+listing_no_items_msg"}</div>
+        {else}
+        {foreach from=$list key='key' item='group'}
+        <div class="owm_sub_groups_item">
+            {decorator name='ipc' addClass='ow_smallmargin' data=$group infoString="<a href=\"`$group.url`\">`$group.title`</a>"}
+        </div>
+        {/foreach}
+        <br />
+        {$paging}
+        {/if}
+
+    </div>
+</div>

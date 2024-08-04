@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtpnetsms" label="frmtpnetsms" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه سرویس پیامک وزرات علوم
+        </value>
+    </key>
+    <key name="user_id_label">
+        <value>
+            شناسه کاربر
+        </value>
+    </key>
+    <key name="password_label">
+        <value>
+            گذرواژه
+        </value>
+    </key>
+    <key name="originator_label">
+        <value>
+            مبدأ (اورجینیتور)
+        </value>
+    </key>
+    <key name="url_label">
+        <value>
+            آدرس
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت ذخیره شد
+        </value>
+    </key>
+</prefix>

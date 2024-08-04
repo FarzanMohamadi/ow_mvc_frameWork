@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin>
+    <name>plugin</name>
+    <key>frmboursesms</key>
+    
+        امکان ارسال پیامک با استفاده از پنل پیامکی سازمان بورس و اوراق بهادار را فراهم می کند.
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10851</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>private</item>
+    </category>
+    <installable>0</installable>
+    <plan>2</plan>
+</plugin>

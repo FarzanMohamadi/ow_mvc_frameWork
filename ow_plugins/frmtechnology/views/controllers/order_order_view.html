@@ -1,0 +1,61 @@
+<div class="clearfix">
+<ul class="ow_bl clearfix ow_small ow_right">
+    <li><a href="{$orderIndexUrl}">{text key="frmtechnology+return_btn_label"}</a></li>
+    <li><a href="{$info.deleteUrl}" >{text key="frmtechnology+delete"}</a></li>
+
+</ul>
+<table class=" ow_nomargin  data_table" style="width: 100%;">
+    <tbody>
+    <tr class="ow_tr_first">
+    </tr><tr class="ow_tr_first">
+        <th colspan="3" class="ow_section"><span>{text key="frmtechnology+order_information"}</span></th>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_name"}</td>
+        <td class="ow_label" style="width: 80%">{$info.name}</td>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_phone"}</td>
+        <td class="ow_label" style="width: 80%">{$info.phone}</td>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_email"}</td>
+        <td class="ow_label" style="width: 80%">{$info.email}</td>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_submit_date"}</td>
+        <td class="ow_label" style="width: 80%">{$info.date}</td>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_company_name"}</td>
+        <td class="ow_label" style="width: 80%">{$info.companyName}</td>
+    </tr>
+    {if isset($info.companyWebsite)}
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_company_website"}</td>
+        <td class="ow_label" style="width: 80%">{$info.companyWebsite}</td>
+    </tr>
+    {/if}
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_job_title"}</td>
+        <td class="ow_label" style="width: 80%">{$info.jobTitle}</td>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_company_address"}</td>
+        <td class="ow_label" style="width: 80%">{$info.companyAddress}</td>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_company_activity_field"}</td>
+        <td class="ow_label" style="width: 80%">{$info.companyActivityField}</td>
+    </tr>
+    <tr >
+        <td class="ow_label" style="width: 20%">{text key="frmtechnology+order_description"}</td>
+        <td class="ow_label" style="width: 80%">{$info.desc}</td>
+    </tr>
+
+
+
+
+    </tbody>
+</table>
+</div>

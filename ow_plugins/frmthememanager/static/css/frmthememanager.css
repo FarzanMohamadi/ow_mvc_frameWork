@@ -1,0 +1,224 @@
+.frmthememanager_page tr.active_theme td {
+    background-color: #e0f0e0;
+}
+
+.frmthememanager_page .theme_file_preview {
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    float: left;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    box-shadow: 0 0 3px #cacaca;
+    background-color: #ececec !important;
+}
+
+span.frmthememanager_active_theme {
+    padding: 0px 10px 0px 10px;
+    background-color: green;
+    border-radius: 3px;
+    color: white;
+    margin: 0px 8px 0 0;
+    float: left;
+}
+
+tr.First_row_themes_table td {
+    font-weight: bold;
+    text-align: center !important;
+    background-color: #f9f9f9;
+    color: black !important;
+}
+
+.disable_all_themes p,
+.update_all_themes p{
+    display: inline-block;
+}
+
+.frmthememanager_page textarea {
+    direction: ltr;
+}
+
+.configs_table tr td:nth-child(2) {
+    width: 60%;
+}
+
+.frmthememanager_page .ow_lbutton {
+    margin: 2px;
+}
+
+table.ow_table_1.ow_form.themes_table td:last-child {
+    min-width: 16vw;
+}
+
+span.frmthememanager_color_box {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    border: 1px solid #ccd6de;
+    border-radius: 3px;
+}
+
+span.frmthememanager_logo_box {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+td.ow_value.themeName {
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+span.color_input_viewer input {
+    width: 22px;
+    position: absolute;
+    margin-right: 7px;
+    margin-top: 2px;
+}
+
+input.color_input_viewer{
+    width: calc(100% - 35px);
+}
+
+span.color_row {
+    display: inline-block;
+    margin: 0px 4px 0px 4px;
+}
+
+.color_row label {
+    display: inline-block;
+}
+
+.color_row input {
+    display: inline-block;
+    width: 22px;
+    margin-right: 5px;
+}
+
+span.url_row {
+    width: 100%;
+    display: block;
+    height: 50px;
+}
+
+.url_row label {
+    margin-left: 10px;
+}
+
+.frmthememanager_page td.ow_label {
+    font-weight: bold;
+}
+
+.iithememanager_overlay {
+    background-color: #afafaf59;
+    position: relative;
+    width: 100%;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px !important;
+    display: none;
+}
+
+.color_input_viewer.text_input {
+    min-width: 50px;
+    margin: 2px 0px 2px 0px;
+}
+
+td.ow_value.themeColors {
+    text-align: right;
+}
+
+.color_input_viewer.text_input {
+    min-width: 50px;
+    margin: 2px 0px 2px 0px;
+}
+
+span.ow_button.create_new_theme_button a.ow_lbutton.ow_green {
+    font-size: 14px;
+    line-height: 18px;
+    vertical-align: middle;
+    font-weight: normal;
+    border: none;
+}
+
+.create_new_theme {
+    text-align: center;
+    border: 1px solid #ccd6de;
+    border-radius: 3px;
+    padding: 10px;
+}
+.frmthememanager_color_picker_config {
+    text-align: right;
+}
+
+.frmthememanager_color_picker_config:lang(en) {
+    text-align: left;
+}
+
+.plugin_guide {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+td.ow_label.themeColors {
+    width: 22% !important;
+}
+
+a.remove_file {
+    float: left;
+    margin: 5px 5px 5px 10px;
+    color: red;
+    cursor: pointer;
+}
+
+.themeColors span.theme_info_value {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.clearfix.ow_admin_choose_theme .iithememanager_overlay.ow_inprogress {
+    float: right;
+    z-index: 2;
+    margin-right: 0px;
+    margin-top:-1px
+}
+
+.selected_theme_info.frm_theme_manager_themes .themeIconViewer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+
+.frm_theme_manager_themes .Operations span.theme_info_value {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.frmthememanager_theme a.theme_icon {
+    background-size: 80px;
+}
+
+.theme_info_value a.ow_lbutton {
+    margin-bottom: 3px;
+}
+
+.frmtheme_manager_active_theme_terms {
+    float: right;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+}

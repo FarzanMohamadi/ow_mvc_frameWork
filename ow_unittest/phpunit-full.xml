@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit bootstrap="init.php">
+    <testsuites>
+        <testsuite name="Oxwall Tests">
+            <directory>ow_core</directory>
+            <directory>ow_plugins</directory>
+            <directory>mobile/owm_core</directory>
+            <directory>mobile/owm_plugins</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

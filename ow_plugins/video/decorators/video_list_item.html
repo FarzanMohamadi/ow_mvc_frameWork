@@ -1,0 +1,28 @@
+
+<div class="ow_video_list_item ow_small{if isset($data.set_class)} {$data.set_class}{/if}">
+
+    {capture name='url'}{url_for_route for="view_clip:[id=>`$data.id`]"}{/capture}
+
+    <a href="{$smarty.capture.url}">
+        <div class="ow_video_thumbnail_list {if $data.thumb == 'undefined'} no_thumbnail {/if}" {if $data.thumb != 'undefined'} style="background-image: url('{$data.thumb}')"  {/if} >
+            <div class="ow_video_thumbnail_list_box"> </div>
+        </div>
+    </a>
+
+    <div class="video_list_user_object {if isset($data.avatarsImageInfo) && ($data.avatarsImageInfo.empty)}
+        colorful_avatar_{$data.avatarsImageInfo.digit} {/if}">
+        {if !empty($data.avatar)}
+        <div class="video_list_user_avatar" style="background-image: url('{$data.avatar}'); {if isset($data.avatarsImageInfo) && ($data.avatarsImageInfo.empty)} background-color: {$data.avatarsImageInfo.color} {/if}"></div>
+        {/if}
+        <div class="video_list_user_name">
+            {user_link username=$data.username name=$data.displayName}
+        </div>
+    </div>
+
+    <div class="ow_video_item_title">
+        <a href="{$smarty.capture.url}" style="text-decoration: none !important;">{$data.title|truncate:55:"..."}</a>
+    </div>
+
+    <div class="ow_video_item_rate">{if $data.listType == 'toprated'}{if $data.score}{display_rate avg_rate=$data.score}{/if}{/if}</div>
+
+</div>

@@ -1,0 +1,35 @@
+{form name='files_filter'}
+<div class="add_file_header filter_form">
+    <div class="field">
+        <div class="field_label">
+            {label name="category"}
+        </div>
+        <div class="field_input">
+            {input name="category"} {error name='category'}
+        </div>
+    </div>
+    <div class="field">
+        <div class="field_label">
+            {label name="start_date"}
+        </div>
+        <div class="field_input">
+            {input name="start_date"}
+        </div>
+    </div>
+    <div class="field">
+        <div class="field_label">
+            {label name="end_date"}
+        </div>
+        <div class="field_input">
+            {input name="end_date"}
+        </div>
+    </div>
+    <div class="field submit">
+        {submit name="submit" class='ow_ic_save'}
+    </div>
+</div>
+{/form}
+<div class="files_wrapper all_files">
+    {$files}
+</div>
+{if $paging}<center>{$paging}</center>{/if}

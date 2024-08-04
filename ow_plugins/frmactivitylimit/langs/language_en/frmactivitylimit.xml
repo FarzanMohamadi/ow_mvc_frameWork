@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmactivitylimit" label="frmactivitylimit" language_tag="en" language_label="English">
+    <key name="admin_title">
+        <value>
+            Plugin to limit users activities
+        </value>
+    </key>
+    <key name="you_are_blocked_message">
+        <value>
+            You are blocked for {$min} minutes for unusual activity. This will be lifted in {$end}.
+        </value>
+    </key>
+    <key name="max_db_requests">
+        <value>
+            Max effective requests
+        </value>
+    </key>
+    <key name="minutes_to_reset">
+        <value>
+            Time range to check the above maximum (minutes)
+        </value>
+    </key>
+    <key name="blocking_minutes">
+        <value>
+            Blocking time (minutes)
+        </value>
+    </key>
+    <key name="form_submit">
+        <value>
+            Submit
+        </value>
+    </key>
+</prefix>

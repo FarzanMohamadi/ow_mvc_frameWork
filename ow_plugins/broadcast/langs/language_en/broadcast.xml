@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="broadcast" label="broadcast" language_tag="en" language_label="English">
+    <key name="order_submitted">
+        <value>
+            your order submitted with number {$orderNumber}, click here to show details
+        </value>
+    </key>
+</prefix>

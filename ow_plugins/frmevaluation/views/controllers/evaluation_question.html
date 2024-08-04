@@ -1,0 +1,86 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<h3>
+    <a href="{$return_to_questions}">{text key="frmevaluation+return_to_questions"}</a>
+</h3>
+{form name="question"}
+<table class="ow_table_1 question_decription">
+    <tr class="ow_tr_first">
+        <th class="ow_center">{$header}</th>
+        <th>{$level}</th>
+    </tr>
+    <tr class="ow_tr_first">
+        <td colspan="2" class="ow_center evaluation_value">{input name='values'}{error name='values'}</td>
+    </tr>
+    <tr class="ow_tr_first">
+        <td colspan="2">
+            <p class="evaluation_question_description">
+                {$questionDescription}
+            </p>
+        </td>
+    </tr>
+</table>
+<table class="ow_table_1">
+    {if isset($hasDescribe)}
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmevaluation+description"}</td>
+        <td class="ow_value">
+            {input name='description'}
+            {error name='description'}
+        </td>
+    </tr>
+    {/if}
+
+    {if isset($hasFileBefore)}
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmevaluation+user_old_file"}</td>
+        <td class="ow_value"><a target="_blank" href="{$hasFileBefore}"><img src="{$defaultFileIcon}" /></a></td>
+    </tr>
+    {/if}
+
+    {if isset($hasFile)}
+    <tr class="ow_alt1">
+        <td class="ow_label">{if isset($hasFileBefore)}{text key="frmevaluation+user_file_change"}{else}{text key="frmevaluation+user_file"}{/if}</td>
+        <td class="ow_value">
+            {input name='file'}
+            {error name='file'}
+        </td>
+    </tr>
+    {/if}
+
+    {if isset($hasVerification)}
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmevaluation+user_sign"}</td>
+        <td class="ow_value">
+            {input name='sign'}
+            {error name='sign'}
+        </td>
+    </tr>
+
+    <tr class="ow_alt1">
+        <td class="ow_label">{text key="frmevaluation+user_verification"}</td>
+        <td class="ow_value">
+            {input name='verification'}
+            {error name='verification'}
+        </td>
+    </tr>
+
+    {/if}
+
+    {if $owner}
+    <tr class="ow_alt1 ow_center">
+        <td colspan="2" class="ow_value">
+            {submit name='submit'}
+        </td>
+    </tr>
+    {/if}
+
+</table>
+{/form}

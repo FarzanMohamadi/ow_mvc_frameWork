@@ -1,0 +1,30 @@
+{if isset($top_users_header)}<h1>{$top_users_header}</h1>{/if}
+{if isset($lastCalculationDate)}
+<p class="graphy_last_update_time">{text key='frmgraph+last_calculation_date'}: {$lastCalculationDate}</p>
+{/if}
+<div class="top_users_info" style="overflow: auto;">
+    <table class="ow_table_1 frmgraph_table" style="margin: 0">
+        <tbody>
+        <tr>
+            <td>{text key='frmgraph+label_rank'}</td>
+            <td>{text key='frmgraph+label_username'}</td>
+            <td>{text key='frmgraph+label_score'}</td>
+        </tr>
+        {foreach from=$allInfo item='item' key='rank'}
+        <tr class="ow_center">
+            <td class="ow_value">{$item.rank}</td>
+            <td class="ow_value">{$item.user_info}</td>
+            <td class="ow_value">{$item.score}</td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>
+
+{if $pagination}
+<div class="ow_stdmargin">{$paging}</div>
+{else}
+{if !empty($toolbars)}{decorator name='box_toolbar' itemList=$toolbars}{/if}
+{/if}
+
+{if isset($top_users_hint)}<p class="top_users_hint">{$top_users_hint}</p>{/if}

@@ -1,0 +1,47 @@
+<div class="page_description">
+    {text key="coverphoto+description_coverphoto_page"}
+</div>
+
+{form name="coverphoto_form"}
+<table class="ow_table_1 ow_form ow_stdmargin">
+    <tr class="ow_alt1 ow_tr_first">
+        <td class="ow_label">{label name='title'}</td>
+        <td class="ow_value">{input name='title'}{error name='title'}</td>
+    </tr>
+    <tr class="ow_alt2 ow_tr_first">
+        <td class="ow_label">{label name='image'}</td>
+        <td class="ow_value">{input name='image'}{error name='image'}</td>
+    </tr>
+</table>
+<div class="clearfix ow_submit ow_stdmargin">
+    <div class="ow_right">{submit name='submit' class='ow_ic_add ow_positive'}</div>
+    <a href="{$backURL}">
+        <span class="ow_button ow_ic_delete"><span>
+            <input type="button" value="{text key='base+back'}" class="ow_ic_back">
+        </span></span>
+    </a>
+</div>
+{/form}
+
+{if $list}<h3 class="ow_center" style="margin-bottom: 10px;">{text key="coverphoto+covers"}</h3>{/if}
+<div class="ow_table_1 ow_form ow_stdmargin">
+    {foreach from=$list item="listItem"}
+    <div onmouseover="$('.cover_action', this).show();" onmouseout="$('.cover_action', this).hide();" class="coverphoto-list-item">
+        <div class="ow_photo_cover_hover">
+            <div class="ow_photo_cover_action">
+                <a class="cover_select"  href="{$listItem.deleteUrl}" onclick="if (confirm('{text key="coverphoto+are_you_sure_to_remove"}')) return true; else return false;">
+                <img title="{text key='coverphoto+delete_this_cover'}" class="coverphoto-list-icon" src="{$listItem.deleteThisCoverIcon}"/>
+                </a>
+                <a class="cover_select"  href="{$listItem.useCoverUrl}" onclick="if (confirm('{text key="coverphoto+are_you_sure_to_use_this"}')) return true; else return false;">
+                <img title="{text key='coverphoto+use_this_cover'}" class="coverphoto-list-icon" src="{$listItem.useThisCoverIcon}"/>
+                </a>
+            </div>
+        </div>
+        <img class="coverphoto-list-image" src="{$listItem.coverPhotoImageUrl}"/>
+
+        <div class="coverphoto-title">{$listItem.title}</div>
+        <div class="coverphoto-date">{$listItem.addDateTime} <a href="{$listItem.AutherUrl}" class="coverphoto-author">({$listItem.AutherName})</a> {if $listItem.isCurrent}<a><img class="is_current" src="{$is_current_icon}" /></a>{/if}</div>
+    </div>
+    {/foreach}
+</div>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsmtpcheck" label="frmsmtpcheck" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Check SMTP
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            SMTP check Plugin Settings
+        </value>
+    </key>
+    <key name="suffix">
+        <value>
+            Suffix of sender (after @)
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            Save
+        </value>
+    </key>
+    <key name="admin_changed_success">
+        <value>
+            Settings successfully changed.
+        </value>
+    </key>
+</prefix>

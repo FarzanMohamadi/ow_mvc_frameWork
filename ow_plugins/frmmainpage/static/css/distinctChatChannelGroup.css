@@ -1,0 +1,101 @@
+body {
+    background-color: white !important;
+}
+
+.owm_user_list.owm_content_list.owm_std_margin_bottom.clearfix, #content > .owm_user_list.owm_content_list .owm_list_search {
+    border: none !important;
+}
+
+.owm_list_item {
+    border: none !important;
+}
+.frmmainpage .owm_user_list .owm_list_search {
+    padding-top: 15px;
+}
+.owm_list_search input[type="text"] {
+    border-color: transparent;
+    background-color: #e6e6e6;
+}
+::placeholder {
+    color: #888888;
+}
+.frmmainpage .owm_list_item_with_image {
+    border: none !important;
+    margin-bottom: 5px !important;
+}
+.ow_video_item_title {
+    margin-bottom: 0;
+    margin-top: -5px;
+}
+
+ .owm_list_item_with_image .ow_ipc_info .ow_ipc_header {
+    margin-top: -5px;
+}
+
+.owm_list_item_with_image .ow_ipc_info .ow_ipc_content,
+.owm_list_item_with_image .ow_ipc_info .ow_ipc_header a{
+    text-overflow: ellipsis;
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+@media only screen and (max-width: 440px) {
+    .owm_list_item_with_image .ow_ipc_info .ow_ipc_content, .owm_list_item_with_image .ow_ipc_info .ow_ipc_header a {
+        max-width: 50%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .ow_ipc_toolbar span,
+    .frmmainpage .owm_user_list_item .owm_newsfeed_date{
+        display: none;
+    }
+}
+
+.owm_list_page .owm_list_item_with_image,
+.frmmainpage .owm_group_list .owm_list_item_with_image{
+    border-bottom: 1px solid #e6e6e6 !important;
+    border-radius: unset !important;
+    border-width: 0px 0px 1px 0px !important;
+}
+
+.owm_user_list_item div#mailboxSidebarConversationsItemSubject {
+    width: calc(100% - 55px);
+    display: inline-block;
+}
+
+.owm_list_item_with_image .ow_ipc_info .ow_ipc_header a,
+.owm_list_item .owm_user_list_name a,
+.owm_user_list_item .owm_user_list_name a{
+    font-weight: bold !important;
+    font-size: 14px !important;
+    color: black;
+}
+.owm_list_item_with_image .ow_ipc_info .ow_ipc_toolbar {
+    font-size: 60%;
+    margin-top: -45px;
+    float: left;
+}
+.frmmainpage .owm_user_list_item {
+    padding: 0 !important;
+}
+.frmmainpage .owm_user_list_item .owm_newsfeed_date {
+    margin-top: -45px;
+    background-color: transparent;
+}
+
+.owm_newsfeed_date {
+    background-color: transparent !important;
+}
+
+.owm_user_list_item .owm_avatar {
+    margin-right: -55px !important;
+}
+.ow_ipc.owm_list_item_with_image.clearfix .ow_ipc_info {
+    padding: 2px 0px 2px 0;
+}
+.new_group {
+    width: 100%;
+    margin-bottom: 15px;
+}

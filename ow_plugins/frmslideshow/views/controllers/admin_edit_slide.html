@@ -1,0 +1,41 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_right place_section left_section ow_column">
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+            <a href="{$returnToSlides}">{text key="frmslideshow+return_to_slides"}</a>
+        </div>
+    </div>
+    <div class="ow_std_margin clearfix">
+        {form name="addSlide"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmslideshow+edit_slide"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='description'}
+                </td>
+                <td class="ow_value">
+                    {input name='description'}
+                    {error name='description'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="3">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>

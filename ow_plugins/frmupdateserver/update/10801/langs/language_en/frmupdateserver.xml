@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmupdateserver" label="frmupdateserver" language_tag="en" language_label="English">
+    <key name="download_last_core_build_version">
+        <value>
+            Last Version Build Number: {$value}
+        </value>
+    </key>
+    <key name="download_last_core_update_build_version">
+        <value>
+            Last Version Build Number: {$value}
+        </value>
+    </key>
+    <key name="title_widget">
+        <value>
+            Last version of 
+        </value>
+    </key>
+</prefix>

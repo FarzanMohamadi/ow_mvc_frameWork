@@ -1,0 +1,163 @@
+{style}{literal}
+    #download-btn:link, #download-btn:visited,
+    #admin-btn:link, #admin-btn:visited  {
+        background-color: #f44336;
+        color: white;
+        padding: 5px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        float: right;
+        margin: 10px 0 0;
+        border-radius: 4px;
+        width: 100%;
+        min-width: 200px;
+    }
+    #admin-btn:hover, #admin-btn:active {
+        background-color: red;
+    }
+    #download-btn:link, #download-btn:visited {
+        background-color: #269226;
+        color: white;
+    }
+    #download-btn:hover, #download-btn:active {
+        background-color: #196919;
+    }
+    div.article-container {
+        text-align: left;
+        border: 3px solid #409424a6;
+        border-width: 0px 2px 0 2px;
+        width: 100%;
+        max-width: 800px;
+        color: #d2205c;
+        counter-increment: myCounter;
+        margin: 0 0 6px 0;
+        padding: 13px;
+        top: 1em;
+        border-radius: 13px 5px 13px 7px;
+        padding-left: 2em;
+        font-size: 1.2em;
+        font-family: Constantia;
+        background-color: #f8f8f8;
+    }
+    #right-container {
+        width: 30%;
+        min-width: 100px;
+        max-width: 300px;
+    }
+    #right-container:lang(fa-IR) {
+        width: 30%;
+        min-width: 100px;
+        max-width: 300px;
+        float: left;
+    }
+    .article-title {
+        font-weight: bold;
+    }
+    .article-authors {
+        font-size: small;
+    }
+    #poster {
+        width:100%;
+        border-radius: 5px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 1em;
+        min-height: 250px;
+        height: auto;
+        direction: rtl;
+        max-height: initial;
+    }
+    .grid:lang(fa-IR){
+        direction: ltr;
+    }
+    aside p{
+        text-align: initial;
+    }
+    article p:lang(fa-IR), aside p:lang(fa-IR) {
+        text-align: justify !important;
+    }
+    .sidebar-left {
+        min-width: 220px;
+        grid-row: 1;
+        grid-column: 1 / 3;
+        text-align: left;
+        padding: 15px;
+        top: 1em;
+        margin: 10px;
+    }
+    .sidebar-left > div {
+        margin-bottom: 20px;
+    }
+    article {
+        grid-row: 1;
+        grid-column: 4 / 10;
+        text-align: left;
+        max-width: 800px;
+        padding: 13px;
+        top: 1em;
+        padding-left: 2em;
+        margin: 10px;
+    }
+
+    /*Responsive*/
+    @media only screen and (max-width: 599px) {
+    .grid {
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(2, auto);
+        grid-gap: 1em;
+    }
+    .sidebar-left {
+        grid-row: 1;
+        grid-column: 1 / 4;
+        min-width: 250px;
+    }
+    article {
+        grid-row: 2;
+        grid-column: 1 / 4;
+        min-width: 250px;
+    }
+    }
+{/literal}{/style}
+
+
+<div class="grid">
+    <aside class="sidebar-left">
+        <div>
+            {if $posterFile!=""}
+
+            <div>
+                <a href={$posterFile}
+                   target="_blank"><img id="poster" src={$posterFile}></a>
+            </div>
+            {/if}
+            {if isset($xmlUrl)}
+            <a id="xml-btn" target="_blank" href="{$xmlUrl}"><img src="{$staticUrl}img/xml.svg" alt="XML" style="margin:6px; max-height: 47px;"></a>
+            {/if}
+            {if $downloadFile!=""}
+            <div><a id="download-btn" href="{$downloadFile}" target="_blank">{text key='frmjcse+download_issue_button'}</a></div>
+            {/if}
+            {if isset($isAdmin)}
+            <div><a id="admin-btn" href="{$redirectUrl}">{text key='frmjcse+add_article_button'}</a></div>
+            {/if}
+        </div>
+    </aside>
+
+    <article>
+        {foreach from=$articles item="article"}
+        <div class="article-container">
+            <div class="article-title"><a href="{$article.url}"> {$article.title}</a></div>
+            <div class="article-authors">{$article.authors}</div>
+        </div>
+        {/foreach}
+
+    </article>
+</div>
+
+{if isset($isEmpty)}
+{text key='frmjcse+sorry_no_content_yet'}
+{/if}

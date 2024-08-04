@@ -1,0 +1,31 @@
+<div class="clearfix">
+{if !empty($sections)}
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span>{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+{/if}
+<p><a href="{$returnToTermsUrl}">{text key="frmterms+returnToTerms"}</a></p>
+
+<table class="ow_table_1">
+    <tr>
+        <th colspan="2">{text key="frmterms+table_of_archive_label"}</th>
+    </tr>
+    {if !empty($versions)}
+    {foreach from=$versions item="version"}
+    <tr>
+        <td>{$version.time}</td>
+        <td>{if $version.current}{text key="frmterms+current_version_label"}{else}<a href="{$version.url}"><span>{text key="frmterms+comparison_with_current_version_label"}</span></a>{/if}
+        </td>
+    </tr>
+    {/foreach}
+    {else}
+    <tr>
+        <td>{text key="frmterms+archives_is_empty_description"}</td>
+    </tr>
+    {/if}
+</table>
+</div>

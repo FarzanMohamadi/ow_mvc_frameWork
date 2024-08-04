@@ -1,0 +1,9 @@
+{form name=$formName}
+{if $isReplyList} <span id="{$rudnId}" class="owm_comment_reply" style="display: none;"></span> {/if}
+<div class="owm_newsfeed_comment_input"  {if $isReplyList} style="display: none" {/if} >
+    {input name='commentText'}
+    <div class="owm_newsfeed_comment_submit clearfix comment_submit" style="display:none;">
+        <div class="owm_float_right">{submit name='comment-submit'}</div>
+    </div>
+</div>
+{/form}

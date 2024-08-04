@@ -1,0 +1,41 @@
+{form name='rss'}
+<div class="floatbox_body">
+
+    <table class="ow_table_1">
+
+        <tr class="ow_rss_tr">
+            <td class="ow_rss_td" colspan="2">
+                {text key="frmrss+rss_without_tag"}
+            </td>
+            <td class="ow_rss_td rss_table_left" colspan="2">
+                <a href="{$rssWithoutTagLink}" target="_blank">{$rssWithoutTagLink}</a>
+            </td>
+        </tr>
+
+        <tr class="ow_rss_tr">
+            <td class="ow_rss_td" colspan="2">
+                {label name='tag'}
+                <div class="ow_frmrss_gen_disc">
+                    {text key="frmrss+rss_generate_disc"}
+                </div>
+            </td>
+            <td class="ow_rss_td rss_table_left" colspan="2">
+                {input name='tag'}
+            </td>
+        </tr>
+
+        <tr class="ow_rss_tr no_rss_tag">
+            <td class="ow_rss_td" colspan="3">
+                <div id="rssWithTagLink" style="display:none;">
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+    <div class="rss_submit_center">
+        <a class="ow_lbutton" onclick="createTagRss('{$homeUrl}');" >{text key="frmrss+view_link"}</a>
+    </div>
+
+    {/form}
+</div>

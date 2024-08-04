@@ -1,0 +1,74 @@
+<div class="ow_frmtechunit owm_content">
+    <div class="owm_profile_block owm_bg_color_1">
+        <div class="owm_profile_header_wrap owm_std_margin_bottom">
+            <div class="owm_profile_header clearfix owm_std_margin_bottom" style="padding: 15px;">
+                <div class="ow_frmtechunit_image">
+                    <img alt="" src="{$unit.imagePath}">
+                </div>
+                <span class="ow_frmtechunit_name">{$unit.name}</span>
+            </div>
+        </div>
+    </div>
+    <div class="ow_unit_control_buttons" style="margin: 10px;">
+        {if isset($edit_url)}
+        <span class="ow_button"><span class="owm_ic_edit"><input type="button" value="{text key="frmtechunit+edit"}" id="edit_profile_button" class="owm_ic_edit" onclick="window.location.href = '{$edit_url}'"></span></span>
+        {/if}
+        {if isset($delete_url)}
+        <span class="ow_button"><span class="owm_ic_delete"><input type="button" value="{text key="frmtechunit+delete"}" id="edit_profile_button" class="owm_ic_delete" onclick="window.location.href = '{$delete_url}'"></span></span>
+        {/if}
+    </div>
+    <div class="owm_box ow_stdmargin">
+        <div class="clearfix" style="margin-bottom: 0px;">
+            <div class="ow_box_cap_right">
+                <div class="owm_box_cap_body">
+                    <h3 class="ow_frmtechunit_unit_name">{text key="frmtechunit+unit_info"}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="ow_frmtechunit_box_body">
+            <div>
+                <span class="owm_item_info_label" style="width: 25%">{text key="frmtechunit+field_manager"} :</span>
+                <span class="owm_item_info_value">{$unit.manager}</span>
+            </div>
+            <div>
+                <span class="owm_item_info_label" style="width: 25%">{text key="frmtechunit+field_phone"} :</span>
+                <span class="owm_item_info_value">{$unit.phone}</span>
+            </div>
+            <div>
+                <span class="owm_item_info_label" style="width: 25%">{text key="frmtechunit+field_address"} :</span>
+                <span class="owm_item_info_value">{$unit.address}</span>
+            </div>
+            <div>
+                <span class="owm_item_info_label" style="width: 25%">{text key="frmtechunit+field_website"} :</span>
+                <span class="owm_item_info_value"><a href="{$unit.websiteUrl}" target="_blank">{$unit.website}</a></span>
+            </div>
+            <div>
+                <span class="owm_item_info_label" style="width: 25%">{text key="frmtechunit+field_email"} :</span>
+                <span class="owm_item_info_value">{$unit.email}</span>
+            </div>
+            {if isset($unit.qr_code)}
+            <div>
+                <span class="owm_item_info_label" style="width: 25%">{text key="frmtechunit+field_qr_code"} :</span>
+                <div style="height: 100px; width: 100px; background: url({$unit.qr_code}) no-repeat center; background-size: cover;margin: 10px;">
+                </div>
+            </div>
+            {/if}
+        </div>
+    </div>
+    {foreach from=$unit.sections key='key' item='section'}
+    <div class="owm_box ow_stdmargin">
+        <div class="clearfix" style="margin-bottom: 15px;">
+            <div class="ow_box_cap_right">
+                <div class="owm_box_cap_body">
+                    <h3 class="ow_frmtechunit_unit_name">{$section.title}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="ow_frmtechunit_box_body" style="margin: 15px;">
+            <div>
+                <span class="ow_frmtechunit_box_body">{$section.content}</span>
+            </div>
+        </div>
+    </div>
+    {/foreach}
+</div>

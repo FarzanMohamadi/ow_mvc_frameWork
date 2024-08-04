@@ -1,0 +1,209 @@
+/**
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package frmforumplus.styles
+ */
+
+img.ow_forum_attach_icon {
+    width: 20px;
+}
+
+.group_topics_filter a {
+    padding: 3px 20px;
+    display: inline-block;
+    color: #003;
+    background: #eee;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 9px;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.group_topics_filter a:hover {
+    background: #1182d0;
+    color: #fff;
+}
+
+.group_topics_filter {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-bottom: solid 1px #1182d0;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container {
+    display: block;
+    float: right;
+    opacity: 1;
+    height: auto;
+    width: calc(33.33% - 28px);
+    transition: all 0.2s;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    border: solid 1px lightgray;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    box-shadow: 2px 5px 15px #d4d2d2;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .ow_forum_icon {
+    position: absolute;
+    left: 5px !important;
+    top: 10px;
+    width: 120px;
+    right: unset !important;
+    text-align: left;
+    line-height: 12px;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .hide {
+    display: none;
+    opacity: 0;
+    transition: all 0.1s;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_header {
+    max-width: calc(100% - 120px);
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_date {
+    position: absolute;
+    left: 8px;
+    font-size: 9px;
+    color: #adadad;
+    bottom: 5px;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_path_to_forum .ow_smallmargin {
+    margin: 0px;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .ow_ipc_content.forum_widget_content {
+    padding: 0px;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_content_text {
+    padding-left: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 10px;
+    color: #7a7a7a;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_header a {
+    width: unset !important;
+    font-size: 10px;
+}
+
+.group_topics_filter a.selected {
+    background-color: #1182d0;
+    color: #fff;
+}
+
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .ow_forum_icon .ow_forum_new {
+    margin-left: 5px;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .ow_ipc_content.forum_widget_content .forum_widget_text_and_avatar_container{
+    margin-top: 25px;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .ow_ipc_content.forum_widget_content .forum_widget_header{
+    margin-right: 5px !important;
+    margin-top: -30px !important;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .ow_ipc_content.forum_widget_content .forum_widget_header span{
+    display: inline-block;
+    font-size: 10px;
+    color: #7a7a7a;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .ow_ipc_content.forum_widget_content .forum_widget_header a{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: calc(100% - 70px);
+    margin-top: 1px;
+    font-family: "IRANSansWeb" !important;
+    font-weight: bold;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .ow_ipc_content.forum_widget_content .forum_widget_text_and_avatar_container .forum_widget_avatar_container + .forum_widget_content_text{
+    vertical-align: top;
+    max-width: calc(100% - 75px);
+    margin-top: 6px;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_path_to_forum span{
+    vertical-align: top;
+    font-size: 10px;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_path_to_forum .path_to_forum_container{
+    display: inline;
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .forum_widget_header{
+    max-width: calc(100% - 65px);
+}
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .ow_ipc_content.forum_widget_content .forum_widget_text_and_avatar_container .forum_widget_avatar_container,
+.index-FRMFORUMPLUS_CMP_TopicGroupWidget .forum_widget_container .ow_ipc_content.forum_widget_content .forum_widget_text_and_avatar_container .forum_widget_avatar_container + .forum_widget_content_text{
+    display: inline-block;
+}
+
+.ow_supernarrow .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+    width: calc(100% - 28px);
+}
+
+.place_section.top_section .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+    width: calc(33% - 28px);
+}
+
+p.topic_label_group_container_no_content {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+/************* Responsive Styles ****************/
+
+@media only screen and (min-width: 1200px) {
+    .ow_superwide .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(33% - 28px);
+    }
+    .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(50% - 28px);
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    .ow_superwide .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(33% - 28px);
+    }
+    .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(50% - 28px);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .ow_wide .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(50% - 28px);
+    }
+    .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(100% - 28px);
+    }
+    .ow_superwide .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(50% - 28px);
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container {
+        width: calc(50% - 28px) !important;
+    }
+}
+
+@media only screen and (max-width: 465px) {
+    .index-FRMFORUMPLUS_CMP_TopicGroupWidget #topic_list_widget .forum_widget_container{
+        width: calc(100% - 28px) !important;
+    }
+}

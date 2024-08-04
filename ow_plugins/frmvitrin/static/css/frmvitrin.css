@@ -1,0 +1,172 @@
+.frmvitrin{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.frmvitrin .item{
+    margin-right: 0px;
+    margin-left: 0px;
+    border-top: 1px solid #d9dee4;
+    border-color: rgba(204,211,219,0.75);
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.frmvitrin_return{
+    margin-bottom: 10px;
+}
+
+.frmvitrin .item:after, .frmvitrin .item:before {
+    display: table;
+    content: " ";
+}
+
+.frmvitrin .item:after {
+    clear: both;
+}
+
+.frmvitrin .item .main_information{
+    width: 15%;
+    text-align: center;
+    background-color: white;
+    float: right;
+}
+
+.frmvitrin .item .main_information .logo img{
+    max-width: 100%;
+}
+
+.frmvitrin .item .detail_information .description{
+    text-align: justify;
+    padding-left: 20px;
+}
+
+.frmvitrin .item .detail_information,
+.frmvitrin .item .features_information{
+    width: 50%;
+    display: inline-block;
+    background-color: white;
+    float: right;
+}
+
+.frmvitrin .item .features_information{
+    width: 35%;
+}
+
+.frmvitrin a {
+    text-decoration: none;
+    margin-right: 2px;
+    margin-left: 10px;
+}
+
+.frmvitrin a.btn {
+    display: inline-block;
+    color: #666;
+    background-color: #eee;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 3px;
+}
+
+.frmvitrin a.btn:hover {
+    background-color: #e3e3e3;
+    border-color: rgba(0,0,0,0.5);
+}
+
+a.btn.btn-blue {
+    border-color: rgba(0,0,0,0.3);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    color: #FFF;
+}
+
+a.btn.btn-blue:hover {
+    background-color: #275e4f;
+    border-color: rgba(0,0,0,0.5);
+}
+
+a.btn.btn-red {
+    background-color: #f24f54;
+    border-color: rgba(0,0,0,0.3);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+    color: #FFF;
+}
+
+a.btn.btn-red:hover {
+    background-color: #a82d31;
+    border-color: rgba(0,0,0,0.5);
+}
+
+.frmvitrin .website, .frmvitrin .more {
+    display: inline-block;
+}
+
+.frmvitrin .features_item {
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #d9dee4;
+    padding-bottom: 5px;
+    width: 100%;
+    float: right;
+    padding-right: 10px;
+}
+
+.frmvitrin .features_item span{
+    font-weight: bold;
+}
+.owm_frmvitrin_page .list_features_item {
+    margin: 0px 7px;
+}
+
+.features_item img{
+    width: 25px;
+    vertical-align: middle;
+    margin: 3px;
+    margin-right: -10px;
+}
+
+.frmvitrin .features_item .button{
+    width: 100%;
+    float: right;
+}
+
+.draggable-item {
+    cursor: move;
+}
+
+.frmvitrin h1 {
+    margin-bottom: 10px;
+}
+
+a.btn.btn-blue {
+    background-color: #388b74;
+    box-shadow: none;
+}
+
+.owm_frmvitrin_page img {
+    border: none !important;
+}
+
+@media (max-width: 1100px) {
+    .frmvitrin .website, .frmvitrin .more {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    .frmvitrin .item .main_information,
+    .frmvitrin .item .detail_information,
+    .frmvitrin .item .features_information{
+        width: 100%;
+    }
+
+    .frmvitrin .item {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+}

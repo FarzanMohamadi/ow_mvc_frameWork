@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtelegram" label="frmtelegram" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+تلگرام
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="icon_type">
+        <value>
+            عملکرد دکمه نواری تلگرام
+        </value>
+    </key>
+    <key name="icon_type_hidden">
+        <value>
+            مخفی کردن دکمه
+        </value>
+    </key>
+    <key name="icon_type_link">
+        <value>
+            انتقال به برنامه تلگرام
+        </value>
+    </key>
+    <key name="icon_type_list">
+        <value>
+            انتقال به صفحه تلگرام
+        </value>
+    </key>
+    <key name="results_per_page">
+        <value>
+            نتایج در هر صفحه
+        </value>
+    </key>
+    <key name="bot_api_key">
+        <value>
+            Bot API key
+        </value>
+    </key>
+    <key name="at">
+        <value>
+            در
+        </value>
+    </key>
+    <key name="remove">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="admin_telegram_settings_heading">
+        <value>
+            تنظیمات افزونه تلگرام
+        </value>
+    </key>
+    <key name="admin_channel_link">
+        <value>
+            آدرس گروه/کانال
+        </value>
+    </key>
+    <key name="admin_changed_success">
+        <value>
+            تنظیمات با موفقیت تغییر یافت.
+        </value>
+    </key>
+    <key name="desc_label">
+        <value>
+            توضیح
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="telegram_title">
+        <value>
+            تلگرام
+        </value>
+    </key>
+
+
+    <key name="empty_row_label">
+        <value>
+            لیست خالی است.
+        </value>
+    </key>
+    <key name="active_items">
+        <value>
+            موارد فعال
+        </value>
+    </key>
+    <key name="inactive_items">
+        <value>
+            موارد غیرفعال
+        </value>
+    </key>
+    <key name="id_label">
+        <value>
+            شناسه
+        </value>
+    </key>
+    <key name="title_label">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="type_label">
+        <value>
+            نوع
+        </value>
+    </key>
+    <key name="edit_item">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="deactivate_item">
+        <value>
+            غیرفعال کن
+        </value>
+    </key>
+    <key name="activate_item">
+        <value>
+            فعال کن
+        </value>
+    </key>
+
+
+    <key name="telegram_page_title">
+        <value>
+            تلگرام
+        </value>
+    </key>
+    <key name="telegram_page_desc">
+        <value>
+            این صفحه شامل نوشته‌های کاربران در صفحه تلگرام است.
+        </value>
+    </key>
+    <key name="list_page_heading">
+        <value>
+            لیست گروه‌ها و کانال‌های تلگرام
+        </value>
+    </key>
+    <key name="link_to_telegram">
+        <value>
+            در تلگرام
+        </value>
+    </key>
+
+
+    <key name="successfuly_sent">
+        <value>
+            با موفقیت ارسال شد.
+        </value>
+    </key>
+    <key name="send_text">
+        <value>
+متن
+        </value>
+    </key>
+
+    <key name="mobile_main_menu_item">
+        <value>
+            تلگرام
+        </value>
+    </key>
+
+    <key name="database_record_activate_item">
+        <value>
+            آیتم غیرفعال شد.
+        </value>
+    </key>
+    <key name="database_record_deactivate_item">
+        <value>
+            آیتم فعال شد.
+        </value>
+    </key>
+    <key name="telegram_settings">
+        <value>
+            تنظیمات تلگرام
+        </value>
+    </key>
+    <key name="telegram_already_connected">
+        <value>
+            به تلگرام وصل است.
+        </value>
+    </key>
+    <key name="connect_telegram_to_entity">
+        <value>
+            اتصال به تلگرام
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmobileaccount" label="frmmobileaccount" language_tag="en" language_label="English">
+	<key name="admin_save_settings"><value>Save Settings</value></key>
+	<key name="admin_settings_title"><value>Admin mobile account - Settings</value></key>
+	<key name="wrong_code">
+		<value>
+			The code is wrong
+		</value>
+	</key>
+	<key name="sent_code">
+		<value>
+			Verification code sent by sms.
+		</value>
+	</key>
+	<key name="wrong_mobile">
+		<value>
+			Mobile number is wrong
+		</value>
+	</key>
+	<key name="saved_successfully">
+		<value>
+			Saved successfully
+		</value>
+	</key>
+	<key name="mobile_number">
+		<value>
+			Mobile number
+		</value>
+	</key>
+	<key name="mobile_code">
+		<value>
+			Verification code
+		</value>
+	</key>
+	<key name="expired_cookie">
+		<value>
+			Number of days to save cookie
+		</value>
+	</key>
+	<key name="enter_code">
+		<value>
+			Enter the verification code sent into your mobile phone.
+		</value>
+	</key>
+	<key name="check_code">
+		<value>
+			Check code
+		</value>
+	</key>
+	<key name="login_label">
+		<value>
+			Login
+		</value>
+	</key>
+	<key name="back_label">
+		<value>
+			Return back
+		</value>
+	</key>
+	<key name="base_sign_in_txt">
+		<value>
+			Enter your mobile number to login.
+		</value>
+	</key>
+	<key name="mobile_menu_item">
+		<value>
+			Login to account
+		</value>
+	</key>
+	<key name="login_type_version">
+		<value>
+			Version login type
+		</value>
+	</key>
+	<key name="join_type_version">
+		<value>
+			Version join type
+		</value>
+	</key>
+	<key name="join_label">
+		<value>
+			Register
+		</value>
+	</key>
+	<key name="create_successfully">
+		<value>
+			You are registered.
+		</value>
+	</key>
+	<key name="exist_username">
+		<value>
+			Username is exist.
+		</value>
+	</key>
+	<key name="exist_mobile">
+		<value>
+			Mobile number is exist.
+		</value>
+	</key>
+	<key name="base_join_txt">
+		<value>
+			Create your account by entering your username and mobile number.
+		</value>
+	</key>
+	<key name="resending_token">
+		<value>
+			Resending token again...
+		</value>
+	</key>
+	<key name="resend_token_successfully">
+		<value>
+			Resend successfully.
+		</value>
+	</key>
+	<key name="try_again">
+		<value>
+			Please try again.
+		</value>
+	</key>
+	<key name="resend_label">
+		<value>
+			Resend code
+		</value>
+	</key>
+	<key name="login_with_username_password">
+		<value>
+			Login with password
+		</value>
+	</key>
+	<key name="login_with_sms">
+		<value>
+			Login and registration with verification code
+		</value>
+	</key>
+	<key name="base_sign_in_txt_username_password">
+		<value>
+			Enter your login credentials.
+		</value>
+	</key>
+	<key name="account_sms">
+		<value>
+			Your account in {$site_name}. username: {$username}. Password: {$password}
+		</value>
+	</key>
+	<key name="mandatory">
+		<value>
+			Mandatory
+		</value>
+	</key>
+	<key name="optional">
+		<value>
+			Optional
+		</value>
+	</key>
+	<key name="sms_text_general_part">
+		<value>
+			Login/Register link for {$site}
+		</value>
+	</key>
+	<key name="sms_text_website_part">
+		<value>
+			Website: {$site}
+		</value>
+	</key>
+	<key name="username_prefix">
+		<value>
+			Username prefix for auto generation
+		</value>
+	</key>
+	<key name="email_postfix">
+		<value>
+			Email postfix for auto generation
+		</value>
+	</key>
+	<key name="sms_text_welcome_name_part">
+		<value>
+			Dear Mr/Mrs {$name},
+		</value>
+	</key>
+	<key name="sms_text_welcome_invitation_part">
+		<value>
+			You are invited to join {$site}.
+		</value>
+	</key>
+	<key name="sms_max_try_met">
+		<value>
+			Your number of unsuccessful request is above limit. Please contact technical support
+		</value>
+	</key>
+	<key name="sms_code_resend_message">
+		<value>
+			SMS code has been sent again
+		</value>
+	</key>
+	<key name="change_your_username_notification">
+		<value>
+			Please change your default username
+		</value>
+	</key>
+	<key name="notification_section_label">
+		<value>
+			Login by sms
+		</value>
+	</key>
+	<key name="email_notifications_setting_user_register">
+		<value>
+			User has registered with mobile phone number and didn't change their username
+		</value>
+	</key>
+	<key name="ssoGetToken">
+		<value>
+			Get token
+		</value>
+	</key>
+</prefix>

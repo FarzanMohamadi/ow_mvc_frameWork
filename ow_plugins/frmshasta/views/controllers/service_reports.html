@@ -1,0 +1,98 @@
+<div class="reports_wrapper">
+
+    <div class="overall_report_container">
+        <div class="overall_report_fields label">{text key="frmshasta+overall_reports"}</div>
+
+        {form name='files_filter'}
+        <div class="add_file_header filter_form">
+            <div class="fields row">
+                <div class="field">
+                    <div class="field_label">
+                        {label name="holding"}
+                    </div>
+                    <div class="field_input">
+                        {input name="holding"} {error name='holding'}
+                    </div>
+                </div>
+            </div>
+            <div class="fields row">
+                <div class="field">
+                    <div class="field_label">
+                        {label name="sub_company"}
+                    </div>
+                    <div class="field_input">
+                        {input name="sub_company"} {error name='sub_company'}
+                    </div>
+                </div>
+            </div>
+            <div class="fields row">
+                <div class="field">
+                    <div class="field_label">
+                        {label name="start_date"}
+                    </div>
+                    <div class="field_input">
+                        {input name="start_date"}
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="field_label">
+                        {label name="end_date"}
+                    </div>
+                    <div class="field_input">
+                        {input name="end_date"}
+                    </div>
+                </div>
+            </div>
+            <div class="field submit files">
+                {submit name="submit" class='ow_ic_save'}
+            </div>
+        </div>
+        {/form}
+
+    </div>
+
+
+    <div class="special_category_wrapper_container">
+        {foreach from=$categories key=k item='category'}
+        <div id="category_wrapper_{$category.id}" class="special_category_wrapper {if $k==0}active{/if}" onclick="categoryChanger({$category.id})">
+            <div class="name">
+                {$category.name}
+            </div>
+            <div class="count">
+                <div class="sent">
+                    {text key="frmshasta+sent_file"}: <span class="sent_count">{$category.sent_count}</span>
+                </div>
+                {if isset($category.not_sent_count)}
+                <div class="not_sent">
+                    {text key="frmshasta+not_sent_file"}: <span class="not_sent_count">{$category.not_sent_count}</span>
+                </div>
+                {/if}
+            </div>
+        </div>
+        {/foreach}
+    </div>
+
+
+    <div class="special_category_data_wrapper_container">
+        {foreach from=$categories key=j item='category'}
+        <div id="category_data_{$category.id}" class="special_category_data_wrapper {if $j==0}active{/if}">
+            <div class="sent_files">
+                {if isset($category.sent_files_component_ids)}
+                <h1>{text key="frmshasta+sent_files_list"}</h1>
+                {foreach from=$category.sent_files_component_ids item='sentComponent'}
+                {${$sentComponent}}
+                {/foreach}
+                {/if}
+            </div>
+            <div class="not_sent_files">
+                {if isset($category.not_sent_files_component_ids)}
+                <h1>{text key="frmshasta+not_sent_files_list"}</h1>
+                {foreach from=$category.not_sent_files_component_ids item='notSentComponent'}
+                {${$notSentComponent}}
+                {/foreach}
+                {/if}
+            </div>
+        </div>
+        {/foreach}
+    </div>
+</div>

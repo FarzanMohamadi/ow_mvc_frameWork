@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrules" label="frmrules" language_tag="en" language_label="English">
+    <key name="edit">
+        <value>edit</value>
+    </key>
+    <key name="delete">
+        <value>delete</value>
+    </key>
+    <key name="empty_row_label">
+        <value>empty</value>
+    </key>
+    <key name="database_record_add">
+        <value>record added successfully.</value>
+    </key>
+    <key name="database_record_edit">
+        <value>record edited successfully.</value>
+    </key>
+    <key name="database_record_deleted">
+        <value>record removed successfully.</value>
+    </key>
+    <key name="items">
+        <value>items</value>
+    </key>
+    <key name="description">
+        <value>description</value>
+    </key>
+    <key name="delete_item_warning">
+        <value>Are you sure to remove this?</value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>Rules</value>
+    </key>
+    <key name="rules_mobile">
+        <value>Rules</value>
+    </key>
+    <key name="add_new_category_label">
+        <value>
+            Add new category
+        </value>
+    </key>
+    <key name="add_new_item_label">
+        <value>
+            Add new item
+        </value>
+    </key>
+    <key name="security">
+        <value>
+            security
+        </value>
+    </key>
+    <key name="privacy">
+        <value>
+            privacy
+        </value>
+    </key>
+    <key name="country">
+        <value>
+            country
+        </value>
+    </key>
+    <key name="guideline">
+        <value>
+            Guideline
+        </value>
+    </key>
+    <key name="categories">
+        <value>Categories</value>
+    </key>
+    <key name="category">
+        <value>Category</value>
+    </key>
+    <key name="name">
+        <value>Name</value>
+    </key>
+    <key name="icon">
+        <value>Icon</value>
+    </key>
+    <key name="tag">
+        <value>Tag (seprated with point)</value>
+    </key>
+    <key name="without_icon">
+        <value>without icon</value>
+    </key>
+    <key name="icon_world">
+        <value>World</value>
+    </key>
+    <key name="icon_iran">
+        <value>Iran</value>
+    </key>
+    <key name="icon_administrative">
+        <value>Administrative</value>
+    </key>
+    <key name="icon_technical">
+        <value>Technical</value>
+    </key>
+    <key name="icon_iso">
+        <value>Iso</value>
+    </key>
+    <key name="add_item_page_title">
+        <value>Add item</value>
+    </key>
+    <key name="add_category_page_title">
+        <value>Add category</value>
+    </key>
+    <key name="edit_item_page_title">
+        <value>Edit item</value>
+    </key>
+    <key name="edit_category_page_title">
+        <value>Edit category</value>
+    </key>
+    <key name="security_header">
+        <value>
+            Security requirements
+        </value>
+    </key>
+    <key name="privacy_header">
+        <value>
+            Privacy requirements
+        </value>
+    </key>
+    <key name="country_header">
+        <value>
+            Country requirements
+        </value>
+    </key>
+    <key name="numberingLabel">
+        <value>
+            Requirement {$value}:
+        </value>
+    </key>
+    <key name="filer_by_category">
+        <value>
+            Categories
+        </value>
+    </key>
+    <key name="filer_by_tag">
+        <value>
+            Filer by tag
+        </value>
+    </key>
+    <key name="numberingRuleLabel">
+        <value>
+            Requirement {$value}:
+        </value>
+    </key>
+    <key name="empty_tag_label">
+        <value>
+            Without tag
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            Rules plugin settings
+        </value>
+    </key>
+
+    <key name="admin_page_title">
+        <value>
+            Rules plugin settings
+        </value>
+    </key>
+
+    <key name="guidelineFieldLabel">
+        <value>
+            Guideline text
+        </value>
+    </key>
+	<key name="frmrules_sitemap">
+        <value>
+            Rules
+        </value>
+    </key>
+</prefix>

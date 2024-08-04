@@ -1,0 +1,29 @@
+<div class="ow_lp_avatars">
+    {foreach from=$userIdList item='id'}
+        <div style="display: inline-block;" {if isset($data[$id].imageInfo) && $data[$id].imageInfo.empty} class="colorful_avatar_{$data[$id].imageInfo.digit}" {/if}>
+        {decorator name="avatar_item" data=$data[$id]}
+        </div>
+    {foreachelse}
+        <div class="ow_nocontent">{text key='groups+user_list_widget_empty'}</div>
+    {/foreach}
+    <p>
+         {text key='groups+user_count_group_widget'}: {$userCount}
+    </p>
+</div>
+
+<ul class="ow_box_toolbar ow_remark ow_bl">
+    {if isset($inviteUser)}
+    <li id="GROUP_Users_Invite" class="group_details_invite_btn_label">
+        <a class="privacy_label" href="javascript://">
+            {text key="groups+widget_invite_button_title"}
+        </a>
+    </li>
+    {/if}
+    {if isset($groupUsersAll)}
+    <li>
+        <a href="{$groupUsersAll}">
+            {text key="groups+widget_users_view_all"}
+        </a>
+    </li>
+    {/if}
+</ul>

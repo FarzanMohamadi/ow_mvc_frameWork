@@ -1,0 +1,27 @@
+<div style="direction: ltr">
+<section class="frmslideshow_regular slider">
+    {foreach from=$sectionGroupList item='section'}
+        {foreach from=$section.groups item='group'}
+        <div class="frmss_regular_item owm_box" >
+            <div class="owm_box_cap">
+                <a href="{$section.sectionUrl}">{$section.sectionName}</a>
+                <a href="{$group.groupUrl}">{$group.name}</a>
+            </div>
+            <div class="owm_box_body">{$group.description}</div>
+            {if !empty($group.lastReply)}
+            <div class="owm_box_bottom">
+                <span>{text key='forum+last_reply'} {text key='forum+by'}
+                    <a href="{$group.lastReply.postUrl}">{$displayNames[$group.lastReply.userId]}</a>
+                </span>
+                <div class="frmss_date">{format_date timestamp=$group.lastReply.createStamp}</div>
+            </div>
+            {/if}
+        </div>
+        {foreachelse}
+        {text key='base+empty_list'}
+        {/foreach}
+    {foreachelse}
+    {text key='base+empty_list'}
+    {/foreach}
+</section>
+</div>

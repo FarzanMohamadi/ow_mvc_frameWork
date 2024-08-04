@@ -1,0 +1,56 @@
+<style>
+    #cropContainerHeader {
+        width: 200px;
+        height: 150px;
+        position: relative; /* or fixed or absolute */
+    }
+
+</style>
+
+
+<div class="parent_cover">
+    <div class="page-wrapper">
+        <div class="timeline-header-wrapper">
+
+            <div class="cover-container">
+                <div class="cover-wrapper">
+                    <img src="{$user_cropped_cover_path}" alt="crop" />
+                    <div class="cover-progress"></div>
+                </div>
+
+                {if $owner and $allow_reposition}
+                <div class="cover-resize-wrapper">
+                    <img src="{$user_original_cover_path}" alt="full" />
+                    <div class="drag-div" align="center">{text key="coverphoto+drag_to_reposition_label"}</div>
+                    <div class="cover-progress"></div>
+                </div>
+
+                <div class="timeline-name-wrapper">
+                </div>
+                {/if}
+
+            </div>
+        </div>
+    </div>
+</div>
+
+{if $owner}
+<div class="coverphoto-buttons">
+    {if $allow_reposition}
+    <div class=" timeline-buttons cover-resize-buttons">
+        <a class="ow_lbutton" onclick="saveReposition();">{text key="coverphoto+save_position_label"}</a>
+        <a class="ow_lbutton" onclick="cancelReposition();">{text key="coverphoto+cancel_position_label"}</a>
+        <form class="cover-position-form hidden" method="post">
+            <input class="cover-position" name="pos" value="0" type="hidden">
+            <input class="cover-photo-height" name="cover_photo_height" value="0" type="hidden">
+        </form>
+    </div>
+    {/if}
+    <div class="timeline-buttons default-buttons">
+        {if $allow_reposition}
+        <a class="ow_lbutton" onclick="repositionCover();">{text key="coverphoto+reposition_label"}</a>
+        {/if}
+        <a href="javascript://" class="ow_lbutton" id="cover_edit_for_select_float">{text key='coverphoto+edit_for_select_cover'}</a>
+    </div>
+</div>
+{/if}

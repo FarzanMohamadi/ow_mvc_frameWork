@@ -1,0 +1,44 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+
+<table class="ow_table_1">
+    <tr class="ow_tr_first">
+        <th colspan="3" class="ow_center"><h2>{text key="frmimport+import_users_header"}</h2></th>
+    </tr>
+    <tr class="ow_tr_first">
+        <th colspan="3" class="ow_center">{text key="frmimport+import_users_desc"}</th>
+    </tr>
+</table>
+
+{if isset($importYahooContactsUrl)}
+<div class="import_users ow_column">
+    <div class="import_image">
+        <img class="yahoo_icon" src="{$importYahooContactsImageUrl}"/>
+    </div>
+    <div>
+        <a href="{$importYahooContactsUrl}">{text key="frmimport+yahoo_import_button"}</a>
+    </div>
+</div>
+{/if}
+
+{if isset($importGoogleContactsUrl)}
+<div class="import_users ow_column">
+    <div class="import_image">
+        <img class="google_icon" src="{$importGoogleContactsImageUrl}"/>
+    </div>
+    <div>
+        <a href="{$importGoogleContactsUrl}">{text key="frmimport+google_import_button"}</a>
+    </div>
+</div>
+{/if}
+
+{if !$one_account_exist}
+{text key="frmimport+no_account_exist"}
+{/if}

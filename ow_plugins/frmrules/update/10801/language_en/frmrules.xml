@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrules" label="frmrules" language_tag="en" language_label="English">
+    <key name="rules_mobile">
+        <value>Rules</value>
+    </key>
+<key name="frmrules_sitemap"><value>Rules</value></key>
+</prefix>

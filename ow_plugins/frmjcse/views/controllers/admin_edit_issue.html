@@ -1,0 +1,52 @@
+{style}{literal}
+    #admin-btn:link, #admin-btn:visited  {
+        background-color: dodgerblue;
+        color: white;
+        padding: 14px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px;
+        margin: 10px;
+    }
+    #admin-btn:hover, #admin-btn:active {
+        background-color: deepskyblue;
+    }
+{/literal}{/style}
+
+<a id="admin-btn" href="{$redirectUrl}">{text key='frmjcse+back'}</a> <br />
+
+{form name='edit_issue'}
+<table class="ow_table_1 ow_form ow_automargin" style="min-width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='title'}</td>
+        <td class="ow_value">{input name='title'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='volume'}</td>
+        <td class="ow_value">{input name='volume'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='no'}</td>
+        <td class="ow_value">{input name='no'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='posterfile'}</td>
+        <td class="ow_value">
+            {label name='change_posterfile'}{input name='change_posterfile'}
+            <br/>
+            {input name='posterfile'}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='file'}</td>
+        <td class="ow_value">
+            {label name='change_file'}{input name='change_file'}
+            <br/>
+            {input name='file'}</td>
+    </tr>
+
+    <tr>
+        <td class="ow_center" colspan="2">{submit name='edit_issue' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

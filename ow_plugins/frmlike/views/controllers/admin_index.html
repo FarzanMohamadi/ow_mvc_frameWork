@@ -1,0 +1,34 @@
+
+
+{form name='dislikeActivateForm'}
+<table class="ow_table_1 ow_automargin">
+    <tr>
+        <td>
+            {input name='dislikePostActivate'}{label name='dislikePostActivate'}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {input name='dislikeActivate'}{label name='dislikeActivate'}
+        </td>
+    </tr>
+</table>
+<div class="Button">
+    {submit name='dislikeActivateFormSubmit' class='ow_button ow_ic_save'}
+</div>
+{/form}
+
+{if $newsfeedLikeCount >= 0 }
+<table class="ow_table_1 ow_form ow_automargin" style="width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_value">{$mergeLikeTablesMessage}</td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">
+            {form name='mergeLikeTablesForm'}
+            {submit name='save' class='ow_button ow_ic_save'}
+            {/form}
+        </td>
+    </tr>
+</table>
+{/if}

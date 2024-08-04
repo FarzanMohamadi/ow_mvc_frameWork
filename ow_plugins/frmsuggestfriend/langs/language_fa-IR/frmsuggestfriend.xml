@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsuggestfriend" label="frmsuggestfriend" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            پیشنهاد دوست
+        </value>
+    </key>
+    <key name="empty_list">
+        <value>
+            شخصی برای افزودن به دوستان وجود ندارد.
+        </value>
+    </key>
+</prefix>

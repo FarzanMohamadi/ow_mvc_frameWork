@@ -1,0 +1,55 @@
+{if $isMobile==false}
+<div class="clearfix ow_frmtechnology">
+        {if !empty($no_technology) }
+        <div class="ow_nocontent">{text key="frmtechnology+no_technology_label"}</div>
+        {else}
+        <div id="results">
+            {foreach from=$technologies key='key' item='technology'}
+            <!--{decorator name='ipc' addClass='ow_smallmargin' data=$technology infoString="<a href=\"`$technology.url`\">`$technology.title`</a>"}-->
+            <div>
+                <a href="{$technology.url}">
+                <span class="image">
+                    <img width="300" height="300" src="{$technology.imageSrc}">
+                </span>
+                    <span class="search-content">
+                    <h3>{$technology.title|truncate:20}</h3>
+                    <p>{$technology.content|truncate:300}</p>
+                </span>
+                </a>
+            </div>
+            {/foreach}
+        </div>
+        <br />
+        {$paging}
+        {/if}
+
+{else}
+
+<div class="clearfix ow_frmtechnology">
+    <div class="ow_automargin ow_superwide">
+        {if !empty($no_technology) }
+        <div class="ow_nocontent">{text key="frmtechnology+no_technology_label"}</div>
+        {else}
+        <div id="results">
+            {foreach from=$technologies key='key' item='technology'}
+            <!--{decorator name='ipc' addClass='ow_smallmargin' data=$technology infoString="<a href=\"`$technology.url`\">`$technology.title`</a>"}-->
+            <article>
+                <a href="{$technology.url}">
+                <span class="image">
+                    <img width="300" height="300" src="{$technology.imageSrc}">
+                </span>
+                    <span class="search-content">
+                    <h3>{$technology.title}</h3>
+                    <p>{$technology.content}</p>
+                </span>
+                </a>
+            </article>
+            {/foreach}
+        </div>
+        <br />
+        {$paging}
+        {/if}
+    </div>
+</div>
+
+{/if}

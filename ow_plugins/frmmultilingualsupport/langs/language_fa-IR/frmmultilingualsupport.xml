@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmultilingualsupport" label="frmmultilingualsupport" language_tag="fa-IR" language_label="فارسی">
+	    <key name="type_in_english">
+        <value>به انگلیسی</value>
+    </key>
+	    <key name="type_in_persian">
+        <value>به فارسی: </value>
+    </key>
+	<key name="fa_custom_html_widget_title_label">
+        <value>عنوان به فارسی: </value>
+    </key>
+	<key name="en_custom_html_widget_title_label">
+        <value>عنوان به انگلیسی:  </value>
+    </key>
+	<key name="fa_custom_html_widget_content_label">
+        <value>محتوا به فارسی:  </value>
+    </key>
+	<key name="en_custom_html_widget_content_label">
+        <value>محتوا به انگلیسی:  </value>
+    </key>
+	
+	<key name="language_changed_success">
+        <value> زبان سامانه تغییر یافت </value>
+    </key>
+	<key name="select_language">
+        <value>انتخاب زبان سامانه: </value>
+    </key>
+	<key name="save">
+        <value>ذخیره  </value>
+    </key>
+	<key name="button_select_lang">
+        <value>انتخاب زبان</value>
+    </key>
+</prefix>

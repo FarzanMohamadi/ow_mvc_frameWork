@@ -1,0 +1,37 @@
+{form name='edit-item'}
+<table class="ow_table_1 ow_form">
+    <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+        <td style="width: 50%">
+            {label name='chatId'}
+        </td>
+        <td style="direction: ltr;">
+            {input name='chatId'}<br />
+            {error name='chatId'}
+        </td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+        <td style="width: 50%">
+            {label name='title' }
+        </td>
+        <td style="direction: ltr;">
+            {input name='title'}<br />
+            {error name='title'}
+        </td>
+    </tr>
+    <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+        <td style="width: 50%">
+            {label name='desc' }
+        </td>
+        <td>
+            {input name='desc'}<br />
+            {error name='desc'}
+        </td>
+    </tr>
+</table>
+<div class="clearfix ow_submit ow_stdmargin">
+    <div class="ow_right">
+        {submit name="submit"}
+    </div>
+</div>
+{input name='id'}
+{/form}

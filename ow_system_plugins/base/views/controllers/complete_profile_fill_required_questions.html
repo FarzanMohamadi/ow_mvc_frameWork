@@ -1,0 +1,73 @@
+
+{block_decorator name="box" type="empty" addClass="ow_superwide ow_automargin"}
+
+    {block_decorator name="box_cap" type="empty" addClass="ow_center" style="padding:15px;" langLabel="base+required_profile_questions"}
+    {/block_decorator}
+
+    {form name=requiredQuestionsForm}
+        <table class="ow_table_1 ow_form ow_stdmargin">
+            {foreach from=$questionArray key='section' item='questions' name='question'}
+
+                {if !empty($section) }
+                    <tr class="ow_tr_first">
+                        <th class="ow_box_cap ow_heading">
+                            <h2>{text key="base+questions_section_`$section`_label"}</h2>
+                            <div class="ow_name_search_label"></div>
+                        </th>
+                    </tr>
+                {/if}
+
+                {foreach from=$questions item='question' name='question'}
+                    {cycle assign='alt' name=$section values='ow_alt1,ow_alt2'}
+                    <tr class=" {if $smarty.foreach.question.last}ow_tr_last{/if} ow_type_{$question.type}">
+                        <td class="{$alt} ow_value ow_label ow_presentation_{$question.presentation}">
+                            {if $question.type == "text" }
+                                {if $question.presentation == "textarea" }
+                                    {label name=$question.name}
+                                    <br>
+                                    {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} onkeyup="ShowLabelQuestion(this)"}
+                                    <br>
+                                {else}
+                                    {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} }
+                                    </br>
+                                    {label name=$question.name}
+                                {/if}
+                            <div class="ow_desc">
+                                {desc name=$question.name}
+                            </div>
+                            <div class="ow_separation"></div>
+                                {error name=$question.name}
+                            {else}
+                            <div class="ow_label_question">
+                                {label name=$question.name}
+                                <br>
+                                {input name=$question.name}
+                                {if $question.type == "boolean" }
+                                {label name=$question.name}
+                                {/if}
+                                <div class="ow_desc">
+                                    {desc name=$question.name}
+                                </div>
+                                <div class="ow_separation"></div>
+                                {error name=$question.name}
+                            </div>
+                            {/if}
+                        </td>
+                    </tr>
+                {/foreach}
+
+                {if !empty($section)}
+                    {if !$smarty.foreach.question.first}
+                        <tr class="ow_tr_delimiter"><td></td></tr>
+                    {/if}
+                {/if}
+
+            {/foreach}
+        </table>
+        <div class="clearfix ow_stdmargin">
+           <div class="ow_left">
+               {submit name='submit'}
+           </div>
+        </div>
+    {/form}
+{/block_decorator}

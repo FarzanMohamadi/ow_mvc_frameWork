@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="en" language_label="English">
+    <key name="set_privacy_notification">
+        <value>
+            complete &lt;a href="{$url}"&gt;your profile privacy&lt;/a&gt; now
+        </value>
+    </key>
+    <key name="email_notification_alerts_label">
+        <value>
+            security essentials
+        </value>
+    </key>
+    <key name="email_notifications_alerts">
+        <value>
+            Security Alerts Notifications
+        </value>
+    </key>
+    <key name="privacy_not_set_message">
+        <value>
+            Your Privacy setting has not been saved yet.
+        </value>
+    </key>
+</prefix>

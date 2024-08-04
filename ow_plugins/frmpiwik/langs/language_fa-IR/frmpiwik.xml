@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmpiwik" label="frmpiwik" language_tag="fa-IR" language_label="فارسی">
+
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه piwik
+        </value>
+    </key>
+    <key name="siteId">
+        <value>
+            آی‌دی سایت
+        </value>
+    </key>
+    <key name="admin_save_settings">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+</prefix>

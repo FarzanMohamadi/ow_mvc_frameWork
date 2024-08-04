@@ -1,0 +1,80 @@
+.lang_placeholder {
+    border: 1px dashed grey;
+}
+
+tr.lang_placeholder td{
+    border: 1px dashed grey;
+}
+
+#s2 a.deact{
+    display: none;
+}
+
+#s1 a.act{
+    display: none;
+}
+
+.draggable-lang-item{
+    cursor: move;
+}
+
+.frmterms h2 {
+    color: inherit;
+}
+
+.current_version{
+    margin-left: 10px;
+    margin-right:10px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+img.notification_item_icon {
+    height: 15px;
+}
+
+img.email_item_icon {
+    height: 10px;
+}
+
+table.ow_table_1 ul {
+    list-style: circle;
+    padding-right: 30px;
+}
+
+.owm_terms_title,
+ul.owm_content.owm_terms_title.clearfix {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.owm_terms_headers tbody,
+.owm_terms_headers table {
+    display: inline;
+    font-size: 14px;
+}
+.owm_content.owm_terms_headers {
+    display: inherit;
+    text-align: center;
+}
+
+.owm_mobile_terms td {
+    text-align: justify !important;
+}
+
+td.owm_terms_date {
+    color: #ababab;
+    font-size: 10px;
+}
+
+.frmterms .owm_table_1 tr:nth-child(even) {
+    background-color: #f7f7f7 !important;
+}
+
+.owm_terms_titles {
+    font-weight: bold;
+}

@@ -1,0 +1,4 @@
+<?php
+/**
+ * FRM Static Updater
+ */

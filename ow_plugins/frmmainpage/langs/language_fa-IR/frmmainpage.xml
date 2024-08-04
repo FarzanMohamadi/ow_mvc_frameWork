@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmainpage" label="frmmainpage" language_tag="fa-IR" language_label="فارسی">
+    <key name="mobile_main_menu_list">
+        <value>
+            صفحه اصلی
+        </value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه صفحه اصلی موبایل
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="chat">
+        <value>
+            گپ‌زدن
+        </value>
+    </key>
+    <key name="mail">
+        <value>
+            پیام‌های خصوصی
+        </value>
+    </key>
+    <key name="find_friends">
+        <value>
+            یافتن دوستان جدید
+        </value>
+    </key>
+    <key name="orders">
+        <value>
+            ترتیب منوها
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            خالی
+        </value>
+    </key>
+    <key name="search">
+        <value>
+            جستجو
+        </value>
+    </key>
+    <key name="username_or_realname">
+        <value>
+          نام کاربری / نام واقعی
+        </value>
+    </key>
+    <key name="public_photos">
+        <value>
+            تصاویر عمومی
+        </value>
+    </key>
+    <key name="chat_groups_console_title">
+        <value>
+           گفتگوها
+        </value>
+    </key>
+    <key name="distinct_chat__chanel_groups_console_title">
+        <value>
+            گفتگوها
+        </value>
+    </key>
+    <key name="chatGroups">
+        <value>
+            گفتگوها
+        </value>
+    </key>
+    <key name="distinctChatChanelGroup">
+        <value>
+           گفتگوها شامل بخش های اختصاصی برای گروه ها کانال ها و پیام ها
+        </value>
+    </key>
+    <key name="two_characters_for_search">
+        <value>
+            لطفا عبارت مورد نظر خود را برای جستجو وارد کنید. حداقل دو حرف برای شروع جستجو لازم است
+        </value>
+    </key>
+    <key name="no_result">
+        <value>
+            نتیجه‌ای یافت نشد
+        </value>
+    </key>
+    <key name="set_as_default">
+        <value>
+            انتخاب به عنوان پیش فرض
+        </value>
+    </key>
+    <key name="list_type_all_label">
+        <value>
+            گفتگوها
+        </value>
+    </key>
+    <key name="list_type_group_label">
+        <value>
+            گروه‌ها
+        </value>
+    </key>
+    <key name="list_type_chanel_label">
+        <value>
+            کانال‌ها
+        </value>
+    </key>
+    <key name="list_type_chat_label">
+        <value>
+            پیام‌ها
+        </value>
+    </key>
+    <key name="chanel_page_heading">
+        <value>
+            کانال‌های من
+        </value>
+    </key>
+    <key name="all_page_heading">
+        <value>
+           گفتگوهای من
+        </value>
+    </key>
+</prefix>

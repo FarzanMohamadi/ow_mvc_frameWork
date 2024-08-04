@@ -1,0 +1,64 @@
+<br/>
+<a href="{$returnToCompetitionsUrl}">{text key="frmcompetition+return"}</a>
+<br/>
+<br/>
+<div class="ow_left place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name="competitionUser"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmcompetition+users_values_form"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='username'}
+                </td>
+                <td class="ow_value">
+                    {input name='username'}
+                    {error name='username'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {label name='value'}
+                </td>
+                <td class="ow_value">
+                    {input name='value'}
+                    {error name='value'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="3">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>
+
+<div class="ow_right place_section left_section ow_column">
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tr class="ow_tr_first">
+            <th colspan="4" class="ow_center">{text key="frmcompetition+competition_users_values"}</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>{text key="base+questions_question_username_label"}</th>
+            <th>{text key="base+questions_question_realname_label"}</th>
+            <th>{text key="frmcompetition+value"}</th>
+        </tr>
+        <tbody>
+        {foreach from=$competitionUsers item="competitionUser"}
+        <tr class="ow_high1 draggable-lang-item ow_tr_last">
+            <td class="category_feature_image">{if isset($competitionUser.image)}<img width="50px" src="{$competitionUser.image}">{/if}</td>
+            <td>{$competitionUser.username}</td>
+            <td>{$competitionUser.name}</td>
+            <td>{$competitionUser.value}</td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>

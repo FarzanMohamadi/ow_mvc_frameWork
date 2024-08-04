@@ -1,0 +1,153 @@
+/**
+ * 
+ * All rights reserved.
+ */
+
+/**
+ *
+ *
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.frmguidedtour
+ * @since 1.0
+ */
+
+.popover-navigation:lang(fa-IR) {
+   float: left;
+}
+
+.popover[class*="tour-"] .popover-navigation *[data-role="end"]:lang(fa-IR) {
+   float: initial;
+}
+
+.btn {
+   border: none !important;
+   padding: 3px 5px !important;
+   font-size: 100% !important;
+   line-height: normal !important;
+   margin-right: 5px;
+   min-width: 60px;
+   margin-bottom: 5px;
+}
+
+.tour-step-backdrop.tour-tour-element, .tour-step-backdrop.tour-tour-element a {
+   color: black !important;
+}
+
+.base_index_page .ow_page_container .ow_page .ow_content .ow_dragndrop_sections .ow_box_empty {
+   z-index: initial;
+}
+
+.tour-tour .popover-content {
+   font-size: 84%;
+   text-align: justify;
+   line-height: normal;
+}
+
+button.btn.btn-warning.btn-tour-not-now,
+button.btn.btn-warning.btn-tour-end,
+button.btn.btn-info.btn-tour-next,
+button.btn.btn-info.btn-tour-prev,
+button.btn.btn-warning.btn-tour-next-page{
+   font-size: 80% !important;
+   display: inline-block;
+   font-family: inherit;
+}
+
+button.btn.btn-warning.btn-tour-not-now,
+button.btn.btn-warning.btn-tour-end {
+   margin: 5px;
+   background-color: #FF5722;
+}
+
+button.btn.btn-warning.btn-tour-not-now:hover,
+button.btn.btn-warning.btn-tour-end:hover {
+   background-color: red;
+}
+
+button.btn.btn-warning.btn-tour-next-page,
+button.btn.btn-warning.btn-tour-end{
+   width: calc(100% - 10px);
+   margin: 5px;
+}
+
+button.btn.btn-info.disabled {
+   display: none;
+}
+
+.popover-navigation {
+   text-align: center;
+}
+
+.tour-step-background {
+   background: transparent;
+}
+
+div.tour-tour-element span,
+li.tour-tour-element span,
+ul.tour-tour-element span{
+   color: white !important;
+}
+
+div.tour-tour-element table span,
+div.tour-tour-element .ow_box_menu span{
+   color: #000 !important;
+}
+
+.btn-tour-not-now,
+.btn-tour-next,
+.btn-tour-prev,
+.btn-tour-end,
+.btn-tour-next-page{
+   background-repeat: no-repeat;
+}
+
+.btn-tour-not-now {
+   background-image: url(../img/ic_delete.svg);
+   width: 20px;
+   height: 20px;
+   min-width: 20px;
+   background-color: transparent !important;
+}
+
+.btn-tour-next {
+   background-image: url(../img/ic_left_arrow.svg);
+   padding-left: 30px !important;
+   background-position: top 4px left 5px;
+}
+
+.btn-tour-prev{
+   background-image: url(../img/ic_right_arrow.svg);
+   padding-right: 30px !important;
+   background-position: top 4px right 5px;
+}
+
+.btn-tour-end{
+   background-image: url(../img/ignore.svg);
+   padding-right: 30px !important;
+   background-position: top 2px right 5px;
+   background-size: 22px;
+}
+
+.btn-tour-next-page{
+   background-image: url(../img/next_page.svg);
+   padding-right: 30px !important;
+   background-position: top 2px right 5px;
+   background-size: 22px;
+}
+
+.popover-title {
+   color: #063634;
+   background-color: transparent;
+   border-color: #50c3bf;
+   padding-top: 0px;
+}
+
+.popover {
+   border: 3px solid gray;
+   border-radius: 0px;
+}
+
+ul.ow_content_menu.tour-step-backdrop.tour-tour-element.tour-tour-1-element,
+.tour-step-backdrop.tour-tour-element.tour-tour-2-element .ow_content_menu{
+   border: none
+}

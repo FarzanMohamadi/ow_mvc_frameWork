@@ -1,0 +1,148 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+{script}
+{literal}
+
+$(document).ready( function() {
+$('#s1').sortable({
+items: 'tr.draggable-lang-item',
+helper: 'clone',
+placeholder: 'lang_placeholder',
+start: function (event, ui) {
+$(ui.placeholder).append('<td colspan="3"></td>');
+$(ui.placeholder).css('backgroundColor', 'rgb(220,220,220)');
+},
+
+stop: function (event, ui) {
+
+switch (this) {
+case $('#s1')[0]:
+
+$('tr.draggable-lang-item:odd', this).each(function () {
+
+if (!$(this).hasClass('ow_even')) $(this).addClass('ow_even');
+});
+
+
+$('tr.draggable-lang-item:even', this).each(function () {
+if ($(this).hasClass('ow_even')) $(this).removeClass('ow_even');
+});
+break;
+}
+},
+
+receive: function (event, ui) {
+switch (this) {
+case $('#s1')[0] :
+$('tr.draggable-lang-item', this).each(function () {
+$('td:nth(1) a.deact', this).show();
+$('td:nth(1) a.act', this).hide();
+$('td:nth(1) a.del', this).hide();
+
+if ($(this).hasClass('ow_high2')) {
+$(this).removeClass('ow_high2');
+}
+});
+
+if ($('tr.draggable-lang-item', this).length == 0) {
+$.alert('{text key="admin+msg_one_active_constraint"}');
+
+$(this).sortable('cancel');
+$('#s1 tr.empty').remove();
+break;
+}
+
+$('tr.draggable-lang-item:odd', this).each(function () {
+if (!$(this).hasClass('ow_even')) $(this).addClass('ow_even');
+});
+
+
+$('tr.draggable-lang-item:even', this).each(function () {
+if ($(this).hasClass('ow_even')) $(this).removeClass('ow_even');
+});
+
+break;
+}
+},
+
+update: function (event, ui) {
+if (ui.sender) {
+if ($('tr', ui.sender[0]).length == 0) $(ui.sender[0]).append('<tr class="empty"><td colspan="3">{/literal}{text key="frmupdateserver+empty_row_label"}{literal}</td></tr>');
+return;
+}
+
+if ($('#s1 tr.empty').length == 1 && $('#s1 tr.draggable-lang-item').length > 0)
+$('#s1 tr.empty').remove();
+
+var set = {};
+
+$('tr.draggable-lang-item', '#s1').each(function (i) {
+set['items[' + i + ']'] = parseInt($('input:hidden', this).attr('value'));
+});
+
+$('td:nth(0) span.ow_mild_green', $('tr.draggable-lang-item', '#s1')).remove();
+$.ajax({
+type: "POST",
+url: '{/literal}{url_for for="frmupdateserver_CTRL_Admin:ajaxSaveItemsOrder"}{literal}',
+data: set
+});
+
+},
+
+connectWith: '#s1'
+}).each(function () {
+$('tr.draggable-lang-item', this).hover(
+function () {
+$('td:nth-child(3) div span', this).show()
+},
+function () {
+$('td:nth-child(3) div span', this).hide()
+}
+);
+
+if ($('tr.draggable-lang-item', this).length == 0)
+$(this).append('<tr class="empty"><td colspan="3">{/literal}{text key="frmupdateserver+empty_row_label"}{literal}</td></tr>');
+});
+});
+
+{/literal}
+{/script}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+
+<div class="ow_right place_section left_section ow_column">
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody id="s1" class="s">
+        {if isset($typeLabel)}
+        <tr>
+            <th colspan="3">
+                {$typeLabel}
+            </th>
+        </tr>
+        {/if}
+        {foreach from=$items item="item"}
+        <tr class="ow_high1 draggable-lang-item ow_tr_last">
+            <td><img class="plugin-img-item" src="{$item.image}" /></td>
+            <td><input type="hidden" value="{$item.id}">{$item.name}</td>
+            <td class="features">
+                <a class="ow_lbutton ow_red" href="{$item.deleteUrl}" style="display: inline-block;">{text key="frmupdateserver+delete"}</a>
+                <a class="ow_lbutton ow_green" href="{$item.editUrl}" style="display: inline-block;">{text key="frmupdateserver+edit"}</a>
+            </td>
+        </tr>
+        {/foreach}
+        </tbody>
+    </table>
+</div>

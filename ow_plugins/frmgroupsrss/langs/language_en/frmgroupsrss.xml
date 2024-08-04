@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmgroupsrss" label="frmgroupsrss" language_tag="en" language_label="English">
+    <key name="admin_setting_title">
+        <value>
+            Groups RSS Plugin Setting
+        </value>
+    </key>
+    <key name="admin_setting_heading">
+        <value>
+            Groups RSS Plugin Setting
+        </value>
+    </key>
+    <key name="admin_groups_rss_settings_heading">
+        <value>
+            Groups RSS Plugin Setting
+        </value>
+    </key>
+    <key name="admin_groups_rss_settings_update_interval">
+        <value>
+            Update interval (minutes)
+        </value>
+    </key>
+    <key name="admin_groups_rss_settings_feeds_count">
+        <value>
+            Feeds count
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            Save
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            Settings
+        </value>
+    </key>
+    <key name="settings_success_msg">
+        <value>
+            Settings successfully saved
+        </value>
+    </key>
+    <key name="rss_link_field_label">
+        <value>
+            RSS links
+        </value>
+    </key>
+    <key name="rss_link_field_invitataion">
+        <value>
+            Enter RSS links here
+        </value>
+    </key>
+    <key name="maximum_rss_count_exceeds">
+        <value>
+            Max count for rss links: {$max_count}
+        </value>
+    </key>
+    <key name="invalid_link">
+        <value>
+            Link(s) are invalid
+        </value>
+    </key>
+    <key name="auth_frmgroupsrss_label">
+        <value>
+            frmgroupsrss
+        </value>
+    </key>
+    <key name="auth_action_label_add">
+        <value>
+            managing rss for groups
+        </value>
+    </key>
+    <key name="plugin_guide">
+        <value>
+            In order to use this plugin, you should give user permission in moderators section then add rss link to group add or edit form.
+        </value>
+    </key>
+</prefix>

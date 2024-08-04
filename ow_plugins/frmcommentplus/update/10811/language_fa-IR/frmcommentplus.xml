@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcommentplus" label="frmcommentplus" language_tag="fa-IR" language_label="فارسی">
+	<key name="comment_notification_string">
+	<value>
+	&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt;  نیز روی &lt;a href="{$contextUrl}"&gt; این محتوا &lt;/a&gt; تولید شده توسط &lt;a href="{$ownerUrl}"&gt;{$ownerName}&lt;/a&gt; نظر داد
+	</value>
+	</key>
+	<key name="comment_notification_string_for_confession">
+	<value>
+	&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; نیز روی مطلب شخص دیگری نظر داد
+	</value>
+	</key>
+	<key name="comment_news_string">
+		<value>
+			&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt;  نیز روی &lt;a href="{$contextUrl}"&gt; این خبر &lt;/a&gt; نظر داد
+		</value>
+	</key>
+</prefix>

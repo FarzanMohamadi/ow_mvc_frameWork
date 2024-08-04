@@ -1,0 +1,72 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {if !empty($subsections) }
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$subsections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {/if}
+</div>
+
+{if $noGroup}
+{form name="mainForm"}
+<table class="ow_table_1 ow_form" style="margin: 0">
+    <tbody>
+    <tr class="ow_tr_first ow_center">
+        <td class="ow_label">
+            {label name='gId'}
+        </td>
+        <td class="ow_value">
+            {input name='gId'}{error name="gId"}
+        </td>
+    </tr>
+    <tr class="ow_alt1 ow_center">
+        <td class="ow_label">
+            {label name='depth'}
+        </td>
+        <td class="ow_value">
+            {input name='depth'}{error name="depth"}
+        </td>
+    </tr>
+    <tr class="ow_tr_last ow_center">
+        <td></td>
+        <td>
+            {submit name="submit" langLabel='frmgraph+display' }
+        </td>
+    </tr>
+    </tbody>
+</table>
+{/form}
+{else}
+{$groupComponent}
+{if isset($lastCalculationDate)}
+    <p class="graphy_last_update_time">{text key='frmgraph+last_calculation_date'}: {$lastCalculationDate}</p>
+{/if}
+<div>
+    <div id="legend" class="ow_box clearfix">
+        {foreach from=$legendItems item='item'}
+        <div class="legend-{$item.type} legend-{$item.color}">
+            {if $item.type='node'}
+            <span style="color:{$item.color};font-size: 24px;padding: 0 10px;">•</span>
+            {/if}
+            <span style="padding: 0 8px;">{$item.label}</span>
+        </div>
+        {/foreach}
+    </div>
+    <div id="network"></div>
+</div>
+{/if}

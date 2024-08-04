@@ -1,0 +1,120 @@
+.lang_placeholder {
+     border: 1px dashed grey;
+ }
+
+tr.lang_placeholder td {
+    border: 1px dashed grey;
+}
+
+#s1 td.features {
+    width: 110px;
+    max-width: 110px;
+}
+
+.question_value_features {
+    width: 110px;
+    max-width: 110px;
+}
+
+.category_feature_image {
+    width: 60px;
+    max-width: 60px;
+}
+
+#s1 a.act {
+    display: none;
+}
+
+.draggable-lang-item {
+    cursor: move;
+}
+
+.current_version {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.evaluation {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.evaluation_chart {
+    direction: ltr;
+    width: 100%;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+    border: solid 1px lightgray;
+}
+
+.evaluation_degree {
+    font-family: serif;
+    border: 1px solid black;
+    color: white;
+    padding: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+    font-size:40px;
+    direction: ltr !important;
+    text-align: center;
+}
+
+.p_degree{
+    font-size:40px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.evaluation_green{
+    background-color: #009900;
+}
+
+.evaluation_yellow{
+    background-color: #E0CD00;
+    color: black;
+}
+
+.evaluation_red{
+    background-color: #C00000;
+}
+
+.question_without_value{
+    color: red;
+}
+
+.ow_table_1.question_decription {
+    margin-bottom: 0px;
+}
+
+.evaluation_value li {
+    width: auto !important;
+    display: inline-block;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.evaluation_question_description{
+    text-align: justify;
+}
+
+.evaluation_value ul {
+    display: inline-block !important;
+}
+
+
+@media (max-width: 767px) {
+    g.highcharts-legend {
+        display: none;
+    }
+}
+
+@media (max-width: 335px) {
+    .evaluation_chart {
+        display: none;
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="en" language_label="English">
+    <key name="newsFeedShowDefault">
+        <value>
+            Show newsfeed activities as default
+        </value>
+    </key>
+</prefix>

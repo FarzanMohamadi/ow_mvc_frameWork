@@ -1,0 +1,56 @@
+<div class="ow_group_files_list ow_lp_avatars">
+    <ul class="ow_box_toolbar ow_remark ow_bl">
+        <li>
+            <a href="{$backUrl}">{text key="frmgroupsplus+back"}</a>
+        </li>
+        {if isset($showAdd) && $showAdd==true}
+        <li>
+            <a href="javascript:showUploadFileIntoGroupForm({$groupId})">
+                {text key="frmgroupsplus+add_file"}
+            </a>
+        </li>
+        {/if}
+        <li class="ow_group_files_list button">
+            <a id="original-search-group-files" href="{$search_url}" style="display: none"></a>
+            <a id="search-group-files_button"  href="javascript:searchGroupFiles();">{text key="frmgroupsplus+search_btn_label"}</a>
+        </li>
+        <input id="search-group-files" type="text" class="ow_group_files_list invitation" placeholder="{text key='frmgroupsplus+search_invitation'}" value="{if !empty($searchTitle)}{$searchTitle}{/if}" onkeyup="SearchGroupFilesByEnter()">
+    </ul>
+    <table class="ow_table_1 ow_form ow_stdmargin group_files">
+        <tr>
+            <th>{text key="frmgroupsplus+name"}</th>
+            <th>{text key="frmgroupsplus+by"}</th>
+            <th>{text key="frmgroupsplus+created_date"}</th>
+            <th></th>
+        </tr>
+        {foreach from=$fileList item='file' name='file'}
+        <tr class="ow_alt2 ow_tr_first">
+            <td class="file_name">
+                <a class="fileGroupImage" href="{$file.fileUrl}" target="_blank">
+                    <img src="{$file.iconUrl}" alt="{$file.fileName|escape}" title="{$file.fileName}" />
+                </a>
+                <a href="{$file.fileUrl}" target="_blank">{$file.truncatedFileName}  </a>
+            </td>
+            <td>
+                <a href="{$file.userUrl}">{$file.userName}</a>
+            </td>
+            <td>
+                {format_date timestamp=$file.createdDate}
+            </td>
+            {if isset($deleteUrls[$file.name])}
+            <td class="delete_file">
+                <a href="{$deleteUrls[$file.name]}" onclick="return confirm_redirect('{text key="frmgroupsplus+are_you_sure_delete_file"}','{$deleteUrls[$file.name]}');"><img src="{$deleteIconUrl}"/></a>
+            </td>
+            {else}
+            <td></td>
+            {/if}
+        </tr>
+        {/foreach}
+    </table>
+    {if isset($noFiles) && $noFiles==true}
+    <div class="ow_group_no_files ow_center">
+        <p>{text key='frmgroupsplus+file_list_widget_empty'}</p>
+    </div>
+    {/if}
+    {$paging}
+</div>

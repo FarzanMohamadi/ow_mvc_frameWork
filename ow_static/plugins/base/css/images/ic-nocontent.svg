@@ -1,0 +1,34 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet">
+ <defs>
+  <path id="egogKD3Fi" d="m99.11,10.11c-49.15,0 -89,39.85 -89,89c0,49.15 39.85,89 89,89c49.15,0 89,-39.85 89,-89c0,-49.15 -39.85,-89 -89,-89z"/>
+  <path id="arlkQhAek" d="m99.11,63.16l0,71.89"/>
+  <path id="brNdGOlRe" d="m99.11,92.69l0,12.83"/>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="202" width="202" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_24">
+   <g id="svg_3">
+    <use stroke="#a2acb3" transform="matrix(1.04494, 0, 0, 1.04494, -4.49439, -1.36446)" x="0.89063" y="-2" id="svg_4" fill-opacity="0" fill="#000000" xlink:href="#egogKD3Fi"/>
+    <g id="svg_5">
+     <use transform="matrix(1.04494, 0, 0, 1.04494, -4.49439, -1.36446)" x="0.89063" y="-2" id="svg_6" stroke-width="13.33" stroke="#a2acb3" fill-opacity="0" xlink:href="#egogKD3Fi"/>
+    </g>
+   </g>
+   <g id="svg_7">
+    <use stroke="#a2acb3" transform="matrix(1.04494, 0, 0, 1.04494, -4.49439, -1.36446)" x="0.89063" y="-14" id="svg_8" fill-opacity="0" fill="#000000" xlink:href="#arlkQhAek"/>
+    <g id="svg_9">
+     <use transform="matrix(1.04494, 0, 0, 1.04494, -4.49439, -1.36446)" x="0.89063" y="-14" id="svg_10" stroke-width="13.33" stroke="#a2acb3" fill-opacity="0" xlink:href="#arlkQhAek"/>
+    </g>
+   </g>
+   <g id="svg_11">
+    <use stroke="#a2acb3" transform="matrix(1.04494, 0, 0, 1.04494, -4.49439, -1.36446)" x="0.89063" y="43" id="svg_12" fill-opacity="0" fill="#000000" xlink:href="#brNdGOlRe"/>
+    <g id="svg_13">
+     <use transform="matrix(1.04494, 0, 0, 1.04494, -4.49439, -1.36446)" x="0.89063" y="43" id="svg_14" stroke-width="13.33" stroke="#a2acb3" fill-opacity="0" xlink:href="#brNdGOlRe"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

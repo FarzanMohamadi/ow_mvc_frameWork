@@ -1,0 +1,32 @@
+{*
+
+
+
+/**
+ *
+ *
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.photo
+ * @since 1.6.1
+ */
+ 
+*}
+
+<div id="photo_edit_form">
+    {form name='photo-edit-form'}
+        {label name='album'}
+        <div class="ow_suggest_field ow_smallmargin">
+            {input name='album'} {error name='album'}
+            {$albumNameList}
+        </div>
+        <div class="new-album" style="display: none">
+            {input name="album-name"}{error name="album-name"}
+            {input name="description"}
+            {if isset($statusPrivacy)}{label name="statusPrivacy"}{input name="statusPrivacy"}{/if}
+        </div>
+        <div class="ow_photo_upload_description">
+            {input name='photo-desc'}
+        </div>
+        <div class="clearfix"><div class="ow_right">{submit name='edit' class='ow_ic_save ow_positive'}</div></div>
+    {/form}
+</div>

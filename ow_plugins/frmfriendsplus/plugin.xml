@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>دوستان پلاس</name>
+	<key>frmfriendsplus</key>
+	
+        این افزونه ارتباط بین کاربران را مدیریت کرده و امکان ارتباط برخی نقش‎‌ها با تمامی افراد را فراهم می‌کند.
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10804</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>essential</item>
+        <item>published</item>
+    </category>
+    <prerequisite>
+        <item>friends</item>
+    </prerequisite>
+</plugin>

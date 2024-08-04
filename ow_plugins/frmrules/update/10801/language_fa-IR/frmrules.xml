@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrules" label="frmrules" language_tag="fa-IR" language_label="فارسی">
+    <key name="rules_mobile">
+        <value>توصیه به متولیان</value>
+    </key>
+<key name="frmrules_sitemap"><value>توصیه ها</value></key>
+</prefix>

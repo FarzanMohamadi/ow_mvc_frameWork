@@ -1,0 +1,60 @@
+{if ($canViewOverallReport)}
+<div class="ow_stdmargin">
+    {decorator name="button" class="ow_ic_right_arrow" langLabel="frmreport+back_to_overall_report" id="back-to-overall-report_btn"}
+</div>
+{/if}
+<div class="ow_stdmargin">
+    {$groupBriefInfo}
+</div>
+{form name='list_report'}
+<table class="ow_table_1 ow_form ow_automargin ow_superwide">
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='year'}</td>
+        <td class="ow_value">{input name='year'}{error name='year'}</td>
+        <td class="ow_desc">{text key="frmreport+year_should_be_complete"}</td>
+    </tr>
+    <tr class="ow_alt1">
+        <td class="ow_label">{label name='semester'}</td>
+        <td class="ow_value">{input name='semester'}{error name='semester'}</td>
+        <td class="ow_desc"></td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="3">{submit name='search' class='ow_button ow_ic_lens'}</td>
+    </tr>
+</table>
+{/form}
+<table class="ow_table_1 ow_automargin" style="width: 100%;">
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td>{text key="frmreport+form_label_year"}</td>
+        <td>{text key="frmreport+semseter"}</td>
+        <td>
+            {text key="frmreport+report_creator"}
+        </td>
+        <td>
+            {text key="frmreport+report_create_date"}
+        </td>
+        <td>
+            {text key="frmreport+report_editor"}
+        </td>
+        <td>
+            {text key="frmreport+report_edit_date"}
+        </td>
+    </tr>
+    {foreach from=$reports item='report'}
+    <tr class="{cycle values='ow_alt1,ow_alt2'}">
+        <td>
+            <a href="{$detailUrls[$report.id]}">
+                {$report.year}
+            </a>
+        </td>
+        <td>{$report.semester}</td>
+        <td>{$report.creator}</td>
+        <td>{$report.createDate}</td>
+        <td>{$report.editor}</td>
+        <td>{$report.editDate}</td>
+    </tr>
+    {/foreach}
+</table>
+<div class="ow_center">
+    {$paging}
+</div>

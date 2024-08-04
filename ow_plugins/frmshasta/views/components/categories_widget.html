@@ -1,0 +1,74 @@
+<div class="customize_category">
+    <a id="customize_file_categories" onclick="showCustomizeCategoryForm('{text key='frmshasta+customize_file_categories_floatbox_title'}')">
+        <button class="custom_big_button">
+            <span class="icon_setting">
+                    {text key='frmshasta+favorite_categories_setting'}
+            </span>
+        </button>
+    </a>
+</div>
+
+<div class="add_file">
+    <a href="javascript:showUploadFileForm()">
+        <button class="custom_big_button">
+            <span class="icon_add">
+                    {text key="frmshasta+add_file"}
+            </span>
+        </button>
+    </a>
+</div>
+
+{if isset($addCompany)}
+<div class="add_company">
+    <a href="javascript:showCompanyForm('')">
+        <button class="custom_big_button">
+            <span class="icon_add">
+                    {text key="frmshasta+add_company"}
+            </span>
+        </button>
+    </a>
+</div>
+{/if}
+
+{if isset($addCategory)}
+<div class="add_category">
+    <a onclick="showCategoryForm('','{text key="frmshasta+manage_category"}')">
+        <button class="custom_big_button">
+            <span class="icon_add">
+                    {text key="frmshasta+add_category"}
+            </span>
+        </button>
+    </a>
+</div>
+{/if}
+
+{if isset($customizeSpecialCategory)}
+<div class="customize_special_category">
+    <a onclick="showManageSpecialCategoryForm('{text key='frmshasta+customize_special_category'}')">
+        <button class="custom_big_button">
+            <span class="icon_setting">
+                    {text key="frmshasta+customize_special_category"}
+            </span>
+        </button>
+    </a>
+</div>
+{/if}
+
+{if isset($reportsUrl)}
+<div class="manager_reports">
+    <a target="_blank" href="{$reportsUrl}">
+        <button class="custom_big_button">
+            <span class="icon_report">
+                    {text key="frmshasta+managers_reports"}
+            </span>
+        </button>
+    </a>
+</div>
+{/if}
+
+
+<div class="categories_wrapper">
+    {foreach from=$categoryComponents item='categoryComponent'}
+    {${$categoryComponent}}
+    {/foreach}
+</div>

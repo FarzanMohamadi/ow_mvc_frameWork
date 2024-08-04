@@ -1,0 +1,20 @@
+<div class="ow_group_files_list ow_lp_avatars">
+    <ul class="ow_box_toolbar ow_remark ow_bl">
+        <li style="float: left !important;">
+            <a href="{$backUrl}">{$backLabel}</a>
+        </li>
+    </ul>
+</div>
+<br>
+<br>
+{$groupInfoComponent}
+<br>
+{$hashBriefText}
+<div class="users_list_page_tabs_container">
+
+</div>
+
+{if !empty($listType)}{add_content key="base.content.user_list_top" listType=$listType}{/if}
+
+{$userListComponent}
+{$usersCountString}

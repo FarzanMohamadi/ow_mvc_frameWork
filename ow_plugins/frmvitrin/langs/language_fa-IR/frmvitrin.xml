@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmvitrin" label="frmvitrin" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            ویترین
+        </value>
+    </key>
+    <key name="main_menu_mobile_item">
+        <value>
+            ویترین
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="return_to_vitrin">
+        <value>
+            بازگشت به ویترین
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            توضیحات
+        </value>
+    </key>
+    <key name="business_model">
+        <value>
+            مدل تجاری
+        </value>
+    </key>
+    <key name="targetMarket">
+        <value>
+            مناسب برای
+        </value>
+    </key>
+    <key name="vendor">
+        <value>
+            توسعه‌دهنده
+        </value>
+    </key>
+    <key name="language">
+        <value>
+            زبان برنامه‌نویسی
+        </value>
+    </key>
+    <key name="logo">
+        <value>
+            لوگو
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            با موفقیت ذخیره شد.
+        </value>
+    </key>
+    <key name="delete_item_warning">
+        <value>
+            آیا از حذف این مورد اطمینان دارید؟
+        </value>
+    </key>
+    <key name="create_item_form">
+        <value>
+            فرم ایجاد مورد
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            موردی وجود ندارد.
+        </value>
+    </key>
+    <key name="edit_item">
+        <value>
+            ویرایش مورد
+        </value>
+    </key>
+    <key name="url">
+        <value>
+            نشانی اینترنتی
+        </value>
+    </key>
+    <key name="empty_logo_error">
+        <value>
+            لوگو نمی‌تواند خالی باشد و باید معتبر باشد.
+        </value>
+    </key>
+    <key name="uploaded_logo">
+        <value>
+            لوگو بارگذاری‌شده
+        </value>
+    </key>
+    <key name="view_website">
+        <value>
+            مشاهده وبگاه
+        </value>
+    </key>
+    <key name="admin_main_page_title">
+        <value>
+            تنظیمات افزونه ویترین
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,61 @@
+<div class="ow_stdmargin">
+    {$groupBriefInfo}
+</div>
+<div class="owm_box ow_stdmargin clearfix">
+    {form name='list_report'}
+    <div class="owm_form_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_form_field_label">{label name='year'}</div>
+            <div class="owm_form_field_value">{input name='year'}</div>
+            <div class="owm_form_field_desc">{text key="frmreport+year_should_be_complete"}</div>
+        </div>
+        <div class="owm_error_txt">{error name='year'}</div>
+    </div>
+    <div class="owm_form_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_form_field_label">{label name='semester'}</div>
+            <div class="owm_form_field_value">{input name='semester'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='semester'}</div>
+    </div>
+    <div class="owm_form_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_form_field_label"></div>
+            <div class="owm_form_field_value">{submit name='search' class='ow_ic_new'}</div>
+        </div>
+    </div>
+    {/form}
+</div>
+<div class="clearfix">
+    {if empty($reports) }
+    <div class="ow_nocontent">{text key="frmreport+listing_no_items_msg"}</div>
+    {else}
+    <div class="clearfix">
+        {foreach from=$reports key='key' item='report'}
+        <div class="owm_list_item_without_image">
+            <div class="owm_list_section_body owm_bg_color_1 owm_padding">
+                <a class="owm_list_title_format owm_list_title_unread" href="{$detailUrls[$report.id]}">
+                    <div class="owm_list_title_name owm_small_margin_bottom">
+                        <div>{text key='frmreport+form_label_year'} : {$report.year}</div>
+                    </div>
+                </a>
+                <div class="owm_list_body_body">
+                    <div>
+                        {text key='frmreport+form_label_semester'} : {$report.semester}
+                    </div>
+                </div>
+            </div>
+            <div class="owm_list_section_toolbar owm_border owm_bg_color_3">
+                <div class="owm_padding owm_list_additional_info">
+                    <div class="owm_list_additional_item">{text key='frmreport+report_creator'} : {$report.creator}</div>
+                    <div class="owm_list_additional_item">{text key='frmreport+report_create_date'} : {$report.createDate}</div>
+                    <div class="owm_list_additional_item">{text key='frmreport+report_editor'} : {$report.editor}</div>
+                    <div class="owm_list_additional_item">{text key='frmreport+report_edit_date'} : {$report.editDate}</div>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+    </div>
+    <div class="clearfix">{$paging}</div>
+    {/if}
+</div>

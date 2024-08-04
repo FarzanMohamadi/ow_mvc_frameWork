@@ -1,0 +1,67 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {if !empty($subsections) }
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$subsections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="{if isset($section.iconClass)} {$section.iconClass} {/if}">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+    {/if}
+</div>
+
+{if isset($lastCalculationDate)}
+    <p class="graphy_last_update_time">{text key='frmgraph+last_calculation_date'}: {$lastCalculationDate}</p>
+{/if}
+<div class="frmgraph_diagrams">
+
+
+    {if isset($statistics)}
+    <div class="admin_statistics_container">
+        {$statistics}
+    </div>
+    {else}
+    <div id="statistics_chart" class="frmgraph_distribution_chart"></div>
+    {/if}
+
+
+    {form name="chartForm"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_tr_last ow_center">
+            <th></th>
+            <th></th>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td>
+                <span class="chart_field_container" style="margin-left: 15px">
+                    {text key="frmgraph+get_chart_according_to"}
+                    {input name='chartField'}{error name="chartField"}
+                </span>
+                <span class="chart_type_container">
+                    {text key="frmgraph+type_of_chart"}
+                    {input name='chartType'}{error name="chartField"}
+                </span>
+            </td>
+            <td>
+                {submit name="submit" langLabel='frmgraph+display' }
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+
+</div>

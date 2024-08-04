@@ -1,0 +1,51 @@
+<div class="ow_superwide delete_user_form_container_mobile" style="margin: auto">
+    {block_decorator name="box" addClass="ow_center" iconClass='ow_ic_update' langLabel='frmsecurityessentials+delete_user_form_title' style="overflow:hidden;"}
+    {text key='frmsecurityessentials+delete_user_form_desc'}
+    {/block_decorator}
+
+    {foreach from=$userArray key='uid' item='user'}
+    {$userInfo_{$user->username}}
+    {/foreach}
+
+    <div class="owm_full_page_form owm_create_group ow_superwide ow_automargin">
+        {form name=form}
+        {if $removedByAdmin}
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{input name='email_admins'}{label name='email_admins'}</div>
+            </div>
+            <div class="owm_error_txt">{error name='email_admins'}</div>
+        </div>
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{input name='email_users'}{label name='email_users'}</div>
+            </div>
+            <div class="owm_error_txt">{error name='email_users'}</div>
+        </div>
+        {/if}
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{label name='password'}</div>
+                <div class="owm_form_field_value">{input name='password'}</div>
+            </div>
+            <div class="owm_error_txt">{error name='password'}</div>
+        </div>
+        <div class="owm_form_field_container">
+            <div class="owm_form_field_wrap">
+                <div class="owm_form_field_label">{label name='captcha'}</div>
+                <div class="owm_form_field_value">{input name='captcha'}</div>
+            </div>
+            <div class="owm_error_txt">{error name='captcha'}</div>
+        </div>
+
+        {block_decorator name="box" addClass="ow_center" iconClass='ow_ic_update' style="overflow: hidden; background-color: #FFEAEA; border: 1px solid #FF3131 !important"}
+        {text key="frmsecurityessentials+delete_user_submit_warning"}
+        {/block_decorator}
+        <div class="clearfix ow_stdmargin owm_padding">
+            <div class="ow_right">
+                {submit name='submit'}
+            </div>
+        </div>
+        {/form}
+    </div>
+</div>

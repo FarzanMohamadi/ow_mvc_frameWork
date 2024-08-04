@@ -1,0 +1,50 @@
+<style>
+    .themeIconViewer {
+        width: 100%;
+        min-height: 120px;
+    }
+</style>
+<div class="selected_theme_info frm_theme_manager_themes" style="display: none">
+    <div class="iithememanager_overlay ow_inprogress"></div>
+    <div class="selected_theme_info_stick">
+        {block_decorator name='box' type='empty' addClass='ow_stdmargin' iconClass="ow_ic_info" langLabel='admin+theme_info_cap_label'}
+        <div class="themeIconViewer"></div>
+        <div class="themeName">
+            <span class="them_info_label">{text key='frmthememanager+theme_name'}</span>
+            <span class="theme_info_value"></span>
+        </div>
+        <div class="themeKey">
+            <span class="them_info_label">{text key='frmthememanager+theme_key'}</span>
+            <span class="theme_info_value"></span>
+        </div>
+        <div class="parentTheme">
+            <span class="them_info_label">{text key='frmthememanager+parent_theme'}</span>
+            <span class="theme_info_value"></span>
+        </div>
+        <div class="themeColors">
+            <span class="them_info_label">{text key='frmthememanager+theme_colors'}</span>
+            <span class="theme_info_value">
+                {if isset($themeColors)}
+                    {foreach from=$themeColors key=count item=color}
+                        <span class="frmthememanager_color_box" id="{$color}"></span>
+                    {foreachelse}
+                        <p class="frmthememanager_no_specific_color">{text key='frmthememanager+no_specific_color'}</p>
+                    {/foreach}
+                {/if}
+            </span>
+        </div>
+        <div class="Operations">
+            <span class="them_info_label">{text key='frmthememanager+Operations'}</span>
+            <span class="theme_info_value">
+                <a class="ow_lbutton ow_green edit" onclick="" style="display: inline-block;">{text key="frmthememanager+edit"}</a>
+                <a class="ow_lbutton ow_red remove" onclick="" style="display: inline-block;">{text key="frmthememanager+remove"}</a>
+                <a class="ow_lbutton ow_green export"  onclick=""  style="display: inline-block;">{text key="frmthememanager+export"}</a>
+                <span class="frmthememanager_active_theme" style="display: none">{text key="frmthememanager+active"}</span>
+                <a class="ow_lbutton ow_green activate"  onclick=""  style="display: inline-block;">{text key="frmthememanager+activate"}</a>
+                <a class="ow_lbutton ow_green update_all_themes"  onclick=""  style="display: none;">{text key="frmthememanager+update_all_themes"}</a>
+                <a class="ow_lbutton ow_green deactivateAll"  onclick=""  style="display: none;">{text key="frmthememanager+disable_one_themes"}</a>
+            </span>
+        </div>
+        {/block_decorator}
+    </div>
+</div>

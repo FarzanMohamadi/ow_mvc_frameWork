@@ -1,0 +1,39 @@
+{if isset($groupBriefInfo)}
+<div class="ow_stdmargin">
+    {$groupBriefInfo}
+</div>
+{/if}
+
+<div class="ow_group_list clearfix">
+    <div class="ow_automargin ow_superwide">
+        {form name="subGroupFilterForm"}
+                <tr>
+                    <td>
+                        {input name='searchTitle'}
+                    </td>
+                </tr>
+            <td>
+                {if isset($originalUrl)}
+                    {decorator name='button' iconClass="ow_ic_lens" id="searchFilter" onclick="searchSubGroup('{$originalUrl}');" langLabel='frmsubgroups+search_btn_label'}
+                {/if}
+            </td>
+        {/form}
+
+        {if empty($list) }
+            <div class="ow_nocontent">{text key="groups+listing_no_items_msg"}</div>
+        {else}
+            {foreach from=$list key='key' item='group'}
+                {decorator name='ipc' addClass='ow_smallmargin' data=$group infoString="<a href=\"`$group.url`\">`$group.title`</a>"}
+            {/foreach}
+            <br />
+            {$paging}
+        {/if}
+
+        {if isset($createSubgroupLink)}
+        <div class="ow_create_subgroup"><div class="ow_right ow_add_new_group ">{decorator name='button' class='ow_ic_add' id='btn-create-new-sub-group' langLabel='frmsubgroups+create_subgroup'}</div></div>
+        {script}{literal}
+        $('#btn-create-new-sub-group').click(function(){location.href='{/literal}{$createSubgroupLink}{literal}'})
+        {/literal}{/script}
+        {/if}
+    </div>
+</div>

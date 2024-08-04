@@ -1,0 +1,83 @@
+<div class="owm_full_page_form ow_superwide ow_automargin">
+
+    <div class="owm_nav_cap owm_nav_cap_left_cont owm_bg_color_3 owm_border clearfix">
+        <div class="owm_float_left">
+            <a class="owm_nav_cap_left" href="javascript:window.history.back();"></a>
+        </div>
+        <h3> {text key="base+back"}</h3>
+    </div>
+    {form name='add_unit'}
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='name'}</div>
+            <div class="owm_techunit_addform_value">{input name='name'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='name'}</div>
+    </div>
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='image'}</div>
+            <div class="owm_techunit_addform_value">{input name='image'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='image'}</div>
+    </div>
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='qr_code'}</div>
+            <div class="owm_techunit_addform_value">{input name='qr_code'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='qr_code'}</div>
+    </div>
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='manager'}</div>
+            <div class="owm_techunit_addform_value">{input name='manager'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='manager'}</div>
+    </div>
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='address'}</div>
+            <div class="owm_techunit_addform_value">{input name='address'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='address'}</div>
+    </div>
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='phone'}</div>
+            <div class="owm_techunit_addform_value">{input name='phone'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='phone'}</div>
+    </div>
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='email'}</div>
+            <div class="owm_techunit_addform_value">{input name='email'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='email'}</div>
+    </div>
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name='website'}</div>
+            <div class="owm_techunit_addform_value">{input name='website'}</div>
+        </div>
+        <div class="owm_error_txt">{error name='website'}</div>
+    </div>
+    {foreach from=$sections item=section}
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label">{label name=$section}</div>
+            <div class="owm_techunit_addform_value">{input name=$section}</div>
+        </div>
+        <div class="owm_error_txt">{error name=$section}</div>
+    </div>
+    {/foreach}
+
+    <div class="owm_techunit_addform_field_container">
+        <div class="owm_form_field_wrap">
+            <div class="owm_techunit_addform_label"></div>
+            <div class="owm_techunit_addform_value">{submit name='submit' class='ow_ic_new'}</div>
+        </div>
+    </div>
+    {/form}
+</div>

@@ -1,0 +1,117 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<h2><a href="{$returnToVitrin}">{text key="frmvitrin+return_to_vitrin"}</a></h2>
+<br/>
+
+<h1 class="ow_stdmargin">
+    {text key="frmvitrin+edit_item"}
+</h1>
+
+<div class="ow_std_margin clearfix">
+    <h3>
+        <a href="{$returnToCategory}">{text key="frmvitrin+return_to_vitrin"}</a>
+    </h3>
+    {form name="item"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr>
+            <th colspan="2">{text key="frmvitrin+create_item_form"}</th>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='title'}
+            </td>
+            <td class="ow_value">
+                {input name='title'}
+                {error name='title'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='description'}
+            </td>
+            <td class="ow_value">
+                {input name='description'}
+                {error name='description'}
+            </td>
+        </tr>
+        {if isset($logoImageUrl)}
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {text key="frmvitrin+uploaded_logo"}
+            </td>
+            <td class="ow_value">
+                <img width="100px" src="{$logoImageUrl}"/>
+            </td>
+        </tr>
+        {/if}
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='logo'}
+            </td>
+            <td class="ow_value">
+                {input name='logo'}
+                {error name='logo'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='businessModel'}
+            </td>
+            <td class="ow_value">
+                {input name='businessModel'}
+                {error name='businessModel'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='targetMarket'}
+            </td>
+            <td class="ow_value">
+                {input name='targetMarket'}
+                {error name='targetMarket'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='vendor'}
+            </td>
+            <td class="ow_value">
+                {input name='vendor'}
+                {error name='vendor'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='language'}
+            </td>
+            <td class="ow_value">
+                {input name='language'}
+                {error name='language'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='url'}
+            </td>
+            <td class="ow_value">
+                {input name='url'}
+                {error name='url'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="3">
+                {submit name='submit'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>

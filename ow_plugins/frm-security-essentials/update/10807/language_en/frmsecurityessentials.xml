@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="en" language_label="English">
+    <key name="approve_user_after_edit_profile_label">
+        <value>
+            Do not need user approval after editing profile (In case of mandatory user's approve)
+        </value>
+    </key>
+</prefix>

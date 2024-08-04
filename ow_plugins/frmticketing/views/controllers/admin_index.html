@@ -1,0 +1,143 @@
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+
+
+{if $currentSection==1}
+{form name='categorySettings'}
+<div style="margin:0 auto">
+    <table class="ow_table_1 ow_form ow_automargin">
+        <tr class="ow_alt1 ow_tr_first ow_tr_last">
+            <td class="ow_value">{input name='title'}{error name="title"}</td>
+            <td class="ow_value">{submit name='add' class='ow_button ow_ic_save'}</td>
+        </tr>
+    </table>
+</div>
+{/form}
+<p>{text key="frmticketing+active_categories"}</p>
+<table class="ow_table_1 ow_automargin">
+    <tr class="{cycle values='ow_alt2'}">
+        <th colspan="2">{text key="frmticketing+name_category"}</th>
+    </tr>
+    {foreach from=$activeTicketListCategory item=ticketCategory name=ticketCategory}
+        <tr class="{cycle values='ow_alt1,ow_alt2'} {if $smarty.foreach.ticketCategory.last}ow_tr_last{/if} {if $smarty.foreach.ticketCategory.first}ow_tr_first{/if}">
+            <td class="ow_valign_middle">{$ticketCategory.title}</td>
+            <td>
+                <a class="ow_lbutton ow_green" onclick="{$editUrls[$ticketCategory.name]}" style="display: inline-block;">{text key="frmticketing+edit_item"}</a>
+                {if isset($deactivateUrls[$ticketCategory.name])}
+                <a class="ow_lbutton ow_green" href="{$deactivateUrls[$ticketCategory.name]}" onclick="return confirm('{text key="frmticketing+are_you_sure_deactivate"}');" style="display: inline-block;"> {text key="frmticketing+deactivate"} </a>
+                {/if}
+            </td>
+        </tr>
+    {/foreach}
+</table>
+{*<a href="{$deleteCatUrls[$id]}" onclick="return confirm('{text key="frmticketing+are_you_sure"}');" style="width:16px; height:16px; display:block; margin:0 auto;background-repeat:no-repeat;background-position: 50% 50%;" class="ow_ic_delete"></a>*}
+
+<p>{text key="frmticketing+inactive_categories"}</p>
+<table class="ow_table_1 ow_automargin">
+    <tr class="{cycle values='ow_alt2'}">
+        <th colspan="2">{text key="frmticketing+name_category"}</th>
+    </tr>
+    {foreach from=$inactiveTicketListCategory item=ticketCategory name=ticketCategory}
+    <tr class="{cycle values='ow_alt1,ow_alt2'} {if $smarty.foreach.ticketCategory.last}ow_tr_last{/if} {if $smarty.foreach.ticketCategory.first}ow_tr_first{/if}">
+        <td class="ow_valign_middle">{$ticketCategory.title}</td>
+        <td>
+            {if isset($activateUrls[$ticketCategory.name])}
+            <a class="ow_lbutton ow_green" href="{$activateUrls[$ticketCategory.name]}" onclick="return confirm('{text key="frmticketing+are_you_sure_activate"}');" style="display: inline-block;"> {text key="frmticketing+activate"} </a>
+            {/if}
+            {if isset($permanentlyDeleteUrls[$ticketCategory.name])}
+            <a class="ow_lbutton ow_green" href="{$permanentlyDeleteUrls[$ticketCategory.name]}" onclick="return confirm('{text key="frmticketing+are_you_sure_delete_permanently"}');" style="display: inline-block;"> {text key="frmticketing+delete_permanently"} </a>
+            {/if}
+        </td>
+    </tr>
+    {/foreach}
+</table>
+
+{elseif $currentSection==2}
+{form name='orderSettings'}
+<div style="margin:0 auto">
+    <table class="ow_table_1 ow_form ow_automargin">
+        <tr class="ow_alt1 ow_tr_first ow_tr_last">
+            <td class="ow_value">{input name='title'}{error name="title"}</td>
+            <td class="ow_value">{submit name='add' class='ow_button ow_ic_save'}</td>
+        </tr>
+    </table>
+</div>
+{/form}
+<table class="ow_table_1 ow_automargin">
+    <tr class="{cycle values='ow_alt2'}">
+        <th colspan="2">{text key="frmticketing+name_order"}</th>
+    </tr>
+    {foreach from=$ticketListOrder item=ticketOrder name=ticketOrder}
+    <tr class="{cycle values='ow_alt1,ow_alt2'} {if $smarty.foreach.ticketOrder.last}ow_tr_last{/if} {if $smarty.foreach.ticketOrder.first}ow_tr_first{/if}">
+        <td class="ow_valign_middle">{$ticketOrder.title}</td>
+        <td>
+            <a class="ow_lbutton ow_green" onclick="{$editUrls[$ticketOrder.name]}" style="display: inline-block;">{text key="frmticketing+edit_item"}</a>
+            {if isset($deleteUrls[$ticketOrder.name])}
+            <a class="ow_lbutton ow_green" href="{$deleteUrls[$ticketOrder.name]}" onclick="return confirm('{text key="frmticketing+are_you_sure"}');" style="display: inline-block;"> {text key="frmticketing+delete_item"} </a>
+            {/if}
+        </td>
+    </tr>
+    {/foreach}
+</table>
+{*<a href="{$deleteOrderUrls[$id]}" onclick="return confirm('{text key=\'frmticketing+are_you_sure\'}');" style="width:16px; height:16px; display:block; margin:0 auto;background-repeat:no-repeat;background-position: 50% 50%;" class="ow_ic_delete"></a>*}
+{elseif $currentSection==3}
+{form name='categoryUserSetting'}
+<div style="margin:0 auto">
+    <table class="ow_table_1 ow_form ow_automargin">
+        <tr class="ow_alt1 ow_tr_first ow_tr_last">
+            <td class="ow_value">{input name='category'}{error name="category"}</td>
+            <td class="ow_value">{input name='username' onchange="autoCompleteUser('{$autocompleteUrl}' , document.getElementsByName('username')[0].value)"}{error name="username"}</td>
+            <td class="ow_value">{submit name='add' class='ow_button ow_ic_save'}</td>
+        </tr>
+    </table>
+</div>
+{/form}
+<p>{text key="frmticketing+active_categories"}</p>
+<table class="ow_table_1 ow_automargin">
+    <tr class="{cycle values='ow_alt2'}">
+        <th>{text key="frmticketing+name_category"}</th>
+        <th>{text key="frmticketing+name_users"}</th>
+    </tr>
+    {foreach from=$activeCategoryUsersList item=categoryUsers name=categoryUsers}
+        <tr class="{cycle values='ow_alt1,ow_alt2'} {if $smarty.foreach.categoryUsers.last}ow_tr_last{/if} {if $smarty.foreach.categoryUsers.first}ow_tr_first{/if}">
+            <td class="ow_valign_middle">{$categoryUsers.name}</td>
+            <td class="ow_valign_middle">
+                {foreach $categoryUsers.users as $username}
+                <a class="ow_lbutton ow_green"
+                   href="{$deleteUserForCategoryUrl}catId/{$categoryUsers@key}/username/{$username}/"
+                   onclick="return confirm('{text key="frmticketing+are_you_sure"}');"
+                   style="display: inline-block;"> {$username}
+                </a>
+                {/foreach}
+            </td>
+        </tr>
+    {/foreach}
+</table>
+
+<p>{text key="frmticketing+inactive_categories"}</p>
+<table class="ow_table_1 ow_automargin">
+    <tr class="{cycle values='ow_alt2'}">
+        <th>{text key="frmticketing+name_category"}</th>
+        <th>{text key="frmticketing+name_users"}</th>
+    </tr>
+    {foreach from=$inactiveCategoryUsersList item=categoryUsers name=categoryUsers}
+    <tr class="{cycle values='ow_alt1,ow_alt2'} {if $smarty.foreach.categoryUsers.last}ow_tr_last{/if} {if $smarty.foreach.categoryUsers.first}ow_tr_first{/if}">
+        <td class="ow_valign_middle">{$categoryUsers.name}</td>
+        <td class="ow_valign_middle">
+            {foreach $categoryUsers.users as $username}
+            <a class="ow_lbutton ow_green"
+               href="{$deleteUserForCategoryUrl}catId/{$categoryUsers@key}/username/{$username}/"
+               onclick="return confirm('{text key="frmticketing+are_you_sure"}');"
+            style="display: inline-block;"> {$username}
+            </a>
+            {/foreach}
+        </td>
+    </tr>
+    {/foreach}
+</table>
+{/if}

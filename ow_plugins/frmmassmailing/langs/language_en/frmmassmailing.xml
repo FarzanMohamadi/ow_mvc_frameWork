@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmassmailing" label="frmmassmailing" language_tag="en" language_label="English">
+	<key name="admin_massmailing_settings_heading">
+        <value>
+            frmmassmailing setting
+        </value>
+    </key>
+	<key name="mailingDetailsInfo">
+        <value>
+           mass mailing information
+        </value>
+    </key>
+	<key name="viewCountSetting">
+        <value>
+          view setting
+        </value>
+    </key>
+	<key name="roles">
+        <value>
+          roles
+        </value>
+    </key>
+	<key name="title">
+        <value>
+           subject
+        </value>
+    </key>
+	<key name="body">
+        <value>
+          body
+        </value>
+    </key>
+	<key name="createTimeStamp">
+        <value>
+          create time
+        </value>
+    </key>
+	<key name="input_settings_view_count_label">
+        <value>
+           number of mail data for each page
+        </value>
+    </key>
+	<key name="invalid_mail_count">
+        <value>
+           invalid number
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+          data modified successfully
+        </value>
+    </key>
+</prefix>

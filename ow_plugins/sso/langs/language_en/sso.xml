@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="sso" label="sso" language_tag="en" language_label="English">
+    <key name="admin_page_heading">
+        <value>SSO Plugin Configurations</value>
+    </key>
+    <key name="admin_page_title">
+        <value>SSO Plugin Configurations</value>
+    </key>
+    <key name="settings_successfuly_saved">
+        <value>Settings successfully saved</value>
+    </key>
+    <key name="admin_page_heading">
+        <value>Configuration of the SSO Plugin</value>
+    </key>
+    <key name="admin_page_title">
+        <value>Configuration of the SSO Plugin</value>
+    </key>
+    <key name="ssoUrl">
+        <value>SSO Base URL</value>
+    </key>
+    <key name="ssoTicketValidationUrl">
+        <value>SSO Ticket Validation Url</value>
+    </key>
+    <key name="ssoLoginUrl">
+        <value>SSO Login Url</value>
+    </key>
+    <key name="ssoLogoutUrl">
+        <value>SSO Logout Url</value>
+    </key>
+    <key name="ssoRegistrationUrl">
+        <value>SSO Registration Url</value>
+    </key>
+    <key name="ssoChangePasswordUrl">
+        <value>SSO Change Password Url</value>
+    </key>
+    <key name="ssoServerSecret">
+        <value>SSO Server Secret</value>
+    </key>
+    <key name="ssoClientSecret">
+        <value>SSO Client Secret</value>
+    </key>
+    <key name="ssoCookieKey">
+        <value>SSO Cookie Key</value>
+    </key>
+    <key name="ssoSameDomain">
+        <value>SSO Same Domain</value>
+    </key>
+    <key name="autoRegisterUsers">
+        <value>Auto Register Users</value>
+    </key>
+    <key name="usersDetailsUrl">
+        <value>User Details Url</value>
+    </key>
+
+    <key name="ssoSharedCookieDomain">
+        <value>SSO Shared Cookie Domain</value>
+    </key>
+    <key name="SSOCreationUserEmailExistsError">
+        <value>Duplicated email for user. User has not been created.</value>
+    </key>
+    <key name="sign_up_button">
+        <value>Sign up</value>
+    </key>
+    <key name="emailComesFromSSO">
+        <value>Email comes from SSO. But you can change it. If you change, it must be confirmed</value>
+    </key>
+    <key name="field_mobile_label">
+        <value>
+            Mobile number
+        </value>
+    </key>
+    <key name="field_mobile_description">
+        <value> </value>
+    </key>
+</prefix>

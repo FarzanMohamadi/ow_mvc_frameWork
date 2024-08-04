@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmwidgetplus" label="frmwidgetplus" language_tag="en" language_label="English">
+	<key name="display_rate_widget">
+		<value>
+			display rate widget to
+		</value>
+	</key>
+	<key name="all_users">
+		<value>
+			all users
+		</value>
+	</key>
+	<key name="only_login_users">
+		<value>
+			everyone except guest users
+		</value>
+	</key>
+	<key name="settings_updated">
+		<value>
+			Settings updated
+		</value>
+	</key>
+	<key name="index_page_title">
+		<value>
+			widgetplus
+		</value>
+	</key>
+	<key name="index_page_heading">
+		<value>
+			widgetplus
+		</value>
+	</key>
+	<key name="activate_select2_checkbox_label">
+		<value>
+			Use searchable selectboxes
+		</value>
+	</key>
+	<key name="no_result">
+		<value>
+			no results found
+		</value>
+	</key>
+	<key name="error_loading">
+		<value>
+			Error in loading result
+		</value>
+	</key>
+	<key name="input_too_long">
+		<value>
+			Input is too long
+		</value>
+	</key>
+	<key name="input_too_short">
+		<value>
+			Input is too short
+		</value>
+	</key>
+	<key name="loading_more">
+		<value>
+			Loading more...
+		</value>
+	</key>
+	<key name="searching">
+		<value>
+			Searching...
+		</value>
+	</key>
+	<key name="maximum_selected">
+		<value>
+			Number of remaining items to select:
+		</value>
+	</key>
+	<key name="select">
+		<value>
+			select
+		</value>
+	</key>
+	<key name="remove_all_items">
+		<value>
+			Remove all items
+		</value>
+	</key>
+</prefix>

@@ -1,0 +1,47 @@
+<div class="ow_group_files_list ow_lp_avatars">
+    <ul class="ow_box_toolbar ow_remark ow_bl">
+        <li style="float: left !important;">
+            <a href="{$showAllUsersUrl}">{text key='frmgroupsinvitationlink+show_all_users_joined_with_link'}</a>
+            <a href="javascript:showAddGroupInvitationLinkForm('{$confirmText}', {$groupId}, '{$addLinkUrl}', true)">
+                {$generateText}
+            </a>
+        </li>
+    </ul>
+</div>
+<br><br>
+{$groupInfoComponent}
+{if !empty($links)}
+    <table class="ow_table_1">
+        <tr>
+            <th>{text key='frmgroupsinvitationlink+create_date'}</th>
+            <th>{text key='frmgroupsinvitationlink+hash_link'}</th>
+            <th>{text key='frmgroupsinvitationlink+status'}</th>
+            <th>{text key='frmgroupsinvitationlink+creator_user'}</th>
+            <th>{text key='frmgroupsinvitationlink+related_users'}</th>
+            <th>{text key='frmgroupsinvitationlink+deactivate_link_button'}</th>
+        </tr>
+        {foreach from=$links item='link'}
+            <tr class="ow_alt1">
+                <td class="ow_label">{format_date timestamp=$link['time']}</td>
+                <td class="ow_label">
+                    <a href="{$link['hash']}">{$link['hashBrief']}</a>
+                </td>
+                <td class="ow_label">{$link['isActiveText']}</td>
+                <td class="ow_label">
+                    <a href="{$link['user']['url']}">{$link['user']['name']}</a>
+                </td>
+                <td class="ow_label">
+                    <a href="{$link['showUsersUrl']}">{text key='frmgroupsinvitationlink+show'}</a>
+                </td>
+                <td class="ow_center">
+                    {if $link['isActive']}
+                    <a style="min-height: 20px" class="ow_icon_control ow_ic_delete" href="{$link['deactivateUrl']}"></a>
+                    {/if}
+                </td>
+            </tr>
+        {/foreach}
+    </table>
+{else}
+    {text key='frmgroupsinvitationlink+no_link_click_to_create_one'}
+{/if}
+{$paging}

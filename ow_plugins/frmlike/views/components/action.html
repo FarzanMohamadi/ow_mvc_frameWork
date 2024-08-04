@@ -1,0 +1,51 @@
+<style>
+    .frmlike_cont {
+        font-size: 11px;
+    }
+
+    .frmlike_total_info {
+        font-weight: bold;
+        margin-right: 0;
+        padding-left: 5px;
+        min-width: 20px;
+        text-align: center;
+    }
+</style>
+<div id="{$data.cmpId}" class="frmlike_vote_cont clearfix">
+    {if isset($isMobile)}
+        <div style="float:left;">
+                <span class="owm_newsfeed_btn_comment_like_wrap frmlike_comment">
+                    <span class="owm_newsfeed_control_counter postLikeUserList frmlike_like_count">{$data.up}</span>
+                    <a class="owm_newsfeed_control_btn owm_newsfeed_control_like frmlike_like" href="javascript://">
+                        <span class="owm_newsfeed_control_counter postLikeUserList frmlike_comment"></span>
+                    </a>
+                </span>
+            {if ($isDislikeActivate)}
+            <span class="owm_newsfeed_btn_comment_like_wrap frmlike_comment">
+                 <a class="owm_newsfeed_control_btn owm_newsfeed_control_like frmlike_dislike" href="javascript://">
+                    <span class="owm_newsfeed_control_counter postLikeUserList frmlike_comment"></span>
+                 </a>
+                 <span class="owm_newsfeed_control_counter postLikeUserList frmlike_dislike_count">{$data.down}</span>
+            </span>
+            <span class="ow_newsfeed_btn_comment_like_wrap frmlike_total_info{if $data.total>0} ow_green{elseif $data.total<0} ow_red{/if}">{if $data.total>0}+{/if}{$data.total}</span>
+            {/if}
+        </div>
+    {else}
+        <div style="float:right;">
+            <span class="ow_newsfeed_btn_comment_like_wrap frmlike_comment">
+                <a><span class="frmlike_like_count">{$data.up}</span></a>
+                <span class="ow_miniic_control ow_cursor_pointer frmlike_like">
+                    <span class="ow_miniic_like"></span>
+                </span>
+            </span>
+            {if ($isDislikeActivate)}
+            <span class="ow_newsfeed_btn_comment_like_wrap frmlike_comment">
+                <span class="ow_miniic_control ow_cursor_pointer frmlike_dislike">
+                    <span class="ow_miniic_like"></span>
+                </span><span class="frmlike_dislike_count">{$data.down}</span>
+            </span>
+            <span class="ow_newsfeed_btn_comment_like_wrap frmlike_total_info{if $data.total>0} ow_green{elseif $data.total<0} ow_red{/if}">{if $data.total>0}+{/if}{$data.total}</span>
+            {/if}
+        </div>
+    {/if}
+</div>

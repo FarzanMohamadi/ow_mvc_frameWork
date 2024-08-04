@@ -1,0 +1,157 @@
+{if $isMobile==false}
+    <div class="ow_blogentry_compose clearfix">
+        {if !$authMsg}
+        <div class="ow_superwide ow_automargin">
+            <ul class="ow_bl clearfix ow_small ow_right">
+                <li>
+                    <a href="{$technologyUrl}">
+                        {text key="frmtechnology+return_btn_label"}
+                    </a>
+                </li>
+            </ul>
+            {form name="save"}
+            <input type="hidden" id="save_order_command" name="command" />
+            <table class="ow_table_1 ow_form ow_stdmargin">
+                <tr class="ow_alt2 ow_tr_first">
+                    <td>
+                        {label name="name"}<br />{input name='name'}
+                        <br />{error name="name"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="phone"}<br />{input name='phone'}
+                        <br />{error name="phone"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="email"}<br />{input name='email'}
+                        <br />{error name="email"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyName"}<br />{input name='companyName'}
+                        <br />{error name="companyName"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyWebsite"}<br />{input name='companyWebsite'}
+                        <br />{error name="companyWebsite"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="jobTitle"}<br />{input name='jobTitle'}
+                        <br />{error name="jobTitle"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyAddress"}<br />{input name='companyAddress'}
+                        <br />{error name="companyAddress"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyActivityField"}<br />{input name='companyActivityField'}
+                        <br />{error name="companyActivityField"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="description"}<br />{input name='description'}
+                        <br />{error name="description"}
+                    </td>
+                </tr>
+            </table>
+            <div class="clearfix ow_stdmargin ow_submit ow_btn_delimiter">
+                <div class="ow_right"> {submit name="save" class="ow_button ow_green ow_positive"}</div>
+            </div>
+            {/form}
+        </div>
+        {else}
+        <div class="ow_anno ow_std_margin ow_nocontent">{$authMsg}</div>
+        {/if}
+    </div>
+{else}
+    <div class="owm_frmtechnology owm_box clearfix">
+        {if !$authMsg}
+        <div class="ow_superwide ow_automargin">
+            <div class="owm_btn_list_item">
+                    <a href="{$technologyUrl}">
+                        {text key="frmtechnology+return_btn_label"}
+                    </a>
+            </div>
+            {form name="save"}
+            <input type="hidden" id="save_order_command" name="command" />
+            <table class="owm_frmtechnology_new_table ow_table_1 ow_form ow_stdmargin">
+                <tbody  class="owm_frmtechnology_new_table">
+                <tr class="ow_alt2 ow_tr_first">
+                    <td>
+                        {label name="name"}<br />{input name='name'}
+                        <br />{error name="name"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="phone"}<br />{input name='phone'}
+                        <br />{error name="phone"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="email"}<br />{input name='email'}
+                        <br />{error name="email"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyName"}<br />{input name='companyName'}
+                        <br />{error name="companyName"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyWebsite"}<br />{input name='companyWebsite'}
+                        <br />{error name="companyWebsite"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="jobTitle"}<br />{input name='jobTitle'}
+                        <br />{error name="jobTitle"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyAddress"}<br />{input name='companyAddress'}
+                        <br />{error name="companyAddress"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="companyActivityField"}<br />{input name='companyActivityField'}
+                        <br />{error name="companyActivityField"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="description"}<br />{input name='description'}
+                        <br />{error name="description"}
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="owm_frmtechnology_new_submit clearfix ow_stdmargin ow_submit ow_btn_delimiter">
+                {submit name="save" class="ow_button ow_green ow_positive"}
+            </div>
+            {/form}
+        </div>
+        {else}
+        <div class="ow_anno ow_std_margin ow_nocontent">{$authMsg}</div>
+        {/if}
+    </div>
+{/if}

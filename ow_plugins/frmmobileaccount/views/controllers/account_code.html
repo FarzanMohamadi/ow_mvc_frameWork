@@ -1,0 +1,36 @@
+<div class="logo_frame">
+    <div class="ow_logo"></div>
+    <div class="mobile_account_links"></div>
+</div>
+<div class="mobile_account {$type_class}">
+    <p class="form_message">{text key='frmmobileaccount+enter_code'}</p>
+    {form name='code_mobile_account' class='account_form_box'}
+    <div class="account_status_box">
+        <span class="ow_preloader"></span>
+        <div id="account_status"></div>
+    </div>
+    <div class="account_field account_name">
+        {if $isNewTemplate}
+            {input name='mobile_code'}
+            <span class="label_trans">{label name='mobile_code'}</span>
+        {else}
+            <div class="label_trans">{label name='mobile_code'}</div>
+            {input name='mobile_code'}
+        {/if}
+        {error name="mobile_code"}
+    </div>
+    <a href="javascript://" onclick="{$resend_function}">
+        {text key='frmmobileaccount+resend_label'}
+    </a>
+    <div class="network_submit">
+        {submit name='submit' class='ow_button'}
+    </div>
+    {/form}
+    <div class="back_box">
+        <span class="ow_button">
+             <a href="{$backUrl}" class="ow_button">
+                 {text key='frmmobileaccount+back_label'}
+             </a>
+        </span>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+{$sections}
+
+{if isset($returnToAdminUrl)}
+<h2><a href="{$returnToAdminUrl}">{text key="frmevaluation+returnToAdmin"}</a></h2>
+<br/>
+{/if}
+<table class="ow_table_1">
+    <tr class="ow_tr_first">
+        <th colspan="3" class="ow_center">{text key="frmevaluation+categories"}</th>
+    </tr>
+</table>
+{foreach from=$categories item="category"}
+<div class="evaluation ow_supernarrow">
+    <div class="category_image">
+        <a href="{$category.url}">{if isset($category.icon)}<img width="50px" src="{$category.icon}">{else}<img width="50px" src="{$defaultIcon}">{/if}</a>
+    </div>
+    <div>
+        <a href="{$category.url}">{$category.name}</a>
+        <br/>
+        {text key="frmevaluation+question_count"} {$category.countOfQuestions}
+        <br/>
+        {text key="frmevaluation+answer_count_header"} {$category.countOfAnswers}
+    </div>
+</div>
+{/foreach}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcompetition" label="frmcompetition" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Competitions
+        </value>
+    </key>
+    <key name="mobile_main_menu_item">
+        <value>
+            Competitions
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            Delete
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="return">
+        <value>
+            Return
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="image">
+        <value>
+            Image
+        </value>
+    </key>
+    <key name="deleted_successfully">
+        <value>
+            Deleted successfully
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            Saved successfully
+        </value>
+    </key>
+    <key name="username">
+        <value>
+            Username
+        </value>
+    </key>
+    <key name="user_not_found">
+        <value>
+            User not found
+        </value>
+    </key>
+    <key name="values">
+        <value>
+            Values
+        </value>
+    </key>
+    <key name="value">
+        <value>
+            Value
+        </value>
+    </key>
+    <key name="competitions">
+        <value>
+            Competitions
+        </value>
+    </key>
+    <key name="create_competitions_form">
+        <value>
+            Create competition form
+        </value>
+    </key>
+    <key name="edit_competitions_form">
+        <value>
+            Edit competition form
+        </value>
+    </key>
+    <key name="type">
+        <value>
+            Type of participants
+        </value>
+    </key>
+    <key name="active">
+        <value>
+            Active
+        </value>
+    </key>
+    <key name="startDate">
+        <value>
+            Start date
+        </value>
+    </key>
+    <key name="endDate">
+        <value>
+            End date
+        </value>
+    </key>
+    <key name="competition_groups_values">
+        <value>
+            Values of groups
+        </value>
+    </key>
+    <key name="competition_users_values">
+        <value>
+            Values of users
+        </value>
+    </key>
+    <key name="groups_values_form">
+        <value>
+            Form of values of groups
+        </value>
+    </key>
+    <key name="users_values_form">
+        <value>
+            Form of values of users
+        </value>
+    </key>
+    <key name="group_title">
+        <value>
+            Group title
+        </value>
+    </key>
+    <key name="groups_label">
+        <value>
+            groups
+        </value>
+    </key>
+    <key name="users_label">
+        <value>
+            users
+        </value>
+    </key>
+    <key name="not_active">
+        <value>
+            The competition is over
+        </value>
+    </key>
+    <key name="no_participant">
+        <value>
+            There is no participant
+        </value>
+    </key>
+    <key name="empty_competition">
+        <value>
+            There is no competition
+        </value>
+    </key>
+	<key name="competition_notification_string">
+		<value>
+			 New competition with title: &lt;a href="{$competitionUrl}"&gt;{$competitionTitle}&lt;/a&gt; has been published
+		</value>
+	</key>
+	<key name="notification_form_lbl_published">
+		<value>
+			 Send notification
+		</value>
+	</key>
+	<key name="email_notifications_setting_competition">
+		<value>
+			 A competition has been published
+		</value>
+	</key>
+	<key name="email_notification_section_label">
+		<value>
+			 Competitions
+		</value>
+	</key>
+	<key name="group_add_point_notification_string">
+		<value>
+			  Your group with Name &lt;a href="{$groupUrl}"&gt;{$groupTitle} In &lt;a href="{$competitionUrl}"&gt;{$competitionTitle}&lt;/a&gt; got {$competitionPoint} point(s)
+		</value>
+	</key>
+	<key name="user_add_point_notification_string">
+		<value>
+			In &lt;a href="{$competitionUrl}"&gt;{$competitionTitle}&lt;/a&gt; you got {$competitionPoint} point(s)
+		</value>
+	</key>
+	<key name="email_notifications_setting_group_get_point">
+		<value>
+			 a group of mine got score in any competition
+		</value>
+	</key>
+	<key name="email_notifications_setting_user_get_point">
+		<value>
+			 I got score in any competition
+		</value>
+	</key>
+</prefix>

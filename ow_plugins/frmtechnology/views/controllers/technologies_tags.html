@@ -1,0 +1,48 @@
+<div class="clearfix ow_frmtechnology">
+    <div class="owm_items_stdmargin">
+        <div class="ow_right">
+            <div id="add-new-tech" >{decorator name='button' class='ow_ic_add ' langLabel='frmtechnology+add_new_technology_button_label' onclick="location.href='`$url_new_entry`'"}</div>
+        </div>
+        {$menu}
+        <div class="ow_supernarrow" style="float:right;">
+            <div class="blog_widget">
+                {$tagSearch}
+            </div>
+            {if $showList}
+            <div class="blog_widget">
+                {$tagCloud}
+            </div>
+            {/if}
+        </div>
+    </div>
+    <div class="ow_superwide" style="float:left;">
+        {if $showList}
+        <div class="owm_info owm_anno owm_box owm_searchTag">
+            {text key="frmtechnology+results_by_tag" tag=$tag}
+        </div>
+        {if !empty($no_technology) }
+        <div class="ow_nocontent">{text key="frmtechnology+no_technology_label"}</div>
+        {else}
+        <div id="results">
+            {foreach from=$technologies key='key' item='technology'}
+            <div>
+                <a href="{$technology.url}">
+                <span class="image">
+                    <img width="300" height="300" src="{$technology.imageSrc}">
+                </span>
+                    <span class="search-content">
+                    <h3>{$technology.title|truncate:20}</h3>
+                    <p>{$technology.content|truncate:250}</p>
+                </span>
+                </a>
+            </div>
+            {/foreach}
+        </div>
+        <br />
+        {$paging}
+        {/if}
+        {else}
+        {$tagCloud}
+        {/if}
+    </div>
+</div>

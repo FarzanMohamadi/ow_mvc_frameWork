@@ -1,0 +1,139 @@
+/**
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.frmtelegram
+ * @since 1.0
+ */
+a.ow_ic_telegram.console_item_search {
+    background-repeat: no-repeat;
+    font-size: 0px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.items_wrapper_widget,
+#items_wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+}
+.items_wrapper_preloader_widget,
+#items_wrapper_preloader {
+    display: none;
+    height: 25px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.items_wrapper_new_items_icon_widget,
+#items_wrapper_new_items_icon {
+    display: none;
+    height: 10px;
+    text-align: center;
+    margin-bottom: -23px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #4c4c4c;
+    width: 10px;
+    border: 2px solid #fff;
+}
+.item_wrapper .ow_right:lang(fa-IR){
+    float:left;
+}
+.ow_telegram_widget .item_wrapper,
+.ow_telegram_list .item_wrapper {
+    margin: 6px 6px 6px 0;
+}
+.ow_telegram_widget .item_wrapper:lang(fa-IR),
+.ow_telegram_list .item_wrapper:lang(fa-IR) {
+    margin: 6px 0px 6px 6px;
+}
+.ow_telegram_widget .ow_ipc_picture {
+    width: 36px;
+    margin-right: -36px;
+}
+.ow_telegram_widget .ow_ipc_picture:lang(fa-IR) {
+    margin-left: -36px !important;
+    margin-right: 0px !important;
+}
+.ow_telegram_widget .ow_ipc_picture img {
+    width: 30px;
+    height: 30px;
+}
+.ow_telegram_widget .ow_ipc_info {
+    margin-left: 36px !important;
+}
+.ow_telegram_widget .ow_ipc_info:lang(fa-IR) {
+    margin-right: 36px !important;
+    margin-left: 0px !important;
+}
+
+.ow_telegram_widget .frmtelegram_type_channel .ow_ipc_info{
+    margin-right : 0px !important;
+    margin-left : 0px !important;
+}
+.ow_dnd_widget .ow_box.dashboard-FRMTELEGRAM_CMP_FeedWidget,
+.ow_dnd_widget .ow_box.index-FRMTELEGRAM_CMP_FeedWidget {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.ow_telegram_widget .ow_ipc_info {
+    padding: 10px;
+}
+
+
+
+/*    mobile css    */
+
+.owm_telegram_list #items_wrapper {
+    max-height: 350px;
+    overflow-y: auto;
+}
+.owm_telegram_list #items_wrapper_preloader {
+    display: none;
+    height: 25px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+.owm_telegram_list #items_wrapper_new_items_icon {
+    display: none;
+    height: 10px;
+    text-align: center;
+    margin-top: -23px;
+    border-radius: 50%;
+    padding: 10px;
+    background: #4c4c4c;
+    width: 10px;
+    border: 2px solid #fff;
+}
+.owm_telegram_list .item_wrapper .ow_right:lang(fa-IR){
+    float:left;
+}
+.owm_telegram_list .item_wrapper .telegram_item_author {
+    background-color: white;
+    padding: 0px 3px;
+    border-radius: 5px;
+    margin: 0 18px 0 0;
+    color: dimgrey;
+    border: 1px solid #ccc;
+    float: left;
+    min-width: 60px;
+    text-align: center;
+}
+.owm_telegram_list .item_wrapper .telegram_item_author:lang(fa-IR) {
+    margin: 0 0 0 18px;
+    float: right;
+}
+.owm_telegram_list .item_wrapper a.telegram_item_author {
+    color: #0066ff;
+}
+.owm_telegram_list .item_wrapper a.telegram_item_author:hover {
+    background-color: #0066ff;
+    color: white;
+    text-decoration: none;
+}
+.owm_telegram_list  .item_wrapper {
+    border: 1px solid #ccc;
+    margin: 8px 4px;
+    padding: 5px 14px;
+    background-color: #d3e6fc;
+    border-radius: 4px;
+    color: #292929;
+}

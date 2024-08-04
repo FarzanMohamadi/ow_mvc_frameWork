@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmpublishforumtopic" label="frmpublishforumtopic" language_tag="en" language_label="English">
+    <key name="publish_topic">
+        <value>Publish Topic</value>
+    </key>
+    <key name="topic_description">
+        <value>Topic Description:</value>
+    </key>
+    <key name="topic_author">
+        <value>Topic Author:</value>
+    </key>
+    <key name="topic_startDate">
+        <value>Topic Starting Date:</value>
+    </key>
+    <key name="topic_endDate">
+        <value>Topic Ending Date:</value>
+    </key>
+    <key name="topic_conclusion_post">
+        <value>Conclusion Post:</value>
+    </key>
+    <key name="topic_conclusion_post_author">
+        <value>Conclusion Author</value>
+    </key>
+    <key name="topic_url">
+        <value>Topic Url:</value>
+    </key>
+    <key name="topic_reviewers">
+        <value>Topic reviewers:</value>
+    </key>
+    <key name="view_topic">
+        <value>View Topic</value>
+    </key>
+    <key name="blog">
+        <value>Blog</value>
+    </key>
+    <key name="view_topic">
+        <value>News</value>
+    </key>
+    <key name="admin_settings_heading">
+        <value>frmpublishforumtopic setting</value>
+    </key>
+    <key name="admin_settings_title">
+        <value>frmpublishforumtopic setting</value>
+    </key>
+    <key name="settings_updated">
+        <value>Settings updated successfully</value>
+    </key>
+    <key name="publish_destination">
+        <value>Destination</value>
+    </key>
+</prefix>

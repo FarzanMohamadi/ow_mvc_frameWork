@@ -1,0 +1,56 @@
+{style}{literal}
+   #admin-btn:link, #admin-btn:visited  {
+      background-color: #f44336;
+      color: white;
+      padding: 5px 30px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 10px 0;
+      border-radius: 4px;
+      min-width: 200px;
+   }
+   #admin-btn:hover, #admin-btn:active {
+      background-color: red;
+   }
+   div.issue-container {
+      border: 3px solid #409424a6;
+      border-width: 0px 2px 0 2px;
+      width: 88%;
+      max-width: 800px;
+      color: #d2205c;
+      counter-increment: myCounter;
+      margin: 0 0 6px 0;
+      padding: 13px;
+      top: 1em;
+      border-radius: 13px 5px 13px 7px;
+      padding-left: 2em;
+      font-size: 1.2em;
+      font-family: Constantia;
+      background-color: #f8f8f8;
+   }
+   div.issue-container:hover {
+      background: #4CAF50;
+      color: white;
+   }
+   div.issue-container a:nth-child(2) {
+      float: right;
+      color: #4ec129;
+   }
+   div.issue-container:hover a {
+      color: white;
+   }
+{/literal}{/style}
+
+{if isset($isAdmin)}
+<a id="admin-btn" href="{$redirectUrl}">{text key='frmjcse+add_issue_button'}</a>
+{/if}
+
+{foreach from=$issues item="issue"}
+<div class="issue-container">
+   <a href="{$issue.url}">
+      {$issue.title}
+   </a>
+</div>
+{/foreach}

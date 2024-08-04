@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmterms" label="frmterms" language_tag="en" language_label="English">
+    <key name="mobile_notification_content">
+        <value>&lt;a href="{$url}"&gt;A new version of {$value1} released. {$value2} important items changed, added or removed.&lt;/a&gt;</value>
+    </key>
+	<key name="mobile_bottom_menu_item">
+        <value>Terms</value>
+    </key>
+</prefix>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmpiwik" label="frmpiwik" language_tag="en" language_label="English">
+    <key name="admin_settings_title">
+	    <value>
+            Piwik Settings
+        </value>
+    </key>
+    <key name="siteId">
+        <value>
+            site Id
+        </value>
+    </key>
+    <key name="admin_save_settings">
+        <value>
+            save settings
+        </value>
+    </key>
+</prefix>

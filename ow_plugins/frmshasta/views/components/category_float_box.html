@@ -1,0 +1,30 @@
+{form name='category'}
+<table class="ow_table_1 ow_form">
+    <tr>
+        <td class="ow_label">{label name="name"}</td>
+        <td class="ow_value">{input name="name"} {error name='name'}</td>
+    </tr>
+    <tr>
+        <td class="ow_label">{label name="monthFilter"}</td>
+        <td class="ow_value">{input name="monthFilter"} {error name='monthFilter'}</td>
+    </tr>
+    <tr>
+        <td class="ow_label">{label name="yearFilter"}</td>
+        <td class="ow_value">{input name="yearFilter"} {error name='yearFilter'}</td>
+    </tr>
+    <tr>
+        <td class="ow_label">{label name="concept"}</td>
+        <td class="ow_value">{input name="concept"} {error name='concept'}</td>
+    </tr>
+    <tr>
+        <td colspan="2" class="ow_submit">
+            {submit name="submit" class='ow_ic_save'}
+            {if isset($deleteUrl)}
+                <a href="{$deleteUrl}" onclick="return confirm_redirect('{text key="frmshasta+are_you_sure_delete_category"}','{$deleteUrl}');">
+                    <button class="custom_big_button"><span class="icon_delete">{text key='base+delete'}</span></button>
+                </a>
+            {/if}
+        </td>
+    </tr>
+</table>
+{/form}

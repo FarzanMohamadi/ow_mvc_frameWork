@@ -1,0 +1,29 @@
+<div class="owm_list_item_view_title  owm_nav_cap owm_nav_cap_left_cont  owm_bg_color_3 ">
+    <h4>{text key="frmcontrolkids+kids_list_header"}</h4>
+</div>
+<div class="owm_controlkids_page owm_list_page">
+    <div class="owm_std_margin_bottom">
+        {if empty($items) }
+        <div class="ow_nocontent">{text key='base+empty_list'}</div>
+        {else}
+        {foreach from=$items item="item"}
+        <div class="owm_list_item owm_list_item_without_image  clearfix">
+            <div class="owm_list_section_body owm_padding">
+                <div class="owm_float_right">
+                    <a class="owm_nav_cap_right" href="{$item.shadowLoginUrl}"></a>
+                </div>
+                <div class="owm_small_margin_bottom">
+                    <a class="owm_list_title_format owm_list_title_unread" href="{$item.shadowLoginUrl}">
+                        <div class="owm_list_title_name">{text key="frmcontrolkids+kid_shadow_login_url_label"}</div>
+                    </a>
+                </div>
+                <div class="owm_list_body_body">
+                    <div>{text key="frmcontrolkids+kid_username_label"}: <span>{$item.username}</span></div>
+                    <div>{text key="frmcontrolkids+kid_email_label"}: <span>{$item.email}</span></div>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+        {/if}
+    </div>
+</div>

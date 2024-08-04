@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsubgroups" label="frmsubgroups" language_tag="en" language_label="English">
+
+    <key name="create_heading">
+        <value>
+            create subgroup for "{$parentGroupTitle}"
+        </value>
+    </key>
+
+    <key name="create_subgroup">
+        <value>
+            Create SubGroup
+        </value>
+    </key>
+
+    <key name="view_all_subgroups">
+        <value>
+            View all SubGroup
+        </value>
+    </key>
+
+    <key name="subgroup_list_title">
+        <value>
+           Sub groups
+        </value>
+    </key>
+
+    <key name="subgroup_list_widget_empty">
+        <value>
+           There's no sub groups
+        </value>
+    </key>
+
+    <key name="subgroups_count">
+        <value>
+             Sub groups count
+        </value>
+    </key>
+
+    <key name="search_btn_label">
+        <value>
+            Search
+        </value>
+    </key>
+
+    <key name="search_subgroups_title">
+        <value>
+           search by subgroup title
+        </value>
+    </key>
+    <key name="widget_groups_title">
+        <value>
+            Groups and Subgroups
+        </value>
+    </key>
+    <key name="access_denied_message">
+        <value>
+            only members can access to authorized subgroups
+        </value>
+    </key>
+    <key name="parent_group_title">
+        <value>
+            &lt;div&gt;(subGroup of &lt;a href="{$parentUrl}"&gt;{$parentTitle}&lt;/a&gt;)&lt;/div&gt;
+        </value>
+    </key>
+    <key name="delete_subgroups_message">
+        <value>
+            If you delete the group, these Subgroups will also deleted: {$subGroupsTitles}
+        </value>
+    </key>
+    <key name="subgroup_list_settings_count">
+        <value>
+            Maximum count
+        </value>
+    </key>
+</prefix>

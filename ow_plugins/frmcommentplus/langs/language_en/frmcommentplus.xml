@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcommentplus" label="frmcommentplus" language_tag="en" language_label="English">
+	<key name="comment_notification_string"><value>&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; also commented on &lt;a href="{$contextUrl}"&gt; this status &lt;/a&gt; by &lt;a href="{$ownerUrl}"&gt;{$ownerName}&lt;/a&gt;'s post: {$comment}</value></key>
+	<key name="comment_notification_string_for_confession"><value>&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; also commented on Someone's confession</value></key>
+	<key name="comment_news_string">
+		<value>
+			&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt; also commented on &lt;a href="{$contextUrl}"&gt; this news&lt;/a&gt;: {$comment}
+		</value>
+	</key>
+	<key name="like_notification_string_for_likeList">
+		<value>
+			&lt;a href="{$actorUrl}"&gt;{$actor}&lt;/a&gt;  also liked  &lt;a href="{$contextUrl}"&gt; the content &lt;/a&gt; which you have liked before
+		</value>
+	</key>
+	<key name="notifications_section_label">
+		<value>
+			Like Notifications
+		</value>
+	</key>
+	<key name="notifications_setting_status_comment">
+		<value>
+			Send me notification when someone liked a content which I have liked before
+		</value>
+	</key>
+	<key name="enable_reply_post_comment_settings_label">
+		<value>
+			enable reply to newsfeed's post comment
+		</value>
+	</key>
+	<key name="frmcommentplus_admin_form_submit">
+		<value>
+			submit
+		</value>
+	</key>
+	<key name="frmcommentplus_submit_successful_message">
+		<value>
+			setting updated successfully
+		</value>
+	</key>
+	<key name="admin_title">
+		<value>
+			frmcommentplus setting
+		</value>
+	</key>
+	<key name="admin_heading">
+		<value>
+			frmcommentplus setting
+		</value>
+	</key>
+	<key name="admin_settings_heading">
+		<value>
+			frmcommentplus setting
+		</value>
+	</key>
+</prefix>

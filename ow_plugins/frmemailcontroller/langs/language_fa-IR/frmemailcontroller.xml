@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmemailcontroller" label="FRM Email Controller" language_tag="fa-IR" language_label="فارسی">  
+    <key name="input_settings_valid_email_list_label"><value>فهرست منابع معتبر ارائه دهنده رایانامه</value></key>
+    <key name="input_settings_valid_email_list_desc"><value>لیست منابع معتبر ارائه دهنده رایانامه که شما اجازه می‌دهید تا کاربران از آن‌ها استفاده کنند، فرمت واردسازی سرویس ارائه دهنده حروف بعد از @ رایانامه کاربران است، برای مثال test@gmail.com به صورت gmail.com وارد کنید (در هر خط یک منبع وارد کنید)</value></key>
+	<key name="settings_updated"><value>تغییرات با موفقیت ذخیره شد</value></key>
+	<key name="input_settings_disable_email_controller_label"><value>غیرفعال سازی بررسی منبع رایانامه</value></key>
+	<key name="input_settings_disable_email_controller_desc"><value>با انتخاب این گزینه کاربران می توانند از سرویس ارائه دهنده رایانامه دلخواه خود استفاده کنند </value></key>
+	<key name="provider_validate_error"><value>منبع ارائه دهنده رایانامه نامعتبر است، برای اطلاعات بیشتر اینجا کلیک کنید</value></key>
+	<key name="valid_email_provider_information_title"><value>راهنمای انتخاب منبع ارائه دهنده رایانامه معتبر</value></key>
+	<key name="valid_email_provider_information_description"><value>منبع ارائه دهنده سرویس رایانامه می بایست یکی از موارد زیر باشد:</value></key>
+	<key name="email_verify_provider_validate_error"><value>منبع ارائه دهنده سرویس رایانامه می بایست یکی از این موارد باشد: </value></key>
+	<key name="admin_settings_heading">
+        <value>
+            تنظیمات افزونه پالایش رایانامه
+        </value>
+    </key>
+	</prefix>

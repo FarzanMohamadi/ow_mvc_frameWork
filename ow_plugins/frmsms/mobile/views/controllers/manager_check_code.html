@@ -1,0 +1,118 @@
+<div class="owm_box">
+    <div class="ow_automargin ow_superwide user_verification">
+    <h1>
+        {text key="frmsms+check_code_description"}
+    </h1>
+    <b>
+        {if isset($unverifiedNumberMessage)}
+            {$unverifiedNumberMessage}
+        {/if}
+    </b>
+        {form name='codeForm'}
+    <div class="item {$mobileClass}">
+        <div class="fields">
+            <div class="field">
+                {input name="mobile_code"} {error name='mobile_code'}
+            </div>
+            {if $mobileClass=='unverify'}
+            <div class="send_more">
+                <span class="ow_button" onclick="resendToken('mobile','{$resendTokenUrl}');">
+                    {text key="frmsms+resend_mobile_code"}
+                </span>
+                <span class="ow_button" id="mobile_change_number" >
+                    {text key="frmsms+mobile_change_number_title"}
+                </span>
+                <script>
+                    // prompt
+                    $('#mobile_change_number').on('click', function(){
+                        $.confirm({
+                            title: '{text key="frmsms+mobile_change_number_title"}',
+                            content: '<input id="change-number" type="text" value="{$current_number}" />',
+                            buttons: {
+                                submit: {
+                                    text: '{text key="frmsms+mobile_change_number_submit"}',
+                                    btnClass: 'btn-orange',
+                                    action: function(){
+                                        var input = this.$content.find('input#change-number');
+                                        $.ajax(
+                                            {
+                                                url: '{$changeNumberUrl}',
+                                                type: 'POST',
+                                                cache: false,
+                                                data:
+                                                    {
+                                                        ajaxFunc: 'changeNumber',
+                                                        newNumber: $(input).val()
+                                                    },
+                                                dataType: 'json',
+                                                success: function(data){
+                                                    OW.info(data.message);
+                                                    resendToken('mobile','{$resendTokenUrl}');
+                                                    window.location.reload();
+                                                },
+                                                error: function( jqXHR, textStatus, errorThrown )
+                                                {
+                                                    OW.error(textStatus);
+
+                                                    throw textStatus;
+                                                }
+                                            });
+                                    }
+                                },
+                                cancel: {
+                                    text: '{text key="frmsms+cancel_button"}',
+                                    action: function(){
+                                    }
+                                }
+                            }
+                        });
+                    });
+                </script>
+                <div class="mobile owm_preloader" style="display: none;"></div>
+            </div>
+            {/if}
+        </div>
+        <div class="description">
+            {text key="frmsms+mobile_code_description"}
+        </div>
+    </div>
+    {if isset($mailClass)}
+    <div class="item {$mailClass}">
+        <div class="fields">
+            {if $mailClass=='unverify'}
+            <div class="field">
+                {input name="mail_code"} {error name='mail_code'}
+            </div>
+            <div class="send_more">
+                <span class="ow_button" onclick="resendToken('mail','{$resendTokenUrl}');">
+                    {text key="frmsms+resend_mail_code"}
+                </span>
+                <div class="mail ow_preloader" style="display: none;"></div>
+            </div>
+            {else}
+            <div class="field" style="height:30px">
+                {input name="mail_code"} {error name='mail_code'}
+            </div>
+            {/if}
+        </div>
+        {if $mailClass=='unverify'}
+        <div class="description">
+            {text key="frmsms+mail_code_description"}
+        </div>
+        {/if}
+    </div>
+    {/if}
+    <div class="owm_verify_buttons_submit">
+        {submit name="submit" class='ow_ic_save'}
+        {if isset($removeUnverifiedNumberUrl)}
+            <span class="ow_button verify_later" onclick="removeUnverifiedNumber('{$removeUnverifiedNumberUrl}');">
+        {text key="frmsms+remove_unverified_number"}
+            </span>
+        {/if}
+        <span class="ow_button verify_later" onclick="sign_out('{$signOutUrl}');">
+    {text key="frmsms+verify_later"}
+        </span>
+    </div>
+    {/form}
+    </div>
+</div>

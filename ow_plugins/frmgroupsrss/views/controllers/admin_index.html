@@ -1,0 +1,44 @@
+<br class="ow_automargin ow_wide">
+    <div class="ow_frmgroupsrss_guide">
+        <p>
+            {text key='frmgroupsrss+plugin_guide'}
+        </p>
+    </div>
+    <br>
+    {form name="form"}
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_tr_first">
+            <th class="ow_name ow_txtleft" colspan="2">
+                <span class="ow_section_icon ow_ic_gear_wheel">{text key="frmgroupsrss+settings"}</span>
+            </th>
+        </tr>
+
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td style="width: 50%">
+                {label name='update_interval' }
+            </td>
+            <td>
+                {input name='update_interval' style="width: 50px;"}<br />
+                {error name='update_interval'}
+            </td>
+        </tr>
+
+        <tr class="{cycle values='ow_alt1, ow_alt2'} ow_tr_last">
+            <td style="width: 50%">
+                {label name='feeds_count' }
+            </td>
+            <td>
+                {input name='feeds_count' style="width: 50px;"}<br />
+                {error name='feeds_count'}
+            </td>
+        </tr>
+    </table>
+
+    <div class="clearfix ow_submit ow_stdmargin">
+        <div class="ow_right">
+            {submit name="submit"}
+        </div>
+    </div>
+    {/form}
+
+</div>

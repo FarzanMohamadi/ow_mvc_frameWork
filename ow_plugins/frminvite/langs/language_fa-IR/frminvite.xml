@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frminvite" label="frminvite" language_tag="fa-IR" language_label="فارسی">
+    <key name="auth_frminvite_label">
+        <value>
+          دعوت افراد
+        </value>
+    </key>
+    <key name="auth_action_label_invite">
+        <value>
+            دعوت به ثبت‌نام در سامانه
+        </value>
+    </key>
+	<key name="invite_index">
+        <value>
+            دعوت به سامانه
+        </value>
+    </key>
+	<key name="admin_invitation_settings_heading">
+        <value>
+            تنظیمات افزونه دعوت افراد
+        </value>
+    </key>
+	<key name="invitationDetailsInfo">
+        <value>
+            اطلاعات دعوت افراد
+        </value>
+    </key>
+	<key name="viewCountSetting">
+        <value>
+            تنظیمات نمایش
+        </value>
+    </key>
+		<key name="senderId">
+        <value>
+            شناسه دعوت کننده
+        </value>
+    </key>
+		<key name="senderUserName">
+        <value>
+            نام کاربری دعوت کننده
+        </value>
+    </key>
+		<key name="senderDisplayName">
+        <value>
+            نام حقیقی دعوت کننده
+        </value>
+    </key>
+		<key name="invitedEmail">
+        <value>
+            رایانامه دعوت شونده
+        </value>
+    </key>
+		<key name="timeStamp">
+        <value>
+            تاریخ
+        </value>
+    </key>
+		<key name="input_settings_view_count_label">
+        <value>
+            تعداد مورد نمایش در هر صفحه
+        </value>
+    </key>
+	<key name="modified_successfully">
+        <value>
+             تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+	<key name="invalid_invitation_count">
+        <value>
+             عدد وارد شده صحیح نیست
+        </value>
+    </key>
+    <key name="createInvitationLink">
+        <value>
+            ایجاد لینک دعوت
+        </value>
+    </key>
+    <key name="create_invite_link_description">
+        <value>
+            برای ایجاد لینک دعوت به سامانه گزینه ایجاد لینک را انتخاب کنید
+        </value>
+    </key>
+    <key name="create_invite_link">
+        <value>
+            ایجاد لینک دعوت
+        </value>
+    </key>
+    <key name="invite_members_textarea_sms_invitation_text">
+        <value>
+            فهرست شماره‌های همراه را اینجا وارد کنید. حداکثر 50 شماره و هر شماره را در خطی مجزا وارد کنید.
+        </value>
+    </key>
+    <key name="sms_template_invite_user_text">
+        <value>
+            کاربر گرامی، شما به «{$site_name}» دعوت شده‌اید. جهت ثبت‌نام از پیوند زیر استفاده کنید: {$url}
+        </value>
+    </key>
+    <key name="wrong_mobile_format_error">
+        <value>
+            شماره تلفن در فرمت مناسب نیست: {$phone}
+        </value>
+    </key>
+    <key name="wrong_email_format_error">
+        <value>
+            آدرس ایمیل در فرمت مناسب نیست: {$email}
+        </value>
+    </key>
+    <key name="reach_daily_limit_error">
+        <value>
+            شما به محدودیت تعداد ارسال دعوت روزانه خود رسیدید.
+        </value>
+    </key>
+    <key name="general_setting">
+        <value>
+            عمومی
+        </value>
+    </key>
+    <key name="limit_field">
+        <value>
+            محدودیت تعداد دعوت روزانه برای هر کاربر
+        </value>
+    </key>
+    <key name="left_budget_message">
+        <value>
+            تعداد باقیمانده امروز شما برای دعوت {$budget} است.
+        </value>
+    </key>
+    <key name="registered_users">
+        <value>
+            شماره‌های زیر قبلا در سامانه ثبت نام کرده‌اند:
+        </value>
+    </key>
+	    <key name="invalid_numbers">
+        <value>
+            دعوت‌نامه برای این شماره‌(شماره‌ها) به دلیل اینکه جزو فهرست شماره تلفن‌های همراه مجاز برای ثبت‌نام نیست ارسال نشد:
+        </value>
+    </key>
+    <key name="invite_members_success_message">
+        <value>
+            {$num} دعوت‌نامه با موفقیت ارسال شد.
+        </value>
+    </key>
+
+</prefix>

@@ -1,0 +1,29 @@
+<div>
+	{if isset($budgetLeftMessage)}<span>{$budgetLeftMessage}</span>{/if}
+	{form name='invite-members'}
+	{input name='emails'}
+	{if $sms_enabled}
+		<br /><br />
+		{input name='smss'}
+		{if isset($registered_users)}
+			<div>
+				<span>{text key="frminvite+registered_users"}</span><br/>
+				{foreach from=$registered_users item='registered'}
+					<span>{$registered['number']} : </span><a href="{$registered['url']}">{$registered['username']}</a><br/>
+				{/foreach}
+			</div>
+		{/if}
+		<br/><br/>
+		{if isset($invalidNumbers)}
+			<div>
+				<span>{text key="frminvite+invalid_numbers"}</span><br/>
+				{foreach from=$invalidNumbers item='invalidNumber'}
+					<span>{$invalidNumber['number']} </span><br/>
+				{/foreach}
+			</div>
+		{/if}
+	{/if}
+	<div style="text-align: center;padding: 5px;">{submit name='submit'}</div>
+	{/form}
+</div>
+

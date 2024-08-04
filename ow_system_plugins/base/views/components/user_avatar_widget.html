@@ -1,0 +1,66 @@
+{style}{literal}
+    .ow_avatar_console .ow_avatar_label {
+        bottom: 5px;
+        right: 5px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+    }
+    #avatar_console_image {
+        background-repeat: no-repeat;
+        background-position: center center;
+        position:relative;
+        width: 100%;
+    }
+{/literal}{/style}
+
+{if $owner || $moderation || $isModerator}
+    {script}
+        {literal}
+        (function(){
+            $("#avatar-console").hover(
+              function(){
+                $("#avatar-change").fadeIn("fast");
+                $("#avatar-approve").fadeIn("fast");
+              },
+              function(){
+                $("#avatar-change").fadeOut("fast");
+                $("#avatar-approve").fadeOut("fast");
+              }
+          );            
+       }());
+       {/literal}
+    {/script}
+{/if}
+
+
+<div class="ow_avatar_console ow_center {if isset($avatarImageInfo) && ($avatarImageInfo.empty)} colorful_avatar_{$avatarImageInfo.digit} {/if}" id="avatar-console">
+    {if !$owner && !$isModerator && !isDefaultAvatar}
+    <a href="{$avatar}" onclick="OW.showImageInFloatBox(this.href); return false;">
+    {/if}
+    <div id="avatar_console_image" style="height: {$avatarSize}px; background-image: url({$avatar});
+    {if isset($avatarImageInfo) && ($avatarImageInfo.empty)} background-color: {$avatarImageInfo.color} {/if}">
+        
+<!--        <div class="ow_avatar_pending_approval" style="{if !$hasAvatar || !$isModerator || !$owner || !empty($avatarDto) && $avatarDto->status == 'active' }display:none;{else}{/if}position: absolute; top: 0; right: 0; left: 0; bottom: 0; background-color: rgba(0,0,0,0.6); color: #fff; padding: 8px;">{text key='base+avatar_pending_approval'}</div>-->
+
+        {if $owner || $isModerator}
+            <div class="ow_avatar_button ow_avatar_change" id="avatar-change" style="display: none">
+                <a class="ow_lbutton" id="avatar-change-btn" href="javascript://">{text key='base+avatar_change'}</a>
+                {if !$avatarImageInfo.empty}
+                    <a class="ow_lbutton" id="avatar-delete" href="javascript://" style="margin-top: 1px;">{text key='base+remove_avatar'}</a>
+                {/if}
+            </div>
+        {/if}
+        
+        {if $moderation}
+            <div class="ow_avatar_button ow_avatar_change" id="avatar-approve" style="display: none">
+                <a class="ow_lbutton" href="javascript://">{text key='base+approve'}</a>
+            </div>
+        {/if}
+        
+        {if isset($role.label)}<span class="ow_avatar_label {if $isUserOnline}avatar_console_label{/if}"{if isset($role.custom)} style="background-color: {$role.custom}"{/if}>{$role.label}</span>{/if}
+    </div>
+    {if !$owner && !$isModerator}
+    </a>
+    {/if}
+    <div class="user_online_wrap">{online_now userId=$userId}</div>
+</div>

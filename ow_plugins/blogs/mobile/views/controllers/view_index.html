@@ -1,0 +1,145 @@
+{style}{literal}
+.owm_box_toolbar.blogs {
+text-align: right;
+float: right;
+}
+.owm_box_toolbar.blogs:lang(fa-IR) {
+text-align: left;
+float: left;
+}
+
+.owm_list_item_view_body.owm_blogs_view{
+min-height: initial;
+font-size: 10px;
+}
+.owm_blogs_view .blogs_widget .owm_box_padding .total_score .ow_smallmargin {
+font-size: 10px;
+text-align: center;
+}
+
+.owm_blogs_view .blogs_widget .total_score {
+margin-top: 10px;
+}
+.owm_blogs_avg_value {
+display: inline-block;
+}
+
+{/literal}{/style}
+{script}
+{literal}
+    $("a.blog_delete_attachment").each(function(){
+
+        $(this).click(function(){
+
+            if ( confirm(OW.getLanguageText('blogs', 'confirm_delete_attachment')) )
+            {
+               var attachment_id = $(this).data("aid");
+               var attachmentDeleteCode = $(this).attr("code");
+               var params = {};
+               var url = '{/literal}{url_for_route for='blog_delete_attachment'}{literal}';
+               params['attachmentId'] = attachment_id;
+                if(attachmentDeleteCode!=null && attachmentDeleteCode!=undefined)
+                {
+                    params['attachmentDeleteCode'] = attachmentDeleteCode;
+                }
+               $.ajaxSetup({dataType: 'json'});
+               $.post(url, params, function(data){
+                    if ( data.result == true ) {
+                        OW.info(data.msg);
+						window.location = window.location;
+                    }
+                    else if (data.error != undefined) {
+                        OW.warning(data.error);
+                    }
+               });
+            }
+            else
+            {
+                return false;
+            }
+        });
+    });
+{/literal}
+{/script}
+
+<div class="owm_nav_cap owm_nav_cap_left_cont owm_nav_cap_right_cont owm_bg_color_3 owm_border clearfix">
+	{if isset($canEdit) && $canEdit==true}
+	<div class="owm_box_toolbar blogs">
+		<a class="owm_btn_class_2 edit_link" href="{$editPost.href}" style="display: inline-block;">{$editPost.label}</a>
+		<a class="owm_btn_class_3 delete_link" href="{$deletePost.href}" onclick="{$deletePost.click}" style="display: inline-block;">{$deletePost.label}</a>
+	</div>
+	{/if}
+	<div class="owm_float_left">
+		<a class="owm_nav_cap_left" href="{$urlForBack}"></a>
+	</div>
+	<h3>
+		{text key="base+back"}
+	</h3>
+</div>
+<div class="owm_blogs_view owm_list_item_view clearfix">
+	<div class="owm_list_item_view_header clearfix">
+		{if !empty($imgsrc)}
+		<img class="owm_list_item_view_header_img" src="{$imgsrc}" />
+		{/if}
+		<a href="{$authorHref}"  style="font-size: 12px;">{$displayname}</a>
+		<span class="owm_list_item_view_title">{$postTitle}</span>
+		<span class="owm_list_item_view_date">{format_date timestamp=$info.dto->timestamp}</span>
+	</div>
+
+	<div class="owm_list_item_view_body">
+		<div class="owm_list_item_view_body_text clearfix">
+			{$info.dto->post}
+		</div>
+	</div>
+	<div class="owm_list_item_view_footer">
+		<div class="owm_list_item_view_paging ow_stdmargin">
+			<center>{$paging}</center>
+		</div>
+		<div class="blogs_widget" style="border-top: 1px solid #ccc;padding: 11px;">
+			{$rate}
+			{if isset($avgScore)}
+			<div class="owm_blogs_avg_description">
+				{text key="base+rates_box_cap_label"}
+			</div>
+			<div class="owm_blogs_avg_value">
+				{$avgScore}
+			</div>
+			{/if}
+		</div>
+
+		{if isset($attachments)}
+		<div class="blog_widget ow_dnd_widget attachments">
+			{block_decorator name="box" addClass="ow_stdmargin" langLabel="base+attch_attachment_label" iconClass="ow_ic_picture"}
+			{foreach from=$attachments item='attm'}
+			<div class="ow_file_attachment_preview">
+				<div class="ow_label">
+					<a title="{$attm.fileName}" class="ow_file_attachment_info {$attm.extension}" href="{$attm.downloadUrl}" target="_blank">{$attm.fileName}</a>
+					<span>({$attm.fileSize}Kb)</span>
+				</div>
+				{if isset($canEdit) && $canEdit==true}
+				<div class="ow_value">
+					{if isset($attachmentDeleteCode)}
+					<a title="{text key='base+delete'}" href="javascript://" style="float: left;" class="blog_delete_attachment ow_lbutton" data-aid="{$attm.id}" code="{$attachmentDeleteCode}" rel="{$attm.id}"></a>
+					{else}
+					<a title="{text key='base+delete'}" href="javascript://" style="float: left;" class="blog_delete_attachment ow_lbutton" data-aid="{$attm.id}" rel="{$attm.id}"></a>
+					{/if}
+				</div>
+				{/if}
+			</div>
+			{/foreach}
+			{/block_decorator}
+		</div>
+		{/if}
+
+		{if isset($tags)}
+		<div class="owm_list_footer_tags">
+            <span>
+                {text key='frmnews+tags'} {$tags}
+            </span>
+		</div>
+		{/if}
+	</div>
+</div>
+<div class="owm_box blog_view_comments {if isset($frmmenu_active)} frmmenu-active {/if}">
+	{$comments}
+</div>

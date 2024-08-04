@@ -1,0 +1,65 @@
+.statistical_info_item {
+    display: inline-block;
+    padding: 15px;
+    border-radius: 50%;
+    min-height: 75px;
+    min-width: 75px;
+    text-align: center;
+    margin-bottom: 15px;
+    vertical-align: top;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.statistical_info {
+    text-align: center;
+}
+
+.statistical_info_item_count {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.top_user_info a {
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    min-width: 40px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.ow_dnd_widget.index-FRMGRAPH_CMP_TopUsersWidget tr:first-child td {
+    font-weight: bold;
+}
+
+.top_user_info {
+    text-align: right;
+}
+
+.top_users_info td {
+    border-color: #ECECEC !important;
+    border-right: unset !important;
+    border-left: unset !important;
+    border-top: unset !important;
+    text-align: right;
+}
+
+.top_users_info td:first-child {
+    width: 30px;
+}
+
+p.top_users_hint {
+    margin-top: 23px;
+    display: inline-block;
+    font-family: "IRANSansWeb_light";
+    color: #818181;
+}
+
+.top_user_info a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+

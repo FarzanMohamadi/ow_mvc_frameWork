@@ -1,0 +1,30 @@
+<div class="event_widget">
+    <table class="ow_table_3 detail_table">
+        <tr class="ow_tr_first">
+            <td class="ow_label" style="width: 25%">{text key='event+view_page_date_label'}</td>
+            <td class="ow_value">{$info.date}</td>
+        </tr>
+        {if !empty($info.endDate)}
+        <tr>
+            <td class="ow_label" style="width: 25%">{text key='event+view_page_end_date_label'}</td>
+            <td class="ow_value">{$info.endDate}</td>
+        </tr>
+        {/if}
+        <tr>
+            <td class="ow_label" style="width: 25%">{text key='event+view_page_location_label'}</td>
+            <td class="ow_value"><div>{$info.location}</div></td>
+        </tr>
+        {if !empty($showEventCreatorConfig)}
+        <tr class="ow_tr_last">
+            <td class="ow_label" style="width: 25%">{text key='event+view_page_created_label'}</td>
+            <td class="ow_value"><a href="{$info.creatorLink}">{$info.creatorName}</td>
+        </tr>
+        {/if}
+        {if !empty($info.categoryLabel)}
+        <tr>
+            <td class="ow_label" style="width: 25%">{text key='frmeventplus+view_category_label'}</td>
+            <td class="ow_value"><a class="event_category_link">{$info.categoryLabel}</td>
+        </tr>
+        {/if}
+    </table>
+</div>

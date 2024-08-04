@@ -1,0 +1,41 @@
+{*
+
+/**
+*
+*
+*/
+
+*}
+
+<a href="{$returnToSetting}">
+    {text key="frmcontactus+returnToSetting"}
+</a>
+{if ($informationCount == 0)}
+<div>{text key="frmcontactus+no_message"}</div>
+{else}
+<table class="ow_table_1 ow_form" style="font-size: 11px; margin: 10px; text-align: center">
+    <tr>
+        <td><span>{text key='frmcontactus+id'}</span></td>
+        <td><span>{text key='frmcontactus+subject'}</span></td>
+        <td><span>{text key='frmcontactus+useremail'}</span></td>
+        <td><span>{text key='frmcontactus+label'}</span></td>
+        <td><span>{text key='frmcontactus+message'}</span></td>
+        <td><span>{text key='frmcontactus+timeStamp'}</span></td>
+    </tr>
+    {foreach from=$tableData item='rows'}
+    <tr>
+        <td><span>{$rows.id}</span></td>
+        <td><span>{$rows.subject}</span></td>
+        <td><span>{$rows.useremail}</span></td>
+        <td><span>{$rows.label}</span></td>
+        <td><span>{$rows.message}</span></td>
+         {if isset($rows.timeStamp) && $rows.timeStamp>0}
+        <td><span>{format_date timestamp=$rows.timeStamp}</span></td>
+        {else}
+        <td><span>-</span></td>
+        {/if}
+    </tr>
+    {/foreach}
+</table>
+{$paging}
+{/if}

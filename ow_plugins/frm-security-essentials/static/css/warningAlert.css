@@ -1,0 +1,113 @@
+#notification-bar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #3E3D42;
+    border-bottom: 1px solid #3769bf;
+    clear: both;
+    z-index: 999;
+    user-select: none;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: goDown;
+    animation-name: goDown;
+}
+
+#notification-bar .container {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #3E3D42;
+}
+
+#notification-bar p {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    float: right;
+    margin: 0 25px 0 0;
+    padding: 0;
+    line-height: 45px;
+    color: #fff;
+}
+
+#notification-bar p.btn-action {
+    display: inline-block;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 5px;
+    margin-bottom: 7px;
+    padding: 0px 12px;
+    float: left;
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background-color: #129ef5;
+    color: white;
+    text-decoration: none;
+}
+
+#notification-bar.isChecked {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: goUp;
+    animation-name: goUp;
+}
+
+@-webkit-keyframes goUp {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    100% {
+        -webkit-transform: translate3d(0, -300px, 0);
+        transform: translate3d(0, -300px, 0);
+        opacity: 0;
+    }
+}
+
+@keyframes goUp {
+    0% {
+        -webkit-transform: none;
+        transform: none;
+    }
+    100% {
+        -webkit-transform: translate3d(0, -300px, 0);
+        transform: translate3d(0, -300px, 0);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes goDown {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes goDown {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+    }
+}

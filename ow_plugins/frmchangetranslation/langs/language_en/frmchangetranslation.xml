@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmchangetranslation" label="frmchangetranslation" language_tag="en" language_label="English">
+    <key name="import_failed">
+        <value>There was an error in importing file</value>
+    </key>
+    <key name="import_success">
+        <value>File importing was successful</value>
+    </key>
+    <key name="admin_page_heading">
+        <value>Change translation settings</value>
+    </key>
+    <key name="admin_page_title">
+        <value>Change translation settings</value>
+    </key>
+    <key name="lang_file">
+        <value>Translation file</value>
+    </key>
+    <key name="submit">
+        <value>Send File</value>
+    </key>
+</prefix>

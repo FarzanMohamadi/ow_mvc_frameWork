@@ -1,0 +1,17 @@
+<div id="versions-log">
+    <div class="item_loading">
+        <img src="{$preloader_img_url}">
+    </div>
+    <div id="files_data">
+        {foreach from=$dirs item="dir"}
+        {if $isPublic}
+            <a onclick="loadDocFolderData('{$data_post_url}','{$dir.path}');"><img src="{$dir.icon}"/>{$dir.name} {$dir.time}</a>
+        {else}
+            <a onclick="loadFolderData('{$data_post_url}','{$dir.type}','{$dir.key}','{$dir.version}');"><img src="{$dir.icon}"/>{$dir.name} {$dir.time}</a>
+        {/if}
+        {/foreach}
+        {foreach from=$files item="file"}
+        <a onclick="downloadFile('{$file.href}','{$urlOfDownload}', '{$file.key}', '{$file.version}')"><img src="{$file.icon}"/>{$file.name}</a>
+        {/foreach}
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<h1>{text key="frmemployee+unapproved_list"}</h1>
+<table id="employees_table_1" class="ow_table_1">
+    <tr>
+        <th>{text key="frmemployee+name"}</th>
+        <th></th>
+    </tr>
+    {foreach from=$users item='user'}
+    {if empty($user.dateValue)}
+    <tr>
+        <td>
+            <a href="{$user.href}">{$user.name}</a>
+        </td>
+        <td>
+            <a href="{$user.action}">{text key='frmemployee+approve'}</a>
+        </td>
+    </tr>
+    {/if}
+    {/foreach}
+</table>
+
+<h1>{text key="frmemployee+approved_list"}</h1>
+<table id="employees_table_2"  class="ow_table_1">
+    <tr>
+        <th>{text key="frmemployee+name"}</th>
+        <th></th>
+    </tr>
+    {foreach from=$users item='user'}
+    {if !empty($user.dateValue)}
+    <tr class="">
+        <td >
+            <a href="{$user.href}">{$user.name}</a>
+        </td>
+        <td>
+            <a href="{$user.action}">{text key='frmemployee+disapprove'}</a>
+        </td>
+    </tr>
+    {/if}
+    {/foreach}
+</table>

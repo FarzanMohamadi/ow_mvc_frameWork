@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtelegram" label="frmtelegram" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Telegram
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            Settings
+        </value>
+    </key>
+    <key name="icon_type">
+        <value>
+            Icon functionality
+        </value>
+    </key>
+    <key name="icon_type_hidden">
+        <value>
+            Hide icon
+        </value>
+    </key>
+    <key name="icon_type_link">
+        <value>
+            Link to Telegram app
+        </value>
+    </key>
+    <key name="icon_type_list">
+        <value>
+            Go to Telegram feed page
+        </value>
+    </key>
+    <key name="results_per_page">
+        <value>
+            Results per page
+        </value>
+    </key>
+    <key name="bot_api_key">
+        <value>
+            Bot API key
+        </value>
+    </key>
+    <key name="at">
+        <value>
+            at
+        </value>
+    </key>
+    <key name="remove">
+        <value>
+            Remove
+        </value>
+    </key>
+    <key name="admin_telegram_settings_heading">
+        <value>
+            Settings for Telegram plugin
+        </value>
+    </key>
+    <key name="admin_channel_link">
+        <value>
+            Group/Channel link
+        </value>
+    </key>
+    <key name="admin_changed_success">
+        <value>
+            Settings successfully changed.
+        </value>
+    </key>
+    <key name="desc_label">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            Save
+        </value>
+    </key>
+    <key name="telegram_title">
+        <value>
+            Telegram
+        </value>
+    </key>
+
+    <key name="empty_row_label">
+        <value>
+            List is empty.
+        </value>
+    </key>
+    <key name="active_items">
+        <value>
+            Visible Items
+        </value>
+    </key>
+    <key name="inactive_items">
+        <value>
+            Invisible Items
+        </value>
+    </key>
+    <key name="id_label">
+        <value>
+            id
+        </value>
+    </key>
+    <key name="title_label">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="type_label">
+        <value>
+            Type
+        </value>
+    </key>
+    <key name="edit_item">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="deactivate_item">
+        <value>
+            Hide
+        </value>
+    </key>
+    <key name="activate_item">
+        <value>
+            Show
+        </value>
+    </key>
+
+
+    <key name="telegram_page_title">
+        <value>
+            Telegram
+        </value>
+    </key>
+    <key name="telegram_page_desc">
+        <value>
+            this page contains Telegram feeds.
+        </value>
+    </key>
+    <key name="list_page_heading">
+        <value>
+            Groups and Channels List
+        </value>
+    </key>
+    <key name="link_to_telegram">
+        <value>
+            in Telegram
+        </value>
+    </key>
+
+    <key name="successfuly_sent">
+        <value>
+            Successfully sent!
+        </value>
+    </key>
+    <key name="send_text">
+        <value>
+text
+        </value>
+    </key>
+
+    <key name="mobile_main_menu_item">
+        <value>
+            Telegram
+        </value>
+    </key>
+
+    <key name="database_record_activate_item">
+        <value>
+            Record Activated!
+        </value>
+    </key>
+    <key name="database_record_deactivate_item">
+        <value>
+            Record Deactivated!
+        </value>
+    </key>
+    <key name="telegram_settings">
+        <value>
+            Telegram Settings
+        </value>
+    </key>
+    <key name="telegram_already_connected">
+        <value>
+            Already connected to Telegram.
+        </value>
+    </key>
+    <key name="connect_telegram_to_entity">
+        <value>
+            Connect to Telegram
+        </value>
+    </key>
+</prefix>

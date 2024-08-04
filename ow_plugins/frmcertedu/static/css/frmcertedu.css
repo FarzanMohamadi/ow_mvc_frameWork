@@ -1,0 +1,592 @@
+.courses_widget .course_container{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #cecece;
+    display: inline-block;
+}
+
+.news_widget .news,
+.courses_widget .course{
+    display: inline-block;
+    text-align: center;
+}
+
+.courses_widget .course_read_more_button{
+    border-radius: 5px;
+    background-color: #012072;
+    box-shadow: none;
+    border: none;
+    color: #fff;
+    padding: 1px 20px;
+    right: 37px;
+    margin-top: -30px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.courses_widget .course_container .course_details_link:hover .course_read_more_button {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1.05) translateY(-35px);
+}
+
+.courses_widget .course_details_link{
+    width: 100%;
+}
+
+.courses_widget .course_read_more_button:hover {
+    cursor: inherit;
+}
+
+.courses_widget .course_details_link:hover img.course_image {
+    filter: grayscale(100%);
+}
+.courses_widget .course_image{
+    width: 100%;
+}
+
+.courses_widget .course_title:hover{
+    color: #012072;
+}
+
+.courses_widget .course_title{
+    cursor: pointer;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.news_widget .news_title{
+    cursor: pointer;
+}
+
+.courses_widget .course_description{
+    font-size: 90%;
+    min-height: 125px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divider{
+    border-top: 1px solid #cecece;
+    margin: 5px 0;
+}
+
+.courses_widget .course_container .course_price{
+    margin-bottom: 6px;
+}
+
+.news_widget .news{
+    position: relative;
+}
+
+.news_widget .news a {
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.news_widget .news a + .news_title{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #cecece;
+    -webkit-transition: all ease .35s;
+    -moz-transition: all ease .35s;
+    -ms-transition: all ease .35s;
+    -o-transition: all ease .35s;
+    transition: all ease .35s;
+    padding-top: 6px;
+    padding: 10px;
+    width: calc(100% - 25px);
+}
+
+.news_widget .news_image{
+    width: 100%;
+}
+
+.news_widget .news_image {
+    height: 350px;
+}
+
+.news_widget .news_first_row, .news_widget .news_second_row {
+    height: 350px;
+}
+
+.news_widget .news_image{
+    margin-top: -30px;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.news_widget .news {
+    height: inherit;
+}
+
+.news_widget .news .news_date{
+    z-index: 500;
+    text-align: right;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    margin-top: -20px;
+    margin-right: 10px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    display: inline;
+    float: right;
+    color: #e0e0e0;
+}
+
+.news_widget .news:hover .news_title{
+    background-color: rgba(0, 0, 0, .85);
+}
+
+.news_widget .news:hover .news_image{
+    filter: brightness(80%);
+    -webkit-filter: brightness(80%);
+    -moz-filter: brightness(80%);
+    -ms-filter: brightness(80%);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.news_widget .all_news{
+    background-color: #179bd7;
+    height: 350px;
+    color: #fff;
+    padding: 20px;
+}
+
+.all_news p {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.news_widget .all_news .see_all_news{
+    color: #fff;
+    background-color: #026da1;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    box-shadow: none;
+    padding: 1px 5px;
+    display: block;
+    width: 200px;
+    margin: auto;
+    bottom: auto;
+    margin-top: 25px;
+    direction: ltr;
+}
+
+.news_widget .all_news .see_all_news:hover {
+    color: #026da1;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.news_widget .all_news h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: right;
+    padding: 20px;
+    line-height: 48px;
+}
+
+.news_widget .news{
+    margin: 0;
+    overflow: hidden;
+    float: right;
+    margin-left: -5px;
+}
+
+.faq_widget .faq .faq_question{
+    border: 1px solid #b9b9b9;
+    background-color: #eee;
+    margin-top: 1px;
+    position: relative;
+    padding: 5px 5px 5px 30px;
+}
+
+.faq_widget .faq .faq_question:hover {
+    background-color: #0288c9;
+    cursor: pointer;
+    color: #fff;
+}
+
+.faq_widget .faq .faq_question.active {
+    background-color: #026da1;
+    color: #fff;
+}
+
+.faq_widget .faq .faq_answer {
+    padding: 5px;
+    display: none;
+    border: 1px solid #b9b9b9;
+    border-top: none;
+}
+
+.faq_widget .faq_question .faq_question_toggle{
+    position: absolute;
+    left: 15px;
+}
+
+.index-FRMCERTEDU_CMP_Countdown {
+    background: url("../img/registration-form-background.jpg") no-repeat center center;
+    background-size: cover;
+    background-blend-mode: saturation;
+    min-height: 350px;
+    border: none;
+}
+
+.ow_dnd_widget.index-FRMCERTEDU_CMP_News {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+
+/*  countdown  */
+
+.inline-block {
+    display: -moz-inline-stack;
+    display: inline-block;
+}
+
+.countdown {
+    margin: 50px auto;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    font-weight: 300;
+    direction: ltr;
+    text-align: left;
+}
+
+.countdown .time-circle {
+    display: -moz-inline-stack;
+    display: inline-block;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 54px;
+    width: 110px;
+    height: 110px;
+    line-height: 120px;
+    text-align: center;
+    position: relative;
+    border: 3px solid #fff;
+    background-color: #00469654;
+}
+
+.countdown .time-circle .time {
+    display: -moz-inline-stack;
+    display: inline-block;
+    font-size: 40px;
+    line-height: 100px;
+}
+
+.countdown .time-circle .time-name {
+    font-size: 13px;
+    position: absolute;
+    bottom: 21px;
+    width: 100%;
+    left: 0;
+    line-height: 16px;
+    color: #d2d2d2;
+}
+
+.countdown .time-circle .progress {
+    width: 126px;
+    height: 126px;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    z-index: -9;
+    background-color: #f6f6f6;
+    background-color: rgba(0, 0, 0, 0.1);
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.countdown .time-circle .progress:after {
+    content: '';
+    width: 6px;
+    height: 70px;
+    background: #fff;
+    position: absolute;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: 0% 100%;
+    -moz-transform-origin: 0% 100%;
+    -ms-transform-origin: 0% 100%;
+    -o-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+}
+
+.countdown .dots {
+    display: -moz-inline-stack;
+    display: inline-block;
+    padding: 20px 5px;
+    font-size: 54px;
+    -webkit-animation: dots 1s infinite;
+    -moz-animation: dots 1s infinite;
+    -ms-animation: dots 1s infinite;
+}
+
+.countdown h1{
+    color: #fff !important;
+    font-size: 45px;
+    margin-top: -40px;
+    padding-bottom: 60px;
+    text-align: right;
+    float: right;
+}
+
+.ow_dnd_widget.index-FRMCERTEDU_CMP_Courses
+{
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.ow_box_empty.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_ContactUs.ow_no_cap.ow_break_word.container {
+    background: url(../img/bg-newletter.png) no-repeat top center;
+    background-size: cover;
+    max-width: 600px;
+    padding: 56px 70px 71px 70px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.ow_box_empty.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_ContactUs.ow_no_cap.ow_break_word.container h1 {
+    color: black;
+    margin-bottom: 30px;
+}
+
+.ow_box_empty.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_ContactUs.ow_no_cap.ow_break_word.container a {
+    max-width: 150px;
+}
+
+.courses_list .course {
+    width: 20%;
+    margin: 0px 20px 0px 20px;
+}
+
+.ow_box.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_Courses.ow_break_word.container {
+    border: none;
+}
+
+.timer_counter_for_courses {
+    display: block;
+    width: inherit;
+    text-align: right;
+    float: right;
+}
+
+.ow_dnd_widget.index-FRMCERTEDU_CMP_Countdown .ow_box_cap.ow_dnd_configurable_component.clearfix {
+    display: none;
+}
+
+.registration_box {
+    float: left;
+    min-width: 300px;
+    min-height: 230px;
+    background-color: white;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.registration_box span {
+    display: block;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    direction: rtl;
+    font-size: 20px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.registration_box a,
+.ow_box_empty.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_ContactUs.ow_no_cap.ow_break_word.container a{
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 55px;
+    background-color: #1c518c;
+    border-color: white;
+    width: 65%;
+    height: 35px;
+    vertical-align: middle;
+    line-height: 37px;
+    color: white;
+    border-radius: 3px;
+}
+
+.registration_box a:hover,
+.ow_box_empty.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_ContactUs.ow_no_cap.ow_break_word.container a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ow_box.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_Countdown.ow_break_word.container h1 {
+    min-width: 68vw;
+    line-height: 60px;
+}
+
+.ow_box_empty.ow_stdmargin.clearfix.index-FRMCERTEDU_CMP_Faq.ow_break_word.container {
+    padding-top: 10px;
+}
+
+.registration_box span:before {
+    height: 193px;
+    content: '';
+    border-radius: 50%;
+    bottom: -32px;
+    right: auto;
+    width: 345px;
+    position: absolute;
+    left: calc(50% - 410px);
+    left: -webkit-calc(0% - 24px);
+    left: -moz-calc(50% - 410px);
+    background-color: #ffb606;
+}
+
+.registration_box span p {
+    position: relative;
+    color: white;
+}
+
+.ow_lp_wrapper a img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.ow_lp_label.ow_small br {
+    display: none;
+}
+
+.ow_lp_groups .ow_lp_label.ow_small,
+.ow_lp_groups .ow_lp_label.ow_small span{
+    color: transparent;
+}
+
+.ow_lp_groups .ow_lp_wrapper {
+    width: 30px;
+    height: 30px;
+}
+.ow_lp_groups .ow_lp_wrapper {
+    width: 30px;
+}
+.ow_lp_groups .ow_lp_label {
+    margin-right: 40px !important;
+}
+.ow_dnd_widget.index-FRMCERTEDU_CMP_ContactUs {
+    margin: 0;
+}
+
+@-moz-keyframes dots {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+@-webkit-keyframes dots {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+@keyframes dots {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+/* end of  countdown  */
+
+
+
+.news_widget .news
+{
+    width: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .news_widget .news{
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .news_widget .news{
+        width: 25%;
+    }
+}
+
+@media (max-width: 992px){
+    .courses_widget .course {
+        width: 44%;
+        float: right;
+        margin-bottom: 25px;
+    }
+    .timer_counter_for_courses {
+        margin-bottom: 30px;
+        margin-right: 15%;
+    }
+
+    .registration_box {
+        left: 33%;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 730px){
+    .courses_widget .course {
+        width: 95%;
+        float: right;
+        margin-bottom: 25px;
+    }
+
+    .timer_counter_for_courses {
+        margin-bottom: 30px;
+        margin-right: 5%;
+    }
+
+    .countdown .time-circle {
+        width: 90px;
+        height: 90px;
+    }
+
+    .countdown .time-circle .time-name{
+        bottom: 9px;
+    }
+
+}

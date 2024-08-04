@@ -1,0 +1,46 @@
+
+
+<table class="ow_table_1 ow_form ow_automargin" style="width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_value">{text key='frmfilemanager+admin_reset_label'}</td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">
+            {form name='reset_and_import'}
+                {submit name='save' class='ow_button ow_ic_save'}
+            {/form}
+        </td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">
+            {form name='reset_only_groups'}
+                {submit name='save' class='ow_button ow_ic_save'}
+            {/form}
+        </td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">
+            {form name='reset_only_profile'}
+                {submit name='save' class='ow_button ow_ic_save'}
+            {/form}
+        </td>
+    </tr>
+</table>
+
+
+{form name='settings'}
+<table class="ow_table_1 ow_form ow_automargin" style="width: 400px;">
+    <tr class="ow_alt1">
+        <td class="ow_label" style="min-width:200px">
+            {label name='enable_mobile_version'}
+        </td>
+        <td class="ow_value">
+            {input name='enable_mobile_version'}
+            {error name='enable_mobile_version'}
+        </td>
+    </tr>
+    <tr>
+        <td class="ow_center" colspan="2">{submit name='save' class='ow_button ow_ic_save'}</td>
+    </tr>
+</table>
+{/form}

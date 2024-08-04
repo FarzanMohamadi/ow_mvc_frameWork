@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="coverphoto" label="coverphoto" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>Cover Photo</value>
+    </key>
+    <key name="add_more_cover_photo">
+        <value>Add More</value>
+    </key>
+    <key name="admin_title">
+        <value>Cover Photo Settings</value>
+    </key>
+    <key name="list_is_empty">
+        <value>You have not any cover photo</value>
+    </key>
+    <key name="edit_for_select_cover">
+        <value>Edit Cover Photos</value>
+    </key>
+    <key name="empty_image">
+        <value>You should upload cover photo</value>
+    </key>
+    <key name="not_valid_image">
+        <value>Image is not supported</value>
+    </key>
+    <key name="description_coverphoto_float_page">
+        <value>You can select your old cover photo as current here.Also you can remove your cover photos
+        </value>
+    </key>
+    <key name="description_coverphoto_page">
+        <value>You can upload an image for using that in your profile page. The last image you uploaded, will selected as your current cover photo. Also you can set current cover photo manually.
+        </value>
+    </key>
+    <key name="enter_original_value">
+        <value>Enter original value</value>
+    </key>
+    <key name="enter_text_key">
+        <value>Enter text key</value>
+    </key>
+    <key name="errors_image_invalid">
+        <value>Unacceptable file extension</value>
+    </key>
+    <key name="file_structure_page_heading">
+        <value>File structure</value>
+    </key>
+    <key name="file_structure_page_title">
+        <value>File structure</value>
+    </key>
+    <key name="forms_file_field_label">
+        <value>Upload files</value>
+    </key>
+    <key name="forms_submit_field_label">
+        <value>Submit</value>
+    </key>
+    <key name="forms_page_heading">
+        <value>Cover Photos Page</value>
+    </key>
+    <key name="forms_page_title">
+        <value>Cover Photos Page</value>
+    </key>
+    <key name="are_you_sure_to_remove">
+        <value>Are you sure to remove this cover photo?</value>
+    </key>
+    <key name="are_you_sure_to_use_this">
+        <value>Are you sure to use this cover photo?</value>
+    </key>
+    <key name="delete_this_cover">
+        <value>Remove</value>
+    </key>
+    <key name="use_this_cover">
+        <value>Use this</value>
+    </key>
+    <key name="covers">
+        <value>List of your cover photos:</value>
+    </key>
+    <key name="forms_title_field_description">
+        <value>You shuold set your title cover photo</value>
+    </key>
+    <key name="forms_title_field_label">
+        <value>Cover Photo Title</value>
+    </key>
+    <key name="index_page_heading">
+        <value>Coverphotos</value>
+    </key>
+    <key name="index_page_title">
+        <value>Coverphotos</value>
+    </key>
+    <key name="database_record_saved_info">
+        <value>Cover photo successfully added</value>
+    </key>
+    <key name="database_record_used">
+        <value>Cover photo selected as a current cover photo</value>
+    </key>
+    <key name="database_record_deleted">
+        <value>Your cover photo removed successfully</value>
+    </key>
+    <key name="upload_image">
+        <value>Upload Image</value>
+    </key>
+    <key name="repositioning_label">
+        <value>Repositioning...</value>
+    </key>
+    <key name="save_position_label">
+        <value>save position</value>
+    </key>
+    <key name="cancel_position_label">
+        <value>cancel</value>
+    </key>
+    <key name="reposition_label">
+        <value>reposition cover</value>
+    </key>
+    <key name="drag_to_reposition_label">
+        <value>Drag to reposition</value>
+    </key>
+</prefix>

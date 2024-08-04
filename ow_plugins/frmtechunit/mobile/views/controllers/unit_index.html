@@ -1,0 +1,38 @@
+<div class="owm_frmtechunit clearfix" style="overflow: hidden;">
+    <div class="owm_nav_cap owm_nav_cap_left_cont owm_bg_color_3 owm_border clearfix">
+        <div class="owm_float_left">
+            <a class="owm_nav_cap_left" href="javascript:window.history.back();"></a>
+        </div>
+        <h3> {text key="base+back"}</h3>
+    </div>
+    <div class="owm_list_search owm_box_empty">
+        {form name="search"}
+            <div>{input name="search" id="unitSearch"}{error name="search"}</div>
+            {decorator name='button' iconClass="ow_ic_lens" id="searchFilter" onclick="window.searchUnits('{$originalUrl}');" langLabel='frmtechunit+search'}
+        {/form}
+    </div>
+    <div class="owm_box ow_stdmargin">
+        <div class="owm_box_cap clearfix" style="margin-bottom: 15px;">
+            <div class="owm_box_cap_right">
+                <div class="owm_box_cap_body">
+                    <h3>{text key="frmtechunit+units"}</h3>
+                </div>
+            </div>
+        </div>
+        <div class="owm_box_body">
+            {if isset($add_url)}
+            <span class="owm_button owm_techunit_margin"><span class=" owm_ic_add"><input type="button" value="{text key="frmtechunit+add"}" id="add_profile_button" class="ow_ic_edit" onclick="window.location.href = '{$add_url}'"></span></span>
+            {/if}
+            {if empty($list) }
+            <div class="owm_nocontent">{text key="frmtechunit+listing_no_items_msg"}</div>
+            {else}
+            {foreach from=$list key='key' item='unit'}
+            {decorator name='ipc' addClass='owm_list_item_with_image owm_techunit_margin' data=$unit infoString="<a
+                href=\"`$unit.url`\">`$unit.title`</a>"}
+            {/foreach}
+            <br/>
+            {$paging}
+            {/if}
+        </div>
+    </div>
+</div>

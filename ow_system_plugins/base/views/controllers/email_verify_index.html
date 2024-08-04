@@ -1,0 +1,24 @@
+{block_decorator name="box" type="empty" addClass="ow_center ow_ic_verification"}
+    {text key="base+email_verify_promo"}
+{/block_decorator}
+{block_decorator name="box" type="normal" addClass="ow_stdmargin ow_wide ow_automargin ow_center"}
+    {form name='emailVerifyForm'}
+    <table class="ow_table_1">
+        <tr class="ow_alt1 ow_tr_first ow_type_text">
+            <td class="ow_value ow_label ow_email_verify_index">
+                {input name='email' placeholder={text key="base+questions_question_email_correction_label"}}
+                </br>
+                {label name='email'}
+            </td>
+            <td>
+                {submit name='sendVerifyMail'}
+            </td>
+        </tr>
+    </table>
+    {error name='email'}
+    {/form}
+{block_decorator name="box" type="empty" addClass="ow_center ow_promo_warning"}
+{text key="base+email_verify_promo_warning"}
+{/block_decorator}
+{if isset($verifyLater)}{$verifyLater}{/if}
+{/block_decorator}

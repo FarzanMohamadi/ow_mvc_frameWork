@@ -1,0 +1,35 @@
+<h1>{text key="frmaudio+floatboxname"}</h1>
+
+{form name="add_audio_form"}
+
+<div class="ow_audio_floatbox" style="margin:10px;text-align: center;">
+
+    <div class="recorder">
+        <span id="time-display" class="hidden">00:00</span>
+        <input type="button" class="start"  onclick="buttonManager('start')"  value={text key="frmaudio+Record"} />
+        <input type="button" data-url="{$dataUrl}" data-blob-url="{$dataBlobUrl}" class="stop disabled" onclick="buttonManager('stop')" value={text key="frmaudio+Pause"} />
+        <pre class="status"></pre>
+    </div>
+
+    <audio style="display: none;" class="audio_item_player" width="100%" height="38px" controls src="" id="audio" type="audio/mp3"></audio>
+    <div id="audio_item_player_container"></div>
+    <table class="ow_table_1 ow_form">
+        <tr>
+            <td class="ow_label">{label name='name'}</td>
+            <td class="ow_value">{input name='name'}{error name='name'}</td>
+        </tr>
+        {if isset($statusPrivacy)}
+        <tr>
+            <td class="ow_label">{label name='statusPrivacy'}</td>
+            <td class="ow_value">{input name='statusPrivacy'}{error name='statusPrivacy'}</td>
+        </tr>
+        {/if}
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name='submit' class='ow_ic_add ow_positive'}
+            </td>
+        </tr>
+    </table>
+</div>
+
+{/form}

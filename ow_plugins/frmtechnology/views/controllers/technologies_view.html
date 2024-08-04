@@ -1,0 +1,218 @@
+{if $isMobile==false}
+        <ul class="ow_bl clearfix ow_small ow_right">
+            {if $allowEdit}
+            <li><a href="{$info.editUrl}">{text key="frmtechnology+edit"}</a></li>
+            <li><a href="{$info.delete.url}" onclick="return confirm('{$info.delete.confirmMessage}');" >{text key="frmtechnology+delete"}</a></li>
+            {if isset($info.deactivateUrl)}<li><a href="{$info.deactivateUrl}">{text key="frmtechnology+deactivate"}</a></li>{/if}
+            {if isset($info.activateUrl)}<li><a href="{$info.activateUrl}">{text key="frmtechnology+activate"}</a></li>{/if}
+            {/if}
+
+        </ul>
+<div class="image ow_frmtechnology_label">
+    {if $info.imgUrl1}
+        <img src="{$info.imgUrl1}" alt="{$info.title|escape}" />
+    {/if}
+    {if $info.imgUrl2}
+        <img src="{$info.imgUrl2}" alt="{$info.title|escape}" />
+    {/if}
+    {if $info.imgUrl3}
+        <img src="{$info.imgUrl3}" alt="{$info.title|escape}" />
+    {/if}
+    {if $info.imgUrl4}
+        <img src="{$info.imgUrl4}" alt="{$info.title|escape}" />
+    {/if}
+    {if $info.imgUrl5}
+        <img src="{$info.imgUrl5}" alt="{$info.title|escape}" />
+    {/if}
+</div>
+            <div class="ow_frmtechnology">
+            <table class="ow_table_2 ow_nomargin  data_table" style="padding-top: 20px;">
+                <tbody>
+                <tr class="ow_tr_first">
+                </tr><tr class="ow_tr_first">
+                    <th colspan="3" class="ow_section"><span>{text key="frmtechnology+technology_description"}</span></th>
+                </tr>
+
+                <tr class="">
+                    <td class="ow_label"  style="text-align: right; border: unset;">{$info.desc}</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+            <table class=" ow_nomargin  data_table" style="width: 100%; font-size: 14px;">
+                <tbody>
+                <tr class="ow_tr_first">
+                </tr><tr class="ow_tr_first">
+                    <th colspan="3" class="ow_section"><span>{text key="frmtechnology+technology_other_information"}</span></th>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_userFullName"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.userFullName}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_pn"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.pn}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_email"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.email}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_release_date"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px;  padding-right: 10px;">{$info.date}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_tags"}</td>
+                    {if isset($info.tags)}
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.tags}</td>
+                    {else}
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{text key="frmtechnology+null"}</td>
+                    {/if}
+                </tr>
+                {if $allowEdit}
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_position"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.position}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_grade"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.grade}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_sn"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.sn}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_org"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.org}</td>
+                </tr>                <tr >
+                    <td class="ow_label" style="width: 30%; text-align: left; color: #7d7d7d; padding: 5px;">{text key="frmtechnology+technology_area"}</td>
+                    <td class="ow_label" style="width: 70%; font-weight: bold; padding: 5px; padding-right: 10px;">{$info.area}</td>
+                </tr>
+                {/if}
+                </tbody>
+            </table>
+                <div class="button_container">
+                    <ul class="ow_bl clearfix">
+                        <li>
+                            <a href="{$technologiesListUrl}">
+                                {if isset($info.deactivateUrl)}
+                                {text key="frmtechnology+active_list"}
+                                {else}
+                                {text key="frmtechnology+deactivate_list"}
+                                {/if}
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+            {if $isActive}
+            <!--<div class="ow_frmtechnology_request">-->
+                <!--<div class="ow_frmtechnology_request_button">-->
+                <!--<span class="ow_button ">-->
+                    <!--<input type="button" value='{text key="frmtechnology+order_button"}' onclick="location.href='{$info.orderUrl}'">-->
+                <!--</span>-->
+                <!--</div>-->
+            <!--</div>-->
+            {/if}
+
+
+
+
+        </div>
+
+{else}
+
+        <div class="owm_frmtechnology owm_box">
+            <div class="owm_frmtechnology_buttons">
+                <div class="owm_btn_list_item">
+                    <a href="{$technologiesListUrl}">
+                        {text key="frmtechnology+return_btn_label"}
+                    </a>
+                </div>
+                {if $allowEdit}
+                <div class="owm_btn_list_item"><a href="{$info.editUrl}">{text key="frmtechnology+edit"}</a></div>
+                <div class="owm_btn_list_item"><a href="{$info.delete.url}" onclick="return confirm('{$info.delete.confirmMessage}');" >{text key="frmtechnology+delete"}</a></div>
+                {if isset($info.deactivateUrl)}
+                    <div class="owm_btn_list_item">
+                        <a href="{$info.deactivateUrl}">{text key="frmtechnology+deactivate"}</a>
+                    </div>
+                {/if}
+                {if isset($info.activateUrl)}
+                        <div class="owm_btn_list_item">
+                            <a href="{$info.activateUrl}">{text key="frmtechnology+activate"}</a>
+                        </div>
+                {/if}
+                {/if}
+
+
+
+            </div>
+            {if $info.imgUrl}
+            <div class="owm_frmtechnology_image_label">
+                <img src="{$info.imgUrl}" alt="{$info.title|escape}" />
+            </div>
+            {/if}
+            <table class="owm_frmtechnology_info ow_nomargin  data_table>
+                <tbody>
+                <tr class="ow_tr_first">
+                </tr><tr class="ow_tr_first">
+                    <th colspan="3" class="ow_section"><span>{text key="frmtechnology+technology_other_information"}</span></th>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 25%">{text key="frmtechnology+technology_executive"}</td>
+                    <td class="ow_label" style="width: 75%">{$info.executive}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 25%">{text key="frmtechnology+technology_source"}</td>
+                    <td class="ow_label" style="width: 75%">{$info.source}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 25%">{text key="frmtechnology+technology_price"}</td>
+                    <td class="ow_label" style="width: 75%">{$info.price}</td>
+                </tr>
+                {if isset($info.supporters)}
+                <tr >
+                    <td class="ow_label" style="width: 25%">{text key="frmtechnology+technology_supporters"}</td>
+                    <td class="ow_label" style="width: 75%">{$info.supporters}</td>
+                </tr>
+                {/if}
+                <tr >
+                    <td class="ow_label" style="width: 25%">{text key="frmtechnology+technology_release_date"}</td>
+                    <td class="ow_label" style="width: 75%">{$info.date}</td>
+                </tr>
+                <tr >
+                    <td class="ow_label" style="width: 20%">{text key="frmtechnology+technology_tags"}</td>
+                    {if isset($info.tags)}
+                    <td class="ow_label" style="width: 80%">{$info.tags}</td>
+                    {else}
+                    <td class="ow_label" style="width: 80%">{text key="frmtechnology+null"}</td>
+                    {/if}
+                </tr>
+                </tbody>
+            </table>
+
+            {if $isActive}
+            <span class="ow_button owm_frmtechnology_order_button">
+                           <input type="button" value='{text key="frmtechnology+order_button"}' onclick="location.href='{$info.orderUrl}'">
+                     </span>
+            {/if}
+
+            <table class="owm_frmtechnology_intro ow_table_2 ow_nomargin  data_table">
+                <tbody>
+                <tr class="ow_tr_first">
+                    <th colspan="3" class="ow_section">
+                        <span>{text key="frmtechnology+technology_description"}</span>
+                    </th>
+                </tr>
+
+                <tr class="">
+                    <td class="ow_label">{$info.desc}</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+{/if}
+

@@ -1,0 +1,266 @@
+.fields.frmsms,
+.fields.frmsms .field,
+.frmsms_check_code .ow_button{
+    display: inline-block;
+}
+
+ul.ow_bl.fields {
+    font-size: 11px;
+    display: inline-block;
+}
+
+.buttons.frmsms_buttons {
+    text-align: center;
+}
+
+.buttons.frmsms_buttons li.ow_button {
+    margin: 0 4px 0 4px !important;
+}
+
+.frmsms_check_code .user_verification p {
+    margin: 15px 10px 10px 0 !important;
+}
+.frmsms_check_code .ow_page_wrap .ow_page_padding .ow_page_container .ow_content .ow_automargin.ow_superwide.user_verification p{
+    text-align: center;
+    margin-top: 65px !important;
+}
+.user_verification .ow_preloader,
+.user_verification .owm_preloader{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user_verification .item {
+    margin-bottom: 15px;
+    padding: 10px;
+    text-align: center;
+}
+.frmsms_check_code .user_verification .item.unverify{
+    margin-bottom: 0px;
+}
+.user_verification .item .description {
+    margin-top: 4px;
+    width: 100%;
+    display: inline-block;
+}
+
+.field input, .field span{
+    float: right;
+    max-width: 300px;
+    display: inline-block;
+}
+
+.frmsms_check_code .user_verification .field span{
+    float: unset;
+    display: block;
+}
+
+.owm_box .user_verification p {
+    padding: 15px;
+}
+
+.owm_box .user_verification .item.unverify {
+    margin: 10px;
+}
+
+.owm_box .user_verification .field input {
+    max-width: inherit;
+}
+
+.owm_box .user_verification .send_more {
+    float: left;
+    margin-top: 16px;
+    margin-bottom: 9px;
+}
+
+.owm_box div.send_more {
+    width: 100%;
+}
+
+.owm_box div.send_more .ow_button {
+    float: left;
+}
+
+.owm_box div.send_more .ow_button#mobile_change_number {
+    float: right;
+}
+
+.owm_box .user_verification .item .description {
+    font-size: 13px !important;
+}
+
+.owm_verify_buttons_submit {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.owm_box .user_verification .ow_button {
+    background: #25d8af;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 6px 5px 7px 5px;
+}
+
+.owm_box .user_verification .ow_button.ow_ic_save input{
+    background: #25d8af;
+    margin-bottom: 15px;
+}
+
+.owm_box .user_verification h1 {
+    margin-right: 21px;
+    margin-top: 21px;
+}
+
+.frmsms_check_code .user_verification h1 {
+    color: black;
+}
+
+.frmsms_check_code .ow_button a:hover {
+    text-decoration: unset;
+}
+
+.frmsms_check_code .ow_content {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.frmsms_check_code .user_verification {
+    width: 550px;
+    height: 100%;
+    position: relative;
+}
+
+.frmsms_check_code .ow_page_container {
+    max-width: 800px !important;
+    width: calc(100% - 100px);
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px #00000017;
+}
+
+.frmsms_check_code .ow_button input[type=submit]:focus, html body.frmsms_check_code .ow_button input.ow_inprogress, .frmsms_check_code .ow_button a:focus {
+    color: white !important;
+}
+
+.frmsms_check_code .ow_button a:hover {
+    color: white !important;
+}
+
+.frmsms_check_code .ow_button a {
+    margin: 0px !important;
+    min-width: 125px;
+    text-align: center;
+    line-height: 23px;
+}
+.frmsms_check_code .user_verification .buttons.frmsms_buttons .ow_button.ow_ic_save.frmsms_save.ow_ic_save.frmsms_save {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.frmsms_check_code .user_verification .buttons.frmsms_buttons .field{
+    display: inline-block;
+    width: 100%;
+}
+.buttons.frmsms_buttons input.ow_ic_ok {
+    background-image: none;
+    border: none;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.frmsms_check_code li.ow_button.mobile_cancel_process a {
+    min-width: 80px;
+}
+
+.frmsms_check_code .send_more .ow_button a:hover {
+    color: white !important;
+}
+
+.frmsms_check_code .send_more .ow_button a:focus {
+    box-shadow: unset !important;
+    color: #ffffff !important;
+}
+.frmsms_check_code .ow_button {
+    border: none;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    padding: 0;
+    margin: 0px;
+}
+
+html body.frmsms_check_code .ow_button input {
+    background: white;
+    background-image: none !important;
+    height: 35px;
+    width: 120px !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 12px;
+    padding: 0;
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+.frmsms_check_code .field input{
+    height: 37px;
+    font-size: 12px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    float: unset;
+    display: inline-block;
+    width: 300px;
+}
+
+.frmsms_check_code .verify .field input {
+    border: 0;
+    color: black;
+    background-repeat: no-repeat;
+    background-position: 2%;
+}
+
+.user_verification .item.verify {
+    margin-bottom: 5px;
+}
+
+.frmsms_check_code .ow_page_wrap .ow_page_padding .ow_page_container .ow_content .ow_automargin.ow_superwide.user_verification p{
+    text-align: center;
+    margin-top: 50px !important;
+}
+.frmsms_check_code .ow_page_wrap .ow_page_padding .ow_page_container .ow_content .ow_automargin.ow_superwide.user_verification .frmsms_buttons .fields li{
+    margin-bottom: 10px !important;
+}
+.frmsms_check_code .user_verification .frmsms_buttons .ow_bl.fields .ow_button a.ow_button{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.frmsms_check_code .ow_page_wrap .ow_page_padding .ow_page_container .ow_content .ow_automargin.ow_superwide.user_verification{
+    width: 100%;
+}
+@media (max-width: 650px) {
+    .frmsms_check_code .ow_page_wrap .ow_page_padding .ow_page_container {
+        width: calc(100% - 20px) !important;
+    }
+}
+@media (max-width: 560px) {
+    .frmsms_check_code .ow_page_wrap .ow_page_padding .ow_page_container .ow_content .ow_automargin.ow_superwide.user_verification p{
+        margin-top: 55px !important;
+    }
+    .frmsms_check_code .ow_page_wrap .ow_page_padding .ow_page_container .ow_content .ow_automargin.ow_superwide.user_verification .frmsms_buttons .fields li{
+        float: none !important;
+    }
+}
+@media (max-width: 767px) {
+    .frmsms_check_code .user_verification form .frmsms_buttons a.ow_button {
+        font-size: 11px;
+    }
+}

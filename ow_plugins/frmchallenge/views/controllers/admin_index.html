@@ -1,0 +1,208 @@
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        <li class="{if $section == 1} active{/if}"><a href="{$section1_url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section1_label}</span></a></li>
+        <li class="{if $section == 2} active{/if}"><a href="{$section2_url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section2_label}</span></a></li>
+        <li class="{if $section == 3} active{/if}"><a href="{$section3_url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section3_label}</span></a></li>
+    </ul>
+</div>
+{if $section neq 3}
+<div class="ow_left place_section left_section ow_column">
+{/if}
+    <div class="ow_std_margin clearfix">
+        {form name=$formName}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+                {if $section eq 1}
+                    <tr>
+                        <th colspan="2">{text key="frmchallenge+create_category"}</th>
+                    </tr>
+                    <tr class="ow_alt1">
+                        <td width="1" class="ow_label">
+                            {label name='category'}
+                        </td>
+                        <td class="ow_value">
+                            {input name='category'}
+                            {error name='category'}
+                        </td>
+                    </tr>
+                    <tr class="ow_tr_last ow_center">
+                        <td colspan="3">
+                            {submit name='submit'}
+                        </td>
+                    </tr>
+                {elseif $section eq 2}
+                    <tr>
+                        <th colspan="2">{text key="frmchallenge+create_question"}</th>
+                    </tr>
+                    <tr class="ow_alt1">
+                        <td width="1" class="ow_label">
+                            {label name='title'}
+                        </td>
+                        <td class="ow_value">
+                            {input name='title'}
+                            {error name='title'}
+                        </td>
+                    </tr>
+                    <tr class="ow_alt1">
+                        <td width="1" class="ow_label">
+                            {label name='point'}
+                        </td>
+                        <td class="ow_value">
+                            {input name='point'}
+                            {error name='point'}
+                        </td>
+                    </tr>
+                    <tr class="ow_alt1">
+                        <td width="1" class="ow_label">
+                            {label name='category'}
+                        </td>
+                        <td class="ow_value">
+                            {input name='category'}
+                            {error name='category'}
+                        </td>
+                    </tr>
+                    <tr class="ow_tr_last ow_center">
+                        <td colspan="3">
+                            {submit name='submit'}
+                        </td>
+                    </tr>
+                {elseif $section eq 3}
+                <tr>
+                    <th colspan="2">{text key="frmchallenge+create_question"}</th>
+                </tr>
+                <tr class="ow_alt1">
+                    <td width="1" class="ow_label">
+                        {label name='solitary_question_count'}
+                    </td>
+                    <td class="ow_value">
+                        {input name='solitary_question_count'}
+                        {error name='solitary_question_count'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td width="1" class="ow_label">
+                        {label name='solitary_answer_time'}
+                    </td>
+                    <td class="ow_value">
+                        {input name='solitary_answer_time'}
+                        {error name='solitary_answer_time'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td width="1" class="ow_label">
+                        {label name='universal_question_count'}
+                    </td>
+                    <td class="ow_value">
+                        {input name='universal_question_count'}
+                        {error name='universal_question_count'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td width="1" class="ow_label">
+                        {label name='universal_answer_time'}
+                    </td>
+                    <td class="ow_value">
+                        {input name='universal_answer_time'}
+                        {error name='universal_answer_time'}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td width="1" class="ow_label">
+                        {label name='solitary_enable'}
+                    </td>
+                    <td class="ow_value">
+                        {input name='solitary_enable'}
+                        {error name='solitary_enable'}
+                    </td>
+                </tr>
+                <tr class="ow_tr_last ow_center">
+                    <td colspan="3">
+                        {submit name='submit'}
+                    </td>
+                </tr>
+
+                <tr class="ow_center">
+                    <td colspan="3">
+                        <div class="ow_automargin ow_superwide">
+                            {form name='questions_import'}
+                            <table class="ow_table_1 ow_form">
+                                <tr>
+                                    <td class="ow_label">{text key="frmchallenge+question_from_file"}</td>
+                                </tr>
+                                <tr>
+                                    <td class="ow_value">{input name="file"} {error name='file'}</td>
+                                </tr>
+                                <tr>
+                                    <td class="ow_label">{text key="frmchallenge+file_description"}</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" class="ow_submit">{submit name="submit" class='ow_ic_save'}</td>
+                                </tr>
+                            </table>
+                            {/form}
+                        </div>
+                        {if isset($linesError)}
+                            <div class="error_import">
+                                {foreach from=$linesError item='item'}
+                                <p>{$item}</p>
+                                {/foreach}
+                            </div>
+                        {/if}
+                    </td>
+                </tr>
+                {/if}
+            </tbody>
+        </table>
+        {/form}
+    </div>
+{if $section neq 3}
+</div>
+{/if}
+{if $section neq 3}
+<div class="ow_right place_section left_section ow_column">
+        {if $section eq 1}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tr class="ow_tr_first">
+                <th colspan="2" class="ow_center">{text key="frmchallenge+categories"}</th>
+            </tr>
+
+            <tbody id="s1" class="s">
+                {foreach from=$categories item="category"}
+                <tr class="ow_high1 draggable-lang-item ow_tr_last">
+                    <td>{$category['title']} ({$category['count']})</td>
+                    <td class="features">
+                        <a class="ow_lbutton ow_green" href="{$category['editUrl']}" style="display: inline-block;">{text key="frmchallenge+edit"}</a>
+                    </td>
+                </tr>
+                {/foreach}
+            </tbody>
+        </table>
+        {elseif $section eq 2}
+        <input placeholder="{text key='frmchallenge+search'}" type="text" id="search">
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tr class="ow_tr_first">
+                <th colspan="4" class="ow_center">{text key="frmchallenge+questions"}</th>
+            </tr>
+            <tr class="ow_tr_first">
+                <th class="ow_center">{text key="frmchallenge+title"}</th>
+                <th class="ow_center">{text key="frmchallenge+category"}</th>
+                <th class="ow_center">{text key="frmchallenge+point"}</th>
+                <th class="ow_center"></th>
+            </tr>
+            <tbody id="s1" class="s">
+            {foreach from=$questions item="question"}
+                <tr class="ow_high1 draggable-lang-item ow_tr_last">
+                    <td>{$question['title']}</td>
+                    <td>{$question['category']}</td>
+                    <td>{$question['point']}</td>
+                    <td class="features">
+                        <a class="ow_lbutton ow_green" href="{$question['editUrl']}" style="display: inline-block;">{text key="frmchallenge+edit"}</a>
+                    </td>
+                </tr>
+            {/foreach}
+            </tbody>
+        </table>
+        {else}
+        {/if}
+</div>
+{/if}

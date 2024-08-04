@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrahyab" label="frmrahyab" language_tag="en" language_label="English">
+	<key name="admin_settings_heading">
+        <value>
+			Rahyab Settings
+        </value>
+    </key>
+    <key name="modified_successfully">
+        <value>
+			Settings have been saved successfully
+        </value>
+    </key>
+    <key name="provider">
+        <value>
+            Web service type
+        </value>
+    </key>
+    <key name="panel_username">
+        <value>
+            Panel username
+        </value>
+    </key>
+    <key name="panel_password">
+        <value>
+            Panel password
+        </value>
+    </key>
+    <key name="panel_number">
+        <value>
+            Sender number
+        </value>
+    </key>
+    <key name="provider_port">
+        <value>
+            Connect port
+        </value>
+    </key>
+    <key name="provider_host">
+        <value>
+            SMS service host
+        </value>
+    </key>
+    <key name="company">
+        <value>
+            Company name
+        </value>
+    </key>
+    <key name="section1_label">
+        <value>
+            Setting
+        </value>
+    </key>
+    <key name="section2_label">
+        <value>
+            SMS Tracking
+        </value>
+    </key>
+    <key name="text_label">
+        <value>
+            SMS Text
+        </value>
+    </key>
+    <key name="status_label">
+        <value>
+            Status
+        </value>
+    </key>
+    <key name="mobile_label">
+        <value>
+            Mobile
+        </value>
+    </key>
+    <key name="time_label">
+        <value>
+            Time
+        </value>
+    </key>
+    <key name="status_0">
+        <value>
+            Unknown
+        </value>
+    </key>
+    <key name="status_1">
+        <value>
+            Received
+        </value>
+    </key>
+    <key name="status_2">
+        <value>
+            Telecommunications Received the SMS
+        </value>
+    </key>
+    <key name="status_3">
+        <value>
+            Gateway Fall
+        </value>
+    </key>
+    <key name="status_4">
+        <value>
+             Not Received (Telecommunications Fall)
+        </value>
+    </key>
+</prefix>

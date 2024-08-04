@@ -1,0 +1,57 @@
+{$menu}
+
+<div class="owm_frmrules owm_list_page">
+{if $sectionId=='guideline'}
+    <div class="owm_box ow_smallmargin">
+        <div class="owm_box_body">
+            <div class="owm_box_body_cont clearfix">
+                <div class="owm_box_padding">
+                    <p>{$frmrules_guidline}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{else}
+    {if !empty($items)}
+        <div class="owm_box ow_smallmargin">
+            <div class="owm_box_cap clearfix">
+                <h3 class="ow_ic_tag">{$sectionsHeader}</h3>
+            </div>
+
+            {foreach from=$items item="item"}
+            <div class="owm_box_bottom">
+                <div class="owm_box_body_cont clearfix">
+                    <div class="owm_box_padding">
+                        <div name="rule_item" data-category="{$item.categoryName}" data-tag="{$item.tag}">
+                            <div>
+                                {if isset($item.categoryIcon)}
+                                <p style="vertical-align: middle; display: table-cell;">
+                                    <img width="30px" src="{$item.categoryIcon}">
+                                </p>
+                                {/if}
+                                <p class="owm_padding" style="vertical-align: middle; display: table-cell;">
+                                    {$item.numberingLabel}
+                                    {$item.name}
+                                </p>
+                            </div>
+                            <div style="vertical-align: top; display: table-cell; padding-top: 5px;">
+                                {if isset($item.icon)}
+                                <img style="width: 40px; opacity: 0.6; {$itemFloatCss}" src="{$item.icon}">
+                                {else}
+                                <span style="width: 40px; display: block;">&nbsp;</span>
+                                {/if}
+                            </div>
+                            <div style="vertical-align: top; display: table-cell; padding-top: 5px; text-align: justify;">
+                            {$item.description}
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/foreach}
+        </div>
+    {else}
+        <div class="ow_nocontent">{text key='base+empty_list'}</div>
+    {/if}
+{/if}
+</div>

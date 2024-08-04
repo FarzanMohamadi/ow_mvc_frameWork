@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmthememanager" label="frmthememanager" language_tag="en" language_label="English">
+
+	<key name="admin_settings_title">
+		<value>
+			Theme Manager
+		</value>
+	</key>
+
+	<key name="create_new_theme">
+		<value>
+			Create New Theme
+		</value>
+	</key>
+
+	<key name="theme_name">
+		<value>
+			Name:
+		</value>
+	</key>
+
+	<key name="theme_key">
+		<value>
+			Theme Key
+		</value>
+	</key>
+
+    <key name="parent_theme">
+        <value>
+            Parent theme:
+        </value>
+    </key>
+
+	<key name="primaryColor">
+		<value>
+			Primary color:
+		</value>
+	</key>
+
+	<key name="secondaryColor">
+		<value>
+			secondary color:
+		</value>
+	</key>
+
+	<key name="backgroundColor">
+		<value>
+			Background color:
+		</value>
+	</key>
+
+	<key name="HeaderBackgroundColor">
+		<value>
+			Header background color:
+		</value>
+	</key>
+
+	<key name="backgroundAndBorderColor">
+		<value>
+			backgrounds and borders color:
+		</value>
+	</key>
+
+	<key name="theme_configs">
+		<value>
+			Other configurations:
+		</value>
+	</key>
+
+	<key name="verify_creation">
+		<value>
+			Create Theme
+		</value>
+	</key>
+
+	<key name="save_success">
+		<value>
+			Task passed successfully
+		</value>
+	</key>
+
+	<key name="customize_css">
+		<value>
+			Customize CSS:
+		</value>
+	</key>
+
+	<key name="config_save">
+		<value>
+			Save
+		</value>
+	</key>
+
+	<key name="Header">
+		<value>
+			Header Image:
+		</value>
+	</key>
+
+	<key name="background">
+		<value>
+			Background Image:
+		</value>
+	</key>
+
+	<key name="mainLogo">
+		<value>
+			colorful logo:
+		</value>
+	</key>
+
+	<key name="mainWhiteLogo">
+		<value>
+			White logo:
+		</value>
+	</key>
+
+	<key name="headerLogo">
+		<value>
+			Header logo:
+		</value>
+	</key>
+
+	<key name="Operations">
+		<value>
+			Operations:
+		</value>
+	</key>
+
+	<key name="edit">
+		<value>
+			edit
+		</value>
+	</key>
+
+	<key name="remove">
+		<value>
+			remove
+		</value>
+	</key>
+
+	<key name="activate">
+		<value>
+			activate
+		</value>
+	</key>
+
+	<key name="active">
+		<value>
+			active
+		</value>
+	</key>
+
+	<key name="delete_theme_confirm">
+		<value>
+			Are you sure to remove this theme?
+		</value>
+	</key>
+
+	<key name="delete_success">
+		<value>
+			Theme has removed
+		</value>
+	</key>
+
+	<key name="activate_success">
+		<value>
+			Theme activated successfully
+		</value>
+	</key>
+
+	<key name="theme_create_description">
+		<value>
+			You can create a new theme using below button
+		</value>
+	</key>
+
+	<key name="themes_list_description">
+		<value>
+			List of available themes:
+		</value>
+	</key>
+
+	<key name="no_theme_massage">
+		<value>
+			There is no theme
+		</value>
+	</key>
+
+	<key name="disable_all_themes_desc">
+		<value>
+			Disable all active themes in order to use system active theme
+		</value>
+	</key>
+
+	<key name="disable_all_themes">
+		<value>
+			Disable Plugin
+		</value>
+	</key>
+
+	<key name="disable_one_themes">
+		<value>
+			Disable Theme
+		</value>
+	</key>
+
+	<key name="deactivate_success">
+		<value>
+			Deactivate success
+		</value>
+	</key>
+
+	<key name="operation_failure">
+		<value>
+			Operation failure
+		</value>
+	</key>
+
+	<key name="operation_success">
+		<value>
+			Operation success
+		</value>
+	</key>
+
+	<key name="theme_colors">
+		<value>
+			Theme colors:
+		</value>
+	</key>
+
+	<key name="theme_logo">
+		<value>
+			Theme logo:
+		</value>
+	</key>
+
+	<key name="theme_information">
+		<value>
+			Theme information:
+		</value>
+	</key>
+
+	<key name="no_specific_color">
+		<value>
+			No specific color
+		</value>
+	</key>
+
+	<key name="colors">
+		<value>
+			colors:
+		</value>
+	</key>
+
+	<key name="images_and_icons">
+		<value>
+			Images and icons:
+		</value>
+	</key>
+
+	<key name="theme_must_be_defined">
+		<value>
+			Theme must be defined
+		</value>
+	</key>
+
+	<key name="noHeader">
+		<value>
+			No header
+		</value>
+	</key>
+
+	<key name="footerBackgroundColor">
+		<value>
+			Footer color:
+		</value>
+	</key>
+
+	<key name="color_picker">
+		<value>
+			Activate color picker (disable mode uses color code input)
+		</value>
+	</key>
+
+	<key name="HeaderItemBackgroundColor">
+		<value>
+			Header Item Background Color:
+		</value>
+	</key>
+
+	<key name="HeaderItemHoverTextColor">
+		<value>
+			Header Item Hover Text Color:
+		</value>
+	</key>
+
+	<key name="HeaderItemTextColor">
+		<value>
+			Header Item Text Color:
+		</value>
+	</key>
+
+	<key name="update_all_themes_desc">
+		<value>
+			Update all themes manually:
+		</value>
+	</key>
+
+	<key name="update_all_themes">
+		<value>
+			Update
+		</value>
+	</key>
+
+	<key name="footer_tags_label">
+		<value>
+			Footer tags label:
+		</value>
+	</key>
+
+	<key name="no">
+		<value>
+			No Copyright Logo
+		</value>
+	</key>
+
+	<key name="blendHeader">
+		<value>
+			Blend uploaded header using header background color
+		</value>
+	</key>
+
+	<key name="plugin_guide">
+		<value>
+			Plugin guide
+		</value>
+	</key>
+
+	<key name="linksColor">
+		<value>
+			links color
+		</value>
+	</key>
+
+	<key name="linksColorHover">
+		<value>
+			links color hover
+		</value>
+	</key>
+	<key name="noParentTheme">
+		<value>
+			no Parent Theme
+		</value>
+	</key>
+	<key name="themes_list_cap_title">
+		<value>
+			Theme Manager Plugin Themes
+		</value>
+	</key>
+	<key name="export">
+		<value>
+			Export
+		</value>
+	</key>
+	<key name="upload_new_theme">
+		<value>
+			Upload new theme
+		</value>
+	</key>
+	<key name="overWriteAllow">
+		<value>
+			overwrite allow
+		</value>
+	</key>
+	<key name="themeFile">
+		<value>
+			theme ZIP file
+		</value>
+	</key>
+	<key name="noParentTheme">
+		<value>
+			There is no parent theme found! in order to make new themes using this plugin, first you must install a compatible theme such as "frmmodernblue"
+		</value>
+	</key>
+	<key name="active_theme_terms">
+		<value>
+			In case of active theme in frmthememanager plugin, system themes are allowed to be activated but the system theme remains frmthememanger's theme until it is deactivated
+		</value>
+	</key>
+	<key name="verifyColor">
+		<value>
+			Verify Button Color
+		</value>
+	</key>
+
+</prefix>

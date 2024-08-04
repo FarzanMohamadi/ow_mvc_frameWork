@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="call" label="call" language_tag="en" language_label="English">
+	<key name="voice_call">
+		<value>voice call</value>
+	</key>
+</prefix>

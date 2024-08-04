@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmlike" label="frmlike" language_tag="en" language_label="English">
+	<key name="like_owner_msg_new">
+		<value>
+			You can't like or dislike on your own content
+		</value>
+	</key>
+	<key name="like_login_msg">
+		<value>
+			You sould login first
+		</value>
+	</key>
+	<key name="liked_user_list">
+		<value>
+			list of users who liked this content
+		</value>
+	</key>
+	<key name="disliked_user_list">
+		<value>
+			list of users who disliked this content
+		</value>
+	</key>
+	<key name="total_user_list">
+		<value>
+			list of users who liked or disliked this content
+		</value>
+	</key>
+	<key name="notification_comment_like_string">
+		<value>
+			&lt;a target="_blank" href=&quot;{$userUrl}&quot;&gt;{$userName}&lt;/a&gt; liked your &lt;a href=&quot;{$url}&quot;&gt;comment&lt;/a&gt;
+		</value>
+	</key>
+	<key name="notification_comment_dislike_string">
+		<value>
+			&lt;a href=&quot;{$userUrl}&quot;&gt;{$userName}&lt;/a&gt; disliked your &lt;a href=&quot;{$url}&quot;&gt;comment&lt;/a&gt;
+		</value>
+	</key>
+	<key name="notification_section_label">
+		<value>
+			frmlike
+		</value>
+	</key>
+	<key name="comment_notifications_setting">
+		<value>
+			comments like
+		</value>
+	</key>
+	<key name="admin_title">
+		<value>
+			frmlike setting
+		</value>
+	</key>
+	<key name="admin_heading">
+		<value>
+			frmlike setting
+		</value>
+	</key>
+	<key name="dislike_activate_label">
+		<value>
+			activate dislike option for comments of newsfeeds
+		</value>
+	</key>
+	<key name="dislike_post_activate_label">
+		<value>
+			activate dislike option for newsfeed posts
+		</value>
+	</key>
+	<key name="dislike_activate_submit">
+		<value>
+			submit
+		</value>
+	</key>
+	<key name="submit_successful_message">
+		<value>
+			frmlike setting updated successfully
+		</value>
+	</key>
+	<key name="email_notifications_status_dislike">
+		<value>
+			&lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt; dislikes your "&lt;a href="{$url}"&gt;status&lt;/a&gt;".
+		</value>
+	</key>
+	<key name="mrege_like_tables_message">
+		<value>
+			For correct operation of like and dislike, related data should be merged. Each time you click in this button {$numberOfLikesToConvertByEachRequest} rows of data will merge and you should continue this task until remained rows become zero.
+			number of remained rows:
+			{$newsfeedLikeCount}
+		</value>
+	</key>
+	<key name="mrege_like_tables_form_submit">
+		<value>
+			merge
+		</value>
+	</key>
+	<key name="merge_like_tables_successful_message">
+		<value>
+			merging data done successfully
+		</value>
+	</key>
+	<key name="delete_newsfeed_like_table_form_submit">
+		<value>
+			remove extra table
+		</value>
+	</key>
+	<key name="admin_merge_tables_notification">
+		<value>
+			For correct operation of like and dislike &lt;a href='{$url}'&gt;merge&lt;/a&gt; related tables.
+		</value>
+	</key>
+	<key name="admin_remove_newsfeed_like_table_notification">
+		<value>
+			For correct operation of like and dislike &lt;a href='{$url}'&gt;remove&lt;/a&gt; extra tables.
+		</value>
+	</key>
+	<key name="admin_settings_heading">
+		<value>
+			frmlike setting
+		</value>
+	</key>
+</prefix>

@@ -1,0 +1,64 @@
+{style}
+{literal}
+
+.ow_about_me_widget {
+    padding: 5px 4px 10px;
+    overflow: hidden;
+}
+
+{/literal}
+{/style}
+
+{script}
+{literal}
+    $(document).ready(function(){
+        $('#edit_form_button').on('click', function(){
+            $('#edit-about-me').show();
+            $('#static-about-me').hide();
+        });
+        $('form[name="about_me_form"]').submit(function(){
+            var newVal = $('#about_me_widget_input').val();
+            //$('#about_me_widget_input').text(newVal);
+
+            newVal = newVal.replace(/\n/g,"<br/>");
+            $("#static-about-me p").html(newVal).show();
+
+            $("#static-about-me input").hide();
+            $('#edit-about-me').hide();
+            $('#static-about-me').show();
+        });
+    });
+{/literal}
+{/script}
+
+
+<div class="ow_highbox ow_about_me_widget">
+    {if $ownerMode}
+        <div id="static-about-me" class="ow_center">
+            {if empty($contentText)}
+                <input type="text" placeholder="{text key='base+about_me_widget_inv_text'}" style="background:none; border:none" readonly>
+                <p style="display: none;"></p>
+            {else}
+                <p>{$contentText|prettify}</p>
+            {/if}
+            <div class="ow_bl">
+            <a id="edit_form_button" href="javascript:">{text key='base+edit'}</a>
+            </div>
+        </div>
+        <div id="edit-about-me" class="ow_center" style="display: none;">
+            {form name="about_me_form"}
+                <div class="form_auto_click"> 
+                    <div class="ow_smallmargin">
+                        {input name="about_me"}
+                    </div>
+                    <div class="{if $noContent}ow_submit_auto_click{/if}">
+                        {submit name="save"}
+                    </div>
+                </div>
+            {/form}
+        </div>
+    {else if $contentText}
+        {$contentText|prettify}
+    {/if}
+
+</div>

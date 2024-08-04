@@ -1,0 +1,165 @@
+{*
+
+/**
+ * 
+ * All rights reserved.
+ */
+
+*}
+
+<h3>
+    <a href="{$returnToQuestions}">{text key="frmevaluation+return_to_questions"}</a>
+</h3>
+
+<div class="ow_right place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name="questions"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmevaluation+edit_question"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+questions_title"}
+                </td>
+                <td class="ow_value">
+                    {input name='title'}
+                    {error name='title'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+category"}
+                </td>
+                <td class="ow_value">
+                    {input name='categoryId'}
+                    {error name='categoryId'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+description"}
+                </td>
+                <td class="ow_value">
+                    {input name='description'}
+                    {error name='description'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+level"}
+                </td>
+                <td class="ow_value">
+                    {input name='level'}
+                    {error name='level'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+weight"}
+                </td>
+                <td class="ow_value">
+                    {input name='weight'}
+                    {error name='weight'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+hasDescribe"}
+                </td>
+                <td class="ow_value">
+                    {input name='hasDescribe'}
+                    {error name='hasDescribe'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+hasFile"}
+                </td>
+                <td class="ow_value">
+                    {input name='hasFile'}
+                    {error name='hasFile'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+hasVerification"}
+                </td>
+                <td class="ow_value">
+                    {input name='hasVerification'}
+                    {error name='hasVerification'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="3">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>
+
+<div class="ow_left place_section left_section ow_column">
+    <div class="ow_std_margin clearfix">
+        {form name="value"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr>
+                <th colspan="2">{text key="frmevaluation+value_form_add"}</th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+name"}
+                </td>
+                <td class="ow_value">
+                    {input name='name'}
+                    {error name='name'}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+value"}
+                </td>
+                <td class="ow_value">
+                    {input name='value'}
+                    {error name='value'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="2">
+                    {submit name='submitValue'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <br/>
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_center">
+                <td colspan="3">{text key="frmevaluation+values"}</td>
+            </tr>
+            <tr>
+                <th>{text key="frmevaluation+name"}</th>
+                <th>{text key="frmevaluation+value"}</th>
+                <th></th>
+            </tr>
+            {foreach from=$values item="value"}
+            <tr class="ow_alt1">
+                <td>{$value.name}</td>
+                <td>{$value.value}</td>
+                <td class="question_value_features">
+                    <a class="ow_lbutton ow_red" onclick="{$value.deleteUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+delete"}</a>
+                    <a class="ow_lbutton ow_green" href="{$value.editUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+edit"}</a>
+                </td>
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>

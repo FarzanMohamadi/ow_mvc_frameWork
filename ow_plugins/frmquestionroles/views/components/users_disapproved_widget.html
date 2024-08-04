@@ -1,0 +1,10 @@
+{if isset($empty_list) &&  $empty_list}
+{text key="frmquestionroles+empty_list"}
+{else}
+<div class="ow_lp_avatars">
+    {$userList}
+</div>
+{if isset($toolbars)}
+{decorator name='box_toolbar' itemList=$toolbars}
+{/if}
+{/if}

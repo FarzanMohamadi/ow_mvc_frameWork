@@ -1,0 +1,309 @@
+{style}{literal}
+    a.admin-link:link, a.admin-link:visited,
+    #download-btn:link, #download-btn:visited  {
+        background-color: #f44336;
+        color: white;
+        padding: 5px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 10px 0 0;
+        border-radius: 4px;
+        width: 100%;
+        min-width: 200px;
+    }
+    #admin-btn:hover, #admin-btn:active {
+        background-color: red;
+    }
+    #download-btn:link, #download-btn:visited  {
+        background-color: #269226;
+        color: white;
+    }
+    #download-btn:hover, #download-btn:active {
+        background-color: #196919;
+}
+    a.citation-btn:link, a.citation-btn:visited{
+        background-color: #5b646a;
+        color: white;
+        padding: 5px 0px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin: 10px 0 0;
+        border-radius: 4px;
+        width: 100%;
+        min-width: 200px;
+    }
+    a.citation-btn:hover, a.citation-btn:active {
+        background-color:  #a2acb3 !important;
+    }
+    a.citation-btn:link, a.citation-btn:visited  {
+        background-color: #5b646a;
+        color: white;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-template-rows: repeat(1, auto);
+        grid-gap: 1em;
+        min-height: 250px;
+        height: auto;
+        max-height: initial;
+    }
+    aside,
+    article {
+        padding: 1em;
+        background: #f5f9f7;
+        border: 0px solid #09603a;
+        border-radius: 8px;
+    }
+    article h2,
+    aside h2,
+    article h3,
+    aside h3{
+        color: #5c7b54;
+        margin-bottom: 7px;
+    }
+    article p, aside p {
+        font-size: 115%;
+        text-indent: 20px;
+        line-height: 130%;
+    }
+    article p:lang(fa-IR), aside p:lang(fa-IR) {
+        font-size: 90%;
+        text-indent: 20px;
+        line-height: 165%;
+        text-align: justify !important;
+    }
+
+    aside p{
+        text-align: initial;
+    }
+    .sidebar-left {
+        min-width: 220px;
+        grid-row: 1;
+        grid-column: 1 / 2;
+        text-align: left;
+        border: 3px solid #409424a6;
+        border-width: 0px 0px 0 2px;
+        color: #4a2330;
+        padding: 15px;
+        top: 1em;
+        border-radius: 13px 5px 13px 7px;
+        font-size: 1.2em;
+        font-family: Constantia;
+        background-color: #f8f8f8 !IMPORTANT;
+        margin: 10px;
+    }
+    .sidebar-left:lang(fa-IR) {
+        border-width: 0px 2px 0 0px;
+    }
+    .sidebar-left > div {
+        margin-bottom: 20px;
+    }
+    article {
+        grid-row: 1;
+        grid-column: 2 / 4;
+        text-align: left;
+        border: 3px solid #409424a6;
+        border-width: 0px 2px 0 2px;
+        max-width: 800px;
+        color: #4a2330;
+        padding: 13px;
+        top: 1em;
+        border-radius: 13px 5px 13px 7px;
+        padding-left: 2em;
+        font-size: 1.2em;
+        font-family: Constantia;
+        background-color: #f8f8f8 !IMPORTANT;
+        margin: 10px;
+    }
+    hr {
+        background-color: #09603a;
+        height: 3px;
+        margin: 1rem auto;
+    }
+    a.article-link {
+        /*display: block;*/
+        margin: auto;
+        padding: 1rem 1.25rem;
+        font-family: sans-serif;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: #1d1d1d;
+        position: relative;
+        -webkit-transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+        transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+        z-index: 1;
+    }
+    /*Responsive*/
+    @media only screen and (max-width: 599px) {
+        .grid {
+            grid-template-columns: auto auto;
+            grid-template-rows: repeat(2, auto);
+            grid-gap: 1em;
+        }
+        .sidebar-left {
+            grid-row: 1;
+            grid-column: 1 / 4;
+            min-width: 250px;
+        }
+        article {
+            grid-row: 2;
+            grid-column: 1 / 4;
+            min-width: 250px;
+        }
+    }
+    #issue-id {
+        display: inline-block;
+        padding: 0.3em 1.2em;
+        border: 0.16em solid rgba(255,255,255,0);
+        border-radius: 2em;
+        box-sizing: border-box;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 300;
+        color: #FFFFFF;
+        text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+        text-align: center;
+        transition: all 0.2s;
+        background-color: #fff;
+        text-decoration: none;
+        width: 100%;
+    }
+    #author-left-list li {
+        list-style-type: none;
+    }
+    #keyword-left-list li {
+        list-style-type: upper-roman;
+    }
+.captcha-image{
+width: calc(100% - 20px);
+}
+{/literal}{/style}
+
+<div class="grid">
+    <aside class="sidebar-left">
+        <div id="issue-id">
+            <a href="{$issue.url}">{$issue.title}</a>
+        </div>
+        <div id="author-left-list">
+            <h3>{text key='frmjcse+authors'}</h3>
+            <ul>
+            {foreach from=$authors item="author" name=authorsName}
+                <li><a href="{$author.authorSearch}">{$author.name}</a></li>
+            {/foreach}
+            </ul>
+        </div>
+        <div id="institution-left-list">
+            <h3>{text key='frmjcse+institution'}</h3>
+            <p>
+                {$article.affliation}
+            </p>
+        </div>
+        <div id="keyword-left-list">
+            <h3>{text key='frmjcse+keywords'}</h3>
+            <ul>
+                {foreach from=$keywords item="keyword" name=keywordName}
+                <li><a href="{$keyword.keywordSearch}">{$keyword.name}</a></li>
+                {/foreach}
+            </ul>
+        </div>
+
+        <div id="stats-left-list">
+            <div>
+                <span class="stats-label">{text key='frmjcse+dl_count_label'}:</span>
+                <span class="stats-value">{$dltimes}</span>
+            </div>
+            <div>
+                <span class="stats-label">{text key='frmjcse+views_count_label'}:</span>
+                <span class="stats-value">{$views}</span>
+            </div>
+        </div>
+
+        <div id="buttons-left">
+            {if isset($article.dorl)}
+            <div id="dorl-view">
+                <h3>DOR</h3> <a alt="dor" target="_blank" href="https://dorl.net/dor/{$article.dorl}">{$article.dorl}</a>
+            </div>
+            <br/>
+            {/if}
+
+            {if isset($xmlUrl)}
+            <a id="xml-btn" target="_blank" href="{$xmlUrl}"><img src="{$staticUrl}img/xml.svg"
+                                                  alt="XML" style="margin:6px; max-height: 47px;"></a>
+            {/if}
+
+            {if $downloadFile!=""}
+            <div id="form-container">
+                {form name='download_form'}
+                <table class="ow_table_1 ow_form ow_automargin" style="margin-bottom: 0px;">
+                    <tr id="tr_1" class="ow_alt1" style="display: block;">
+                    </tr>
+                </table>
+                <a id="download-btn" href="javascript:;" onclick="showForm();">{text key='frmjcse+download_article_button'}</a>
+                {/form}
+            </div>
+            {/if}
+            {if isset($existCite)}
+            <a id="export_cite" class="citation-btn" href="javascript://">{text key='frmjcse+export_citation_button'}</a>
+            {/if}
+            {if isset($isAdmin)}
+            <a class="admin-link" href="{$editArticleUrl}">{text key='frmjcse+edit_article_button'}</a>
+            <a class="admin-link" href="{$editCitationUrl}">{text key='frmjcse+edit_citation_button'}</a>
+            {/if}
+        </div>
+    </aside>
+
+    <article>
+        <h2>{$article.title}</h2>
+        <div id="author-right-list">
+            <p>
+                {foreach from=$authors item="author" name=authorsName}
+                    {$author.name}{if not $smarty.foreach.authorsName.last}, {/if}
+                {/foreach}
+            </p>
+        </div>
+
+        <h3>{text key='frmjcse+abstract'}</h3>
+        <p>{$article.abstract}</p>
+
+        <div id="keyword-right-list">
+            <h3>{text key='frmjcse+keywords'}</h3>
+            <p>
+                {foreach from=$keywords item="keyword" name=keywordName}
+                    {$keyword.name}{if not $smarty.foreach.keywordName.last}, {/if}
+                {/foreach}
+            </p>
+        </div>
+
+        <h3>{text key='frmjcse+citation'}</h3>
+        <div>
+            <ul id='refs'>
+                {foreach from=$article.citations item=citation}
+                <li>{$citation}</li>
+                {/foreach}
+            </ul>
+        </div>
+
+    </article>
+
+
+</div>
+<script>
+    function showForm(){
+        var x = document.getElementById("tr_1");
+        if (x.style.display =='block' || x.style.display==""){
+            document.getElementsByName('download_form')[0].submit();
+        }else {
+            x.style.display = "block";
+        }
+    }
+    document.getElementById("export_cite").onclick = function() {
+        OW.ajaxFloatBox('FRMJCSE_CMP_CitationFloatbox', [{$articleid}], {
+            width: '400px',
+            title: "{text key='frmjcse+cite_floatbox_title'}"
+        } );
+    }
+</script>

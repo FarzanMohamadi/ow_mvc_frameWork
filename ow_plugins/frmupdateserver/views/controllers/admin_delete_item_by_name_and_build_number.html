@@ -1,0 +1,44 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+
+<div class="ow_std_margin clearfix">
+    {form name="deleteItem"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='key'}</td>
+            <td class="ow_value">
+                {input name='key'}
+                {error name='key'}
+            </td>
+        </tr>
+        <tr class="ow_alt2">
+            <td class="ow_label">{label name='build'}</td>
+            <td class="ow_value">
+                {input name='build'}
+                {error name='build'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_value" colspan="2">
+                {submit name='submit'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>

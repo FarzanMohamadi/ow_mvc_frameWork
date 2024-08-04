@@ -1,0 +1,47 @@
+<div style="margin-bottom: 25px">
+    {decorator name='button' class='ow_ic_right_arrow' id='btn_cancel_deleting_user' langLabel='frmsecurityessentials+back_to_user_profile' onclick="location.href='`$deleting_user_profile_url`'" style="margin-bottom: 10px"}
+</div>
+    <div class="ow_superwide delete_user_form_container" style="margin: auto">
+    {block_decorator name="box" addClass="ow_center" iconClass='ow_ic_update' langLabel='frmsecurityessentials+delete_user_form_title' style="overflow:hidden;"}
+    {text key='frmsecurityessentials+delete_user_form_desc'}
+
+    {/block_decorator}
+
+    {form name=form}
+    {foreach from=$userArray key='uid' item='user'}
+        {$userInfo_{$user->username}}
+    {/foreach}
+    <table class="ow_table_1 ow_form ow_stdmargin">
+        {if $removedByAdmin}
+            <tr class="ow_alt2 ow_tr_first">
+                <td class="ow_label">{label name='email_admins'}</td>
+                <td class="ow_value">{input name='email_admins'}{error name='email_admins'}</td>
+            </tr>
+            <tr class="ow_alt2 ow_tr_first">
+                <td class="ow_label">{label name='email_users'}</td>
+                <td class="ow_value">{input name='email_users'}{error name='email_users'}</td>
+            </tr>
+        {/if}
+        <tr class="ow_alt2 ow_tr_first">
+            <td class="ow_label">{label name='password'}</td>
+            <td class="ow_value">{input name='password'}{error name='password'}{desc name='password'}</td>
+        </tr>
+        <tr class="ow_alt2 ow_tr_first">
+            <td class="ow_label">{label name='captcha'}</td>
+            <td class="ow_value">{input name='captcha'}{error name='captcha'}</td>
+        </tr>
+    </table>
+
+    <div class="ow_anno ow_std_margin anno_padding_left delete_user_warning_message" style="background-color: #FFEAEA; border: 1px solid #FF3131 !important">
+        {text key="frmsecurityessentials+delete_user_submit_warning"}
+    </div>
+    <div class="clearfix ow_stdmargin">
+        <div class="ow_right">
+            {submit name='submit' class="ow_red_button"}
+            {if isset($deleting_user_profile_url)}
+                {decorator name='button' class='ow_ic_delete' id='btn_cancel_deleting_user' langLabel='frmsecurityessentials+cancel' onclick="location.href='`$deleting_user_profile_url`'"}
+            {/if}
+        </div>
+    </div>
+    {/form}
+</div>

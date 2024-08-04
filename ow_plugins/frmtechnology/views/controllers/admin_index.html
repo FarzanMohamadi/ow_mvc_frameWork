@@ -1,0 +1,24 @@
+<div class="ow_automargin ow_superwide">
+    {form name='form'}
+    <table class="ow_table_1 ow_form">
+        <tr class="{cycle name="comments" values="ow_alt1,ow_alt2"} ow_tr_last">
+        <td class="ow_label">{label name='positions'}</td>
+        <td class="ow_value">{input name='positions'}</td>
+        <td class="ow_desc">{desc name='positions'}</td>
+        </tr>
+        <tr class="{cycle name="comments" values="ow_alt1,ow_alt2"} ow_tr_last">
+        <td class="ow_label">{label name='grades'}</td>
+        <td class="ow_value">{input name='grades'}</td>
+        <td class="ow_desc">{desc name='grades'}</td>
+        </tr>
+        <tr class="{cycle name="comments" values="ow_alt1,ow_alt2"} ow_tr_last">
+        <td class="ow_label">{label name='orgs'}</td>
+        <td class="ow_value">{input name='orgs'}</td>
+        <td class="ow_desc">{desc name='orgs'}</td>
+        </tr>
+    </table>
+    <div class="clearfix ow_stdmargin">
+        {submit name='save' class='ow_ic_save ow_submit ow_right'}
+    </div>
+    {/form}
+</div>

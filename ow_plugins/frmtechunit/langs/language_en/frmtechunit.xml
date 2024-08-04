@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtechunit" label="frmtechunit" language_tag="en" language_label="English">
+    <key name="section_intro">
+        <value>
+            Unit Introduction
+        </value>
+    </key>
+    <key name="section_founder">
+        <value>
+            Unit Founders
+        </value>
+    </key>
+    <key name="section_people">
+        <value>
+            People
+        </value>
+    </key>
+    <key name="section_contexts">
+        <value>
+            Contexts
+        </value>
+    </key>
+    <key name="section_activities">
+        <value>
+            Activities
+        </value>
+    </key>
+    <key name="section_goals">
+        <value>
+            Goals
+        </value>
+    </key>
+    <key name="section_departments">
+        <value>
+            Departments
+        </value>
+    </key>
+    <key name="section_co_companies">
+        <value>
+            Co Companies
+        </value>
+    </key>
+    <key name="section_projects_products">
+        <value>
+            Products and Projects
+        </value>
+    </key>
+    <key name="field_name">
+        <value>
+            Unit Name
+        </value>
+    </key>
+    <key name="field_image">
+        <value>
+            Unit image
+        </value>
+    </key>
+    <key name="field_manager">
+        <value>
+            manager
+        </value>
+    </key>
+    <key name="field_address">
+        <value>
+            address
+        </value>
+    </key>
+    <key name="field_phone">
+        <value>
+            phone
+        </value>
+    </key>
+    <key name="field_qr_code">
+        <value>
+            qr code
+        </value>
+    </key>
+    <key name="field_email">
+        <value>
+            email
+        </value>
+    </key>
+    <key name="field_website">
+        <value>
+            website
+        </value>
+    </key>
+    <key name="field_submit">
+        <value>
+            Submit
+        </value>
+    </key>
+    <key name="main_menu_item">
+        <value>
+            Technology Units
+        </value>
+    </key>
+    <key name="mobile_main_menu_item">
+        <value>
+            Technology Units
+        </value>
+    </key>
+    <key name="success">
+        <value>
+            Successfully Done
+        </value>
+    </key>
+    <key name="listing_no_items_msg">
+        <value>
+            Nothing found
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="add">
+        <value>
+            Add
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            Delete
+        </value>
+    </key>
+    <key name="delete_image">
+        <value>
+            Delete the image
+        </value>
+    </key>
+    <key name="search">
+        <value>
+            Search
+        </value>
+    </key>
+    <key name="units">
+        <value>
+            Technology Units
+        </value>
+    </key>
+    <key name="create_section_form">
+        <value>
+            Section Creation Form
+        </value>
+    </key>
+    <key name="edit_section_form">
+        <value>
+            Section Edit Form
+        </value>
+    </key>
+    <key name="sections">
+        <value>
+            Sections
+        </value>
+    </key>
+    <key name="field_title">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="field_required">
+        <value>
+            Required
+        </value>
+    </key>
+    <key name="delete_item_warning">
+        <value>
+            Are you sure about your action?
+        </value>
+    </key>
+    <key name="unit_info">
+        <value>
+            Unit info
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmtechunit" label="frmtechunit" language_tag="fa-IR" language_label="فارسی">
+    <key name="section_intro">
+        <value>
+            معرفی واحد
+        </value>
+    </key>
+    <key name="section_founder">
+        <value>
+            اعضای هیات موسس
+        </value>
+    </key>
+    <key name="section_people">
+        <value>
+            معرفی افراد و سمت
+        </value>
+    </key>
+    <key name="section_contexts">
+        <value>
+            معرفی حوزه‌های کاری
+        </value>
+    </key>
+    <key name="section_activities">
+        <value>
+            معرفی فعالیت‌های
+        </value>
+    </key>
+    <key name="section_goals">
+        <value>
+            اهداف
+        </value>
+    </key>
+    <key name="section_departments">
+        <value>
+            دپارتمان‌های مرکز
+        </value>
+    </key>
+    <key name="section_co_companies">
+        <value>
+            سازمان‌های همکار
+        </value>
+    </key>
+    <key name="section_projects_products">
+        <value>
+            معرفی محصولات و پروژه‌ها
+        </value>
+    </key>
+    <key name="field_name">
+        <value>
+            نام
+        </value>
+    </key>
+    <key name="field_image">
+        <value>
+            تصویر یا لوگو
+        </value>
+    </key>
+    <key name="field_manager">
+        <value>
+            مدیر
+        </value>
+    </key>
+    <key name="field_address">
+        <value>
+            آدرس
+        </value>
+    </key>
+    <key name="field_phone">
+        <value>
+            تلفن
+        </value>
+    </key>
+    <key name="field_qr_code">
+        <value>
+            کد qr
+        </value>
+    </key>
+    <key name="field_email">
+        <value>
+            ایمیل
+        </value>
+    </key>
+    <key name="field_website">
+        <value>
+            تارنما
+        </value>
+    </key>
+    <key name="field_submit">
+        <value>
+            ارسال
+        </value>
+    </key>
+    <key name="main_menu_item">
+        <value>
+            واحدهای فناور
+        </value>
+    </key>
+    <key name="mobile_main_menu_item">
+        <value>
+            واحدهای فناور
+        </value>
+    </key>
+    <key name="success">
+        <value>
+            با موفقیت انجام شد
+        </value>
+    </key>
+    <key name="listing_no_items_msg">
+        <value>
+            موردی یافت نشد
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            حذف
+        </value>
+    </key>
+    <key name="add">
+        <value>
+            افزودن
+        </value>
+    </key>
+    <key name="auth_action_label_view">
+        <value>
+            نمایش اطلاعات واحدها
+        </value>
+    </key>
+    <key name="unit_info">
+        <value>
+            اطلاعات واحد
+        </value>
+    </key>
+    <key name="auth_action_label_add">
+        <value>
+            افزودن اطلاعات واحدها
+        </value>
+    </key>
+    <key name="delete_image">
+        <value>
+            حذف تصویر
+        </value>
+    </key>
+    <key name="search">
+        <value>
+            جست‌وجو
+        </value>
+    </key>
+    <key name="units">
+        <value>
+            واحدهای فناور
+        </value>
+    </key>
+    <key name="create_section_form">
+        <value>
+            فرم ایجاد بخش
+        </value>
+    </key>
+    <key name="edit_section_form">
+        <value>
+            فرم ویرایش بخش
+        </value>
+    </key>
+    <key name="sections">
+        <value>
+            بخش‌ها
+        </value>
+    </key>
+    <key name="field_title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="field_required">
+        <value>
+            اجباری بودن بخش
+        </value>
+    </key>
+    <key name="delete_item_warning">
+        <value>
+            آیا از حذف این آیتم اطمینان دارید؟
+        </value>
+    </key>
+</prefix>

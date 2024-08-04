@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmgmailconnect" label="Google Connect" language_tag="fa-IR" language_label="فارسی">
+<key name="access_settings_client_id_label">
+<value>Client Id</value>
+</key>
+
+<key name="access_settings_client_secret_label">
+<value>Client secret</value>
+</key>
+
+<key name="admin_configuration_required_notification">
+<value>&lt;a href="{$href}"&gt;تنظیمات اتصال به حساب کاربری جیمیل&lt;/a&gt; می‌بایست تنظیم شود</value>
+</key>
+
+<key name="app_register_title">
+<value>حساب کاربری گوگل خود را تنظیم کنید</value>
+</key>
+
+<key name="app_return_url_desc">
+<value>حتما بایستی آدرس &lt;strong&gt;REDIRECT URIS&lt;/strong&gt;  به صورت زیر تنظیم شود.</value>
+</key>
+
+<key name="feed_user_join">
+<value>به شبکه اجتماعی {$site_name} پیوست!</value>
+</key>
+
+<key name="heading_configuration">
+<value>اتصال به گوگل</value>
+</key>
+
+<key name="join_dublicate_email_msg">
+<value>رایانامه وارد شده قبلا ثبت شده است</value>
+</key>
+
+<key name="join_failure_msg">
+<value>خطا در ثبت نام</value>
+</key>
+
+<key name="join_incomplete">
+<value>خطا در تکمیل روند ثبت نام</value>
+</key>
+
+<key name="join_incorrect_username">
+<value>نام کاربری اشتباه است</value>
+</key>
+
+<key name="join_success_msg">
+<value>ثبت نام با موفقیت انجام شد</value>
+</key>
+
+<key name="login_failure_msg">
+<value>خطا در ورود با حساب کاربری Gmail</value>
+</key>
+
+<key name="login_success_msg">
+<value>ورود با حساب کاربری Gmail با موفقیت انجام شد</value>
+</key>
+
+<key name="register_app_desc">
+
+<value>&lt;p&gt;&#13;
+برای فعال‌سازی اتصال حساب کاربری Gmail به سامانه مراحل زیر را اجرا کنید:&#13;
+&lt;/p&gt;&#13;
+&lt;ul class="ow_regular ow_stdmargin"&gt;&#13;
+&lt;li&gt;&#13;
+&lt;b&gt;&lt;a href="https://docs./doku.php?id=%D8%B1%D8%A7%D9%87_%D8%A7%D9%86%D8%AF%D8%A7%D8%B2%DB%8C_%D9%88%D8%B1%D9%88%D8%AF_%D9%88_%DB%8C%D8%A7_%D8%AB%D8%A8%D8%AA_%D9%86%D8%A7%D9%85_%D8%A8%D8%A7_%D8%AD%D8%B3%D8%A7%D8%A8_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%DB%8C_gmail" target="_blank"&gt;Google Application خود را بسازید&lt;/a&gt;&lt;/b&gt;  و نام آن را هم‌نام نام سامانه خود وارد کنید&#13;
+&lt;/li&gt;&#13;
+&lt;li&gt;به شما دو اطلاعات &lt;b&gt;Client ID&lt;/b&gt; و &lt;b&gt;Client secret&lt;/b&gt; داده می‌شود. با استفاده از آن‌ها اطلاعات زیر را کامل کنید&#13;
+&lt;/li&gt;&#13;
+&lt;/ul&gt;&#13;
+</value>
+</key>
+
+<key name="register_app_success">
+<value>تنظیمات با موفقیت ذخیره شد</value>
+</key>
+
+<key name="register_success_msg">
+<value>
+تنظیمات انجام شده &lt;b&gt;توسط شما&lt;/b&gt; آماده استفاده است
+</value>
+</key>
+
+<key name="save_btn_label">
+<value>ذخیره</value>
+</key>
+
+<key name="connect_btn_label">
+<value>ورود با استفاده از حساب کاربری گوگل</value>
+</key>
+
+<key name="set_password_mail_template_subject">
+    <value>
+        کد تنظیم گذرواژه
+    </value>
+</key>
+    <key name="set_password_mail_template_content_html">
+        <value>
+            کاربر گرامی «{$username}»،
+            &lt;br /&gt;&#13;
+            به دلیل اینکه شما از طریق حساب کاربری گوگل ثبت‌نام کرده‌اید، در صورت نیاز به گذرواژه می‌توانید از پیوند زیر را برای تنظیم گذرواژه خود استفاده کنید:&lt;br /&gt;&#13;
+            &lt;a href="{$resetUrl}"&gt; {$resetUrl}&lt;/a&gt;&lt;br /&gt;&#13;
+            &lt;br /&gt;&#13;
+            اگر در استفاده از پیوند بالا مشکلی بود، پیوند مقابل را دنبال کرده و کد زیر را در آن وارد کنید
+            &lt;a href="{$requestUrl}"&gt; {$requestUrl}&lt;/a&gt;.
+            &lt;br /&gt;&#13;
+            Code: {$code}&#13;
+            &lt;br /&gt;&#13;
+            چنانچه در آینده به گذرواژه احتیاج داشتید، می‌توانید از «فراموشی گذرواژه» نیز برای بازیابی گذرواژه استفاده کنید &#13;
+            &lt;br /&gt;&lt;br /&gt;&#13;
+        </value>
+    </key>
+<key name="set_password_mail_template_content_txt">
+    <value>
+        کاربر گرامی «{$username}»،
+         &#13;
+        به دلیل اینکه شما از طریق حساب کاربری گوگل ثبت‌نام کرده‌اید، در صورت نیاز به گذرواژه می‌توانید از پیوند زیر را برای تنظیم گذرواژه خود استفاده کنید: ({$resetUrl}) .&#13;
+         &#13;
+        اگر در استفاده از پیوند بالا مشکلی بود، پیوند مقابل را دنبال کرده و کد زیر را در آن وارد کنید: ({$requestUrl}). Code: &#13;{$code}
+        &#13;
+        چنانچه در آینده به گذرواژه احتیاج داشتید، می‌توانید از فراموشی گذرواژه نیز برای بازیابی گذرواژه استفاده کنید
+        &#13;
+        </value>
+    </key>
+</prefix>

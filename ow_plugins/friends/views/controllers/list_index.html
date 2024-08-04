@@ -1,0 +1,111 @@
+{if !empty($menu)}{$menu}{/if}
+{if !empty($list)}
+<div class="ow_user_list ow_full ow_stdmargin">
+	{foreach from=$list item='item' name='user_list'}
+		{assign var='dto' value=$item.dto}
+		{assign var='id' value=$dto->id}
+
+		{if $smarty.foreach.user_list.first}
+			<div class="clearfix {cycle name="rows" values="ow_alt2, ow_alt1"}">
+		{/if}
+
+		{capture assign="fields"}
+		{if isset($answerValues[$id])}
+			{foreach from=$questionNameList item='questionName'}
+				<div class="user_item_profile_questions_item">
+					<span class="question_title">{$questionNameValues[$questionName]}: </span>
+					{if isset($answerValues[$id][$questionName])}
+					<span class="question_value">
+						{if !is_array($answerValues[$id][$questionName])}
+							{$answerValues[$id][$questionName]}
+						{/if}
+						{if is_array($answerValues[$id][$questionName])}
+							{foreach from=$answerValues[$id][$questionName] item='answer'}
+								<span title="{$answer}">{$answer}</span>
+							{/foreach}
+						{/if}
+					</span>
+					{else}
+					-
+					{/if}
+				</div>
+			{/foreach}
+		{/if}
+		{/capture}
+
+		{capture assign="activity"}
+            {if empty($onlineInfo) || empty($onlineInfo[$id])}
+            {else}
+                {if (!empty($onlineInfo) && $onlineInfo[$id])}{online_now userId=$dto->id}{else}Activity: {format_date timestamp=$dto->activityStamp}{/if}
+            {/if}
+		{/capture}
+
+
+
+		{capture assign='toolbar'}
+			{if $case == 'sent-requests'}
+				<div class=" ow_tiny">
+					{if isset($cancelCodes)}
+					<ul class="ow_bl clearfix ow_small ow_stdmargin">
+						<li>
+							<a href="{url_for for="FRIENDS_CTRL_Action:cancel:[id=>$id, code=>{$cancelCodes[$id]}]"}">{text key='friends+cancel_request'}</a>
+						</li>
+					</ul>
+					{else}
+					<ul class="ow_bl clearfix ow_small ow_stdmargin">
+						<li>
+							<a href="{url_for for="FRIENDS_CTRL_Action:cancel:[id=>$id]"}">{text key='friends+cancel_request'}</a>
+						</li>
+					</ul>
+					{/if}
+				</div>
+			{elseif $case == 'got-requests'}
+				<div class="ow_tiny">
+					{if isset($acceptCodes) || isset($ignoreCodes)}
+					<ul class="ow_bl clearfix ow_small ow_stdmargin">
+						<li>
+							<a href="{url_for for="FRIENDS_CTRL_Action:accept:[id=>$id, code=>{$acceptCodes[$id]}]"}">{text key='friends+accept_request'}</a>
+						</li>
+						<li>
+							<a href="{url_for for="FRIENDS_CTRL_Action:ignore:[id=>$id,code=>{$ignoreCodes[$id]}]"}">{text key='friends+ignore_request'}</a>
+						</li>
+					</ul>
+					{else}
+					<ul class="ow_bl clearfix ow_small ow_stdmargin">
+						<li>
+							<a href="{url_for for="FRIENDS_CTRL_Action:accept:[id=>$id]"}">{text key='friends+accept_request'}</a>
+						</li>
+						<li>
+							<a href="{url_for for="FRIENDS_CTRL_Action:ignore:[id=>$id]"}">{text key='friends+ignore_request'}</a>
+						</li>
+					</ul>
+					{/if}
+				</div>
+			{/if}
+		{/capture}
+
+		{decorator name="user_list_item" toolbar=$toolbar
+               avatar=$avatars[$id]
+               userUrl= $avatars[$id].url
+               displayName= $avatars[$id].title
+               fields=$fields
+               activity=$activity
+               set_class='ow_item_set3'}
+
+		{if $smarty.foreach.user_list.iteration % 3 == 0 && !$smarty.foreach.user_list.last}
+			</div>
+			<div class="clearfix {cycle name="rows" values="ow_alt1,ow_alt2"}">
+		{/if}
+
+		{if $smarty.foreach.user_list.last}
+		  </div>
+		{/if}
+
+	{/foreach}
+
+</div>
+
+{$paging}
+{else}
+	<div class="ow_nocontent">{text key="base+user_no_users"}</div>
+{/if}

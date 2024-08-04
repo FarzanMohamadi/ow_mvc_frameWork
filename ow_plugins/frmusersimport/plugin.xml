@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>واردسازی کاربران</name>
+	<key>frmusersimport</key>
+	
+        این افزونه از طریق فایل ورودی یا فرمت txt، کاربران را ایجاد می‌کند.
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <depend_on>frmsms, frmuserlogin</depend_on>
+    <build>10817</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>published</item>
+    </category>
+    <plan>2</plan>
+</plugin>

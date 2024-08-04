@@ -1,0 +1,27 @@
+.ow_ticket_attachment_icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 14px;
+    height: 17px;
+}
+
+.ticket_attachments_label {
+    margin: 15px 0 5px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.ticket_add_post .jhtmlarea {
+    margin: 0 auto;
+}
+
+.post_content img { max-width: 100%; }
+
+.post_content { overflow: hidden; }
+
+.ow_ticket_post_comment {
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 28px;
+}

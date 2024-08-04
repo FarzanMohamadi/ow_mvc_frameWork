@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmterms" label="frmterms" language_tag="fa-IR" language_label="فارسی">
+    <key name="mobile_notification_content">
+        <value>
+            &lt;a href="{$url}"&gt;یک نسخه جدید از {$value1} منتشر شد. {$value2} بند مهم افزوده، ویرایش یا حذف شدند.&lt;/a&gt;
+        </value>
+    </key>
+	<key name="mobile_bottom_menu_item">
+        <value>شرایط</value>
+    </key>
+</prefix>

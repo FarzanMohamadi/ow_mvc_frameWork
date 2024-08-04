@@ -1,0 +1,24 @@
+{if !isset($invalidUrl)}
+<div id="search_content">
+    <span>{text key='frmadvancesearch+search_description'}</span>
+    <div id="search_input_content">
+        <select name="choose_plugin" class="ow_right" id="choose_plugin" onchange="frmsearch_doSearch('{$searchActionUrl}','search_input_item')">
+            {foreach $pluginNames as $item}
+                <option value="{$item}" >{$item}</option>
+            {/foreach}
+        </select>
+
+        <input type="text" id="search_input_item" name="search_input_item" placeholder="{text key='frmadvancesearch+search_title'}"
+               onkeyup="frmsearch_doSearch('{$searchActionUrl}','search_input_item')" />
+    </div>
+    <div id="div_result_search_items"></div>
+</div>
+
+{script}
+$("#search_input_item").focus();
+{/script}
+{else}
+<div id="search_content">
+    <div id="refresh_message">{text key='frmadvancesearch+problem_loading_search_component'}</div>
+</div>
+{/if}

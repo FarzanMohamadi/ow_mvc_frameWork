@@ -1,0 +1,27 @@
+{form name='add-item'}
+<table class="ow_table_1">
+    <tr>
+        <th colspan="3">{text key="frmterms+add_new_item_header"}</th>
+    </tr>
+    <tr>
+        <td colspan="3">
+            {label name='header'}{input name='header'}
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            {label name='description'}{input name='description'}
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            {input name='use'}{label name='use'}<br/>
+            {input name='notification'}{label name='notification'}<br/>
+            {input name='email'}{label name='email'}
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3">{submit name='submit'}</td>
+    </tr>
+</table>
+{/form}

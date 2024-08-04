@@ -1,0 +1,125 @@
+<div id="{$item.autoId}" class="owm_newsfeed_item {$item.view.class} {if $item.responded}owm_newsfeed_responded{/if}  {if empty($item.content)}owm_newsfeed_item_no_body{/if}" style="{$item.view.style}"
+     itemid="{$item.permalink}" itemscope itemtype="http://schema.org/SocialMediaPosting">
+    <meta itemprop="headline" content="{$item.headline|truncate:100}" />
+    <meta itemprop="datePublished" content="{$item.createDate}" />
+    <meta itemprop="image" content="{$item.user.avatarUrl}" />
+    <div class="owm_newsfeed_item_cont {if $item.disabled}owm_newsfeed_item_disabled_wrap{/if}">
+        <div class="owm_newsfeed_context_menu">
+            {$item.contextActionMenu}
+        </div>
+
+        {if $item.responded}
+        <div class="owm_newsfeed_header_responded">
+            <div class="owm_newsfeed_header_responded_cont">
+                <div class="owm_newsfeed_header_responded_txt"><a href="{$item.respond.user.url}">{$item.respond.user.name}</a> {$item.respond.text}</div>
+            </div>
+        </div>
+
+        <div class="owm_newsfeed_body_responded">
+            {if empty($item.content)}
+            <div class="owm_newsfeed_item_padding owm_newsfeed_item_box clearfix">
+                {/if}
+                {/if}
+
+                <div class="owm_newsfeed_header clearfix">
+                    <div class="owm_newsfeed_header_pic">
+                        {foreach from=$item.users item="user"}
+                        {decorator name="avatar_item" url=$user.url src=$user.avatarUrl imageInfo=$user.imageInfo label=$user.roleLabel.label labelColor=$user.roleLabel.labelColor}
+                        {/foreach}
+                    </div>
+                    <div class="owm_newsfeed_header_cont">
+                        <div class="owm_newsfeed_header_txt">
+                            {*foreach from=$item.users item="user" name="nameIterator"}
+                            <a href="{$user.url}"><b>{$user.name}</b></a>
+                            {if !$smarty.foreach.nameIterator.last} {text key='newsfeed+string_users_and_delim'} {/if}
+                            {/foreach*}
+                            <a href="{$item.user.url}" itemprop="author" itemscope itemtype="http://schema.org/Person"><b itemprop="name">{$item.user.name}</b></a>
+                            <bdi>{if isset($item.sourceUser)}
+                                {$item.sourceUser}
+                                {/if}</bdi>
+                            {if $item.context && (!isset($item.context.id) || $item.user.id != $item.context.id) }  &raquo;  <bdi><a href="{$item.context.url}">{$item.context.label}</a></bdi>{/if}
+                            {$item.string}
+                        </div>
+                    </div>
+
+                    <div class="owm_newsfeed_date">{$item.createTime}</div>
+
+                </div>
+
+                {if $item.content}
+                <div class="owm_newsfeed_body">
+                    {$item.content}
+                </div>
+                {/if}
+
+                {if $item.responded}
+                {if empty($item.content)}
+            </div>
+            {/if}
+        </div>
+        {/if}
+
+        <div class="owm_newsfeed_footer">
+            <div class="owm_newsfeed_control clearfix">
+                {foreach from=$item.features.items item="feature"}
+                    {if empty($feature.hideButton)}
+                    <div class="owm_newsfeed_control_left" id="{$feature.uniqId}" style="width: inherit;">
+                        <a class="owm_newsfeed_control_btn {$feature.class} newsfeed_like_btn {if isset($feature.userVote) && $feature.userVote == 1} owm_newsfeed_control_active {/if}" href="{$feature.url}"  {if !empty($feature.onclick)}onclick="{$feature.onclick}"{/if} style="display:inline">
+
+                            {if isset($feature.string)}
+                                <span class="owm_newsfeed_control_txt">{$feature.string}</span>
+                            {/if}
+                            {if isset($feature.count)}
+                                <span class="owm_newsfeed_control_counter postLikeUserList newsfeed_counter_likes">{if isset($feature.userVote)} {$feature.likescount} {/if}</span>
+
+
+                            {/if}
+                        </a>
+                        {if !empty($feature.innerHtml)}
+                        <div class="owm_newsfeed_control_inner_html">
+                            {$feature.innerHtml}
+                        </div>
+                        {/if}
+
+
+                            {if ($isDislikeActivate)}
+                            {if isset($feature.userVote) }
+                            <span class="owm_newsfeed_btn_comment_like_wrap frmlike_comment">
+                                 <a class="owm_newsfeed_control_btn owm_newsfeed_control_like frmlike_dislike newsfeed_dislike_btn {if isset($feature.userVote) && $feature.userVote == -1} owm_newsfeed_control_active {/if}" href="javascript://">
+                                    <span class="owm_newsfeed_control_counter postLikeUserList frmlike_comment"></span>
+                                 </a>
+                                 <span class="postLikeUserList frmlike_dislike_count newsfeed_counter_dislikes">{$feature.dislikescount}</span>
+                            </span>
+                            <span class="ow_newsfeed_btn_comment_like_wrap frmlike_total_info newsfeed_counter_total {if $feature.total>0} ow_green {elseif $feature.total<0} ow_red {/if}">{if $feature.total>0}+{/if}{$feature.total}</span>
+                            {/if}
+                            {/if}
+
+                    </div>
+
+
+
+                    {/if}
+                {/foreach}
+
+                {if isset($item.privacy_label)}
+                <div class="owm_newsfeed_control_left" style="width: inherit;">
+                    {if isset($item.privacy_label.onClick)}<a class="privacy_label" id="{$item.privacy_label.id}" href="{$item.privacy_label.onClick}">{/if}
+                    <img class="ow_nowrap create_time ow_newsfeed_date ow_small feed_image_privacy" src="{$item.privacy_label.imgSrc}" title="{$item.privacy_label.label}" />
+                    {if isset($item.privacy_label.onClick)}</a>{/if}
+                </div>
+                {/if}
+            </div>
+
+        {foreach from=$item.features.items item="feature"}
+        {if !empty($feature.html)}
+        <div id="{$feature.uniqId}-html" class="owm_newsfeed_control_html {if isset($frmmenu_active)} frmmenu-active {/if}">
+            {$feature.html}
+        </div>
+        {/if}
+        {/foreach}
+    </div>
+        {if $item.disabled}
+            <div class="owm_newsfeed_item_disabled" onclick="OWM.error($(this).data('message'));" data-message='{text key="newsfeed+mobile_disabled_actions_message" desktopUrl=$item.desktopUrl}'></div>
+        {/if}
+</div>
+</div>

@@ -1,0 +1,242 @@
+.draggable-lang-item{
+    cursor: default;
+}
+
+img.plugin-img-item{
+    width: 40px;
+}
+
+#s1 a.act{
+    display: none;
+}
+
+.lang_placeholder {
+    border: 1px dashed grey;
+}
+
+tr.lang_placeholder td{
+    border: 1px dashed grey;
+}
+
+#s1 td.features{
+    width: 110px;
+    max-width:110px;
+}
+
+.plugin-information{
+    background-color: #fafafa !important;
+    border-color: 1px solid rgb(229, 237, 244) !important;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 10px 0px 10px;
+    max-width: 85%;
+    vertical-align: top;
+    width: 250px;
+    min-height: 125px;
+    text-align: right;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.item-information{
+    display: inline-block;
+    margin: 0px 10px 20px 10px;
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    height: 135px;
+    text-align: center;
+}
+
+.plugin-information,
+.themes-information,
+.item-information{
+    border: 1px solid #edede5;
+    background-color: #fffff7;
+}
+
+
+.item-information img{
+    width: 112px;
+}
+
+.item-information.theme img{
+    width: 215px;
+}
+
+.core_img{
+    width: 150px;
+}
+
+.plugin-information .download {
+    clear: both;
+    padding: 8px 0px 0px 0px;
+    text-align: center;
+}
+
+.plugin-information p img {
+    float: right;
+    margin-left: 10px;
+    width: 80px;
+}
+
+.themes-information p.download {
+    margin-top: 15px;
+    padding: 8px 0px 0px 0px;
+}
+
+.download img{
+    width: 20px !important;
+}
+
+.download a {
+    display: inline-block;
+    margin: 5px;
+}
+
+p.download {
+    border-top: 1px dashed lightgray;
+    margin-bottom: 0px;
+}
+
+.plugin-information p span,
+.themes-information p{
+    font-weight: bold;
+    font-size: 12px;
+}
+.frmus_description_header {
+    background-color: #9c9c9c;
+    padding: 11px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+p.description_item,
+.frmus_description_item {
+    text-align: center;
+    margin: 0px;
+}
+
+.plugin-information p.description {
+    text-align: justify;
+    min-height: 80px;
+}
+
+.description_core,
+.frmus_description_core{
+    padding: 10px 25px;
+    margin: 0;
+}
+
+.frmus_download_btn_wrapper {
+    text-align: center;
+}
+.frmus_download_btn_wrapper .frmus_download_btn {
+    background-color: #dc3c56;
+    border-color: #ea353d;
+    border-radius: 6px;
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 17px 6px;
+    min-width: 50%;
+    margin: 14px;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+}
+
+.frmus_download_btn:hover {
+    background-color: #ca151d !important;
+    text-decoration: none;
+}
+
+.frmus_download_btn .frmus_download_btn_subtext {
+    font-size: 10px;
+    margin: 4px;
+}
+
+.themes-information {
+    display: inline-block;
+    margin: 15px;
+    background-color: #FAFAFA;
+    border: 1px solid rgb(229, 237, 244) !important;
+    border-radius: 6px;
+    padding: 10px 20px 10px 20px;
+}
+
+.themes-information img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.plugin-full-center-content{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.plugin-full-center-content .ow_wide {
+    display: inline-block;
+}
+
+.plugin-full-center-content .ow_wide,
+.plugin-full-center-content .ow_narrow {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.st_download_shub_item { padding: 20px; text-align: justify; border: 1px solid rgb(206, 216, 204); margin: 0px 0px 20px; background-color: rgb(247, 255, 247); min-height: 110px; border-radius: 5px;}
+.st_download_shub_item p.description_item a { padding: 10px 20px; margin: 0px 0px 20px; line-height: 30px; display: block; color: rgb(255, 255, 255); font-size: 18px; border-radius: 6px; }
+.st_download_shub_date p.description_item { text-align: right; margin: 0px 0px 10px 0px; }
+.st_download_shub_date p.description_core { text-align: right; }
+.st_download_shub_item .frmus_description_item a { padding: 10px 20px; margin: 0px 0px 20px; line-height: 30px; display: block; color: rgb(255, 255, 255); font-size: 18px; border-radius: 6px; }
+.st_download_shub_date .frmus_description_item { text-align: right; margin: 0px 0px 10px 0px; }
+.st_download_shub_date .frmus_description_item { text-align: right; }
+div.plugin-information div.st_top_info { width: 100%; display: table; margin: 0px 0px 10px; }
+div.plugin-information div.st_top_info div.st_top_info_title { font-size: 14px; display: table-cell; vertical-align: middle; font-weight: bold; }
+div.plugin-information div.st_top_info div.st_top_info_icon { display: table-cell; vertical-align: middle; text-align: left; }
+div.plugin-information div.st_top_info div.st_top_info_icon img { width: 50px; }
+
+div#versions-log img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+div#versions-log a {
+    width: 100%;
+    float: right;
+    margin-top: 10px;
+}
+
+a.version-logs,
+div#versions-log a {
+    cursor: pointer;
+}
+
+.item_loading{
+    display: none;
+    position: absolute;
+    left: 50%;
+    height: 20px;
+    text-align: center
+}
+
+.download_waiting_box {
+    width: 100%;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.category_description{
+    display: inline-block;
+}

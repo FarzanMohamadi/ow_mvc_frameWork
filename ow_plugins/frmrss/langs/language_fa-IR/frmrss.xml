@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrss" label="frmrss" language_tag="fa-IR" language_label="فارسی">
+    <key name="rss_float_box_title">
+        <value>
+            ایجاد خبرخوان
+        </value>
+    </key>
+    <key name="rss">
+        <value>
+            دریافت خبرخوان
+        </value>
+    </key>
+    <key name="tag">
+        <value>
+            دریافت پیوند خبرخوان آخرین اخبار با برچسب خاص
+        </value>
+    </key>
+    <key name="rss_without_tag">
+        <value>
+            پیوند خبرخوان آخرین اخبار
+        </value>
+    </key>
+    <key name="rss_generat_link">
+        <value>
+            ایجاد خبرخوان
+        </value>
+    </key>
+    <key name="rss_generate_disc">
+        <value>
+برای ایجاد خبرخوان، پس از انتخاب برچسب مورد نظر، دکمه مشاهده پیوند را انتخاب کنید تا خبرخوان موردنظر تولید شود.
+        </value>
+    </key>
+    <key name="select_tag">
+        <value>
+          انتخاب برچسب
+        </value>
+    </key>
+    <key name="view_link">
+        <value>
+            مشاهده پیوند
+        </value>
+    </key>
+</prefix>

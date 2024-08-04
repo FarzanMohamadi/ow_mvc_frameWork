@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmprofilemanagement" label="frmprofilemanagement" language_tag="en" language_label="English">
+    <key name="main_menu_my_profile">
+        <value>
+            My profile
+        </value>
+    </key>
+</prefix>

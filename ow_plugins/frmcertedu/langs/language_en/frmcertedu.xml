@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcertedu" label="frmcertedu" language_tag="fa-IR" language_label="فارسی">
+    <key name="courses_widget_title">
+        <value>دوره‌های برگزارشده</value>
+    </key>
+    <key name="news_widget_title">
+        <value>news</value>
+    </key>
+    <key name="faq_widget_title">
+        <value>FAQ</value>
+    </key>
+    <key name="courses_countdown_title">
+        <value>countdown</value>
+    </key>
+    <key name="day">
+        <value>day</value>
+    </key>
+    <key name="hours">
+        <value>hour</value>
+    </key>
+    <key name="minutes">
+        <value>minute</value>
+    </key>
+    <key name="seconds">
+        <value>second</value>
+    </key>
+    <key name="see_all_news">
+        <value>see all news</value>
+    </key>
+    <key name="read_more">
+        <value>read more</value>
+    </key>
+    <key name="contact_us_widget_title">
+        <value>contact us</value>
+    </key>
+</prefix>

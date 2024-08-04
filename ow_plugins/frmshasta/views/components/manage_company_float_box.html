@@ -1,0 +1,39 @@
+<div class="ow_add_file clearfix">
+
+    <div class="ow_superwide ow_automargin">
+		<h1 class="add_file_title">{text key="frmshasta+manage_company"}</h1>
+		{form name='manage_company'}
+		<div class="add_file_header">
+			<div class="main_fields">
+				<div class="right_fields">
+					<table class="ow_table_1 ow_form">
+						<tr>
+							<td class="ow_label">{label name="name"}:</td>
+							<td class="ow_value">{input name="name"} {error name='name'}</td>
+						</tr>
+						<tr>
+							<td class="ow_label">{label name="parent"}:</td>
+							<td class="ow_value">{input name="parent"} {error name='parent'}</td>
+						</tr>
+						<tr>
+							<td class="ow_label">{label name="image"}:</td>
+							<td class="ow_value">{input name="image"} {error name='image'}</td>
+						</tr>
+						<tr>
+							<td colspan="2" class="ow_submit">
+								{submit name="submit" class='ow_ic_save'}
+								{if isset($deleteUrl)}
+									<a href="{$deleteUrl}" onclick="return confirm_redirect('{text key="frmshasta+are_you_sure_delete_company"}','{$deleteUrl}');">
+										<button class="custom_big_button"><span class="icon_delete">{text key='base+delete'}</span></button>
+									</a>
+								{/if}
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		{/form}
+    </div>
+
+</div>

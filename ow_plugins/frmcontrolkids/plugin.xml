@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<plugin>
+    <name>plugin</name>
+    <key>frmcontrolkids</key>
+    
+با نصب این افزونه، کاربران در هنگام ثبت‌نام در صورت داشتن سن کم، باید والد خود را مشخص کنند تا والدین بتوانند با ورود به‌ حساب‌های کاربری خود، رفتار فرزندان خود را کنترل نمایند
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10814</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>published</item>
+    </category>
+    <plan>2</plan>
+</plugin>

@@ -1,0 +1,27 @@
+<div class="ow_automargin ow_superwide">
+    {form name='adminForm'}
+         <table class="ow_table_1 ow_form">
+            <tr>
+                <td class="ow_label">{label name="emailSendTo"}</td>
+                <td class="ow_value">{input name="emailSendTo"} {error name='emailSendTo'}</td>
+            </tr>
+           <tr>
+               <td class="ow_label">{label name="newsCommentNotification"}</td>
+               <td class="ow_value">{input name="newsCommentNotification"} {error name='newsCommentNotification'}</td>
+           </tr>
+           <tr> 
+               <td class="ow_label">{label name="topicForumNotification"}</td>
+               <td class="ow_value">{input name="topicForumNotification"} {error name='topicForumNotification'}</td>
+           </tr>
+           
+           <tr> 
+               <td class="ow_label">{label name="registerNotification"}</td>
+               <td class="ow_value">{input name="registerNotification"} {error name='registerNotification'}</td>
+           </tr>
+           
+           <tr>
+               <td colspan="2" class="ow_submit">{submit name="saveSettings" class='ow_ic_save'}</td>
+           </tr>
+         </table>
+    {/form}
+</div>

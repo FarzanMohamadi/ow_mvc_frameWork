@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmajaxloader" label="frmajaxloader" language_tag="fa-IR" language_label="فارسی">
+    <key name="new_activities">
+        <value>
+         فعالیت جدید در تازه‌ها
+        </value>
+    </key>
+    <key name="new_posts">
+        <value>
+            نوشته جدید در تازه‌ها
+        </value>
+    </key>
+</prefix>

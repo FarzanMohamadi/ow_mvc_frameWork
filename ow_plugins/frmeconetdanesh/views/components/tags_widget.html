@@ -1,0 +1,19 @@
+{if !empty($list)}
+	<div class="post_samples">
+		{foreach from=$list item='tag'}
+			<div class="news_sample ow_box">
+				<div class="title ow_box_cap"><img alt="" src="." style="max-width: 100%;">
+					<h3><a href="{$tag.link}" style="color: white">{$tag.label}</a></h3>
+				</div>
+				<ul>
+					{foreach from=$tag.list item='post'}
+					<li><a href="{$post.link}">{$post.title}</a></li>
+					{/foreach}
+				</ul>
+				<div class="post_widget_more"><a href="{$tag.link}">{text key='base+view_all'}</a></div>
+			</div>
+		{/foreach}
+	</div>
+{else}
+	<div class="ow_nocontent">{text key='base+empty_list'}</div>
+{/if}

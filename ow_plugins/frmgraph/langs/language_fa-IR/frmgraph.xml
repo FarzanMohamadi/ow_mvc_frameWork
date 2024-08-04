@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmgraph" label="frmgraph" language_tag="fa-IR" language_label="فارسی">
+    <key name="description">
+        <value>
+            این افزونه گراف کاربران و گروه‌ها را تحلیل کرده و معیارهای مختلف مرتبط با گراف را به شما برمی‌گرداند
+        </value>
+    </key>
+    <key name="get_result_submit">
+        <value>
+            محاسبه معیارها
+        </value>
+    </key>
+    <key name="label_calculate_all">
+        <value>
+            محاسبه معیارها به‌صورت هفته‌ای و خودکار، توسط کرون اجرا شده و  محاسبه می‌شود. افزون بر آن می‌توانید از طریق این دکمه، معیارها را به صورت دستی محاسبه کنید.
+        </value>
+    </key>
+    <key name="label_which_snapshot_result">
+        <value>
+انتخاب زمان اجرا برای نمایش نتایج
+        </value>
+    </key>
+    <key name="last_snapshot">
+        <value>
+            آخرین اجرا
+        </value>
+    </key>
+    <key name="label_cron_period">
+        <value>
+            محاسبه دوره‌ای
+        </value>
+    </key>
+    <key name="disabled">
+        <value>
+            غیر فعال
+        </value>
+    </key>
+    <key name="time_daily">
+        <value>
+            روزانه
+        </value>
+    </key>
+    <key name="time_weekly">
+        <value>
+            هفته‌ای
+        </value>
+    </key>
+    <key name="time_monthly">
+        <value>
+            ماهانه
+        </value>
+    </key>
+    <key name="modified_successfully">
+        <value>
+            تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="server">
+        <value>
+            سرور محاسبه‌کننده معیارهای گراف
+        </value>
+    </key>
+    <key name="test_connection_title">
+        <value>
+            بررسی اتصال به سرور محاسبه‌کننده معیارهای گراف
+        </value>
+    </key>
+    <key name="test_button_label">
+        <value>
+            بررسی اتصال
+        </value>
+    </key>
+    <key name="test_connection_successfully">
+        <value>
+            اتصال با موفقیت برقرار شد
+        </value>
+    </key>
+    <key name="test_connection_failed">
+        <value>
+            اتصال به سرور برقرار نشد
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه موتوشاب‌گرافی
+        </value>
+    </key>
+    <key name="submit">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="display">
+        <value>
+            نمایش
+        </value>
+    </key>
+    <key name="calculate_all_metrics_successfully">
+        <value>
+            تمامی معیارها با موفقیت محاسبه شد
+        </value>
+    </key>
+
+    <key name="general_settings">
+        <value>
+            تنظیمات عمومی
+        </value>
+    </key>
+    <key name="graph_view">
+        <value>
+            نمایش شبکه
+        </value>
+    </key>
+    <key name="user_analytics">
+        <value>
+            تحلیل کاربر
+        </value>
+    </key>
+    <key name="user_statistics">
+        <value>
+            آمار کاربران
+        </value>
+    </key>
+    <key name="number_of_users_according_to">
+        <value>
+            تعداد کاربران بر اساس
+        </value>
+    </key>
+    <key name="group_analytics">
+        <value>
+            تحلیل گروه
+        </value>
+    </key>
+    <key name="graph_analytics">
+        <value>
+            تحلیل کل شبکه
+        </value>
+    </key>
+
+    <key name="user_graph">
+        <value>
+            شبکه کاربر
+        </value>
+    </key>
+    <key name="group_graph">
+        <value>
+            شبکه گروه
+        </value>
+    </key>
+    <key name="all_users">
+        <value>
+            همه کاربران
+        </value>
+    </key>
+    <key name="one_user">
+        <value>
+            یک کاربر
+        </value>
+    </key>
+    <key name="all_groups">
+        <value>
+            همه گروه‌ها
+        </value>
+    </key>
+    <key name="one_group">
+        <value>
+            یک گروه
+        </value>
+    </key>
+
+    <key name="label_depth">
+        <value>
+            عمق
+        </value>
+    </key>
+
+    <key name="label_gId">
+        <value>
+            شناسه گروه
+        </value>
+    </key>
+    <key name="label_userId">
+        <value>
+            شناسه کاربر
+        </value>
+    </key>
+    <key name="label_degree_cent">
+        <value>
+            مرکزیت درجه
+        </value>
+    </key>
+    <key name="label_closeness_cent">
+        <value>
+            مرکزیت نزدیکی
+        </value>
+    </key>
+    <key name="label_users_count">
+        <value>
+            تعداد اعضا
+        </value>
+    </key>
+    <key name="label_betweenness_cent">
+        <value>
+            مرکزیت بینیت
+        </value>
+    </key>
+    <key name="label_eccentricity_cent">
+        <value>
+            مرکزیت بی‌نظیری
+        </value>
+    </key>
+    <key name="label_hub">
+        <value>
+            هاب
+        </value>
+    </key>
+    <key name="label_authority">
+        <value>
+            آتوریتی
+        </value>
+    </key>
+    <key name="label_cluster_coe">
+        <value>
+            ضریب خوشینگی
+        </value>
+    </key>
+    <key name="label_page_rank">
+        <value>
+            پیج رنک
+        </value>
+    </key>
+    <key name="label_contents_count">
+        <value>
+            تعداد نوشته‌های ارسالی
+        </value>
+    </key>
+    <key name="label_files_count">
+        <value>
+            تعداد فایل‌های بارگذاری شده
+        </value>
+    </key>
+    <key name="label_pictures_count">
+        <value>
+            تعداد تصاویر ارسالی
+        </value>
+    </key>
+    <key name="label_videos_count">
+        <value>
+            تعداد ویدیوهای ارسالی
+        </value>
+    </key>
+    <key name="label_news_count">
+        <value>
+            تعداد اخبار
+        </value>
+    </key>
+    <key name="label_all_contents_count">
+        <value>
+            تعداد مجموع محتوای تولید شده
+        </value>
+    </key>
+    <key name="label_all_activities_count">
+        <value>
+            تعداد کل فعالیت‌ها
+        </value>
+    </key>
+    <key name="label_all_done_activities_count">
+        <value>
+            تعداد کل فعالیت‌های انجام شده روی محتوای کاربر
+        </value>
+    </key>
+    <key name="label_users_interactions_count">
+        <value>
+            تعداد تعاملات بین کاربران
+        </value>
+    </key>
+
+    <key name="label_time">
+        <value>
+            زمان
+        </value>
+    </key>
+    <key name="label_node_count">
+        <value>
+            تعداد راس
+        </value>
+    </key>
+    <key name="label_edge_count">
+        <value>
+            تعداد یال
+        </value>
+    </key>
+    <key name="label_diameter">
+        <value>
+            قطر گراف
+        </value>
+    </key>
+    <key name="label_degree_average">
+        <value>
+            میانگین درجه
+        </value>
+    </key>
+    <key name="label_average_distance">
+        <value>
+            میانگین فاصله
+        </value>
+    </key>
+    <key name="label_cluster_coe_avg">
+        <value>
+            میانگین خوشینگی کل شبکه
+        </value>
+    </key>
+
+    <key name="label_rank">
+        <value>
+            رتبه
+        </value>
+    </key>
+    <key name="label_row">
+        <value>
+            ردیف
+        </value>
+    </key>
+    <key name="label_username">
+        <value>
+            نام کاربری
+        </value>
+    </key>
+    <key name="label_score">
+        <value>
+            امتیاز نهایی
+        </value>
+    </key>
+
+    <key name="label_distribution_users_count">
+        <value>
+            توزیع تعداد اعضا
+        </value>
+    </key>
+    <key name="label_distribution_degree">
+        <value>
+            توزیع درجه
+        </value>
+    </key>
+    <key name="label_distribution_component">
+        <value>
+            توزیع اجزا هم‌بند
+        </value>
+    </key>
+    <key name="label_distribution_distance">
+        <value>
+            توزیع فاصله
+        </value>
+    </key>
+    <key name="label_distribution_betweenness_cent">
+        <value>
+          توزیع مرکزیت بینیت
+        </value>
+    </key>
+    <key name="label_distribution_closeness_cent">
+        <value>
+            توزیع مرکزیت نزدیکی
+        </value>
+    </key>
+    <key name="label_distribution_eccentricity_cent">
+        <value>
+            توزیع مرکزیت بی‌نظیری
+        </value>
+    </key>
+    <key name="label_distribution_page_rank">
+        <value>
+            توزیع پیچ‌رنک
+        </value>
+    </key>
+    <key name="label_distribution_hub">
+        <value>
+            توزیع هاب
+        </value>
+    </key>
+    <key name="label_distribution_authority">
+        <value>
+            توزیع آتوریتی
+        </value>
+    </key>
+    <key name="label_distribution_cluster_coe">
+        <value>
+            توزیع خوشینگی راس‌ها
+        </value>
+    </key>
+    <key name="label_distribution_all_activities_count">
+        <value>
+توزیع تعداد فعالیت‌ها
+        </value>
+    </key>
+    <key name="label_distribution_all_done_activities_count">
+        <value>
+            توزیع تعداد فعالیت‌های انجام‌شده روی محتوای کاربر
+        </value>
+    </key>
+    <key name="label_distribution_all_contents_count">
+        <value>
+            توزیع تعداد مجموع محتوای تولیدی
+        </value>
+    </key>
+    <key name="label_distribution_contents_count">
+        <value>
+            توزیع تعداد نوشته‌های ارسالی
+        </value>
+    </key>
+    <key name="label_distribution_pictures_count">
+        <value>
+            توزیع تعداد تصاویر
+        </value>
+    </key>
+    <key name="label_distribution_videos_count">
+        <value>
+            توزیع تعداد ویدیوها
+        </value>
+    </key>
+    <key name="label_distribution_news_count">
+        <value>
+            توزیع تعداد اخبار
+        </value>
+    </key>
+    <key name="label_distribution_files_count">
+        <value>
+            توزیع تعداد فایل‌های بارگذاری‌شده
+        </value>
+    </key>
+    <key name="label_distribution_users_interactions_count">
+        <value>
+            توزیع تعداد تعامل‌های بین اعضای گروه
+        </value>
+    </key>
+    <key name="label_degree">
+        <value>
+            درجه
+        </value>
+    </key>
+    <key name="component_number">
+        <value>
+            شماره کامپوننت
+        </value>
+    </key>
+    <key name="count">
+        <value>
+            تعداد
+        </value>
+    </key>
+    <key name="distance">
+        <value>
+            فاصله
+        </value>
+    </key>
+    <key name="number_of_users">
+        <value>
+            تعداد کاربران
+        </value>
+    </key>
+    <key name="number_of_groups">
+        <value>
+            تعداد گروه‌ها
+        </value>
+    </key>
+    <key name="value">
+        <value>
+            مقدار
+        </value>
+    </key>
+
+    <key name="metric">
+        <value>
+            معیار
+        </value>
+    </key>
+    <key name="importance_coefficient">
+        <value>
+            ضریب اهمیت
+        </value>
+    </key>
+    <key name="all_users_desc">
+        <value>
+            با استفاده از فرم زیر، می‌توانید محوری‌ترین کاربران شبکه اجتماعی را لیست نمایید. این لیست بر اساس امتیاز نهایی هر کاربر (نتیجه فرمول خطی زیر) است.
+            &lt;br /&gt;
+            به طور مثال اگر در جدول زیر به هر کدام از معیارها، ضریب یک داده شود، امتیاز هر کاربر برابر با مجموع مقادیر محاسبه‌شده هر کاربر است.
+        </value>
+    </key>
+    <key name="all_groups_desc">
+        <value>
+            با استفاده از فرم زیر، می‌توانید محوری‌ترین گروه‌های شبکه اجتماعی را لیست نمایید. این لیست بر اساس امتیاز نهایی هر گروه (نتیجه فرمول خطی زیر) است.
+            &lt;br /&gt;
+            به طور مثال اگر در جدول زیر به هر کدام از معیارها، ضریب یک داده شود، امتیاز هر گروه برابر با مجموع مقادیر محاسبه‌شده هر گروه است.
+        </value>
+    </key>
+
+    <key name="label_legend_node_0">
+        <value>
+            نود انتخاب شده
+        </value>
+    </key>
+    <key name="label_legend_node_1">
+        <value>
+            همسایگان سطح اول
+        </value>
+    </key>
+    <key name="label_legend_node_2">
+        <value>
+            همسایگان سطح دوم
+        </value>
+    </key>
+    <key name="label_legend_node_3">
+        <value>
+            همسایگان سطح سوم
+        </value>
+    </key>
+    <key name="label_legend_node_4">
+        <value>
+            همسایگان سطح چهارم
+        </value>
+    </key>
+    <key name="label_legend_node_5">
+        <value>
+            همسایگان سطح پنچم
+        </value>
+    </key>
+    <key name="label_avatar">
+        <value>
+            تصویر کاربر
+        </value>
+    </key>
+    <key name="label_group_image">
+        <value>
+            تصویر گروه
+        </value>
+    </key>
+    <key name="label_user_info">
+        <value>
+            اطلاعات کاربر
+        </value>
+    </key>
+    <key name="label_group_info">
+        <value>
+            اطلاعات گروه
+        </value>
+    </key>
+    <key name="label_graph_info">
+        <value>
+            اطلاعات کلی شبکه
+        </value>
+    </key>
+    <key name="label_graph_info">
+        <value>
+            اطلاعات کلی شبکه
+        </value>
+    </key>
+    <key name="no_data_to_display">
+        <value>
+            داده برای نمایش وجود ندارد
+        </value>
+    </key>
+    <key name="label_linear_formula_form">
+        <value>
+            تنظیمات فرمول خطی
+        </value>
+    </key>
+
+    <key name="tooltip_degree_cent">
+        <value>
+            برابر است با مجموع یال‌های ورودی و خروجی تقسیم بر تعداد کل نودها.
+        </value>
+    </key>
+    <key name="tooltip_closeness_cent">
+        <value>
+            این پارامتر معادل معکوس متوسط فاصله هر راس از دیگر راس‌ها است. هر چقدر این کمیت بزرگ‌تر باشد، راس مربوطه، بیشتر در مرکز شبکه قرار دارد.
+        </value>
+    </key>
+    <key name="tooltip_betweenness_cent">
+        <value>
+            راس‌هایی که در کوتاه‌ترین مسیر بین اکثر راس‌های شبکه حضور داشته باشند، میزان مرکزیت بینیت بالایی دارند.
+        </value>
+    </key>
+    <key name="tooltip_eccentricity_cent">
+        <value>
+            برابر با طول بزرگ‌ترین مسیر به دیگر راس‌ها است.
+        </value>
+    </key>
+    <key name="tooltip_hub">
+        <value>
+            میزان هاب یک راس به معنی میزان اشاره به راس‌های مهم دیگر است.
+        </value>
+    </key>
+    <key name="tooltip_authority">
+        <value>
+            میزان آتوریتی یک راس به معنی مهم بودن و اشاره شدن توسط دیگر راس‌ها است.
+        </value>
+    </key>
+    <key name="tooltip_cluster_coe">
+        <value>
+            ضریب خوشینگی معیاری است که مشخص می‌کند که راس‌های یک گراف چه میزان تمایل به ایجاد یک خوشه با هم دارند.
+        </value>
+    </key>
+    <key name="tooltip_page_rank">
+        <value>
+            این معیار میزان اتصال به راس‌های با اهمیت بالا را مشخص می‌کند. امتیازی که طبق این کمیت به راس‌ها داده می‌شود، برای راس‌هایی که درجه بیشتری داشته و به راس‌هایی با درجه بالا متصل هستند، بیشتر است.
+        </value>
+    </key>
+    <key name="tooltip_all_contents_count">
+        <value>
+           برابر است با مجموع نوشته‌ها، تصاویر، فایل‌ها و دیگر موارد تولیدی.
+        </value>
+    </key>
+    <key name="tooltip_all_activities_count">
+        <value>
+          برابر است با مجموع نوشته‌های تولیدی، پسند‌ها و نظرات کاربران.
+        </value>
+    </key>
+    <key name="tooltip_all_done_activities_count">
+        <value>
+          برابر است با مجموع نوشته‌ها، پسند‌ها و نظرات اعمال‌شده بر روی نوشته کاربر.
+        </value>
+    </key>
+    <key name="tooltip_users_interactions_count">
+        <value>
+            برابر است با مجموع پسند‌ها و نظرات کاربران.
+        </value>
+    </key>
+    <key name="tooltip_files_count">
+        <value>
+            تعداد فایل‌های بارگذاری شده در بخش فایل‌های گروه.
+        </value>
+    </key>
+    <key name="graph_index">
+        <value>
+            موتوشاب‌گرافی
+        </value>
+    </key>
+    <key name="auth_frmgraph_label">
+        <value>
+            موتوشاب‌گرافی
+        </value>
+    </key>
+    <key name="auth_action_label_graph">
+        <value>
+            موتوشاب‌گرافی
+        </value>
+    </key>
+    <key name="label_user_fullname">
+        <value>
+            نام
+        </value>
+    </key>
+    <key name="label_user_email">
+        <value>
+            ایمیل
+        </value>
+    </key>
+    <key name="label_group_title">
+        <value>
+            عنوان گروه
+        </value>
+    </key>
+    <key name="export_to_excel">
+        <value>
+            خروجی Excel
+        </value>
+    </key>
+    <key name="choose">
+        <value>
+            انتخاب
+        </value>
+    </key>
+    <key name="filter_according_to">
+        <value>
+            فیلتر بر اساس
+        </value>
+    </key>
+    <key name="number_of_result_rows">
+        <value>
+            تعداد موارد قابل نمایش در هر صفحه
+        </value>
+    </key>
+    <key name="users_presence_log">
+        <value>
+            وضعیت کاربران
+        </value>
+    </key>
+    <key name="chart_label_countOnline">
+        <value>
+           کاربران برخط
+        </value>
+    </key>
+    <key name="chart_label_count">
+        <value>
+            کل کاربران
+        </value>
+    </key>
+    <key name="chart_label_countSuspended">
+        <value>
+            کاربران معلق
+        </value>
+    </key>
+    <key name="chart_label_countUnverified">
+        <value>
+            کاربران تایید نشده
+        </value>
+    </key>
+    <key name="chart_label_countUnapproved">
+        <value>
+            کاربران در انتظار تایید
+        </value>
+    </key>
+    <key name="user_status">
+        <value>
+            وضعیت
+        </value>
+    </key>
+    <key name="type_of_chart">
+        <value>
+            نوع نمودار
+        </value>
+    </key>
+    <key name="get_chart_according_to">
+        <value>
+            مشاهده نمودار بر اساس
+        </value>
+    </key>
+    <key name="pie_chart">
+        <value>
+            نمودار برشی
+        </value>
+    </key>
+    <key name="column_chart">
+        <value>
+           نمودار ستونی
+        </value>
+    </key>
+    <key name="is_output_normalized">
+        <value>
+            نرمالیزه بودن خروجی
+        </value>
+    </key>
+    <key name="active">
+        <value>
+            فعال
+        </value>
+    </key>
+    <key name="label_user_all_likes_count">
+        <value>
+            تعداد کل پسندهای کاربر
+        </value>
+        </key>
+    <key name="label_user_all_comments_count">
+        <value>
+            تعداد کل نظرات کاربر
+        </value>
+    </key>
+    <key name="label_all_done_likes_count">
+        <value>
+            تعداد کل پسندیده شدن‌های محتوای کاربر
+        </value>
+        </key>
+    <key name="label_all_done_comments_count">
+        <value>
+            تعداد کل نظرات درج شده روی محتوای کاربر
+        </value>
+    </key>
+    <key name="tooltip_is_normalized">
+        <value>
+             بیشترین امتیاز نهایی را برابر یک قرار می‌دهد و بقیه امتیازها را با همین نسبت محاسبه می‌کند.
+        </value>
+    </key>
+    <key name="last_calculation_date">
+        <value>
+            زمان آخرین به‌روزرسانی
+        </value>
+    </key>
+    <key name="countup_title">
+        <value>
+            اطلاعات آماری
+        </value>
+    </key>
+    <key name="number_of_topics">
+        <value>
+            تعداد موضوعات
+        </value>
+    </key>
+    <key name="number_of_online_users">
+        <value>
+            تعداد آنلاین‌ها
+        </value>
+    </key>
+    <key name="users_list_label">
+        <value>
+            فهرست کاربران
+        </value>
+    </key>
+    <key name="top_users_widget">
+        <value>
+            فعال‌ترین کاربران
+        </value>
+    </key>
+    <key name="top_users_hint">
+        <value>
+            کاربران بر اساس آخرین فرمول ذخیره شده در بخش تحلیل کاربران رتبه‌بندی شده‌اند.
+        </value>
+    </key>
+</prefix>

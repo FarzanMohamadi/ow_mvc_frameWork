@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmactivitylimit" label="frmactivitylimit" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_title">
+        <value>
+            محدودکننده تعداد درخواست‌های کاربران
+        </value>
+    </key>
+    <key name="you_are_blocked_message">
+        <value>
+            شما به دلیل استفاده غیرمجاز از سامانه برای {$min} دقیقه مسدود شده‌اید. این مسدودیت در {$end} به پایان خواهد رسید.
+        </value>
+    </key>
+    <key name="max_db_requests">
+        <value>
+            حداکثر تعداد درخواست‌های تاثیرگذار در پایگاه داده
+        </value>
+    </key>
+    <key name="minutes_to_reset">
+        <value>
+            طول بازه زمانی برای بررسی (دقیقه)
+        </value>
+    </key>
+    <key name="blocking_minutes">
+        <value>
+            زمان بلاک شدن کاربر (دقیقه)
+        </value>
+    </key>
+    <key name="form_submit">
+        <value>
+            ثبت
+        </value>
+    </key>
+</prefix>

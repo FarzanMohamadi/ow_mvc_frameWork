@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmupdateserver" label="frmupdateserver" language_tag="fa-IR" language_label="فارسی">
+    <key name="download_last_core_build_version">
+        <value>
+            شماره آخرین نسخه ساخت: {$value}
+        </value>
+    </key>
+    <key name="download_last_core_update_build_version">
+        <value>
+            شماره آخرین نسخه ساخت: {$value}
+        </value>
+    </key>
+    <key name="title_widget">
+        <value>
+            آخرین نسخه موتوشاب
+        </value>
+    </key>
+</prefix>

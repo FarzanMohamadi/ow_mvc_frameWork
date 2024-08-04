@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmdemo" label="frmdemo" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_panel">
+        <value>
+            ورود به پنل مدیریت
+        </value>
+    </key>
+    <key name="reset_data">
+        <value>زمان باقیمانده تا حذف شدن اطلاعات دمو:</value>
+    </key>
+    <key name="theme">
+        <value>پوسته</value>
+    </key>
+</prefix>

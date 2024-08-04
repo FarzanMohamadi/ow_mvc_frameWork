@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmrss" label="frmrss" language_tag="en" language_label="English">
+    <key name="rss_float_box_title">
+        <value>
+            RSS Newsreader
+        </value>
+    </key>
+    <key name="rss">
+        <value>
+            RSS
+        </value>
+    </key>
+    <key name="tag">
+        <value>
+            lates news rss with tag
+        </value>
+    </key>
+	<key name="rss_without_tag ">
+        <value>
+            latest news rss
+        </value>
+    </key>
+    <key name="rss_generat_link ">
+        <value>
+            Generate RSS link
+        </value>
+    </key>
+    <key name="rss_generate_disc">
+        <value>
+            To generate desired RSS link, enter specific label and then press view link button.
+         </value>
+    </key>
+    <key name="select_tag">
+        <value>
+            select tag
+        </value>
+    </key>
+    <key name="view_link">
+        <value>
+            view link
+        </value>
+    </key>
+</prefix>

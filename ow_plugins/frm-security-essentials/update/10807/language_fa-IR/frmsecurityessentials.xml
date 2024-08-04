@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="fa-IR" language_label="فارسی">
+	 <key name="approve_user_after_edit_profile_label">
+        <value>
+            عدم نیاز به تایید کاربران پس از ویرایش نمایه (در زمان اجباری بودن تایید کاربران)
+        </value>
+    </key>
+</prefix>

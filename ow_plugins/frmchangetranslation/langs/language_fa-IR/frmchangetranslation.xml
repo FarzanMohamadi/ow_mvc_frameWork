@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmchangetranslation" label="frmchangetranslation" language_tag="fa-IR" language_label="فارسی">
+    <key name="import_failed">
+        <value>در ورود فایل مشکلی پیش آمد</value>
+    </key>
+    <key name="import_success">
+        <value>ترجمه‌های وارد شده با موفقیت تغییر کردند</value>
+    </key>
+    <key name="admin_page_heading">
+        <value>تنظیمات افزونه تغییر ترجمه‌ها</value>
+    </key>
+    <key name="admin_page_title">
+        <value>تنظیمات افزونه تغییر ترجمه‌ها</value>
+    </key>
+    <key name="lang_file">
+        <value>فایل ترجمه</value>
+    </key>
+    <key name="submit">
+        <value>ارسال فایل</value>
+    </key>
+</prefix>

@@ -1,0 +1,13 @@
+<div class="use_mobile">
+    <p>{text key="frmmobilesupport+use_with_mobile_version"}</p>
+    <div class="download_mobile_app">
+        {if isset($androidDownloadUrl)}
+            <a target="_blank" href="{$androidDownloadUrl}">{text key="frmmobilesupport+android_app_download"}</a>
+        {/if}
+        {if isset($iosDownloadUrl)}
+            <a target="_blank" href="{$iosDownloadUrl}">{text key="frmmobilesupport+ios_app_download"}</a>
+        {/if}
+    </div>
+    <p>{text key="frmmobilesupport+sign_out_description"}</p>
+    <p>{$logout}</p>
+</div>

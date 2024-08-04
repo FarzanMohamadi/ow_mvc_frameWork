@@ -1,0 +1,13 @@
+<div class="ow_anno ow_stdmargin ow_center ow_ic_searchTag"><center>{$countInfo}</center></div>
+{if empty($list)}
+    <!--<div class="ow_anno ow_stdmargin ow_center ow_ic_warning">{text key="base+empty_list"}</div>-->
+{else}
+    {foreach from=$list key='key' item='group'}
+        {if empty($imageInfo)}
+            {decorator name='ipc' addClass='ow_smallmargin ow_hashtag_group ' data=$group infoString="<a href=\"`$group.url`\">`$group.title`</a>"}
+        {else}
+            {decorator name='ipc' addClass='ow_smallmargin colorful_avatar_'|cat:$group.imageInfo|cat:' ow_hashtag_group ' data=$group infoString="<a href=\"`$group.url`\">`$group.title`</a>"}
+        {/if}
+    {/foreach}
+    {if $paging}<center>{$paging}</center>{/if}
+{/if}

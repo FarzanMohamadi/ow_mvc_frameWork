@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmquestionroles" label="frmquestionroles" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_title">
+        <value>
+            توزیع ناظم‌ها بر اساس اطلاعات کاربران
+        </value>
+    </key>
+    <key name="console_label">
+        <value>
+            توزیع ناظم‌ها
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            عنوان
+        </value>
+    </key>
+    <key name="choose_moderator">
+        <value>
+            انتخاب ناظم
+        </value>
+    </key>
+    <key name="select_role_question_equal">
+        <value>
+            در صورت برابری مقادیر
+        </value>
+    </key>
+    <key name="select_role">
+        <value>
+            انتخاب نقش ناظم
+        </value>
+    </key>
+    <key name="role_empty">
+        <value>
+            یک نقش انتخاب کنید
+        </value>
+    </key>
+    <key name="all_fields_empty">
+        <value>
+            یک مقدار انتخاب نمایید
+        </value>
+    </key>
+    <key name="wait">
+        <value>
+            لطفا صبر نمایید
+        </value>
+    </key>
+    <key name="choose_fields_value">
+        <value>
+            مشخص کردن حیطه
+        </value>
+    </key>
+    <key name="map_roles_to_fields">
+        <value>
+            نگاشت نقش‌ها به نوع اطلاعات کاربران
+        </value>
+    </key>
+    <key name="are_you_sure_delete">
+        <value>
+            آیا از حذف اطمینان دارید؟
+        </value>
+    </key>
+    <key name="users_disapproved">
+        <value>
+            کاربران تاییدنشده
+        </value>
+    </key>
+    <key name="empty_list">
+        <value>
+            شخصی برای تایید وجود ندارد.
+        </value>
+    </key>
+</prefix>

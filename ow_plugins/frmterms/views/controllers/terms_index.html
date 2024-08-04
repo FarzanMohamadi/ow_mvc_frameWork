@@ -1,0 +1,53 @@
+<div class="clearfix" style="padding: 0px 10px 0px 10px;">
+{if !empty($sections)}
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+{if !empty($headersOfActiveItems)}
+<div class="ow_left place_section left_section ow_supernarrow">
+    <table class="ow_table_1 st_table_1">
+        <tr>
+            <th>{text key="frmterms+table_of_content_label"}</th>
+        </tr>
+        {foreach from=$headersOfActiveItems item="header"}
+        <tr>
+            <td><a class="st_smooth_scroll" href="#{$header.id}"><span>{$header.name}</span></a></td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+{/if}
+    {if !empty($items)}
+    <div class="frmterms ow_right place_section right_section ow_superwide">
+    <table class="ow_table_1 st_table_2">
+        <tr>
+            <td>{$lastModified}<span class="current_version"><a href="{$archiveUrl}">{text key="frmterms+view_all_archive_label"}</a></span></td>
+        </tr>
+        {foreach from=$items item="item"}
+        {if !empty($item.header)}
+        <tr>
+            <td><h2 id="{$item.id}">{$item.header}</h2></td>
+        </tr>
+        {/if}
+        <tr>
+            <td><p class="justify">{$item.description}</p></td>
+        </tr>
+        {/foreach}
+    </table>
+    {else}
+    <div class="frmterms ow_right place_section right_section ow_superwide ow_nocontent_container">
+        <div class="ow_nocontent">
+        {text key="frmterms+archives_is_empty_description"}
+        </div>
+    {/if}
+</div>
+{else}
+<p>
+    {text key="frmterms+section_empty_description"}
+</p>
+{/if}
+</div>

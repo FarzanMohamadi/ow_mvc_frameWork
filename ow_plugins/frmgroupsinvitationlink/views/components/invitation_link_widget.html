@@ -1,0 +1,43 @@
+{if $canSeeLink}
+<div class="ow_lp_avatars">
+    <table class="ow_table_1 ow_form ow_stdmargin" id="frmgroupsinvitationlink_active_link_container">
+        {if $hasActiveLink}
+        <tr class="ow_alt2 ow_tr_first" id="frmgroupsinvitationlink_link_section">
+            <td style="max-width: 100px !important;">
+                <a id="frmgroupsinvitationlink_link" href="{$link}" target="_blank">{$linkLabel}</a>
+            </td>
+        </tr>
+        {else}
+        <tr class="ow_alt2 ow_tr_first" id="frmgroupsinvitationlink_no_link_section">
+            <td>
+                <div class="ow_nocontent">{text key='frmgroupsinvitationlink+no_link'}</div>
+            </td>
+        </tr>
+        {/if}
+    </table>
+
+    {if $canAddLink}
+    <ul class="ow_box_toolbar ow_remark ow_bl">
+        {if isset($canAddLink) && $canAddLink==true}
+        <li>
+            <a href="javascript:showAddGroupInvitationLinkForm('{$confirmText}', {$groupId}, '{$addLinkUrl}')">
+                {$generateText}
+            </a>
+        </li>
+        {/if}
+        {if isset($view_all_links)}
+        <li>
+            <a href="{$view_all_links}">
+                {text key="frmgroupsinvitationlink+view_all_links"}
+            </a>
+        </li>
+        {/if}
+    </ul>
+    {/if}
+
+</div>
+{else}
+<div>
+    {text key="frmgroupsinvitationlink+access_denied_for_see_link"}
+</div>
+{/if}

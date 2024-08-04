@@ -1,0 +1,104 @@
+/**
+ * @author Farzan Mohammadi <farzan.mohamadii@gmail.com>
+ * @package ow_plugins.frminstagram
+ * @since 1.0
+ */
+
+.ow_instagram_widget #igw_preloader {
+    text-align: center;
+}
+.ow_instagram_widget #igw_username {
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: proxima-nova, Arial, Helvetica, sans-serif, "Helvetica Neue";
+}
+.ow_instagram_widget #igw_usericon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+#igw_header {
+    text-align: left;
+    direction: ltr;
+    padding: 10px;
+    border: 1px solid #e6e6e6;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#igw_header a {
+    color: #616161;
+}
+#igw_header a:hover {
+    color: #262626;
+}
+#igw_data_wrapper {
+    max-height: 450px;
+    overflow-y: auto;
+    background-color: #fafafa;
+    border: 1px solid #e6e6e6;
+    padding: 1px;
+}
+#igw_data_wrapper.wide {
+    max-height: 800px;
+}
+.igw_item {
+    background-color: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    width: calc(100% - 6px);
+    margin: 5px 2px;
+}
+#igw_data_wrapper.wide .igw_item {
+    width: calc(50% - 19px);
+    display: inline-block;
+    padding: 2px 5px 2px 5px;
+}
+.igw_item:hover {
+    border: 1px solid #a5a5a5;
+}
+.igw_item a {
+    color: #888888;
+}
+.igw_item a:hover {
+    color: #111111;
+    text-decoration: none;
+}
+.igw_item .igw_video {
+    display: flex;
+}
+.igw_item .igw_video div{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    margin: -15px;
+}
+.igw_item .igw_image {
+    display: none;
+}
+.igw_item_content img {
+    width: 100%;
+}
+
+.igw_item_header {
+    min-height: 4px;
+    padding: 0 2px;
+}
+.igw_item_toolbar {
+    text-align: left;
+    padding: 0 2px;
+    direction: ltr;
+}
+.igw_item_toolbar .igw_date {
+    float: right;
+    direction: rtl;
+}
+.igw_item_toolbar .igw_comments {
+    background-size: 10px auto;
+    padding-left: 12px;
+}

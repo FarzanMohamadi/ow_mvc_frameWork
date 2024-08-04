@@ -1,0 +1,38 @@
+<div style="margin: 10px;">
+     <span class="owm_box_toolbar ow_left">
+          <select class="move_album" name="choose_album" id="choose_album">
+              <option id="create_new_photo_album" class="create_album" value="{text key='photo+create_album'}">{text key="photo+create_album"}</option>
+              <option disabled selected="selected" value="{text key='photo+move_to_album'}">{text key="photo+move_to_album"}</option>
+{if !empty($albumNameList)}
+             {foreach $albumNameList as $item}
+                 <option rel="{$item@key|escape}" class="select_album" value="{$item}">{$item}</option>
+             {/foreach}
+              {/if}
+    </select>
+        <a style="margin-left: 7px;" href="{url_for_route for=" photo_upload_album:[album=>`$albumId`]"}" >{text key = "photo+upload_photos"}</a>
+         <a href="javascript://" class="delete" style="margin-bottom: 15px;">
+            {text key="photo+delete_selected"}
+        </a>
+     <input type="checkbox" value="1" name="selectAll" class="select_all">
+    <span style="font-size: 70%;">{text key="photo+check_all"}</span>
+     </span>
+
+    {form name="albumEditForm" }
+    {submit name="submit"}
+    {input name="albumName"}{error name="albumName"}
+    {input name="desc" class='ow_smallmargin'}
+    {/form}
+</div>
+<div class="owm_photo_list">
+    {if $total>0}
+    <div class="owm_photo_list_tr clearfix" id="photo-list-cont">{$photos}</div>
+    {else}
+    <span class="no_items"> {text key="photo+no_items"}</span>
+    {/if}
+</div>
+{if $loadMore}
+<div class="owm_photo_list_load_more owm_bg_color_3">
+    <a href="javascript://" id="btn-photo-load-more" class="owm_sidebar_load_more_with_text owm_preloader">{text
+        key='base+more'}</a>
+</div>
+{/if}

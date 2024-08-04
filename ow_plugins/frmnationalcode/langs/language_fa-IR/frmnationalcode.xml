@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmnationalcode" label="frmnationalcode" language_tag="fa-IR" language_label="فارسی">
+    <key name="form_validator_national_code_exists_message">
+        <value>
+            کد ملی قبلا در سامانه ثبت شده است.
+        </value>
+    </key>
+    <key name="form_validator_national_code_bad_format_message">
+        <value>
+            کد ملی باید یک عدد 10 رقمی باشد.
+        </value>
+    </key>
+    <key name="field_national_code_label">
+        <value>
+            کد ملی
+        </value>
+    </key>
+    <key name="field_national_code_description">
+        <value>
+            کد ملی ده رقمی
+        </value>
+    </key>
+</prefix>

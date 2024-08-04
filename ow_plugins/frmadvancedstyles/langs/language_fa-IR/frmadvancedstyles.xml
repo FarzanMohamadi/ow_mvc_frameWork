@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmadvancedstyles" label="frmadvancedstyles" language_tag="fa-IR" language_label="فارسی">
+    <key name="input_file"><value>آدرس فایل ورودی</value></key>
+    <key name="input_file_desc"><value>آدرس فایل نسبت به روت پروژه. مثلا "ow_static/plugins/base/css/ow.scss"</value></key>
+    <key name="output_format"><value>فرمت فایل ورودی</value></key>
+    <key name="convert"><value>تبدیل</value></key>
+    <key name="admin_settings_title"><value> صفحه تنظیمات frmadvancedstyles</value></key>
+    <key name="admin_settings_desc"><value>با استفاده از این فرم، می‌توانید فایل‌ها با فرمت SCSS را به فرمت CSS تبدیل کرده و در همان فولدر ذخیره نمایید.</value></key>
+    <key name="compiled_success"><value>فایل با موفقیت به CSS تبدیل شد</value></key>
+    <key name="compiled_failed"><value>مشکلی در تبدیل فایل رخ داد</value></key>
+    <key name="path_ow_base"><value>هسته (رومیزی)</value></key>
+    <key name="path_ow_mobile_base"><value>هسته (تلفن همراه)</value></key>
+    <key name="path_current_theme"><value>پوسته فعلی (رومیزی)</value></key>
+    <key name="path_current_theme_mobile"><value>پوسته فعلی (تلفن همراه)</value></key>
+    <key name="path_all_themes"><value>تمامی پوسته‌ها (رومیزی)</value></key>
+    <key name="path_all_themes_mobile"><value>تمامی پوسته‌ها (تلفن همراه)</value></key>
+    <key name="path_static"><value>استاتیک</value></key>
+    <key name="theme_desktop_scss_box_cap_label"><value>ویرایش SCSS برای نسخه رومیزی</value></key>
+    <key name="theme_mobile_scss_box_cap_label"><value>ویرایش SCSS برای نسخه تلفن همراه</value></key>
+</prefix>

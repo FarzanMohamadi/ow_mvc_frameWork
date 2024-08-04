@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmimport" label="frmimport" language_tag="fa-IR" language_label="فارسی">
+    <key name="settings_successfuly_saved">
+        <value>تنظیمات با موفقیت ذخیره شد</value>
+    </key>
+    <key name="request_to_users_desc">
+        <value>
+            لیست زیر شامل افرادی است که قبلا عضو شده‌اند. شما می‌توانید درخواست افزودن به دوستان را برای آن‌ها بفرستید.
+        </value>
+    </key>
+    <key name="invite_users_desc">
+        <value>
+            لیست زیر شامل افرادی است که هنوز عضو نیستند. شما می‌توانید درخواست ثبت‌نام را برای آن‌ها بفرستید.
+        </value>
+    </key>
+    <key name="request_to_users">
+        <value>
+            فرستادن درخواست افزودن به دوستان
+        </value>
+    </key>
+    <key name="invite_user">
+        <value>
+            ارسال دعوت‌نامه
+        </value>
+    </key>
+    <key name="invitation_email_content">
+        <value>
+            برای شما در سایت {$site_name}، از طرف {$username} دعوت‌نامه ارسال شده است. شما می‌توانید از طریق &lt;a href="{$join_url}"&gt;لینک&lt;/a&gt; عضو آن شوید.
+        </value>
+    </key>
+    <key name="send_successfully">
+        <value>
+            درخواست ارسال با موفقیت انجام شد.
+        </value>
+    </key>
+    <key name="send_empty">
+        <value>
+            فردی برای ارسال درخواست انتخاب نشده بود.
+        </value>
+    </key>
+    <key name="list_empty">
+        <value>
+            فردی برای ارسال درخواست وجود ندارد.
+        </value>
+    </key>
+    <key name="find_list_successfully">
+        <value>
+            تمامی دوستان حساب کاربری شما با موفقیت دریافت شدند.
+        </value>
+    </key>
+    <key name="find_list_empty">
+        <value>
+            دوستی یافت نشد. لطفا دوباره تلاش کنید.
+        </value>
+    </key>
+    <key name="error_find_list">
+        <value>
+            خطایی رخ داده است. لطفا دوباره تلاش کنید.
+        </value>
+    </key>
+    <key name="invitation_email_to_inviter_content">
+        <value>
+            کاربری با رایانامه {$email} عضو {$site_name} شده است. شما با استفاه از رایانامه آن را دعوت کرده بودید.
+        </value>
+    </key>
+    <key name="invitation_email_to_inviter_subject">
+        <value>
+            کاربری که دعوت کرده بودید، عضو {$site_name} شده است.
+        </value>
+    </key>
+    <key name="invitation_email_subject">
+        <value>
+            برای شما از {$site_name} دعوت‌نامه قرستاده شد.
+        </value>
+    </key>
+    <key name="skip_label">
+        <value>
+            نادیده گرفتن این مرحله
+        </value>
+    </key>
+    <key name="yahoo_client_id">
+        <value>
+            Yahoo Client Id
+        </value>
+    </key>
+    <key name="yahoo_client_secret">
+        <value>
+            Yahoo Secret Id
+        </value>
+    </key>
+    <key name="yahoo_import_button">
+        <value>
+            پیدا کردن دوستان از طریق حساب کاربری Yahoo
+        </value>
+    </key>
+    <key name="google_client_id">
+        <value>
+            Google Client Id
+        </value>
+    </key>
+    <key name="google_client_secret">
+        <value>
+            Google Secret Id
+        </value>
+    </key>
+    <key name="google_import_button">
+        <value>
+            پیدا کردن دوستان از طریق حساب کاربری Google
+        </value>
+    </key>
+    <key name="select_all">
+        <value>
+            اتخاب همه
+        </value>
+    </key>
+    <key name="import_users_desc">
+        <value>
+            شما می‌توانید با داشتن هر کدام از حساب کاربری‌های زیر، دوستان خود را پیدا کرده و درخواست افزودن دوست یا ثبت‌نام برای آن‌ها ارسال کنید.
+        </value>
+    </key>
+    <key name="import_users_header">
+        <value>
+            پیدا کردن دوستان از طریق حساب کاربری‌های دیگر
+        </value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>
+            پیدا کردن دوستان
+        </value>
+    </key>
+    <key name="connect_google_waining">
+        <value>
+            در حال اتصال به گوگل، لطفا صبر کنید...
+        </value>
+    </key>
+    <key name="use_import_yahoo_label">
+        <value>
+            استفاده از حساب کاربری یاهوو
+        </value>
+    </key>
+    <key name="use_import_google_label">
+        <value>
+            استفاده از حساب کاربری گوکل
+        </value>
+    </key>
+    <key name="no_account_exist">
+        <value>
+            امکان استفاده از حساب کاربری‌های دیگر برای پیدا کردن دوست وجود ندارد.
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+تنظیمات افزونه پیدا کردن دوستان از حسابهای دیگر
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            تنظیمات افزونه پیدا کردن دوستان از حسابهای دیگر
+        </value>
+    </key>
+</prefix>

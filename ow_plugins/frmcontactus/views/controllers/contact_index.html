@@ -1,0 +1,102 @@
+{style}
+{literal}
+table.ow_table_1 td.ow_label
+{
+    width: 35%;
+}
+
+.contactus_widget{
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding: 0px;
+
+}
+
+.contactus_img img{
+	height: auto;
+	max-width: 100%;
+}
+
+@media (max-width: 767px) {
+
+	.contactus_img{
+		display: none;
+	}
+}
+
+{/literal}
+{/style}
+<div class="ow_box_empty ow_superwide ow_automargin ow_no_cap ow_break_word">
+	{if isset($adminComment)}
+		{$adminComment}
+	{/if}
+</div>
+<div class="ow_box_empty ow_column contactus_widget">
+	{form name='contact_form'}
+	<table class="ow_table_1 ow_form ow_stdmargin">
+		<tr class="ow_alt1 ow_type_fselect">
+			<td class="ow_value ow_label ow_presentation_fselect">
+				<div class="ow_label_question">
+					{label name='to'}
+					{input name='to'}
+					<div class="ow_separation"></div>
+					{error name='to'}
+				</div>
+			</td>
+		</tr>
+
+	{if $isAuthenticated==false }
+		<tr class="ow_alt1 ow_type_text">
+			<td class="ow_value ow_label ow_presentation_text">
+				{input name='from'}
+				<br>
+				{label name='from'}
+				<div  class="ow_separation"></div>
+				{error name='from'}
+			</td>
+		</tr>
+	{/if}
+
+		<tr class="ow_alt1 ow_type_text">
+			<td class="ow_value ow_label ow_presentation_text">
+				{input name='subject'}
+				<br>
+				{label name='subject'}
+				<div  class="ow_separation"></div>
+				{error name='subject'}
+			</td>
+		</tr>
+		<tr class="ow_alt1 ow_type_text">
+			<td class="ow_value ow_label ow_presentation_textarea">
+				{label name='message'}
+				<br>
+				{input name='message' onkeyup="ShowLabelQuestion(this)"}
+				<br>
+				<div  class="ow_separation"></div>
+				{error name='message'}
+			</td>
+		</tr>
+
+		{if isset($captcha_present)}
+		<tr class="ow_tr_last ow_captcha_field" >
+			<td  class="ow_alt1">
+				{label name='captcha'}
+				<br>
+				{input name='captcha'}
+				<div class="ow_separation"></div>
+				{error name='captcha'}
+			</td>
+		</tr>
+		{/if}
+		<tr class="ow_tr_last">
+			<td  class="ow_alt1 ow_left">
+				{submit name='send' class='ow_ic_mail'}
+			</td>
+		</tr>
+	</table>
+	{/form}
+</div>
+<div class="ow_box_empty ow_column contactus_widget contactus_img">
+	<img src="{$backgroundImage}" class="contactus_bg" />
+</div>

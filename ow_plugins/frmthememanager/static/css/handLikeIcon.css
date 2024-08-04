@@ -1,0 +1,25 @@
+html body div .ow_miniic_like,
+.owm_newsfeed_control_like .postLikeUserList{
+    background-image: url($URLimg/like_hand.svg) !important;
+    opacity: 0.8;
+}
+
+.ow_miniic_control.active .ow_miniic_like,
+.owm_newsfeed_control_like.owm_newsfeed_control_active .postLikeUserList{
+    background-image: url($URLimg/like_hand_active.svg) !important;
+    opacity: 1;
+}
+
+.comment_like_dislike_container .ow_miniic_control.active span{
+    background-image: url($URLimg/like_hand_active.svg) !important;
+}
+
+html body div .newsfeed_dislike_btn .ow_miniic_like,
+html body div .frmlike_dislike .ow_miniic_like{
+    background-image: url($URLimg/dislike.svg) !important;
+}
+
+.ow_miniic_control.active.newsfeed_dislike_btn .ow_miniic_like,
+.ow_miniic_control.active.frmlike_dislike .ow_miniic_like {
+    background-image: url($URLimg/dislike_selected.svg) !important;
+}

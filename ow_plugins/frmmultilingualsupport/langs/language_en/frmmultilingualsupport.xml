@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmmultilingualsupport" label="frmmultilingualsupport" language_tag="en" language_label="English">
+    <key name="type_in_english">
+        <value>in English: </value>
+    </key>
+	<key name="type_in_persian">
+        <value>in Persian: </value>
+    </key>
+		<key name="fa_custom_html_widget_title_label">
+        <value>title in Persian: </value>
+    </key>
+	<key name="en_custom_html_widget_title_label">
+        <value>title in English  </value>
+    </key>
+	<key name="fa_custom_html_widget_content_label">
+        <value>content In Persian  </value>
+    </key>
+		<key name="en_custom_html_widget_content_label">
+        <value>content in English:  </value>
+    </key>
+	<key name="language_changed_success">
+        <value> language changed successfully </value>
+    </key>
+	<key name="select_language">
+        <value>Select Language: </value>
+    </key>
+	<key name="save">
+        <value>Save  </value>
+    </key>
+	<key name="button_select_lang">
+        <value>Select language</value>
+    </key>
+</prefix>

@@ -1,0 +1,26 @@
+
+span.virus_file_condition {
+    padding-left: 15px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 12px;
+    line-height: 15px;
+}
+
+span.virus_file_condition.verified {
+    background-image: url(../img/verified.svg);
+    color: #6ac259;
+}
+
+span.virus_file_condition.virus {
+    background-image: url(../img/virus.svg);
+    color: #e04f5f;
+}
+
+.owm_newsfeed_status_update_preview span.virus_file_condition {
+    float: right;
+    margin-right: 15px;
+    font-size: 11px;
+    margin-top: 5px;
+}
+

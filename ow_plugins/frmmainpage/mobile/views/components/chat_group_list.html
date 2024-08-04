@@ -1,0 +1,44 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+{if !empty($list)}
+{foreach from=$list item=$item name='user_list'}
+    <div class="owm_list_item" >
+        {if isset($item.type) && $item.type=='group'}
+        {decorator name='ipc' addClass='owm_list_item_with_image' data=$item infoString="<a href=\"`$item.url`\">`$item.title`</a>{if isset($item.parentTitle)}<div class='subgroup_icon_arrow'></div>{$item.parentTitle}{/if}"}
+        {else}
+        <div class="owm_list_item_with_image {if $item.conversationRead <1}owm_convers_item_active{/if}" onclick="location.href='{if isset($item.url)}{$item.url}{elseif isset($item.conversationUrl)}{$item.conversationUrl}{/if}';">
+            <div class="owm_user_list_item">
+                <div class="owm_avatar {if isset($item.imageInfo) && $item.imageInfo.empty}colorful_avatar_{$item.imageInfo.digit}{/if}">
+                    <img src="{$item.avatarUrl}" />
+                </div>
+                <div class="owm_user_list_name">
+                    <span id="mailboxSidebarConversationsItemDisplayName"><a href="{$item.url}">{if isset($item.displayName)}{$item.displayName}{elseif isset($item.opponentName)}{$item.opponentName}{/if}</a></span>
+                    {if !empty($item.unreadCount)}<span class="ow_unread_count" title="Unread Count">{$item.unreadCount}</span>{/if}
+                </div>
+                <div class="owm_sidebar_convers_mail_theme" id="mailboxSidebarConversationsItemSubject">
+                    <a>{if isset($item.previewText) }{$item.previewText}{elseif isset($item.text)}{$item.text}{/if}
+                        {if ($userId != $item.lastMessageRecipientId)}
+                            {if ($item.recipientRead)}
+                            <span class="chat_message_read">&nbsp;&nbsp;</span>
+                            {else}
+                            <span class="chat_message_unread">&nbsp;&nbsp;</span>
+                            {/if}
+                        {/if}
+                    </a>
+                </div>
+                <div class="owm_profile_online" id="mailboxSidebarConversationsItemOnlineStatus" {if $item.onlineStatus<1}style="display: none;"{/if}></div>
+            <div class="owm_newsfeed_date">{if isset($item.timeString)}{$item.timeString}{elseif isset($item.timeLabel)}{$item.timeLabel}{/if}</div>
+        </div>
+        </div>
+        {/if}
+    </div>
+{/foreach}
+{else}
+<div class="ow_nocontent">{text key='base+empty_list'}</div>
+{/if}

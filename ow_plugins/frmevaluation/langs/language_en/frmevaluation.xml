@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmevaluation" label="frmevaluation" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Evaluation
+        </value>
+    </key>
+    <key name="delete">
+        <value>
+            Delete
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="return_to_questions">
+        <value>
+            Return to questions
+        </value>
+    </key>
+    <key name="returnToAdmin">
+        <value>
+            Return to settings
+        </value>
+    </key>
+    <key name="return_to_question">
+        <value>
+            Return to question
+        </value>
+    </key>
+    <key name="value_form_edit">
+        <value>
+            Edit value form
+        </value>
+    </key>
+    <key name="value_form_name">
+        <value>
+            Name
+        </value>
+    </key>
+    <key name="value_form_value">
+        <value>
+            Value
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+            Categories
+        </value>
+    </key>
+    <key name="name">
+        <value>
+            Name
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="icon">
+        <value>
+            Icon
+        </value>
+    </key>
+    <key name="category_create_form">
+        <value>
+            Create category
+        </value>
+    </key>
+    <key name="questions_of_category">
+        <value>
+            Questionss of category
+        </value>
+    </key>
+    <key name="return_to_categories">
+        <value>
+            Return to categories
+        </value>
+    </key>
+    <key name="category">
+        <value>
+            Category
+        </value>
+    </key>
+    <key name="hasDescribe">
+        <value>
+            Can user describe?
+        </value>
+    </key>
+    <key name="hasFile">
+        <value>
+            Can user upload a file?
+        </value>
+    </key>
+    <key name="hasVerification">
+        <value>
+            Can user should verify?
+        </value>
+    </key>
+    <key name="questions">
+        <value>
+            Questions
+        </value>
+    </key>
+    <key name="questions_title">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="change_icon">
+        <value>
+            Change icon
+        </value>
+    </key>
+    <key name="edit_question">
+        <value>
+            Edit question
+        </value>
+    </key>
+    <key name="edit_category">
+        <value>
+            Edit category
+        </value>
+    </key>
+    <key name="edit_value">
+        <value>
+            Edit Answer
+        </value>
+    </key>
+    <key name="values">
+        <value>
+            Possible answers
+        </value>
+    </key>
+    <key name="value">
+        <value>
+            Value
+        </value>
+    </key>
+    <key name="value_form_add">
+        <value>
+            Create value
+        </value>
+    </key>
+    <key name="empty_row_label">
+        <value>
+            There is no item
+        </value>
+    </key>
+    <key name="question_count">
+        <value>
+            Number of questions:
+        </value>
+    </key>
+    <key name="question_count_header">
+        <value>
+            Number of questions
+        </value>
+    </key>
+    <key name="answer_count_header">
+        <value>
+            Number of user answers:
+        </value>
+    </key>
+    <key name="question_has_answer">
+        <value>
+            User answer
+        </value>
+    </key>
+    <key name="yes">
+        <value>
+            Yes
+        </value>
+    </key>
+    <key name="no">
+        <value>
+            No
+        </value>
+    </key>
+    <key name="category_questions_header">
+        <value>
+            Questions
+        </value>
+    </key>
+    <key name="saved_answer_successfully">
+        <value>
+            Your answer saved successfully.
+        </value>
+    </key>
+    <key name="deleted_successfully">
+        <value>
+            Removed successfully.
+        </value>
+    </key>
+    <key name="saved_successfully">
+        <value>
+            Saved successfully.
+        </value>
+    </key>
+    <key name="user_file">
+        <value>
+            Related documents
+        </value>
+    </key>
+    <key name="user_sign">
+        <value>
+            Signature (Type your full name)
+        </value>
+    </key>
+    <key name="user_verification">
+        <value>
+            I have committed, all the items entered correctly.
+        </value>
+    </key>
+    <key name="user_old_file">
+        <value>
+            Uploaded related documents
+        </value>
+    </key>
+    <key name="user_file_change">
+        <value>
+            Change related documents
+        </value>
+    </key>
+    <key name="question_title">
+        <value>
+            Question title
+        </value>
+    </key>
+    <key name="users_answers">
+        <value>
+            Users answers
+        </value>
+    </key>
+    <key name="assigned_users">
+        <value>
+            Assigned users
+        </value>
+    </key>
+    <key name="username">
+        <value>
+            username
+        </value>
+    </key>
+    <key name="form_find_user_by_username">
+        <value>
+            View user's answer (By username)
+        </value>
+    </key>
+    <key name="form_assign_user_by_username">
+        <value>
+        </value>
+    </key>
+    <key name="form_unassigned_user_by_username">
+        <value>
+            Un-assign user (By username)
+        </value>
+    </key>
+    <key name="assign_successfully">
+        <value>
+            Assign successfully.
+        </value>
+    </key>
+    <key name="no_user_found">
+        <value>
+            No user found.
+        </value>
+    </key>
+    <key name="unassigned_successfully">
+        <value>
+            User unassigned successfully.
+        </value>
+    </key>
+    <key name="locked_successfully">
+        <value>
+            Evaluation form locked.
+        </value>
+    </key>
+    <key name="activated_successfully">
+        <value>
+            Evaluation form opened.
+        </value>
+    </key>
+    <key name="activate">
+        <value>
+            Activate
+        </value>
+    </key>
+    <key name="lock">
+        <value>
+            Lock
+        </value>
+    </key>
+    <key name="locked_users">
+        <value>
+            Locked users
+        </value>
+    </key>
+    <key name="active_users">
+        <value>
+            Active users
+        </value>
+    </key>
+    <key name="users_setting">
+        <value>
+            Go to users setting
+        </value>
+    </key>
+    <key name="level">
+        <value>
+            Level
+        </value>
+    </key>
+    <key name="weight">
+        <value>
+            Weight
+        </value>
+    </key>
+    <key name="degree_header">
+        <value>
+            Current level:
+        </value>
+    </key>
+    <key name="results_header">
+        <value>
+            Results of evaluation:
+        </value>
+    </key>
+    <key name="requirement_suggest">
+        <value>
+            Assessment of suggested requirements in separate categories
+        </value>
+    </key>
+    <key name="requirement_normal">
+        <value>
+            Assessment of normal requirements in separate categories
+        </value>
+    </key>
+    <key name="requirement_important">
+        <value>
+            Assessment of important requirements in separate categories
+        </value>
+    </key>
+    <key name="requirement_fundamental">
+        <value>
+            Assessment of fundamental requirements in separate categories
+        </value>
+    </key>
+    <key name="user_value">
+        <value>
+            Earned point
+        </value>
+    </key>
+    <key name="remaining_value">
+        <value>
+            Remaining point
+        </value>
+    </key>
+    <key name="total_value">
+        <value>
+            Maximum point
+        </value>
+    </key>
+    <key name="questions_without_values">
+        <value>
+            This question has not any values
+        </value>
+    </key>
+    <key name="admin_evaluation_settings_heading">
+        <value>
+            Evaluation plugin setting
+        </value>
+    </key>
+	<key name="delete_item_warning">
+        <value>
+            Are you sure to delete this item?
+        </value>
+    </key>
+	<key name="active_item_warning">
+        <value>
+            Are you sure to active this item?
+        </value>
+    </key>
+	<key name="lock_item_warning">
+        <value>
+            Are you sure to lock this item?
+        </value>
+    </key>
+</prefix>

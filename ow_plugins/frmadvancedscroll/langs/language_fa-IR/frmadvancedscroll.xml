@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmadvancedscroll" label="frmadvancedscroll" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_invalid_number_error">
+        <value>
+            مقدار وارد شده باید عدد صحیح معتبر باشد
+        </value>
+    </key>
+    <key name="admin_easespeed">
+        <value>
+            میزان کاهش سرعت
+        </value>
+    </key>
+    <key name="admin_save_settings">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه اسکرول پیشرفته
+        </value>
+    </key>
+    <key name="user_save_success">
+        <value>
+            تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="admin_selectbox_field_label">
+        <value>
+            انتخاب نوع کاهش سرعت
+        </value>
+    </key>
+    <key name="admin_selectbox_value">
+        <value>
+            انتخاب هرکدام
+        </value>
+    </key>
+    <key name="admin_indelay">
+        <value>
+            تاخیر در هنگام شروع
+        </value>
+    </key>
+    <key name="admin_outdelay">
+        <value>
+            تاخیر در هنگام ایستادن
+        </value>
+    </key>
+    <key name="admin_bottom">
+        <value>
+            پایین
+        </value>
+    </key>
+    <key name="admin_right">
+        <value>
+            راست
+        </value>
+    </key>
+    <key name="admin_left">
+        <value>
+            چپ
+        </value>
+    </key>
+    <key name="admin_desc_bottom">
+        <value>
+            اعداد بزرگ باعث دور شدن از پایین صفحه خواهد شد
+        </value>
+    </key>
+    <key name="admin_desc_right">
+        <value>
+            مقدار صفت right در استایل‌ها
+        </value>
+    </key>
+    <key name="admin_desc_left">
+        <value>
+            اگر می‌خواهید از صفت راست انتخاب کنید، این مقدار را 0 بگذارید
+        </value>
+    </key>
+    <key name="admin_adminarea">
+        <value>
+            صفحه مدیریت
+        </value>
+    </key>
+    <key name="admin_adminarea_disable">
+        <value>
+            غیرفعال کردن در صفحه مدیریت
+        </value>
+    </key>
+    <key name="admin_adminarea_enable">
+        <value>
+            فعال کردن در صفحه مدیریت
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,38 @@
+<h1 class="add_file_title">{text key="frmshasta+upload_file_header"}</h1>
+{form name='manage_file'}
+<div class="add_file_header">
+    <div class="main_fields">
+        <div class="right_fields">
+            <table class="ow_table_1 ow_form">
+                <tr>
+                    <td class="ow_label">{label name="name"}:</td>
+                    <td class="ow_value">{input name="name"} {error name='name'}</td>
+                </tr>
+                <tr>
+                    <td class="ow_label">{label name="file"}:</td>
+                    <td class="ow_value">{input name="file"} {error name='file'}</td>
+                </tr>
+                <tr>
+                    <td class="ow_label">{label name="keywords"}:</td>
+                    <td class="ow_value">{input name="keywords"} {error name='keywords'}</td>
+                </tr>
+                <tr>
+                    <td class="ow_label">{label name="start_date"}:</td>
+                    <td class="ow_value">
+                        <div class="clearfix">
+                            <div class="ow_left ow_event_date">{input name='start_date'}{error name='start_date'}</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="ow_label">{label name="category"}:</td>
+                    <td class="ow_value">{input name="category"} {error name='category'}</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="ow_submit">{submit name="submit" class='ow_ic_save'}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+{/form}

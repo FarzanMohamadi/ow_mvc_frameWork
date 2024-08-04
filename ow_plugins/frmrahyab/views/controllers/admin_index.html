@@ -1,0 +1,65 @@
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        <li class="{if $section == 1} active{/if}"><a href="{$section1_url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section1_label}</span></a></li>
+        <li class="{if $section == 2} active{/if}"><a href="{$section2_url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section2_label}</span></a></li>
+    </ul>
+</div>
+<div class="ow_automargin ow_superwide">
+    {if $section == '1'}
+    {form name='form'}
+    <table class="ow_table_1 ow_form">
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='panel_username'}</td>
+            <td class="ow_value">{input name='panel_username'}{error name='panel_username'}</td>
+            <td class="ow_desc ow_small"></td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='panel_password'}</td>
+            <td class="ow_value">{input name='panel_password'}{error name='panel_password'}</td>
+            <td class="ow_desc ow_small"></td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='panel_number'}</td>
+            <td class="ow_value">{input name='panel_number'}{error name='panel_number'}</td>
+            <td class="ow_desc ow_small"></td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='provider_host'}</td>
+            <td class="ow_value">{input name='provider_host'}{error name='provider_host'}</td>
+            <td class="ow_desc ow_small"></td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='provider_port'}</td>
+            <td class="ow_value">{input name='provider_port'}{error name='provider_port'}</td>
+            <td class="ow_desc ow_small"></td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='company'}</td>
+            <td class="ow_value">{input name='company'}{error name='company'}</td>
+            <td class="ow_desc ow_small"></td>
+        </tr>
+    </table>
+    <div class="clearfix ow_stdmargin">
+        {submit name='save' class='ow_ic_save ow_submit ow_right'}
+    </div>
+    {/form}
+    {else}
+    <table class="ow_table_1">
+        <tr>
+            <th>{text key='frmrahyab+time_label'}</th>
+            <th>{text key='frmrahyab+mobile_label'}</th>
+            <th>{text key='frmrahyab+status_label'}</th>
+            <th>{text key='frmrahyab+text_label'}</th>
+        </tr>
+        {foreach from=$tracks item='track'}
+        <tr class="ow_alt1">
+            <td class="ow_label">{format_date timestamp=$track['time']}</td>
+            <td class="ow_label">{$track['mobile']}</td>
+            <td class="ow_label">{$track['status']}</td>
+            <td class="ow_label">{$track['text']}</td>
+        </tr>
+        {/foreach}
+    </table>
+    {$paging}
+    {/if}
+</div>

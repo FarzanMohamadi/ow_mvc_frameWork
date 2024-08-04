@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+	<name>اطلاع‌رسان مدیریت</name>
+	<key>frmadminnotification</key>
+	
+        ارسال رایانامه به مدیر به جهت آگاه کردن او از برخی اتفاقات مهم نظیر ثبت‌نام، درج نظر بر روی خبر، ایجاد موضوع و درج پاسخ در انجمن
+    </description>
+    <author>Farzan</author>
+    <authorEmail>test@test.com</authorEmail>
+    <authorUrl>test.test.com</authorUrl>
+    <developerKey>12345</developerKey>
+    <build>10814</build>
+    <copyright>2023</copyright>
+    <license>No License</license>
+    <licenseUrl>No License</licenseUrl>
+    <category>
+        <item>published</item>
+    </category>
+</plugin>

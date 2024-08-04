@@ -1,0 +1,149 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_left ow_canvas">
+    <h3>
+        <a href="{$returnToCategory}">{text key="frmevaluation+return_to_categories"}</a>
+    </h3>
+</div>
+<br/>
+<div class="ow_left ow_canvas">
+    <div class="ow_right place_section left_section ow_column">
+        <br/><br/>
+        {form name="form_assign_user_by_username"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_last ow_center">
+                <th colspan="2" class="ow_center"><h2>{text key="frmevaluation+form_assign_user_by_username"}</h2></th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+username"}
+                </td>
+                <td class="ow_value">
+                    {input name='username_assign'}
+                    {error name='username_assign'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="2">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+        <br/><br/>
+        {form name="form_unassigned_user_by_username"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_last ow_center">
+                <th colspan="2" class="ow_center"><h2>{text key="frmevaluation+form_unassigned_user_by_username"}</h2></th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+username"}
+                </td>
+                <td class="ow_value">
+                    {input name='username_unassign'}
+                    {error name='username_unassign'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="2">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+    <div class="ow_left place_section left_section ow_column">
+        <br/><br/>
+        {form name="form_find_user_by_username"}
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_last ow_center">
+                <th colspan="2" class="ow_center"><h2>{text key="frmevaluation+form_find_user_by_username"}</h2></th>
+            </tr>
+            <tr class="ow_alt1">
+                <td width="1" class="ow_label">
+                    {text key="frmevaluation+username"}
+                </td>
+                <td class="ow_value">
+                    {input name='username_find'}
+                    {error name='username_find'}
+                </td>
+            </tr>
+            <tr class="ow_tr_last ow_center">
+                <td colspan="2">
+                    {submit name='submit'}
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        {/form}
+    </div>
+</div>
+<div class="ow_left ow_canvas">
+    <br/><br/>
+    <p>
+        <h1 class="ow_center">{text key="frmevaluation+assigned_users"}</h1>
+    </p>
+    <div class="ow_left place_section left_section ow_column">
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_first">
+                <th colspan="2" class="ow_center"><h2>{text key="frmevaluation+active_users"}</h2></th>
+            </tr>
+            <tr class="ow_tr_first">
+                <th colspan="2" class="ow_center">{text key="frmevaluation+username"}</th>
+            </tr>
+            {foreach from=$activeUsers item="user"}
+            <tr>
+                <td>{$user.username}</td>
+                <td class="features">
+                    <a class="ow_lbutton ow_red" onclick="{$user.lockUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+lock"}</a>
+                    <a class="ow_lbutton ow_red" onclick="{$user.deleteUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+delete"}</a>
+                    <a class="ow_lbutton ow_green" href="{$user.questionsUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+questions"}</a>
+                </td>
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+    </div>
+    <div class="ow_right place_section left_section ow_column">
+        <table class="ow_table_1 ow_form" style="margin: 0">
+            <tbody>
+            <tr class="ow_tr_first">
+                <th colspan="2" class="ow_center"><h2>{text key="frmevaluation+locked_users"}</h2></th>
+            </tr>
+            <tr class="ow_tr_first">
+                <th colspan="2" class="ow_center">{text key="frmevaluation+username"}</th>
+            </tr>
+            {foreach from=$lockedUsers item="user"}
+            <tr>
+                <td>{$user.username}</td>
+                <td class="features">
+                    <a class="ow_lbutton ow_green" onclick="{$user.activeUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+activate"}</a>
+                    <a class="ow_lbutton ow_red" onclick="{$user.deleteUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+delete"}</a>
+                    <a class="ow_lbutton ow_green" href="{$user.questionsUrl}" style="display: inline-block;">{text
+                        key="frmevaluation+questions"}</a>
+                </td>
+            </tr>
+            {/foreach}
+            </tbody>
+        </table>
+    </div>
+</div>

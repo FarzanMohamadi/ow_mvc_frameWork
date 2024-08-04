@@ -1,0 +1,75 @@
+{if $dataIsAvailable}
+{form name='channel_import'}
+<div class="ow_lp_groups group_select_list">
+    <div>
+        <b>
+            {text key='frmtelegramimport+select_destination'}
+        </b>
+        <br/>
+    </div>
+    <div>
+        <input id="instant_search_txt_input" type="text" placeholder="{text key='frmnewsfeedplus+search_groups'}" style="width: 200px;margin: 3px 0px;">
+    </div>
+    <div class="asl_groups">
+        {foreach from=$groups item='group' name='group_list'}
+        <div class="ow_group_list_item clearfix" style="display: inline-block">
+            <div class="ow_group_list" id="{$group.groupId}">
+                <div class="ow_group">
+                    <div class="group_list_forward_list">
+                        <label>
+                            {input name=$group.key}
+                            <a href="#"><img alt="{$group.label|escape}" title="{$group.label|escape}" src="{$group.imageUrl}" style="width: 25px;height: 25px" /></a>
+                            <span class="ow_group_label">{$group.label}</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {/foreach}
+    </div>
+</div>
+<div>
+    <br/>
+    <b>
+        {text key='frmtelegramimport+select_source'}
+    </b>
+    <br/>
+</div>
+<table class="ow_table_1 ow_automargin" style="width: 100%;">
+    <tr style="text-align: center">
+        <th></th>
+        <th>{text key='frmtelegramimport+channel_title'}</th>
+        <th>{text key='frmtelegramimport+text_message_count'}</th>
+        <th>{text key='frmtelegramimport+photo_message_count'}</th>
+        <th>{text key='frmtelegramimport+video_message_count'}</th>
+        <th>{text key='frmtelegramimport+audio_message_count'}</th>
+        <th>{text key='frmtelegramimport+file_message_count'}</th>
+    </tr>
+    {foreach from=$channelsInfo item='info'}
+    <tr class="{cycle values='ow_alt1,ow_alt2'}" style="text-align: center">
+        <td>
+            {input name=$info.channelId}
+        </td>
+        <td>
+            {$info.title}
+        </td>
+        {foreach from=$info.statistics item='item'}
+        <td>
+            {$item}
+        </td>
+        {/foreach}
+    </tr>
+    {/foreach}
+    <tr>
+        <td colspan="9" class="ow_submit">{submit name="import" langLabel='frmtelegramimport+publish'}</td>
+    </tr>
+</table>
+{/form}
+{else}
+<div>
+    <div>{$errorMessage}</div>
+    <a href="{$helpUrl}">{$helpTitle}</a>
+    <br>
+    <a href="{$uploadUrl}">{$uploadTitle}</a>
+</div>
+{/if}

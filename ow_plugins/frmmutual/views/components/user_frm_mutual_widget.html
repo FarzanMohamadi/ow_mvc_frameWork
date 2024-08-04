@@ -1,0 +1,12 @@
+{if isset($empty_list) &&  $empty_list}
+    {text key="frmmutual+empty_list"}
+{else}
+<div class="ow_lp_avatars">
+    {if isset($userList)}
+        {$userList}
+    {/if}
+    {if !empty($toolbar)}
+    {decorator name='box_toolbar' itemList=$toolbar}
+    {/if}
+</div>
+{/if}

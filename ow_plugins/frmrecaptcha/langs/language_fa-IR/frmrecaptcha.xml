@@ -1,0 +1,58 @@
+<prefix name="frmrecaptcha" label="Google invisible ReCAPTCHA" language_tag="fa-IR" language_label="فارسی">
+    <key name="set_keys_title">
+        <value>کپچای گوگل را تنظیم کنید</value>
+    </key>
+    <key name="recaptcha_setting_desc">
+        <value>
+            &lt;p&gt;
+                برای فعال‌سازی کپچای پنهان گوگل هنگام ثبت نام مراحل زیر را اجرا کنید:
+            &lt;/p&gt;&#13;
+            &lt;ul class="ow_regular ow_stdmargin"&gt;&#13;
+            &lt;li&gt;&#13;
+            &lt;b&gt;&lt;a href="https://www.google.com/recaptcha/admin/create" target="_blank"&gt;در این آدرس&lt;/a&gt;&lt;/b&gt;  دامنه سایت را ثبت کرده و نوع reCAPTCHA را reCAPTCHA v2 و نوع reCAPTCHA v2 را Invisible reCAPTCHA badge انتخاب کنید.&#13;
+            &lt;/li&gt;&#13;
+            &lt;li&gt;به شما دو اطلاعات &lt;b&gt;Site Key&lt;/b&gt; و &lt;b&gt;Secret Key&lt;/b&gt; داده می‌شود. با استفاده از آن‌ها اطلاعات زیر را کامل کنید
+            &lt;/li&gt;&#13;
+            &lt;/ul&gt;&#13;
+        </value>
+    </key>
+    <key name="save_recaptcha_setting_success">
+        <value>تنظیمات با موفقیت ذخیره شد</value>
+    </key>
+    <key name="save_recaptcha_setting_failed">
+        <value>ذخیره تنظیمات با خطا مواجه شد</value>
+    </key>
+    <key name="heading_configuration">
+        <value>فعالسازی کپچای پنهان گوگل</value>
+    </key>
+    <key name="recaptcha_settings_site_key_label">
+        <value>Site Key</value>
+    </key>
+    <key name="recaptcha_settings_secret_key_label">
+        <value>Secret Key</value>
+    </key>
+    <key name="recaptcha_verification_failed">
+        <value>تایید کپچا با خطا مواجه شد</value>
+    </key>
+    <key name="save_btn_label">
+        <value>ذخیره</value>
+    </key>
+    <key name="invalid_secret_key_notice_html">
+        <value>
+            کاربرگرامی ،
+            &lt;br /&gt;&#13;
+            secret key وارد شده برای افزونه کپچای پنهان گوگل نامعتبر می‌باشد. لطفا جهت اصلاح آن اقدام نمایید.
+        </value>
+    </key>
+    <key name="invalid_secret_key_notice_text">
+        <value>
+            کاربرگرامی، secret key وارد شده برای افزونه کپچای پنهان گوگل نامعتبر می‌باشد. لطفا جهت اصلاح آن اقدام نمایید.
+        </value>
+    </key>
+    <key name="invalid_secret_key_notice_subject">
+        <value>
+            secret key نامعتبر برای افزونه کپچای پنهان گوگل
+        </value>
+    </key>
+
+</prefix>

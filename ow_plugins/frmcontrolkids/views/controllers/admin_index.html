@@ -1,0 +1,40 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_std_margin clearfix">
+    {form name="settings"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='kidsAge'}
+            </td>
+            <td class="ow_value">
+                {input name='kidsAge'}
+                {error name='kidsAge'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name='marginTime'}
+            </td>
+            <td class="ow_value">
+                {input name='marginTime'}
+                {error name='marginTime'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name='save'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>

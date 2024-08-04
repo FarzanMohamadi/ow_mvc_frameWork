@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmchallenge" label="frmchallenge" language_tag="en" language_label="English">
+    <key name="main_menu_item">
+        <value>
+            Challenges
+        </value>
+    </key>
+    <key name="point">
+        <value>
+            Point
+        </value>
+    </key>
+    <key name="user_point">
+        <value>
+            امتیاز شما
+        </value>
+    </key>
+    <key name="opponent_point">
+        <value>
+            Opponent point
+        </value>
+    </key>
+    <key name="solitary_challenge_label">
+        <value>
+            Solitary challenge
+        </value>
+    </key>
+    <key name="win_point">
+        <value>
+            Win
+        </value>
+    </key>
+    <key name="lose_point">
+        <value>
+            Lose
+        </value>
+    </key>
+    <key name="equal_point">
+        <value>
+            Equal
+        </value>
+    </key>
+    <key name="category">
+        <value>
+            Category
+        </value>
+    </key>
+    <key name="opponent">
+        <value>
+            Opponent
+        </value>
+    </key>
+    <key name="description">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="title">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="question">
+        <value>
+            Question
+        </value>
+    </key>
+    <key name="challenge_type">
+        <value>
+            Challenge type
+        </value>
+    </key>
+    <key name="on_construction_type">
+        <value>
+            Groups challenges are under construction
+        </value>
+    </key>
+    <key name="challenge_info">
+        <value>
+            Challenge information
+        </value>
+    </key>
+    <key name="create_challenge">
+        <value>
+            Create challenge
+        </value>
+    </key>
+    <key name="create_challenge_description">
+        <value>
+            Create challenge now
+        </value>
+    </key>
+    <key name="my_challenges">
+        <value>
+            My challenges
+        </value>
+    </key>
+    <key name="finished_challenges">
+        <value>
+            Finished challenges
+        </value>
+    </key>
+    <key name="your_requested_challenges">
+        <value>
+            Requested challenges
+        </value>
+    </key>
+    <key name="public_challenges">
+        <value>
+            Public challenges
+            مسابقات عمومی
+        </value>
+    </key>
+    <key name="all_category">
+        <value>
+            All categories
+        </value>
+    </key>
+    <key name="unknown_opponent">
+        <value>
+            Unknown
+        </value>
+    </key>
+    <key name="find_opponent_text">
+        <value>
+            Your friend username
+        </value>
+    </key>
+    <key name="user_not_found">
+        <value>
+            User not found
+        </value>
+    </key>
+    <key name="create_same_challenge">
+        <value>
+            This challenge created by you before
+        </value>
+    </key>
+    <key name="empty_title">
+        <value>
+            Title field is empty
+        </value>
+    </key>
+    <key name="create_successfully">
+        <value>
+            The challenge created successfully
+        </value>
+    </key>
+    <key name="join_successfully">
+        <value>
+            You join the challenge
+        </value>
+    </key>
+    <key name="next_label">
+        <value>
+            next
+        </value>
+    </key>
+    <key name="previous_label">
+        <value>
+            Previous
+        </value>
+    </key>
+    <key name="finish_label">
+        <value>
+            Create challenge
+        </value>
+    </key>
+    <key name="challenge_button_wait">
+        <value>
+            Wait for joining opponent
+        </value>
+    </key>
+    <key name="challenge_button_view_result">
+        <value>
+            View details
+        </value>
+    </key>
+    <key name="challenge_button_continue">
+        <value>
+            Continue challenge
+        </value>
+    </key>
+    <key name="challenge_button_join">
+        <value>
+            Join challenge
+        </value>
+    </key>
+    <key name="answers">
+        <value>
+            Answers
+        </value>
+    </key>
+    <key name="answers">
+        <value>
+            Answer
+        </value>
+    </key>
+    <key name="empty_challenge">
+        <value>
+            There is no challenge
+        </value>
+    </key>
+    <key name="wait_for_opponent_answer">
+        <value>
+            You should wait for opponent answer
+        </value>
+    </key>
+    <key name="finish_challenge_description">
+        <value>
+            This challenge finished
+        </value>
+    </key>
+    <key name="user_value">
+        <value>
+            Your answer
+        </value>
+    </key>
+    <key name="cancel_label">
+        <value>
+            Cancel
+        </value>
+    </key>
+    <key name="cancel_challenge_description">
+        <value>
+            This challenge canceled by one of users
+        </value>
+    </key>
+    <key name="canceled">
+        <value>
+            Canceled
+        </value>
+    </key>
+    <key name="wait_for_answer">
+        <value>
+            Wait for opponent answer
+        </value>
+    </key>
+    <key name="answer">
+        <value>
+            Answer
+        </value>
+    </key>
+    <key name="challenge_finished">
+        <value>
+            Challenge time finished
+        </value>
+    </key>
+    <key name="finish_date">
+        <value>
+            Last chance to answer
+        </value>
+    </key>
+    <key name="solitary_challenge_tab_label">
+        <value>
+            Solitary challenges
+        </value>
+    </key>
+    <key name="group_challenge_tab_label">
+        <value>
+            Groups challenges
+        </value>
+    </key>
+    <key name="public_challenge_tab_label">
+        <value>
+            Universal challenges
+        </value>
+    </key>
+    <key name="challenge_button_wait_opponent">
+        <value>
+            Wait for joining opponent
+        </value>
+    </key>
+    <key name="answer">
+        <value>
+            Answer
+        </value>
+    </key>
+    <key name="challenge_finished">
+        <value>
+            Challenge time finished
+        </value>
+    </key>
+    <key name="finish_date">
+        <value>
+            Last chance to answer
+        </value>
+    </key>
+    <key name="solitary_challenge_tab_label">
+        <value>
+            Solitary challenges
+        </value>
+    </key>
+    <key name="group_challenge_tab_label">
+        <value>
+            Groups challenges
+        </value>
+    </key>
+    <key name="public_challenge_tab_label">
+        <value>
+            Universal challenges
+        </value>
+    </key>
+    <key name="challenge_button_wait_opponent">
+        <value>
+            Wait for joining opponent
+        </value>
+    </key>
+    <key name="notification_request_to_answer">
+        <value>
+            &lt;a href="{$user_url}"&gt;{$username}&lt;/a&gt; has answered the question. Its your turn. &lt;a
+            href="{$url}"&gt; Enter the challenge &lt;/a&gt;
+        </value>
+    </key>
+    <key name="notification_request_to_start_challenge">
+        <value>
+            Solitary challenge with &lt;a href="{$user_url}"&gt;{$username}&lt;/a&gt; started. &lt;a href="{$url}"&gt;
+            Enter the challenge &lt;/a&gt;
+        </value>
+    </key>
+    <key name="notification_request_to_join">
+        <value>
+            &lt;a href="{$user_url}"&gt;{$username}&lt;/a&gt; sends you a request to join the solitary challenge. &lt;a
+            href="{$url}"&gt; Join the challenge &lt;/a&gt;
+        </value>
+    </key>
+    <key name="email_request_challenge_notifications_alerts">
+        <value>
+            When somebody invite you to the challenge
+        </value>
+    </key>
+    <key name="email_answer_challenge_notifications_alerts">
+        <value>
+            When your opponent answer the question
+        </value>
+    </key>
+    <key name="email_start_challenge_notifications_alerts">
+        <value>
+            When challenge starts
+        </value>
+    </key>
+    <key name="email_notification_alerts_label">
+        <value>
+            The challenges
+        </value>
+    </key>
+    <key name="challenges_description">
+        <value>
+            In this page, you can create a challenge or view all challenges.
+            &lt;h3&gt;Solitary challenges&lt;/h3&gt;
+            These challenges held between you with another user (or friend, if you invited that user). These challenges
+            are turnable.
+            &lt;h3&gt;Universal challenges&lt;/h3&gt;
+            All users can join to these challenges. These challenges are not turnable.
+        </value>
+    </key>
+    <key name="max_point">
+        <value>
+            Sum point of questions
+        </value>
+    </key>
+    <key name="min_point">
+        <value>
+            Min point
+        </value>
+    </key>
+    <key name="sponsor">
+        <value>
+            Sponsor
+        </value>
+    </key>
+    <key name="prize">
+        <value>
+            Prize
+        </value>
+    </key>
+    <key name="empty_min_point">
+        <value>
+            Fill min point correctly
+        </value>
+    </key>
+    <key name="empty_win_point">
+        <value>
+            Fill win point correctly
+        </value>
+    </key>
+    <key name="win_point_label">
+        <value>
+            Win point
+        </value>
+    </key>
+    <key name="create_category">
+        <value>
+            create category
+        </value>
+    </key>
+    <key name="create_answer">
+        <value>
+            create answer
+        </value>
+    </key>
+    <key name="create_question">
+        <value>
+            create question
+        </value>
+    </key>
+    <key name="categories">
+        <value>
+            categories
+        </value>
+    </key>
+    <key name="questions">
+        <value>
+            questions
+        </value>
+    </key>
+    <key name="changes_not_successful">
+        <value>
+            Changes are not done
+        </value>
+    </key>
+    <key name="changes_successful">
+        <value>
+            Changes are successfully done
+        </value>
+    </key>
+    <key name="category_exists">
+        <value>
+            The category exists
+        </value>
+    </key>
+    <key name="question_category_exists">
+        <value>
+            This question exists in this category
+        </value>
+    </key>
+    <key name="answer_question_exists">
+        <value>
+            This answer exists in this question
+        </value>
+    </key>
+    <key name="correct">
+        <value>
+            Correct Answer
+        </value>
+    </key>
+    <key name="yes">
+        <value>
+            Yes
+        </value>
+    </key>
+    <key name="no">
+        <value>
+            No
+        </value>
+    </key>
+    <key name="edit">
+        <value>
+            edit
+        </value>
+    </key>
+    <key name="search">
+        <value>
+            search
+        </value>
+    </key>
+    <key name="finish_universal_challenge_description">
+        <value>
+            You answered to the all questions
+        </value>
+    </key>
+    <key name="current_winner">
+        <value>
+            Current winner
+        </value>
+    </key>
+    <key name="min_point_label">
+        <value>
+            Min point to enter
+        </value>
+    </key>
+    <key name="challenges">
+        <value>
+            User challenges
+        </value>
+    </key>
+    <key name="auth_universal_challenge_label">
+        <value>
+            Add universal challenges
+        </value>
+    </key>
+    <key name="max_users_point">
+        <value>
+            Points
+        </value>
+    </key>
+    <key name="users_point_label">
+        <value>
+            Users with most point
+        </value>
+    </key>
+    <key name="mobile_main_menu_item">
+        <value>
+            Challenges
+        </value>
+    </key>
+    <key name="min_question_count_warning">
+        <value>
+            The challenge will not started. Size of questions is low
+        </value>
+    </key>
+    <key name="question_has_correct_answer">
+        <value>
+            This question has a correct answer already
+        </value>
+    </key>
+    <key name="solitary_question_count">
+        <value>
+            Solitary question count
+        </value>
+    </key>
+    <key name="solitary_answer_time">
+        <value>
+            Solitary time to answer (Hour)
+        </value>
+    </key>
+    <key name="universal_question_count">
+        <value>
+            Universal question count
+        </value>
+    </key>
+    <key name="universal_answer_time">
+        <value>
+            Universal time to answer (Hour)
+        </value>
+    </key>
+    <key name="general_setting">
+        <value>
+            General setting
+        </value>
+    </key>
+    <key name="return">
+        <value>
+            Return
+        </value>
+    </key>
+    <key name="win_num">
+        <value>
+            Count winners
+        </value>
+    </key>
+    <key name="remaining_time">
+        <value>
+            Remaining time
+        </value>
+    </key>
+    <key name="upload_file_submit_label">
+        <value>
+            Upload file
+        </value>
+    </key>
+    <key name="file_description">
+        <value>
+            PLease import txt file (Make it from excel).
+        </value>
+    </key>
+    <key name="question_from_file">
+        <value>
+            Import questions, categories and answers form
+        </value>
+    </key>
+    <key name="file_empty">
+        <value>
+            Please import the file
+        </value>
+    </key>
+    <key name="import_successfully">
+        <value>
+            Imported successfully
+        </value>
+    </key>
+    <key name="line_error">
+        <value>
+            Question in line of {$line} has problem
+        </value>
+    </key>
+    <key name="line_error">
+        <value>
+            Empty file
+        </value>
+    </key>
+    <key name="line_question_error">
+        <value>
+            Question in line of {$line} has problem
+        </value>
+    </key>
+
+    <key name="correct_answer_info">
+        <value>
+            Your answer was correct
+        </value>
+    </key>
+    <key name="wrong_answer_info">
+        <value>
+            Your answer was wrong
+        </value>
+    </key>
+    <key name="wrong_answer_info_description">
+        <value>
+            Right answer is {$title}.
+        </value>
+    </key>
+    <key name="more_information">
+        <value>
+            More info.
+        </value>
+    </key>
+    <key name="start_time">
+        <value>
+            Start date
+        </value>
+    </key>
+    <key name="end_time">
+        <value>
+            How many days?
+        </value>
+    </key>
+    <key name="questions_number">
+        <value>
+            Questions number
+        </value>
+    </key>
+    <key name="challenge_not_start">
+        <value>
+            Challenge does not start yet.
+        </value>
+    </key>
+    <key name="remove_challenge">
+        <value>
+            Remove challenge
+        </value>
+    </key>
+</prefix>

@@ -1,0 +1,79 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_std_margin clearfix">
+    <a href="{$returnUrl}">{text key="frmupdateserver+return"}</a>
+    {form name="item"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='name'}</td>
+            <td class="ow_value">
+                {input name='name'}
+                {error name='name'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='description'}</td>
+            <td class="ow_value">
+                {input name='description'}
+                {error name='description'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='key'}</td>
+            <td class="ow_value">
+                {input name='key'}
+                {error name='key'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{text key="frmupdateserver+replace_image"}</td>
+            <td class="ow_value">
+                {input name='image'}
+                {error name='image'}
+            </td>
+        </tr>
+        {if isset($oldIconSrc)}
+        <tr class="ow_alt1">
+            <td class="ow_label">{text key="frmupdateserver+image"}</td>
+            <td class="ow_value">
+                <img src="{$oldIconSrc}">
+            </td>
+        </tr>
+        {/if}
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='type'}</td>
+            <td class="ow_value">
+                {input name='type'}
+                {error name='type'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='categoryFieldCheck'}</td>
+            <td class="ow_value">
+                {input name='categoryFieldCheck'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_label">{label name='guidelineurl'}</td>
+            <td class="ow_value">
+                {input name='guidelineurl'}
+                {error name='guidelineurl'}
+            </td>
+        </tr>
+        <tr class="ow_alt1">
+            <td class="ow_value" colspan="2">
+                {submit name='submit'}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+</div>

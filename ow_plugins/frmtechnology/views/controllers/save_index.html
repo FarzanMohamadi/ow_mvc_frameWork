@@ -1,0 +1,345 @@
+{if $isMobile==false}
+    <div class="ow_blogentry_compose clearfix">
+        {if !$authMsg}
+        <div class="ow_superwide ow_automargin">
+            {if $isEdit}
+            <ul class="ow_bl clearfix ow_small ow_right">
+                <li>
+                    <a href="{$technologyUrl}">
+                        {text key="frmtechnology+return_btn_label"}
+                    </a>
+                </li>
+            </ul>
+            {/if}
+            {form name="save"}
+            <input type="hidden" id="save_technology_command" name="command" />
+            <table class="ow_table_1 ow_form ow_stdmargin">
+                <tr class="ow_alt2 ow_tr_first">
+                    <td>
+                        {label name="title"}<br />{input name='title'}
+                        <br />{error name="title"}
+                    </td>
+                </tr>
+                <tr class="ow_alt2 ow_tr_first">
+                    <td>
+                        {label name="userFullName"}<br />{input name='userFullName'}
+                        <br />{error name="userFullName"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="position"}<br />{input name='position'}
+                        <br />{error name="position"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="grade"}<br />{input name='grade'}
+                        <br />{error name="grade"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="sn"}<br />{input name='sn'}
+                        <br />{error name="sn"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="org"}<br />{input name='org'}
+                        <br />{error name="org"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="email"}<br />{input name='email'}
+                        <br />{error name="email"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="pn"}<br />{input name='pn'}
+                        <br />{error name="pn"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="techDesc"}<br />{input name='techDesc'}
+                        <br />{error name="techDesc"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="techArea"}<br />{input name='techArea'}
+                        <br />{error name="techArea"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        <p>{text key="frmtechnology+notice_upload_image"}</p>
+                        {label name='image1'}
+                        <br />
+                        {if !empty($imgsrc1)}
+                        <img src="{$imgsrc1}" id="newsImg1"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image1' name='image1'} <br />
+                        {if !empty($imgsrc1)}
+                        <a id="deleteImg1" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}<br />
+                        {error name='image1'} <br />
+                         {label name='image2'}
+                         <br />
+                         {if !empty($imgsrc2)}
+                         <img src="{$imgsrc2}" id="newsImg2"/>&nbsp;&nbsp;
+                         {/if}
+                         {input id='image2' name='image2'} <br />
+                        {if !empty($imgsrc2)}
+                        <a id="deleteImg2" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}<br />
+                         {error name='image2'} <br />
+                         {label name='image3'}
+                         <br />
+                         {if !empty($imgsrc3)}
+                         <img src="{$imgsrc3}" id="newsImg3"/>&nbsp;&nbsp;
+                         {/if}
+                         {input id='image3' name='image3'} <br />
+                        {if !empty($imgsrc3)}
+                        <a id="deleteImg3" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}<br />
+                         {error name='image3'} <br />
+                        {label name='image4'}
+                        <br />
+                        {if !empty($imgsrc4)}
+                        <img src="{$imgsrc4}" id="newsImg4"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image4' name='image4'} <br />
+                        {if !empty($imgsrc4)}
+                        <a id="deleteImg4" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}<br />
+                        {error name='image4'} <br />
+                        {label name='image5'}
+                        {if !empty($imgsrc5)}
+                        <a id="deleteImg5" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}
+                        <br />
+                        {if !empty($imgsrc5)}
+                        <img src="{$imgsrc5}" id="newsImg5"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image5' name='image5'} <br />
+                        {if !empty($imgsrc5)}
+                        <a id="deleteImg5" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}<br />
+                        {error name='image5'} <br />
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="tf"} <br />
+                        {input name='tf'}
+                        <br />{error name="tf"}
+                    </td>
+                </tr>
+                {if isset($displayCaptcha)}
+                <tr class="ow_alt1 ow_tr_last">
+                    <td>
+                        {label name="captcha"} <br />
+                        <div class="ow_center">
+                        {input name='captcha'}
+                        <br />{error name="captcha"}
+                        </div>
+                    </td>
+                </tr>
+                {/if}
+            </table>
+            <div class="clearfix ow_stdmargin ow_submit ow_btn_delimiter">
+                <div class="ow_right"> {submit name="save"}</div>
+            </div>
+            {/form}
+        </div>
+        {else}
+        <div class="ow_anno ow_std_margin ow_nocontent">{$authMsg}</div>
+        {/if}
+    </div>
+{else}
+    <div class="owm_frmtechnology owm_box clearfix">
+        {if !$authMsg}
+        <div class="owm_frmtechnology_new ow_superwide ow_automargin">
+            {if $isEdit}
+            <div class="owm_btn_list_item">
+                    <a href="{$technologyUrl}">
+                        {text key="frmtechnology+return_btn_label"}
+                    </a>
+            </div>
+            {/if}
+            {form name="save"}
+            <input type="hidden" id="save_technology_command" name="command" />
+            <table class="owm_frmtechnology_new_table ow_table_1 ow_form ow_stdmargin">
+                <tr class="ow_alt2 ow_tr_first">
+                    <td>
+                        {label name="title"}<br />{input name='title'}
+                        <br />{error name="title"}
+                    </td>
+                </tr>
+                <tr class="ow_alt2 ow_tr_first">
+                    <td>
+                        {label name="userFullName"}<br />{input name='userFullName'}
+                        <br />{error name="userFullName"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="position"}<br />{input name='position'}
+                        <br />{error name="position"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="grade"}<br />{input name='grade'}
+                        <br />{error name="grade"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="sn"}<br />{input name='sn'}
+                        <br />{error name="sn"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="org"}<br />{input name='org'}
+                        <br />{error name="org"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="email"}<br />{input name='email'}
+                        <br />{error name="email"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="pn"}<br />{input name='pn'}
+                        <br />{error name="pn"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="techDesc"}<br />{input name='techDesc'}
+                        <br />{error name="techDesc"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name="techArea"}<br />{input name='techArea'}
+                        <br />{error name="techArea"}
+                    </td>
+                </tr>
+                <tr class="ow_alt1">
+                    <td>
+                        {label name='image1'}
+                        {if !empty($imgsrc1)}
+                        <a id="deleteImg1" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}
+                        <br />
+                        {if !empty($imgsrc1)}
+                        <img src="{$imgsrc1}" id="newsImg1"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image1' name='image1'} <br />
+                        {error name='image1'}
+                    </td>
+                    <td>
+                        {label name='image2'}
+                        {if !empty($imgsrc2)}
+                        <a id="deleteImg2" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}
+                        <br />
+                        {if !empty($imgsrc2)}
+                        <img src="{$imgsrc2}" id="newsImg2"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image2' name='image2'} <br />
+                        {error name='image2'}
+                    </td>
+                    <td>
+                        {label name='image3'}
+                        {if !empty($imgsrc3)}
+                        <a id="deleteImg3" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}
+                        <br />
+                        {if !empty($imgsrc3)}
+                        <img src="{$imgsrc3}" id="newsImg3"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image3' name='image3'} <br />
+                        {error name='image3'}
+                    </td>
+                    <td>
+                        {label name='image4'}
+                        {if !empty($imgsrc4)}
+                        <a id="deleteImg4" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}
+                        <br />
+                        {if !empty($imgsrc4)}
+                        <img src="{$imgsrc4}" id="newsImg4"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image4' name='image4'} <br />
+                        {error name='image4'}
+                    </td>
+                    <td>
+                        {label name='image5'}
+                        {if !empty($imgsrc5)}
+                        <a id="deleteImg5" class="ow_lbutton">{text key='frmtechnology+delete_image'}</a>
+                        {/if}
+                        <br />
+                        {if !empty($imgsrc5)}
+                        <img src="{$imgsrc5}" id="newsImg5"/>&nbsp;&nbsp;
+                        {/if}
+                        {input id='image5' name='image5'} <br />
+                        {error name='image5'}
+                    </td>
+                </tr>
+                <tr class="ow_alt2 ow_tr_last">
+                    <td>
+                        {label name="tf"} <br />
+                        {input name='tf'}
+                        <br />{error name="tf"}
+                    </td>
+                </tr>
+            </table>
+            <div class="owm_frmtechnology_new_submit clearfix ow_stdmargin ow_submit ow_btn_delimiter">
+                {submit name="save" class="ow_button ow_green ow_positive"}
+            </div>
+            {/form}
+        </div>
+        {else}
+        <div class="ow_anno ow_std_margin ow_nocontent">{$authMsg}</div>
+        {/if}
+    </div>
+{/if}
+<script type="text/javascript">
+    {literal}
+    $('#deleteImg1').click(function(){
+        $('#deleteImage1').val(1)
+        $( "#newsImg1" ).remove();
+        $( "#deleteImg1" ).remove();
+    });
+    $('#deleteImg2').click(function(){
+        $("#deleteImage2").val(1);
+        $( "#newsImg2" ).remove();
+        $( "#deleteImg2" ).remove();
+    });
+    $('#deleteImg3').click(function(){
+        $("#deleteImage3").val(1);
+        $( "#newsImg3" ).remove();
+        $( "#deleteImg3" ).remove();
+    });
+    $('#deleteImg4').click(function(){
+        $("#deleteImage4").val(1);
+        $( "#newsImg4" ).remove();
+        $( "#deleteImg4" ).remove();
+    });
+    $('#deleteImg5').click(function(){
+        $("#deleteImage5").val(1);
+        $( "#newsImg5" ).remove();
+        $( "#deleteImg5" ).remove();
+    });
+    {/literal}
+</script>

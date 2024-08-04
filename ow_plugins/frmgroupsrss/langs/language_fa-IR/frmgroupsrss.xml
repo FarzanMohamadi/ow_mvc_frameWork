@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prefix name="frmgroupsrss" label="frmgroupsrss" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_setting_title">
+        <value>
+            تنظیمات افزونه خبرخوان گروه
+        </value>
+    </key>
+    <key name="admin_setting_heading">
+        <value>
+            تنظیمات افزونه خبرخوان گروه
+        </value>
+    </key>
+    <key name="admin_groups_rss_settings_heading">
+        <value>
+            تنظیمات افزونه خبرخوان گروه
+        </value>
+    </key>
+    <key name="admin_groups_rss_settings_update_interval">
+        <value>
+            بازه زمانی میان اجرای کرون جاب برای بروزرسانی‌ خبرخوان‌های گروه‌ها (دقیقه)
+        </value>
+    </key>
+    <key name="admin_groups_rss_settings_feeds_count">
+        <value>
+            حداکثر تعداد اخبار دریافتی از هر خبرخوان در هر بروزرسانی
+        </value>
+    </key>
+    <key name="save_btn_label">
+        <value>
+            ذخیره
+        </value>
+    </key>
+    <key name="settings">
+        <value>
+            تنظیمات
+        </value>
+    </key>
+    <key name="settings_success_msg">
+        <value>
+            تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+    <key name="rss_link_field_label">
+        <value>
+            لینک‌های پیوندی خبرخوان
+        </value>
+    </key>
+    <key name="rss_link_field_invitataion">
+        <value>
+            لینک‌‌های پیوندی خبرخوان را اینجا وارد کنید
+        </value>
+    </key>
+    <key name="maximum_rss_count_exceeds">
+        <value>
+            تعداد خبرخوان‌ها نباید از {$max_count} بیشتر باشد
+        </value>
+    </key>
+    <key name="invalid_link">
+        <value>
+            لینک(های) وارد شده نامعتبر است
+        </value>
+    </key>
+    <key name="auth_frmgroupsrss_label">
+        <value>
+            خبرخوان گروه
+        </value>
+    </key>
+    <key name="auth_action_label_add">
+        <value>
+            مدیرت خبرخوان‌های گروه‌ها
+        </value>
+    </key>
+    <key name="plugin_guide">
+        <value>
+            برای استفاده از افزونه لازم است پس از نصب، در بخش نقش‌های کاربران دسترسی لازم به ناظم(های) مورد نظر داده شده و سپس آدرس پیوند خبرخوان در فرم ایجاد یا ویرایش گروه درج شود.
+        </value>
+    </key>
+</prefix>

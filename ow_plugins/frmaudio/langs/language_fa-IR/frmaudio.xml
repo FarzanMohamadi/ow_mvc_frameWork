@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmaudio" label="frmaudio" language_tag="fa-IR" language_label="فارسی">
+    <key name="main_menu_item">
+        <value>
+            پیام‌های صوتی
+        </value>
+    </key>
+    <key name="database_record_deleted">
+        <value>
+            پیام صوتی حذف شد
+        </value>
+    </key>
+    <key name="audio_creator">
+        <value>
+            توسط
+        </value>
+    </key>
+    <key name="delete_item_warning">
+        <value>
+				آیا از حذف این پیام صوتی اطمینان دارید؟
+		</value>
+    </key>
+    <key name="Audio_inserterd">
+        <value>
+            پیام صوتی افزوده شد
+        </value>
+    </key>
+    <key name="feed_item_line">
+        <value>
+            یک پیام صوتی اضافه کرد
+        </value>
+    </key>
+    <key name="Audio_not_inserterd">
+        <value>
+            افزودن پیام صوتی با خطا مواجه شده است
+        </value>
+    </key>
+    <key name="delete_audio_item">
+        <value>
+            حذف
+        </value>
+    </key>
+
+    <key name="description_audio_page">
+        <value>
+            لیست پیام‌های صوتی شما
+        </value>
+    </key>
+    <key name="audionamefield">
+        <value>
+            نام:
+        </value>
+    </key>
+    <key name="floatboxname">
+        <value>
+            ضبط صدا
+        </value>
+    </key>
+    <key name="Record">
+        <value>
+            ضبط
+        </value>
+    </key>
+    <key name="Pause">
+        <value>
+            توقف
+        </value>
+    </key>
+    <key name="Recording">
+        <value>
+            در حال ضبط صدا...
+        </value>
+    </key>
+    <key name="Converting">
+        <value>
+            در حال ذخیره. لطفا صبر کنید...
+        </value>
+    </key>
+    <key name="index_page_heading">
+	<value>
+	پیام صوتی
+	</value>
+    </key>
+    <key name="index_page_title">
+	<value>
+	پیام صوتی
+	</value>
+    </key>
+    <key name="admin_settings_title">
+	<value>
+	تنظیمات افزونه پیام صوتی
+	</value>
+    </key>
+    <key name="admin_save_settings">
+	<value>
+	ذخیره تنظیمات
+	</value>
+    </key>
+    <key name="audio_in_dashbord">
+	<value>
+	اجازه درج پیام صوتی در داشبورد
+	</value>
+    </key>
+    <key name="audio_in_profile">
+	<value>
+	اجازه درج پیام صوتی نمایه من
+	</value>
+    </key>
+    <key name="audio_in_forum">
+	<value>
+	اجازه درج پیام صوتی در انجمن
+	</value>
+    </key>
+   <key name="audio_feed_removed">
+        <value>
+	پیام صوتی افزوده شده به این نوشته حذف شده است
+	</value>
+    </key>
+		<key name="newsfeed_audio_located">
+        <value>
+		تازه‌ها
+		</value>
+    </key>
+	<key name="forum_audio_located">
+        <value>
+		انجمن
+		</value>
+    </key>
+	<key name="audio_located">
+        <value>
+		در 
+		</value>
+    </key>
+	<key name="mobile_main_menu_item">
+        <value>
+		پیام‌های صوتی
+		</value>
+    </key>
+	<key name="no_audio_data_list">
+        <value>
+		هیچ پیام صوتی یافت نشد
+		</value>
+    </key>
+</prefix>

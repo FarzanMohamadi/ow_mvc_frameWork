@@ -1,0 +1,305 @@
+{script}
+{literal}
+
+$(document).ready( function() {
+$('#s1, #s2').sortable({
+items: 'tr.draggable-lang-item',
+helper: 'clone',
+placeholder: 'lang_placeholder',
+start: function (event, ui) {
+$(ui.placeholder).append('<td colspan="4"></td>');
+$(ui.placeholder).css('backgroundColor', 'rgb(220,220,220)');
+},
+
+stop: function (event, ui) {
+
+switch (this) {
+case $('#s1')[0]:
+
+$('tr.draggable-lang-item:odd', this).each(function () {
+
+if (!$(this).hasClass('ow_even')) $(this).addClass('ow_even');
+});
+
+
+$('tr.draggable-lang-item:even', this).each(function () {
+if ($(this).hasClass('ow_even')) $(this).removeClass('ow_even');
+});
+break;
+}
+},
+
+receive: function (event, ui) {
+switch (this) {
+case $('#s1')[0] :
+$('tr.draggable-lang-item', this).each(function () {
+$('td:nth(1) a.deact', this).show();
+$('td:nth(1) a.act', this).hide();
+$('td:nth(1) a.del', this).hide();
+
+if ($(this).hasClass('ow_high2')) {
+$(this).removeClass('ow_high2');
+}
+});
+
+if ($('tr.draggable-lang-item', this).length == 0) {
+$.alert('{text key="admin+msg_one_active_constraint"}');
+
+$(this).sortable('cancel');
+$('#s1 tr.empty').remove();
+break;
+}
+
+$('tr.draggable-lang-item:odd', this).each(function () {
+if (!$(this).hasClass('ow_even')) $(this).addClass('ow_even');
+});
+
+
+$('tr.draggable-lang-item:even', this).each(function () {
+if ($(this).hasClass('ow_even')) $(this).removeClass('ow_even');
+});
+
+break;
+
+case $('#s2')[0]:
+if ($('tr.draggable-lang-item', ui.sender).length == 0) break;
+$('tr.draggable-lang-item', this).each(function () {
+
+$('td:nth(1) a.deact', this).hide();
+$('td:nth(1) a.act', this).show();
+$('td:nth(1) a.del', this).show();
+
+if ($(this).hasClass('ow_even'))
+$(this).removeClass('ow_even');
+
+if (!$(this).hasClass('ow_high2'))
+$(this).addClass('ow_high2');
+});
+break;
+}
+},
+
+update: function (event, ui) {
+if (ui.sender) {
+if ($('tr', ui.sender[0]).length == 0) $(ui.sender[0]).append('<tr class="empty"><td colspan="4">{/literal}{text key="frmterms+empty_row_label"}{literal}</td></tr>');
+return;
+}
+
+if ($('#s1 tr.empty').length == 1 && $('#s1 tr.draggable-lang-item').length > 0)
+$('#s1 tr.empty').remove();
+
+if ($('#s2 tr.empty').length == 1 && $('#s2 tr.draggable-lang-item').length > 0)
+$('#s2 tr.empty').remove();
+
+
+$('tr.draggable-lang-item', '#s1').each(function () {
+$('td:nth(1) a.deact', this).show();
+});
+
+$('tr.draggable-lang-item', '#s2').each(function () {
+$('td:nth(1) a.act', this).show();
+});
+
+$('tr.draggable-lang-item', '#s2').each(function () {
+$('td:nth(1) a.deact', this).hide();
+});
+
+$('tr.draggable-lang-item', '#s1').each(function () {
+$('td:nth(1) a.act', this).hide();
+});
+
+var set = {};
+
+$('tr.draggable-lang-item', '#s1').each(function (i) {
+set['active[' + i + ']'] = parseInt($('input:hidden', this).attr('value'));
+});
+
+$('tr.draggable-lang-item', '#s2').each(function (i) {
+set['inactive[' + i + ']'] = parseInt($('input:hidden', this).attr('value'));
+});
+
+$('td:nth(0) span.ow_mild_green', $('tr.draggable-lang-item', '#s1, #s2')).remove();
+$.ajax({
+type: "POST",
+url: '{/literal}{url_for for="FRMTERMS_CTRL_Admin:ajaxSaveOrder"}{literal}',
+data: set
+});
+
+},
+
+connectWith: '#s1, #s2'
+}).each(function () {
+$('tr.draggable-lang-item', this).hover(
+function () {
+$('td:nth-child(4) div span', this).show()
+},
+function () {
+$('td:nth-child(4) div span', this).hide()
+}
+);
+
+if ($('tr.draggable-lang-item', this).length == 0)
+$(this).append('<tr class="empty"><td colspan="4">{/literal}{text key="frmterms+empty_row_label"}{literal}</td></tr>');
+});
+});
+
+{/literal}
+{/script}
+
+<div class="ow_frmterms_settings">
+<table class="ow_table_1">
+    <tr>
+        <th colspan="2">
+            {text key="frmterms+terms_header_information"}
+        </th>
+    </tr>
+    <tr>
+        <td>
+            {text key="frmterms+terms_description_label"}
+        </td>
+        <td>
+            {text key="frmterms+terms_description"}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            {$showOnJoinFormStatus}
+        </td>
+        <td class="{$showOnJoinFormStatusClass}">
+            {$showOnJoinFormStatusDescription}
+        </td>
+    </tr>
+</table>
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span></span><span CLASS="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+
+<p>
+    {text key="frmterms+add_version_description"}
+</p>
+<div class="ow_left place_section left_section ow_column">
+    <table class="ow_table_1">
+        <tr>
+            <th>{text key="frmterms+section_information_label"}</th>
+        </tr>
+        <tr>
+            <td>
+                {$number_of_exist_version} (<a class="ow_cursor_pointer" onclick="{$addVersionUrl}">{$addVersionLabel}</a>)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                {$sectionStatus} (<a href="{$sectionStatusChangeUrl}">{$sectionStatusChangeLabel}</a>)
+            </td>
+        </tr>
+    </table>
+</div>
+
+{if !empty($versions)}
+<div class="ow_left place_section right_section ow_column">
+    <table class="ow_table_1">
+        <tr>
+            <th colspan="2">{text key="frmterms+table_of_archive_label"}</th>
+        </tr>
+        {foreach from=$versions item="version"}
+        <tr>
+            <td>
+                {$version.time} ({if $version.current}{text key="frmterms+current_version_label"}{else}<a
+                    href="{$version.url}"><span>{text key="frmterms+comparison_with_current_version_label"}</span></a>{/if})
+            </td>
+            <td>
+                <a class="ow_lbutton ow_red act" onclick="{$version.deleteVersionUrl}">{text
+                    key="frmterms+delete_section"}</a>
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+{/if}
+
+{$addItemCMP}
+
+<table id="langs" class="ow_table_1">
+    <tr class="ow_tr_first">
+        <th colspan="4" class="ow_center">{text key="frmterms+active_items"}</th>
+    </tr>
+    <tr class="ow_tr_first">
+        <th class="ow_center">{text key="frmterms+header_label"}</th>
+        <th class="ow_center">{text key="frmterms+description_label"}</th>
+        <th class="ow_center" colspan="2"></th>
+    </tr>
+
+    <tbody id="s1" class="s">
+    {foreach from=$activeItems item="listItem"}
+    <tr class="ow_high1 draggable-lang-item ow_tr_last">
+        <td><input type="hidden" value="{$listItem.id}">{$listItem.header}</td>
+        <td><p class="justify">{$listItem.description|unescape:"html":"utf-8"}</p></td>
+        <td>
+            <a class="ow_lbutton ow_red" onclick="{$listItem.deleteUrl}" style="display: inline-block;">{text
+                key="frmterms+delete_item"}</a>
+            <a class="ow_lbutton ow_green" onclick="{$listItem.editUrl}" style="display: inline-block;">{text
+                key="frmterms+edit_item"}</a>
+            <a class="ow_lbutton ow_red deact" href="{$listItem.deactivateUrl}">{text
+                key="frmterms+deactivate_item"}</a>
+            <a class="ow_lbutton ow_green act" href="{$listItem.activateUrl}">{text key="frmterms+activate_item"}</a>
+        </td>
+        <td>
+            {if $listItem.notification}
+                <p>
+                    <img class="notification_item_icon" src="{$notificationImageSrc}" />
+                </p>
+            {/if}
+            {if $listItem.email}
+                <p>
+                    <img class="email_item_icon" src="{$emailImageSrc}" />
+                </p>
+            {/if}
+        </td>
+    </tr>
+    {/foreach}
+    </tbody>
+    <tr class="ow_tr_delimiter">
+        <td></td>
+    </tr>
+    <tr class="ow_tr_first ow_tr_last">
+        <th colspan="4" class="ow_center">{text key="frmterms+inactive_items"}</th>
+    </tr>
+
+    <tfoot id="s2" class="s">
+    {foreach from=$inactiveItems item="listItem"}
+    <tr class="ow_high1 draggable-lang-item ow_tr_last">
+        <td><input type="hidden" value="{$listItem.id}">{$listItem.header}</td>
+        <td><p class="justify">{$listItem.description|unescape:"html":"utf-8"}</p></td>
+        <td>
+            <a class="ow_lbutton ow_red" onclick="{$listItem.deleteUrl}" style="display: inline-block;">{text
+                key="frmterms+delete_item"}</a>
+            <a class="ow_lbutton ow_green" onclick="{$listItem.editUrl}" style="display: inline-block;">{text
+                key="frmterms+edit_item"}</a>
+            <a class="ow_lbutton ow_red deact" href="{$listItem.deactivateUrl}">{text
+                key="frmterms+deactivate_item"}</a>
+            <a class="ow_lbutton ow_green act" href="{$listItem.activateUrl}">{text key="frmterms+activate_item"}</a>
+        </td>
+        <td>
+            {if $listItem.notification}
+                <p>
+                    <img class="notification_item_icon" src="{$notificationImageSrc}" />
+                </p>
+            {/if}
+            {if $listItem.email}
+                <p>
+                    <img class="email_item_icon" src="{$emailImageSrc}" />
+                </p>
+            {/if}
+        </td>
+    </tr>
+    {/foreach}
+    <tfoot>
+
+</table>
+
+</div>

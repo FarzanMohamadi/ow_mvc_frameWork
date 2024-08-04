@@ -1,0 +1,56 @@
+<div class="clearfix" style="padding: 0px 10px 0px 10px;">
+{if !empty($sections)}
+<div class="owm_content">
+    <ul class="owm_content owm_terms_title clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span>{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+{if !empty($headersOfActiveItems)}
+<div class="owm_content owm_terms_headers">
+    <table class="owm_table_1">
+        <tr>
+            <th>{text key="frmterms+table_of_content_label"}</th>
+        </tr>
+        {foreach from=$headersOfActiveItems item="header"}
+        <tr>
+            <td><a class="st_smooth_scroll" href="#{$header.id}"><span>{$header.name}</span></a></td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+{/if}
+<div class="frmterms owm_mobile_terms">
+    {if !empty($items)}
+    <table class="owm_table_1">
+        <tr>
+            <td class="owm_terms_date">{$lastModified}</td>
+        </tr>
+        {foreach from=$items item="item"}
+            {if !empty($item.header)}
+                <tr>
+                    <td>
+                        <h2 class="owm_terms_titles" id="{$item.id}">{$item.header}</h2>
+                    </td>
+                </tr>
+            {/if}
+            <tr>
+                <td>
+                    <div class="owm_terms_body">
+                        <p class="owm_terms_decription">{$item.description}</p>
+                    </div>
+                </td>
+            </tr>
+        {/foreach}
+    </table>
+    {else}
+    {text key="frmterms+archives_is_empty_description"}
+    {/if}
+</div>
+{else}
+<p>
+    {text key="frmterms+section_empty_description"}
+</p>
+{/if}
+</div>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsecurityessentials" label="frmsecurityessentials" language_tag="fa-IR" language_label="فارسی">
+	 <key name="newsfeed_homepage_setting">
+        <value>
+             تنظیمات نمایش فعالیت در صفحه اصلی
+        </value>
+    </key>
+	 <key name="admin_customization_legend">
+        <value>
+             امکان کنترل این‌که چه نوع مطالبی در تازه‌ها در صفحه اصلی نشان داده شود، لطفا توجه کنید که تغییرات تنها بر روی پست‌های جدید اثر خواهد گذاشت.
+        </value>
+    </key>
+	 <key name="save_customization_btn_label">
+        <value>
+             ذخیره
+        </value>
+    </key>
+	 <key name="customization_changed">
+        <value>
+             تنظیمات با موفقیت ذخیره شد
+        </value>
+    </key>
+	 <key name="customization_not_changed">
+        <value>
+             تنظیمات تغییر نکرد
+        </value>
+    </key>
+</prefix>

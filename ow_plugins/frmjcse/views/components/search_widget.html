@@ -1,0 +1,99 @@
+{style}{literal}
+#search-box {
+position: relative;
+width: 100%;
+margin: 0;
+}
+
+#search-form
+{
+height: 40px;
+border: 1px solid #c7c8ca;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+background-color: #fff;
+overflow: hidden;
+}
+
+#search-text
+{
+font-size: 14px;
+color: #ddd;
+border-width: 0;
+background: transparent;
+}
+
+#search-box input[type="text"]
+{
+padding-top: 19px;
+padding-bottom: 29px;
+padding-left: 11px;
+color: #333;
+outline: none;
+background: #02794521;
+}
+
+#search-button {
+position: absolute;
+top: 0;
+right: 0;
+height: 42px;
+width: 80px;
+font-size: 14px;
+color: #fff;
+text-align: center;
+line-height: 42px;
+border-width: 0;
+background-color: #09603a;
+-webkit-border-radius: 0px 5px 5px 0px;
+-moz-border-radius: 0px 5px 5px 0px;
+border-radius: 0px 5px 5px 0px;
+cursor: pointer;
+}
+
+#search-button:lang(fa-IR){
+left: 0;
+right: initial;
+-webkit-border-radius: 5px 0px 0px 5px;
+-moz-border-radius: 5px 0px 0px 5px;
+border-radius: 5px 0px 0px 5px;
+}
+
+#search-text::-webkit-input-placeholder {
+color: gray;
+opacity: 1;
+}
+#search-text:-moz-placeholder {
+color: gray;
+opacity: 1;
+}
+#search-text::-moz-placeholder {
+color: gray;
+opacity: 1;
+}
+#search-text:-moz-placeholder {
+color: gray;
+opacity: 1;
+}
+{/literal}{/style}
+<div id='search-box'>
+    <form id='search-form' >
+        <input id='search-text' name='q' placeholder='{text key='frmjcse+search_input_placeholder'}' type='text'/>
+        <button id='search-button'>
+            <span>{text key='frmjcse+search_button_text'}</span>
+        </button>
+    </form>
+</div>
+<script>
+    window.onload = function() {
+        document.getElementById("search-form").onsubmit = function() {
+            return false;
+        };
+    };
+    document.getElementById("search-button").addEventListener("click", function(){
+        var search = document.getElementById("search-text").value;
+        var url = "{$searchUrl}/"+search+"%3A1%3A1%3A1%3A1";
+        window.location.href = url;
+    });
+</script>

@@ -1,0 +1,42 @@
+<div class="owm_audio_list">
+<div class="owm_box">
+    {text key="frmaudio+description_audio_page"}
+</div>
+
+<div class="owm_std_margin_bottom">
+    {if isset($isListItemEmpty)}
+    <p style="text-align: center" class="ow_nocontent">{text key="frmaudio+no_audio_data_list"}</p>
+    {else}
+    {foreach from=$list item="listItem"}
+    <div class="owm_list_item_without_image">
+        <div class="owm_list_section_body owm_padding">
+            <a class="owm_list_title_format owm_list_title_unread">
+                <div class="owm_list_title_name owm_small_margin_bottom">
+                    <div>{text key="frmaudio+audionamefield"} {$listItem.title}</div>
+                </div>
+            </a>
+        </div>
+        <audio controls src="{$listItem.audioUrl}" class="audio_item_player" width="100%" height="38px" type="audio/mp3"></audio>
+        <div class="owm_list_section_toolbar owm_border">
+            <div class="owm_padding owm_list_additional_info">
+                <span class="owm_events_additional_item">
+                    {text key="frmaudio+audio_located"}
+                    {if $listItem.audioForumUrl!=null}
+                    <a href="{$listItem.audioForumUrl}" class="audio_item_details" >{$listItem.audioType}</a>
+                    {else}
+                    {$listItem.audioType}
+                    {/if}
+                </span>
+                <span class="owm_events_additional_item ow_icon_control ow_ic_user">
+                    ({text key="frmaudio+audio_creator"}<a href="{$listItem.autherUrl}">{$listItem.autherName}</a>)
+                </span>
+                <span class="owm_events_additional_item ow_ipc_date">{$listItem.addDateTime}</span>
+                <a class="owm_list_item_delete" onclick="{$listItem.deleteUrl}">{text key="frmaudio+delete_audio_item"}</a>
+            </div>
+        </div>
+    </div>
+    {/foreach}
+    {/if}
+    {if $paging}{$paging}{/if}
+</div>
+</div>

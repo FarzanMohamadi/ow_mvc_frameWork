@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmthememanager" label="frmthememanager" language_tag="fa-IR" language_label="فارسی">
+
+    <key name="admin_settings_title">
+        <value>
+            مدیریت پوسته‌ها
+        </value>
+    </key>
+
+    <key name="create_new_theme">
+        <value>
+            ایجاد پوسته جدید
+        </value>
+    </key>
+
+    <key name="theme_name">
+        <value>
+            نام پوسته:
+        </value>
+    </key>
+
+    <key name="theme_key">
+        <value>
+            کلید پوسته:
+        </value>
+    </key>
+
+    <key name="parent_theme">
+        <value>
+            پوسته مرجع:
+        </value>
+    </key>
+
+    <key name="primaryColor">
+        <value>
+            رنگ اصلی:
+        </value>
+    </key>
+
+    <key name="secondaryColor">
+        <value>
+            رنگ دوم:
+        </value>
+    </key>
+
+    <key name="backgroundAndBorderColor">
+        <value>
+            رنگ کادر‌ها و پس‌زمینه‌ها:
+        </value>
+    </key>
+
+    <key name="backgroundColor">
+        <value>
+            رنگ پس‌زمینه کلی:
+        </value>
+    </key>
+
+    <key name="HeaderBackgroundColor">
+        <value>
+            رنگ پس‌زمینه هدر:
+        </value>
+    </key>
+
+    <key name="theme_configs">
+        <value>
+            سایر تنظیمات؛
+        </value>
+    </key>
+
+    <key name="verify_creation">
+        <value>
+            ایجاد پوسته
+        </value>
+    </key>
+
+    <key name="save_success">
+        <value>
+            عملیات با موفقیت انجام شد
+        </value>
+    </key>
+
+    <key name="customize_css">
+        <value>
+            CSS سفارشی:
+        </value>
+    </key>
+
+    <key name="config_save">
+        <value>
+            ذخیره
+        </value>
+    </key>
+
+    <key name="Header">
+        <value>
+            تصویر هدر:
+        </value>
+    </key>
+
+    <key name="background">
+        <value>
+            تصویر پس‌زمینه:
+        </value>
+    </key>
+
+    <key name="mainLogo">
+        <value>
+            لوگوی رنگی سامانه:
+        </value>
+    </key>
+
+    <key name="mainWhiteLogo">
+        <value>
+            لوگوی سفید سامانه:
+        </value>
+    </key>
+
+    <key name="headerLogo">
+        <value>
+            لوگوی هدر:
+        </value>
+    </key>
+
+    <key name="Operations">
+        <value>
+            عملیات:
+        </value>
+    </key>
+
+    <key name="edit">
+        <value>
+            ویرایش
+        </value>
+    </key>
+
+    <key name="remove">
+        <value>
+            حذف
+        </value>
+    </key>
+
+    <key name="activate">
+        <value>
+            فعال‌سازی
+        </value>
+    </key>
+
+    <key name="active">
+        <value>
+            فعال
+        </value>
+    </key>
+
+    <key name="delete_theme_confirm">
+        <value>
+            آیا از حذف این پوسته اطمینان دارید؟
+        </value>
+    </key>
+
+    <key name="delete_success">
+        <value>
+            پوسته حذف شد
+        </value>
+    </key>
+
+    <key name="activate_success">
+        <value>
+            پوسته با موفقیت فعال شد
+        </value>
+    </key>
+
+    <key name="theme_create_description">
+        <value>
+            با انتخاب دکمه زیر می‌توانید پوسته جدیدی با رنگ و خصوصیات دلخواه خود ایجاد کنید.
+        </value>
+    </key>
+
+    <key name="themes_list_description">
+        <value>
+            لیست پوسته‌های موجود:
+        </value>
+    </key>
+
+    <key name="no_theme_massage">
+        <value>
+            هیچ پوسته‌ای یافت نشد
+        </value>
+    </key>
+
+    <key name="disable_all_themes_desc">
+        <value>
+            غیرفعال‌سازی افزونه و استفاده از پوسته پیش‌فرض و فعال سامانه:
+        </value>
+    </key>
+
+    <key name="disable_all_themes">
+        <value>
+            غیر فعال کردن افزونه
+        </value>
+    </key>
+
+    <key name="disable_one_themes">
+        <value>
+            غیرفعال‌سازی
+        </value>
+    </key>
+
+    <key name="deactivate_success">
+        <value>
+            افزونه غیرفعال شد
+        </value>
+    </key>
+
+    <key name="operation_failure">
+        <value>
+            عملیات انجام نشد
+        </value>
+    </key>
+
+    <key name="operation_success">
+        <value>
+            عملیات با موفقیت انجام شد
+        </value>
+    </key>
+
+    <key name="theme_colors">
+        <value>
+            رنگ‌های پوسته:
+        </value>
+    </key>
+
+    <key name="theme_information">
+        <value>
+            اطلاعات پوسته:
+        </value>
+    </key>
+
+    <key name="theme_logo">
+        <value>
+            لوگو پوسته:
+        </value>
+    </key>
+
+    <key name="no_specific_color">
+        <value>
+            بدون رنگ خاص
+        </value>
+    </key>
+
+    <key name="colors">
+        <value>
+            رنگ‌ها:
+        </value>
+    </key>
+
+    <key name="images_and_icons">
+        <value>
+            آیکن‌ها و تصاویر:
+        </value>
+    </key>
+
+    <key name="theme_must_be_defined">
+        <value>
+            انتخاب پوسته مرجع اجباری است
+        </value>
+    </key>
+
+    <key name="noHeader">
+        <value>
+            حذف هدر (استفاده از هدر با ارتفاع کم)
+        </value>
+    </key>
+
+    <key name="footerBackgroundColor">
+        <value>
+            رنگ پس‌زمینه فوتر:
+        </value>
+    </key>
+
+    <key name="color_picker">
+        <value>
+            استفاده از ابزارک انتخاب رنگ (حالت فعال از Transparency پشتیبانی نمی‌کند و حالت غیرفعال نیازمند درج کد رنگ است)
+        </value>
+    </key>
+
+    <key name="HeaderItemBackgroundColor">
+        <value>
+            رنگ پس‌زمینه پیوند‌های هدر:
+        </value>
+    </key>
+
+    <key name="HeaderItemHoverTextColor">
+        <value>
+            رنگ نوشته‌های پیوند‌های هدر در حالت فعال:
+        </value>
+    </key>
+
+    <key name="HeaderItemTextColor">
+        <value>
+            رنگ نوشته‌های پیوند‌های هدر:
+        </value>
+    </key>
+
+    <key name="update_all_themes_desc">
+        <value>
+            به‌روزرسانی دستی تمام پوسته‌های ایجاد شده بر اساس پوسته مرجع مربوط به آن‌ها:
+        </value>
+    </key>
+
+    <key name="update_all_themes">
+        <value>
+            به‌روزرسانی
+        </value>
+    </key>
+
+    <key name="footer_tags_label">
+        <value>
+            تگ سفارشی فوتر:
+        </value>
+    </key>
+
+    <key name="no">
+        <value>
+            عدم نمایش «قدرت گرفته از موتوشاب»
+        </value>
+    </key>
+
+    <key name="handLikeIcon">
+        <value>
+            استفاده از علامت لایک بجای علامت قلب برای دکمه پسندیدن
+        </value>
+    </key>
+
+    <key name="blendHeader">
+        <value>
+            رنگ‌آمیزی هدر بارگذاری شده در قسمت «آیکن‌ها و تصاویر» با استفاده از رنگ پس‌زمینه هدر
+        </value>
+    </key>
+
+    <key name="plugin_guide">
+        <value>
+            راهنمای ایجاد پوسته
+        </value>
+    </key>
+
+    <key name="linksColor">
+        <value>
+            رنگ پیوند‌ها
+        </value>
+    </key>
+
+    <key name="linksColorHover">
+        <value>
+            رنگ هاور پیوند‌ها
+        </value>
+    </key>
+
+    <key name="noParentTheme">
+        <value>
+            برای ایجاد پوسته با این افزونه شما به یک پوسته مرجع احتیاج دارید. پوسته مرجع یافت نشد!
+        </value>
+    </key>
+    <key name="themes_list_cap_title">
+        <value>
+            پوسته‌های ایجاد شده توسط افزونه مدیریت پوسته‌ها
+        </value>
+    </key>
+    <key name="export">
+        <value>
+            دریافت
+        </value>
+    </key>
+    <key name="upload_new_theme">
+        <value>
+            بارگذاری پوسته جدید
+        </value>
+    </key>
+    <key name="overWriteAllow">
+        <value>
+            جایگزین کردن در صورت وجود نسخه قبلی
+        </value>
+    </key>
+    <key name="themeFile">
+        <value>
+            فایل ZIP پوسته
+        </value>
+    </key>
+    <key name="noParentTheme">
+        <value>
+            هیج پوسته مرجعی یافت نشد، برای استفاده از این افزونه لازم است یک پوسته نسل دوم یا بالاتر مانند پوسته «مدرن آبی» در میان پوسته‌های سامانه وجود داشته باشد.
+        </value>
+    </key>
+    <key name="active_theme_terms">
+        <value>
+            در صورتی که پوسته‌ای در افزونه مدیریت پوسته‌ها فعال باشد، آن پوسته مورد استفاده سامانه خواهند ماند و فعال‌سازی دیگر پوسته‌های معمولی سامانه اعمال نخواد شد. برای استفاده از پوسته‌های دیگر لازم است افزونه و یا پوسته فعال آن را غیرفعال کنید.
+        </value>
+    </key>
+    <key name="verifyColor">
+        <value>
+            رنگ دکمه‌های تایید
+        </value>
+    </key>
+
+</prefix>

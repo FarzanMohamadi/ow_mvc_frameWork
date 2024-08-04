@@ -1,0 +1,21 @@
+{block_decorator name="box" type="empty" addClass="ow_center"}
+    {text key="base+email_verify_form_promo"}
+{/block_decorator}
+{block_decorator name="box" type="normal" addClass="ow_stdmargin ow_wide ow_automargin ow_center" style="width:63%;"}
+    {form name='verificationForm'}
+        <table class="ow_table_1">
+            <tr class="ow_alt1 ow_tr_first ow_type_text">
+                <td class="ow_value ow_label ow_email_verify_form">
+                    {input name='verificationCode' placeholder={text key="base+email_verify_verification_code_label"}}
+                    </br>
+                    {label name='verificationCode'}
+                </td>
+                <td>
+                    {submit name='submit'}
+                </td>
+            </tr>
+        </table>
+        {error name='verificationCode'}
+    {/form}
+{if $verifyLater}{$verifyLater}{/if}
+{/block_decorator}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frminvite" label="frminvite" language_tag="en" language_label="English">
+	<key name="admin_invitation_settings_heading">
+        <value>
+            frminvite settings
+        </value>
+    </key>
+	<key name="invitationDetailsInfo">
+        <value>
+            Invitation information
+        </value>
+    </key>
+	<key name="viewCountSetting">
+        <value>
+            view config
+        </value>
+    </key>
+		<key name="senderId">
+        <value>
+            sender Id
+        </value>
+    </key>
+		<key name="senderUserName">
+        <value>
+            sender username
+        </value>
+    </key>
+		<key name="senderDisplayName">
+        <value>
+            sender display name
+        </value>
+    </key>
+		<key name="invitedEmail">
+        <value>
+             invited email
+        </value>
+    </key>
+		<key name="timeStamp">
+        <value>
+            date
+        </value>
+    </key>
+		<key name="input_settings_view_count_label">
+        <value>
+             number of rows for each page
+        </value>
+    </key>
+		<key name="modified_successfully">
+        <value>
+             settings has been saved successfully
+        </value>
+    </key>
+	<key name="invalid_invitation_count">
+        <value>
+             invalid number count
+        </value>
+    </key>
+</prefix>

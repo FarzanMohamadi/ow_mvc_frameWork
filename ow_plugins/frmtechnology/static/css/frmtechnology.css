@@ -1,0 +1,114 @@
+#results{
+    display: block;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+#results div {
+    display: inline-block;
+    overflow: hidden;
+    width: 30%;
+    min-width: 200px;
+    max-width: 240px;
+    margin: 10px;
+    border: 1px solid #c6c6c6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border: unset;
+    height: 475px;
+}
+#results div .search-content p {
+    text-align: justify;
+}
+#results div:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+#results div a {
+    display: block;
+    text-decoration: none;
+}
+#results div .image {
+    height: 198px;
+    width: 100%;
+    vertical-align: bottom;
+    display: table-cell;
+}
+#results div .image img {
+    min-width: inherit;
+    max-width: none;
+    width: auto;
+    height: 198px;
+}
+#results div .search-content {
+    display: block;
+    position: relative;
+    padding: 15px 25px 25px;
+    min-height: 227px;
+    max-height: 227px;
+}
+#results div h3 {
+    text-transform: none;
+    font-size: 1.3125em;
+    color: #250c87;
+}
+#results div .search-content p {
+    overflow: hidden;
+    max-height: 227px;
+    font-size: 0.875em;
+    word-break: normal;
+    margin-top: 12px;
+    color: #000000;
+}
+.ow_frmtechnology table tr {
+    word-break: break-all;
+}
+.ow_frmtechnology table {
+    margin-bottom: 15px;
+}
+.table.ow_table_2.ow_nomargin.data_table,
+.table.ow_table_2.ow_nomargin.data_table table{
+    max-width: 100%;
+}
+.ow_supernarrow .blog_widget:nth-child(3) {
+    display: none;
+}
+.ow_supernarrow .news_widget:nth-child(3) {
+    display: none;
+}
+.card-container {
+    display: block;
+    text-align: center;
+}
+.card {
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 15px 15px 15px 15px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card a {
+    text-decoration: none;
+}
+.card .container {
+    padding: 2px 16px;
+}
+.card .container h4 {
+    color: black;
+}
+.card a img {
+    width: 250px;
+    height: 210px;
+    max-width: none
+}
+.button_container {
+    display: block;
+    text-align: center;
+}
+.button_container ul.ow_bl.clearfix {
+    display: inline-block;
+}

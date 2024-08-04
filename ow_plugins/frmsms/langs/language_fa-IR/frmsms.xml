@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmsms" label="frmsms" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_save_settings">
+        <value>
+            ذخیره تنظیمات
+        </value>
+    </key>
+    <key name="admin_settings_title">
+        <value>
+         تنظیمات افزونه پیامک
+        </value>
+    </key>
+    <key name="invalid_sms_code">
+        <value>
+            کد پیامکی وارد شده معتبر نمی باشد
+        </value>
+    </key>
+    <key name="user_save_success">
+        <value>
+            تنظیمات با موفقیت ذخیره شد.
+        </value>
+    </key>
+    <key name="mobile_code_label">
+        <value>
+            کد فعال‌سازی تلفن همراه
+        </value>
+    </key>
+    <key name="mobile_code_description">
+        <value>
+            کد فعال‌سازی به شماره تلفن همراه شما ارسال شده است.
+        </value>
+    </key>
+    <key name="mail_code_label">
+        <value>
+            کد فعال‌سازی رایانامه
+        </value>
+    </key>
+    <key name="mail_code_description">
+        <value>
+            کد فعال‌سازی به رایانامه شما ارسال شده است.
+        </value>
+    </key>
+    <key name="check_code_description">
+        <value>
+            تأیید حساب کاربری
+        </value>
+    </key>
+    <key name="check_code_submit">
+        <value>
+            بررسی کد
+        </value>
+    </key>
+    <key name="verify_later">
+        <value>
+            خروج از سامانه
+        </value>
+    </key>
+    <key name="form_validator_mobile_invalid_message">
+        <value>
+            شماره تلفن همراه وارد شده نامعتبر است، این شماره باید به یکی از شکل‌های 09XXXXXXXXX یا 00989XXXXXXXXX یا +989XXXXXXXXX باشد.
+        </value>
+    </key>
+    <key name="form_validator_mobile_exists_message">
+        <value>
+            شماره تلفن همراه وارد شده در حال حاضر موجود است.
+        </value>
+    </key>
+    <key name="mobile_token_authenticated">
+        <value>
+            شماره تلفن همراه شما تایید گردید.
+        </value>
+    </key>
+    <key name="user_authenticated_successful">
+        <value>
+            حساب کاربری شما فعال گردید.
+        </value>
+    </key>
+    <key name="fill_correct_data">
+        <value>
+            اطلاعات موجود را به درستی وارد نمایید.
+        </value>
+    </key>
+    <key name="fill_mobile_code">
+        <value>
+            کد فعال‌سازی تلفن همراه خود را وارد نمایید.
+        </value>
+    </key>
+    <key name="verify_email_placeholder">
+        <value>
+            رایانامه شما قبلا تایید شده و نیاز به تایید ندارد
+        </value>
+    </key>
+    <key name="verify_sms_placeholder">
+        <value>
+            شماره تلفن همراه شما تایید شده و نیاز به تایید ندارد
+        </value>
+    </key>
+    <key name="sms_provider_label">
+        <value>
+            ارائه‌دهندگان ارسال پیامک
+        </value>
+    </key>
+    <key name="admin_save_settings">
+        <value>
+            ذخیره اطلاعات
+        </value>
+    </key>
+    <key name="field_mobile_description">
+        <value>
+            این شماره باید پس از تکمیل اطلاعات از طریق کد فعال‌سازی تایید شود.
+        </value>
+    </key>
+    <key name="field_mobile_label">
+        <value>
+            شماره تلفن همراه
+        </value>
+    </key>
+    <key name="resend_mobile_code">
+        <value>
+            ارسال مجدد کد فعال‌سازی تلفن همراه
+        </value>
+    </key>
+    <key name="resend_mail_code">
+        <value>
+             ارسال مجدد کد فعال‌سازی رایانامه
+        </value>
+    </key>
+    <key name="description_locked">
+        <value>
+            شما به دلیل تلاش‌های متعدد ناموفق مسدود شده‌اید. حساب کاربری شما در زمان ذکر شده از مسدود در خواهد آمد.
+        </value>
+    </key>
+    <key name="number">
+        <value>
+            شماره ارسال‌کننده
+        </value>
+    </key>
+    <key name="username">
+        <value>
+            نام کاربری
+        </value>
+    </key>
+    <key name="password">
+        <value>
+            گذرواژه
+        </value>
+    </key>
+    <key name="soap_client_url">
+        <value>
+            نشانی اینترنتی اتصال به ارائه‌دهنده پیامک از طریق سواپ
+        </value>
+    </key>
+    <key name="no_credit">
+        <value>
+            اعتبار پیامک ناکافی است.
+        </value>
+    </key>
+    <key name="setting_is_empty">
+        <value>
+            تنظیمات پیامک را کامل کنید.
+        </value>
+    </key>
+    <key name="credit_threshold">
+        <value>
+            میزبان باقیمانده از اعتبار به منظور اطلاع‌رسانی به مدیریت
+        </value>
+    </key>
+    <key name="resend_token_successfully">
+        <value>
+            کد فعال‌سازی ارسال گردید.
+        </value>
+    </key>
+    <key name="sms_content">
+        <value>
+            کد تایید در «{$site_name}»: {$code}
+        </value>
+    </key>
+
+    <key name="unverified_number_message">
+        <value>
+            شماره تلفن همراه اعلام شده: ({$mobile})
+        </value>
+    </key>
+    <key name="remove_unverified_number">
+        <value>
+            حذف تلفن همراه جدید اعلامی
+        </value>
+    </key>
+
+	<key name="number_is_not_valid_list">
+		<value>
+			شماره تلفن همراه وارد شده جزو فهرست شماره تلفن‌های مورد پذیرش نیست
+		</value>
+	</key>
+	<key name="input_settings_valid_phone_number_list_label">
+		<value>
+			شماره تلفن‌های همراه مجاز
+		</value>
+	</key>
+    <key name="no_provider_plugin_found">
+        <value>
+            افزونه فراهم‌کننده خدمت پیامک یافت نشد
+        </value>
+    </key>
+    <key name="input_settings_valid_phone_number_list_desc">
+		<value>
+			در این قسمت شماره تلفن‌های مجاز برای ثبت‌نام را وارد نمایید. در هر خط یک شماره تلفن با فرمت  "09XXXXXXXXX" وارد کنید.
+		</value>
+	</key>
+		<key name="restrictSetting">
+		<value>
+			تنظیمات محدودسازی
+		</value>
+	</key>
+		<key name="generalSetting">
+		<value>
+			تنظیمات عمومی
+		</value>
+	</key>
+		<key name="settings_successfuly_saved">
+		<value>
+			تغییرات با موفقیت ذخیره شد
+		</value>
+	</key>
+	
+	<key name="smsActivation_user_btn">
+		<value>
+			تایید
+		</value>
+	</key>
+		<key name="users_need_sms_code_activation">
+		<value>
+			کاربران تایید نشده (کد تلفن همراه)
+		</value>
+	</key>
+
+    <key name="forgot_password_email_and_mobile_invitation_message">
+        <value>
+            آدرس رایانامه یا تلفن همراه شما
+        </value>
+    </key>
+    <key name="form_validator_email_or_mobile_error_message">
+        <value>
+            خطای اعتبارسنجی آدرس رایانامه یا تلفن همراه!
+        </value>
+    </key>
+    <key name="reset_password_sms_template_content_txt">
+        <value>
+کاربر گرامی «{$username}»،
+شما درخواست بازتنظیم گذرواژه خود را کرده‌اید. پیوند زیر را برای تغییر گذرواژه خود دنبال کنید:
+{$resetUrl}
+و یا کد زیر را
+{$code}
+در صفحه:
+{$requestUrl}
+وارد نمائید.
+اگر شما در خواست کد تنظیم مجدد نکرده‌اید لطفا این پیامک را نادیده بگیرید
+        </value>
+    </key>
+    <key name="forgot_password_sms_send_success">
+        <value>
+            اطلاعات در ارتباط با تغییر و تایید گذرواژه جدید شما به تلفن همراه شما ارسال شد.
+        </value>
+    </key>
+    <key name="token_request_exists_error_message">
+        <value>
+            کد ورود برای شما ارسال شده است لطفا بعد از {$time} دقیقه دوباره تلاش نمایید
+        </value>
+    </key>
+    <key name="token_resend_interval">
+        <value>
+             مدت زمان فاصله درخواست مجدد کد تلفن همراه بر حسب دقیقه
+        </value>
+    </key>
+    <key name="max_token_request">
+        <value>
+            حداکثر تعداد مجاز درخواست کد تلفن همراه
+        </value>
+    </key>
+    <key name="mobile_change_number_title">
+        <value>
+            تغییر شماره تلفن همراه
+        </value>
+    </key>
+    <key name="mobile_change_number_submit">
+        <value>
+            ثبت
+        </value>
+    </key>
+    <key name="cancel_button">
+        <value>
+            بازگشت
+        </value>
+    </key>
+    <key name="change_password_send_sms_code">
+        <value>
+            کد ارسال‌شده از طریق پیامک
+        </value>
+    </key>
+    <key name="change_password_resend_mobile_code">
+        <value>
+            ارسال کد فعال‌سازی
+        </value>
+    </key>
+    <key name="forgot_password_header_message">
+        <value>
+            رایانامه یا تلفن همراه خود را وارد کنید
+        </value>
+    </key>
+    <key name="error_duplication">
+        <value>
+           مجدد تلاش نمائید
+        </value>
+    </key>
+    <key name="remove_text_link">
+        <value>
+            حذف پیوندهای متن پیامک
+        </value>
+    </key>
+    <key name="mobile_number_not_valid">
+        <value>
+            شماره تلفن وارد شده صحیح نیست
+        </value>
+    </key>
+</prefix>

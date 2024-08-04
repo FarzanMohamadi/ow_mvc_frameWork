@@ -1,0 +1,83 @@
+<div class="ow_frmtechunit ow_content">
+    <div class="ow_frmtechunit_name ow_page ow_bg_color  clearfix" style="min-height: 30px;">
+        <h1 class="ow_stdmargin ow_ic_user">{$unit.name}</h1>
+    </div>
+
+    <div class="ow_frmtechunit_unit_logo">
+        <div class="ow_avatar_console ow_center" id="avatar-console" style="padding-bottom: 20px;">
+            <div class="ow_frmtechunit_unit_image" id="avatar_console_image " style="height: 190px; background-image: url({$unit.imagePath});"></div>
+        </div>
+        <div class="ow_unit_control_buttons">
+            {if isset($edit_url)}
+                <span class="ow_button">
+                    <span class="ow_ic_edit">
+                        <input type="button" value="{text key="frmtechunit+edit"}" id="edit_profile_button" class="ow_ic_edit" onclick="window.location.href = '{$edit_url}'">
+                    </span>
+                </span>
+            {/if}
+            {if isset($delete_url)}
+                <span class="ow_button">
+                    <span class="ow_ic_delete">
+                        <input type="button" value="{text key="frmtechunit+delete"}" id="edit_profile_button" class="ow_ic_delete" onclick="window.location.href = '{$delete_url}'">
+                    </span>
+                </span>
+            {/if}
+        </div>
+    </div>
+
+    <div class="ow_unit_info">
+        <div class="ow_page ow_bg_color clearfix" style="min-height: 30px;">
+            <h1 class="ow_stdmargin ow_ic_user">{text key="frmtechunit+unit_info"}</h1>
+        </div>
+        <table class="ow_table_2 ow_nomargin data_table">
+        <tbody>
+        <tr class="ow_tr_first">
+        </tr>
+        <tr class="">
+            <td class="ow_label" style="width: 20%">{text key="frmtechunit+field_manager"}</td>
+            <td class="ow_value"><span class="ow_remark profile_hidden_field">{$unit.manager}</span></td>
+        </tr>
+        <tr class="">
+            <td class="ow_label" style="width: 20%">{text key="frmtechunit+field_phone"}</td>
+            <td class="ow_value"><span class="ow_remark profile_hidden_field">{$unit.phone}</span></td>
+        </tr>
+        <tr class="">
+            <td class="ow_label" style="width: 20%">{text key="frmtechunit+field_address"}</td>
+            <td class="ow_value"><span class="ow_remark profile_hidden_field">{$unit.address}</span></td>
+        </tr>
+        <tr class="">
+            <td class="ow_label" style="width: 20%">{text key="frmtechunit+field_website"}</td>
+            <td class="ow_value"><span class="ow_remark profile_hidden_field"><a href="{$unit.websiteUrl}" target="_blank">{$unit.website}</a></span></td>
+        </tr>
+        <tr class="">
+            <td class="ow_label" style="width: 20%">{text key="frmtechunit+field_email"}</td>
+            <td class="ow_value"><span class="ow_remark profile_hidden_field">{$unit.email}</span></td>
+        </tr>
+        {if isset($unit.qr_code)}
+        <tr class="">
+            <td class="ow_label" style="width: 20%">{text key="frmtechunit+field_qr_code"}</td>
+            <td class="ow_value">
+                <div style="height: 100px; width: 100px; background: url({$unit.qr_code}) no-repeat center; background-size: cover;margin: auto;">
+                </div>
+            </td>
+        </tr>
+        {/if}
+        </tbody>
+    </table>
+    </div>
+
+    <div class="ow_unit_additional_information">
+        {foreach from=$unit.sections key='key' item='section'}
+        <table class="ow_table_1 ow_nomargin data_table">
+            <tbody><tr class="ow_tr_first">
+            </tr><tr class="ow_tr_first">
+                <th colspan="1" class="ow_section"><span>{$section.title}</span></th>
+            </tr>
+            <tr class="">
+                <td class="ow_value" style="width: 20%">{$section.content}</td>
+            </tr>
+            </tbody>
+        </table>
+        {/foreach}
+    </div>
+</div>

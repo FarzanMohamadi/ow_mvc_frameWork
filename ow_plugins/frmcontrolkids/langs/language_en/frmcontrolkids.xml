@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcontrolkids" label="frmcontrolkids" language_tag="en" language_label="English">
+    <key name="setting_saved">
+        <value>Setting saved successfully.</value>
+    </key>
+    <key name="join_parent_email_header">
+        <value>Parent Email</value>
+    </key>
+    <key name="join_parent_email_description">
+        <value>You should put your parent email.</value>
+    </key>
+
+    <key name="minimumKidsAgeLabel">
+        <value>Maximum of kids age</value>
+    </key>
+    <key name="parentEmailEmpty">
+        <value>Parent email should be filled correctly.</value>
+    </key>
+    <key name="kids_list_header">
+        <value>Your kids</value>
+    </key>
+    <key name="kid_username_label">
+        <value>Username</value>
+    </key>
+    <key name="kid_shadow_login_url_label">
+        <value>Login as this kid</value>
+    </key>
+    <key name="kid_email_label">
+        <value>Email</value>
+    </key>
+    <key name="bottom_menu_item">
+        <value>
+            kids
+        </value>
+    </key>
+    <key name="email_registration_subject">
+        <value>
+            Registration in {$site_name}
+        </value>
+    </key>
+    <key name="parent_email_subject">
+        <value>
+            Your child register in {$site_name}
+        </value>
+    </key>
+    <key name="email_registration_content">
+        <value>
+            Your child with email: {$kidEmail} and username: {$kidUsername}, choose you as a parent using email: {$parentEmail}. You can register in {$site_name} using bellow link.
+        </value>
+    </key>
+	<key name="parents_kids_message">
+        <value>
+            According to the policy if you are under {$kidsAge} must enter your parent email.
+        </value>
+    </key>
+    <key name="parent_email_content">
+        <value>
+            Your child with email: {$kidEmail} and username: {$kidUsername}, choose you as a parent using email: {$parentEmail}
+        </value>
+    </key>
+    <key name="email_registration_link_label">
+        <value>
+            Register
+        </value>
+    </key>
+    <key name="marginTimeLabel">
+        <value>
+            Near the exit of childhood (in weeks)
+        </value>
+    </key>
+    <key name="login_as_label">
+        <value>
+            Login
+        </value>
+    </key>
+    <key name="logoutFromShadowLogin">
+        <value>
+            Logout from {$kidUsername} and login with {$parentUsername}
+        </value>
+    </key>
+    <key name="admin_page_heading">
+        <value>
+            Control kids plugin settings
+        </value>
+    </key>
+    <key name="admin_page_title">
+        <value>
+            Control kids plugin settings
+        </value>
+    </key>
+    <key name="enter_parent_email_title">
+        <value>
+            Parent's Email
+        </value>
+    </key>
+    <key name="enter_parent_email_heading">
+        <value>
+            Parent's Email
+        </value>
+    </key>
+    <key name="form_add_parent_email_submit">
+        <value>
+            Save
+        </value>
+    </key>
+</prefix>

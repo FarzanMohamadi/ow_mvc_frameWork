@@ -1,0 +1,52 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+<div class="ow_content_menu_wrap">
+    <ul class="ow_content_menu clearfix">
+        {foreach from=$sections item='section' name='contentMenu'}
+        <li class="{if $section.active} active{/if}"><a href="{$section.url}"><span class="ow_dynamic_color_icon"></span><span class="ow_tabs_text">{$section.label}</span></a></li>
+        {/foreach}
+    </ul>
+</div>
+
+<div class="ow_std_margin clearfix">
+    {form name="setting"}
+    <table class="ow_table_1 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_alt1">
+            <td width="1" class="ow_label">
+                {label name="prefix_download_path"}
+            </td>
+            <td class="ow_value">
+                {input name='prefix_download_path'}
+                {error name='prefix_download_path'}
+            </td>
+        </tr>
+        <tr class="ow_tr_last ow_center">
+            <td colspan="2">
+                {submit name="submit"}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    {/form}
+
+    <table class="ow_table_2 ow_form" style="margin: 0">
+        <tbody>
+        <tr class="ow_tr_last ow_center">
+            <td>
+                <a href="{$update_version_url}">{text key="frmupdateserver+check_update_version"}</a>
+            </td>
+            <td>
+                <p>{text key="frmupdateserver+check_update_version_description"}</p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

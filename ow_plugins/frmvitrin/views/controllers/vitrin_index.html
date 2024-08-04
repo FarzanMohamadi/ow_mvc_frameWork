@@ -1,0 +1,68 @@
+{*
+
+/**
+* 
+* All rights reserved.
+*/
+
+*}
+
+
+<div class="frmvitrin">
+    <h1>{text key="frmvitrin+main_menu_item"}</h1>
+    {if isset($vitrinDescription)}
+    <div class="ow_box_empty ow_superwide ow_automargin ow_no_cap ow_break_word">
+        {$vitrinDescription}
+    </div>
+    {/if}
+    {foreach from=$items item="item"}
+    <div class="item">
+        <div class="main_information">
+            <div class="logo">
+                <img alt="{$item.title}" src="{$item.logo}"/>
+            </div>
+        </div>
+        <div class="detail_information">
+            <div class="title"><h2>{$item.title}</h2></div>
+            <div class="description">{$item.description}</div>
+        </div>
+        <div class="features_information">
+            <div class="features_item">
+                <img src="{$target_icon}" alt="{$item.targetMarket}"/>
+                <span>
+                    {text key="frmvitrin+targetMarket"}:
+                </span>
+                {$item.targetMarket}
+            </div>
+            <div class="features_item">
+                <img src="{$developer_icon}" alt="{$item.vendor}"/>
+                <span>
+                    {text key="frmvitrin+vendor"}:
+                </span>
+                {$item.vendor}
+            </div>
+            <div class="features_item">
+                <img src="{$language_icon}" alt="{$item.language}"/>
+                <span>
+                    {text key="frmvitrin+language"}:
+                </span>
+                {$item.language}
+            </div>
+            <div class="features_item">
+                <img src="{$business_model_icon}" alt="{$item.businessModel}"/>
+                <span>
+                    {text key="frmvitrin+business_model"}:
+                </span>
+                {$item.businessModel}
+            </div>
+            <div class="button">
+                <div class="more"><a class="btn btn-red" href="{$item.viewUrl}">{text key="base+view_more_label"}</a></div>
+                <div class="website"><a class="btn btn-blue" href="{$item.url}" target="_blank">{text key="frmvitrin+view_website"}</a></div>
+            </div>
+        </div>
+    </div>
+    {/foreach}
+    {if isset($emptyItems)}
+        <h2>{text key="frmvitrin+empty_row_label"}</h2>
+    {/if}
+</div>

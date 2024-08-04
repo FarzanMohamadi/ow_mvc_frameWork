@@ -1,0 +1,28 @@
+{script}{literal}
+$('#btn-add-ticket').click(function(){location.href='{/literal}{url_for_route for="frmticketing.add-ticket"}{literal}'})
+{/literal}{/script}
+
+<div class="ow_right">{decorator name='button' class='ow_ic_add' id='btn-add-ticket' langLabel='frmticketing+add_ticket'}</div>
+
+
+{form name="searchForm"}
+{foreach from=$filterFormElementsKey item='elementKey'}
+<tr>
+    <td><b>{label name="$elementKey"}</b></td>
+    <td>
+        {input name="$elementKey"}
+    </td>
+</tr>
+{/foreach}
+<td> {decorator name='button' iconClass="ow_ic_lens" id="searchFilter" onclick="searchTicket('{$url}');" langLabel='frmticketing+search_btn_label'}</td>
+{/form}
+<br>
+<br>
+{if isset($assignedTicketInfoComponent)}
+{text key="frmticketing+my_tickets_label"}
+    {$ticketInfoComponent}
+{text key="frmticketing+received_ticket"}
+    {$assignedTicketInfoComponent}
+{else}
+    {$ticketInfoComponent}
+{/if}

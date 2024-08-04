@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmeconetdanesh" label="frmeconetdanesh" language_tag="fa-IR" language_label="فارسی">
+    <key name="admin_settings_title">
+        <value>
+            تنظیمات افزونه پایگاه دانش اکونت
+        </value>
+    </key>
+    <key name="cmp_widget_post_count">
+        <value>تعداد پست های نمایش داده شده برای هر برچسب</value>
+    </key>
+    <key name="tag_widget_heading">
+        <value>نمایش پست های دسته بندی شده توسط برچسب ها</value>
+    </key>
+    <key name="main_menu_item">
+        <value>پایگاه دانش</value>
+    </key>
+</prefix>

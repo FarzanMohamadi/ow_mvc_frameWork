@@ -1,0 +1,123 @@
+
+{script}
+    {literal}
+      $(function(){
+            $("form[name='MainSearchForm'] select[name='accountType']").change(
+               function(){ this.form.submit(); }
+            );
+       });
+   {/literal}
+{/script}
+
+{if isset($menu)}
+	{$menu}
+{/if}
+
+{if isset($authMessage)}
+    <div class="ow_anno ow_std_margin ow_nocontent">{$authMessage}</div>
+{else}
+<div class="clearfix">
+    <div class="ow_narrow ow_dnd_widget">
+        {form name='DisplayNameSearchForm'}
+        <div class="ow_box_cap_body">
+            <h2 class="ow_ic_info">{text key='base+user_search_display_name_search_label'}</h2>
+            <div class="ow_name_search_label"></div>
+        </div>
+
+        <div class="clearfix ow_smallmargin">
+            <table>
+                <tr class="ow_tr_first ow_tr_last ">
+                    <td class="ow_search_realname ow_type_text">
+                        {input name=$displayNameQuestion.name placeholder="{text key='base+questions_question_realname_label'}"}
+                        </br>
+                        <label>{text key='base+questions_question_realname_label'}</label>
+                    </td>
+                    <td class="ow_button_search">
+                        {submit class="ow_txtcenter"  name='DisplayNameSearchFormSubmit'}
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        {/form}
+    </div>
+    <div class="ow_wide">
+                {form name=MainSearchForm}
+                        <table class="ow_table_1 ow_form">
+                            {if $displayAccountType==true}
+                            {cycle assign='alt' values='ow_alt1,ow_alt2'}
+                            <tr class="ow_tr_first">
+                                <th class="ow_box_cap " colspan="3">
+                                    <h2 class="ow_ic_info">{text key='base+questions_question_accountType_label'}</h2>
+                                    <div class="ow_name_search_label"></div>
+                                </th>
+                            </tr>
+                            <tr class=" ow_tr_first ow_tr_last">
+                                <td class="ow_search_accountType">
+                                    {input name='accountType'}
+                                    <div class="ow_separation"></div>
+                                    {error name='accountType'}
+                                </td>
+                            </tr>
+                            {/if}
+
+                            {if !empty($questionList)}
+                                {foreach from=$questionList key='section' item='questions'}
+                                {if !empty($section) }
+                                    <tr class="ow_tr_first"><th class="ow_box_cap " colspan="3">
+                                        <h2 class="ow_ic_info">{text key="base+questions_section_`$section`_label"}</h2>
+                                        <div class="ow_name_search_label"></div>
+                                    </th></tr>
+                                {/if}
+                                    {foreach from=$questions item='question' name='question'}
+                                        {cycle assign='alt' values='ow_alt1,ow_alt2'}
+                                        <tr class="ow_type_{$question.type} {if $smarty.foreach.question.last}ow_tr_last{/if}">
+                                            <td class="{$alt} ow_value ow_presentation_{$question.presentation}">
+                                                {if $question.type == "text" }
+                                                    {if $question.presentation == "textarea" }
+                                                        {label name=$question.name}
+                                                        <br>
+                                                        {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} onkeyup="ShowLabelQuestion(this)"}
+                                                        <br>
+                                                    {else}
+                                                        {input name=$question.name placeholder={text key="base+questions_question_`$question.name`_label"} }
+                                                        </br>
+                                                        {label name=$question.name}
+                                                {/if}
+                                                <div class="ow_desc">
+                                                    {desc name=$question.name}
+                                                </div>
+                                                <div class="ow_separation"></div>
+                                                    {error name=$question.name}
+                                                {else}
+                                                    <div class="ow_label_question">
+                                                        {label name=$question.name}
+                                                        <br>
+                                                        {input name=$question.name}
+                                                        {if $question.type == "boolean" }
+                                                        {label name=$question.name}
+                                                        {/if}
+                                                        <div class="ow_desc">
+                                                            {desc name=$question.name}
+                                                        </div>
+                                                        <div class="ow_separation"></div>
+                                                        {error name=$question.name}
+                                                    </div>
+                                                {/if}
+                                            </td>
+                                        </tr>
+                                    {/foreach}
+                                {/foreach}
+                           {/if}
+                        </table>
+                    {if !empty($questionList)}
+                       <div class="clearfix">
+                  		<div class="ow_left">
+							{submit name='MainSearchFormSubmit'}
+                        </div>
+                       </div> 
+                    {/if}
+                {/form}
+    </div>
+</div>
+{/if}

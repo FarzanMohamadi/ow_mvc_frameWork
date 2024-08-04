@@ -1,0 +1,57 @@
+<div class="ow_blogentry_compose clearfix">
+    <div class="ow_superwide ow_automargin">
+        {if $isEdit}
+        <ul class="ow_bl clearfix ow_small ow_right">
+            <li>
+                <a href="{$grantUrl}">
+                    {text key="frmgrant+return_btn_label"}
+                </a>
+            </li>
+        </ul>
+        {/if}
+        {form name="save"}
+        <input type="hidden" id="save_grant_command" name="command" />
+        <table class="ow_table_1 ow_form ow_stdmargin">
+            <tr class="ow_alt2 ow_tr_first">
+                <td>
+                    {label name="title"}<br />{input name='title'}
+                    <br />{error name="title"}
+                </td>
+            </tr>
+            <tr class="ow_alt2 ow_tr_first">
+                <td>
+                    {label name="professor"}<br />{input name='professor'}
+                    <br />{error name="professor"}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td>
+                    {label name="college"}<br />{input name='college'}
+                    <br />{error name="college"}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td>
+                    {label name="laboratory"}<br />{input name='laboratory'}
+                    <br />{error name="laboratory"}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td>
+                    {label name="startedYear"}<br />{input name='startedYear'}
+                    <br />{error name="startedYear"}
+                </td>
+            </tr>
+            <tr class="ow_alt1">
+                <td>
+                    {label name="description"}<br />{input name='description'}
+                    <br />{error name="description"}
+                </td>
+            </tr>
+        </table>
+        <div class="clearfix ow_stdmargin ow_submit ow_btn_delimiter">
+            <div class="ow_right"> {submit name="save"}</div>
+        </div>
+        {/form}
+    </div>
+</div>

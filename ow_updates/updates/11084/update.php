@@ -1,0 +1,2 @@
+<?php
+FRMSecurityProvider::addOnlineUsersStatisticWidget();

@@ -1,0 +1,240 @@
+<div class="challenges_page">
+    <div class="challenge ow_preloader"></div>
+
+    {if $canCreate}
+    <div class="challenge_create_button" style="display: none">
+        <a class="btn" data-popup-open="popup-create-challenge" href="#">
+            {text key='frmchallenge+create_challenge'}
+        </a>
+    </div>
+    {/if}
+
+    <div class="challenge_description">
+        <p>
+            {text key='frmchallenge+challenges_description'}
+        </p>
+    </div>
+
+    <div id="all_challenge" style="display: none">
+        {if $solitaryEnable}
+        <h3>{text key='frmchallenge+solitary_challenge_tab_label'}</h3>
+        <section>
+            <div class="challenge_box">
+                <a class="btn item my_challenge" data-popup-open="popup-show-my-challenges" href="#">
+                    {text key='frmchallenge+my_challenges'}
+                    ({$solitary_request_self_count})
+                </a>
+                <a class="btn item public_challenge" data-popup-open="popup-show-public-challenges" href="#">
+                    {text key='frmchallenge+public_challenges'}
+                    ({$solitary_request_public_count})
+                </a>
+                <a class="btn item requested_challenge" data-popup-open="popup-show-requested-challenges" href="#">
+                    {text key='frmchallenge+your_requested_challenges'}
+                    ({$solitary_request_opponent_count})
+                </a>
+                <a class="btn item finished_challenge" data-popup-open="popup-show-finished-challenges" href="#">
+                    {text key='frmchallenge+finished_challenges'}
+                    ({$solitary_request_finish_count})
+                </a>
+            </div>
+        </section>
+        {/if}
+        <h3>{text key='frmchallenge+public_challenge_tab_label'}</h3>
+        <section>
+            <div class="challenge_box">
+                <a class="btn item my_challenge" data-popup-open="popup-show-universal-my-challenges" href="#">
+                    {text key='frmchallenge+my_challenges'}
+                    ({$universal_request_self_count})
+                </a>
+                <a class="btn item public_challenge" data-popup-open="popup-show-universal-public-challenges" href="#">
+                    {text key='frmchallenge+public_challenges'}
+                    ({$universal_request_public_count})
+                </a>
+                <a class="btn item finished_challenge" data-popup-open="popup-show-universal-finished-challenges" href="#">
+                    {text key='frmchallenge+finished_challenges'}
+                    ({$universal_request_finish_count})
+                </a>
+            </div>
+        </section>
+        <h3>{text key='frmchallenge+max_users_point'}</h3>
+        <section>
+            <div class="challenge_info">
+                <div class="user_point self_point">
+                    <div class="label">
+                        {text key='frmchallenge+user_point'}
+                    </div>
+                    <div class="value">
+                        {$usersInfo.user.point}
+                    </div>
+                </div>
+            </div>
+            <div class="challenge_info">
+                <div class="label">
+                    {text key='frmchallenge+users_point_label'}
+                </div>
+                <div class="value">
+                </div>
+            </div>
+            {foreach from=$usersInfo.users item='user'}
+            <div class="challenge_info">
+                <div class="user_point self_point">
+                    <div class="label">
+                        {$user.index} -
+                        <a href="{$user.url}">{$user.username}</a>
+                    </div>
+                    <div class="value">
+                        {$user.point}
+                    </div>
+                </div>
+            </div>
+            {/foreach}
+        </section>
+    </div>
+
+
+    <div class="popup" data-popup="popup-create-challenge">
+        <div class="popup-inner">
+            {form name=create_challenge}
+            <div>
+                <h3>
+                    {text key='frmchallenge+challenge_type'}
+                </h3>
+                <section>
+                    {input name='challenge_type'}
+                    <p>
+                        {text key='frmchallenge+on_construction_type'}
+                    </p>
+                </section>
+                <h3>
+                    {text key='frmchallenge+challenge_info'}
+                </h3>
+                <section>
+                    <div class="solitary_information">
+                        <table class="ow_table_1 ow_form">
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='categoryId'}</td>
+                                <td class="ow_value">{input name='categoryId'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='opponent_username'}</td>
+                                <td class="ow_value">{input name='opponent_username'}</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="universal_information">
+                        <table class="ow_table_1 ow_form">
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='title'}</td>
+                                <td class="ow_value">{input name='title'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='description'}</td>
+                                <td class="ow_value">{input name='description'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='prize'}</td>
+                                <td class="ow_value">{input name='prize'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='min_point'}</td>
+                                <td class="ow_value">{input name='min_point'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='questions_number'}</td>
+                                <td class="ow_value">{input name='questions_number'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:20%;">{label name='start_date'}</td>
+                                <td class="ow_value">
+                                        {input name='start_date'}
+                                    <div class="owm_error_txt">{error name='start_date'}</div>
+                                </td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='end_time'}</td>
+                                <td class="ow_value">{input name='end_time'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='win_num'}</td>
+                                <td class="ow_value">{input name='win_num'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='sponsor'}</td>
+                                <td class="ow_value">{input name='sponsor'}</td>
+                            </tr>
+                            <tr class="ow_alt2 ow_tr_last">
+                                <td class="ow_label" style="width:40%;">{label name='universalCategoryId'}</td>
+                                <td class="ow_value">{input name='universalCategoryId'}</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <h3>
+                    {text key='frmchallenge+create_challenge'}
+                </h3>
+                <section>
+                    {text key='frmchallenge+create_challenge_description'}
+                </section>
+            </div>
+            {/form}
+            <a class="popup-close" data-popup-close="popup-create-challenge" href="#">x</a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-show-my-challenges">
+        <div class="popup-inner">
+            <h1>{text key='frmchallenge+my_challenges'}</h1>
+            {$solitary_request_self}
+            <a class="popup-close" data-popup-close="popup-show-my-challenges" href="#">x</a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-show-public-challenges">
+        <div class="popup-inner">
+            <h1>{text key='frmchallenge+public_challenges'}</h1>
+            {$solitary_request_public}
+            <a class="popup-close" data-popup-close="popup-show-public-challenges" href="#">x</a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-show-requested-challenges">
+        <div class="popup-inner">
+            <h1>{text key='frmchallenge+your_requested_challenges'}</h1>
+            {$solitary_request_opponent}
+            <a class="popup-close" data-popup-close="popup-show-requested-challenges" href="#">x</a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-show-finished-challenges">
+        <div class="popup-inner">
+            <h1>{text key='frmchallenge+finished_challenges'}</h1>
+            {$solitary_request_finish}
+            <a class="popup-close" data-popup-close="popup-show-finished-challenges" href="#">x</a>
+        </div>
+    </div>
+
+
+    <div class="popup" data-popup="popup-show-universal-my-challenges">
+        <div class="popup-inner">
+            <h1>{text key='frmchallenge+my_challenges'}</h1>
+            {$universal_request_self}
+            <a class="popup-close" data-popup-close="popup-show-universal-my-challenges" href="#">x</a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-show-universal-public-challenges">
+        <div class="popup-inner">
+            <h1>{text key='frmchallenge+public_challenges'}</h1>
+            {$universal_request_public}
+            <a class="popup-close" data-popup-close="popup-show-universal-public-challenges" href="#">x</a>
+        </div>
+    </div>
+
+    <div class="popup" data-popup="popup-show-universal-finished-challenges">
+        <div class="popup-inner">
+            <h1>{text key='frmchallenge+finished_challenges'}</h1>
+            {$universal_request_finish}
+            <a class="popup-close" data-popup-close="popup-show-universal-finished-challenges" href="#">x</a>
+        </div>
+    </div>
+</div>

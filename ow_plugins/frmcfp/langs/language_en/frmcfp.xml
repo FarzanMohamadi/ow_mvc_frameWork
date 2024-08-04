@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="frmcfp" label="frmcfp" language_tag="en" language_label="English">
+    <key name="accept_request">
+        <value>
+            Accept
+        </value>
+    </key>
+    <key name="add_CFP_meta_description">
+        <value>
+            Plan a meeting with the users of {$site_name}
+        </value>
+    </key>
+    <key name="add_form_date_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_date_label">
+        <value>
+            Start
+        </value>
+    </key>
+    <key name="add_form_desc_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_desc_label">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="add_form_empty_image_error_message">
+        <value>
+            Empty image field
+        </value>
+    </key>
+    <key name="add_form_end_date_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_end_date_label">
+        <value>
+            CFP ends
+        </value>
+    </key>
+    <key name="add_form_image_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="not_valid_file">
+        <value>
+            Invalid file (should be .pdf)
+        </value>
+    </key>
+    <key name="add_form_image_label">
+        <value>
+            Image
+        </value>
+    </key>
+    <key name="add_form_invalid_end_date_error_message">
+        <value>
+            Invalid end date
+        </value>
+    </key>
+    <key name="add_form_file_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_file_label">
+        <value>
+            CFP File
+        </value>
+    </key>
+    <key name="add_form_file_disabled_label">
+        <value>
+            Disable file upload widget
+        </value>
+    </key>
+    <key name="add_form_file_note_label">
+        <value>
+            Login to upload file
+        </value>
+    </key>
+    <key name="download_current_file">
+        <value>
+            Current File
+        </value>
+    </key>
+    <key name="download_file">
+        <value>
+            Download File
+        </value>
+    </key>
+    <key name="add_form_submit_label">
+        <value>
+            Add
+        </value>
+    </key>
+    <key name="add_form_success_message">
+        <value>
+            CFP added
+        </value>
+    </key>
+    <key name="add_form_title_desc">
+        <value>
+            &amp;nbsp
+        </value>
+    </key>
+    <key name="add_form_title_label">
+        <value>
+            Title
+        </value>
+    </key>
+    <key name="add_form_who_can_view_desc">
+        <value>
+            &amp;nbsp;
+        </value>
+    </key>
+    <key name="add_form_who_can_view_label">
+        <value>
+            Who can view
+        </value>
+    </key>
+    <key name="add_form_who_can_view_option_anybody">
+        <value>
+            Anybody
+        </value>
+    </key>
+    <key name="add_form_who_can_view_option_invit_only">
+        <value>
+            By invitation only
+        </value>
+    </key>
+    <key name="add_new_button_label">
+        <value>
+            Add new CFP
+        </value>
+    </key>
+    <key name="add_new_link_label">
+        <value>
+            CFP
+        </value>
+    </key>
+    <key name="add_page_heading">
+        <value>
+            Create new CFP
+        </value>
+    </key>
+    <key name="add_page_title">
+        <value>
+            Create new CFP - {$site_name}
+        </value>
+    </key>
+    <key name="all_day">
+        <value>
+            all day
+        </value>
+    </key>
+    <key name="attend_maybe_btn_label">
+        <value>
+            Maybe
+        </value>
+    </key>
+    <key name="attend_no_btn_label">
+        <value>
+            No
+        </value>
+    </key>
+    <key name="attend_yes_btn_label">
+        <value>
+            I'm attending
+        </value>
+    </key>
+    <key name="auth_action_label_add_comment">
+        <value>
+            Add Comments to CFPs
+        </value>
+    </key>
+    <key name="auth_action_label_add_CFP">
+        <value>
+            Add CFPs
+        </value>
+    </key>
+    <key name="auth_action_label_view_CFP">
+        <value>
+            View CFPs
+        </value>
+    </key>
+    <key name="auth_group_label">
+        <value>
+            CFPs
+        </value>
+    </key>
+    <key name="avatar_user_list_bottom_link_label">
+        <value>
+            View all ({$count} users)
+        </value>
+    </key>
+    <key name="avatar_user_list_link_label_1">
+        <value>
+            yes
+        </value>
+    </key>
+    <key name="avatar_user_list_link_label_2">
+        <value>
+            maybe
+        </value>
+    </key>
+    <key name="avatar_user_list_link_label_3">
+        <value>
+            no
+        </value>
+    </key>
+    <key name="cmp_widget_CFPs_count">
+        <value>
+            CFPs count
+        </value>
+    </key>
+    <key name="common_list_type_joined_label">
+        <value>
+            My CFPs
+        </value>
+    </key>
+    <key name="common_list_type_latest_label">
+        <value>
+            Upcoming
+        </value>
+    </key>
+    <key name="common_list_type_past_label">
+        <value>
+            Past
+        </value>
+    </key>
+    <key name="console_notification_label">
+        <value>
+            CFP invitations
+        </value>
+    </key>
+    <key name="content_CFPs_label">
+        <value>
+            CFPs
+        </value>
+    </key>
+    <key name="content_CFP_label">
+        <value>
+            CFP
+        </value>
+    </key>
+    <key name="creator">
+        <value>
+            creator
+        </value>
+    </key>
+    <key name="current_status_change_label">
+        <value>
+            change
+        </value>
+    </key>
+    <key name="dashboard_widget_menu_my_CFPs_label">
+        <value>
+            Created
+        </value>
+    </key>
+    <key name="dashboard_widget_menu_part_CFPs_label">
+        <value>
+            Joined
+        </value>
+    </key>
+    <key name="delete_button_label">
+        <value>
+            Delete
+        </value>
+    </key>
+    <key name="delete_confirm_message">
+        <value>
+            Are you sure you want to delete the CFP?
+        </value>
+    </key>
+    <key name="delete_success_message">
+        <value>
+            CFP deleted
+        </value>
+    </key>
+    <key name="edit_button_label">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="edit_form_end_date_error_message">
+        <value>
+            Please select CFP end date/time
+        </value>
+    </key>
+    <key name="edit_form_submit_label">
+        <value>
+            Edit
+        </value>
+    </key>
+    <key name="edit_form_success_message">
+        <value>
+            CFP edited
+        </value>
+    </key>
+    <key name="edit_page_heading">
+        <value>
+            Edit CFP
+        </value>
+    </key>
+    <key name="edit_page_title">
+        <value>
+            Edit CFP - {$site_name}
+        </value>
+    </key>
+    <key name="email_notification_comment">
+        <value>
+            &lt;a href="{$userUrl}"&gt;{$userName}&lt;/a&gt; added a wall comment in &lt;a href="{$url}"&gt;{$title}&lt;/a&gt; CFP
+        </value>
+    </key>
+    <key name="email_notification_comment_setting">
+        <value>
+            Someone posts on CFP walls
+        </value>
+    </key>
+    <key name="CFP_created_by_me_page_heading">
+        <value>
+            CFPs I created
+        </value>
+    </key>
+    <key name="CFP_created_by_me_page_title">
+        <value>
+            CFPs I created - {$site_name}
+        </value>
+    </key>
+    <key name="CFP_create_string">
+        <value>
+            created new CFP
+        </value>
+    </key>
+    <key name="CFP_edited_string">
+        <value>
+            edited their CFP
+        </value>
+    </key>
+    <key name="CFP_joined_by_me_page_heading">
+        <value>
+            CFPs I'm attending
+        </value>
+    </key>
+    <key name="CFP_joined_by_me_page_title">
+        <value>
+            CFPs I'm attending - {$site_name}
+        </value>
+    </key>
+    <key name="CFP_view_page_heading">
+        <value>
+            {$CFP_title} - CFP at {$site_name}
+        </value>
+    </key>
+    <key name="CFP_view_permission_error_message">
+        <value>
+            Sorry, you don't have permissions to view this page
+        </value>
+    </key>
+    <key name="feed_actiovity_attend_string">
+        <value>
+            is attending {$user}'s CFP
+        </value>
+    </key>
+    <key name="feed_activity_comment_string">
+        <value>
+            commented on {$user}'s CFP
+        </value>
+    </key>
+    <key name="feed_activity_CFP_string_like">
+        <value>
+            liked {$user}'s CFP
+        </value>
+    </key>
+    <key name="feed_activity_CFP_string_like_own">
+        <value>
+            liked their CFP
+        </value>
+    </key>
+    <key name="feed_activity_joined">
+        <value>
+            {$user} just attended
+        </value>
+    </key>
+    <key name="feed_activity_own_comment_string">
+        <value>
+            commented on their CFP
+        </value>
+    </key>
+    <key name="feed_activity_users">
+        <value>
+            Total users: &lt;span class="ow_txt_value"&gt;{$usersCount}&lt;/span&gt;
+        </value>
+    </key>
+    <key name="feed_add_item_label">
+        <value>
+            created new CFP
+        </value>
+    </key>
+    <key name="feed_content_label">
+        <value>
+            CFPs
+        </value>
+    </key>
+    <key name="feed_user_join_string">
+        <value>
+            is attending CFP
+        </value>
+    </key>
+    <key name="ignore_request">
+        <value>
+            Ignore
+        </value>
+    </key>
+    <key name="latest_CFPs_page_desc">
+        <value>
+            The list of upcoming CFPs for the members of {$site_name}
+        </value>
+    </key>
+    <key name="latest_CFPs_page_heading">
+        <value>
+            CFPs
+        </value>
+    </key>
+    <key name="latest_CFPs_page_title">
+        <value>
+            CFPs - {$site_name}
+        </value>
+    </key>
+    <key name="main_menu_item">
+        <value>
+            CFPs
+        </value>
+    </key>
+    <key name="moderation_status_pending_approval">
+        <value>
+            pending approval
+        </value>
+    </key>
+    <key name="my_CFPs_widget_block_cap_label">
+        <value>
+            My CFPs
+        </value>
+    </key>
+    <key name="notifications_section_label">
+        <value>
+            CFPs
+        </value>
+    </key>
+    <key name="no_CFPs_label">
+        <value>
+            No CFPs
+        </value>
+    </key>
+    <key name="no_index_CFPs_label">
+        <value>
+            No CFPs, &lt;a href="{$url}"&gt;Add new&lt;/a&gt;
+        </value>
+    </key>
+    <key name="past_CFPs_page_desc">
+        <value>
+            The list of the past CFPs for the members of {$site_name}
+        </value>
+    </key>
+    <key name="past_CFPs_page_heading">
+        <value>
+            Past CFPs
+        </value>
+    </key>
+    <key name="past_CFPs_page_title">
+        <value>
+            Past CFPs - {$site_name}
+        </value>
+    </key>
+    <key name="privacy_action_view_attend_CFPs">
+        <value>
+            View my CFPs
+        </value>
+    </key>
+    <key name="privacy_action_view_attend_CFPs_description">
+        <value>
+            by modification of this option, the access right for viewing your CFPs in your profile will be changed
+        </value>
+    </key>
+    <key name="private_CFP_text">
+        <value>
+            We are sorry, This CFP is private
+        </value>
+    </key>
+    <key name="private_page_heading">
+        <value>
+            Private CFP
+        </value>
+    </key>
+    <key name="private_page_title">
+        <value>
+            Private CFP
+        </value>
+    </key>
+    <key name="profile_CFPs_widget_block_cap_label">
+        <value>
+            My CFPs
+        </value>
+    </key>
+    <key name="time_field_invitation_label">
+        <value>
+            Time
+        </value>
+    </key>
+    <key name="up_CFPs_widget_block_cap_label">
+        <value>
+            Upcoming CFPs
+        </value>
+    </key>
+    <key name="usercredits_action_add_comment">
+        <value>
+            Comment CFP
+        </value>
+    </key>
+    <key name="usercredits_action_add_CFP">
+        <value>
+            Add CFP
+        </value>
+    </key>
+    <key name="user_list_page_desc_1">
+        <value>
+            The list of users participating in "{$CFPTitle}" CFP
+        </value>
+    </key>
+    <key name="user_list_page_desc_2">
+        <value>
+            The list of users maybe participating in "{$CFPTitle}" CFP
+        </value>
+    </key>
+    <key name="user_list_page_desc_3">
+        <value>
+            The list of users not participating in "{$CFPTitle}" CFP
+        </value>
+    </key>
+    <key name="user_list_page_heading_1">
+        <value>
+            "{$CFPTitle}" CFP participants - {$site_name}
+        </value>
+    </key>
+    <key name="user_list_page_heading_2">
+        <value>
+            "{$CFPTitle}" CFP - who's maybe attending - {$site_name}
+        </value>
+    </key>
+    <key name="user_list_page_heading_3">
+        <value>
+            "{$CFPTitle}" CFP - who's not attending - {$site_name}
+        </value>
+    </key>
+    <key name="user_participated_CFPs_page_desc">
+        <value>
+            The list of CFPs {$display_name} participates in
+        </value>
+    </key>
+    <key name="user_participated_CFPs_page_heading">
+        <value>
+            {$display_name}'s CFPs
+        </value>
+    </key>
+    <key name="user_participated_CFPs_page_title">
+        <value>
+            {$display_name}'s CFPs - {$site_name}
+        </value>
+    </key>
+    <key name="user_status_author_cant_leave_error">
+        <value>
+            Sorry, you can't leave your CFP
+        </value>
+    </key>
+    <key name="user_status_label_1">
+        <value>
+            I'm attending
+        </value>
+    </key>
+    <key name="user_status_label_2">
+        <value>
+            Maybe I'm attending
+        </value>
+    </key>
+    <key name="user_status_label_3">
+        <value>
+            I'm not attending
+        </value>
+    </key>
+    <key name="user_status_not_changed_error">
+        <value>
+            Please change your status
+        </value>
+    </key>
+    <key name="user_status_updated">
+        <value>
+            Your status updated
+        </value>
+    </key>
+    <key name="view_all_label">
+        <value>
+            view all
+        </value>
+    </key>
+    <key name="view_page_created_label">
+        <value>
+            Creator
+        </value>
+    </key>
+    <key name="view_page_date_label">
+        <value>
+            Start
+        </value>
+    </key>
+    <key name="view_page_desc_label">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="view_page_details_block_cap_label">
+        <value>
+            Details
+        </value>
+    </key>
+    <key name="view_page_end_date_label">
+        <value>
+            End
+        </value>
+    </key>
+    <key name="view_page_image_block_cap_label">
+        <value>
+            Description
+        </value>
+    </key>
+    <key name="view_page_file_label">
+        <value>
+            CFP File
+        </value>
+    </key>
+    <key name="view_page_users_block_cap_label">
+        <value>
+            Who's attending
+        </value>
+    </key>
+    <key name="CFP_sitemap">
+        <value>CFPs</value>
+    </key>
+    <key name="seo_meta_section">
+        <value>CFPs</value>
+    </key>
+    <key name="seo_meta_CFPs_list_label">
+        <value>CFPs List Page</value>
+    </key>
+    <key name="meta_title_CFPs_list">
+        <value>{$CFP_list} CFPs | {$site_name}</value>
+    </key>
+    <key name="meta_desc_CFPs_list">
+        <value>Find out more information about all {$CFP_list} CFPs at {$site_name}, leave your comments, and
+            discuss them with other site members
+        </value>
+    </key>
+    <key name="meta_keywords_CFPs_list">
+        <value></value>
+    </key>
+    <key name="created_CFPs_page_title">
+        <value>Created</value>
+    </key>
+    <key name="joined_CFPs_page_title">
+        <value>Joined</value>
+    </key>
+    <key name="seo_meta_CFP_view_label">
+        <value>Separate CFP Page</value>
+    </key>
+    <key name="meta_title_CFP_view">
+        <value>{$CFP_title} | {$site_name}</value>
+    </key>
+    <key name="meta_desc_CFP_view">
+        <value>{$CFP_description}</value>
+    </key>
+    <key name="meta_keywords_CFP_view">
+        <value></value>
+    </key>
+    <key name="seo_meta_CFP_users_label">
+        <value>Separate CFP Participants Page</value>
+    </key>
+    <key name="meta_title_CFP_users">
+        <value>All users of "{$CFP_title}" | {$site_name}</value>
+    </key>
+    <key name="meta_desc_CFP_users">
+        <value>The list of all {$site_name} users who singed up for the "{$CFP_title}". Join in to not miss all the
+            fun!
+        </value>
+    </key>
+    <key name="meta_keywords_CFP_users">
+        <value></value>
+    </key>
+	<key name="CFP_mobile">
+        <value>
+			CFPs
+		</value>
+    </key>
+	<key name="back">
+        <value>
+			Back
+		</value>
+    </key>
+
+    <key name="name">
+        <value>
+            name
+        </value>
+    </key>
+    <key name="created_date">
+        <value>
+            created date
+        </value>
+    </key>
+    <key name="by">
+        <value>
+            creator
+        </value>
+    </key>
+    <key name="file_list_widget_empty">
+        <value>
+            No file exists
+        </value>
+    </key>
+    <key name="widget_files_settings_count">
+        <value>
+            Files number
+        </value>
+    </key>
+    <key name="files_count">
+        <value>
+            Files count
+        </value>
+    </key>
+    <key name="widget_files_title">
+        <value>
+            Proposal files
+        </value>
+    </key>
+    <key name="file_list">
+        <value>
+            Files list
+        </value>
+    </key>
+    <key name="view_all_files">
+        <value>
+            view all
+        </value>
+    </key>
+    <key name="add_file">
+        <value>
+            add file
+        </value>
+    </key>
+    <key name="create_field_file_name_label">
+        <value>
+            file name
+        </value>
+    </key>
+    <key name="create_field_file_upload_label">
+        <value>
+            file upload
+        </value>
+    </key>
+    <key name="cfp_is_ended">
+        <value>
+            Time to submit proposals is ended
+        </value>
+    </key>
+    <key name="login_to_participate">
+        <value>
+            Please login to upload your proposal
+        </value>
+    </key>
+    <key name="cfp_is_not_started">
+        <value>
+            Time to submit proposals hasn't started yet
+        </value>
+    </key>
+    <key name="are_you_sure_delete_file">
+        <value>
+            Are you sure delete this file?
+        </value>
+    </key>
+</prefix>

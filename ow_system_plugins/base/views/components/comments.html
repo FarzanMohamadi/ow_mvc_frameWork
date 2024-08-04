@@ -1,0 +1,57 @@
+{if isset($viewComments) && $viewComments===true}
+<div id="{$cmpContext}" class="{if $mini}ow_comments_mipc{else}ow_comments_ipc{/if}{if $bottomList} ow_comments_form_top{/if}{if empty($formCmp)} ow_comments_no_form{/if}">
+   {capture name='comments'}
+   {if $topList}
+   <div class="comments_list_cont">
+	   {$commentList}
+   </div>
+   {/if}
+    {if !isset($isChannel) && isset($formCmp)}
+      <div class="ow_comments_form_wrap_pre" style="display:none;"></div>
+      <div class="ow_comments_form_wrap" {if $isReplyList} style="display: none" {/if} >
+      <div class="ow_comments_input_wrap clearfix">
+            <div class="ow_comments_item_picture">{decorator name='avatar_item' data=$currentUserInfo}</div>
+            <div class="ow_comments_item_info clearfix"><span class="comment_add_arr"></span>
+                {if $isReplyList} <span id="{$rudnId}" class="ow_comment_reply" style="display: none;"></span> {/if}
+                <div class="ow_comments_input">
+                    <span class="ow_attachment_icons">
+                        <div class="ow_attachments clearfix">
+                            {if !empty($attch)}
+                                <a href="javascript://" class="image" id="{$buttonContId}"></a>
+                            {/if}
+                        </div>
+                    </span>
+                    <textarea id="{$taId}" class="comments_fake_autoclick" placeholder="{text key='base+comment_form_element_invitation_text' escape=true}"></textarea>
+                    <div class="clearfix comments_hidden_btn">
+                        <span class="ow_attachment_btn" title="{text key='base+btn_label_send'}">{decorator name='button'}</span>
+                    </div>
+                    {if $isReplyList} <input type="hidden" id="{$hiId}" /> {/if}
+                </div>
+            </div>
+        </div>
+        {if !empty($attch)}{$attch}{/if}
+        <div id="{$attchId}"></div>
+        
+
+        
+        </div>
+    {elseif !isset($disable_comments_Widget) && !empty($authErrorMessage)}
+      <div class="ow_smallmargin ow_center ow_comments_msg">{$authErrorMessage}</div>
+    {/if}
+   {if $bottomList}
+   <div class="comments_list_cont">
+	   {$commentList}
+   </div>
+   {/if}
+   {/capture}
+    {if !isset($disable_comments_Widget)}
+        {if $wrapInBox}
+            {block_decorator name='box' type='empty' addClass='ow_add_comments_form ow_stdmargin' langLabel='base+comment_box_cap_label' iconClass='ow_ic_comment'}
+                {$smarty.capture.comments}
+            {/block_decorator}
+        {else}
+            {$smarty.capture.comments}
+        {/if}
+    {/if}
+</div>
+{/if}

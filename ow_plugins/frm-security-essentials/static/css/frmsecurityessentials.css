@@ -1,0 +1,56 @@
+.feed_image_privacy{
+    width: 16px !important;
+    height: 16px;
+    margin-top: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+}
+
+.feed_privacy_form{
+    text-align: center;
+}
+
+.feed_privacy_item {
+    display: inline-block;
+}
+
+.feed_privacy_submit {
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.delete_user_form_container .captcha-input{
+    text-align: center;
+}
+
+a .feed_image_privacy.friends_only{
+    background-image: url(../images/friends_only.png);
+}
+
+a .feed_image_privacy.only_for_me{
+    background-image: url(../images/only_for_me.png);
+}
+
+a .feed_image_privacy.everybody{
+    background-image: url(../images/everybody.png);
+}
+
+a:hover .feed_image_privacy.friends_only{
+    background-image: url(../images/friends_only.svg) !important;
+}
+
+a:hover .feed_image_privacy.only_for_me{
+    background-image: url(../images/only_for_me.svg) !important;
+}
+
+a:hover .feed_image_privacy.everybody{
+    background-image: url(../images/everybody.svg) !important;
+}
+
+.ow_error_margin_top{
+    display: block;
+    margin-top: 5px;
+}
